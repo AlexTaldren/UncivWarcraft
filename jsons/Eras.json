@@ -51,7 +51,7 @@
     "settlerPopulation": 1,
     "settlerBuildings": [
       "Shrine",
-      "Monument"
+      "Town Hall"
     ],
     "startingObsoleteWonders": [
       "Temple of Elune",
@@ -84,7 +84,7 @@
     "settlerPopulation": 2,
     "settlerBuildings": [
       "Shrine",
-      "Monument",
+      "Town Hall",
       "Granary",
       "Lighthouse"
     ],
@@ -128,12 +128,12 @@
     "startingCulture": 400,
     "settlerPopulation": 3,
     "settlerBuildings": [
-      "Monument",
+      "Town Hall",
       "Granary",
       "Lighthouse",
       "Market",
       "Workshop",
-      "Amphitheater",
+      "Storyteller's Circle",
       "Barracks",
       "Library",
       "Arena"
@@ -187,12 +187,12 @@
     "startingCulture": 500,
     "settlerPopulation": 3,
     "settlerBuildings": [
-      "Monument",
+      "Town Hall",
       "Granary",
       "Lighthouse",
       "Market",
       "Workshop",
-      "Amphitheater",
+      "Storyteller's Circle",
       "Barracks",
       "Library",
       "Arena"
@@ -253,12 +253,12 @@
     "startingCulture": 500,
     "settlerPopulation": 4,
     "settlerBuildings": [
-      "Monument",
+      "Town Hall",
       "Granary",
       "Lighthouse",
       "Market",
       "Workshop",
-      "Amphitheater",
+      "Storyteller's Circle",
       "Barracks",
       "Library",
       "Arena"
@@ -322,12 +322,12 @@
     "startingCulture": 600,
     "settlerPopulation": 5,
     "settlerBuildings": [
-      "Monument",
+      "Town Hall",
       "Granary",
       "Lighthouse",
       "Market",
       "Workshop",
-      "Amphitheater",
+      "Storyteller's Circle",
       "Barracks",
       "Library",
       "Arena",
@@ -397,12 +397,12 @@
     "startingCulture": 600,
     "settlerPopulation": 5,
     "settlerBuildings": [
-      "Monument",
+      "Town Hall",
       "Granary",
       "Lighthouse",
       "Market",
       "Workshop",
-      "Amphitheater",
+      "Storyteller's Circle",
       "Barracks",
       "Library",
       "Arena",

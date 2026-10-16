@@ -98,6 +98,12 @@ public class WarcraftSim {
                 if (c.isBarbarian()) barb.merge(u.getName(), 1, Integer::sum);
             }
             if (!gpl.isEmpty()) System.out.println("GP " + c.getCivName() + ": " + gpl);
+            java.util.TreeMap<String,Integer> uu = new java.util.TreeMap<>();
+            for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits()))
+                if (u.getBaseUnit().getUniqueTo() != null) uu.merge(u.getName(), 1, Integer::sum);
+            java.util.List<String> ub = new ArrayList<>();
+            for (com.unciv.logic.city.City city : c.getCities()) for (com.unciv.models.ruleset.Building b : gi.getRuleset().getBuildings().values()) if (b.getUniqueTo() != null && city.getCityConstructions().isBuilt(b.getName())) ub.add(b.getName());
+            if (!uu.isEmpty() || !ub.isEmpty()) System.out.println("UNIQUE " + c.getCivName() + ": units " + uu + " buildings " + new java.util.TreeSet<>(ub));
             if (c.isBarbarian()) System.out.println("BARBARIAN UNITS: " + barb);
         }
         System.out.println("EVENT SEEN: " + EVENTS);

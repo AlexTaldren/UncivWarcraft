@@ -4,6 +4,7 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 
 ## Files
 - `wc_renames.py` — every Warcraft rename (eras, techs, units, buildings, wonders, resources, natural wonders).
+- `race_units.py` — the unique units and buildings of the 13 non-Human races, their sprites (race sprite + props) and icons.
 - `wc_factions.py` — the races, leaders, abilities, city lists, city-states, religions, and the Human unique units/building.
 - `wc_names.py` — generic Great Person names (city-states); `wc_race_names.py` — each race's own Great Person names.
 - `wc_events.py` — the Warcraft random events and their triggers; `legion.py` — the Burning Legion's Felguard and Infernal (units and sprites).

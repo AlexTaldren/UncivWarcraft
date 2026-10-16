@@ -169,7 +169,15 @@ BUILDINGS = {
     "Theatre": "Beastiary",
     "Forge": "Blacksmith",
     "Harbor": "Shipyard",
-    "Seaport": "Port",
+    "Seaport": "Docks",
+    # v0.11: the remaining generic or real-world building names
+    "Monument": "Town Hall",                # the first tier of a Warcraft town hall, before Keep and Castle
+    "Aqueduct": "Waterworks",
+    "Museum": "Hall of Relics",
+    "Mint": "Coin Forge",
+    "Amphitheater": "Storyteller's Circle",
+    "Arsenal": "Siege Workshop",
+    "Garden": "Herb Garden",
     "Public School": "Mage Tower",
     "Military Academy": "Training Grounds",
     "Factory": "Foundry",
@@ -267,6 +275,14 @@ RESOURCES = {
     "Salt": "Deeprock Salt",
     "Jewelry": "Jeweled Trinkets",
     "Porcelain": "Jade Carvings",
+    # v0.11: Warcraft goods for the common resources
+    "Cattle": "Kodo",                # herd beasts of Kalimdor
+    "Deer": "Plainstriders",         # the big flightless birds every hunter in the Barrens knows
+    "Gems": "Star Rubies",
+    "Spices": "Hot Spices",
+    "Pearls": "Black Pearls",
+    "Crab": "Crawlers",
+    "Copper": "Copper Ore",
 }
 
 IMPROVEMENTS = {
@@ -338,6 +354,30 @@ BELIEFS = {
     "Just War": "Holy Crusade",
     "Messiah": "Chosen Champion",
     "Religious Texts": "Sacred Tomes",
+    # v0.11: the remaining generic beliefs
+    "Dance of the Aurora": "Lights of Northrend",
+    "Religious Settlements": "Pilgrim Villages",
+    "Stone Circles": "Druid Circles",
+    "Asceticism": "Path of Discipline",
+    "Cathedrals": "Cathedrals of Faith",
+    "Divine inspiration": "Inspiration of the Titans",
+    "Holy Warriors": "Champions of the Faith",
+    "Monasteries": "Cloisters",
+    "Pagodas": "Shrines of the Celestials",
+    "Religious Art": "Sacred Murals",
+    "Religious Center": "Seat of the Faith",
+    "Religious Community": "Brotherhood of the Faithful",
+    "Ceremonial Burial": "Rites of the Fallen",
+    "Initiation Rites": "Rites of Passage",
+    "Peace Loving": "Ways of Harmony",
+    "Pilgrimage": "Pilgrims' Road",
+    "Tithe": "Tithes of the Faithful",
+    "Defender of the Faith": "Wardens of the Faith",
+    "Holy Order": "Sacred Order",
+    "Itinerant Preachers": "Wandering Prophets",
+    "Missionary Zeal": "Zeal of the Crusade",
+    "Religious Unity": "One Faith, Many Peoples",
+    "Reliquary": "Relic Vaults",
 }
 
 # Promotions: base name -> new base name; levels (I, II, III) follow automatically.

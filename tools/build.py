@@ -12,7 +12,7 @@ import wc_names as NG
 import wc_terrain as WT
 import wc_lore as LORE
 import icons, race_sprites, human_sprites, tiles_art, citycenters, late_units
-import wc_events as WE, wc_text as TX, wc_lore_more as LM, wc_race_names as RN, legion
+import race_units as RU, wc_events as WE, wc_text as TX, wc_lore_more as LM, wc_race_names as RN, legion
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -174,6 +174,18 @@ bld = {b["name"]: b for b in files["Buildings"]}
 for base, ov in F.HUMAN_BUILDINGS:
     files["Buildings"].append(apply_overrides(copy.deepcopy(bld[base]) if base else {}, ov))
 
+# v0.11: two unique units and one unique building for each of the other 13 races
+units = {u["name"]: u for u in files["Units"]}
+for race, base, ov in RU.UNITS:
+    ov = dict(ov, replaces=base, uniqueTo=race)
+    files["Units"].append(apply_overrides(copy.deepcopy(units[base]), ov))
+bld = {b["name"]: b for b in files["Buildings"]}
+for race, base, ov in RU.BUILDINGS:
+    ov = dict(ov, replaces=base, uniqueTo=race)
+    b = apply_overrides(copy.deepcopy(bld[base]), ov)
+    b.pop("quote", None)
+    files["Buildings"].append(b)
+
 # Human-only Great Person name lists
 for group, names in NG.HUMAN_GROUPS.items():
     files["UnitNameGroups"].append({"name": group, "unitNames": names})
@@ -212,11 +224,10 @@ for n in F.NATIONS:
 
 minors = []
 for name, cstype, outer, inner in F.CITY_STATES:
+    war, attacked, defeated, intro = TX.CS_DIALOGUE[name]
     minors.append({
         "name": name, "adjective": [name], "cityStateType": cstype,
-        "declaringWar": "You leave us no choice. To arms!",
-        "attacked": "This insult will not be forgotten.",
-        "defeated": "Our walls have fallen...",
+        "declaringWar": war, "attacked": attacked, "defeated": defeated, "introduction": intro,
         "outerColor": outer, "innerColor": inner, "cities": [name]})
 
 barb = [n for n in files["Nations"] if n["name"] == "Barbarians"]
@@ -244,7 +255,7 @@ print("lore missing:", missing)
 units = {u["name"]: u for u in files["Units"]}
 for name, base, stats in legion.UNITS:
     u = copy.deepcopy(units[base])
-    for k in ("upgradesTo", "obsoleteTech", "replaces", "uniqueTo", "promotions", "civilopediaText"):
+    for k in ("upgradesTo", "obsoleteTech", "replaces", "uniqueTo", "promotions", "civilopediaText", "requiredResource"):
         u.pop(k, None)
     u.update(stats)
     u["name"] = name
@@ -417,6 +428,8 @@ print("human sprites:", n)
 # Barbarian raiders: murlocs, gnolls and the Defias Brotherhood ("<Unit>-Barbarians")
 n = race_sprites.write_barbarians(_lu, os.path.join(OUT, "Images.WarcraftMap"), R.ALL)
 print("barbarian sprites:", n)
+n = RU.write_all(_lu, os.path.join(OUT, "Images.WarcraftMap"))
+print("race unique-unit sprites:", n)
 for name, fn in legion.SPRITES.items():
     for suf, im in zip(("", "-1", "-2"), fn()):
         path = os.path.join(OUT, "Images.WarcraftMap", late_units.P, name + suf + ".png")

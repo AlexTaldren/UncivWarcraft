@@ -93,7 +93,7 @@
     "uniques": [
       "[+30]% weight to [Archery] for AI decisions",
       "[+25]% weight to [Temple] for AI decisions",
-      "[+20]% weight to [Amphitheater] for AI decisions"
+      "[+20]% weight to [Storyteller's Circle] for AI decisions"
     ]
   },
   {
@@ -246,7 +246,7 @@
       "Free Peoples": 3
     },
     "uniques": [
-      "[+30]% weight to [Amphitheater] for AI decisions",
+      "[+30]% weight to [Storyteller's Circle] for AI decisions",
       "[+30]% weight to [Arcane Sanctum] for AI decisions"
     ]
   },
@@ -306,7 +306,7 @@
       "Unity": 6
     },
     "uniques": [
-      "[+30]% weight to [Garden] for AI decisions",
+      "[+30]% weight to [Herb Garden] for AI decisions",
       "[+25]% weight to [Granary] for AI decisions",
       "[-30]% weight to [Siege] for AI decisions"
     ]

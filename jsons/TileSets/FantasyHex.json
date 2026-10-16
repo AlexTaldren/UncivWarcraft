@@ -12,6 +12,12 @@
       "Rugged Leather",
       "HillForest"
     ],
+    "Hill+Forest+Plainstriders": [
+      "Grassland",
+      "Hill",
+      "Plainstriders",
+      "HillForest"
+    ],
     "Tundra+Arcane Academy": [
       "Tundra",
       "Arcane Academy-Snow"
@@ -48,6 +54,11 @@
       "Arcane Crystals",
       "GrasslandForest"
     ],
+    "Grassland+Forest+Plainstriders": [
+      "Grassland",
+      "Plainstriders",
+      "GrasslandForest"
+    ],
     "Grassland+Forest+Rugged Leather": [
       "Grassland",
       "Rugged Leather",
@@ -82,6 +93,12 @@
       "Rugged Leather",
       "Forest"
     ],
+    "Grassland+Hill+Forest+Plainstriders": [
+      "Grassland",
+      "Hill",
+      "Plainstriders",
+      "Forest"
+    ],
     "Grassland+Hill+Forest+Glowcap": [
       "Grassland",
       "Hill",
@@ -106,6 +123,11 @@
     "Plains+Forest+Arcane Crystals": [
       "Plains",
       "Arcane Crystals",
+      "PlainsForest"
+    ],
+    "Plains+Forest+Plainstriders": [
+      "Plains",
+      "Plainstriders",
       "PlainsForest"
     ],
     "Plains+Forest+Rugged Leather": [
@@ -142,6 +164,12 @@
       "Rugged Leather",
       "Forest"
     ],
+    "Plains+Hill+Forest+Plainstriders": [
+      "Plains",
+      "Hill",
+      "Plainstriders",
+      "Forest"
+    ],
     "Plains+Hill+Forest+Glowcap": [
       "Plains",
       "Hill",
@@ -166,6 +194,11 @@
     "Tundra+Forest+Arcane Crystals": [
       "Tundra",
       "Arcane Crystals",
+      "TundraForest"
+    ],
+    "Tundra+Forest+Plainstriders": [
+      "Tundra",
+      "Plainstriders",
       "TundraForest"
     ],
     "Tundra+Forest+Rugged Leather": [
@@ -196,6 +229,17 @@
       "Hill",
       "Rugged Leather",
       "TundraForest"
+    ],
+    "Tundra+Hill+Forest+Plainstriders": [
+      "Tundra",
+      "Hill",
+      "Plainstriders",
+      "TundraForest"
+    ],
+    "Grassland+Kodo+Ancient ruins": [
+      "Grassland",
+      "Ancient ruins",
+      "Kodo"
     ],
     "Coast+Azerite+Azerite Drill": [
       "Coast",

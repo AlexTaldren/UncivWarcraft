@@ -180,6 +180,82 @@
       "Rugged Leather+Camp",
       "ForestPHLow"
     ],
+    "Tundra+Forest+Plainstriders": [
+      "Tundra",
+      "ForestTUp",
+      "Plainstriders",
+      "ForestTLow"
+    ],
+    "Tundra+Hill+Forest+Plainstriders": [
+      "Tundra+Hill",
+      "ForestTUp",
+      "Plainstriders",
+      "ForestTLow"
+    ],
+    "Grassland+Forest+Plainstriders": [
+      "Grassland",
+      "ForestGUp",
+      "Plainstriders",
+      "ForestGLow"
+    ],
+    "Grassland+Hill+Forest+Plainstriders": [
+      "Grassland+Hill",
+      "ForestGHUp",
+      "Plainstriders",
+      "ForestGHLow"
+    ],
+    "Plains+Forest+Plainstriders": [
+      "Plains",
+      "ForestPUp",
+      "Plainstriders",
+      "ForestPLow"
+    ],
+    "Plains+Hill+Forest+Plainstriders": [
+      "Plains+Hill",
+      "ForestPHUp",
+      "Plainstriders",
+      "ForestPHLow"
+    ],
+    "Tundra+Forest+Plainstriders+Camp": [
+      "Tundra",
+      "ForestTUp",
+      "Plainstriders+CampT",
+      "ForestTLow"
+    ],
+    "Tundra+Hill+Forest+Plainstriders+Camp": [
+      "Tundra+Hill",
+      "ForestTUp",
+      "Plainstriders+CampT",
+      "ForestTLow"
+    ],
+    "Grassland+Forest+Plainstriders+Camp": [
+      "Grassland",
+      "ForestGUp",
+      "Plainstriders+Camp",
+      "ForestGLow"
+    ],
+    "Grassland+Hill+Forest+Plainstriders+Camp": [
+      "Grassland+Hill",
+      "ForestGHUp",
+      "Plainstriders+Camp",
+      "ForestGHLow"
+    ],
+    "Plains+Forest+Plainstriders+Camp": [
+      "Plains",
+      "ForestPUp",
+      "Plainstriders+Camp",
+      "ForestPLow"
+    ],
+    "Plains+Hill+Forest+Plainstriders+Camp": [
+      "Plains+Hill",
+      "ForestPHUp",
+      "Plainstriders+Camp",
+      "ForestPHLow"
+    ],
+    "Tundra+Plainstriders+Camp": [
+      "Tundra",
+      "Plainstriders+CampT"
+    ],
     "Tundra+Forest+Elementium": [
       "Tundra",
       "Elementium",
@@ -254,6 +330,76 @@
       "Grassland",
       "Thorium",
       "Marsh"
+    ],
+    "Tundra+Forest+Copper Ore": [
+      "Tundra",
+      "Copper Ore",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Copper Ore": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "ForestT"
+    ],
+    "Grassland+Forest+Copper Ore": [
+      "Grassland",
+      "Copper Ore",
+      "ForestG"
+    ],
+    "Grassland+Jungle+Copper Ore": [
+      "Grassland",
+      "Copper Ore",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Copper Ore": [
+      "Grassland+Hill",
+      "Copper Ore",
+      "ForestGH"
+    ],
+    "Plains+Forest+Copper Ore": [
+      "Plains",
+      "Copper Ore",
+      "ForestP"
+    ],
+    "Plains+Jungle+Copper Ore": [
+      "Plains",
+      "Copper Ore",
+      "JungleP"
+    ],
+    "Tundra+Forest+Star Rubies": [
+      "Tundra",
+      "Star Rubies",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Star Rubies": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "ForestT"
+    ],
+    "Grassland+Forest+Star Rubies": [
+      "Grassland",
+      "Star Rubies",
+      "ForestG"
+    ],
+    "Grassland+Jungle+Star Rubies": [
+      "Grassland",
+      "Star Rubies",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Star Rubies": [
+      "Grassland+Hill",
+      "Star Rubies",
+      "ForestGH"
+    ],
+    "Plains+Forest+Star Rubies": [
+      "Plains",
+      "Star Rubies",
+      "ForestP"
+    ],
+    "Plains+Jungle+Star Rubies": [
+      "Plains",
+      "Star Rubies",
+      "JungleP"
     ],
     "Tundra+Forest+Deeprock Salt": [
       "Tundra",
@@ -532,6 +678,59 @@
       "Mageweave",
       "ForestPH"
     ],
+    "Tundra+Forest+Hot Spices": [
+      "Tundra",
+      "ForestTUp",
+      "Hot Spices",
+      "ForestTLow"
+    ],
+    "Tundra+Hill+Forest+Hot Spices": [
+      "Tundra+Hill",
+      "ForestTUp",
+      "Hot Spices",
+      "ForestTLow"
+    ],
+    "Grassland+Forest+Hot Spices": [
+      "Grassland",
+      "ForestGUp",
+      "Hot Spices",
+      "ForestGLow"
+    ],
+    "Grassland+Jungle+Hot Spices": [
+      "Grassland",
+      "JungleGUp",
+      "Hot Spices",
+      "JungleGLow"
+    ],
+    "Grassland+Hill+Forest+Hot Spices": [
+      "Grassland+Hill",
+      "ForestGHUp",
+      "Hot Spices",
+      "ForestGHLow"
+    ],
+    "Plains+Forest+Hot Spices": [
+      "Plains",
+      "ForestPUp",
+      "Hot Spices",
+      "ForestPLow"
+    ],
+    "Plains+Jungle+Hot Spices": [
+      "Plains",
+      "JunglePUp",
+      "Hot Spices",
+      "JunglePLow"
+    ],
+    "Plains+Hill+Forest+Hot Spices": [
+      "Plains+Hill",
+      "ForestPHUp",
+      "Hot Spices",
+      "ForestPHLow"
+    ],
+    "Grassland+Plainstriders+Farm": [
+      "Grassland",
+      "FarmG",
+      "Plainstriders"
+    ],
     "Grassland+Azerite+Farm": [
       "Grassland",
       "Azerite",
@@ -557,6 +756,11 @@
       "Truesilver",
       "FarmG"
     ],
+    "Grassland+Copper Ore+Farm": [
+      "Grassland",
+      "Copper Ore",
+      "FarmG"
+    ],
     "Grassland+Deeprock Salt+Farm": [
       "Grassland",
       "Deeprock Salt",
@@ -572,10 +776,20 @@
       "FarmG",
       "Moonglow Ink"
     ],
+    "Grassland+Star Rubies+Farm": [
+      "Grassland",
+      "Star Rubies",
+      "FarmG"
+    ],
     "Grassland+Mageweave+Farm": [
       "Grassland",
       "FarmG",
       "Mageweave"
+    ],
+    "Grassland+Hot Spices+Farm": [
+      "Grassland",
+      "FarmG",
+      "Hot Spices"
     ],
     "Grassland+Sunfruit+Farm": [
       "Grassland",
@@ -607,6 +821,16 @@
       "FarmG",
       "Ale"
     ],
+    "Grassland+Kodo+Farm": [
+      "Grassland",
+      "FarmG",
+      "Kodo"
+    ],
+    "Grassland+Hill+Plainstriders+Farm": [
+      "Grassland+Hill",
+      "FarmGH",
+      "Plainstriders"
+    ],
     "Grassland+Hill+Azerite+Farm": [
       "Grassland+Hill",
       "Azerite",
@@ -632,6 +856,11 @@
       "Truesilver",
       "FarmGH"
     ],
+    "Grassland+Hill+Copper Ore+Farm": [
+      "Grassland+Hill",
+      "Copper Ore",
+      "FarmGH"
+    ],
     "Grassland+Hill+Deeprock Salt+Farm": [
       "Grassland+Hill",
       "Deeprock Salt",
@@ -647,10 +876,20 @@
       "FarmGH",
       "Moonglow Ink"
     ],
+    "Grassland+Hill+Star Rubies+Farm": [
+      "Grassland+Hill",
+      "Star Rubies",
+      "FarmGH"
+    ],
     "Grassland+Hill+Mageweave+Farm": [
       "Grassland+Hill",
       "FarmGH",
       "Mageweave"
+    ],
+    "Grassland+Hill+Hot Spices+Farm": [
+      "Grassland+Hill",
+      "FarmGH",
+      "Hot Spices"
     ],
     "Grassland+Hill+Sunfruit+Farm": [
       "Grassland+Hill",
@@ -661,6 +900,11 @@
       "Grassland+Hill",
       "FarmGH",
       "Glowcap"
+    ],
+    "Plains+Plainstriders+Farm": [
+      "Plains",
+      "FarmP",
+      "Plainstriders"
     ],
     "Plains+Azerite+Farm": [
       "Plains",
@@ -687,6 +931,11 @@
       "Truesilver",
       "FarmP"
     ],
+    "Plains+Copper Ore+Farm": [
+      "Plains",
+      "Copper Ore",
+      "FarmP"
+    ],
     "Plains+Deeprock Salt+Farm": [
       "Plains",
       "Deeprock Salt",
@@ -702,10 +951,20 @@
       "FarmP",
       "Moonglow Ink"
     ],
+    "Plains+Star Rubies+Farm": [
+      "Plains",
+      "Star Rubies",
+      "FarmP"
+    ],
     "Plains+Mageweave+Farm": [
       "Plains",
       "FarmP",
       "Mageweave"
+    ],
+    "Plains+Hot Spices+Farm": [
+      "Plains",
+      "FarmP",
+      "Hot Spices"
     ],
     "Plains+Sunfruit+Farm": [
       "Plains",
@@ -732,6 +991,11 @@
       "FarmP",
       "Mammoth Ivory"
     ],
+    "Plains+Hill+Plainstriders+Farm": [
+      "Plains+Hill",
+      "FarmPH",
+      "Plainstriders"
+    ],
     "Plains+Hill+Azerite+Farm": [
       "Plains+Hill",
       "Azerite",
@@ -757,6 +1021,11 @@
       "Truesilver",
       "FarmPH"
     ],
+    "Plains+Hill+Copper Ore+Farm": [
+      "Plains+Hill",
+      "Copper Ore",
+      "FarmPH"
+    ],
     "Plains+Hill+Deeprock Salt+Farm": [
       "Plains+Hill",
       "Deeprock Salt",
@@ -772,10 +1041,20 @@
       "FarmPH",
       "Moonglow Ink"
     ],
+    "Plains+Hill+Star Rubies+Farm": [
+      "Plains+Hill",
+      "Star Rubies",
+      "FarmPH"
+    ],
     "Plains+Hill+Mageweave+Farm": [
       "Plains+Hill",
       "FarmPH",
       "Mageweave"
+    ],
+    "Plains+Hill+Hot Spices+Farm": [
+      "Plains+Hill",
+      "FarmPH",
+      "Hot Spices"
     ],
     "Plains+Hill+Sunfruit+Farm": [
       "Plains+Hill",
@@ -822,9 +1101,19 @@
       "Truesilver",
       "FarmDH"
     ],
+    "Desert+Hill+Copper Ore+Farm": [
+      "Desert+Hill",
+      "Copper Ore",
+      "FarmDH"
+    ],
     "Desert+Hill+Thorium+Farm": [
       "Desert+Hill",
       "Thorium",
+      "FarmDH"
+    ],
+    "Desert+Hill+Star Rubies+Farm": [
+      "Desert+Hill",
+      "Star Rubies",
       "FarmDH"
     ],
     "Desert+Flood plains+Peacebloom+Farm": [
@@ -851,6 +1140,11 @@
       "FarmP",
       "Sunfruit"
     ],
+    "Tundra+Plainstriders+Farm": [
+      "Tundra",
+      "FarmT",
+      "Plainstriders"
+    ],
     "Tundra+Azerite+Farm": [
       "Tundra",
       "Azerite",
@@ -876,6 +1170,11 @@
       "Truesilver",
       "FarmT"
     ],
+    "Tundra+Copper Ore+Farm": [
+      "Tundra",
+      "Copper Ore",
+      "FarmT"
+    ],
     "Tundra+Deeprock Salt+Farm": [
       "Tundra",
       "Deeprock Salt",
@@ -891,10 +1190,20 @@
       "FarmT",
       "Moonglow Ink"
     ],
+    "Tundra+Star Rubies+Farm": [
+      "Tundra",
+      "Star Rubies",
+      "FarmT"
+    ],
     "Tundra+Mageweave+Farm": [
       "Tundra",
       "FarmT",
       "Mageweave"
+    ],
+    "Tundra+Hot Spices+Farm": [
+      "Tundra",
+      "FarmT",
+      "Hot Spices"
     ],
     "Tundra+Sunfruit+Farm": [
       "Tundra",
@@ -905,6 +1214,11 @@
       "Tundra",
       "FarmT",
       "Glowcap"
+    ],
+    "Tundra+Hill+Plainstriders+Farm": [
+      "Tundra+Hill",
+      "FarmTH",
+      "Plainstriders"
     ],
     "Tundra+Hill+Azerite+Farm": [
       "Tundra+Hill",
@@ -931,6 +1245,11 @@
       "Truesilver",
       "FarmTH"
     ],
+    "Tundra+Hill+Copper Ore+Farm": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "FarmTH"
+    ],
     "Tundra+Hill+Deeprock Salt+Farm": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -946,10 +1265,20 @@
       "FarmTH",
       "Moonglow Ink"
     ],
+    "Tundra+Hill+Star Rubies+Farm": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "FarmTH"
+    ],
     "Tundra+Hill+Mageweave+Farm": [
       "Tundra+Hill",
       "FarmTH",
       "Mageweave"
+    ],
+    "Tundra+Hill+Hot Spices+Farm": [
+      "Tundra+Hill",
+      "FarmTH",
+      "Hot Spices"
     ],
     "Tundra+Hill+Sunfruit+Farm": [
       "Tundra+Hill",
@@ -1007,9 +1336,9 @@
       "Tundra",
       "AcademyT"
     ],
-    "Tundra+Deer+Arcane Academy": [
+    "Tundra+Plainstriders+Arcane Academy": [
       "Tundra",
-      "Deer",
+      "Plainstriders",
       "AcademyT"
     ],
     "Tundra+Stone+Arcane Academy": [
@@ -1047,9 +1376,9 @@
       "Truesilver",
       "AcademyT"
     ],
-    "Tundra+Copper+Arcane Academy": [
+    "Tundra+Copper Ore+Arcane Academy": [
       "Tundra",
-      "Copper",
+      "Copper Ore",
       "AcademyT"
     ],
     "Tundra+Deeprock Salt+Arcane Academy": [
@@ -1067,9 +1396,9 @@
       "Moonglow Ink",
       "AcademyT"
     ],
-    "Tundra+Gems+Arcane Academy": [
+    "Tundra+Star Rubies+Arcane Academy": [
       "Tundra",
-      "Gems",
+      "Star Rubies",
       "AcademyT"
     ],
     "Tundra+Gold Ore+Arcane Academy": [
@@ -1082,9 +1411,9 @@
       "Mageweave",
       "AcademyT"
     ],
-    "Tundra+Spices+Arcane Academy": [
+    "Tundra+Hot Spices+Arcane Academy": [
       "Tundra",
-      "Spices",
+      "Hot Spices",
       "AcademyT"
     ],
     "Tundra+Sunfruit+Arcane Academy": [
@@ -1101,9 +1430,9 @@
       "Tundra+Hill",
       "AcademyT"
     ],
-    "Tundra+Hill+Deer+Arcane Academy": [
+    "Tundra+Hill+Plainstriders+Arcane Academy": [
       "Tundra+Hill",
-      "Deer",
+      "Plainstriders",
       "AcademyT"
     ],
     "Tundra+Hill+Stone+Arcane Academy": [
@@ -1146,9 +1475,9 @@
       "Truesilver",
       "AcademyT"
     ],
-    "Tundra+Hill+Copper+Arcane Academy": [
+    "Tundra+Hill+Copper Ore+Arcane Academy": [
       "Tundra+Hill",
-      "Copper",
+      "Copper Ore",
       "AcademyT"
     ],
     "Tundra+Hill+Deeprock Salt+Arcane Academy": [
@@ -1166,9 +1495,9 @@
       "Moonglow Ink",
       "AcademyT"
     ],
-    "Tundra+Hill+Gems+Arcane Academy": [
+    "Tundra+Hill+Star Rubies+Arcane Academy": [
       "Tundra+Hill",
-      "Gems",
+      "Star Rubies",
       "AcademyT"
     ],
     "Tundra+Hill+Gold Ore+Arcane Academy": [
@@ -1181,9 +1510,9 @@
       "Mageweave",
       "AcademyT"
     ],
-    "Tundra+Hill+Spices+Arcane Academy": [
+    "Tundra+Hill+Hot Spices+Arcane Academy": [
       "Tundra+Hill",
-      "Spices",
+      "Hot Spices",
       "AcademyT"
     ],
     "Tundra+Hill+Sunfruit+Arcane Academy": [
@@ -1258,9 +1587,9 @@
       "Tundra",
       "CitadelT"
     ],
-    "Tundra+Deer+Bastion": [
+    "Tundra+Plainstriders+Bastion": [
       "Tundra",
-      "Deer",
+      "Plainstriders",
       "CitadelT"
     ],
     "Tundra+Stone+Bastion": [
@@ -1298,9 +1627,9 @@
       "Truesilver",
       "CitadelT"
     ],
-    "Tundra+Copper+Bastion": [
+    "Tundra+Copper Ore+Bastion": [
       "Tundra",
-      "Copper",
+      "Copper Ore",
       "CitadelT"
     ],
     "Tundra+Deeprock Salt+Bastion": [
@@ -1318,9 +1647,9 @@
       "Moonglow Ink",
       "CitadelT"
     ],
-    "Tundra+Gems+Bastion": [
+    "Tundra+Star Rubies+Bastion": [
       "Tundra",
-      "Gems",
+      "Star Rubies",
       "CitadelT"
     ],
     "Tundra+Gold Ore+Bastion": [
@@ -1333,9 +1662,9 @@
       "Mageweave",
       "CitadelT"
     ],
-    "Tundra+Spices+Bastion": [
+    "Tundra+Hot Spices+Bastion": [
       "Tundra",
-      "Spices",
+      "Hot Spices",
       "CitadelT"
     ],
     "Tundra+Sunfruit+Bastion": [
@@ -1352,9 +1681,9 @@
       "Tundra+Hill",
       "CitadelT"
     ],
-    "Tundra+Hill+Deer+Bastion": [
+    "Tundra+Hill+Plainstriders+Bastion": [
       "Tundra+Hill",
-      "Deer",
+      "Plainstriders",
       "CitadelT"
     ],
     "Tundra+Hill+Stone+Bastion": [
@@ -1397,9 +1726,9 @@
       "Truesilver",
       "CitadelT"
     ],
-    "Tundra+Hill+Copper+Bastion": [
+    "Tundra+Hill+Copper Ore+Bastion": [
       "Tundra+Hill",
-      "Copper",
+      "Copper Ore",
       "CitadelT"
     ],
     "Tundra+Hill+Deeprock Salt+Bastion": [
@@ -1417,9 +1746,9 @@
       "Moonglow Ink",
       "CitadelT"
     ],
-    "Tundra+Hill+Gems+Bastion": [
+    "Tundra+Hill+Star Rubies+Bastion": [
       "Tundra+Hill",
-      "Gems",
+      "Star Rubies",
       "CitadelT"
     ],
     "Tundra+Hill+Gold Ore+Bastion": [
@@ -1432,9 +1761,9 @@
       "Mageweave",
       "CitadelT"
     ],
-    "Tundra+Hill+Spices+Bastion": [
+    "Tundra+Hill+Hot Spices+Bastion": [
       "Tundra+Hill",
-      "Spices",
+      "Hot Spices",
       "CitadelT"
     ],
     "Tundra+Hill+Sunfruit+Bastion": [
@@ -1509,9 +1838,9 @@
       "Tundra",
       "Customs houseT"
     ],
-    "Tundra+Deer+Trade Company": [
+    "Tundra+Plainstriders+Trade Company": [
       "Tundra",
-      "Deer",
+      "Plainstriders",
       "Customs houseT"
     ],
     "Tundra+Stone+Trade Company": [
@@ -1549,9 +1878,9 @@
       "Truesilver",
       "Customs houseT"
     ],
-    "Tundra+Copper+Trade Company": [
+    "Tundra+Copper Ore+Trade Company": [
       "Tundra",
-      "Copper",
+      "Copper Ore",
       "Customs houseT"
     ],
     "Tundra+Deeprock Salt+Trade Company": [
@@ -1569,9 +1898,9 @@
       "Moonglow Ink",
       "Customs houseT"
     ],
-    "Tundra+Gems+Trade Company": [
+    "Tundra+Star Rubies+Trade Company": [
       "Tundra",
-      "Gems",
+      "Star Rubies",
       "Customs houseT"
     ],
     "Tundra+Gold Ore+Trade Company": [
@@ -1584,9 +1913,9 @@
       "Mageweave",
       "Customs houseT"
     ],
-    "Tundra+Spices+Trade Company": [
+    "Tundra+Hot Spices+Trade Company": [
       "Tundra",
-      "Spices",
+      "Hot Spices",
       "Customs houseT"
     ],
     "Tundra+Sunfruit+Trade Company": [
@@ -1603,9 +1932,9 @@
       "Tundra+Hill",
       "Customs houseT"
     ],
-    "Tundra+Hill+Deer+Trade Company": [
+    "Tundra+Hill+Plainstriders+Trade Company": [
       "Tundra+Hill",
-      "Deer",
+      "Plainstriders",
       "Customs houseT"
     ],
     "Tundra+Hill+Stone+Trade Company": [
@@ -1643,9 +1972,9 @@
       "Truesilver",
       "Customs houseT"
     ],
-    "Tundra+Hill+Copper+Trade Company": [
+    "Tundra+Hill+Copper Ore+Trade Company": [
       "Tundra+Hill",
-      "Copper",
+      "Copper Ore",
       "Customs houseT"
     ],
     "Tundra+Hill+Deeprock Salt+Trade Company": [
@@ -1663,9 +1992,9 @@
       "Moonglow Ink",
       "Customs houseT"
     ],
-    "Tundra+Hill+Gems+Trade Company": [
+    "Tundra+Hill+Star Rubies+Trade Company": [
       "Tundra+Hill",
-      "Gems",
+      "Star Rubies",
       "Customs houseT"
     ],
     "Tundra+Hill+Gold Ore+Trade Company": [
@@ -1678,9 +2007,9 @@
       "Mageweave",
       "Customs houseT"
     ],
-    "Tundra+Hill+Spices+Trade Company": [
+    "Tundra+Hill+Hot Spices+Trade Company": [
       "Tundra+Hill",
-      "Spices",
+      "Hot Spices",
       "Customs houseT"
     ],
     "Tundra+Hill+Sunfruit+Trade Company": [
@@ -1755,9 +2084,9 @@
       "Tundra",
       "Holy siteT"
     ],
-    "Tundra+Deer+Sacred Grounds": [
+    "Tundra+Plainstriders+Sacred Grounds": [
       "Tundra",
-      "Deer",
+      "Plainstriders",
       "Holy siteT"
     ],
     "Tundra+Stone+Sacred Grounds": [
@@ -1795,9 +2124,9 @@
       "Truesilver",
       "Holy siteT"
     ],
-    "Tundra+Copper+Sacred Grounds": [
+    "Tundra+Copper Ore+Sacred Grounds": [
       "Tundra",
-      "Copper",
+      "Copper Ore",
       "Holy siteT"
     ],
     "Tundra+Deeprock Salt+Sacred Grounds": [
@@ -1815,9 +2144,9 @@
       "Moonglow Ink",
       "Holy siteT"
     ],
-    "Tundra+Gems+Sacred Grounds": [
+    "Tundra+Star Rubies+Sacred Grounds": [
       "Tundra",
-      "Gems",
+      "Star Rubies",
       "Holy siteT"
     ],
     "Tundra+Gold Ore+Sacred Grounds": [
@@ -1830,9 +2159,9 @@
       "Mageweave",
       "Holy siteT"
     ],
-    "Tundra+Spices+Sacred Grounds": [
+    "Tundra+Hot Spices+Sacred Grounds": [
       "Tundra",
-      "Spices",
+      "Hot Spices",
       "Holy siteT"
     ],
     "Tundra+Sunfruit+Sacred Grounds": [
@@ -1849,9 +2178,9 @@
       "Tundra+Hill",
       "Holy siteT"
     ],
-    "Tundra+Hill+Deer+Sacred Grounds": [
+    "Tundra+Hill+Plainstriders+Sacred Grounds": [
       "Tundra+Hill",
-      "Deer",
+      "Plainstriders",
       "Holy siteT"
     ],
     "Tundra+Hill+Stone+Sacred Grounds": [
@@ -1894,9 +2223,9 @@
       "Truesilver",
       "Holy siteT"
     ],
-    "Tundra+Hill+Copper+Sacred Grounds": [
+    "Tundra+Hill+Copper Ore+Sacred Grounds": [
       "Tundra+Hill",
-      "Copper",
+      "Copper Ore",
       "Holy siteT"
     ],
     "Tundra+Hill+Deeprock Salt+Sacred Grounds": [
@@ -1914,9 +2243,9 @@
       "Moonglow Ink",
       "Holy siteT"
     ],
-    "Tundra+Hill+Gems+Sacred Grounds": [
+    "Tundra+Hill+Star Rubies+Sacred Grounds": [
       "Tundra+Hill",
-      "Gems",
+      "Star Rubies",
       "Holy siteT"
     ],
     "Tundra+Hill+Gold Ore+Sacred Grounds": [
@@ -1929,9 +2258,9 @@
       "Mageweave",
       "Holy siteT"
     ],
-    "Tundra+Hill+Spices+Sacred Grounds": [
+    "Tundra+Hill+Hot Spices+Sacred Grounds": [
       "Tundra+Hill",
-      "Spices",
+      "Hot Spices",
       "Holy siteT"
     ],
     "Tundra+Hill+Sunfruit+Sacred Grounds": [
@@ -2006,9 +2335,9 @@
       "Tundra",
       "LandmarkT"
     ],
-    "Tundra+Deer+Hall of Heroes": [
+    "Tundra+Plainstriders+Hall of Heroes": [
       "Tundra",
-      "Deer",
+      "Plainstriders",
       "LandmarkT"
     ],
     "Tundra+Stone+Hall of Heroes": [
@@ -2046,9 +2375,9 @@
       "Truesilver",
       "LandmarkT"
     ],
-    "Tundra+Copper+Hall of Heroes": [
+    "Tundra+Copper Ore+Hall of Heroes": [
       "Tundra",
-      "Copper",
+      "Copper Ore",
       "LandmarkT"
     ],
     "Tundra+Deeprock Salt+Hall of Heroes": [
@@ -2066,9 +2395,9 @@
       "Moonglow Ink",
       "LandmarkT"
     ],
-    "Tundra+Gems+Hall of Heroes": [
+    "Tundra+Star Rubies+Hall of Heroes": [
       "Tundra",
-      "Gems",
+      "Star Rubies",
       "LandmarkT"
     ],
     "Tundra+Gold Ore+Hall of Heroes": [
@@ -2081,9 +2410,9 @@
       "Mageweave",
       "LandmarkT"
     ],
-    "Tundra+Spices+Hall of Heroes": [
+    "Tundra+Hot Spices+Hall of Heroes": [
       "Tundra",
-      "Spices",
+      "Hot Spices",
       "LandmarkT"
     ],
     "Tundra+Sunfruit+Hall of Heroes": [
@@ -2100,9 +2429,9 @@
       "Tundra+Hill",
       "LandmarkT"
     ],
-    "Tundra+Hill+Deer+Hall of Heroes": [
+    "Tundra+Hill+Plainstriders+Hall of Heroes": [
       "Tundra+Hill",
-      "Deer",
+      "Plainstriders",
       "LandmarkT"
     ],
     "Tundra+Hill+Stone+Hall of Heroes": [
@@ -2145,9 +2474,9 @@
       "Truesilver",
       "LandmarkT"
     ],
-    "Tundra+Hill+Copper+Hall of Heroes": [
+    "Tundra+Hill+Copper Ore+Hall of Heroes": [
       "Tundra+Hill",
-      "Copper",
+      "Copper Ore",
       "LandmarkT"
     ],
     "Tundra+Hill+Deeprock Salt+Hall of Heroes": [
@@ -2165,9 +2494,9 @@
       "Moonglow Ink",
       "LandmarkT"
     ],
-    "Tundra+Hill+Gems+Hall of Heroes": [
+    "Tundra+Hill+Star Rubies+Hall of Heroes": [
       "Tundra+Hill",
-      "Gems",
+      "Star Rubies",
       "LandmarkT"
     ],
     "Tundra+Hill+Gold Ore+Hall of Heroes": [
@@ -2180,9 +2509,9 @@
       "Mageweave",
       "LandmarkT"
     ],
-    "Tundra+Hill+Spices+Hall of Heroes": [
+    "Tundra+Hill+Hot Spices+Hall of Heroes": [
       "Tundra+Hill",
-      "Spices",
+      "Hot Spices",
       "LandmarkT"
     ],
     "Tundra+Hill+Sunfruit+Hall of Heroes": [
@@ -2257,9 +2586,9 @@
       "Tundra",
       "ManufactoryT"
     ],
-    "Tundra+Deer+Great Workshop": [
+    "Tundra+Plainstriders+Great Workshop": [
       "Tundra",
-      "Deer",
+      "Plainstriders",
       "ManufactoryT"
     ],
     "Tundra+Stone+Great Workshop": [
@@ -2297,9 +2626,9 @@
       "Truesilver",
       "ManufactoryT"
     ],
-    "Tundra+Copper+Great Workshop": [
+    "Tundra+Copper Ore+Great Workshop": [
       "Tundra",
-      "Copper",
+      "Copper Ore",
       "ManufactoryT"
     ],
     "Tundra+Deeprock Salt+Great Workshop": [
@@ -2317,9 +2646,9 @@
       "Moonglow Ink",
       "ManufactoryT"
     ],
-    "Tundra+Gems+Great Workshop": [
+    "Tundra+Star Rubies+Great Workshop": [
       "Tundra",
-      "Gems",
+      "Star Rubies",
       "ManufactoryT"
     ],
     "Tundra+Gold Ore+Great Workshop": [
@@ -2332,9 +2661,9 @@
       "Mageweave",
       "ManufactoryT"
     ],
-    "Tundra+Spices+Great Workshop": [
+    "Tundra+Hot Spices+Great Workshop": [
       "Tundra",
-      "Spices",
+      "Hot Spices",
       "ManufactoryT"
     ],
     "Tundra+Sunfruit+Great Workshop": [
@@ -2351,9 +2680,9 @@
       "Tundra+Hill",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Deer+Great Workshop": [
+    "Tundra+Hill+Plainstriders+Great Workshop": [
       "Tundra+Hill",
-      "Deer",
+      "Plainstriders",
       "ManufactoryT"
     ],
     "Tundra+Hill+Stone+Great Workshop": [
@@ -2396,9 +2725,9 @@
       "Truesilver",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Copper+Great Workshop": [
+    "Tundra+Hill+Copper Ore+Great Workshop": [
       "Tundra+Hill",
-      "Copper",
+      "Copper Ore",
       "ManufactoryT"
     ],
     "Tundra+Hill+Deeprock Salt+Great Workshop": [
@@ -2416,9 +2745,9 @@
       "Moonglow Ink",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Gems+Great Workshop": [
+    "Tundra+Hill+Star Rubies+Great Workshop": [
       "Tundra+Hill",
-      "Gems",
+      "Star Rubies",
       "ManufactoryT"
     ],
     "Tundra+Hill+Gold Ore+Great Workshop": [
@@ -2431,9 +2760,9 @@
       "Mageweave",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Spices+Great Workshop": [
+    "Tundra+Hill+Hot Spices+Great Workshop": [
       "Tundra+Hill",
-      "Spices",
+      "Hot Spices",
       "ManufactoryT"
     ],
     "Tundra+Hill+Sunfruit+Great Workshop": [
@@ -2504,6 +2833,11 @@
       "Snow+Hill",
       "ManufactoryT"
     ],
+    "Tundra+Plainstriders+Trading post": [
+      "Tundra",
+      "Plainstriders",
+      "Trading postT"
+    ],
     "Tundra+Azerite+Trading post": [
       "Tundra",
       "Azerite",
@@ -2529,6 +2863,11 @@
       "Truesilver",
       "Trading postT"
     ],
+    "Tundra+Copper Ore+Trading post": [
+      "Tundra",
+      "Copper Ore",
+      "Trading postT"
+    ],
     "Tundra+Deeprock Salt+Trading post": [
       "Tundra",
       "Deeprock Salt",
@@ -2544,9 +2883,19 @@
       "Moonglow Ink",
       "Trading postT"
     ],
+    "Tundra+Star Rubies+Trading post": [
+      "Tundra",
+      "Star Rubies",
+      "Trading postT"
+    ],
     "Tundra+Mageweave+Trading post": [
       "Tundra",
       "Mageweave",
+      "Trading postT"
+    ],
+    "Tundra+Hot Spices+Trading post": [
+      "Tundra",
+      "Hot Spices",
       "Trading postT"
     ],
     "Tundra+Sunfruit+Trading post": [
@@ -2557,6 +2906,11 @@
     "Tundra+Glowcap+Trading post": [
       "Tundra",
       "Glowcap",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Plainstriders+Trading post": [
+      "Tundra+Hill",
+      "Plainstriders",
       "Trading postT"
     ],
     "Tundra+Hill+Azerite+Trading post": [
@@ -2584,6 +2938,11 @@
       "Truesilver",
       "Trading postT"
     ],
+    "Tundra+Hill+Copper Ore+Trading post": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "Trading postT"
+    ],
     "Tundra+Hill+Deeprock Salt+Trading post": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -2599,9 +2958,19 @@
       "Moonglow Ink",
       "Trading postT"
     ],
+    "Tundra+Hill+Star Rubies+Trading post": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "Trading postT"
+    ],
     "Tundra+Hill+Mageweave+Trading post": [
       "Tundra+Hill",
       "Mageweave",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Hot Spices+Trading post": [
+      "Tundra+Hill",
+      "Hot Spices",
       "Trading postT"
     ],
     "Tundra+Hill+Sunfruit+Trading post": [
@@ -2612,6 +2981,12 @@
     "Tundra+Hill+Glowcap+Trading post": [
       "Tundra+Hill",
       "Glowcap",
+      "Trading postT"
+    ],
+    "Tundra+Plainstriders+Forest+Trading post": [
+      "Tundra",
+      "Plainstriders",
+      "ForestT",
       "Trading postT"
     ],
     "Tundra+Azerite+Forest+Trading post": [
@@ -2644,6 +3019,12 @@
       "ForestT",
       "Trading postT"
     ],
+    "Tundra+Copper Ore+Forest+Trading post": [
+      "Tundra",
+      "Copper Ore",
+      "ForestT",
+      "Trading postT"
+    ],
     "Tundra+Deeprock Salt+Forest+Trading post": [
       "Tundra",
       "Deeprock Salt",
@@ -2662,9 +3043,21 @@
       "ForestT",
       "Trading postT"
     ],
+    "Tundra+Star Rubies+Forest+Trading post": [
+      "Tundra",
+      "Star Rubies",
+      "ForestT",
+      "Trading postT"
+    ],
     "Tundra+Mageweave+Forest+Trading post": [
       "Tundra",
       "Mageweave",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Hot Spices+Forest+Trading post": [
+      "Tundra",
+      "Hot Spices",
       "ForestT",
       "Trading postT"
     ],
@@ -2678,6 +3071,12 @@
       "Tundra",
       "Glowcap",
       "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Plainstriders+Forest+Trading post": [
+      "Tundra+Hill",
+      "Plainstriders",
+      "ForestTH",
       "Trading postT"
     ],
     "Tundra+Hill+Azerite+Forest+Trading post": [
@@ -2710,6 +3109,12 @@
       "ForestTH",
       "Trading postT"
     ],
+    "Tundra+Hill+Copper Ore+Forest+Trading post": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "ForestTH",
+      "Trading postT"
+    ],
     "Tundra+Hill+Deeprock Salt+Forest+Trading post": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -2728,9 +3133,21 @@
       "ForestTH",
       "Trading postT"
     ],
+    "Tundra+Hill+Star Rubies+Forest+Trading post": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "ForestTH",
+      "Trading postT"
+    ],
     "Tundra+Hill+Mageweave+Forest+Trading post": [
       "Tundra+Hill",
       "Mageweave",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Hot Spices+Forest+Trading post": [
+      "Tundra+Hill",
+      "Hot Spices",
       "ForestTH",
       "Trading postT"
     ],
@@ -2745,6 +3162,12 @@
       "Glowcap",
       "ForestTH",
       "Trading postT"
+    ],
+    "Tundra+Plainstriders+Forest+Lumber mill": [
+      "Tundra",
+      "Plainstriders",
+      "ForestT",
+      "Lumber millT"
     ],
     "Tundra+Azerite+Forest+Lumber mill": [
       "Tundra",
@@ -2776,6 +3199,12 @@
       "ForestT",
       "Lumber millT"
     ],
+    "Tundra+Copper Ore+Forest+Lumber mill": [
+      "Tundra",
+      "Copper Ore",
+      "ForestT",
+      "Lumber millT"
+    ],
     "Tundra+Deeprock Salt+Forest+Lumber mill": [
       "Tundra",
       "Deeprock Salt",
@@ -2794,9 +3223,21 @@
       "ForestT",
       "Lumber millT"
     ],
+    "Tundra+Star Rubies+Forest+Lumber mill": [
+      "Tundra",
+      "Star Rubies",
+      "ForestT",
+      "Lumber millT"
+    ],
     "Tundra+Mageweave+Forest+Lumber mill": [
       "Tundra",
       "Mageweave",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Hot Spices+Forest+Lumber mill": [
+      "Tundra",
+      "Hot Spices",
       "ForestT",
       "Lumber millT"
     ],
@@ -2810,6 +3251,12 @@
       "Tundra",
       "Glowcap",
       "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Plainstriders+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Plainstriders",
+      "ForestTH",
       "Lumber millT"
     ],
     "Tundra+Hill+Azerite+Forest+Lumber mill": [
@@ -2842,6 +3289,12 @@
       "ForestTH",
       "Lumber millT"
     ],
+    "Tundra+Hill+Copper Ore+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "ForestTH",
+      "Lumber millT"
+    ],
     "Tundra+Hill+Deeprock Salt+Forest+Lumber mill": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -2860,9 +3313,21 @@
       "ForestTH",
       "Lumber millT"
     ],
+    "Tundra+Hill+Star Rubies+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "ForestTH",
+      "Lumber millT"
+    ],
     "Tundra+Hill+Mageweave+Forest+Lumber mill": [
       "Tundra+Hill",
       "Mageweave",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Hot Spices+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Hot Spices",
       "ForestTH",
       "Lumber millT"
     ],
@@ -2893,6 +3358,11 @@
       "Truesilver",
       "MineT"
     ],
+    "Tundra+Copper Ore+Mine": [
+      "Tundra",
+      "Copper Ore",
+      "MineT"
+    ],
     "Tundra+Deeprock Salt+Mine": [
       "Tundra",
       "Deeprock Salt",
@@ -2901,6 +3371,11 @@
     "Tundra+Thorium+Mine": [
       "Tundra",
       "Thorium",
+      "MineT"
+    ],
+    "Tundra+Star Rubies+Mine": [
+      "Tundra",
+      "Star Rubies",
       "MineT"
     ],
     "Tundra+Hill+Elementium+Mine": [
@@ -2918,6 +3393,11 @@
       "Truesilver",
       "MineT"
     ],
+    "Tundra+Hill+Copper Ore+Mine": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "MineT"
+    ],
     "Tundra+Hill+Deeprock Salt+Mine": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -2926,6 +3406,11 @@
     "Tundra+Hill+Thorium+Mine": [
       "Tundra+Hill",
       "Thorium",
+      "MineT"
+    ],
+    "Tundra+Hill+Star Rubies+Mine": [
+      "Tundra+Hill",
+      "Star Rubies",
       "MineT"
     ],
     "Snow+Elementium+Mine": [
@@ -2947,6 +3432,11 @@
       "Snow+Hill",
       "Arcane Crystals",
       "MineT"
+    ],
+    "Tundra+Plainstriders+Fort": [
+      "Tundra",
+      "Plainstriders",
+      "FortT"
     ],
     "Tundra+Azerite+Fort": [
       "Tundra",
@@ -2973,6 +3463,11 @@
       "Truesilver",
       "FortT"
     ],
+    "Tundra+Copper Ore+Fort": [
+      "Tundra",
+      "Copper Ore",
+      "FortT"
+    ],
     "Tundra+Deeprock Salt+Fort": [
       "Tundra",
       "Deeprock Salt",
@@ -2988,9 +3483,19 @@
       "Moonglow Ink",
       "FortT"
     ],
+    "Tundra+Star Rubies+Fort": [
+      "Tundra",
+      "Star Rubies",
+      "FortT"
+    ],
     "Tundra+Mageweave+Fort": [
       "Tundra",
       "Mageweave",
+      "FortT"
+    ],
+    "Tundra+Hot Spices+Fort": [
+      "Tundra",
+      "Hot Spices",
       "FortT"
     ],
     "Tundra+Sunfruit+Fort": [
@@ -3001,6 +3506,11 @@
     "Tundra+Glowcap+Fort": [
       "Tundra",
       "Glowcap",
+      "FortT"
+    ],
+    "Tundra+Hill+Plainstriders+Fort": [
+      "Tundra+Hill",
+      "Plainstriders",
       "FortT"
     ],
     "Tundra+Hill+Azerite+Fort": [
@@ -3028,6 +3538,11 @@
       "Truesilver",
       "FortT"
     ],
+    "Tundra+Hill+Copper Ore+Fort": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "FortT"
+    ],
     "Tundra+Hill+Deeprock Salt+Fort": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -3043,9 +3558,19 @@
       "Moonglow Ink",
       "FortT"
     ],
+    "Tundra+Hill+Star Rubies+Fort": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "FortT"
+    ],
     "Tundra+Hill+Mageweave+Fort": [
       "Tundra+Hill",
       "Mageweave",
+      "FortT"
+    ],
+    "Tundra+Hill+Hot Spices+Fort": [
+      "Tundra+Hill",
+      "Hot Spices",
       "FortT"
     ],
     "Tundra+Hill+Sunfruit+Fort": [
@@ -3088,6 +3613,11 @@
       "Arcane Crystals",
       "FortT"
     ],
+    "Tundra+Plainstriders+GI": [
+      "Tundra",
+      "Plainstriders",
+      "GIT"
+    ],
     "Tundra+Azerite+GI": [
       "Tundra",
       "Azerite",
@@ -3113,6 +3643,11 @@
       "Truesilver",
       "GIT"
     ],
+    "Tundra+Copper Ore+GI": [
+      "Tundra",
+      "Copper Ore",
+      "GIT"
+    ],
     "Tundra+Deeprock Salt+GI": [
       "Tundra",
       "Deeprock Salt",
@@ -3128,9 +3663,19 @@
       "Moonglow Ink",
       "GIT"
     ],
+    "Tundra+Star Rubies+GI": [
+      "Tundra",
+      "Star Rubies",
+      "GIT"
+    ],
     "Tundra+Mageweave+GI": [
       "Tundra",
       "Mageweave",
+      "GIT"
+    ],
+    "Tundra+Hot Spices+GI": [
+      "Tundra",
+      "Hot Spices",
       "GIT"
     ],
     "Tundra+Sunfruit+GI": [
@@ -3141,6 +3686,11 @@
     "Tundra+Glowcap+GI": [
       "Tundra",
       "Glowcap",
+      "GIT"
+    ],
+    "Tundra+Hill+Plainstriders+GI": [
+      "Tundra+Hill",
+      "Plainstriders",
       "GIT"
     ],
     "Tundra+Hill+Azerite+GI": [
@@ -3168,6 +3718,11 @@
       "Truesilver",
       "GIT"
     ],
+    "Tundra+Hill+Copper Ore+GI": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "GIT"
+    ],
     "Tundra+Hill+Deeprock Salt+GI": [
       "Tundra+Hill",
       "Deeprock Salt",
@@ -3183,9 +3738,19 @@
       "Moonglow Ink",
       "GIT"
     ],
+    "Tundra+Hill+Star Rubies+GI": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "GIT"
+    ],
     "Tundra+Hill+Mageweave+GI": [
       "Tundra+Hill",
       "Mageweave",
+      "GIT"
+    ],
+    "Tundra+Hill+Hot Spices+GI": [
+      "Tundra+Hill",
+      "Hot Spices",
       "GIT"
     ],
     "Tundra+Hill+Sunfruit+GI": [

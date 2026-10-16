@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cattle",
+    "name": "Kodo",
     "resourceType": "Bonus",
     "terrainsCanBeFoundOn": [
       "Grassland"
@@ -16,7 +16,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Herds of cattle grazing the meadows of Elwynn and the Arathi Highlands."
+        "text": "Herds of kodo, the huge, placid beasts of Kalimdor's plains, raised for meat, hide and labor."
       }
     ]
   },
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "name": "Deer",
+    "name": "Plainstriders",
     "resourceType": "Bonus",
     "terrainsCanBeFoundOn": [
       "Forest",
@@ -63,7 +63,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wild deer and stags of the forests, hunted for meat and hides."
+        "text": "Plainstriders, the big flightless birds of the Barrens and Mulgore, hunted for meat and feathers."
       }
     ]
   },
@@ -484,7 +484,7 @@
     ]
   },
   {
-    "name": "Gems",
+    "name": "Star Rubies",
     "resourceType": "Luxury",
     "terrainsCanBeFoundOn": [
       "Jungle",
@@ -504,7 +504,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Rubies, sapphires and emeralds, cut by jewelcrafters for crowns and enchantments."
+        "text": "Star rubies and other fine gems, cut by jewelcrafters for crowns and enchantments."
       }
     ]
   },
@@ -633,7 +633,7 @@
     ]
   },
   {
-    "name": "Spices",
+    "name": "Hot Spices",
     "resourceType": "Luxury",
     "terrainsCanBeFoundOn": [
       "Jungle",
@@ -752,7 +752,7 @@
     ]
   },
   {
-    "name": "Pearls",
+    "name": "Black Pearls",
     "resourceType": "Luxury",
     "terrainsCanBeFoundOn": [
       "Coast"
@@ -827,7 +827,7 @@
     ]
   },
   {
-    "name": "Copper",
+    "name": "Copper Ore",
     "resourceType": "Luxury",
     "terrainsCanBeFoundOn": [
       "Hill",
@@ -858,7 +858,7 @@
     ]
   },
   {
-    "name": "Crab",
+    "name": "Crawlers",
     "resourceType": "Luxury",
     "terrainsCanBeFoundOn": [
       "Coast"
@@ -878,7 +878,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Crab and shellfish from the shallows, a staple of coastal villages."
+        "text": "Shore crawlers and other shellfish from the shallows, a staple of coastal villages (and of many a cook's first recipe)."
       }
     ]
   },

@@ -1,0 +1,497 @@
+"""Unique units and buildings for the 13 non-Human races (v0.11), and their map sprites.
+
+Each race gets two unique units and one unique building drawn from Warcraft lore,
+following the Humans' template (wc_factions.HUMAN_UNITS / HUMAN_BUILDINGS): a base
+unit or building to copy (by this mod's names) plus overrides.
+
+Sprites start from the race's own version of the base sprite (race_sprites.make /
+mounted), then add a few props drawn in code: pauldrons, banners, totems, kegs, hats,
+glows. A handful (Abomination, Meat Wagon, Goblin Shredder, Glaive Thrower, Elven
+Destroyer) are reworked more heavily. All art is original.
+"""
+import os
+from PIL import Image, ImageDraw
+import race_sprites as RS
+import late_units as LU
+from mounts import shade
+
+P = "TileSets/AbsoluteUnits/Units/"
+
+
+def _lore(*t):
+    return [{"text": x} for x in t]
+
+
+# (race, base unit (mod name), overrides) -- "replaces" and "uniqueTo" are filled in
+UNITS = [
+    # ---------------------------------------------------------------- Orcs
+    ("Orcs", "Swordsman", {"name": "Grunt", "strength": 17,
+        "addUniques": ["Heals [10] damage if it kills a unit"],
+        "civilopediaText": _lore("The backbone of the Horde since the First War: big, green and armed with an axe nearly as heavy as the orc who swings it.",
+                                 "Stronger than a Swordsman, and the thrill of battle heals 10 HP whenever it kills a unit.")}),
+    ("Orcs", "Outrider", {"name": "Wolf Rider", "strength": 14,
+        "dropUniques": ["[-33]% Strength <vs cities> <when attacking>"],
+        "addUniques": ["No movement cost to pillage"],
+        "civilopediaText": _lore("Orc raiders mounted on great wolves, the terror of the Alliance's farmlands since the Second War.",
+                                 "Stronger than an Outrider, pillages without spending movement, and has no penalty attacking cities.")}),
+    # ---------------------------------------------------------------- Trolls
+    ("Trolls", "Ranger", {"name": "Headhunter", "strength": 9, "rangedStrength": 12,
+        "addUniques": ["[+25]% Strength <when fighting in [Jungle] tiles>", "Double movement in [Jungle]"],
+        "civilopediaText": _lore("Darkspear trolls who hurl barbed spears with deadly aim. At home in the jungles of Stranglethorn and the Echo Isles.",
+                                 "Stronger than a Ranger, +25% Strength in jungle and moves through it at double speed.")}),
+    ("Trolls", "Gyrocopter", {"name": "Batrider", "strength": 38, "rangedStrength": 40,
+        "addUniques": ["[+33]% Strength <vs [Land] units>"],
+        "civilopediaText": _lore("Troll riders on giant bats, dropping flasks of liquid fire on the enemy below.",
+                                 "Stronger than a Gyrocopter, with +33% Strength against land units.")}),
+    # ---------------------------------------------------------------- Tauren
+    ("Tauren", "Vanguard", {"name": "Tauren Warrior", "strength": 25, "requiredResource": None,
+        "civilopediaText": _lore("Towering warriors of Mulgore armed with great totems, fighting for the Earth Mother. Few things on Azeroth hit harder.",
+                                 "Much stronger than a Vanguard and needs no Iron.")}),
+    ("Tauren", "Mounted Archer", {"name": "Kodo Beast", "strength": 8, "rangedStrength": 10,
+        "addUniques": ["[+10]% Strength bonus for [Military] units within [1] tiles"],
+        "civilopediaText": _lore("A massive kodo carrying war drums and an archer. The beat of the drums drives the warriors around it forward.",
+                                 "War Drums: nearby military units fight 10% harder.")}),
+    # ---------------------------------------------------------------- Forsaken
+    ("Forsaken", "Vanguard", {"name": "Abomination", "strength": 24, "requiredResource": None,
+        "addUniques": ["[+15]% Strength <when defending>", "Heals [10] damage if it kills a unit"],
+        "civilopediaText": _lore("A hulking construct of stitched-together corpses wielding a cleaver and hook, wrapped in a cloud of plague.",
+                                 "Stronger than a Vanguard, needs no Iron, +15% Strength when defending, and heals 10 HP whenever it kills a unit.")}),
+    ("Forsaken", "Catapult", {"name": "Meat Wagon", "strength": 8, "rangedStrength": 10, "movement": 3,
+        "civilopediaText": _lore("A creaking cart that hurls plague-ridden corpses over city walls. It travels faster than any catapult.",
+                                 "Stronger than a Catapult and has 3 movement.")}),
+    # ---------------------------------------------------------------- Blood Elves
+    ("Blood Elves", "Swordsman", {"name": "Spellbreaker", "strength": 16,
+        "addUniques": ["[+25]% Strength <vs [Archery] units>"],
+        "civilopediaText": _lore("Elite blood elf warriors trained to unravel enemy magic, armed with glaive and shield.",
+                                 "Stronger than a Swordsman, with +25% Strength against archers and mages.")}),
+    ("Blood Elves", "Knight", {"name": "Blood Knight", "strength": 22,
+        "addUniques": ["Heals [15] damage if it kills a unit", "[+15]% Strength <when defending>"],
+        "civilopediaText": _lore("The knights of Silvermoon, who once drew the Light from a captive naaru. They fight in crimson and gold.",
+                                 "Stronger than a Knight, +15% Strength when defending, and heals 15 HP whenever it kills a unit.")}),
+    # ---------------------------------------------------------------- Goblins
+    ("Goblins", "Peasant", {"name": "Goblin Shredder", "movement": 3,
+        "addUniques": ["[+1] Sight"],
+        "civilopediaText": _lore("A walking lumber-machine with a goblin at the controls and a whirling saw for hands. It clears a forest faster than any peon.",
+                                 "Moves 3 tiles per turn instead of 2, and sees farther.")}),
+    ("Goblins", "Cannon", {"name": "Goblin Sapper", "strength": 14, "rangedStrength": 22,
+        "renameUniques": {"[+200]% Strength <vs cities> <when attacking>": "[+250]% Strength <vs cities> <when attacking>"},
+        "civilopediaText": _lore("Goblins with a barrel of blasting powder and no sense of self-preservation. Nothing knocks down walls quite like them.",
+                                 "Stronger ranged attack than a Cannon, and +250% Strength attacking cities.")}),
+    # ---------------------------------------------------------------- Dwarves
+    ("Dwarves", "Musketeer", {"name": "Ironforge Rifleman", "strength": 27,
+        "addUniques": ["[+25]% Strength <when fighting in [Hill] tiles>"],
+        "civilopediaText": _lore("Dwarven riflemen of Ironforge, whose long rifles were the envy of the Alliance in the Second War.",
+                                 "Stronger than a Musketeer, with +25% Strength in hills.")}),
+    ("Dwarves", "Knight", {"name": "Ram Rider", "strength": 21,
+        "dropUniques": ["No defensive terrain bonus"],
+        "addUniques": ["[+25]% Strength <when fighting in [Hill] tiles>"],
+        "civilopediaText": _lore("Dwarven cavalry on armored mountain rams, as sure-footed in the peaks of Dun Morogh as on the plain.",
+                                 "Stronger than a Knight, keeps the defensive bonus of terrain, and gains +25% Strength in hills.")}),
+    # ---------------------------------------------------------------- Gnomes
+    ("Gnomes", "Outrider", {"name": "Mechanostrider Rider", "movement": 5, "requiredResource": None,
+        "addUniques": ["[+1] Sight"],
+        "civilopediaText": _lore("Gnomes mounted on mechanostriders: clockwork birds that never tire and never need feeding.",
+                                 "Moves 5 tiles per turn, sees farther and needs no Horses.")}),
+    ("Gnomes", "Mortar Team", {"name": "Gnomish Bombardier", "rangedStrength": 32, "range": 3,
+        "civilopediaText": _lore("Gnomish artillery crews with a dangerous fondness for experimental shells.",
+                                 "Stronger ranged attack than a Mortar Team, with range 3.")}),
+    # ---------------------------------------------------------------- Night Elves
+    ("Night Elves", "Outrider", {"name": "Huntress", "strength": 13,
+        "addUniques": ["[+25]% Strength <when fighting in [Forest] tiles>", "Double movement in [Forest]"],
+        "civilopediaText": _lore("Sentinels of the night elves riding nightsabers, each armed with a moonglaive.",
+                                 "Stronger than an Outrider, with +25% Strength in forests and double movement through them.")}),
+    ("Night Elves", "Ballista", {"name": "Glaive Thrower", "rangedStrength": 16, "range": 3,
+        "civilopediaText": _lore("Night elf siege engines of living wood that hurl huge glaives at their targets.",
+                                 "Stronger ranged attack than a Ballista, with range 3.")}),
+    # ---------------------------------------------------------------- Draenei
+    ("Draenei", "Vanguard", {"name": "Vindicator", "strength": 23,
+        "addUniques": ["[+33]% Strength <vs [Barbarian] units>", "All adjacent units heal [+10] HP when healing"],
+        "civilopediaText": _lore("Draenei paladins sworn to the Light and the naaru, enemies of the Burning Legion for thousands of years.",
+                                 "Stronger than a Vanguard, +33% Strength against barbarians and demons, and adjacent units heal 10 HP more.")}),
+    ("Draenei", "Knight", {"name": "Elekk Rider", "strength": 24, "movement": 3,
+        "addUniques": ["[+15]% Strength <when defending>"],
+        "civilopediaText": _lore("Draenei warriors mounted on armored elekks, slow but nearly unstoppable.",
+                                 "Much stronger than a Knight and +15% Strength when defending, but moves 3 instead of 4.")}),
+    # ---------------------------------------------------------------- Worgen
+    ("Worgen", "Swordsman", {"name": "Worgen Stalker", "strength": 15, "requiredResource": None,
+        "addUniques": ["[+25]% Strength <when fighting in [Forest] tiles>", "Double movement in [Forest]"],
+        "civilopediaText": _lore("Gilneans who have embraced the curse of the worgen, hunting through the forests with tooth and claw.",
+                                 "Stronger than a Swordsman, needs no Iron, +25% Strength in forests and double movement through them.")}),
+    ("Worgen", "Rifleman", {"name": "Gilnean Rifleman", "strength": 37,
+        "addUniques": ["[+1] Sight"],
+        "civilopediaText": _lore("The disciplined riflemen of Gilneas, who held the Greymane Wall for years.",
+                                 "Stronger than a Rifleman, and sees farther.")}),
+    # ---------------------------------------------------------------- High Elves
+    ("High Elves", "Ranger", {"name": "Farstrider", "rangedStrength": 13,
+        "addUniques": ["[+1] Sight", "[+25]% Strength <when fighting in [Forest] tiles>"],
+        "civilopediaText": _lore("The rangers of Quel'Thalas, who guard the elven forests with bow and blade.",
+                                 "Stronger ranged attack than a Ranger, sees farther and gains +25% Strength in forests.")}),
+    ("High Elves", "War Galley", {"name": "Elven Destroyer", "strength": 18, "rangedStrength": 20, "movement": 4,
+        "civilopediaText": _lore("Swift elven warships, the best in the Alliance's fleets in the Second War.",
+                                 "Stronger and faster than a War Galley.")}),
+    # ---------------------------------------------------------------- Pandaren
+    ("Pandaren", "Vanguard", {"name": "Brewmaster", "strength": 23, "requiredResource": None,
+        "addUniques": ["[+20]% Strength <when defending>"],
+        "civilopediaText": _lore("Pandaren fighters who mix the martial arts with a staff, a keg and a drunken, unpredictable style.",
+                                 "Stronger than a Vanguard, needs no Iron, and +20% Strength when defending.")}),
+    ("Pandaren", "Pikeman", {"name": "Shado-Pan Monk", "strength": 17, "movement": 3,
+        "civilopediaText": _lore("The Shado-Pan, guardians of Pandaria's wall against the mantid and the Sha.",
+                                 "Stronger than a Pikeman and moves 3 tiles per turn.")}),
+]
+
+# (race, base building (mod name), overrides)
+BUILDINGS = [
+    ("Orcs", "Granary", {"name": "Pig Farm", "addStats": {"production": 1},
+        "civilopediaText": _lore("Orcish pig farms, a fixture of every Horde town since Warcraft II: pens of grunting boars feeding the warband. +1 Production.")}),
+    ("Trolls", "Shrine", {"name": "Voodoo Lounge", "addStats": {"gold": 1, "culture": 1},
+        "civilopediaText": _lore("A troll witch doctor's den, selling potions, charms and the blessings of the Loa. +1 Gold and +1 Culture.")}),
+    ("Tauren", "Town Hall", {"name": "Great Totem", "addStats": {"faith": 1},
+        "civilopediaText": _lore("A carved totem pole honoring the Earth Mother and the ancestors of the tribe. +1 Faith.")}),
+    ("Forsaken", "Herb Garden", {"name": "Apothecarium", "addStats": {"science": 2},
+        "civilopediaText": _lore("The laboratories of the Royal Apothecary Society, deep beneath the Undercity. +2 Science.")}),
+    ("Blood Elves", "Arcane Sanctum", {"name": "Magisters' Sanctum", "addStats": {"science": 1, "culture": 1},
+        "civilopediaText": _lore("A spire of Silvermoon where magisters study the arcane under the light of the sun. +1 Science and +1 Culture.")}),
+    ("Goblins", "Market", {"name": "Goblin Bazaar", "addStats": {"gold": 2},
+        "civilopediaText": _lore("A noisy goblin bazaar where anything can be bought, for a price. +2 Gold.")}),
+    ("Dwarves", "Blacksmith", {"name": "Dwarven Forge", "addStats": {"production": 2},
+        "civilopediaText": _lore("A dwarven forge in the tradition of Ironforge's Great Forge, its anvils ringing day and night. +2 Production.")}),
+    ("Gnomes", "Workshop", {"name": "Tinker's Workshop", "addStats": {"science": 1},
+        "civilopediaText": _lore("A gnomish workshop full of half-finished inventions, some of which even work. +1 Science.")}),
+    ("Night Elves", "Shrine", {"name": "Moonwell", "addStats": {"food": 1},
+        "civilopediaText": _lore("A pool of water blessed by Elune that restores those who drink from it. +1 Food.")}),
+    ("Draenei", "Temple", {"name": "Crystal Sanctum", "addStats": {"science": 1},
+        "civilopediaText": _lore("A draenei sanctuary of glowing crystal, raised in the image of the naaru. +1 Science.")}),
+    ("Worgen", "Walls", {"name": "Gilnean Bulwark", "addStats": {"cityStrength": 3, "culture": 1},
+        "civilopediaText": _lore("Massive Gilnean walls built in the tradition of the Greymane Wall. Stronger than ordinary walls, +1 Culture.")}),
+    ("High Elves", "Walls", {"name": "Runestone", "addStats": {"cityStrength": 2, "science": 1},
+        "civilopediaText": _lore("A runestone of Quel'Thalas, part of the magical barrier that protected the elves' lands. Stronger than ordinary walls, +1 Science.")}),
+    ("Pandaren", "Granary", {"name": "Brewery", "addStats": {"gold": 1, "happiness": 1},
+        "civilopediaText": _lore("A pandaren brewery in the Stormstout tradition, making ales that are famous across Azeroth. +1 Gold and +1 Happiness.")}),
+]
+
+ICONS_UNITS = {
+    "Grunt": ("axe", "fist"), "Wolf Rider": ("wolf", "axe"), "Headhunter": ("spear", "mask"),
+    "Batrider": ("wing", "flame"), "Tauren Warrior": ("totem", "fist"), "Kodo Beast": ("drum", "bow"),
+    "Abomination": ("skull", "chains"), "Meat Wagon": ("wheel", "skull"), "Spellbreaker": ("shield", "orb"),
+    "Blood Knight": ("sword", "sun"), "Goblin Shredder": ("saw", "gear"), "Goblin Sapper": ("bomb", "flame"),
+    "Ironforge Rifleman": ("gun", "mountain"), "Ram Rider": ("ram_head", "hammer"),
+    "Mechanostrider Rider": ("gear", "boot"), "Gnomish Bombardier": ("cannon", "gear"),
+    "Huntress": ("moon", "paw"), "Glaive Thrower": ("moon", "wheel"), "Vindicator": ("hammer", "naaru"),
+    "Elekk Rider": ("shield", "crystal"), "Worgen Stalker": ("wolf", "moon"), "Gilnean Rifleman": ("gun", "lantern"),
+    "Farstrider": ("bow", "leaf"), "Elven Destroyer": ("ship", "leaf"), "Brewmaster": ("chalice", "fist"),
+    "Shado-Pan Monk": ("fist", "pagoda"),
+}
+ICONS_BUILDINGS = {
+    "Pig Farm": ("wheat", "tusk"), "Voodoo Lounge": ("cauldron", "mask"), "Great Totem": "totem",
+    "Apothecarium": ("flask", "skull"), "Magisters' Sanctum": ("spire", "sun"), "Goblin Bazaar": ("coins", "gear"),
+    "Dwarven Forge": ("anvil", "flame"), "Tinker's Workshop": ("gears", "bolt"), "Moonwell": ("moon", "wave"),
+    "Crystal Sanctum": ("crystals", "naaru"), "Gilnean Bulwark": ("castle", "wolf"), "Runestone": ("rune", "sparkle"),
+    "Brewery": ("chalice", "wheat"),
+}
+
+
+# ======================================================================= sprites
+def _part(size):
+    im = Image.new("RGBA", size)
+    return im, ImageDraw.Draw(im)
+
+
+def _apply(ls, part, tint_layer=None):
+    """Outline `part`, stamp it on the base; if tint_layer, also put it on that tint layer
+    (so it takes the owner's colour)."""
+    part = LU.outline(part)
+    ls = LU.stamp(ls, part)
+    if tint_layer:
+        pp, lp = part.load(), ls[tint_layer].load()
+        for y in range(part.height):
+            for x in range(part.width):
+                p = pp[x, y]
+                if p[3] and p[:3] != LU.DARK:
+                    g = max(p[:3])
+                    lp[x, y] = (g, g, g, 255)
+    return ls
+
+
+def _glow(ls, color, draw):
+    part, d = _part(ls[0].size)
+    draw(d)
+    g = LU.glow_of(part, color, 1.6, 1.2)
+    out = Image.new("RGBA", ls[0].size)
+    out.alpha_composite(g)
+    out.alpha_composite(ls[0])
+    out.alpha_composite(part)
+    ls[0] = out
+    return ls
+
+
+ANCHOR = [0, 0]   # (head centre x, head top y), set by render() before the props are drawn
+
+
+def _box(ls):
+    """(x0, y0, x1, y1) around the head-and-shoulders of the figure, from ANCHOR."""
+    cx, ty = ANCHOR
+    return cx - 9, ty, cx + 9, ty + 40
+
+
+def pauldrons(ls, col, spikes=False):
+    x0, y0, x1, y1 = _box(ls)
+    cx, top = (x0 + x1) // 2, y0
+    part, d = _part(ls[0].size)
+    for px_ in (cx - 7, cx + 5):
+        d.ellipse([px_ - 3, top + 7, px_ + 3, top + 11], fill=col + (255,))
+        if spikes:
+            for k in (-2, 0, 2):
+                d.line([(px_ + k, top + 7), (px_ + k, top + 4)], fill=(230, 222, 200, 255))
+    return _apply(ls, part)
+
+
+def back_banner(ls, pole=(95, 65, 40)):
+    """A war banner on a pole strapped to the back, in the owner's colour."""
+    x0, y0, x1, y1 = _box(ls)
+    bx = x0 + 3
+    part, d = _part(ls[0].size)
+    d.line([(bx, y0 - 6), (bx, y0 + 16)], fill=pole + (255,), width=1)
+    _apply(ls, part)
+    flag, d2 = _part(ls[0].size)
+    d2.polygon([(bx - 7, y0 - 6), (bx - 1, y0 - 6), (bx - 1, y0 + 3), (bx - 4, y0 + 1), (bx - 7, y0 + 3)], fill=(225, 225, 225, 255))
+    return _apply(ls, flag, tint_layer=2)
+
+
+def back_item(ls, kind):
+    x0, y0, x1, y1 = _box(ls)
+    bx, by = x0 + 3, y0 + 12
+    part, d = _part(ls[0].size)
+    if kind == "keg":
+        d.ellipse([bx - 5, by - 1, bx + 3, by + 9], fill=(140, 90, 45, 255))
+        for yy in (by + 2, by + 6):
+            d.line([(bx - 5, yy), (bx + 3, yy)], fill=(90, 90, 95, 255))
+    elif kind == "spears":
+        for k in range(3):
+            d.line([(bx - 4 + k * 2, by + 10), (bx - 1 + k * 2, by - 10)], fill=(120, 85, 50, 255))
+            d.point((bx - 1 + k * 2, by - 11), fill=(200, 205, 210, 255))
+    elif kind == "totem":
+        d.rectangle([bx - 3, by - 14, bx + 1, by + 10], fill=(150, 100, 55, 255))
+        for k, c in enumerate(((200, 60, 40), (60, 140, 200), (230, 200, 70))):
+            d.rectangle([bx - 3, by - 13 + k * 6, bx + 1, by - 11 + k * 6], fill=c + (255,))
+        d.polygon([(bx - 6, by - 14), (bx + 4, by - 14), (bx - 1, by - 18)], fill=(230, 222, 200, 255))
+    elif kind == "bomb":
+        d.ellipse([bx - 6, by - 2, bx + 3, by + 8], fill=(110, 75, 45, 255))
+        d.text((bx - 4, by - 1), "", fill=(0, 0, 0, 255))
+        d.rectangle([bx - 6, by + 2, bx + 3, by + 3], fill=(200, 40, 40, 255))
+        d.line([(bx - 1, by - 2), (bx + 1, by - 6)], fill=(170, 150, 110, 255))
+        d.point((bx + 1, by - 7), fill=(255, 220, 90, 255))
+    elif kind == "cloak":
+        d.polygon([(x0 + 5, y0 + 7), (x0 + 8, y0 + 7), (x0 + 6, y0 + 30), (x0 + 1, y0 + 28)], fill=(200, 200, 200, 255))
+        return _apply(ls, part, tint_layer=1)
+    return _apply(ls, part)
+
+
+def headgear(ls, kind):
+    x0, y0, x1, y1 = _box(ls)
+    hx = (x0 + x1) // 2
+    part, d = _part(ls[0].size)
+    if kind == "horned_helm":
+        d.ellipse([hx - 4, y0 - 1, hx + 4, y0 + 4], fill=(150, 150, 160, 255))
+        d.line([(hx - 4, y0 + 1), (hx - 7, y0 - 3)], fill=(230, 222, 200, 255), width=2)
+        d.line([(hx + 4, y0 + 1), (hx + 7, y0 - 3)], fill=(230, 222, 200, 255), width=2)
+    elif kind == "crested_helm":
+        d.ellipse([hx - 4, y0 - 1, hx + 4, y0 + 4], fill=(225, 190, 80, 255))
+        d.line([(hx, y0 - 5), (hx + 1, y0)], fill=(240, 240, 255, 255), width=2)
+    elif kind == "top_hat":
+        d.rectangle([hx - 3, y0 - 6, hx + 3, y0 + 1], fill=(35, 35, 40, 255))
+        d.line([(hx - 5, y0 + 1), (hx + 5, y0 + 1)], fill=(35, 35, 40, 255), width=1)
+        d.line([(hx - 3, y0 - 1), (hx + 3, y0 - 1)], fill=(150, 40, 40, 255))
+    elif kind == "straw_hat":
+        d.polygon([(hx - 8, y0 + 2), (hx + 8, y0 + 2), (hx, y0 - 4)], fill=(215, 185, 110, 255))
+    elif kind == "hood":
+        d.pieslice([hx - 5, y0 - 2, hx + 5, y0 + 8], 180, 360, fill=(70, 130, 60, 255))
+    elif kind == "goggles":
+        d.line([(hx - 3, y0 + 3), (hx + 3, y0 + 3)], fill=(90, 200, 230, 255), width=2)
+    elif kind == "red_hood":
+        d.pieslice([hx - 5, y0 - 2, hx + 5, y0 + 8], 180, 360, fill=(170, 40, 35, 255))
+    elif kind == "mask":
+        d.rectangle([hx - 3, y0 + 1, hx + 4, y0 + 5], fill=(170, 120, 60, 255))
+        d.point((hx + 2, y0 + 3), fill=(30, 20, 20, 255))
+        d.line([(hx - 3, y0 - 2), (hx - 1, y0 + 1)], fill=(200, 60, 50, 255))
+    return _apply(ls, part)
+
+
+def weapon(ls, kind):
+    x0, y0, x1, y1 = _box(ls)
+    wx, wy = x1 - 1, y0 + 12
+    part, d = _part(ls[0].size)
+    if kind == "axe":
+        d.line([(wx, wy + 14), (wx + 1, wy - 4)], fill=(110, 75, 45, 255), width=1)
+        d.polygon([(wx + 1, wy - 5), (wx + 6, wy - 7), (wx + 6, wy + 1), (wx + 1, wy - 1)], fill=(185, 190, 200, 255))
+    elif kind == "glaive":
+        d.arc([wx - 3, wy - 6, wx + 7, wy + 4], 300, 120, fill=(215, 220, 235, 255), width=2)
+        d.line([(wx + 2, wy - 1), (wx + 2, wy + 3)], fill=(110, 80, 60, 255))
+    elif kind == "cleaver":
+        d.polygon([(wx, wy), (wx + 6, wy - 2), (wx + 6, wy + 5), (wx, wy + 5)], fill=(170, 175, 180, 255))
+        d.line([(wx - 1, wy + 5), (wx - 1, wy + 10)], fill=(100, 70, 50, 255), width=2)
+    elif kind == "hammer":
+        d.line([(wx, wy + 14), (wx + 1, wy - 3)], fill=(110, 75, 45, 255))
+        d.rectangle([wx - 2, wy - 6, wx + 4, wy - 2], fill=(200, 175, 80, 255))
+    elif kind == "staff":
+        d.line([(wx, wy + 16), (wx + 1, wy - 8)], fill=(130, 90, 50, 255), width=1)
+        d.ellipse([wx - 1, wy - 11, wx + 3, wy - 7], fill=(120, 80, 40, 255))
+    elif kind == "totem_club":
+        d.rectangle([wx - 1, wy - 8, wx + 3, wy + 6], fill=(150, 100, 55, 255))
+        d.rectangle([wx - 1, wy - 6, wx + 3, wy - 4], fill=(200, 60, 40, 255))
+        d.rectangle([wx - 1, wy - 1, wx + 3, wy + 1], fill=(60, 140, 200, 255))
+    return _apply(ls, part)
+
+
+def glow_aura(ls, color, where="weapon"):
+    x0, y0, x1, y1 = _box(ls)
+    if where == "weapon":
+        return _glow(ls, color, lambda d: d.ellipse([x1 - 1, y0 + 4, x1 + 3, y0 + 8], fill=color + (255,)))
+    return _glow(ls, color, lambda d: d.ellipse([(x0 + x1) // 2 - 2, y0 + 12, (x0 + x1) // 2 + 2, y0 + 16], fill=color + (255,)))
+
+
+def recolor_metal(ls, col):
+    """Re-dye grey metal (low saturation, bright) to `col`, keeping the shading."""
+    return LU.recolor(ls, lambda h, s, v: s < 0.15 and v > 0.45,
+                      lambda v: tuple(int(c * (0.55 + 0.6 * v)) for c in col))
+
+
+# ---- heavier reworks
+def abomination(ls):
+    base, l1, l2 = RS.reshape(ls, 1.35, 1.08)
+    ls = [base, l1, l2]
+    ANCHOR[:] = _anchor(ls)
+    LU.recolor(ls, lambda h, s, v: True if 0.02 <= h <= 0.2 and 0.15 <= s <= 0.6 else False,
+               lambda v: tuple(int(c * (0.6 + 0.6 * v)) for c in (150, 165, 135)))
+    x0, y0, x1, y1 = LU.bbox_all(ls)
+    part, d = _part(base.size)
+    for k in range(3):                                   # stitches across the belly
+        yy = y0 + 16 + k * 6
+        d.line([(x0 + 6, yy), (x1 - 6, yy + 1)], fill=(60, 40, 40, 255))
+        for xx in range(x0 + 7, x1 - 6, 3):
+            d.line([(xx, yy - 1), (xx, yy + 2)], fill=(60, 40, 40, 255))
+    ls = LU.stamp(ls, part)
+    ls = weapon(ls, "cleaver")
+    return _glow(ls, (140, 220, 80), lambda d: [d.ellipse([x0 + 2 + i * 7, y0 + 6 + (i % 2) * 5, x0 + 4 + i * 7, y0 + 8 + (i % 2) * 5],
+                                                         fill=(150, 230, 90, 140)) for i in range(4)])
+
+
+def meat_wagon(ls):
+    LU.recolor(ls, lambda h, s, v: 0.04 <= h <= 0.14 and s > 0.3, lambda v: tuple(int(c * (0.5 + 0.6 * v)) for c in (90, 85, 70)))
+    x0, y0, x1, y1 = LU.bbox_all(ls)
+    part, d = _part(ls[0].size)
+    for i, (dx, dy) in enumerate(((4, 14), (10, 12), (16, 14), (8, 9))):
+        d.ellipse([x0 + dx, y0 + dy, x0 + dx + 6, y0 + dy + 4], fill=(150, 160, 130, 255))
+    d.ellipse([x0 + 12, y0 + 6, x0 + 16, y0 + 10], fill=(225, 215, 190, 255))     # a skull on top
+    ls = _apply(ls, part)
+    return _glow(ls, (140, 220, 80), lambda d: d.ellipse([x0 + 6, y0 + 4, x0 + 20, y0 + 10], fill=(150, 230, 90, 90)))
+
+
+def glaive_thrower(ls):
+    LU.recolor(ls, lambda h, s, v: 0.04 <= h <= 0.14 and s > 0.3, lambda v: tuple(int(c * (0.55 + 0.6 * v)) for c in (150, 120, 170)))
+    x0, y0, x1, y1 = LU.bbox_all(ls)
+    part, d = _part(ls[0].size)
+    d.arc([x0 + 2, y0 - 2, x0 + 14, y0 + 10], 200, 20, fill=(220, 225, 240, 255), width=2)
+    return _apply(ls, part)
+
+
+def elven_destroyer(ls):
+    LU.recolor(ls, lambda h, s, v: s < 0.25 and v > 0.6, lambda v: tuple(int(c * (0.7 + 0.35 * v)) for c in (235, 235, 225)))
+    x0, y0, x1, y1 = LU.bbox_all(ls)
+    part, d = _part(ls[0].size)
+    d.polygon([(x0 + 14, y0 + 1), (x0 + 22, y0 + 3), (x0 + 14, y0 + 5)], fill=(70, 150, 70, 255))
+    d.line([(x0 + 4, y1 - 12), (x1 - 4, y1 - 12)], fill=(220, 180, 70, 255))
+    return _apply(ls, part)
+
+
+def shredder():
+    """A goblin shredder: a two-legged lumber machine with a saw arm and a goblin pilot."""
+    def f(p):
+        GR, GRD = (110, 110, 118), (80, 80, 88)
+        p.ell(73, 59, 12, 2, (0, 0, 0), "shadow")
+        for x, b in ((67, -2), (79, 2)):
+            p.line(x, 40, x + b, 50, 3, GRD, "leg%d" % x)
+            p.line(x + b, 50, x, 57, 3, GRD, "shin%d" % x)
+            p.line(x - 3, 58, x + 3, 58, 2, (60, 60, 66), "foot%d" % x)
+        p.poly([(63, 26), (83, 26), (82, 42), (64, 42)], GR, "body")
+        p.poly([(66, 30), (80, 30), (79, 38), (67, 38)], (220, 220, 220), "plate", layer=2)
+        p.ell(73, 22, 5, 4, (90, 150, 60), "pilot")                   # the goblin pilot
+        p.dot(75, 21, (240, 230, 90), "eye")
+        p.line(70, 19, 66, 16, 1, (90, 150, 60), "ear")
+        p.line(77, 19, 81, 16, 1, (90, 150, 60), "ear2")
+        p.line(84, 30, 90, 34, 3, GRD, "arm")
+        p.ell(91, 35, 4, 4, (200, 205, 210), "saw")
+        p.line(62, 30, 57, 38, 3, GRD, "arm2")
+        p.line(60, 24, 60, 14, 2, (70, 70, 76), "stack")
+    def lit(p):
+        p.ell(60, 11, 2, 1.5, (190, 190, 190), "smoke")
+    return LU.paint_layers((95, 81), f, ((lit, (200, 200, 200)),))
+
+
+# per unit: (source sprite, race used to dress it, mode, list of prop steps)
+SPRITES = {
+    "Grunt": ("Swordsman", "Orcs", "full", [lambda l: pauldrons(l, (70, 60, 55), spikes=True), lambda l: weapon(l, "axe")]),
+    "Wolf Rider": ("Horseman", "Orcs", "mounted", [back_banner]),
+    "Headhunter": ("Composite Bowman", "Trolls", "full", [lambda l: back_item(l, "spears"), lambda l: headgear(l, "mask")]),
+    "Tauren Warrior": ("Swordsman", "Tauren", "full", [lambda l: weapon(l, "totem_club"), lambda l: pauldrons(l, (120, 80, 45))]),
+    "Kodo Beast": ("Chariot Archer", "Tauren", "mounted", [back_banner]),
+    "Abomination": ("Swordsman", "Forsaken", "full", [abomination]),
+    "Meat Wagon": ("Catapult", "Forsaken", "crew", [meat_wagon]),
+    "Spellbreaker": ("Swordsman", "Blood Elves", "full", [lambda l: pauldrons(l, (215, 180, 70)), lambda l: weapon(l, "glaive"),
+                                                          lambda l: glow_aura(l, (140, 230, 90))]),
+    "Blood Knight": ("Knight", "Blood Elves", "mounted", [back_banner, lambda l: glow_aura(l, (255, 200, 90))]),
+    "Goblin Shredder": (None, None, "paint", [shredder]),
+    "Goblin Sapper": ("Scout", "Goblins", "full", [lambda l: back_item(l, "bomb"), lambda l: headgear(l, "goggles")]),
+    "Ironforge Rifleman": ("Musketman", "Dwarves", "full", [lambda l: headgear(l, "horned_helm")]),
+    "Ram Rider": ("Knight", "Dwarves", "mounted", [back_banner]),
+    "Mechanostrider Rider": ("Horseman", "Gnomes", "mounted", [lambda l: headgear(l, "goggles")]),
+    "Gnomish Bombardier": ("Artillery", "Gnomes", "full", [lambda l: headgear(l, "goggles")]),
+    "Huntress": ("Horseman", "Night Elves", "mounted", [lambda l: weapon(l, "glaive"), lambda l: glow_aura(l, (170, 200, 255))]),
+    "Glaive Thrower": ("Trebuchet", "Night Elves", "crew", [glaive_thrower]),
+    "Vindicator": ("Swordsman", "Draenei", "full", [lambda l: headgear(l, "crested_helm"), lambda l: weapon(l, "hammer"),
+                                                        lambda l: glow_aura(l, (255, 230, 140))]),
+    "Elekk Rider": ("Knight", "Draenei", "mounted", [back_banner]),
+    "Worgen Stalker": ("Swordsman", "Worgen", "full", [lambda l: back_item(l, "cloak")]),
+    "Gilnean Rifleman": ("Rifleman", "Worgen", "full", [lambda l: headgear(l, "top_hat")]),
+    "Farstrider": ("Composite Bowman", "High Elves", "full", [lambda l: headgear(l, "hood"), lambda l: back_item(l, "cloak")]),
+    "Elven Destroyer": ("Galleass", None, "ship", [elven_destroyer]),
+    "Brewmaster": ("Spearman", "Pandaren", "full", [lambda l: back_item(l, "keg"), lambda l: headgear(l, "straw_hat"),
+                                                         lambda l: weapon(l, "staff")]),
+    "Shado-Pan Monk": ("Pikeman", "Pandaren", "full", [lambda l: headgear(l, "red_hood")]),
+}
+
+
+def _anchor(ls):
+    hb = RS.est_head(ls[0])
+    if hb is None:
+        x0, y0, x1, y1 = LU.bbox_all(ls)
+        return (x0 + x1) // 2, y0
+    return (hb[0] + hb[2]) // 2, hb[1] - 1
+
+
+def render(atlas, name):
+    src, race, mode, steps = SPRITES[name]
+    if mode == "paint":
+        ls = None
+    elif mode == "mounted":
+        ls = RS.mounted(atlas, [atlas.crop(P + src + s) for s in ("", "-1", "-2")], race, src)
+    elif mode == "ship":
+        ls = [atlas.crop(P + src + s) for s in ("", "-1", "-2")]
+    else:
+        ls = RS.make(LU.source_layers(atlas, src), race, src, mode)
+    ls = [l.copy() for l in ls] if ls else None
+    if ls:
+        ANCHOR[:] = _anchor(ls)
+    for step in steps:
+        ls = step(ls) if ls is not None else step()
+    return ls
+
+
+def write_all(atlas, images_dir):
+    n = 0
+    for name in SPRITES:
+        for s, im in zip(("", "-1", "-2"), render(atlas, name)):
+            path = os.path.join(images_dir, P, name + s + ".png")
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            im.save(path)
+            n += 1
+    return n

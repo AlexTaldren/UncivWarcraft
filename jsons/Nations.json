@@ -1030,9 +1030,10 @@
       "Dalaran"
     ],
     "cityStateType": "Lorekeeper",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Kirin Tor have judged you a threat. The Violet Citadel goes to war.",
+    "attacked": "You dare raise a hand against Dalaran? The archmagi will remember this.",
+    "defeated": "Dalaran has fallen before... and it always rises again.",
+    "introduction": "Greetings from the Kirin Tor. Dalaran's doors are open to all who seek knowledge.",
     "outerColor": [
       80,
       20,
@@ -1053,9 +1054,10 @@
       "Theramore"
     ],
     "cityStateType": "Militaristic",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "Jaina's patience has run out. Theramore's guard marches against you.",
+    "attacked": "Theramore was built for peace, but it will defend itself.",
+    "defeated": "Theramore's towers burn... again.",
+    "introduction": "Welcome to Theramore, where Alliance and Horde may yet find peace.",
     "outerColor": [
       20,
       50,
@@ -1076,9 +1078,10 @@
       "Stromgarde"
     ],
     "cityStateType": "Militaristic",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "By the blood of Thoradin, Stromgarde will see you broken!",
+    "attacked": "Stromgarde has held these highlands for a thousand years. We will not yield.",
+    "defeated": "Arathor's last kingdom falls silent.",
+    "introduction": "Stromgarde greets you. We are the heirs of Arathor, the first kingdom of men.",
     "outerColor": [
       100,
       15,
@@ -1099,9 +1102,10 @@
       "Gadgetzan"
     ],
     "cityStateType": "Mercantile",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "Bad for business, friend. Real bad. The Water Barons are coming for you.",
+    "attacked": "Hey! Attacking a neutral town? There'll be a bill for this.",
+    "defeated": "The bank's closed. Permanently.",
+    "introduction": "Welcome to Gadgetzan! Everything's for sale, and the bruisers keep the peace.",
     "outerColor": [
       190,
       150,
@@ -1122,9 +1126,10 @@
       "Booty Bay"
     ],
     "cityStateType": "Harbor",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Blackwater Raiders are hoisting the black flag. Run while you can!",
+    "attacked": "You'll be swimming with the sharks for this, landlubber!",
+    "defeated": "The bay is yours. Watch out for the sharks.",
+    "introduction": "Ahoy! Welcome to Booty Bay. Mind your purse and your back.",
     "outerColor": [
       30,
       90,
@@ -1145,9 +1150,10 @@
       "Ratchet"
     ],
     "cityStateType": "Harbor",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "Ratchet's pulling its contracts. Expect the bruisers.",
+    "attacked": "You hit our docks? You're paying for the repairs!",
+    "defeated": "Ratchet's docks go quiet.",
+    "introduction": "Ratchet welcomes you! Best port on the Barrens coast, and the only one.",
     "outerColor": [
       90,
       70,
@@ -1168,9 +1174,10 @@
       "Everlook"
     ],
     "cityStateType": "Mercantile",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "Everlook is closing its gates to you, and opening its armories.",
+    "attacked": "Out here the cold kills fools. So do we.",
+    "defeated": "The snows of Winterspring cover Everlook.",
+    "introduction": "Everlook greets you. Warm drinks, fair prices, and the only fire for miles.",
     "outerColor": [
       180,
       200,
@@ -1191,9 +1198,10 @@
       "Steamwheedle Port"
     ],
     "cityStateType": "Mercantile",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Cartel has voted. You're a liability.",
+    "attacked": "An attack on Steamwheedle Port is an attack on the whole Cartel!",
+    "defeated": "The Cartel cuts its losses.",
+    "introduction": "Steamwheedle Port, open for business! Neutral ground, as long as you pay.",
     "outerColor": [
       120,
       80,
@@ -1214,9 +1222,10 @@
       "Light's Hope Chapel"
     ],
     "cityStateType": "Sacred",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Light will judge you. The Argent Dawn rides.",
+    "attacked": "We stood against the Scourge. We will stand against you.",
+    "defeated": "Even now, the Light endures.",
+    "introduction": "Be welcome at Light's Hope Chapel, last bastion against the Scourge.",
     "outerColor": [
       240,
       230,
@@ -1237,9 +1246,10 @@
       "Cenarion Hold"
     ],
     "cityStateType": "Sacred",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Cenarion Circle will defend the balance of nature against you.",
+    "attacked": "You bring blood to sacred ground. The druids will answer.",
+    "defeated": "The Hold falls, but the Circle endures.",
+    "introduction": "Cenarion Hold greets you. We watch the gates of Ahn'Qiraj so that others may sleep.",
     "outerColor": [
       40,
       80,
@@ -1260,9 +1270,10 @@
       "Argent Vanguard"
     ],
     "cityStateType": "Militaristic",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Argent Crusade marches against you!",
+    "attacked": "We came north to fight the Lich King, not you. But we will.",
+    "defeated": "The Vanguard's banners fall in the snow.",
+    "introduction": "The Argent Vanguard stands at the gates of Icecrown. Will you join the crusade?",
     "outerColor": [
       220,
       220,
@@ -1283,9 +1294,10 @@
       "Feathermoon Stronghold"
     ],
     "cityStateType": "Lorekeeper",
-    "declaringWar": "You leave us no choice. To arms!",
-    "attacked": "This insult will not be forgotten.",
-    "defeated": "Our walls have fallen...",
+    "declaringWar": "The Sentinels of Feathermoon nock their arrows. You are their target.",
+    "attacked": "Elune guide our arrows against you.",
+    "defeated": "Feathermoon falls under the shadow of the moon.",
+    "introduction": "Ishnu-alah. Feathermoon Stronghold watches over the wilds of Feralas.",
     "outerColor": [
       70,
       50,

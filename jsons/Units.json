@@ -1778,13 +1778,711 @@
     ]
   },
   {
+    "name": "Grunt",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 17,
+    "cost": 75,
+    "requiredTech": "Iron Forged Swords",
+    "upgradesTo": "Vanguard",
+    "obsoleteTech": "Steel Forged Swords",
+    "requiredResource": "Iron",
+    "hurryCostModifier": 20,
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "The backbone of the Horde since the First War: big, green and armed with an axe nearly as heavy as the orc who swings it."
+      },
+      {
+        "text": "Stronger than a Swordsman, and the thrill of battle heals 10 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Swordsman",
+    "uniqueTo": "Orcs",
+    "uniques": [
+      "Heals [10] damage if it kills a unit"
+    ]
+  },
+  {
+    "name": "Wolf Rider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 14,
+    "cost": 75,
+    "requiredTech": "Riding",
+    "requiredResource": "Horses",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Animal War Training",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "No movement cost to pillage"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Orc raiders mounted on great wolves, the terror of the Alliance's farmlands since the Second War."
+      },
+      {
+        "text": "Stronger than an Outrider, pillages without spending movement, and has no penalty attacking cities."
+      }
+    ],
+    "replaces": "Outrider",
+    "uniqueTo": "Orcs"
+  },
+  {
+    "name": "Headhunter",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 9,
+    "rangedStrength": 12,
+    "cost": 75,
+    "requiredTech": "Construction",
+    "obsoleteTech": "Clockwork",
+    "upgradesTo": "Crossbowman",
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "Darkspear trolls who hurl barbed spears with deadly aim. At home in the jungles of Stranglethorn and the Echo Isles."
+      },
+      {
+        "text": "Stronger than a Ranger, +25% Strength in jungle and moves through it at double speed."
+      }
+    ],
+    "replaces": "Ranger",
+    "uniqueTo": "Trolls",
+    "uniques": [
+      "[+25]% Strength <when fighting in [Jungle] tiles>",
+      "Double movement in [Jungle]"
+    ]
+  },
+  {
+    "name": "Batrider",
+    "unitType": "Sky Fighter",
+    "movement": 1,
+    "strength": 38,
+    "rangedStrength": 40,
+    "range": 5,
+    "interceptRange": 5,
+    "cost": 325,
+    "requiredTech": "Gnomish Flight",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Gryphon Rider",
+    "obsoleteTech": "Scrying",
+    "uniques": [
+      "[50]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>",
+      "[+33]% Strength <vs [Land] units>"
+    ],
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Troll riders on giant bats, dropping flasks of liquid fire on the enemy below."
+      },
+      {
+        "text": "Stronger than a Gyrocopter, with +33% Strength against land units."
+      }
+    ],
+    "replaces": "Gyrocopter",
+    "uniqueTo": "Trolls"
+  },
+  {
+    "name": "Tauren Warrior",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 25,
+    "cost": 120,
+    "requiredTech": "Steel Forged Swords",
+    "upgradesTo": "Musketeer",
+    "obsoleteTech": "Blackpowder",
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Towering warriors of Mulgore armed with great totems, fighting for the Earth Mother. Few things on Azeroth hit harder."
+      },
+      {
+        "text": "Much stronger than a Vanguard and needs no Iron."
+      }
+    ],
+    "replaces": "Vanguard",
+    "uniqueTo": "Tauren"
+  },
+  {
+    "name": "Kodo Beast",
+    "unitType": "Archery",
+    "movement": 4,
+    "strength": 8,
+    "rangedStrength": 10,
+    "cost": 56,
+    "requiredTech": "The Wheel",
+    "requiredResource": "Horses",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Animal War Training",
+    "uniques": [
+      "No defensive terrain bonus",
+      "Rough terrain penalty",
+      "Never appears as a Barbarian unit",
+      "[+10]% Strength bonus for [Military] units within [1] tiles"
+    ],
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "A massive kodo carrying war drums and an archer. The beat of the drums drives the warriors around it forward."
+      },
+      {
+        "text": "War Drums: nearby military units fight 10% harder."
+      }
+    ],
+    "replaces": "Mounted Archer",
+    "uniqueTo": "Tauren"
+  },
+  {
+    "name": "Abomination",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 24,
+    "cost": 120,
+    "requiredTech": "Steel Forged Swords",
+    "upgradesTo": "Musketeer",
+    "obsoleteTech": "Blackpowder",
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "A hulking construct of stitched-together corpses wielding a cleaver and hook, wrapped in a cloud of plague."
+      },
+      {
+        "text": "Stronger than a Vanguard, needs no Iron, +15% Strength when defending, and heals 10 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Vanguard",
+    "uniqueTo": "Forsaken",
+    "uniques": [
+      "[+15]% Strength <when defending>",
+      "Heals [10] damage if it kills a unit"
+    ]
+  },
+  {
+    "name": "Meat Wagon",
+    "unitType": "Siege",
+    "movement": 3,
+    "strength": 8,
+    "rangedStrength": 10,
+    "cost": 75,
+    "requiredTech": "Mathematics",
+    "obsoleteTech": "Siege Engineering",
+    "upgradesTo": "Ballista",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A creaking cart that hurls plague-ridden corpses over city walls. It travels faster than any catapult."
+      },
+      {
+        "text": "Stronger than a Catapult and has 3 movement."
+      }
+    ],
+    "replaces": "Catapult",
+    "uniqueTo": "Forsaken"
+  },
+  {
+    "name": "Spellbreaker",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 16,
+    "cost": 75,
+    "requiredTech": "Iron Forged Swords",
+    "upgradesTo": "Vanguard",
+    "obsoleteTech": "Steel Forged Swords",
+    "requiredResource": "Iron",
+    "hurryCostModifier": 20,
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Elite blood elf warriors trained to unravel enemy magic, armed with glaive and shield."
+      },
+      {
+        "text": "Stronger than a Swordsman, with +25% Strength against archers and mages."
+      }
+    ],
+    "replaces": "Swordsman",
+    "uniqueTo": "Blood Elves",
+    "uniques": [
+      "[+25]% Strength <vs [Archery] units>"
+    ]
+  },
+  {
+    "name": "Blood Knight",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 22,
+    "cost": 120,
+    "requiredTech": "Animal War Training",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "Heals [15] damage if it kills a unit",
+      "[+15]% Strength <when defending>"
+    ],
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "The knights of Silvermoon, who once drew the Light from a captive naaru. They fight in crimson and gold."
+      },
+      {
+        "text": "Stronger than a Knight, +15% Strength when defending, and heals 15 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Knight",
+    "uniqueTo": "Blood Elves"
+  },
+  {
+    "name": "Goblin Shredder",
+    "unitType": "Civilian",
+    "movement": 3,
+    "requiredTech": "Farming",
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action",
+      "[+1] Sight"
+    ],
+    "cost": 70,
+    "civilopediaText": [
+      {
+        "text": "A walking lumber-machine with a goblin at the controls and a whirling saw for hands. It clears a forest faster than any peon."
+      },
+      {
+        "text": "Moves 3 tiles per turn instead of 2, and sees farther."
+      }
+    ],
+    "replaces": "Peasant",
+    "uniqueTo": "Goblins"
+  },
+  {
+    "name": "Goblin Sapper",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 14,
+    "rangedStrength": 22,
+    "cost": 185,
+    "requiredTech": "Alchemy",
+    "upgradesTo": "Mortar Team",
+    "obsoleteTech": "Seaforium",
+    "uniques": [
+      "[+250]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "cannon",
+    "civilopediaText": [
+      {
+        "text": "Goblins with a barrel of blasting powder and no sense of self-preservation. Nothing knocks down walls quite like them."
+      },
+      {
+        "text": "Stronger ranged attack than a Cannon, and +250% Strength attacking cities."
+      }
+    ],
+    "replaces": "Cannon",
+    "uniqueTo": "Goblins"
+  },
+  {
+    "name": "Ironforge Rifleman",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 27,
+    "cost": 150,
+    "requiredTech": "Blackpowder",
+    "upgradesTo": "Rifleman",
+    "obsoleteTech": "Long Rifles",
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Dwarven riflemen of Ironforge, whose long rifles were the envy of the Alliance in the Second War."
+      },
+      {
+        "text": "Stronger than a Musketeer, with +25% Strength in hills."
+      }
+    ],
+    "replaces": "Musketeer",
+    "uniqueTo": "Dwarves",
+    "uniques": [
+      "[+25]% Strength <when fighting in [Hill] tiles>"
+    ]
+  },
+  {
+    "name": "Ram Rider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 21,
+    "cost": 120,
+    "requiredTech": "Animal War Training",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "[+25]% Strength <when fighting in [Hill] tiles>"
+    ],
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Dwarven cavalry on armored mountain rams, as sure-footed in the peaks of Dun Morogh as on the plain."
+      },
+      {
+        "text": "Stronger than a Knight, keeps the defensive bonus of terrain, and gains +25% Strength in hills."
+      }
+    ],
+    "replaces": "Knight",
+    "uniqueTo": "Dwarves"
+  },
+  {
+    "name": "Mechanostrider Rider",
+    "unitType": "Mounted",
+    "movement": 5,
+    "strength": 12,
+    "cost": 75,
+    "requiredTech": "Riding",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Animal War Training",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "[+1] Sight"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Gnomes mounted on mechanostriders: clockwork birds that never tire and never need feeding."
+      },
+      {
+        "text": "Moves 5 tiles per turn, sees farther and needs no Horses."
+      }
+    ],
+    "replaces": "Outrider",
+    "uniqueTo": "Gnomes"
+  },
+  {
+    "name": "Gnomish Bombardier",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 21,
+    "rangedStrength": 32,
+    "range": 3,
+    "cost": 320,
+    "requiredTech": "Seaforium",
+    "upgradesTo": "Demolisher",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "artillery",
+    "civilopediaText": [
+      {
+        "text": "Gnomish artillery crews with a dangerous fondness for experimental shells."
+      },
+      {
+        "text": "Stronger ranged attack than a Mortar Team, with range 3."
+      }
+    ],
+    "replaces": "Mortar Team",
+    "uniqueTo": "Gnomes"
+  },
+  {
+    "name": "Huntress",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 13,
+    "cost": 75,
+    "requiredTech": "Riding",
+    "requiredResource": "Horses",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Animal War Training",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "Double movement in [Forest]"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Sentinels of the night elves riding nightsabers, each armed with a moonglaive."
+      },
+      {
+        "text": "Stronger than an Outrider, with +25% Strength in forests and double movement through them."
+      }
+    ],
+    "replaces": "Outrider",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Glaive Thrower",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 16,
+    "cost": 120,
+    "requiredTech": "Siege Engineering",
+    "obsoleteTech": "Alchemy",
+    "upgradesTo": "Cannon",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "throw",
+    "range": 3,
+    "civilopediaText": [
+      {
+        "text": "Night elf siege engines of living wood that hurl huge glaives at their targets."
+      },
+      {
+        "text": "Stronger ranged attack than a Ballista, with range 3."
+      }
+    ],
+    "replaces": "Ballista",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Vindicator",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 23,
+    "cost": 120,
+    "requiredTech": "Steel Forged Swords",
+    "upgradesTo": "Musketeer",
+    "obsoleteTech": "Blackpowder",
+    "requiredResource": "Iron",
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Draenei paladins sworn to the Light and the naaru, enemies of the Burning Legion for thousands of years."
+      },
+      {
+        "text": "Stronger than a Vanguard, +33% Strength against barbarians and demons, and adjacent units heal 10 HP more."
+      }
+    ],
+    "replaces": "Vanguard",
+    "uniqueTo": "Draenei",
+    "uniques": [
+      "[+33]% Strength <vs [Barbarian] units>",
+      "All adjacent units heal [+10] HP when healing"
+    ]
+  },
+  {
+    "name": "Elekk Rider",
+    "unitType": "Mounted",
+    "movement": 3,
+    "strength": 24,
+    "cost": 120,
+    "requiredTech": "Animal War Training",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "[+15]% Strength <when defending>"
+    ],
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Draenei warriors mounted on armored elekks, slow but nearly unstoppable."
+      },
+      {
+        "text": "Much stronger than a Knight and +15% Strength when defending, but moves 3 instead of 4."
+      }
+    ],
+    "replaces": "Knight",
+    "uniqueTo": "Draenei"
+  },
+  {
+    "name": "Worgen Stalker",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 15,
+    "cost": 75,
+    "requiredTech": "Iron Forged Swords",
+    "upgradesTo": "Vanguard",
+    "obsoleteTech": "Steel Forged Swords",
+    "hurryCostModifier": 20,
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Gilneans who have embraced the curse of the worgen, hunting through the forests with tooth and claw."
+      },
+      {
+        "text": "Stronger than a Swordsman, needs no Iron, +25% Strength in forests and double movement through them."
+      }
+    ],
+    "replaces": "Swordsman",
+    "uniqueTo": "Worgen",
+    "uniques": [
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "Double movement in [Forest]"
+    ]
+  },
+  {
+    "name": "Gilnean Rifleman",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 37,
+    "cost": 225,
+    "requiredTech": "Long Rifles",
+    "obsoleteTech": "Gnomish Gearworks",
+    "upgradesTo": "Fusilier",
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "The disciplined riflemen of Gilneas, who held the Greymane Wall for years."
+      },
+      {
+        "text": "Stronger than a Rifleman, and sees farther."
+      }
+    ],
+    "replaces": "Rifleman",
+    "uniqueTo": "Worgen",
+    "uniques": [
+      "[+1] Sight"
+    ]
+  },
+  {
+    "name": "Farstrider",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 13,
+    "cost": 75,
+    "requiredTech": "Construction",
+    "obsoleteTech": "Clockwork",
+    "upgradesTo": "Crossbowman",
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "The rangers of Quel'Thalas, who guard the elven forests with bow and blade."
+      },
+      {
+        "text": "Stronger ranged attack than a Ranger, sees farther and gains +25% Strength in forests."
+      }
+    ],
+    "replaces": "Ranger",
+    "uniqueTo": "High Elves",
+    "uniques": [
+      "[+1] Sight",
+      "[+25]% Strength <when fighting in [Forest] tiles>"
+    ]
+  },
+  {
+    "name": "Elven Destroyer",
+    "unitType": "Ranged Water",
+    "movement": 4,
+    "strength": 18,
+    "rangedStrength": 20,
+    "cost": 100,
+    "requiredTech": "Seafaring",
+    "obsoleteTech": "Navigation",
+    "upgradesTo": "Frigate",
+    "uniques": [
+      "Cannot enter ocean tiles"
+    ],
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "Swift elven warships, the best in the Alliance's fleets in the Second War."
+      },
+      {
+        "text": "Stronger and faster than a War Galley."
+      }
+    ],
+    "replaces": "War Galley",
+    "uniqueTo": "High Elves"
+  },
+  {
+    "name": "Brewmaster",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 23,
+    "cost": 120,
+    "requiredTech": "Steel Forged Swords",
+    "upgradesTo": "Musketeer",
+    "obsoleteTech": "Blackpowder",
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Pandaren fighters who mix the martial arts with a staff, a keg and a drunken, unpredictable style."
+      },
+      {
+        "text": "Stronger than a Vanguard, needs no Iron, and +20% Strength when defending."
+      }
+    ],
+    "replaces": "Vanguard",
+    "uniqueTo": "Pandaren",
+    "uniques": [
+      "[+20]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Shado-Pan Monk",
+    "unitType": "Sword",
+    "movement": 3,
+    "strength": 17,
+    "cost": 90,
+    "requiredTech": "Arathi Law",
+    "uniques": [
+      "[+50]% Strength <vs [Mounted] units>"
+    ],
+    "upgradesTo": "Lancer",
+    "obsoleteTech": "Mithril Forged Swords",
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "The Shado-Pan, guardians of Pandaria's wall against the mantid and the Sha."
+      },
+      {
+        "text": "Stronger than a Pikeman and moves 3 tiles per turn."
+      }
+    ],
+    "replaces": "Pikeman",
+    "uniqueTo": "Pandaren"
+  },
+  {
     "name": "Felguard",
     "unitType": "Sword",
     "movement": 2,
     "strength": 24,
     "cost": 120,
     "requiredTech": "Steel Forged Swords",
-    "requiredResource": "Iron",
     "attackSound": "metalhit",
     "uniques": [
       "Unbuildable",

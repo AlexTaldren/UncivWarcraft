@@ -18,7 +18,7 @@
     ]
   },
   {
-    "name": "Monument",
+    "name": "Town Hall",
     "culture": 2,
     "cost": 40,
     "hurryCostModifier": 40,
@@ -28,7 +28,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A standing stone carved with the names of the founders. Every town in Azeroth, from Goldshire to Razor Hill, raises one to remember who first held the land."
+        "text": "The town hall at the heart of a new settlement, the first of the three stages of a Warcraft town (Town Hall, Keep, Castle). Its standing stone carries the names of the founders. Every town in Azeroth, from Goldshire to Razor Hill, raises one to remember who first held the land."
       }
     ]
   },
@@ -38,7 +38,7 @@
     "maintenance": 1,
     "hurryCostModifier": 25,
     "uniques": [
-      "[+1 Food] from [Deer] tiles [in this city]",
+      "[+1 Food] from [Plainstriders] tiles [in this city]",
       "[+1 Food] from [Tel'Abim Bananas] tiles [in this city]",
       "[+1 Food] from [Wheat] tiles [in this city]"
     ],
@@ -309,12 +309,12 @@
     "requiredNearbyImprovedResources": [
       "Horses",
       "Sheep",
-      "Cattle"
+      "Kodo"
     ],
     "hurryCostModifier": 25,
     "uniques": [
       "[+15]% Production when constructing [Mounted] units [in this city]",
-      "[+1 Production] from [Cattle] tiles [in this city]",
+      "[+1 Production] from [Kodo] tiles [in this city]",
       "[+1 Production] from [Horses] tiles [in this city]",
       "[+1 Production] from [Sheep] tiles [in this city]"
     ],
@@ -367,7 +367,7 @@
     "isWonder": true,
     "requiredTech": "Mathematics",
     "uniques": [
-      "Gain a free [Garden] [in this city]"
+      "Gain a free [Herb Garden] [in this city]"
     ],
     "civilopediaText": [
       {
@@ -456,12 +456,12 @@
     ]
   },
   {
-    "name": "Amphitheater",
+    "name": "Storyteller's Circle",
     "culture": 3,
     "specialistSlots": {
       "Bard": 1
     },
-    "requiredBuilding": "Monument",
+    "requiredBuilding": "Town Hall",
     "maintenance": 2,
     "hurryCostModifier": 25,
     "uniques": [
@@ -480,7 +480,7 @@
     "culture": 1,
     "isNationalWonder": true,
     "uniques": [
-      "Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
+      "Only available <if [Town Hall] is constructed in all [non-[Puppeted]] cities>",
       "[+25]% Great Person generation [in this city]",
       "Cost increases by [30] per owned city"
     ],
@@ -509,7 +509,7 @@
     ]
   },
   {
-    "name": "Mint",
+    "name": "Coin Forge",
     "maintenance": 0,
     "requiredNearbyImprovedResources": [
       "Gold Ore",
@@ -537,7 +537,7 @@
     "uniques": [
       "Must be next to [Desert]",
       "[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]",
-      "Gain a free [Amphitheater] [in this city]",
+      "Gain a free [Storyteller's Circle] [in this city]",
       "[+6 Culture] [in this city] <after discovering [Archaeology]>"
     ],
     "requiredTech": "Coinage",
@@ -548,7 +548,7 @@
     ]
   },
   {
-    "name": "Aqueduct",
+    "name": "Waterworks",
     "maintenance": 1,
     "hurryCostModifier": 0,
     "uniques": [
@@ -617,7 +617,7 @@
     ]
   },
   {
-    "name": "Garden",
+    "name": "Herb Garden",
     "uniques": [
       "[+25]% Great Person generation [in this city]",
       "Must be next to [Fresh water]"
@@ -965,7 +965,7 @@
       "Bard": 1
     },
     "hurryCostModifier": 10,
-    "requiredBuilding": "Amphitheater",
+    "requiredBuilding": "Storyteller's Circle",
     "maintenance": 2,
     "requiredTech": "Choral Hymns",
     "uniques": [
@@ -1095,7 +1095,7 @@
     ]
   },
   {
-    "name": "Port",
+    "name": "Docks",
     "hurryCostModifier": 25,
     "maintenance": 2,
     "requiredBuilding": "Shipyard",
@@ -1186,7 +1186,7 @@
     ]
   },
   {
-    "name": "Arsenal",
+    "name": "Siege Workshop",
     "cost": 300,
     "cityStrength": 9,
     "cityHealth": 25,
@@ -1221,7 +1221,7 @@
     ]
   },
   {
-    "name": "Museum",
+    "name": "Hall of Relics",
     "culture": 5,
     "specialistSlots": {
       "Bard": 2
@@ -1235,7 +1235,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Halls of relics and curiosities, much like the Explorers' League collections in Ironforge's Hall of Explorers."
+        "text": "Halls of relics and curiosities gathered by explorers and archaeologists from the ruins of older ages."
       }
     ]
   },
@@ -1351,7 +1351,7 @@
   {
     "name": "House of Healing",
     "food": 5,
-    "requiredBuilding": "Aqueduct",
+    "requiredBuilding": "Waterworks",
     "maintenance": 2,
     "hurryCostModifier": 0,
     "requiredTech": "Natural Lore",
@@ -1430,7 +1430,7 @@
     "percentStatBonus": {
       "culture": 33
     },
-    "requiredBuilding": "Museum",
+    "requiredBuilding": "Hall of Relics",
     "maintenance": 3,
     "requiredTech": "Communication Crystals",
     "uniques": [
@@ -1486,7 +1486,7 @@
     "cityStrength": 12,
     "cityHealth": 25,
     "hurryCostModifier": 25,
-    "requiredBuilding": "Arsenal",
+    "requiredBuilding": "Siege Workshop",
     "requiredTech": "Gnomish Gearworks",
     "uniques": [
       "Destroyed when the city is captured"
@@ -1991,5 +1991,261 @@
         "text": "Where the heroes of the human kingdoms are honored and new champions are called to lead. A free Great General appears when it is built; +15% Great Person generation in this city. Only the Humans can build it, once."
       }
     ]
+  },
+  {
+    "name": "Pig Farm",
+    "food": 2,
+    "maintenance": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+1 Food] from [Plainstriders] tiles [in this city]",
+      "[+1 Food] from [Tel'Abim Bananas] tiles [in this city]",
+      "[+1 Food] from [Wheat] tiles [in this city]"
+    ],
+    "requiredTech": "Pottery",
+    "production": 1,
+    "civilopediaText": [
+      {
+        "text": "Orcish pig farms, a fixture of every Horde town since Warcraft II: pens of grunting boars feeding the warband. +1 Production."
+      }
+    ],
+    "replaces": "Granary",
+    "uniqueTo": "Orcs"
+  },
+  {
+    "name": "Voodoo Lounge",
+    "faith": 1,
+    "cost": 40,
+    "maintenance": 1,
+    "requiredTech": "Pottery",
+    "uniques": [
+      "Only available <when religion is enabled>"
+    ],
+    "gold": 1,
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A troll witch doctor's den, selling potions, charms and the blessings of the Loa. +1 Gold and +1 Culture."
+      }
+    ],
+    "replaces": "Shrine",
+    "uniqueTo": "Trolls"
+  },
+  {
+    "name": "Great Totem",
+    "culture": 2,
+    "cost": 40,
+    "hurryCostModifier": 40,
+    "maintenance": 1,
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "faith": 1,
+    "civilopediaText": [
+      {
+        "text": "A carved totem pole honoring the Earth Mother and the ancestors of the tribe. +1 Faith."
+      }
+    ],
+    "replaces": "Town Hall",
+    "uniqueTo": "Tauren"
+  },
+  {
+    "name": "Apothecarium",
+    "uniques": [
+      "[+25]% Great Person generation [in this city]",
+      "Must be next to [Fresh water]"
+    ],
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "requiredTech": "Priesthood",
+    "science": 2,
+    "civilopediaText": [
+      {
+        "text": "The laboratories of the Royal Apothecary Society, deep beneath the Undercity. +2 Science."
+      }
+    ],
+    "replaces": "Herb Garden",
+    "uniqueTo": "Forsaken"
+  },
+  {
+    "name": "Magisters' Sanctum",
+    "maintenance": 2,
+    "hurryCostModifier": 15,
+    "percentStatBonus": {
+      "science": 33
+    },
+    "specialistSlots": {
+      "Arcanist": 2
+    },
+    "requiredBuilding": "Library",
+    "uniques": [
+      "[+2 Science] from [Jungle] tiles [in this city]"
+    ],
+    "requiredTech": "Scholarship",
+    "science": 1,
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A spire of Silvermoon where magisters study the arcane under the light of the sun. +1 Science and +1 Culture."
+      }
+    ],
+    "replaces": "Arcane Sanctum",
+    "uniqueTo": "Blood Elves"
+  },
+  {
+    "name": "Goblin Bazaar",
+    "gold": 4,
+    "specialistSlots": {
+      "Trader": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "gold": 25
+    },
+    "requiredTech": "Coinage",
+    "civilopediaText": [
+      {
+        "text": "A noisy goblin bazaar where anything can be bought, for a price. +2 Gold."
+      }
+    ],
+    "replaces": "Market",
+    "uniqueTo": "Goblins"
+  },
+  {
+    "name": "Dwarven Forge",
+    "maintenance": 1,
+    "hurryCostModifier": 25,
+    "requiredNearbyImprovedResources": [
+      "Iron"
+    ],
+    "requiredTech": "Blacksmithing",
+    "uniques": [
+      "[+15]% Production when constructing [Land] units [in this city]",
+      "[+1 Production] from [Iron] tiles [in this city]"
+    ],
+    "production": 2,
+    "civilopediaText": [
+      {
+        "text": "A dwarven forge in the tradition of Ironforge's Great Forge, its anvils ringing day and night. +2 Production."
+      }
+    ],
+    "replaces": "Blacksmith",
+    "uniqueTo": "Dwarves"
+  },
+  {
+    "name": "Tinker's Workshop",
+    "maintenance": 2,
+    "production": 2,
+    "specialistSlots": {
+      "Tinker": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "requiredTech": "Blacksmithing",
+    "science": 1,
+    "civilopediaText": [
+      {
+        "text": "A gnomish workshop full of half-finished inventions, some of which even work. +1 Science."
+      }
+    ],
+    "replaces": "Workshop",
+    "uniqueTo": "Gnomes"
+  },
+  {
+    "name": "Moonwell",
+    "faith": 1,
+    "cost": 40,
+    "maintenance": 1,
+    "requiredTech": "Pottery",
+    "uniques": [
+      "Only available <when religion is enabled>"
+    ],
+    "food": 1,
+    "civilopediaText": [
+      {
+        "text": "A pool of water blessed by Elune that restores those who drink from it. +1 Food."
+      }
+    ],
+    "replaces": "Shrine",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Crystal Sanctum",
+    "faith": 2,
+    "requiredBuilding": "Shrine",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Destroyed when the city is captured"
+    ],
+    "science": 1,
+    "civilopediaText": [
+      {
+        "text": "A draenei sanctuary of glowing crystal, raised in the image of the naaru. +1 Science."
+      }
+    ],
+    "replaces": "Temple",
+    "uniqueTo": "Draenei"
+  },
+  {
+    "name": "Gilnean Bulwark",
+    "cityStrength": 8,
+    "cityHealth": 50,
+    "hurryCostModifier": 25,
+    "requiredTech": "Masonry",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "Massive Gilnean walls built in the tradition of the Greymane Wall. Stronger than ordinary walls, +1 Culture."
+      }
+    ],
+    "replaces": "Walls",
+    "uniqueTo": "Worgen"
+  },
+  {
+    "name": "Runestone",
+    "cityStrength": 7,
+    "cityHealth": 50,
+    "hurryCostModifier": 25,
+    "requiredTech": "Masonry",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "science": 1,
+    "civilopediaText": [
+      {
+        "text": "A runestone of Quel'Thalas, part of the magical barrier that protected the elves' lands. Stronger than ordinary walls, +1 Science."
+      }
+    ],
+    "replaces": "Walls",
+    "uniqueTo": "High Elves"
+  },
+  {
+    "name": "Brewery",
+    "food": 2,
+    "maintenance": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+1 Food] from [Plainstriders] tiles [in this city]",
+      "[+1 Food] from [Tel'Abim Bananas] tiles [in this city]",
+      "[+1 Food] from [Wheat] tiles [in this city]"
+    ],
+    "requiredTech": "Pottery",
+    "gold": 1,
+    "happiness": 1,
+    "civilopediaText": [
+      {
+        "text": "A pandaren brewery in the Stormstout tradition, making ales that are famous across Azeroth. +1 Gold and +1 Happiness."
+      }
+    ],
+    "replaces": "Granary",
+    "uniqueTo": "Pandaren"
   }
 ]
