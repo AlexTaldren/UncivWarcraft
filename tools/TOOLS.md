@@ -5,12 +5,15 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 ## Files
 - `wc_renames.py` — every Warcraft rename (eras, techs, units, buildings, wonders, resources, natural wonders).
 - `wc_factions.py` — the races, leaders, abilities, city lists, city-states, religions, and the Human unique units/building.
-- `wc_names.py` — Great Person names.
+- `wc_names.py` — generic Great Person names (city-states); `wc_race_names.py` — each race's own Great Person names.
+- `wc_events.py` — the Warcraft random events and their triggers; `legion.py` — the Burning Legion's Felguard and Infernal (units and sprites).
+- `wc_text.py` — ruins rewards, city-state quests, city-state type and specialist names; `wc_lore_more.py` — civilopedia lore for buildings, resources, improvements, beliefs, policies and promotions.
 - `icons.py`, `sprites.py` — the original icons and map sprites.
 - `wc_terrain.py`, `tiles_art.py` — the Warcraft terrain features and landmarks, and their tile art (HexaRealm and FantasyHex).
 - `late_units.py` — Warcraft replacements for the modern-era unit sprites.
 - `icon_set.py` — the Warcraft icon set (glyph library + per-item recipes).
 - `wc_lore.py` — civilopedia lore for wonders, techs and units.
+- `race_sprites.py` also draws the barbarians (murlocs, gnolls, Defias) and `tiles_art.py` their camp.
 - `citycenters.py` — per-race city-center tiles in three growth stages.
 - `map_tiles_preview.py` — renders part of the Azeroth map with the real tile art.
 - `human_sprites.py` — the Humans' unique-unit sprites and blue-and-gold variants.

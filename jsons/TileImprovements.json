@@ -16,7 +16,12 @@
       "[+1 Food] from [non-fresh water] tiles <after discovering [Soil Enrichment]>",
       "Pillaging this improvement yields approximately [+18 Gold]"
     ],
-    "shortcutKey": "F"
+    "shortcutKey": "F",
+    "civilopediaText": [
+      {
+        "text": "Fields of grain and vegetables, worked by peasants and peons alike."
+      }
+    ]
   },
   {
     "name": "Lumber mill",
@@ -30,7 +35,12 @@
       "[+1 Production] <after discovering [Arcane Science]>",
       "Pillaging this improvement yields approximately [+10 Gold]"
     ],
-    "shortcutKey": "L"
+    "shortcutKey": "L",
+    "civilopediaText": [
+      {
+        "text": "A camp of woodcutters and saws harvesting the forest's timber."
+      }
+    ]
   },
   {
     "name": "Mine",
@@ -44,7 +54,12 @@
       "[+1 Production] <after discovering [Alchemy]>",
       "Pillaging this improvement yields approximately [+20 Gold]"
     ],
-    "shortcutKey": "M"
+    "shortcutKey": "M",
+    "civilopediaText": [
+      {
+        "text": "Shafts sunk into hills and mountains, the work of miners from Ironforge to the Deadmines."
+      }
+    ]
   },
   {
     "name": "Trading post",
@@ -65,7 +80,12 @@
       "[+1 Gold] <after discovering [Auctioneering]>",
       "Pillaging this improvement yields approximately [+20 Gold]"
     ],
-    "shortcutKey": "T"
+    "shortcutKey": "T",
+    "civilopediaText": [
+      {
+        "text": "A small market where travelers trade goods, often run by an enterprising goblin."
+      }
+    ]
   },
   {
     "name": "Camp",
@@ -78,7 +98,12 @@
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+10 Gold]"
     ],
-    "shortcutKey": "C"
+    "shortcutKey": "C",
+    "civilopediaText": [
+      {
+        "text": "Hunters' camps for gathering the bounty of the wilds: hides, ivory, honey and more."
+      }
+    ]
   },
   {
     "name": "Azerite Drill",
@@ -89,7 +114,12 @@
       "Cannot be built on [Water] tiles",
       "Pillaging this improvement yields approximately [+20 Gold]"
     ],
-    "shortcutKey": "W"
+    "shortcutKey": "W",
+    "civilopediaText": [
+      {
+        "text": "A goblin drilling rig tapping the Azerite that bleeds from Azeroth's wounds."
+      }
+    ]
   },
   {
     "name": "Tidal Drill",
@@ -100,7 +130,12 @@
       "Can only be built on [Water] tiles",
       "Pillaging this improvement yields approximately [+20 Gold]"
     ],
-    "shortcutKey": "P"
+    "shortcutKey": "P",
+    "civilopediaText": [
+      {
+        "text": "An offshore rig of the late ages, drilling the seabed for Azerite."
+      }
+    ]
   },
   {
     "name": "Pasture",
@@ -111,7 +146,12 @@
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+10 Gold]"
     ],
-    "shortcutKey": "P"
+    "shortcutKey": "P",
+    "civilopediaText": [
+      {
+        "text": "Fenced pastures for herds of livestock and mounts."
+      }
+    ]
   },
   {
     "name": "Plantation",
@@ -123,7 +163,12 @@
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+10 Gold]"
     ],
-    "shortcutKey": "P"
+    "shortcutKey": "P",
+    "civilopediaText": [
+      {
+        "text": "Plantations of fruit, spices and fiber crops in the warmer lands."
+      }
+    ]
   },
   {
     "name": "Quarry",
@@ -134,7 +179,12 @@
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+20 Gold]"
     ],
-    "shortcutKey": "Q"
+    "shortcutKey": "Q",
+    "civilopediaText": [
+      {
+        "text": "A stone quarry where marble and building stone are cut from the hillside."
+      }
+    ]
   },
   {
     "name": "Fishing Boats",
@@ -149,7 +199,12 @@
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+10 Gold]"
     ],
-    "shortcutKey": "F"
+    "shortcutKey": "F",
+    "civilopediaText": [
+      {
+        "text": "Small boats casting nets in the coastal waters."
+      }
+    ]
   },
   {
     "name": "Fort",
@@ -169,7 +224,12 @@
       "Can be built outside your borders",
       "Gives a defensive bonus of [50]%"
     ],
-    "shortcutKey": "O"
+    "shortcutKey": "O",
+    "civilopediaText": [
+      {
+        "text": "A fortified outpost guarding a pass or a border, like the forts of the Thandol Span."
+      }
+    ]
   },
   {
     "name": "Road",
@@ -304,7 +364,7 @@
     ]
   },
   {
-    "name": "Academy",
+    "name": "Arcane Academy",
     "terrainsCanBeBuiltOn": [
       "Land"
     ],
@@ -316,10 +376,15 @@
       "Removes removable features when built",
       "Will not be replaced by automated units",
       "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built by a Great Scientist: a seat of arcane learning in the tradition of Dalaran's Violet Citadel, where scholars gather to study."
+      }
     ]
   },
   {
-    "name": "Landmark",
+    "name": "Hall of Heroes",
     "terrainsCanBeBuiltOn": [
       "Land"
     ],
@@ -329,6 +394,11 @@
       "Removes removable features when built",
       "Will not be replaced by automated units",
       "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built by a Great Artist: a monument to the heroes of the realm, like the statues of the Valley of Heroes in Stormwind."
+      }
     ]
   },
   {
@@ -343,10 +413,15 @@
       "Will not be replaced by automated units",
       "Removes removable features when built",
       "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built by a Great Engineer: a vast workshop where master engineers build engines and devices."
+      }
     ]
   },
   {
-    "name": "Customs house",
+    "name": "Trade Company",
     "terrainsCanBeBuiltOn": [
       "Land"
     ],
@@ -357,10 +432,15 @@
       "Removes removable features when built",
       "Will not be replaced by automated units",
       "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built by a Great Merchant: a chartered company in the mould of the Steamwheedle Cartel, with warehouses, ledgers and agents in every port."
+      }
     ]
   },
   {
-    "name": "Holy site",
+    "name": "Sacred Grounds",
     "terrainsCanBeBuiltOn": [
       "Land"
     ],
@@ -370,10 +450,15 @@
       "Removes removable features when built",
       "Will not be replaced by automated units",
       "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built by a Great Prophet: holy ground such as Light's Hope Chapel or a moonwell grove, where pilgrims come to pray."
+      }
     ]
   },
   {
-    "name": "Citadel",
+    "name": "Bastion",
     "terrainsCanBeBuiltOn": [
       "Land"
     ],
@@ -385,6 +470,11 @@
       "Gain control over [all] tiles in a [1]-tile radius",
       "Removes removable features when built",
       "Will not be replaced by automated units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built by a Great General: a fortified bastion like Nethergarde Keep, which guarded the Dark Portal for years."
+      }
     ]
   },
   {
@@ -398,6 +488,11 @@
       "Unbuildable",
       "Does not need removal of [Forest]",
       "Does not need removal of [Jungle]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The ruins of an older age: Titan-forged halls, troll ziggurats or the broken towers of a fallen kingdom. Who knows what remains inside?"
+      }
     ]
   },
   {

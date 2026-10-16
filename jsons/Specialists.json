@@ -1,6 +1,6 @@
 [
   {
-    "name": "Scientist",
+    "name": "Arcanist",
     "science": 3,
     "greatPersonPoints": {
       "Great Scientist": 3
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "name": "Merchant",
+    "name": "Trader",
     "gold": 3,
     "greatPersonPoints": {
       "Great Merchant": 3
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "name": "Artist",
+    "name": "Bard",
     "culture": 2,
     "greatPersonPoints": {
       "Great Artist": 3
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "name": "Engineer",
+    "name": "Tinker",
     "production": 2,
     "greatPersonPoints": {
       "Great Engineer": 3

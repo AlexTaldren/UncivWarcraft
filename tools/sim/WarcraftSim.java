@@ -75,6 +75,11 @@ public class WarcraftSim {
             while (gi.getTurns() < t && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null)
                 gi.nextTurn(null, false);
             sampleDiplomacy(gi);
+            for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.civilization.Notification n : c.getNotifications()) {
+                String tx = n.getText();
+                for (String k : new String[]{"Darkmoon","granar","fel rift","Legion","Steamwheedle","Lunar","Brewfest","orphan","Gnome","Titan","Deathwing","brewmaster","Wickerman","Hallow","Kirin Tor","murloc","Defias","Mrgl","Golden Age","rebel"})
+                    if (tx.contains(k)) EVENTS.merge(k, 1, Integer::sum);
+            }
             if (t % 25 != 0 && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null) continue;
             report(gi);
             for (Civilization c : gi.getCivilizations()) if (c.getCivName().equals("Humans")) {
@@ -85,6 +90,17 @@ public class WarcraftSim {
             if (gi.getAliveMajorCivs().size() <= 1 || gi.getVictoryData() != null) break;
         }
         System.out.println("VICTORY: " + gi.getVictoryData());
+        for (Civilization c : gi.getCivilizations()) {
+            java.util.List<String> gpl = new ArrayList<>();
+            java.util.TreeMap<String,Integer> barb = new java.util.TreeMap<>();
+            for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits())) {
+                if (u.getBaseUnit().isGreatPerson()) gpl.add(u.getName() + "=" + u.getInstanceName());
+                if (c.isBarbarian()) barb.merge(u.getName(), 1, Integer::sum);
+            }
+            if (!gpl.isEmpty()) System.out.println("GP " + c.getCivName() + ": " + gpl);
+            if (c.isBarbarian()) System.out.println("BARBARIAN UNITS: " + barb);
+        }
+        System.out.println("EVENT SEEN: " + EVENTS);
         System.out.println("DIPLOMACY (pair-samples every 5 turns; share of known pairs in each state):");
         for (String k : new String[]{"Alliance-Alliance", "Horde-Horde", "Alliance-Horde", "Neutral-any"}) {
             int[] v = DIPLO.getOrDefault(k, new int[4]);
@@ -106,6 +122,7 @@ public class WarcraftSim {
         for (String n : new String[]{"Orcs","Trolls","Tauren","Forsaken","Blood Elves","Goblins"}) FACTION.put(n, "Horde");
         FACTION.put("Pandaren", "Neutral");
     }
+    static final java.util.Map<String, Integer> EVENTS = new java.util.TreeMap<>();
     static final java.util.Map<String, int[]> DIPLO = new java.util.TreeMap<>();
 
     static void sampleDiplomacy(GameInfo gi) {

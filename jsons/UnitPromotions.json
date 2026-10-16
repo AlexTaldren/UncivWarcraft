@@ -32,7 +32,7 @@
     "column": 0
   },
   {
-    "name": "Accuracy I",
+    "name": "Deadeye I",
     "uniques": [
       "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
       "[-90]% weight to this choice for AI decisions"
@@ -43,12 +43,17 @@
       "Ranged Firearm"
     ],
     "column": 1,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Archers and riflemen trained to pick their targets on open ground."
+      }
+    ]
   },
   {
-    "name": "Accuracy II",
+    "name": "Deadeye II",
     "prerequisites": [
-      "Accuracy I"
+      "Deadeye I"
     ],
     "uniques": [
       "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
@@ -59,12 +64,17 @@
       "Ranged Firearm"
     ],
     "column": 1,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Archers and riflemen trained to pick their targets on open ground."
+      }
+    ]
   },
   {
-    "name": "Accuracy III",
+    "name": "Deadeye III",
     "prerequisites": [
-      "Accuracy II"
+      "Deadeye II"
     ],
     "uniques": [
       "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
@@ -75,7 +85,12 @@
       "Ranged Firearm"
     ],
     "column": 1,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Archers and riflemen trained to pick their targets on open ground."
+      }
+    ]
   },
   {
     "name": "Barrage I",
@@ -89,7 +104,12 @@
       "Ranged Firearm"
     ],
     "column": 2,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Massed volleys that break enemy units in rough terrain."
+      }
+    ]
   },
   {
     "name": "Barrage II",
@@ -105,7 +125,12 @@
       "Ranged Firearm"
     ],
     "column": 2,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Massed volleys that break enemy units in rough terrain."
+      }
+    ]
   },
   {
     "name": "Barrage III",
@@ -121,12 +146,17 @@
       "Ranged Firearm"
     ],
     "column": 2,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Massed volleys that break enemy units in rough terrain."
+      }
+    ]
   },
   {
     "name": "Volley",
     "prerequisites": [
-      "Accuracy I",
+      "Deadeye I",
       "Barrage I"
     ],
     "uniques": [
@@ -136,16 +166,21 @@
       "Siege"
     ],
     "column": 3,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "A concentrated volley against fortified positions."
+      }
+    ]
   },
   {
     "name": "Extended Range",
     "prerequisites": [
-      "Accuracy III",
+      "Deadeye III",
       "Barrage III",
-      "Targeting II",
+      "Broadsides II",
       "Bombardment II",
-      "Wolfpack II"
+      "Depth Stalker II"
     ],
     "uniques": [
       "[+1] Range"
@@ -158,15 +193,20 @@
       "Submarine"
     ],
     "column": 3,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Longer range for siege and ranged units."
+      }
+    ]
   },
   {
     "name": "Indirect Fire",
     "prerequisites": [
-      "Accuracy III",
+      "Deadeye III",
       "Barrage III",
       "Bombardment II",
-      "Targeting II"
+      "Broadsides II"
     ],
     "uniques": [
       "Ranged attacks may be performed over obstacles"
@@ -178,10 +218,15 @@
       "Ranged Water"
     ],
     "column": 3,
-    "row": 4
+    "row": 4,
+    "civilopediaText": [
+      {
+        "text": "Lobbing shots over hills and walls at unseen targets."
+      }
+    ]
   },
   {
-    "name": "Shock I",
+    "name": "Heroic Strike I",
     "uniques": [
       "[+15]% Strength <when fighting in [Open terrain] tiles>",
       "[-90]% weight to this choice for AI decisions"
@@ -193,12 +238,17 @@
       "War Machine"
     ],
     "column": 4,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "A warrior's signature blow, delivered with full force in the open field."
+      }
+    ]
   },
   {
-    "name": "Shock II",
+    "name": "Heroic Strike II",
     "prerequisites": [
-      "Shock I"
+      "Heroic Strike I"
     ],
     "uniques": [
       "[+15]% Strength <when fighting in [Open terrain] tiles>"
@@ -210,12 +260,17 @@
       "War Machine"
     ],
     "column": 4,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "A warrior's signature blow, delivered with full force in the open field."
+      }
+    ]
   },
   {
-    "name": "Shock III",
+    "name": "Heroic Strike III",
     "prerequisites": [
-      "Shock II"
+      "Heroic Strike II"
     ],
     "uniques": [
       "[+15]% Strength <when fighting in [Open terrain] tiles>"
@@ -227,10 +282,15 @@
       "War Machine"
     ],
     "column": 4,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "A warrior's signature blow, delivered with full force in the open field."
+      }
+    ]
   },
   {
-    "name": "Drill I",
+    "name": "Weapon Mastery I",
     "uniques": [
       "[+15]% Strength <when fighting in [Rough terrain] tiles>",
       "[-90]% weight to this choice for AI decisions"
@@ -242,12 +302,17 @@
       "War Machine"
     ],
     "column": 5,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Soldiers drilled to fight in hills, forests and broken ground."
+      }
+    ]
   },
   {
-    "name": "Drill II",
+    "name": "Weapon Mastery II",
     "prerequisites": [
-      "Drill I"
+      "Weapon Mastery I"
     ],
     "uniques": [
       "[+15]% Strength <when fighting in [Rough terrain] tiles>"
@@ -259,12 +324,17 @@
       "War Machine"
     ],
     "column": 5,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Soldiers drilled to fight in hills, forests and broken ground."
+      }
+    ]
   },
   {
-    "name": "Drill III",
+    "name": "Weapon Mastery III",
     "prerequisites": [
-      "Drill II"
+      "Weapon Mastery II"
     ],
     "uniques": [
       "[+15]% Strength <when fighting in [Rough terrain] tiles>"
@@ -276,13 +346,18 @@
       "War Machine"
     ],
     "column": 5,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Soldiers drilled to fight in hills, forests and broken ground."
+      }
+    ]
   },
   {
     "name": "Charge",
     "prerequisites": [
-      "Shock II",
-      "Drill II"
+      "Heroic Strike II",
+      "Weapon Mastery II"
     ],
     "uniques": [
       "[+33]% Strength <vs [Wounded] units>",
@@ -293,13 +368,18 @@
       "War Machine"
     ],
     "column": 6,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "A headlong charge that finishes off wounded enemies."
+      }
+    ]
   },
   {
     "name": "Besiege",
     "prerequisites": [
-      "Shock II",
-      "Drill II"
+      "Heroic Strike II",
+      "Weapon Mastery II"
     ],
     "uniques": [
       "[+50]% Strength <vs cities>"
@@ -309,13 +389,18 @@
       "Firearm"
     ],
     "column": 6,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Siege tactics against fortified cities."
+      }
+    ]
   },
   {
-    "name": "Formation I",
+    "name": "Spear Wall I",
     "prerequisites": [
-      "Shock II",
-      "Drill II"
+      "Heroic Strike II",
+      "Weapon Mastery II"
     ],
     "uniques": [
       "[+33]% Strength <vs [Mounted] units>",
@@ -327,12 +412,17 @@
       "Mounted"
     ],
     "column": 7,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "A bristling wall of spears to break a cavalry charge."
+      }
+    ]
   },
   {
-    "name": "Formation II",
+    "name": "Spear Wall II",
     "prerequisites": [
-      "Formation I"
+      "Spear Wall I"
     ],
     "uniques": [
       "[+33]% Strength <vs [Mounted] units>"
@@ -343,13 +433,18 @@
       "Mounted"
     ],
     "column": 7,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "A bristling wall of spears to break a cavalry charge."
+      }
+    ]
   },
   {
-    "name": "Blitz",
+    "name": "Bloodlust",
     "prerequisites": [
-      "Shock III",
-      "Drill III"
+      "Heroic Strike III",
+      "Weapon Mastery III"
     ],
     "uniques": [
       "[1] additional attacks per turn"
@@ -361,13 +456,18 @@
       "War Machine"
     ],
     "column": 6,
-    "row": 4
+    "row": 4,
+    "civilopediaText": [
+      {
+        "text": "The shaman's Bloodlust: a frenzy that lets warriors strike twice in a turn."
+      }
+    ]
   },
   {
     "name": "Woodsman",
     "prerequisites": [
-      "Shock III",
-      "Drill III"
+      "Heroic Strike III",
+      "Weapon Mastery III"
     ],
     "uniques": [
       "Double movement in [Forest]",
@@ -378,13 +478,18 @@
       "Firearm"
     ],
     "column": 6,
-    "row": 5
+    "row": 5,
+    "civilopediaText": [
+      {
+        "text": "Rangers who move through forest and jungle as easily as open ground."
+      }
+    ]
   },
   {
     "name": "Amphibious",
     "prerequisites": [
-      "Shock I",
-      "Drill I"
+      "Heroic Strike I",
+      "Weapon Mastery I"
     ],
     "uniques": [
       "Eliminates combat penalty for attacking over a river",
@@ -395,13 +500,18 @@
       "Firearm"
     ],
     "column": 6,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Troops trained to attack from boats and across rivers."
+      }
+    ]
   },
   {
     "name": "Medic",
     "prerequisites": [
-      "Shock I",
-      "Drill I",
+      "Heroic Strike I",
+      "Weapon Mastery I",
       "Scouting II",
       "Survivalism II"
     ],
@@ -416,7 +526,12 @@
       "Scout"
     ],
     "column": 10,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "A field healer who tends wounded comrades nearby."
+      }
+    ]
   },
   {
     "name": "Medic II",
@@ -434,7 +549,12 @@
       "Scout"
     ],
     "column": 10,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "A field healer who tends wounded comrades nearby."
+      }
+    ]
   },
   {
     "name": "Scouting I",
@@ -445,7 +565,12 @@
       "Scout"
     ],
     "column": 8,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Trackers and pathfinders with sharp eyes and swift feet."
+      }
+    ]
   },
   {
     "name": "Scouting II",
@@ -459,7 +584,12 @@
       "Scout"
     ],
     "column": 8,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Trackers and pathfinders with sharp eyes and swift feet."
+      }
+    ]
   },
   {
     "name": "Scouting III",
@@ -473,7 +603,12 @@
       "Scout"
     ],
     "column": 8,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Trackers and pathfinders with sharp eyes and swift feet."
+      }
+    ]
   },
   {
     "name": "Survivalism I",
@@ -485,7 +620,12 @@
       "Scout"
     ],
     "column": 9,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Woodcraft and survival skills learned in the wilds."
+      }
+    ]
   },
   {
     "name": "Survivalism II",
@@ -500,7 +640,12 @@
       "Scout"
     ],
     "column": 9,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Woodcraft and survival skills learned in the wilds."
+      }
+    ]
   },
   {
     "name": "Survivalism III",
@@ -515,7 +660,12 @@
       "Scout"
     ],
     "column": 9,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Woodcraft and survival skills learned in the wilds."
+      }
+    ]
   },
   {
     "name": "Boarding Party I",
@@ -526,7 +676,12 @@
       "Melee Water"
     ],
     "column": 11,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Sailors trained to board enemy ships with cutlass and pistol."
+      }
+    ]
   },
   {
     "name": "Boarding Party II",
@@ -540,7 +695,12 @@
       "Melee Water"
     ],
     "column": 11,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Sailors trained to board enemy ships with cutlass and pistol."
+      }
+    ]
   },
   {
     "name": "Boarding Party III",
@@ -554,7 +714,12 @@
       "Melee Water"
     ],
     "column": 11,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Sailors trained to board enemy ships with cutlass and pistol."
+      }
+    ]
   },
   {
     "name": "Coastal Raider I",
@@ -566,7 +731,12 @@
       "Melee Water"
     ],
     "column": 12,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Raiders who strike coastal towns and pillage them."
+      }
+    ]
   },
   {
     "name": "Coastal Raider II",
@@ -581,7 +751,12 @@
       "Melee Water"
     ],
     "column": 12,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Raiders who strike coastal towns and pillage them."
+      }
+    ]
   },
   {
     "name": "Coastal Raider III",
@@ -596,7 +771,12 @@
       "Melee Water"
     ],
     "column": 12,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Raiders who strike coastal towns and pillage them."
+      }
+    ]
   },
   {
     "name": "Landing Party",
@@ -607,10 +787,15 @@
       "Melee Water"
     ],
     "column": 12,
-    "row": 5
+    "row": 5,
+    "civilopediaText": [
+      {
+        "text": "Crews trained to land and fight quickly."
+      }
+    ]
   },
   {
-    "name": "Targeting I",
+    "name": "Broadsides I",
     "uniques": [
       "[+15]% Strength <vs [Water] units>"
     ],
@@ -618,12 +803,17 @@
       "Ranged Water"
     ],
     "column": 13,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Gunners trained to rake enemy ships with full broadsides."
+      }
+    ]
   },
   {
-    "name": "Targeting II",
+    "name": "Broadsides II",
     "prerequisites": [
-      "Targeting I"
+      "Broadsides I"
     ],
     "uniques": [
       "[+15]% Strength <vs [Water] units>"
@@ -632,12 +822,17 @@
       "Ranged Water"
     ],
     "column": 13,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Gunners trained to rake enemy ships with full broadsides."
+      }
+    ]
   },
   {
-    "name": "Targeting III",
+    "name": "Broadsides III",
     "prerequisites": [
-      "Targeting II"
+      "Broadsides II"
     ],
     "uniques": [
       "[+15]% Strength <vs [Water] units>"
@@ -646,10 +841,15 @@
       "Ranged Water"
     ],
     "column": 13,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Gunners trained to rake enemy ships with full broadsides."
+      }
+    ]
   },
   {
-    "name": "Wolfpack I",
+    "name": "Depth Stalker I",
     "uniques": [
       "[+25]% Strength <when attacking>"
     ],
@@ -657,12 +857,17 @@
       "Submarine"
     ],
     "column": 14,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Submarine crews who hunt from the deep like the naga of Vashj'ir."
+      }
+    ]
   },
   {
-    "name": "Wolfpack II",
+    "name": "Depth Stalker II",
     "prerequisites": [
-      "Wolfpack I"
+      "Depth Stalker I"
     ],
     "uniques": [
       "[+25]% Strength <when attacking>"
@@ -671,12 +876,17 @@
       "Submarine"
     ],
     "column": 14,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Submarine crews who hunt from the deep like the naga of Vashj'ir."
+      }
+    ]
   },
   {
-    "name": "Wolfpack III",
+    "name": "Depth Stalker III",
     "prerequisites": [
-      "Wolfpack II"
+      "Depth Stalker II"
     ],
     "uniques": [
       "[+25]% Strength <when attacking>"
@@ -685,7 +895,12 @@
       "Submarine"
     ],
     "column": 14,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Submarine crews who hunt from the deep like the naga of Vashj'ir."
+      }
+    ]
   },
   {
     "name": "Iron Plating I",
@@ -696,7 +911,12 @@
       "Sky Carrier"
     ],
     "column": 15,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Ironclad plating that blunts enemy fire, like the Warcraft III armor upgrades."
+      }
+    ]
   },
   {
     "name": "Iron Plating II",
@@ -710,7 +930,12 @@
       "Sky Carrier"
     ],
     "column": 15,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Ironclad plating that blunts enemy fire, like the Warcraft III armor upgrades."
+      }
+    ]
   },
   {
     "name": "Iron Plating III",
@@ -724,7 +949,12 @@
       "Sky Carrier"
     ],
     "column": 15,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Ironclad plating that blunts enemy fire, like the Warcraft III armor upgrades."
+      }
+    ]
   },
   {
     "name": "Aerie Deck I",
@@ -735,7 +965,12 @@
       "Sky Carrier"
     ],
     "column": 16,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "A deck with roosts and launching rails for gryphons and gyrocopters."
+      }
+    ]
   },
   {
     "name": "Aerie Deck II",
@@ -749,7 +984,12 @@
       "Sky Carrier"
     ],
     "column": 16,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "A deck with roosts and launching rails for gryphons and gyrocopters."
+      }
+    ]
   },
   {
     "name": "Aerie Deck III",
@@ -763,13 +1003,18 @@
       "Sky Carrier"
     ],
     "column": 16,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "A deck with roosts and launching rails for gryphons and gyrocopters."
+      }
+    ]
   },
   {
-    "name": "Supply",
+    "name": "Ship's Carpenter",
     "prerequisites": [
       "Bombardment III",
-      "Targeting III",
+      "Broadsides III",
       "Boarding Party III",
       "Coastal Raider III"
     ],
@@ -782,7 +1027,12 @@
       "Ranged Water"
     ],
     "column": 16,
-    "row": 4
+    "row": 4,
+    "civilopediaText": [
+      {
+        "text": "A ship's carpenter aboard to repair damage at sea."
+      }
+    ]
   },
   {
     "name": "Siege I",
@@ -794,7 +1044,12 @@
       "Sky Bomber"
     ],
     "column": 17,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Ships trained to bombard coastal cities."
+      }
+    ]
   },
   {
     "name": "Siege II",
@@ -808,7 +1063,12 @@
       "Sky Bomber"
     ],
     "column": 17,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Ships trained to bombard coastal cities."
+      }
+    ]
   },
   {
     "name": "Siege III",
@@ -822,7 +1082,12 @@
       "Sky Bomber"
     ],
     "column": 17,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Ships trained to bombard coastal cities."
+      }
+    ]
   },
   {
     "name": "Evasion",
@@ -838,10 +1103,15 @@
       "Sky Bomber"
     ],
     "column": 17,
-    "row": 4
+    "row": 4,
+    "civilopediaText": [
+      {
+        "text": "Fliers that weave and dodge enemy fire."
+      }
+    ]
   },
   {
-    "name": "Interception I",
+    "name": "Sky Sentinel I",
     "uniques": [
       "[+33]% Damage when intercepting"
     ],
@@ -849,12 +1119,17 @@
       "Sky Fighter"
     ],
     "column": 18,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Air defenders trained to intercept attacking aircraft."
+      }
+    ]
   },
   {
-    "name": "Interception II",
+    "name": "Sky Sentinel II",
     "prerequisites": [
-      "Interception I"
+      "Sky Sentinel I"
     ],
     "uniques": [
       "[+33]% Damage when intercepting"
@@ -863,12 +1138,17 @@
       "Sky Fighter"
     ],
     "column": 18,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Air defenders trained to intercept attacking aircraft."
+      }
+    ]
   },
   {
-    "name": "Interception III",
+    "name": "Sky Sentinel III",
     "prerequisites": [
-      "Interception II"
+      "Sky Sentinel II"
     ],
     "uniques": [
       "[+34]% Damage when intercepting"
@@ -877,7 +1157,12 @@
       "Sky Fighter"
     ],
     "column": 18,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Air defenders trained to intercept attacking aircraft."
+      }
+    ]
   },
   {
     "name": "Aerial Combat I",
@@ -888,7 +1173,12 @@
       "Sky Fighter"
     ],
     "column": 19,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Pilots trained for air-to-air combat."
+      }
+    ]
   },
   {
     "name": "Aerial Combat II",
@@ -902,7 +1192,12 @@
       "Sky Fighter"
     ],
     "column": 19,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Pilots trained for air-to-air combat."
+      }
+    ]
   },
   {
     "name": "Aerial Combat III",
@@ -916,12 +1211,17 @@
       "Sky Fighter"
     ],
     "column": 19,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Pilots trained for air-to-air combat."
+      }
+    ]
   },
   {
     "name": "Aerial Targeting I",
     "prerequisites": [
-      "Interception I",
+      "Sky Sentinel I",
       "Siege I",
       "Bombardment I",
       "Aerial Combat I"
@@ -935,7 +1235,12 @@
       "Sky Bomber"
     ],
     "column": 20,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Bomber crews trained to strike ships from the sky."
+      }
+    ]
   },
   {
     "name": "Aerial Targeting II",
@@ -950,12 +1255,17 @@
       "Sky Bomber"
     ],
     "column": 20,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Bomber crews trained to strike ships from the sky."
+      }
+    ]
   },
   {
-    "name": "Sortie",
+    "name": "Skyguard Patrol",
     "prerequisites": [
-      "Interception II",
+      "Sky Sentinel II",
       "Aerial Combat II"
     ],
     "uniques": [
@@ -966,12 +1276,17 @@
       "Sky Fighter"
     ],
     "column": 21,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Air units kept on patrol, ready to intercept more often."
+      }
+    ]
   },
   {
     "name": "Long Flight",
     "prerequisites": [
-      "Interception I",
+      "Sky Sentinel I",
       "Aerial Combat I",
       "Siege I",
       "Bombardment I"
@@ -985,12 +1300,17 @@
       "Sky Bomber"
     ],
     "column": 21,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Fliers with the endurance to strike far from home."
+      }
+    ]
   },
   {
     "name": "Field Repairs",
     "prerequisites": [
-      "Interception II",
+      "Sky Sentinel II",
       "Aerial Combat II",
       "Siege II",
       "Bombardment II",
@@ -1006,7 +1326,12 @@
       "Gyro"
     ],
     "column": 21,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Mechanics and menders who keep fliers flying."
+      }
+    ]
   },
   {
     "name": "Mobility I",
@@ -1017,7 +1342,12 @@
       "Gyro"
     ],
     "column": 22,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Units trained to move faster across the battlefield."
+      }
+    ]
   },
   {
     "name": "Mobility II",
@@ -1031,7 +1361,12 @@
       "Gyro"
     ],
     "column": 22,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Units trained to move faster across the battlefield."
+      }
+    ]
   },
   {
     "name": "Armor Piercing I",
@@ -1042,7 +1377,12 @@
       "Gyro"
     ],
     "column": 23,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Weapons and tactics for cracking war machines and armored units."
+      }
+    ]
   },
   {
     "name": "Armor Piercing II",
@@ -1056,10 +1396,15 @@
       "Gyro"
     ],
     "column": 23,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Weapons and tactics for cracking war machines and armored units."
+      }
+    ]
   },
   {
-    "name": "Cover I",
+    "name": "Defend I",
     "uniques": [
       "[+33]% Strength <vs [Ranged] units> <when defending>",
       "[-100]% weight to this choice for AI decisions"
@@ -1072,12 +1417,17 @@
       "Siege"
     ],
     "column": 24,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Shields raised against arrows and shot, like the Warcraft III Footman's Defend ability."
+      }
+    ]
   },
   {
-    "name": "Cover II",
+    "name": "Defend II",
     "prerequisites": [
-      "Cover I"
+      "Defend I"
     ],
     "uniques": [
       "[+33]% Strength <vs [Ranged] units> <when defending>"
@@ -1090,15 +1440,20 @@
       "Siege"
     ],
     "column": 24,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Shields raised against arrows and shot, like the Warcraft III Footman's Defend ability."
+      }
+    ]
   },
   {
     "name": "March",
     "prerequisites": [
-      "Accuracy II",
+      "Deadeye II",
       "Barrage II",
-      "Shock III",
-      "Drill III"
+      "Heroic Strike III",
+      "Weapon Mastery III"
     ],
     "uniques": [
       "Unit will heal every turn, even if it performs an action"
@@ -1112,18 +1467,23 @@
       "Mounted"
     ],
     "column": 10,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Soldiers who heal while on the march."
+      }
+    ]
   },
   {
     "name": "Mobility",
     "prerequisites": [
-      "Shock II",
-      "Drill II",
-      "Targeting I",
+      "Heroic Strike II",
+      "Weapon Mastery II",
+      "Broadsides I",
       "Bombardment I",
       "Boarding Party I",
       "Coastal Raider I",
-      "Wolfpack I"
+      "Depth Stalker I"
     ],
     "uniques": [
       "[+1] Movement"
@@ -1136,17 +1496,22 @@
       "Submarine"
     ],
     "column": 24,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Units trained to move faster across the battlefield."
+      }
+    ]
   },
   {
     "name": "Sentry",
     "prerequisites": [
-      "Accuracy I",
+      "Deadeye I",
       "Barrage I",
-      "Shock II",
-      "Drill II",
+      "Heroic Strike II",
+      "Weapon Mastery II",
       "Bombardment I",
-      "Targeting I",
+      "Broadsides I",
       "Boarding Party I",
       "Coastal Raider I"
     ],
@@ -1162,15 +1527,20 @@
       "Melee Water"
     ],
     "column": 24,
-    "row": 4
+    "row": 4,
+    "civilopediaText": [
+      {
+        "text": "Sharp-eyed lookouts who see farther."
+      }
+    ]
   },
   {
-    "name": "Logistics",
+    "name": "Rapid Fire",
     "prerequisites": [
-      "Accuracy III",
+      "Deadeye III",
       "Barrage III",
-      "Targeting III",
-      "Wolfpack III",
+      "Broadsides III",
+      "Depth Stalker III",
       "Bombardment III",
       "Coastal Raider III",
       "Boarding Party III",
@@ -1194,7 +1564,12 @@
       "Gyro"
     ],
     "column": 24,
-    "row": 5
+    "row": 5,
+    "civilopediaText": [
+      {
+        "text": "Ranged units trained to loose a second volley before the enemy can close."
+      }
+    ]
   },
   {
     "name": "Ambush I",
@@ -1209,7 +1584,12 @@
       "Sky Bomber"
     ],
     "column": 25,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Fighters who strike war machines from cover."
+      }
+    ]
   },
   {
     "name": "Ambush II",
@@ -1226,7 +1606,12 @@
       "Sky Bomber"
     ],
     "column": 25,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Fighters who strike war machines from cover."
+      }
+    ]
   },
   {
     "name": "Bombardment I",
@@ -1239,7 +1624,12 @@
       "Sky Bomber"
     ],
     "column": 26,
-    "row": 1
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Bombardiers who rain fire on enemy positions."
+      }
+    ]
   },
   {
     "name": "Bombardment II",
@@ -1255,7 +1645,12 @@
       "Sky Bomber"
     ],
     "column": 26,
-    "row": 2
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Bombardiers who rain fire on enemy positions."
+      }
+    ]
   },
   {
     "name": "Bombardment III",
@@ -1271,18 +1666,33 @@
       "Sky Bomber"
     ],
     "column": 26,
-    "row": 3
+    "row": 3,
+    "civilopediaText": [
+      {
+        "text": "Bombardiers who rain fire on enemy positions."
+      }
+    ]
   },
   {
     "name": "Morale",
     "uniques": [
       "[+15]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Unbreakable spirit under fire."
+      }
     ]
   },
   {
     "name": "Rejuvenation",
     "uniques": [
       "All healing effects doubled"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Druidic rejuvenation that heals the wounded."
+      }
     ]
   },
   {
@@ -1295,6 +1705,11 @@
     "name": "Devout",
     "uniques": [
       "Can Spread Religion <[1] additional time(s)>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Unshakeable faith."
+      }
     ]
   },
   {

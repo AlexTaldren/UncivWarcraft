@@ -4,6 +4,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Culture] from every [Shrine]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The spirits of the ancestors guide their descendants, as orc and tauren shamans teach."
+      }
     ]
   },
   {
@@ -11,6 +16,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Faith] from [Tundra] tiles without [Forest] [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The northern lights dance over Northrend, a sign of the spirits' favor."
+      }
     ]
   },
   {
@@ -18,6 +28,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Faith] from every [Desert]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stories of the Tol'vir, the Titan-forged guardians of Uldum's deserts."
+      }
     ]
   },
   {
@@ -25,6 +40,11 @@
     "type": "Pantheon",
     "uniques": [
       "[All] Units adjacent to this city heal [+30] HP per turn when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Healers who call on the spirits to mend the sick."
+      }
     ]
   },
   {
@@ -32,6 +52,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+10]% growth [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Earth Mother, revered by the tauren, blesses the land with plenty."
+      }
     ]
   },
   {
@@ -39,6 +64,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Production] [in cities following this religion] <in cities with at least [3] [Population]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Khaz'goroth, the Titan shaper of the world, blesses the forges of his makers."
+      }
     ]
   },
   {
@@ -46,6 +76,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Culture] from every [Pasture]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An'she, the Sun, one of the eyes of the Earth Mother, shines on the faithful."
+      }
     ]
   },
   {
@@ -53,6 +88,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Production] from every [Fishing Boats]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Neptulon the Tidehunter, lord of water elementals, grants the sea's bounty."
+      }
     ]
   },
   {
@@ -60,6 +100,11 @@
     "type": "Pantheon",
     "uniques": [
       "Earn [50]% of [Military] unit's [Strength] as [Faith] when killed within 4 tiles of a city following this religion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Agamaggan, the great boar demigod, inspires fury in battle."
+      }
     ]
   },
   {
@@ -68,6 +113,11 @@
     "uniques": [
       "[+1 Culture, +1 Faith] from every [Ale]",
       "[+1 Culture, +1 Faith] from every [Mageroyal]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A festival of thanks for the harvest, honoring the fallen heroes of the Horde and Alliance."
+      }
     ]
   },
   {
@@ -75,6 +125,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Happiness] [in cities following this religion] <in cities with at least [6] [Population]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A festival of love and friendship that brings joy to the cities."
+      }
     ]
   },
   {
@@ -82,6 +137,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+30]% Strength for cities <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eonar, the Titan Life-Binder, shelters the cities of her faithful."
+      }
     ]
   },
   {
@@ -89,6 +149,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Food] from every [Camp]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Goldrinn, the great wolf Ancient, blesses the hunters."
+      }
     ]
   },
   {
@@ -96,6 +161,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+2 Science] from each Trade Route"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Elune, the moon goddess, whispers to her priestesses in the night."
+      }
     ]
   },
   {
@@ -104,6 +174,11 @@
     "uniques": [
       "[+15]% Production when constructing [Age of Tribes] wonders [in cities following this religion]",
       "[+15]% Production when constructing [Age of Arathor] wonders [in cities following this religion]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Monoliths raised in honor of the Titans, the makers of Azeroth."
+      }
     ]
   },
   {
@@ -111,6 +186,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+4 Faith] from every [Natural Wonder]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cenarius, demigod of the forests, blesses the wild places."
+      }
     ]
   },
   {
@@ -118,6 +198,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Culture] from every [Plantation]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Lorewalkers of Pandaria keep the stories of the past alive."
+      }
     ]
   },
   {
@@ -126,6 +211,11 @@
     "uniques": [
       "[+1 Culture, +1 Faith] from every [Gold Ore]",
       "[+1 Culture, +1 Faith] from every [Truesilver]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Carved totems that house the spirits of the land."
+      }
     ]
   },
   {
@@ -133,6 +223,11 @@
     "type": "Pantheon",
     "uniques": [
       "[-15]% Culture cost of natural border growth [in cities following this religion]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pilgrim towns grow quickly around sacred sites."
+      }
     ]
   },
   {
@@ -140,6 +235,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Culture] from every [Jungle]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Ancients, the great demigods of the night elves, guide the faithful."
+      }
     ]
   },
   {
@@ -147,6 +247,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+1 Happiness] in cities on [River] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The waters of the moonwells, blessed by Elune."
+      }
     ]
   },
   {
@@ -154,6 +259,11 @@
     "type": "Pantheon",
     "uniques": [
       "[+2 Faith] from every [Quarry]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ancient stone circles where druids gather."
+      }
     ]
   },
   {
@@ -161,6 +271,11 @@
     "type": "Follower",
     "uniques": [
       "[+1 Happiness] from every [Shrine] <in cities with at least [3] [Followers of this Religion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Monks who give up worldly comfort for spiritual strength."
+      }
     ]
   },
   {
@@ -168,6 +283,11 @@
     "type": "Follower",
     "uniques": [
       "May buy [Cathedral] buildings with [Faith] [in cities following this religion]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Great cathedrals of the Light."
+      }
     ]
   },
   {
@@ -175,6 +295,11 @@
     "type": "Follower",
     "uniques": [
       "[+2 Culture] from every [Temple] <in cities with at least [5] [Followers of this Religion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hymns sung in praise of the Holy Light."
+      }
     ]
   },
   {
@@ -182,6 +307,11 @@
     "type": "Follower",
     "uniques": [
       "[+2 Faith] from every [Wonder]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wonders inspired by the divine."
+      }
     ]
   },
   {
@@ -190,6 +320,11 @@
     "uniques": [
       "[+1 Food] from every [Shrine]",
       "[+1 Food] from every [Temple]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The faithful share their bounty with all."
+      }
     ]
   },
   {
@@ -197,6 +332,11 @@
     "type": "Follower",
     "uniques": [
       "[+2 Production] [in cities following this religion] <in cities with at least [1] [Specialists]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wise mentors guide the faithful."
+      }
     ]
   },
   {
@@ -204,6 +344,11 @@
     "type": "Follower",
     "uniques": [
       "May buy [{pre-[Age of the Lich King]} {Military} {Land}] units with [Faith] for [2] times their normal Production cost <in [in cities following this religion] cities>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Warriors blessed by the faith, like the paladins of the Silver Hand."
+      }
     ]
   },
   {
@@ -211,6 +356,11 @@
     "type": "Follower",
     "uniques": [
       "[+1 Faith] from every [Amphitheater] <in cities with at least [3] [Followers of this Religion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pageants re-enacting the deeds of saints and heroes."
+      }
     ]
   },
   {
@@ -218,6 +368,11 @@
     "type": "Follower",
     "uniques": [
       "May buy [Monastery] buildings for [150] [Faith] [in cities following this religion]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Monasteries of devoted monks."
+      }
     ]
   },
   {
@@ -225,6 +380,11 @@
     "type": "Follower",
     "uniques": [
       "May buy [Sanctuary] buildings with [Faith] [in cities following this religion]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sanctuaries of peace and prayer."
+      }
     ]
   },
   {
@@ -232,6 +392,11 @@
     "type": "Follower",
     "uniques": [
       "May buy [Pagoda] buildings with [Faith] [in cities following this religion]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pagodas in the Pandaren style."
+      }
     ]
   },
   {
@@ -239,6 +404,11 @@
     "type": "Follower",
     "uniques": [
       "[+2 Happiness] from every [Garden]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gardens where the faithful find peace."
+      }
     ]
   },
   {
@@ -246,6 +416,11 @@
     "type": "Follower",
     "uniques": [
       "[+8 Culture] from every [Royal Gallery]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Art inspired by faith."
+      }
     ]
   },
   {
@@ -253,6 +428,11 @@
     "type": "Follower",
     "uniques": [
       "[+2 Happiness] from every [Temple] <in cities with at least [5] [Followers of this Religion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A great center of the faith."
+      }
     ]
   },
   {
@@ -260,6 +440,11 @@
     "type": "Follower",
     "uniques": [
       "[+1]% [Production] from every follower, up to [15]%"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A close-knit community of the faithful."
+      }
     ]
   },
   {
@@ -267,6 +452,11 @@
     "type": "Follower",
     "uniques": [
       "[+15]% growth [in this city] <when not at war>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The faithful lay down their weapons in times of peace."
+      }
     ]
   },
   {
@@ -274,6 +464,11 @@
     "type": "Founder",
     "uniques": [
       "[+1 Happiness] for each global city following this religion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Honoring the dead with ceremony."
+      }
     ]
   },
   {
@@ -281,6 +476,11 @@
     "type": "Founder",
     "uniques": [
       "[+2 Gold] for each global city following this religion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The wealth of the temples."
+      }
     ]
   },
   {
@@ -288,6 +488,11 @@
     "type": "Founder",
     "uniques": [
       "[+100 Gold] when a city adopts this religion for the first time <(modified by game speed)>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rites welcoming new followers."
+      }
     ]
   },
   {
@@ -295,6 +500,11 @@
     "type": "Founder",
     "uniques": [
       "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A council where the faiths of Azeroth meet in peace."
+      }
     ]
   },
   {
@@ -304,6 +514,11 @@
       "Resting point for Influence with City-States following this religion [+15]",
       "[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [2]>",
       "[-50]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [4]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Archbishop leads the faithful, as Alonsus Faol did."
+      }
     ]
   },
   {
@@ -311,6 +526,11 @@
     "type": "Founder",
     "uniques": [
       "[+1 Happiness] from every [5] global followers [in non-enemy foreign cities]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The faithful seek peace."
+      }
     ]
   },
   {
@@ -318,6 +538,11 @@
     "type": "Founder",
     "uniques": [
       "[+2 Faith] for each global city following this religion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pilgrims travel to the holy places."
+      }
     ]
   },
   {
@@ -325,6 +550,11 @@
     "type": "Founder",
     "uniques": [
       "[+1 Gold] from every [4] global followers [in all cities]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tithes from the faithful."
+      }
     ]
   },
   {
@@ -332,6 +562,11 @@
     "type": "Founder",
     "uniques": [
       "[+1 Culture] from every [5] global followers [in foreign cities]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Missions that carry the faith across the world."
+      }
     ]
   },
   {
@@ -339,6 +574,11 @@
     "type": "Enhancer",
     "uniques": [
       "[+20]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Defenders of the faith hold the walls."
+      }
     ]
   },
   {
@@ -347,6 +587,11 @@
     "uniques": [
       "[Faith] cost of purchasing [Missionary] units [-30]%",
       "[Faith] cost of purchasing [Inquisitor] units [-30]%"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A holy order of priests and missionaries, like the Order of the Silver Hand."
+      }
     ]
   },
   {
@@ -354,6 +599,11 @@
     "type": "Enhancer",
     "uniques": [
       "Religion naturally spreads to cities [+3] tiles away"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wandering preachers spreading the word."
+      }
     ]
   },
   {
@@ -361,6 +611,11 @@
     "type": "Enhancer",
     "uniques": [
       "[+20]% Strength <for [All] units> <when fighting in [Enemy Land] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A crusade to spread the faith by the sword, like the Argent Crusade's war on the Scourge."
+      }
     ]
   },
   {
@@ -369,6 +624,11 @@
     "uniques": [
       "[+25]% Spread Religion Strength <for [Great Prophet] units>",
       "[-25]% Faith cost of generating Great Prophet equivalents"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A champion chosen by the faith."
+      }
     ]
   },
   {
@@ -376,6 +636,11 @@
     "type": "Enhancer",
     "uniques": [
       "[+25]% Spread Religion Strength <for [Missionary] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Missionaries driven by zeal."
+      }
     ]
   },
   {
@@ -384,6 +649,11 @@
     "uniques": [
       "[+34]% Natural religion spread [in all cities]",
       "[+34]% Natural religion spread [in all cities] <after discovering [Inscription]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Holy books copied and spread."
+      }
     ]
   },
   {
@@ -393,6 +663,11 @@
       "[+100]% Natural religion spread [in City-State cities]",
       "[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [2]>",
       "[-50]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [4]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The faithful united."
+      }
     ]
   },
   {
@@ -400,6 +675,11 @@
     "type": "Enhancer",
     "uniques": [
       "Gain [50] [Faith] <upon expending a [Great Person] unit> <(modified by game speed)>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Relics of saints and heroes kept in honor."
+      }
     ]
   }
 ]

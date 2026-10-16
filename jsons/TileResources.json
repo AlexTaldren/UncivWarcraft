@@ -13,6 +13,11 @@
     "uniques": [
       "Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
       "Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Herds of cattle grazing the meadows of Elwynn and the Arathi Highlands."
+      }
     ]
   },
   {
@@ -29,6 +34,11 @@
     "uniques": [
       "Generated on every [13] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
       "Generated on every [10] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flocks of sheep giving wool and mutton; the shepherds of Westfall and Dun Morogh tend them."
+      }
     ]
   },
   {
@@ -50,6 +60,11 @@
       "Generated on every [25] tiles <in [{Grassland} {Forest}] tiles> <in tiles without [Hill]>",
       "Generated on every [16] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
       "Generated on every [28] tiles <in [Forest] tiles> <in [Hill] Regions>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wild deer and stags of the forests, hunted for meat and hides."
+      }
     ]
   },
   {
@@ -68,6 +83,11 @@
     "uniques": [
       "Generated on every [14] tiles <in [Jungle] tiles>",
       "Generated on every [16] tiles <in [Jungle] tiles> <in [Hill] Regions>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fat yellow bananas from the jungle island of Tel'Abim, prized across Azeroth."
+      }
     ]
   },
   {
@@ -85,6 +105,11 @@
       "Generated on every [10] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
       "Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
       "Generated on every [20] tiles <in [{Fresh Water} {Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Golden fields of wheat; the breadbaskets of Westfall and Mulgore feed whole kingdoms."
+      }
     ]
   },
   {
@@ -104,6 +129,11 @@
       "Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
       "Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
       "Generated on every [19] tiles <in [{Featureless} {Desert}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Good building stone, dressed by masons for walls and keeps."
+      }
     ]
   },
   {
@@ -116,6 +146,11 @@
     "improvement": "Fishing Boats",
     "uniques": [
       "Generated on every [10] tiles <in [{Featureless} {Coast}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rich fishing grounds teeming with fish, and the occasional murloc."
+      }
     ]
   },
   {
@@ -151,7 +186,12 @@
       "sparse": 1,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Fine horses, bred for war and travel. The steeds of Lordaeron's knights were bred on such plains."
+      }
+    ]
   },
   {
     "name": "Iron",
@@ -193,7 +233,12 @@
       "sparse": 1,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Iron ore, the backbone of every army's weapons and armor."
+      }
+    ]
   },
   {
     "name": "Thorium",
@@ -234,7 +279,12 @@
       "sparse": 2,
       "default": 3,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Thorium ore, a dense and powerful metal mined deep in the earth, prized by the dwarves of the Thorium Brotherhood."
+      }
+    ]
   },
   {
     "name": "Azerite",
@@ -279,7 +329,12 @@
       "sparse": 2,
       "default": 3,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "The blood of the world-soul Azeroth: a golden, crystalline substance that surfaced after Sargeras's sword struck Silithus. It powers the war machines of the late ages."
+      }
+    ]
   },
   {
     "name": "Elementium",
@@ -313,7 +368,12 @@
       "sparse": 2,
       "default": 3,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "A metal born of elemental power, first forged by Deathwing's servants. Hard enough to crack a dragon's scale."
+      }
+    ]
   },
   {
     "name": "Arcane Crystals",
@@ -348,7 +408,12 @@
       "sparse": 1,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Crystals humming with arcane energy, found where ley lines run close to the surface."
+      }
+    ]
   },
   {
     "name": "Rugged Leather",
@@ -366,6 +431,11 @@
       "Generated with weight [40] <in [Tundra] Regions>",
       "Generated with weight [10] <in [Forest] Regions>",
       "Generated near City States with weight [15]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tough hides from great beasts, cured for armor and saddlery."
+      }
     ]
   },
   {
@@ -383,6 +453,11 @@
       "Generated with weight [15] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [Hill] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A common white flower used by every herbalist in Azeroth for healing salves."
+      }
     ]
   },
   {
@@ -401,6 +476,11 @@
       "Generated with weight [30] <in [Forest] Regions>",
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [Hill] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A shimmering ink made from moonlit herbs, used by scribes to inscribe spells and glyphs."
+      }
     ]
   },
   {
@@ -421,6 +501,11 @@
       "Generated with weight [5] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rubies, sapphires and emeralds, cut by jewelcrafters for crowns and enchantments."
+      }
     ]
   },
   {
@@ -442,6 +527,11 @@
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
       "Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Veins of gold ore, the root of every treasury and every goblin's dreams."
+      }
     ]
   },
   {
@@ -467,6 +557,11 @@
       "Doesn't generate naturally <in [{Tundra} {Hill}] tiles>",
       "Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>",
       "Doesn't generate naturally <in [{Grassland} {Hill}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Truesilver, a rare bright metal that takes enchantments well, prized by smiths for fine weapons."
+      }
     ]
   },
   {
@@ -484,6 +579,11 @@
       "Generated with weight [10] <in [Plains] Regions>",
       "Generated with weight [5] <in [Hybrid] Regions>",
       "Generated near City States with weight [15]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A purple herb used in potions of the arcane and in the dyes of mages' robes."
+      }
     ]
   },
   {
@@ -503,6 +603,11 @@
       "Generated with weight [15] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ivory from the great mammoths of Northrend and Dun Morogh, carved into fine goods."
+      }
     ]
   },
   {
@@ -520,6 +625,11 @@
       "Generated with weight [5] <in [Hybrid] Regions>",
       "Generated near City States with weight [15]",
       "Doesn't generate naturally <in [Hill] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mageweave cloth, woven with a faint arcane sheen, the favorite of tailors and wizards."
+      }
     ]
   },
   {
@@ -541,6 +651,11 @@
       "Generated near City States with weight [15]",
       "Doesn't generate naturally <in [Hill] tiles>",
       "Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spices from the southern jungles and the markets of Pandaria, worth their weight in gold."
+      }
     ]
   },
   {
@@ -556,6 +671,11 @@
       "Generated with weight [35] <in [Plains] Regions>",
       "Generated with weight [15] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dwarven stout, goblin rocket fuel by another name, and the honest ale of every tavern in Azeroth."
+      }
     ]
   },
   {
@@ -575,6 +695,11 @@
       "Generated with weight [5] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [Grassland] tiles> <in tiles without [Fresh Water]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Honey from the hives of the Hinterlands and Pandaria, sweet and golden."
+      }
     ]
   },
   {
@@ -595,6 +720,11 @@
       "[+15]% Production when constructing [All] wonders [in this city]",
       "Special placement during map generation",
       "Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "White marble from the quarries of the Eastern Kingdoms, used in the finest halls and statues."
+      }
     ]
   },
   {
@@ -614,6 +744,11 @@
       "Generated with weight [10] <in [Grassland] Regions>",
       "Generated with weight [20] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Great sea beasts of the deep, hunted for their oil, bone and hide by the bravest crews."
+      }
     ]
   },
   {
@@ -633,6 +768,11 @@
       "Generated with weight [10] <in [Grassland] Regions>",
       "Generated with weight [20] <in [Hybrid] Regions>",
       "Generated near City States with weight [15]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pearls harvested from the oyster beds of Vashj'ir and the southern coasts."
+      }
     ]
   },
   {
@@ -641,6 +781,11 @@
     "gold": 2,
     "uniques": [
       "Can only be created by Mercantile City-States"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fine trinkets and baubles crafted by goblin and gnome artisans, sold at a premium."
+      }
     ]
   },
   {
@@ -649,6 +794,11 @@
     "gold": 2,
     "uniques": [
       "Can only be created by Mercantile City-States"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Delicate carvings of Pandaren jade, depicting the August Celestials and the heroes of old."
+      }
     ]
   },
   {
@@ -669,6 +819,11 @@
       "Generated with weight [5] <in [Hybrid] Regions>",
       "Generated near City States with weight [15]",
       "Doesn't generate naturally <in [Tundra] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sweet sunfruit from the orchards of Quel'Thalas, grown in the light of Silvermoon."
+      }
     ]
   },
   {
@@ -695,6 +850,11 @@
       "Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>",
       "Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
       "Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Copper ore, the first metal every young miner learns to dig."
+      }
     ]
   },
   {
@@ -715,6 +875,11 @@
       "Generated with weight [20] <in [Grassland] Regions>",
       "Generated with weight [20] <in [Hybrid] Regions>",
       "Generated near City States with weight [15]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Crab and shellfish from the shallows, a staple of coastal villages."
+      }
     ]
   },
   {
@@ -741,6 +906,11 @@
       "Generated with weight [15] <in [Hybrid] Regions>",
       "Generated near City States with weight [10]",
       "Doesn't generate naturally <in [{Forest} {Hill}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Salt from deep underground, used to cure meat and preserve food for long voyages."
+      }
     ]
   },
   {
@@ -765,6 +935,11 @@
       "Generated near City States with weight [15]",
       "Doesn't generate naturally <in [{Forest} {Hill}] tiles>",
       "Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Luminous mushrooms from the marshes of Zangarmarsh, eaten, brewed and traded by the Sporeggar."
+      }
     ]
   }
 ]

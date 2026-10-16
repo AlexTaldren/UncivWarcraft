@@ -21,7 +21,12 @@
           "[+1 Happiness] per [10] population [in all cities]"
         ],
         "row": 1,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "The great houses swear fealty to the crown and lend their strength to the realm."
+          }
+        ]
       },
       {
         "name": "Strom's Legacy",
@@ -29,7 +34,12 @@
           "Provides the cheapest [Culture] building in your first [4] cities for free"
         ],
         "row": 1,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "Strom, capital of Arathor, was the first great city of men. Its legacy lives in every capital."
+          }
+        ]
       },
       {
         "name": "Keep and Garrison",
@@ -39,7 +49,12 @@
           "[-100]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 5
+        "column": 5,
+        "civilopediaText": [
+          {
+            "text": "A garrisoned keep is a city's best defense and its heart."
+          }
+        ]
       },
       {
         "name": "Crownlands",
@@ -51,7 +66,12 @@
           "Strom's Legacy"
         ],
         "row": 2,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Lands held by the crown itself, worked for the good of the realm."
+          }
+        ]
       },
       {
         "name": "High Kingship",
@@ -62,7 +82,12 @@
           "Strom's Legacy"
         ],
         "row": 2,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "One king above the rest, as Terenas Menethil was first among the kings of the Alliance."
+          }
+        ]
       },
       {
         "name": "Old Kingdoms Complete",
@@ -71,6 +96,11 @@
           "Provides a [Aqueduct] in your first [4] cities for free",
           "Get the leader title of [Lord [leaderName]]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of the ancient kingdoms of men and elves: strong capitals, noble houses and the legacy of Arathor, founded by Thoradin and kept by his heir Strom."
       }
     ]
   },
@@ -95,7 +125,12 @@
           "[+5]% Production when constructing [All] buildings [in all cities]"
         ],
         "row": 1,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "Towns granted their freedom grow quickly, eager to prove themselves."
+          }
+        ]
       },
       {
         "name": "Ready to Work",
@@ -105,7 +140,12 @@
           "[-100]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The peasant's cheerful 'Ready to work!' — a land of willing hands builds quickly."
+          }
+        ]
       },
       {
         "name": "Pioneers' Charter",
@@ -117,7 +157,12 @@
           "Free Towns"
         ],
         "row": 2,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "A charter granting land to those brave enough to settle the frontier."
+          }
+        ]
       },
       {
         "name": "Town Councils",
@@ -129,7 +174,12 @@
           "Ready to Work"
         ],
         "row": 2,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "Local councils that govern the towns of the realm."
+          }
+        ]
       },
       {
         "name": "Kingsroads",
@@ -142,7 +192,12 @@
           "Ready to Work"
         ],
         "row": 2,
-        "column": 5
+        "column": 5,
+        "civilopediaText": [
+          {
+            "text": "Roads that bind the realm together, carrying trade and soldiers alike."
+          }
+        ]
       },
       {
         "name": "Frontier Complete",
@@ -150,6 +205,11 @@
           "Free Great Person",
           "Get the leader title of [Consul [leaderName]]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of settlers and pioneers who carved new towns out of the wilds, as Lordaeron's people did across the north."
       }
     ]
   },
@@ -176,7 +236,12 @@
           "Free [Great General] appears"
         ],
         "row": 1,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "'Victory or death!' The orcish war cry steels warriors for battle."
+          }
+        ]
       },
       {
         "name": "Shield Wall",
@@ -184,7 +249,12 @@
           "[+15]% Strength <for [Melee] units> <when adjacent to a [Melee] unit>"
         ],
         "row": 1,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Shields locked together, an unbreakable line."
+          }
+        ]
       },
       {
         "name": "Veterans' Lore",
@@ -195,7 +265,12 @@
           "Lok'tar Ogar"
         ],
         "row": 2,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Old soldiers teach new recruits the lessons of the Great War."
+          }
+        ]
       },
       {
         "name": "Honor Guard",
@@ -206,7 +281,12 @@
           "Shield Wall"
         ],
         "row": 2,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "An honored guard of champions protects the realm's leaders."
+          }
+        ]
       },
       {
         "name": "Kor'kron Regulars",
@@ -221,7 +301,12 @@
           "Honor Guard"
         ],
         "row": 3,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The Kor'kron, the elite guard of the Warchief, set the standard for professional soldiers."
+          }
+        ]
       },
       {
         "name": "Blood and Thunder Complete",
@@ -229,6 +314,11 @@
           "Earn [10]% of killed [Military] unit's [Cost] as [Gold]",
           "Get the leader title of [[leaderName] the Great]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of the warrior, named for the orcish war cry. Strength, honor and glory in battle."
       }
     ]
   },
@@ -256,7 +346,12 @@
           "[+1 Faith] from every [Temple]"
         ],
         "row": 1,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Priests ordained by the Church, carrying the faith to every town."
+          }
+        ]
       },
       {
         "name": "Divine Mandate",
@@ -264,7 +359,12 @@
           "[50]% of excess happiness converted to [Culture]"
         ],
         "row": 1,
-        "column": 5
+        "column": 5,
+        "civilopediaText": [
+          {
+            "text": "A ruler blessed by the faith, ruling with divine authority."
+          }
+        ]
       },
       {
         "name": "Temple Tithes",
@@ -275,7 +375,12 @@
           "Ordained Clergy"
         ],
         "row": 2,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "Tithes paid to the temples sustain the faithful and their works."
+          }
+        ]
       },
       {
         "name": "Spiritual Renewal",
@@ -287,7 +392,12 @@
           "Ordained Clergy"
         ],
         "row": 2,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "A revival of faith sweeps the land."
+          }
+        ]
       },
       {
         "name": "Many Paths",
@@ -299,15 +409,25 @@
           "Spiritual Renewal"
         ],
         "row": 3,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The Light, the Earth Mother and the spirits: many paths, one search for meaning."
+          }
+        ]
       },
       {
         "name": "Devotion Complete",
         "uniques": [
           "[Faith] cost of purchasing items in cities [-20]%",
-          "[+3 Gold, +3 Culture] from every [Holy site]",
+          "[+3 Gold, +3 Culture] from every [Sacred Grounds]",
           "Get the leader title of [[leaderName] the Pious]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of faith: the Holy Light, the Earth Mother, Elune or the Loa, served by priests and pilgrims."
       }
     ]
   },
@@ -332,7 +452,12 @@
           "Gifts of Gold to City-States generate [25]% more Influence"
         ],
         "row": 1,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Gifts of gold smooth the way for any envoy."
+          }
+        ]
       },
       {
         "name": "Courtly Grace",
@@ -340,7 +465,12 @@
           "Resting point for Influence with City-States is increased by [20]"
         ],
         "row": 1,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The courtly manners of envoys win friends among the city-states."
+          }
+        ]
       },
       {
         "name": "Kirin Tor Exchange",
@@ -351,7 +481,12 @@
           "Gilded Gifts"
         ],
         "row": 2,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Scholars exchanged with Dalaran share their knowledge."
+          }
+        ]
       },
       {
         "name": "Embassies",
@@ -363,7 +498,12 @@
           "Kirin Tor Exchange"
         ],
         "row": 3,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Permanent embassies keep allies close and rivals watched."
+          }
+        ]
       },
       {
         "name": "Heroes of Many Lands",
@@ -375,7 +515,12 @@
           "Allied City-States will occasionally gift Great People"
         ],
         "row": 3,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Heroes from every land answer the call of a trusted friend."
+          }
+        ]
       },
       {
         "name": "Diplomacy Complete",
@@ -384,6 +529,11 @@
           "Triggers the following global alert: [Our influence with City-States has started dropping faster!]",
           "Get the leader title of [[leaderName] the Enlightened]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of envoys and treaties, of alliances made at council tables and kept by gifts and guarantees."
       }
     ]
   },
@@ -410,7 +560,12 @@
           "[+2] Movement <for [Great Admiral] units>"
         ],
         "row": 1,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "An admiralty to command the fleets and protect the sea lanes, as Kul Tiras did."
+          }
+        ]
       },
       {
         "name": "Merchant Guilds",
@@ -420,7 +575,12 @@
           "[+1 Gold] from every [Port]"
         ],
         "row": 1,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Guilds of merchants who regulate trade and fill the realm's coffers."
+          }
+        ]
       },
       {
         "name": "Harbor Masters",
@@ -431,7 +591,12 @@
           "Admiralty"
         ],
         "row": 2,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Harbor masters who keep the ports running smoothly."
+          }
+        ]
       },
       {
         "name": "Steamwheedle Charter",
@@ -446,7 +611,12 @@
           "Merchant Guilds"
         ],
         "row": 2,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The Steamwheedle Cartel's charter: neutral ports open to all who pay."
+          }
+        ]
       },
       {
         "name": "Cartel Monopolies",
@@ -457,7 +627,12 @@
           "Steamwheedle Charter"
         ],
         "row": 3,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Monopolies over luxuries, the goblin way to wealth."
+          }
+        ]
       },
       {
         "name": "Trade Princes Complete",
@@ -467,6 +642,11 @@
           "May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
           "Get the leader title of [Doge [leaderName]]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of the goblin Trade Princes and the Steamwheedle Cartel: ports, guilds, monopolies and profit."
       }
     ]
   },
@@ -491,7 +671,12 @@
           "[+2 Science] from every specialist [in all cities]"
         ],
         "row": 1,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Apprentices trained in every town, as the Kirin Tor recruits young talent."
+          }
+        ]
       },
       {
         "name": "Wonders of the Arcane",
@@ -502,7 +687,12 @@
           "[-50]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The arcane arts bring wonders to life."
+          }
+        ]
       },
       {
         "name": "Open Libraries",
@@ -514,7 +704,12 @@
           "Apprentice Mages"
         ],
         "row": 2,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "Libraries open to all who seek knowledge."
+          }
+        ]
       },
       {
         "name": "Patrons of Dalaran",
@@ -525,7 +720,12 @@
           "Wonders of the Arcane"
         ],
         "row": 2,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Wealthy patrons fund the research of the mages of Dalaran."
+          }
+        ]
       },
       {
         "name": "Arcane Revolution",
@@ -537,7 +737,12 @@
           "Open Libraries"
         ],
         "row": 3,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "A revolution in arcane science transforms the realm."
+          }
+        ]
       },
       {
         "name": "Arcane Inquiry Complete",
@@ -546,6 +751,11 @@
           "May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
           "Get the leader title of [[leaderName] the Wise]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of the Kirin Tor: open libraries, apprentice mages and the relentless study of magic."
       }
     ]
   },
@@ -572,7 +782,12 @@
           "[-100]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "A charter limiting the power of kings and guaranteeing the rights of the people."
+          }
+        ]
       },
       {
         "name": "Common Voice",
@@ -581,7 +796,12 @@
           "[-100]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "The common folk speak with one voice, and are heard."
+          }
+        ]
       },
       {
         "name": "Civic Guilds",
@@ -589,7 +809,12 @@
           "[-50]% Food consumption by [Specialists] [in all cities]"
         ],
         "row": 1,
-        "column": 5
+        "column": 5,
+        "civilopediaText": [
+          {
+            "text": "Guilds of craftsmen who build the city's works."
+          }
+        ]
       },
       {
         "name": "Open Council",
@@ -600,7 +825,12 @@
           "Charter of Kings"
         ],
         "row": 2,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "Open councils where any citizen may speak."
+          }
+        ]
       },
       {
         "name": "House of Nobles",
@@ -611,7 +841,12 @@
           "Civic Guilds"
         ],
         "row": 2,
-        "column": 5
+        "column": 5,
+        "civilopediaText": [
+          {
+            "text": "A house of nobles balancing the crown and the people, as in Stormwind."
+          }
+        ]
       },
       {
         "name": "Free Peoples Complete",
@@ -621,6 +856,11 @@
           "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
           "Get the leader title of [President [leaderName]]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of free peoples governing themselves: charters, councils and common voices."
       }
     ]
   },
@@ -648,7 +888,12 @@
           "[+100]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "A rallying cry that drives soldiers forward."
+          }
+        ]
       },
       {
         "name": "Warchief's Coffers",
@@ -656,7 +901,12 @@
           "[Gold] cost of purchasing [All] units [-33]%"
         ],
         "row": 1,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "The Warchief's treasury funds the war machine."
+          }
+        ]
       },
       {
         "name": "Iron Will",
@@ -669,7 +919,12 @@
           "Warchief's Coffers"
         ],
         "row": 2,
-        "column": 2
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "An iron will that refuses defeat."
+          }
+        ]
       },
       {
         "name": "Inquisition",
@@ -682,7 +937,12 @@
           "Warchief's Coffers"
         ],
         "row": 2,
-        "column": 4
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Inquisitors who root out heresy, as the Scarlet Crusade once did."
+          }
+        ]
       },
       {
         "name": "Iron Horde Doctrine",
@@ -695,7 +955,12 @@
           "Iron Will"
         ],
         "row": 3,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "The doctrine of the Iron Horde: total war and industrial might."
+          }
+        ]
       },
       {
         "name": "Dominion Complete",
@@ -704,6 +969,11 @@
           "May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
           "Get the leader title of [[leaderName] the Terrible]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of iron rule, as practiced by the Iron Horde and the Dark Horde: conquest, fear and endless war."
       }
     ]
   },
@@ -730,7 +1000,12 @@
           "[-100]% weight to this choice for AI decisions"
         ],
         "row": 1,
-        "column": 1
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "Allies who fight side by side as brothers."
+          }
+        ]
       },
       {
         "name": "Grand Stewardship",
@@ -739,7 +1014,12 @@
           "[+100]% Production when constructing [Foundry] buildings [in all cities]"
         ],
         "row": 1,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "Stewards who manage the realm's resources for the common good."
+          }
+        ]
       },
       {
         "name": "Ancestral Pride",
@@ -747,7 +1027,12 @@
           "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
         ],
         "row": 1,
-        "column": 5
+        "column": 5,
+        "civilopediaText": [
+          {
+            "text": "Pride in the deeds of the ancestors unites the people."
+          }
+        ]
       },
       {
         "name": "Common Granaries",
@@ -758,7 +1043,12 @@
           "[-15]% maintenance cost for [all] buildings [in all cities]"
         ],
         "row": 2,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "Granaries shared by all, so none go hungry."
+          }
+        ]
       },
       {
         "name": "Collective Labor",
@@ -771,7 +1061,12 @@
           "[+1 Production] from every [Quarry]"
         ],
         "row": 3,
-        "column": 3
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "Labor shared by all builds great works."
+          }
+        ]
       },
       {
         "name": "Unity Complete",
@@ -780,6 +1075,11 @@
           "May buy [Great Engineer] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
           "Get the leader title of [Chairman [leaderName]]"
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The way of nations bound together by common purpose, sharing labor, food and the burden of defense."
       }
     ]
   }

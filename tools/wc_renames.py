@@ -273,6 +273,12 @@ IMPROVEMENTS = {
     "Oil well": "Azerite Drill",
     "Offshore Platform": "Tidal Drill",
     "Manufactory": "Great Workshop",
+    # v0.10: Great Person improvements
+    "Academy": "Arcane Academy",          # Great Scientist: a seat of arcane learning (Dalaran, the Violet Citadel)
+    "Customs house": "Trade Company",     # Great Merchant: a chartered company like the Steamwheedle Cartel
+    "Citadel": "Bastion",                 # Great General: a fortified bastion (Nethergarde, Theramore)
+    "Landmark": "Hall of Heroes",         # Great Artist: a monument to legends (the Valley of Heroes)
+    "Holy site": "Sacred Grounds",        # Great Prophet: holy ground (Light's Hope Chapel, a moonwell grove)
     "Remove Fallout": "Remove Blighted Land",
 }
 
@@ -344,6 +350,19 @@ PROMOTION_BASES = {
     "Anti-Armor": "Armor Piercing",
     "Operational Range": "Long Flight",
     "Flight Deck": "Aerie Deck",
+    # v0.10: Warcraft names for the remaining generic promotions
+    "Accuracy": "Deadeye",                  # ranged bonus in open terrain
+    "Shock": "Heroic Strike",               # melee bonus in open terrain (the warrior's signature blow)
+    "Drill": "Weapon Mastery",              # melee bonus in rough terrain
+    "Cover": "Defend",                      # vs ranged attacks: the Warcraft III Footman's Defend
+    "Formation": "Spear Wall",              # vs mounted units
+    "Blitz": "Bloodlust",                   # an extra attack per turn: the shaman's Bloodlust
+    "Logistics": "Rapid Fire",              # an extra ranged attack per turn
+    "Targeting": "Broadsides",              # naval bonus vs ships
+    "Wolfpack": "Depth Stalker",            # submarine attack bonus
+    "Sortie": "Skyguard Patrol",            # extra air interceptions
+    "Interception": "Sky Sentinel",         # stronger interceptions
+    "Supply": "Ship's Carpenter",           # ships heal outside friendly waters
 }
 PROMOTIONS = {}
 for _k, _v in PROMOTION_BASES.items():

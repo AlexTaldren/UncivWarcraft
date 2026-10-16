@@ -25,6 +25,11 @@
     "maintenance": 1,
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A standing stone carved with the names of the founders. Every town in Azeroth, from Goldshire to Razor Hill, raises one to remember who first held the land."
+      }
     ]
   },
   {
@@ -37,7 +42,12 @@
       "[+1 Food] from [Tel'Abim Bananas] tiles [in this city]",
       "[+1 Food] from [Wheat] tiles [in this city]"
     ],
-    "requiredTech": "Pottery"
+    "requiredTech": "Pottery",
+    "civilopediaText": [
+      {
+        "text": "Stone storehouses and root cellars that see a town through the long winters of Lordaeron and the dry seasons of the Barrens."
+      }
+    ]
   },
   {
     "name": "Shrine",
@@ -47,6 +57,11 @@
     "requiredTech": "Pottery",
     "uniques": [
       "Only available <when religion is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A small wayside shrine: a candle to the Light, a carved totem to the spirits or a bowl of moonwell water, depending on who keeps it."
+      }
     ]
   },
   {
@@ -83,7 +98,12 @@
       "[+1 Production] from [Stone] tiles [in this city]",
       "[+1 Production] from [Marble] tiles [in this city]"
     ],
-    "requiredTech": "Herbalism"
+    "requiredTech": "Herbalism",
+    "civilopediaText": [
+      {
+        "text": "Quarry yards where masons dress the stone for walls and keeps. The Stonemasons' Guild that rebuilt Stormwind began in yards like these."
+      }
+    ]
   },
   {
     "name": "Circle of Binding",
@@ -106,7 +126,12 @@
     "uniques": [
       "[+1 Science] per [2] population [in this city]"
     ],
-    "requiredTech": "Runic Script"
+    "requiredTech": "Runic Script",
+    "civilopediaText": [
+      {
+        "text": "Shelves of scrolls and tomes, copied by hand. Every great center of learning in Azeroth, Dalaran included, began as a single library."
+      }
+    ]
   },
   {
     "name": "The Violet Citadel",
@@ -135,7 +160,12 @@
     ],
     "happiness": 2,
     "hurryCostModifier": 25,
-    "requiredTech": "Skinning"
+    "requiredTech": "Skinning",
+    "civilopediaText": [
+      {
+        "text": "A ring of packed earth where young warriors test their mettle, as orcs have done since the days of the clans on Draenor."
+      }
+    ]
   },
   {
     "name": "Water Mill",
@@ -146,7 +176,12 @@
     "uniques": [
       "Must be on [River]"
     ],
-    "requiredTech": "The Wheel"
+    "requiredTech": "The Wheel",
+    "civilopediaText": [
+      {
+        "text": "A wooden wheel on the river grinding grain for the town, the same kind of mill that dotted Elwynn and the Hillsbrad Foothills."
+      }
+    ]
   },
   {
     "name": "Walls",
@@ -156,6 +191,11 @@
     "requiredTech": "Masonry",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Timber palisades and stone curtain walls. After the First War no kingdom of men built a city without them."
+      }
     ]
   },
   {
@@ -203,7 +243,12 @@
       "New [Military] units start with [15] XP [in this city]",
       "Destroyed when the city is captured"
     ],
-    "requiredTech": "Bronze Working"
+    "requiredTech": "Bronze Working",
+    "civilopediaText": [
+      {
+        "text": "Halls where recruits learn to march, hold a line and follow the horn. In Warcraft's wars every army began in a barracks."
+      }
+    ]
   },
   {
     "name": "Valley of Heroes",
@@ -230,7 +275,12 @@
       "[+1 Food] from [Coast] tiles [in this city]",
       "[+1 Food] from [Fish] tiles [in this city]"
     ],
-    "requiredTech": "Optics"
+    "requiredTech": "Optics",
+    "civilopediaText": [
+      {
+        "text": "A beacon tower guiding ships past the reefs, like the lighthouses on the coasts of Westfall and Kul Tiras."
+      }
+    ]
   },
   {
     "name": "Westfall Lighthouse",
@@ -268,7 +318,12 @@
       "[+1 Production] from [Horses] tiles [in this city]",
       "[+1 Production] from [Sheep] tiles [in this city]"
     ],
-    "requiredTech": "Riding"
+    "requiredTech": "Riding",
+    "civilopediaText": [
+      {
+        "text": "Paddocks and stalls for the mounts of the realm: horses, wolves, rams, kodos or striders, each race to its own."
+      }
+    ]
   },
   {
     "name": "Grand Coliseum",
@@ -295,7 +350,12 @@
       "Removes extra unhappiness from annexed cities",
       "Can only be built <in [Annexed] cities>"
     ],
-    "requiredTech": "Mathematics"
+    "requiredTech": "Mathematics",
+    "civilopediaText": [
+      {
+        "text": "Where a magistrate hears disputes and collects the crown's due, keeping the outlying towns loyal to the capital."
+      }
+    ]
   },
   {
     "name": "Vale of Eternal Blossoms",
@@ -320,7 +380,12 @@
     "maintenance": 1,
     "happiness": 2,
     "hurryCostModifier": 25,
-    "requiredTech": "Construction"
+    "requiredTech": "Construction",
+    "civilopediaText": [
+      {
+        "text": "A stone arena where champions fight before cheering crowds, much like the Ring of Valor in Orgrimmar or the Gurubashi Arena."
+      }
+    ]
   },
   {
     "name": "Mogu'shan Vaults",
@@ -346,6 +411,11 @@
     "uniques": [
       "Only available <when religion is enabled>",
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A house of worship and healing, the heart of faith in any city: a cathedral nave, a moon temple or a hall of the ancestors."
+      }
     ]
   },
   {
@@ -389,7 +459,7 @@
     "name": "Amphitheater",
     "culture": 3,
     "specialistSlots": {
-      "Artist": 1
+      "Bard": 1
     },
     "requiredBuilding": "Monument",
     "maintenance": 2,
@@ -397,7 +467,12 @@
     "uniques": [
       "Destroyed when the city is captured"
     ],
-    "requiredTech": "Bardic Lore"
+    "requiredTech": "Bardic Lore",
+    "civilopediaText": [
+      {
+        "text": "Tiered stone seats around a stage where bards and players tell the old stories of the Troll Wars and the founding of the kingdoms."
+      }
+    ]
   },
   {
     "name": "Hall of Legends",
@@ -420,13 +495,18 @@
     "name": "Market",
     "gold": 2,
     "specialistSlots": {
-      "Merchant": 1
+      "Trader": 1
     },
     "hurryCostModifier": 25,
     "percentStatBonus": {
       "gold": 25
     },
-    "requiredTech": "Coinage"
+    "requiredTech": "Coinage",
+    "civilopediaText": [
+      {
+        "text": "A square of stalls and carts where farmers, hunters and traveling goblins trade their goods."
+      }
+    ]
   },
   {
     "name": "Mint",
@@ -440,7 +520,12 @@
       "[+2 Gold] from [Gold Ore] tiles [in this city]",
       "[+2 Gold] from [Truesilver] tiles [in this city]"
     ],
-    "requiredTech": "Coinage"
+    "requiredTech": "Coinage",
+    "civilopediaText": [
+      {
+        "text": "Where gold and silver ore become coin stamped with the realm's seal. Every kingdom trusts its own coin, and every goblin trusts all of them."
+      }
+    ]
   },
   {
     "name": "Caverns of Time",
@@ -469,7 +554,12 @@
     "uniques": [
       "[40]% Food is carried over after population increases [in this city]"
     ],
-    "requiredTech": "Engineering"
+    "requiredTech": "Engineering",
+    "civilopediaText": [
+      {
+        "text": "Stone channels carrying fresh water into the city, so that it can grow beyond the reach of its wells."
+      }
+    ]
   },
   {
     "name": "The Greymane Wall",
@@ -534,7 +624,12 @@
     ],
     "hurryCostModifier": 25,
     "maintenance": 1,
-    "requiredTech": "Priesthood"
+    "requiredTech": "Priesthood",
+    "civilopediaText": [
+      {
+        "text": "Walled gardens of herbs and flowers, tended for beauty and for the apothecary's shelves."
+      }
+    ]
   },
   {
     "name": "Cathedral of Light",
@@ -655,13 +750,18 @@
     "maintenance": 2,
     "production": 2,
     "specialistSlots": {
-      "Engineer": 1
+      "Tinker": 1
     },
     "hurryCostModifier": 25,
     "percentStatBonus": {
       "production": 10
     },
-    "requiredTech": "Blacksmithing"
+    "requiredTech": "Blacksmithing",
+    "civilopediaText": [
+      {
+        "text": "Workbenches, forges and gear-cutting lathes, where tinkers and smiths turn out the tools a city needs."
+      }
+    ]
   },
   {
     "name": "Blacksmith",
@@ -674,6 +774,11 @@
     "uniques": [
       "[+15]% Production when constructing [Land] units [in this city]",
       "[+1 Production] from [Iron] tiles [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The forge and anvil where weapons and armor are made and mended. In Warcraft III a Blacksmith's upgrades kept an army in the fight."
+      }
     ]
   },
   {
@@ -686,7 +791,12 @@
       "Connects trade routes over water",
       "Must be next to [Coast]"
     ],
-    "requiredTech": "Seafaring"
+    "requiredTech": "Seafaring",
+    "civilopediaText": [
+      {
+        "text": "Slipways and timber yards where hulls are laid down, like the great shipyards of Boralus."
+      }
+    ]
   },
   {
     "name": "Arcane Sanctum",
@@ -696,13 +806,18 @@
       "science": 33
     },
     "specialistSlots": {
-      "Scientist": 2
+      "Arcanist": 2
     },
     "requiredBuilding": "Library",
     "uniques": [
       "[+2 Science] from [Jungle] tiles [in this city]"
     ],
-    "requiredTech": "Scholarship"
+    "requiredTech": "Scholarship",
+    "civilopediaText": [
+      {
+        "text": "A sanctum where mages study and practice their craft. In Warcraft III, Arcane Sanctums trained the Alliance's priests and sorceresses."
+      }
+    ]
   },
   {
     "name": "College of Magi",
@@ -749,6 +864,11 @@
     "requiredTech": "Animal War Training",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A fortified stone keep at the heart of the city, the second stage of a Warcraft town hall."
+      }
     ]
   },
   {
@@ -762,7 +882,7 @@
       "culture": 20
     },
     "uniques": [
-      "All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
+      "All newly-trained [relevant] units [in this city] receive the [Weapon Mastery I] promotion",
       "Gain a free [Keep] [in this city]"
     ],
     "requiredTech": "Animal War Training",
@@ -813,7 +933,12 @@
       "New [Military] units start with [15] XP [in this city]",
       "Destroyed when the city is captured"
     ],
-    "requiredTech": "Steel Forged Swords"
+    "requiredTech": "Steel Forged Swords",
+    "civilopediaText": [
+      {
+        "text": "Racks of spears, shields and mail, kept ready so a city can arm its levies at a moment's notice."
+      }
+    ]
   },
   {
     "name": "Observatory",
@@ -826,13 +951,18 @@
     "uniques": [
       "Must be next to [Mountain]"
     ],
-    "requiredTech": "Astronomy"
+    "requiredTech": "Astronomy",
+    "civilopediaText": [
+      {
+        "text": "A domed tower for watching the stars and the twin moons, much as the Titans' watchers once charted Azeroth's skies."
+      }
+    ]
   },
   {
     "name": "Bardic Hall",
     "culture": 4,
     "specialistSlots": {
-      "Artist": 1
+      "Bard": 1
     },
     "hurryCostModifier": 10,
     "requiredBuilding": "Amphitheater",
@@ -840,6 +970,11 @@
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A hall of music and song, where bards keep alive the ballads of heroes and the laments of fallen kingdoms."
+      }
     ]
   },
   {
@@ -863,14 +998,19 @@
     "name": "Bank",
     "gold": 2,
     "specialistSlots": {
-      "Merchant": 1
+      "Trader": 1
     },
     "hurryCostModifier": 15,
     "percentStatBonus": {
       "gold": 25
     },
     "requiredBuilding": "Market",
-    "requiredTech": "Banking"
+    "requiredTech": "Banking",
+    "civilopediaText": [
+      {
+        "text": "Vaults and counting tables. The banks of Stormwind, Ironforge and Orgrimmar hold a city's wealth, and its secrets."
+      }
+    ]
   },
   {
     "name": "City Watch",
@@ -881,7 +1021,12 @@
       "Only available <when espionage is enabled>",
       "[-25]% enemy spy effectiveness [in this city]"
     ],
-    "requiredTech": "Banking"
+    "requiredTech": "Banking",
+    "civilopediaText": [
+      {
+        "text": "The constables and guards who keep the peace in the streets, like the Stormwind City Guard and Orgrimmar's Grunts."
+      }
+    ]
   },
   {
     "name": "Mogu'shan Palace",
@@ -906,7 +1051,12 @@
     "hurryCostModifier": 10,
     "maintenance": 2,
     "requiredBuilding": "Arena",
-    "requiredTech": "Inscription"
+    "requiredTech": "Inscription",
+    "civilopediaText": [
+      {
+        "text": "Pens and cages for the great beasts a city tames: gryphons, wyverns, hippogryphs and stranger things."
+      }
+    ]
   },
   {
     "name": "Tower of Azora",
@@ -954,7 +1104,12 @@
       "Must be next to [Coast]",
       "[+15]% Production when constructing [Water] units [in this city]"
     ],
-    "requiredTech": "Navigation"
+    "requiredTech": "Navigation",
+    "civilopediaText": [
+      {
+        "text": "Docks, warehouses and a harbormaster's office: the gateway for a city's trade across the Great Sea."
+      }
+    ]
   },
   {
     "name": "Royal Gallery",
@@ -1015,7 +1170,7 @@
     "name": "Windmill",
     "production": 2,
     "specialistSlots": {
-      "Engineer": 1
+      "Tinker": 1
     },
     "hurryCostModifier": 25,
     "maintenance": 2,
@@ -1023,7 +1178,12 @@
       "Must not be on [Hill]",
       "[+10]% Production when constructing [All] buildings [in this city]"
     ],
-    "requiredTech": "Auctioneering"
+    "requiredTech": "Auctioneering",
+    "civilopediaText": [
+      {
+        "text": "Sails turning on the hill to grind the harvest; the windmills of Westfall are known across the Eastern Kingdoms."
+      }
+    ]
   },
   {
     "name": "Arsenal",
@@ -1035,6 +1195,11 @@
     "requiredTech": "Mithril Forged Swords",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A great storehouse of powder, shot and siege engines, kept for the wars to come."
+      }
     ]
   },
   {
@@ -1059,7 +1224,7 @@
     "name": "Museum",
     "culture": 5,
     "specialistSlots": {
-      "Artist": 2
+      "Bard": 2
     },
     "requiredBuilding": "Bardic Hall",
     "maintenance": 3,
@@ -1067,6 +1232,11 @@
     "requiredTech": "Archaeology",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Halls of relics and curiosities, much like the Explorers' League collections in Ironforge's Hall of Explorers."
+      }
     ]
   },
   {
@@ -1090,7 +1260,7 @@
     "name": "Mage Tower",
     "science": 3,
     "specialistSlots": {
-      "Scientist": 1
+      "Arcanist": 1
     },
     "requiredBuilding": "Arcane Sanctum",
     "maintenance": 3,
@@ -1098,7 +1268,12 @@
     "uniques": [
       "[+1 Science] per [2] population [in this city]"
     ],
-    "requiredTech": "Arcane Science"
+    "requiredTech": "Arcane Science",
+    "civilopediaText": [
+      {
+        "text": "A tall tower of the Kirin Tor style, its upper floors given over to spellcraft and its library to forbidden tomes."
+      }
+    ]
   },
   {
     "name": "Foundry",
@@ -1108,13 +1283,18 @@
       "production": 10
     },
     "specialistSlots": {
-      "Engineer": 2
+      "Tinker": 2
     },
     "requiredBuilding": "Workshop",
     "maintenance": 3,
     "hurryCostModifier": 0,
     "requiredResource": "Thorium",
-    "requiredTech": "Steamworks"
+    "requiredTech": "Steamworks",
+    "civilopediaText": [
+      {
+        "text": "Roaring furnaces and steam-driven hammers turning out iron by the ton, like the Great Forge of Ironforge."
+      }
+    ]
   },
   {
     "name": "Undermine Exchange",
@@ -1143,7 +1323,12 @@
       "New [Military] units start with [15] XP [in this city]",
       "Destroyed when the city is captured"
     ],
-    "requiredTech": "War Doctrine"
+    "requiredTech": "War Doctrine",
+    "civilopediaText": [
+      {
+        "text": "Fields for drilling troops in formation, archery butts and practice dummies scarred by a thousand recruits."
+      }
+    ]
   },
   {
     "name": "Gates of Ahn'Qiraj",
@@ -1169,7 +1354,12 @@
     "requiredBuilding": "Aqueduct",
     "maintenance": 2,
     "hurryCostModifier": 0,
-    "requiredTech": "Natural Lore"
+    "requiredTech": "Natural Lore",
+    "civilopediaText": [
+      {
+        "text": "A hospice run by priests and herbalists, where the sick and wounded are tended with prayer and poultice."
+      }
+    ]
   },
   {
     "name": "Auction House",
@@ -1178,11 +1368,16 @@
       "gold": 33
     },
     "specialistSlots": {
-      "Merchant": 2
+      "Trader": 2
     },
     "hurryCostModifier": 15,
     "requiredBuilding": "Bank",
-    "requiredTech": "Storm Hammers"
+    "requiredTech": "Storm Hammers",
+    "civilopediaText": [
+      {
+        "text": "Where everything has a price. The goblins of the Steamwheedle Cartel run the auction houses of Azeroth, and take their cut."
+      }
+    ]
   },
   {
     "name": "Tidal Works",
@@ -1193,7 +1388,12 @@
       "Must be on [River]",
       "[+1 Production] from [River] tiles [in this city]"
     ],
-    "requiredTech": "Storm Hammers"
+    "requiredTech": "Storm Hammers",
+    "civilopediaText": [
+      {
+        "text": "Water-wheels and tide-mills turning the sea's motion into power, a gnomish and Kul Tiran craft."
+      }
+    ]
   },
   {
     "name": "Guard Tower",
@@ -1205,14 +1405,24 @@
       "[-25]% enemy spy effectiveness [in this city]"
     ],
     "requiredBuilding": "City Watch",
-    "requiredTech": "Storm Hammers"
+    "requiredTech": "Storm Hammers",
+    "civilopediaText": [
+      {
+        "text": "A stone tower with a watch fire on top, one of a chain that sends warnings across the realm."
+      }
+    ]
   },
   {
     "name": "Grand Arena",
     "happiness": 4,
     "requiredBuilding": "Beastiary",
     "maintenance": 2,
-    "requiredTech": "Frost Enchantment"
+    "requiredTech": "Frost Enchantment",
+    "civilopediaText": [
+      {
+        "text": "A great arena of the late ages, hosting tournaments to rival the Argent Tournament in Icecrown."
+      }
+    ]
   },
   {
     "name": "Arcane Beacon",
@@ -1225,6 +1435,11 @@
     "requiredTech": "Communication Crystals",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A crystal spire that sends the city's news and orders across the realm by arcane signal."
+      }
     ]
   },
   {
@@ -1275,6 +1490,11 @@
     "requiredTech": "Gnomish Gearworks",
     "uniques": [
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A citadel of stone and iron, the last refuge of a city under siege, the third stage of a Warcraft town hall."
+      }
     ]
   },
   {
@@ -1321,11 +1541,16 @@
       "science": 50
     },
     "specialistSlots": {
-      "Scientist": 1
+      "Arcanist": 1
     },
     "requiredBuilding": "Mage Tower",
     "maintenance": 3,
-    "requiredTech": "Arcanite Alloys"
+    "requiredTech": "Arcanite Alloys",
+    "civilopediaText": [
+      {
+        "text": "Workrooms of enchanted glassware and humming crystals, where arcanists push the boundaries of their art."
+      }
+    ]
   },
   {
     "name": "Seat of the Naaru",
@@ -1351,6 +1576,11 @@
     "requiredTech": "Elixir Mastery",
     "uniques": [
       "[25]% Food is carried over after population increases [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bubbling flasks and reeking vapors: potions, elixirs and the occasional explosion."
+      }
     ]
   },
   {
@@ -1398,6 +1628,11 @@
     "uniques": [
       "Must be next to [Desert]",
       "Only available <in cities without a [Mana Reactor]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rows of sun-catching crystals that gather light and turn it into arcane power, in the style of Silvermoon."
+      }
     ]
   },
   {
@@ -1407,6 +1642,11 @@
     "uniques": [
       "Provides [2] [Elementium]",
       "Limited to [5] per Civilization"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mountains of scrap, sorted by goblin crews who can build something useful from anything."
+      }
     ]
   },
   {
@@ -1441,6 +1681,11 @@
     "requiredTech": "Unstable Mana",
     "uniques": [
       "Only available <in cities without a [Sun Crystal Array]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A contained well of arcane energy feeding a whole city's engines. Dangerous, and very efficient."
+      }
     ]
   },
   {
@@ -1502,6 +1747,11 @@
       "Population loss from nuclear attacks [-75]% [in this city]",
       "Damage to garrison from nuclear attacks [-75]% [in this city]",
       "Only available <when nuclear weapons are enabled> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fortified burrows and shelters dug deep beneath the city, like the orc burrows of Warcraft II."
+      }
     ]
   },
   {
@@ -1532,7 +1782,12 @@
     "uniques": [
       "[+50]% Production when constructing [Spaceship part] units [in this city]"
     ],
-    "requiredTech": "Mechagnomics"
+    "requiredTech": "Mechagnomics",
+    "civilopediaText": [
+      {
+        "text": "Slipways for airships, with gas envelopes inflating overhead, building the fleets that rule the skies of the late ages."
+      }
+    ]
   },
   {
     "name": "Grand Council of Azeroth",
@@ -1577,11 +1832,16 @@
     "culture": 3,
     "happiness": 1,
     "specialistSlots": {
-      "Artist": 1
+      "Bard": 1
     },
     "uniques": [
       "Unbuildable",
       "Only available <when religion is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A soaring cathedral of the Light, its windows of stained glass, its bells calling the faithful to prayer."
+      }
     ]
   },
   {
@@ -1595,6 +1855,11 @@
       "Unbuildable",
       "Only available <when religion is enabled>",
       "Destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A quiet cloister of monks and scholars, like the Scarlet Monastery in its better days or the monasteries of Pandaria."
+      }
     ]
   },
   {
@@ -1606,6 +1871,11 @@
     "uniques": [
       "Unbuildable",
       "Only available <when religion is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A sacred sanctuary where pilgrims rest and seek the wisdom of their faith."
+      }
     ]
   },
   {
@@ -1617,6 +1887,11 @@
     "uniques": [
       "Unbuildable",
       "Only available <when religion is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A tiered pagoda in the Pandaren manner, where incense rises and the faithful meditate."
+      }
     ]
   },
   {
@@ -1662,7 +1937,7 @@
     "maintenance": 2,
     "production": 3,
     "specialistSlots": {
-      "Engineer": 1
+      "Tinker": 1
     },
     "hurryCostModifier": 25,
     "percentStatBonus": {

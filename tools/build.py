@@ -12,6 +12,7 @@ import wc_names as NG
 import wc_terrain as WT
 import wc_lore as LORE
 import icons, race_sprites, human_sprites, tiles_art, citycenters, late_units
+import wc_events as WE, wc_text as TX, wc_lore_more as LM, wc_race_names as RN, legion
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -238,6 +239,101 @@ missing = [u["name"] for u in files["Units"] if not u.get("civilopediaText")] + 
           [b["name"] for b in files["Buildings"] if (b.get("isWonder") or b.get("isNationalWonder")) and not b.get("civilopediaText")]
 print("lore missing:", missing)
 
+# ------------------------------------------------------------ 5c. v0.10: events, Legion, text, lore
+# Burning Legion demons: unbuildable, only spawned by the Legion Incursion event
+units = {u["name"]: u for u in files["Units"]}
+for name, base, stats in legion.UNITS:
+    u = copy.deepcopy(units[base])
+    for k in ("upgradesTo", "obsoleteTech", "replaces", "uniqueTo", "promotions", "civilopediaText"):
+        u.pop(k, None)
+    u.update(stats)
+    u["name"] = name
+    u["uniques"] = ["Unbuildable", "Cannot be purchased"]
+    u["civilopediaText"] = [{"text": legion.LORE[name]}]
+    files["Units"].append(u)
+
+files["Events"] = WE.json_events()
+# triggered for major civs only (city-states would otherwise roll events too), hidden in the civilopedia
+for n in majors:
+    n["uniques"] = n.get("uniques", []) + [t + " <hidden from users>" for t in WE.triggers()]
+
+# per-race Great Person names: each race's GP takes names from its own list
+GP_TAG = re.compile(r"^\[This Unit\] gets a name from the \[(\w+)\] group$")
+for u in files["Units"]:
+    out = []
+    for q in u.get("uniques", []):
+        m = GP_TAG.match(q)
+        if not m or m.group(1) not in NG.GREAT_PEOPLE:
+            out.append(q)
+            continue
+        kind = m.group(1)
+        for race, kinds in RN.RACE_GP.items():
+            if kind in kinds:
+                out.append("[This Unit] gets a name from the [%s %s] group <for [%s] Civilizations> <hidden from users>" % (race, kind, race))
+        out.append(q + " <for [City-States] Civilizations> <hidden from users>")
+    if "uniques" in u:
+        u["uniques"] = out
+for race, kinds in RN.RACE_GP.items():
+    for kind, names in kinds.items():
+        files["UnitNameGroups"].append({"name": "%s %s" % (race, kind), "unitNames": names})
+
+# ancient ruins and city-state quests in Warcraft terms
+for r in files["Ruins"]:
+    if r["name"] in TX.RUINS:
+        r["notification"] = TX.RUINS[r["name"]]
+for q in files["Quests"]:
+    if q["name"] in TX.QUESTS:
+        q["description"] = TX.QUESTS[q["name"]]
+
+# city-state types (only where the engine doesn't name them) and specialists
+def rekey(d, m):
+    return {m.get(k, k): v for k, v in d.items()}
+for t in files["CityStateTypes"]:
+    t["name"] = TX.CS_TYPES.get(t["name"], t["name"])
+for n in files["Nations"] + minors:
+    if "cityStateType" in n:
+        n["cityStateType"] = TX.CS_TYPES.get(n["cityStateType"], n["cityStateType"])
+for q in files["Quests"]:
+    if "weightForCityStateType" in q:
+        q["weightForCityStateType"] = rekey(q["weightForCityStateType"], TX.CS_TYPES)
+for sp in files["Specialists"]:
+    sp["name"] = TX.SPECIALISTS.get(sp["name"], sp["name"])
+SPEC_BR = re.compile(r"\[(%s)\]" % "|".join(TX.SPECIALISTS))
+for b in files["Buildings"]:
+    if "specialistSlots" in b:
+        b["specialistSlots"] = rekey(b["specialistSlots"], TX.SPECIALISTS)
+for name in ("Buildings", "Policies", "Beliefs", "Nations", "Techs"):
+    def fix(o):
+        if isinstance(o, dict):
+            if "uniques" in o:
+                o["uniques"] = [SPEC_BR.sub(lambda m: "[" + TX.SPECIALISTS[m.group(1)] + "]", q) for q in o["uniques"]]
+            for v in o.values(): fix(v)
+        elif isinstance(o, list):
+            for v in o: fix(v)
+    fix(files[name])
+
+# civilopedia lore for everything else
+for b in files["Buildings"]:
+    add_lore(b, LM.BUILDINGS.get(b["name"]))
+for r in files["TileResources"]:
+    add_lore(r, LM.RESOURCES.get(r["name"]))
+for i in files["TileImprovements"]:
+    add_lore(i, LM.IMPROVEMENTS.get(i["name"]))
+for b in files["Beliefs"]:
+    add_lore(b, LM.BELIEFS.get(b["name"]))
+for br in files["Policies"]:
+    add_lore(br, LM.BRANCHES.get(br["name"]))
+    for p in br["policies"]:
+        add_lore(p, LM.POLICIES.get(p["name"]))
+PROMO_LVL = re.compile(r" (I|II|III)$")
+for p in files["UnitPromotions"]:
+    add_lore(p, LM.PROMOTIONS.get(PROMO_LVL.sub("", p["name"])))
+missing2 = [x["name"] for k in ("TileResources", "TileImprovements", "Beliefs") for x in files[k] if not x.get("civilopediaText")] + \
+           [b["name"] for b in files["Buildings"] if not b.get("civilopediaText")] + \
+           [p["name"] for br in files["Policies"] for p in br["policies"] if not p.get("civilopediaText") and not p["name"].endswith("Complete")] + \
+           [p["name"] for p in files["UnitPromotions"] if not p.get("civilopediaText")]
+print("lore missing (v0.10):", missing2)
+
 files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth Large]"]}
 
 for name, data in files.items():
@@ -318,6 +414,14 @@ print("race sprites:", n)
 n = human_sprites.write_all(os.path.join(SRC, "AbsoluteUnits.atlas"), os.path.join(OUT, "Images.WarcraftMap"),
                             os.path.join(OUT, "Images.RaceUnits"), R.ALL, R.ERAS)
 print("human sprites:", n)
+# Barbarian raiders: murlocs, gnolls and the Defias Brotherhood ("<Unit>-Barbarians")
+n = race_sprites.write_barbarians(_lu, os.path.join(OUT, "Images.WarcraftMap"), R.ALL)
+print("barbarian sprites:", n)
+for name, fn in legion.SPRITES.items():
+    for suf, im in zip(("", "-1", "-2"), fn()):
+        path = os.path.join(OUT, "Images.WarcraftMap", late_units.P, name + suf + ".png")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        im.save(path)
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)

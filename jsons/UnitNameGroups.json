@@ -199,5 +199,1032 @@
       "Archmage Malin",
       "Archmage Xylem"
     ]
+  },
+  {
+    "name": "Humans General",
+    "unitNames": [
+      "Anduin Lothar",
+      "Turalyon",
+      "Danath Trollbane",
+      "Bolvar Fordragon",
+      "Halford Wyrmbane",
+      "Mathias Shaw",
+      "Thoras Trollbane",
+      "Varian Wrynn",
+      "Marshal Dughan",
+      "Marshal Gryan Stoutmantle"
+    ]
+  },
+  {
+    "name": "Humans Admiral",
+    "unitNames": [
+      "Daelin Proudmoore",
+      "Tandred Proudmoore",
+      "Katherine Proudmoore",
+      "Flynn Fairwind",
+      "Grand Admiral Jes-Tereth",
+      "Cyrus Crestfall",
+      "Lord Admiral Taelia Fordragon",
+      "Admiral Hartley"
+    ]
+  },
+  {
+    "name": "Humans Artist",
+    "unitNames": [
+      "Brother Joshua the Choirmaster",
+      "Sculptor Haldren",
+      "Bard Willem of Lordaeron",
+      "Painter Amelia Clarke",
+      "Lyrist Thaddeus",
+      "Tapestry-weaver Elsbeth",
+      "Chronicler Garrick"
+    ]
+  },
+  {
+    "name": "Humans Merchant",
+    "unitNames": [
+      "Merchant Lord Ravenholdt",
+      "Banker Alexander Stout",
+      "Factor Edmund Grey",
+      "Guildmaster Carrow",
+      "Trader Matthias Holt",
+      "Quartermaster Lewis",
+      "Wool-merchant Brandt"
+    ]
+  },
+  {
+    "name": "Humans Engineer",
+    "unitNames": [
+      "Edwin VanCleef",
+      "Baros Alexston",
+      "Mason Brannick",
+      "Builder Hagan",
+      "Master Mason Thaddeus",
+      "Architect Lydon",
+      "Stonecutter Aldric"
+    ]
+  },
+  {
+    "name": "Humans Prophet",
+    "unitNames": [
+      "Alonsus Faol",
+      "Uther the Lightbringer",
+      "Archbishop Benedictus",
+      "Tirion Fordring",
+      "High Priestess Laurena",
+      "Calia Menethil",
+      "Gavinrad the Dire",
+      "Saidan Dathrohan"
+    ]
+  },
+  {
+    "name": "Orcs General",
+    "unitNames": [
+      "Orgrim Doomhammer",
+      "Grom Hellscream",
+      "Varok Saurfang",
+      "Broxigar",
+      "Nazgrim",
+      "Eitrigg",
+      "Kilrogg Deadeye",
+      "Garrosh Hellscream",
+      "Thura",
+      "Kargath Bladefist"
+    ]
+  },
+  {
+    "name": "Orcs Admiral",
+    "unitNames": [
+      "Fleet-chief Gor'mok",
+      "Captain Zag'zul",
+      "Warlord Kragg Blacktide",
+      "Captain Drogtar",
+      "Shipmaster Urgath",
+      "Raider-captain Norgg"
+    ]
+  },
+  {
+    "name": "Orcs Artist",
+    "unitNames": [
+      "Skald Durgash",
+      "Drummer Krovak",
+      "Storyteller Grim'tak",
+      "Carver Moruk",
+      "Chanter Ulga",
+      "Painter-of-Skins Mazga"
+    ]
+  },
+  {
+    "name": "Orcs Merchant",
+    "unitNames": [
+      "Trader Grull",
+      "Gamon",
+      "Provisioner Arok",
+      "Caravan Master Hargal",
+      "Merchant Zakan",
+      "Bazaar-chief Sorgo"
+    ]
+  },
+  {
+    "name": "Orcs Engineer",
+    "unitNames": [
+      "Blackhand",
+      "Forgemaster Garfrost",
+      "Overseer Krugh",
+      "Siegewright Torga",
+      "Ironsmith Morgash",
+      "Forgeboss Drak"
+    ]
+  },
+  {
+    "name": "Orcs Prophet",
+    "unitNames": [
+      "Drek'Thar",
+      "Greatmother Geyah",
+      "Rehgar Earthfury",
+      "Aggra",
+      "Ner'zhul",
+      "Farseer Grezz",
+      "Elder Kashur"
+    ]
+  },
+  {
+    "name": "Orcs Scientist",
+    "unitNames": [
+      "Gul'dan",
+      "Cho'gall",
+      "Teron Gorefiend",
+      "Zuluhed the Whacked",
+      "Seer Ruk",
+      "Warlock Gakkorg",
+      "Dark Shaman Koranthal"
+    ]
+  },
+  {
+    "name": "Night Elves General",
+    "unitNames": [
+      "Shandris Feathermoon",
+      "Jarod Shadowsong",
+      "Maiev Shadowsong",
+      "Kur'talos Ravencrest",
+      "Desdel Stareye",
+      "Captain Varo'then",
+      "General Ilthalaine",
+      "Sentinel Commander Arynia"
+    ]
+  },
+  {
+    "name": "Night Elves Admiral",
+    "unitNames": [
+      "Fleet Master Firallon",
+      "Admiral Arandelle",
+      "Captain Silverleaf",
+      "Tidewarden Ynarra",
+      "Captain Shalara",
+      "Mistress Moonshadow"
+    ]
+  },
+  {
+    "name": "Night Elves Artist",
+    "unitNames": [
+      "Bard Allerias",
+      "Chronicler Elrianne",
+      "Faeleth the Singer",
+      "Moonsinger Sylvaria",
+      "Lyrist Velas",
+      "Carver of the Grove Talindra"
+    ]
+  },
+  {
+    "name": "Night Elves Merchant",
+    "unitNames": [
+      "Trader Thalien",
+      "Moonglade Factor Lunaria",
+      "Merchant Aldraen",
+      "Provisioner Elaria",
+      "Caravan-warden Isiden"
+    ]
+  },
+  {
+    "name": "Night Elves Engineer",
+    "unitNames": [
+      "Architect Telmor",
+      "Stoneshaper Aelyth",
+      "Treesinger Fandral",
+      "Moonwell-keeper Aliindra",
+      "Builder Ilyana"
+    ]
+  },
+  {
+    "name": "Night Elves Prophet",
+    "unitNames": [
+      "Tyrande Whisperwind",
+      "Fandral Staghelm",
+      "High Priestess Dejahna",
+      "Priestess Raene",
+      "Moon Priestess Amara",
+      "Mother Moon Elarra"
+    ]
+  },
+  {
+    "name": "Night Elves Scientist",
+    "unitNames": [
+      "Malfurion Stormrage",
+      "Illidan Stormrage",
+      "Broll Bearmantle",
+      "Keeper Remulos",
+      "Archdruid Lilliandra",
+      "Archdruid Lilliandra the Elder",
+      "Loremaster Eredai"
+    ]
+  },
+  {
+    "name": "Dwarves General",
+    "unitNames": [
+      "Muradin Bronzebeard",
+      "Kurdran Wildhammer",
+      "Falstad Wildhammer",
+      "Thargas Anvilmar",
+      "Mountaineer Rockgar",
+      "Thane Dagran",
+      "Senator Barin Redstone",
+      "Commander Thorak"
+    ]
+  },
+  {
+    "name": "Dwarves Admiral",
+    "unitNames": [
+      "Captain Stoutbeard",
+      "Admiral Ironkeel",
+      "Captain Brokenaxe",
+      "Skipper Gravelhold",
+      "Commodore Kegsworth"
+    ]
+  },
+  {
+    "name": "Dwarves Artist",
+    "unitNames": [
+      "Skald Hrafnkel",
+      "Runecarver Durnan",
+      "Ballad-singer Fenna",
+      "Brewbard Muglan",
+      "Sculptor Thane Faralan",
+      "Stonepainter Brogga"
+    ]
+  },
+  {
+    "name": "Dwarves Merchant",
+    "unitNames": [
+      "Banker Olaf",
+      "Merchant Prince Halgrim",
+      "Brewmaster Haggard",
+      "Trader Grimbolt",
+      "Exchanger Bolvin",
+      "Ironforge Factor Brumli"
+    ]
+  },
+  {
+    "name": "Dwarves Engineer",
+    "unitNames": [
+      "Steamsmith Brugg",
+      "Builder Thorgrim",
+      "Forgemaster Ormak",
+      "Rune-smith Durgan",
+      "Master Mason Ironhide",
+      "Tunneler Bronn"
+    ]
+  },
+  {
+    "name": "Dwarves Prophet",
+    "unitNames": [
+      "Moira Thaurissan",
+      "Bruuk Barleybeard",
+      "High Priest Rohan",
+      "Thane Torvald",
+      "Earthspeaker Mathrengyl",
+      "Keeper Kerrin"
+    ]
+  },
+  {
+    "name": "Dwarves Scientist",
+    "unitNames": [
+      "Brann Bronzebeard",
+      "Lorekeeper Muradil",
+      "Prospector Remtravel",
+      "Archaeologist Belgrum",
+      "Historian Karnik",
+      "Lorekeeper Polkelt",
+      "Harkor Dreadhammer"
+    ]
+  },
+  {
+    "name": "Gnomes General",
+    "unitNames": [
+      "Captain Fizzcrank",
+      "Field Commander Kitty",
+      "General Kegspark",
+      "Commander Gearloose",
+      "Marshal Sprocketspark",
+      "Captain Tinkerfuse"
+    ]
+  },
+  {
+    "name": "Gnomes Admiral",
+    "unitNames": [
+      "Captain Bolt",
+      "Submarine Commander Pinwheel",
+      "Admiral Fusegrinder",
+      "Captain Gearheart"
+    ]
+  },
+  {
+    "name": "Gnomes Artist",
+    "unitNames": [
+      "Composer Fizzlebang",
+      "Clockwork Painter Twinkla",
+      "Holo-artist Sparkwick",
+      "Storyteller Geargrind",
+      "Musician Cogsworth"
+    ]
+  },
+  {
+    "name": "Gnomes Merchant",
+    "unitNames": [
+      "Merchant Spannerbolt",
+      "Trader Coggle",
+      "Factor Fizzlespark",
+      "Banker Twinkletoes",
+      "Salesgnome Whistlecog"
+    ]
+  },
+  {
+    "name": "Gnomes Engineer",
+    "unitNames": [
+      "Oglethorpe Obnoticus",
+      "Sapphronetta Flivvers",
+      "Toshley",
+      "Fizzcrank Fullthrottle",
+      "Hobart Grapplehammer",
+      "Chief Engineer Bolinda",
+      "Gearmaster Sprock",
+      "Tinker Gearspanner"
+    ]
+  },
+  {
+    "name": "Gnomes Prophet",
+    "unitNames": [
+      "Brother Tinkerhallow",
+      "Sister Cogwhistle",
+      "Gnomish Light-bearer Fizzle",
+      "Priestess Sparkwhistle"
+    ]
+  },
+  {
+    "name": "Gnomes Scientist",
+    "unitNames": [
+      "Mekgineer Thermaplugg",
+      "Kelsey Steelspark",
+      "Professor Sprocketspark",
+      "Dr. Wizzlecrank",
+      "Erazmin Fizzlewhistle",
+      "Mechanist Rizzlecog",
+      "Chromie"
+    ]
+  },
+  {
+    "name": "Tauren General",
+    "unitNames": [
+      "Baine Bloodhoof",
+      "Trag Highmountain",
+      "Huln Highmountain",
+      "Mayla Highmountain",
+      "Spiritwalker Ebonhorn",
+      "Brave Tarak Swiftwind",
+      "Chieftain Dawnstrider"
+    ]
+  },
+  {
+    "name": "Tauren Admiral",
+    "unitNames": [
+      "Captain Riverhoof",
+      "Raftmaster Stormtotem",
+      "Tidehoof Navak",
+      "Captain Thunderhorn"
+    ]
+  },
+  {
+    "name": "Tauren Artist",
+    "unitNames": [
+      "Drummer Bluehorn",
+      "Storyteller Runetotem",
+      "Weaver of Tales Tia",
+      "Carver Ragetotem",
+      "Chanter Mistwalker"
+    ]
+  },
+  {
+    "name": "Tauren Merchant",
+    "unitNames": [
+      "Trader Windfeather",
+      "Caravan Master Grimtotem",
+      "Kodo-herder Bloodhoof",
+      "Thunder Bluff Factor Skychaser"
+    ]
+  },
+  {
+    "name": "Tauren Engineer",
+    "unitNames": [
+      "Totem-raiser Hightotem",
+      "Builder Rainrunner",
+      "Lift-master Stormhorn",
+      "Carver Mesa"
+    ]
+  },
+  {
+    "name": "Tauren Prophet",
+    "unitNames": [
+      "Hamuul Runetotem",
+      "Magatha Grimtotem",
+      "Mother Kashur",
+      "Elder Cloudwalker",
+      "Spiritwalker Muln Earthfury",
+      "Sunwalker Dezco",
+      "Tahu Sagewind"
+    ]
+  },
+  {
+    "name": "Tauren Scientist",
+    "unitNames": [
+      "Seer Ravenfeather",
+      "Elder Stonespire",
+      "Loremaster Skychaser",
+      "Elder Bluehoof"
+    ]
+  },
+  {
+    "name": "Trolls General",
+    "unitNames": [
+      "Rokhan",
+      "Zul'jin",
+      "Zekhan",
+      "Master Gadrin",
+      "Vanira",
+      "Tor'kar the Hexbane",
+      "Champion Ze'kahn"
+    ]
+  },
+  {
+    "name": "Trolls Admiral",
+    "unitNames": [
+      "Captain Tony Two-Tusk",
+      "Raider Captain Zul'Nok",
+      "Tidecaller Jin'vala",
+      "Captain Rak'jin"
+    ]
+  },
+  {
+    "name": "Trolls Artist",
+    "unitNames": [
+      "Storyteller Grim'tak",
+      "Drummer Zen'kiki",
+      "Mask-carver Tal'jin",
+      "Chanter Mojo'zul"
+    ]
+  },
+  {
+    "name": "Trolls Merchant",
+    "unitNames": [
+      "Trader Zula",
+      "Hexer-merchant Juju",
+      "Spice-trader Vel'ji",
+      "Bazaar Master Kazak"
+    ]
+  },
+  {
+    "name": "Trolls Engineer",
+    "unitNames": [
+      "Stone-shaper Ra'zul",
+      "Ziggurat-builder Kul'tan",
+      "Mason Gor'jin",
+      "Pyramid-raiser Wazza"
+    ]
+  },
+  {
+    "name": "Trolls Prophet",
+    "unitNames": [
+      "Zul the Prophet",
+      "Zen'tabra",
+      "Jin'do",
+      "Vol'kaz of Bwonsamdi",
+      "Talanji",
+      "Witch Doctor Zum'rah",
+      "Priestess Kaza"
+    ]
+  },
+  {
+    "name": "Trolls Scientist",
+    "unitNames": [
+      "Witch Doctor Zalazane",
+      "Hexlord Malacrass",
+      "Sen'jin the Elder",
+      "Loa-scholar Zhaz",
+      "Mojo-master Tazz",
+      "Voodoo Sage Gazz'uz"
+    ]
+  },
+  {
+    "name": "Blood Elves General",
+    "unitNames": [
+      "Lady Liadrin",
+      "Halduron Brightwing",
+      "Captain Rommath",
+      "Ranger Velonara Sunfire",
+      "Captain Auric Sunchaser",
+      "Magister Duskwither",
+      "Champion Tarren"
+    ]
+  },
+  {
+    "name": "Blood Elves Admiral",
+    "unitNames": [
+      "Captain Dawnstrider",
+      "Admiral Sunsail",
+      "Captain Aldrae",
+      "Fleetmaster Brightwing"
+    ]
+  },
+  {
+    "name": "Blood Elves Artist",
+    "unitNames": [
+      "Composer Aelthalyste",
+      "Magister of Song Elaria",
+      "Lyrist Saelorn",
+      "Sculptor Sunhallow",
+      "Painter Thalyssa"
+    ]
+  },
+  {
+    "name": "Blood Elves Merchant",
+    "unitNames": [
+      "Master Trader Thalien",
+      "Silvermoon Factor Elaene",
+      "Merchant Sunreaver",
+      "Jeweler Kaelis",
+      "Banker Aerith"
+    ]
+  },
+  {
+    "name": "Blood Elves Engineer",
+    "unitNames": [
+      "Magister Astalor Bloodsworn",
+      "Spellbreaker Thalorien",
+      "Architect Lirath",
+      "Runesmith Aleran",
+      "Builder of Spires Delenna"
+    ]
+  },
+  {
+    "name": "Blood Elves Prophet",
+    "unitNames": [
+      "Lady Liadrin",
+      "Blood Knight Matriarch Ithanas",
+      "Sunwalker Elanor",
+      "Priestess Kaenya",
+      "Lightbearer Aledra"
+    ]
+  },
+  {
+    "name": "Blood Elves Scientist",
+    "unitNames": [
+      "Kael'thas Sunstrider",
+      "Grand Magister Rommath",
+      "Aethas Sunreaver",
+      "Magister Umbric",
+      "Magistrix Elisara",
+      "Magister Hathorel",
+      "Arcanist Helion"
+    ]
+  },
+  {
+    "name": "High Elves General",
+    "unitNames": [
+      "Ranger-General Sylvanas Windrunner",
+      "Alleria Windrunner",
+      "Lor'themar Theron",
+      "Halduron Brightwing",
+      "Champion Vereth",
+      "Vereesa Windrunner",
+      "Captain Lanthir"
+    ]
+  },
+  {
+    "name": "High Elves Admiral",
+    "unitNames": [
+      "Captain Silversail",
+      "Fleetmaster Dawnreaver",
+      "Admiral Seawind",
+      "Captain Thessaly"
+    ]
+  },
+  {
+    "name": "High Elves Artist",
+    "unitNames": [
+      "Poet Thessaly",
+      "Minstrel Faelyn",
+      "Sculptor Aerendil",
+      "Lyrist Saelwyn",
+      "Composer Valindra"
+    ]
+  },
+  {
+    "name": "High Elves Merchant",
+    "unitNames": [
+      "Factor Velinde",
+      "Quel'Thalas Factor Aerin",
+      "Gemcutter Ilanor",
+      "Trader Sunleaf"
+    ]
+  },
+  {
+    "name": "High Elves Engineer",
+    "unitNames": [
+      "Builder of Runestones Taelor",
+      "Architect Valanthe",
+      "Magister Aledan",
+      "Gatekeeper Dathan"
+    ]
+  },
+  {
+    "name": "High Elves Prophet",
+    "unitNames": [
+      "Priestess Lor'tali",
+      "Lightwarden Elora",
+      "Sunpriest Faladrin",
+      "Priestess Aelynne"
+    ]
+  },
+  {
+    "name": "High Elves Scientist",
+    "unitNames": [
+      "Dath'Remar Sunstrider",
+      "Magister Belo'vir",
+      "Archmage Vargoth",
+      "Magister Kaendris",
+      "Archmage Aelthas",
+      "Modera",
+      "Ansirem Runeweaver"
+    ]
+  },
+  {
+    "name": "Pandaren General",
+    "unitNames": [
+      "Taran Zhu",
+      "Lord Takeda",
+      "Commander Lo Ping",
+      "Master Snowdrift",
+      "Ban Bearheart",
+      "Kun-Lai Commander Yi",
+      "Shado-Master Chong"
+    ]
+  },
+  {
+    "name": "Pandaren Admiral",
+    "unitNames": [
+      "Captain Li-Song",
+      "Fleetmaster Ji Firepaw",
+      "Turtle-pilot Mei",
+      "Captain Bo"
+    ]
+  },
+  {
+    "name": "Pandaren Artist",
+    "unitNames": [
+      "Lorewalker Cho",
+      "Lorewalker Stonestep",
+      "Carver Junhai",
+      "Lute-master Fen",
+      "Painter Kao",
+      "Poet Hua"
+    ]
+  },
+  {
+    "name": "Pandaren Merchant",
+    "unitNames": [
+      "Spice-merchant Ji",
+      "Trader Jang",
+      "Tea-merchant Mei Mei",
+      "Brewmaster Bo",
+      "Silk-trader Lun"
+    ]
+  },
+  {
+    "name": "Pandaren Engineer",
+    "unitNames": [
+      "Builder Shuai",
+      "Mason Wen",
+      "Bridge-wright Han",
+      "Architect of the Wall Liu"
+    ]
+  },
+  {
+    "name": "Pandaren Prophet",
+    "unitNames": [
+      "Taoshi",
+      "Elder Sage Tai-Feng",
+      "Master Shang Xi",
+      "Sage Whiteheart",
+      "Elder Lusshan",
+      "Priestess of Yu'lon Jinyu"
+    ]
+  },
+  {
+    "name": "Pandaren Scientist",
+    "unitNames": [
+      "Chen Stormstout",
+      "Li Li Stormstout",
+      "Lorewalker Fu",
+      "Master Brewer Mudmug",
+      "Sage Liao",
+      "Scholar Pao"
+    ]
+  },
+  {
+    "name": "Forsaken General",
+    "unitNames": [
+      "Nathanos Blightcaller",
+      "Lilian Voss",
+      "High Executor Derrington",
+      "Deathstalker Commander Belmont",
+      "Champion Cyssa Dawnrose",
+      "Executor Zygand",
+      "Dark Ranger Velonara"
+    ]
+  },
+  {
+    "name": "Forsaken Admiral",
+    "unitNames": [
+      "Captain Beld",
+      "Admiral Hatchet",
+      "Captain Grigsby",
+      "Fleet Commander Thurwell"
+    ]
+  },
+  {
+    "name": "Forsaken Artist",
+    "unitNames": [
+      "Bard of the Undercity Wexley",
+      "Requiem-singer Morwen",
+      "Mortician-sculptor Graves",
+      "Poet Cellia Soulfire"
+    ]
+  },
+  {
+    "name": "Forsaken Merchant",
+    "unitNames": [
+      "Kalaran the Deceiver",
+      "Undercity Banker Mortimer",
+      "Trader Elwood",
+      "Merchant Grimm"
+    ]
+  },
+  {
+    "name": "Forsaken Engineer",
+    "unitNames": [
+      "Engineer Wizzlecrank",
+      "Master Apothecary Faranell",
+      "Builder Coldheart",
+      "Siegewright Morbent"
+    ]
+  },
+  {
+    "name": "Forsaken Prophet",
+    "unitNames": [
+      "Calia Menethil",
+      "Bishop Zanthos",
+      "Dark Cleric Beryl",
+      "Priest Gregor Agamand",
+      "Sister Hollow"
+    ]
+  },
+  {
+    "name": "Forsaken Scientist",
+    "unitNames": [
+      "Grand Apothecary Putress",
+      "Master Apothecary Faranell",
+      "Apothecary Zinge",
+      "Apothecary Keever",
+      "Scribe Mortain",
+      "Archmage Arugal",
+      "Apothecary Lydon"
+    ]
+  },
+  {
+    "name": "Draenei General",
+    "unitNames": [
+      "Maraad",
+      "Yrel",
+      "Captain Arunen",
+      "Vindicator Boros",
+      "Anchorite Taaro",
+      "Vindicator Hallos",
+      "Exarch Maladaar"
+    ]
+  },
+  {
+    "name": "Draenei Admiral",
+    "unitNames": [
+      "Captain Kologarn",
+      "Navigator Kaal",
+      "Admiral Hasha",
+      "Exodar Pilot Velaar"
+    ]
+  },
+  {
+    "name": "Draenei Artist",
+    "unitNames": [
+      "Crystal-singer Asha",
+      "Artificer Nobari",
+      "Chanter Iruun",
+      "Lightsinger Ezra"
+    ]
+  },
+  {
+    "name": "Draenei Merchant",
+    "unitNames": [
+      "Gemcutter Ilaan",
+      "Trader Ru'kan",
+      "Exodar Factor Moraal",
+      "Crystal-merchant Kalaa"
+    ]
+  },
+  {
+    "name": "Draenei Engineer",
+    "unitNames": [
+      "Artificer Romuul",
+      "Vindicator Archon Kreeth",
+      "Crystal Engineer Daelian",
+      "Technician Zhanaa"
+    ]
+  },
+  {
+    "name": "Draenei Prophet",
+    "unitNames": [
+      "Velen",
+      "Farseer Nobundo",
+      "Akama",
+      "Anchorite Obadei",
+      "Exarch Naielle",
+      "Vindicator Aalesia"
+    ]
+  },
+  {
+    "name": "Draenei Scientist",
+    "unitNames": [
+      "Artificer Kaal",
+      "Naaru-scholar Ishanah",
+      "High Priestess Ishanah",
+      "Arcanist Ilmaar",
+      "Seer Jalaan",
+      "Arcanist Velaada"
+    ]
+  },
+  {
+    "name": "Goblins General",
+    "unitNames": [
+      "Gazlowe",
+      "Bruiser Gutspill",
+      "Foreman Gutspill",
+      "Boss Mida",
+      "Sassy Hardwrench",
+      "Bilgewater Brute Kezzik"
+    ]
+  },
+  {
+    "name": "Goblins Admiral",
+    "unitNames": [
+      "Captain Greenskin",
+      "Admiral Ripsnarl",
+      "Captain Kronk",
+      "Admiral Sprocketfizz",
+      "Captain Kezzik"
+    ]
+  },
+  {
+    "name": "Goblins Artist",
+    "unitNames": [
+      "Showman Rizzle",
+      "Fireworks-master Sprazz",
+      "Jingle-writer Fizzwick",
+      "Billboard Painter Gizzle"
+    ]
+  },
+  {
+    "name": "Goblins Merchant",
+    "unitNames": [
+      "Baron Revilgaz",
+      "Marin Noggenfogger",
+      "Trade Prince Steamwheedle",
+      "Krazek",
+      "Shady Dealer Muckshot",
+      "Auctioneer Fitch",
+      "Moneylender Sneed"
+    ]
+  },
+  {
+    "name": "Goblins Engineer",
+    "unitNames": [
+      "Gazlowe",
+      "Overspark",
+      "Pumper Kessel",
+      "Mechanic Fizzgear",
+      "Rocketeer Kaboomz",
+      "Shredder-builder Grizzlecog"
+    ]
+  },
+  {
+    "name": "Goblins Prophet",
+    "unitNames": [
+      "Brother Bolts",
+      "Sister Coinwhistle",
+      "Prophet of Profit Rizzik",
+      "Preacher Spigot"
+    ]
+  },
+  {
+    "name": "Goblins Scientist",
+    "unitNames": [
+      "Dr. Krazzle",
+      "Professor Kizzlewick",
+      "Alchemist Zizzle",
+      "Chief Chemist Grimfuse",
+      "Researcher Boomwhistle"
+    ]
+  },
+  {
+    "name": "Worgen General",
+    "unitNames": [
+      "Darius Crowley",
+      "Lorna Crowley",
+      "Lord Godfrey",
+      "Captain Broderick",
+      "Marshal Ivar",
+      "Commander Hallow"
+    ]
+  },
+  {
+    "name": "Worgen Admiral",
+    "unitNames": [
+      "Admiral Westwind",
+      "Captain Ellis",
+      "Captain Garrick",
+      "Harbormaster Gilneas"
+    ]
+  },
+  {
+    "name": "Worgen Artist",
+    "unitNames": [
+      "Bard of Gilneas Thorne",
+      "Painter Mira Greymane",
+      "Poet Ashworth",
+      "Fiddler Hargrove"
+    ]
+  },
+  {
+    "name": "Worgen Merchant",
+    "unitNames": [
+      "Merchant Lord Ashbury",
+      "Gilneas Banker Pomfrey",
+      "Trader Hollings",
+      "Factor Cranston"
+    ]
+  },
+  {
+    "name": "Worgen Engineer",
+    "unitNames": [
+      "Wall-builder Ivar Bloodfang",
+      "Architect Ravenshaw",
+      "Mason Delwin",
+      "Engineer Fitzroy"
+    ]
+  },
+  {
+    "name": "Worgen Prophet",
+    "unitNames": [
+      "Belysra Starbreeze",
+      "Mother Mallory",
+      "Father Kenneth",
+      "Sister Almyra",
+      "Elder Ashbourne"
+    ]
+  },
+  {
+    "name": "Worgen Scientist",
+    "unitNames": [
+      "Krennan Aranas",
+      "Archmage Arugal",
+      "Alchemist Celestine",
+      "Harvest Witch Hollinsworth",
+      "Scholar Greymoor"
+    ]
   }
 ]

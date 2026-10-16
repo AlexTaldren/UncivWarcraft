@@ -14,7 +14,7 @@ HUMAN_UNITS = [
     ("Swordsman", {
         "name": "Footman", "replaces": "Swordsman", "uniqueTo": "Humans",
         "strength": 16, "requiredResource": None,
-        "promotions": ["Cover I"],
+        "promotions": ["Defend I"],
         "civilopediaText": [{"text": "The backbone of every human army. Footmen are trained to fight in shield-walls that turn aside arrows, and unlike swordsmen they need no Iron to equip."}],
     }),
     ("Knight", {

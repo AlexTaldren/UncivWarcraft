@@ -1060,6 +1060,7 @@ TECHS = {
 }
 
 UNITS = {
+    "Felguard": ("axe", "flame"), "Infernal": ("golem", "flame"),
     "Settler": "banner", "Scout": "eye", "Mounted Archer": ("horse", "bow"),
     "Spearman": "spear", "Catapult": ("cannon", "skull"), "Ranger": ("bow", "leaf"), "Swordsman": "sword",
     "Knight": "helm", "Lancer": ("horse", "spear"), "Cannon": "cannon", "Mountaineer": ("gun", "mountain"),

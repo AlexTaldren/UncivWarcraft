@@ -12,6 +12,22 @@
       "Rugged Leather",
       "HillForest"
     ],
+    "Tundra+Arcane Academy": [
+      "Tundra",
+      "Arcane Academy-Snow"
+    ],
+    "Tundra+Bastion": [
+      "Tundra",
+      "Bastion-Snow"
+    ],
+    "Snow+Arcane Academy": [
+      "Snow",
+      "Arcane Academy-Snow"
+    ],
+    "Snow+Bastion": [
+      "Snow",
+      "Bastion-Snow"
+    ],
     "Grassland+Jungle+Azerite": [
       "Grassland",
       "Azerite",

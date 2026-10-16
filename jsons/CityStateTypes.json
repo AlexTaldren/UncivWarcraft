@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cultured",
+    "name": "Lorekeeper",
     "friendBonusUniques": [
       "[+3 Culture] <before the [Age of the Dark Portal]>",
       "[+6 Culture] <starting from the [Age of the Dark Portal]> <before the [Age of the Lich King]>",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "name": "Maritime",
+    "name": "Harbor",
     "friendBonusUniques": [
       "[+2 Food] [in capital]"
     ],
@@ -67,7 +67,7 @@
     ]
   },
   {
-    "name": "Religious",
+    "name": "Sacred",
     "friendBonusUniques": [
       "[+3 Faith] <before the [Age of the Dark Portal]>",
       "[+6 Faith] <starting from the [Age of the Dark Portal]> <before the [Age of the Lich King]>",

@@ -53,7 +53,22 @@
       "[2] free [Rifleman] units appear <upon being declared war on by [All] Civilizations> <after discovering [Long Rifles]> <before discovering [Gnomish Gearworks]>",
       "[2] free [Fusilier] units appear <upon being declared war on by [All] Civilizations> <after discovering [Gnomish Gearworks]> <before discovering [Arcanite Alloys]>",
       "[2] free [Shock Trooper] units appear <upon being declared war on by [All] Civilizations> <after discovering [Arcanite Alloys]> <before discovering [War Drums]>",
-      "[2] free [Mechagnome Trooper] units appear <upon being declared war on by [All] Civilizations> <after discovering [War Drums]>"
+      "[2] free [Mechagnome Trooper] units appear <upon being declared war on by [All] Civilizations> <after discovering [War Drums]>",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Stormwind",
@@ -123,7 +138,22 @@
     "uniques": [
       "[+15]% Strength <for [Melee] units> <when attacking>",
       "Earn [50]% of killed [Military] unit's [Strength] as [Culture]",
-      "Comment [Faction: Horde]"
+      "Comment [Faction: Horde]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Orgrimmar",
@@ -184,7 +214,22 @@
     "uniques": [
       "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
       "[+20]% Strength <for [Land] units> <when fighting in [Forest] tiles>",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Darnassus",
@@ -245,7 +290,22 @@
     "uniques": [
       "Units ignore terrain costs when moving into any tile with Hills",
       "[+1 Production] from [Mine] tiles [in all cities]",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Ironforge",
@@ -306,7 +366,22 @@
     "uniques": [
       "[+10]% [Science] [in all cities]",
       "[+25]% Production when constructing [Siege] units [in all cities]",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Gnomeregan",
@@ -357,7 +432,22 @@
     "uniques": [
       "[+1 Food] from [Pasture] tiles [in all cities]",
       "[+10]% Strength <for [Land] units> <when defending>",
-      "Comment [Faction: Horde]"
+      "Comment [Faction: Horde]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Thunder Bluff",
@@ -414,7 +504,22 @@
     "uniques": [
       "[+10] HP when healing <for [Land] units>",
       "[+15]% Strength <for [Land] units> <when fighting in [Jungle] tiles>",
-      "Comment [Faction: Horde]"
+      "Comment [Faction: Horde]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Sen'jin Village",
@@ -473,7 +578,22 @@
     "uniques": [
       "[+2 Science] from every [Library]",
       "[+15]% [Culture] [in all cities]",
-      "Comment [Faction: Horde]"
+      "Comment [Faction: Horde]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Silvermoon",
@@ -529,7 +649,22 @@
     "uniques": [
       "[+20]% Strength <for [Archery] units>",
       "[+1] Sight <for [Archery] units>",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Quel'Danas",
@@ -580,7 +715,22 @@
     "uniques": [
       "[+15]% [Food] [in all cities]",
       "[+1 Faith] from every [Shrine]",
-      "Comment [Faction: Neutral]"
+      "Comment [Faction: Neutral]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Temple of Five Dawns",
@@ -635,7 +785,22 @@
     "uniques": [
       "[+25]% Strength <for [Land] units> <when below [50] HP>",
       "Earn [50]% of killed [Military] unit's [Strength] as [Faith]",
-      "Comment [Faction: Horde]"
+      "Comment [Faction: Horde]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Undercity",
@@ -691,7 +856,22 @@
     "uniques": [
       "[+1 Faith] from every [Shrine]",
       "[+1 Faith] from every [Temple]",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "The Exodar",
@@ -744,7 +924,22 @@
     "uniques": [
       "[+20]% [Gold] [in all cities]",
       "[+1 Gold] from every [Trading post]",
-      "Comment [Faction: Horde]"
+      "Comment [Faction: Horde]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Bilgewater Harbor",
@@ -795,7 +990,22 @@
     "uniques": [
       "[+15]% Strength <for [Land] units> <when fighting in [Forest] tiles>",
       "[+1] Movement <for [Melee] units>",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [2] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [2] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [2] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [2] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>"
     ],
     "cities": [
       "Gilneas",
@@ -819,7 +1029,7 @@
     "adjective": [
       "Dalaran"
     ],
-    "cityStateType": "Cultured",
+    "cityStateType": "Lorekeeper",
     "declaringWar": "You leave us no choice. To arms!",
     "attacked": "This insult will not be forgotten.",
     "defeated": "Our walls have fallen...",
@@ -911,7 +1121,7 @@
     "adjective": [
       "Booty Bay"
     ],
-    "cityStateType": "Maritime",
+    "cityStateType": "Harbor",
     "declaringWar": "You leave us no choice. To arms!",
     "attacked": "This insult will not be forgotten.",
     "defeated": "Our walls have fallen...",
@@ -934,7 +1144,7 @@
     "adjective": [
       "Ratchet"
     ],
-    "cityStateType": "Maritime",
+    "cityStateType": "Harbor",
     "declaringWar": "You leave us no choice. To arms!",
     "attacked": "This insult will not be forgotten.",
     "defeated": "Our walls have fallen...",
@@ -1003,7 +1213,7 @@
     "adjective": [
       "Light's Hope Chapel"
     ],
-    "cityStateType": "Religious",
+    "cityStateType": "Sacred",
     "declaringWar": "You leave us no choice. To arms!",
     "attacked": "This insult will not be forgotten.",
     "defeated": "Our walls have fallen...",
@@ -1026,7 +1236,7 @@
     "adjective": [
       "Cenarion Hold"
     ],
-    "cityStateType": "Religious",
+    "cityStateType": "Sacred",
     "declaringWar": "You leave us no choice. To arms!",
     "attacked": "This insult will not be forgotten.",
     "defeated": "Our walls have fallen...",
@@ -1072,7 +1282,7 @@
     "adjective": [
       "Feathermoon Stronghold"
     ],
-    "cityStateType": "Cultured",
+    "cityStateType": "Lorekeeper",
     "declaringWar": "You leave us no choice. To arms!",
     "attacked": "This insult will not be forgotten.",
     "defeated": "Our walls have fallen...",

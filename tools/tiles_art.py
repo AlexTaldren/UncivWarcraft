@@ -620,7 +620,7 @@ WONDERS = {
 def render_all(atlas):
     art = Art(atlas)
     out = {}
-    for n, f in {**FEATURES, **WONDERS, **RESOURCES}.items():
+    for n, f in {**FEATURES, **WONDERS, **RESOURCES, **CAMPS}.items():
         out[n] = f(art)
     return out
 
@@ -764,3 +764,55 @@ RESOURCES = {
     "Oil WellC": lambda art: drill(art, sea=True),
     "Tidal Drill": lambda art: drill(art, sea=True), "Azerite+Tidal Drill": lambda art: drill(art, sea=True),
 }
+
+
+# ======================================================================= barbarian camp (v0.10)
+def encampment(art, snow=False):
+    """A Defias hideout: a timbered mine mouth dug into a rocky mound, red-and-black
+    tents, a sharpened palisade, a campfire and the Brotherhood's red kerchief banner."""
+    p = Paint(TW, TH)
+    ground = (185, 190, 200) if snow else (150, 118, 70)
+    p.ell(32, 33, 23, 13, ground, "yard")
+    p.ell(30, 31, 17, 9, shade(ground, 1.08), "yard2")
+    # rocky mound with the mine entrance (back of the camp)
+    rock = (118, 108, 98)
+    p.ell(36, 20, 13, 9, rock, "mound")
+    p.ell(31, 17, 7, 5, shade(rock, 1.1), "mound2")
+    p.poly([(31, 26), (31, 18), (35, 15), (39, 18), (39, 26)], (22, 18, 18), "shaft")
+    wood = (120, 80, 45)
+    p.line(30, 26, 30, 17, 2, wood, "beamL")
+    p.line(40, 26, 40, 17, 2, wood, "beamR")
+    p.line(29, 16, 41, 16, 2, shade(wood, 1.1), "lintel")
+    p.line(33, 26, 37, 22, 1, (150, 150, 160), "rail")          # mine-cart rail
+    p.poly([(36, 27), (41, 27), (40, 24), (37, 24)], (95, 90, 95), "cart")
+    # tents in the Brotherhood's red
+    red, black = (160, 35, 30), (45, 35, 35)
+    for i, (x, y) in enumerate(((17, 30), (47, 33))):
+        p.poly([(x - 6, y + 4), (x + 6, y + 4), (x, y - 5)], red, "tent%d" % i)
+        p.poly([(x, y - 5), (x + 6, y + 4), (x + 2, y + 4)], shade(red, 0.75), "tent%ds" % i)
+        p.poly([(x - 1, y + 4), (x + 1, y + 4), (x, y)], black, "tent%dd" % i)
+    # palisade of sharpened stakes around the front
+    for i in range(13):
+        a = math.pi * (0.08 + 0.84 * i / 12)
+        x, y = 32 - math.cos(a) * 22, 35 + math.sin(a) * 9
+        p.line(x, y, x, y - 5, 1, shade(wood, 0.9 + 0.1 * (i % 2)), "stake%d" % i)
+        p.dot(x, y - 6, shade(wood, 1.25), "tip%d" % i)
+    # banner: a red kerchief on a pole
+    p.line(12, 31, 12, 14, 1, (90, 60, 35), "pole")
+    p.poly([(13, 14), (20, 15), (18, 17), (20, 19), (13, 19)], red, "flag")
+    p.dot(15, 16, black, "flagmark")
+    p.dot(16, 16, black, "flagmark")
+    # campfire
+    for dx in (-2, 0, 2):
+        p.line(32 + dx, 36, 32 - dx, 34, 1, (80, 50, 30), "logs")
+    s = layer(p, outline=(40, 30, 25))
+    f = Paint(TW, TH)
+    f.dot(32, 33, (255, 200, 60), "fire")
+    f.dot(31, 33, (255, 140, 40), "fire")
+    f.dot(33, 33, (255, 140, 40), "fire")
+    f.dot(32, 32, (255, 230, 120), "fire")
+    return art.clip(stack(s, glow(layer(f), (255, 150, 50), 1.4, 1.3)))
+
+
+CAMPS = {"Barbarian encampment": encampment,
+         "Barbarian encampmentT": lambda art: encampment(art, snow=True)}

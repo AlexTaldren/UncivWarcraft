@@ -237,6 +237,92 @@ def wolf_head(base, hb, fur):
     f.apply(base)
 
 
+def defias_mask(base, hb):
+    """A Defias bandit: red hood over the head and a red kerchief over mouth and nose,
+    leaving a narrow band for the eyes."""
+    f = Feature(base.size)
+    x0, y0, x1, y1 = hb
+    red, dark = (165, 32, 30), (110, 20, 22)
+    for x in range(x0 - 1, x1 + 2):                        # hood
+        f.dot(x, y0 - 1, red)
+        f.dot(x, y0, dark if x == x0 - 1 else red)
+    for y in range(y0, y1 + 1):
+        f.dot(x0 - 1, y, dark)                             # hood falls at the back
+    ey = y0 + max(1, (y1 - y0) // 3)
+    for y in range(ey + 1, y1 + 2):                        # kerchief
+        for x in range(x0, x1 + 2):
+            f.dot(x, y, red if (x + y) % 3 else dark)
+    f.dot(x1 + 1, y1 + 2, dark)                            # knot tail
+    f.apply(base)
+
+
+def gnoll_head(base, hb):
+    """A gnoll: spotted hyena head with a short snout, rounded ears and a dark mane."""
+    f = Feature(base.size)
+    x0, y0, x1, y1 = hb
+    fur, spot, mane = (180, 140, 80), (110, 75, 40), (60, 40, 25)
+    for y in range(y0 - 1, y1 + 1):
+        for x in range(x0 - 1, x1 + 1):
+            f.dot(x, y, spot if (x * 3 + y * 5) % 7 == 0 else fur)
+    my = y1 - 1
+    for i in range(1, 3):                                  # snout
+        f.dot(x1 + i, my, shade(fur, 1.15))
+        f.dot(x1 + i, my - 1, fur)
+    f.dot(x1 + 3, my - 1, (25, 20, 18))                   # nose
+    f.dot(x1, y0 + 1, (200, 60, 40))                       # red eye
+    for y in range(y0 - 2, y1 + 3):                       # mane down the back
+        f.dot(x0 - 2, y, mane)
+    for ex in (x0, x0 + 2):                                # round ears
+        f.dot(ex, y0 - 2, spot)
+        f.dot(ex, y0 - 3, fur)
+    f.apply(base)
+
+
+def murloc_head(base, hb):
+    """A murloc: big round fish head, bulging eye, wide mouth and a fin crest."""
+    f = Feature(base.size)
+    x0, y0, x1, y1 = hb
+    skin, belly, fin = (70, 150, 120), (170, 210, 160), (220, 110, 60)
+    for y in range(y0 - 1, y1 + 2):
+        for x in range(x0 - 1, x1 + 2):
+            f.dot(x, y, belly if y >= y1 else skin)
+    for x in range(x0 + 1, x1 + 2):                        # mouth
+        f.dot(x, y1 - 1, (40, 30, 35))
+    f.dot(x1 + 1, y0, (250, 240, 120))                     # bulging eye
+    f.dot(x1 + 1, y0 - 1, (250, 240, 120))
+    f.dot(x1 + 1, y0 + 1, (20, 20, 20))
+    for i, h in enumerate((2, 3, 3, 2, 1)):                # fin crest along the head
+        for k in range(h):
+            f.dot(x0 - 1 + i, y0 - 2 - k, shade(fin, 1.0 - 0.12 * k))
+    f.apply(base)
+
+
+def est_head(base):
+    """Guess the head of a figure whose face is hidden (helmets): the first solid run of
+    pixels from the top, ignoring thin weapon shafts and plumes."""
+    a = base.split()[3].load()
+    x0, y0, x1, y1 = base.getbbox()
+    for y in range(y0, y0 + (y1 - y0) // 2):
+        runs, run = [], []
+        for x in range(x0, x1):
+            if a[x, y] > 128:
+                run.append(x)
+            elif run:
+                runs.append(run); run = []
+        if run:
+            runs.append(run)
+        wide = [r for r in runs if len(r) >= 5 and all(
+            sum(a[x, y + k] > 128 for x in range(r[0], r[-1] + 1)) >= len(r) - 1 for k in (1, 2, 3))]
+        if wide:
+            r = max(wide, key=len)
+            cx = (r[0] + r[-1]) // 2
+            return (cx - 2, y + 1, cx + 2, y + 5)
+    return None
+
+
+BARBARIAN_RACES = {"Defias", "Gnolls", "Murlocs"}
+
+
 # ------------------------------------------------------------------ races
 def pick(seq, key):
     return seq[int(hashlib.md5(key.encode()).hexdigest(), 16) % len(seq)]
@@ -259,6 +345,10 @@ SKIN = {
     "Goblins": [ramp((60, 100, 30), (160, 200, 80), 5)],
     "Worgen": [ramp((55, 50, 45), (150, 140, 125), 5), ramp((70, 50, 35), (170, 130, 95), 5)],
     "Pandaren": [ramp((40, 40, 40), (120, 115, 110), 5)],
+    # barbarian peoples (sprites for units owned by the Barbarians)
+    "Defias": None,
+    "Gnolls": [ramp((110, 80, 45), (190, 150, 95), 5)],
+    "Murlocs": [ramp((40, 100, 85), (120, 190, 150), 5)],
 }
 HAIR = {
     "Dwarves": [(120, 60, 30), (170, 80, 40), (200, 160, 80), (90, 85, 80), (60, 40, 30)],
@@ -272,6 +362,7 @@ BODY = {
     "Gnomes": (0.80, 0.68), "Night Elves": (0.95, 1.10), "Blood Elves": (0.95, 1.04),
     "High Elves": (0.95, 1.04), "Forsaken": (0.90, 1.0), "Draenei": (1.0, 1.12),
     "Goblins": (0.85, 0.72), "Worgen": (1.18, 1.12), "Pandaren": (1.25, 0.95),
+    "Defias": (1.0, 1.0), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
 }
 
 
@@ -280,8 +371,9 @@ def make(layers, race, unit, mode="full"):
     horse-sized) or "crew" (siege engines: recolour the crew only)."""
     base, l1, l2 = [l.copy() for l in layers]
     skin_mask = base.copy()                 # find the face on the original colours
-    skin = pick(SKIN[race], unit)
-    recolor_skin(base, skin)
+    skin = pick(SKIN[race], unit) if SKIN[race] else ramp((150, 105, 80), (235, 190, 150), 5)
+    if SKIN[race]:
+        recolor_skin(base, skin)
     if mode == "crew":
         return [base, l1, l2]
     sx, sy = BODY[race]
@@ -290,6 +382,8 @@ def make(layers, race, unit, mode="full"):
     base, l1, l2, skin_mask = reshape([base, l1, l2, skin_mask], sx, sy)
     OVERLAYS[:] = [l1, l2]
     hb = head_box(skin_mask)
+    if hb is None and race in BARBARIAN_RACES:
+        hb = est_head(base)          # helmeted figure: put the barbarian head over the helm
     if hb:
         mid = skin[3]
         if race == "Dwarves":
@@ -320,6 +414,12 @@ def make(layers, race, unit, mode="full"):
             wolf_head(base, hb, mid)
         elif race == "Pandaren":
             panda_face(base, hb)
+        elif race == "Defias":
+            defias_mask(base, hb)
+        elif race == "Gnolls":
+            gnoll_head(base, hb)
+        elif race == "Murlocs":
+            murloc_head(base, hb)
     return [base, l1, l2]
 
 
@@ -392,4 +492,38 @@ def write_all(atlas, images_dir, renames, eras, races=RACES):
                         os.makedirs(os.path.dirname(path), exist_ok=True)
                         im.save(path)
                         count += 1
+    return count
+
+
+# ------------------------------------------------------------------ barbarians
+# Units owned by the Barbarians are drawn as Azeroth's classic raiders: murloc packs and
+# gnoll warbands in the early eras, the Defias Brotherhood once armies turn professional.
+BARBARIANS = {
+    "Warrior": "Murlocs", "Spearman": "Murlocs", "Archer": "Gnolls", "Composite Bowman": "Gnolls",
+    "Swordsman": "Gnolls", "Pikeman": "Defias", "Crossbowman": "Defias", "Longswordsman": "Defias",
+    "Musketman": "Defias", "Rifleman": "Defias", "Gatling Gun": "Defias",
+    "Great War Infantry": "Defias", "Infantry": "Defias", "Machine Gun": "Defias",
+    "Marine": "Defias", "Anti-Tank Gun": "Defias",
+    "Horseman": "Defias", "Knight": "Defias", "Lancer": "Defias", "Cavalry": "Defias",
+    "Chariot Archer": "Gnolls",
+}
+
+
+def write_barbarians(atlas, images_dir, renames):
+    import late_units
+    count = 0
+    for src, race in BARBARIANS.items():
+        new = renames.get(src, src)
+        if src in MOUNTED:
+            layers = [atlas.crop(P + src + s) for s in ("", "-1", "-2")]
+            out = make(layers, race, src, "mounted")
+        elif late_units.is_dressed(src):
+            out = late_units.source_layers(atlas, src, lambda ls, b, race=race: make(ls, race, b, "full"))
+        else:
+            out = make(late_units.source_layers(atlas, src), race, src, "full")
+        for s, im in zip(("", "-1", "-2"), out):
+            path = os.path.join(images_dir, P, f"{new}-Barbarians{s}.png")
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            im.save(path)
+            count += 1
     return count

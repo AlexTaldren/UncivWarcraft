@@ -464,7 +464,7 @@
       "Never appears as a Barbarian unit"
     ],
     "promotions": [
-      "Formation I"
+      "Spear Wall I"
     ],
     "upgradesTo": "Siegebreaker",
     "obsoleteTech": "Battle Formations",
@@ -1246,9 +1246,23 @@
     "unitType": "Civilian",
     "uniques": [
       "Empire enters a [8]-turn Golden Age <by consuming this unit>",
-      "Can instantly construct a [Landmark] improvement <by consuming this unit>",
+      "Can instantly construct a [Hall of Heroes] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
-      "[This Unit] gets a name from the [Artist] group",
+      "[This Unit] gets a name from the [Humans Artist] group <for [Humans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Orcs Artist] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves Artist] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves Artist] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes Artist] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren Artist] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls Artist] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves Artist] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves Artist] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren Artist] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken Artist] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei Artist] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins Artist] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen Artist] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Artist] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Culture]",
       "Unbuildable",
       "Uncapturable"
@@ -1265,9 +1279,22 @@
     "unitType": "Civilian",
     "uniques": [
       "Can hurry technology research",
-      "Can instantly construct a [Academy] improvement <by consuming this unit>",
+      "Can instantly construct a [Arcane Academy] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
-      "[This Unit] gets a name from the [Scientist] group",
+      "[This Unit] gets a name from the [Orcs Scientist] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves Scientist] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves Scientist] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes Scientist] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren Scientist] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls Scientist] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves Scientist] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves Scientist] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren Scientist] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken Scientist] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei Scientist] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins Scientist] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen Scientist] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scientist] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Science]",
       "Unbuildable",
       "Uncapturable"
@@ -1284,9 +1311,23 @@
     "unitType": "Civilian",
     "uniques": [
       "Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
-      "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+      "Can instantly construct a [Trade Company] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
-      "[This Unit] gets a name from the [Merchant] group",
+      "[This Unit] gets a name from the [Humans Merchant] group <for [Humans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Orcs Merchant] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves Merchant] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves Merchant] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes Merchant] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren Merchant] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls Merchant] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves Merchant] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves Merchant] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren Merchant] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken Merchant] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei Merchant] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins Merchant] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen Merchant] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Merchant] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Gold]",
       "Unbuildable",
       "Uncapturable"
@@ -1305,7 +1346,21 @@
       "Can speed up construction of a building",
       "Can instantly construct a [Great Workshop] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
-      "[This Unit] gets a name from the [Engineer] group",
+      "[This Unit] gets a name from the [Humans Engineer] group <for [Humans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Orcs Engineer] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves Engineer] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves Engineer] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes Engineer] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren Engineer] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls Engineer] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves Engineer] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves Engineer] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren Engineer] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken Engineer] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei Engineer] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins Engineer] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen Engineer] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Engineer] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Production]",
       "Unbuildable",
       "Uncapturable"
@@ -1321,13 +1376,27 @@
     "name": "Great Prophet",
     "unitType": "Civilian",
     "uniques": [
-      "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+      "Can instantly construct a [Sacred Grounds] improvement <by consuming this unit> <if it hasn't used other actions yet>",
       "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
       "Removes other religions when spreading religion",
       "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
       "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
       "Is part of Great Person group [Prophet]",
-      "[This Unit] gets a name from the [Prophet] group",
+      "[This Unit] gets a name from the [Humans Prophet] group <for [Humans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Orcs Prophet] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves Prophet] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves Prophet] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes Prophet] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren Prophet] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls Prophet] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves Prophet] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves Prophet] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren Prophet] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken Prophet] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei Prophet] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins Prophet] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen Prophet] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Prophet] group <for [City-States] Civilizations> <hidden from users>",
       "May enter foreign tiles without open borders",
       "[-1] Sight",
       "Great Person - [Faith]",
@@ -1349,10 +1418,24 @@
     "unitType": "Civilian",
     "uniques": [
       "[+15]% Strength bonus for [{Military} {Land}] units within [2] tiles",
-      "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+      "Can instantly construct a [Bastion] improvement <by consuming this unit>",
       "Can be earned through combat <for [Land] units>",
       "Is part of Great Person group [General]",
-      "[This Unit] gets a name from the [General] group",
+      "[This Unit] gets a name from the [Humans General] group <for [Humans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Orcs General] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves General] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves General] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes General] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren General] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls General] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves General] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves General] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren General] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken General] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei General] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins General] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen General] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [General] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [War]",
       "Unbuildable",
       "Uncapturable"
@@ -1372,7 +1455,21 @@
       "[+15]% Strength bonus for [{Military} {Water}] units within [2] tiles",
       "Can be earned through combat <for [Water] units>",
       "Is part of Great Person group [Admiral]",
-      "[This Unit] gets a name from the [Admiral] group",
+      "[This Unit] gets a name from the [Humans Admiral] group <for [Humans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Orcs Admiral] group <for [Orcs] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Night Elves Admiral] group <for [Night Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Dwarves Admiral] group <for [Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Gnomes Admiral] group <for [Gnomes] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Tauren Admiral] group <for [Tauren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Trolls Admiral] group <for [Trolls] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Blood Elves Admiral] group <for [Blood Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [High Elves Admiral] group <for [High Elves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Pandaren Admiral] group <for [Pandaren] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Forsaken Admiral] group <for [Forsaken] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Draenei Admiral] group <for [Draenei] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Goblins Admiral] group <for [Goblins] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Worgen Admiral] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Admiral] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [War]",
       "Unbuildable",
       "Uncapturable"
@@ -1525,7 +1622,7 @@
     "replaces": "Swordsman",
     "uniqueTo": "Humans",
     "promotions": [
-      "Cover I"
+      "Defend I"
     ],
     "civilopediaText": [
       {
@@ -1664,7 +1761,7 @@
     "unitType": "Civilian",
     "uniques": [
       "Can hurry technology research",
-      "Can instantly construct a [Academy] improvement <by consuming this unit>",
+      "Can instantly construct a [Arcane Academy] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
       "[This Unit] gets a name from the [Archmage] group",
       "Great Person - [Science]",
@@ -1677,6 +1774,43 @@
     "civilopediaText": [
       {
         "text": "The archmagi of Dalaran and the Kirin Tor: the greatest arcane minds the human kingdoms have produced."
+      }
+    ]
+  },
+  {
+    "name": "Felguard",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 24,
+    "cost": 120,
+    "requiredTech": "Steel Forged Swords",
+    "requiredResource": "Iron",
+    "attackSound": "metalhit",
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The elite shock troops of the Burning Legion: towering demons of the Eredar worlds, bound to Sargeras and armed with brutal axes. They appear only when the Legion tears a rift into Azeroth."
+      }
+    ]
+  },
+  {
+    "name": "Infernal",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 75,
+    "cost": 375,
+    "requiredTech": "Arcanite Alloys",
+    "attackSound": "shot",
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A meteor of fel-scorched rock hurled from the Twisting Nether. Where it lands it rises as a hulking golem of stone and green fire that smashes everything nearby."
       }
     ]
   }

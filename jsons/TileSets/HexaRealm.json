@@ -1003,704 +1003,1254 @@
       "Coast",
       "Tidal Drill"
     ],
-    "Tundra+Azerite+Academy": [
+    "Tundra+Arcane Academy": [
+      "Tundra",
+      "AcademyT"
+    ],
+    "Tundra+Deer+Arcane Academy": [
+      "Tundra",
+      "Deer",
+      "AcademyT"
+    ],
+    "Tundra+Stone+Arcane Academy": [
+      "Tundra",
+      "Stone",
+      "AcademyT"
+    ],
+    "Tundra+Iron+Arcane Academy": [
+      "Tundra",
+      "Iron",
+      "AcademyT"
+    ],
+    "Tundra+Azerite+Arcane Academy": [
       "Tundra",
       "Azerite",
       "AcademyT"
     ],
-    "Tundra+Elementium+Academy": [
+    "Tundra+Elementium+Arcane Academy": [
       "Tundra",
       "Elementium",
       "AcademyT"
     ],
-    "Tundra+Arcane Crystals+Academy": [
+    "Tundra+Arcane Crystals+Arcane Academy": [
       "Tundra",
       "Arcane Crystals",
       "AcademyT"
     ],
-    "Tundra+Rugged Leather+Academy": [
+    "Tundra+Rugged Leather+Arcane Academy": [
       "Tundra",
       "FursT",
       "AcademyT"
     ],
-    "Tundra+Truesilver+Academy": [
+    "Tundra+Truesilver+Arcane Academy": [
       "Tundra",
       "Truesilver",
       "AcademyT"
     ],
-    "Tundra+Deeprock Salt+Academy": [
+    "Tundra+Copper+Arcane Academy": [
+      "Tundra",
+      "Copper",
+      "AcademyT"
+    ],
+    "Tundra+Deeprock Salt+Arcane Academy": [
       "Tundra",
       "Deeprock Salt",
       "AcademyT"
     ],
-    "Tundra+Thorium+Academy": [
+    "Tundra+Thorium+Arcane Academy": [
       "Tundra",
       "Thorium",
       "AcademyT"
     ],
-    "Tundra+Moonglow Ink+Academy": [
+    "Tundra+Moonglow Ink+Arcane Academy": [
       "Tundra",
       "Moonglow Ink",
       "AcademyT"
     ],
-    "Tundra+Mageweave+Academy": [
+    "Tundra+Gems+Arcane Academy": [
+      "Tundra",
+      "Gems",
+      "AcademyT"
+    ],
+    "Tundra+Gold Ore+Arcane Academy": [
+      "Tundra",
+      "Gold Ore",
+      "AcademyT"
+    ],
+    "Tundra+Mageweave+Arcane Academy": [
       "Tundra",
       "Mageweave",
       "AcademyT"
     ],
-    "Tundra+Sunfruit+Academy": [
+    "Tundra+Spices+Arcane Academy": [
+      "Tundra",
+      "Spices",
+      "AcademyT"
+    ],
+    "Tundra+Sunfruit+Arcane Academy": [
       "Tundra",
       "Sunfruit",
       "AcademyT"
     ],
-    "Tundra+Glowcap+Academy": [
+    "Tundra+Glowcap+Arcane Academy": [
       "Tundra",
       "Glowcap",
       "AcademyT"
     ],
-    "Tundra+Hill+Azerite+Academy": [
+    "Tundra+Hill+Arcane Academy": [
+      "Tundra+Hill",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Deer+Arcane Academy": [
+      "Tundra+Hill",
+      "Deer",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Stone+Arcane Academy": [
+      "Tundra+Hill",
+      "Stone",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Marble+Arcane Academy": [
+      "Tundra+Hill",
+      "Marble",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Iron+Arcane Academy": [
+      "Tundra+Hill",
+      "Iron",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Azerite+Arcane Academy": [
       "Tundra+Hill",
       "Azerite",
       "AcademyT"
     ],
-    "Tundra+Hill+Elementium+Academy": [
+    "Tundra+Hill+Elementium+Arcane Academy": [
       "Tundra+Hill",
       "Elementium",
       "AcademyT"
     ],
-    "Tundra+Hill+Arcane Crystals+Academy": [
+    "Tundra+Hill+Arcane Crystals+Arcane Academy": [
       "Tundra+Hill",
       "Arcane Crystals",
       "AcademyT"
     ],
-    "Tundra+Hill+Rugged Leather+Academy": [
+    "Tundra+Hill+Rugged Leather+Arcane Academy": [
       "Tundra+Hill",
       "FursT",
       "AcademyT"
     ],
-    "Tundra+Hill+Truesilver+Academy": [
+    "Tundra+Hill+Truesilver+Arcane Academy": [
       "Tundra+Hill",
       "Truesilver",
       "AcademyT"
     ],
-    "Tundra+Hill+Deeprock Salt+Academy": [
+    "Tundra+Hill+Copper+Arcane Academy": [
+      "Tundra+Hill",
+      "Copper",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Deeprock Salt+Arcane Academy": [
       "Tundra+Hill",
       "Deeprock Salt",
       "AcademyT"
     ],
-    "Tundra+Hill+Thorium+Academy": [
+    "Tundra+Hill+Thorium+Arcane Academy": [
       "Tundra+Hill",
       "Thorium",
       "AcademyT"
     ],
-    "Tundra+Hill+Moonglow Ink+Academy": [
+    "Tundra+Hill+Moonglow Ink+Arcane Academy": [
       "Tundra+Hill",
       "Moonglow Ink",
       "AcademyT"
     ],
-    "Tundra+Hill+Mageweave+Academy": [
+    "Tundra+Hill+Gems+Arcane Academy": [
+      "Tundra+Hill",
+      "Gems",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Gold Ore+Arcane Academy": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Mageweave+Arcane Academy": [
       "Tundra+Hill",
       "Mageweave",
       "AcademyT"
     ],
-    "Tundra+Hill+Sunfruit+Academy": [
+    "Tundra+Hill+Spices+Arcane Academy": [
+      "Tundra+Hill",
+      "Spices",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Sunfruit+Arcane Academy": [
       "Tundra+Hill",
       "Sunfruit",
       "AcademyT"
     ],
-    "Tundra+Hill+Glowcap+Academy": [
+    "Tundra+Hill+Glowcap+Arcane Academy": [
       "Tundra+Hill",
       "Glowcap",
       "AcademyT"
     ],
-    "Snow+Azerite+Academy": [
+    "Tundra+Hill+Sheep+Arcane Academy": [
+      "Tundra+Hill",
+      "Sheep",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Horses+Arcane Academy": [
+      "Tundra+Hill",
+      "Horses",
+      "AcademyT"
+    ],
+    "Snow+Iron+Arcane Academy": [
+      "Snow",
+      "Iron",
+      "AcademyT"
+    ],
+    "Snow+Azerite+Arcane Academy": [
       "Snow",
       "Azerite",
       "AcademyT"
     ],
-    "Snow+Elementium+Academy": [
+    "Snow+Elementium+Arcane Academy": [
       "Snow",
       "Elementium",
       "AcademyT"
     ],
-    "Snow+Arcane Crystals+Academy": [
+    "Snow+Arcane Crystals+Arcane Academy": [
       "Snow",
       "Arcane Crystals",
       "AcademyT"
     ],
-    "Snow+Hill+Azerite+Academy": [
+    "Snow+Hill+Iron+Arcane Academy": [
+      "Snow+Hill",
+      "Iron",
+      "AcademyT"
+    ],
+    "Snow+Hill+Azerite+Arcane Academy": [
       "Snow+Hill",
       "Azerite",
       "AcademyT"
     ],
-    "Snow+Hill+Elementium+Academy": [
+    "Snow+Hill+Elementium+Arcane Academy": [
       "Snow+Hill",
       "Elementium",
       "AcademyT"
     ],
-    "Snow+Hill+Arcane Crystals+Academy": [
+    "Snow+Hill+Arcane Crystals+Arcane Academy": [
       "Snow+Hill",
       "Arcane Crystals",
       "AcademyT"
     ],
-    "Tundra+Azerite+Citadel": [
+    "Snow+Arcane Academy": [
+      "Snow",
+      "AcademyT"
+    ],
+    "Snow+Hill+Arcane Academy": [
+      "Snow+Hill",
+      "AcademyT"
+    ],
+    "Tundra+Bastion": [
+      "Tundra",
+      "CitadelT"
+    ],
+    "Tundra+Deer+Bastion": [
+      "Tundra",
+      "Deer",
+      "CitadelT"
+    ],
+    "Tundra+Stone+Bastion": [
+      "Tundra",
+      "Stone",
+      "CitadelT"
+    ],
+    "Tundra+Iron+Bastion": [
+      "Tundra",
+      "Iron",
+      "CitadelT"
+    ],
+    "Tundra+Azerite+Bastion": [
       "Tundra",
       "Azerite",
       "CitadelT"
     ],
-    "Tundra+Elementium+Citadel": [
+    "Tundra+Elementium+Bastion": [
       "Tundra",
       "Elementium",
       "CitadelT"
     ],
-    "Tundra+Arcane Crystals+Citadel": [
+    "Tundra+Arcane Crystals+Bastion": [
       "Tundra",
       "Arcane Crystals",
       "CitadelT"
     ],
-    "Tundra+Rugged Leather+Citadel": [
+    "Tundra+Rugged Leather+Bastion": [
       "Tundra",
       "FursT",
       "CitadelT"
     ],
-    "Tundra+Truesilver+Citadel": [
+    "Tundra+Truesilver+Bastion": [
       "Tundra",
       "Truesilver",
       "CitadelT"
     ],
-    "Tundra+Deeprock Salt+Citadel": [
+    "Tundra+Copper+Bastion": [
+      "Tundra",
+      "Copper",
+      "CitadelT"
+    ],
+    "Tundra+Deeprock Salt+Bastion": [
       "Tundra",
       "Deeprock Salt",
       "CitadelT"
     ],
-    "Tundra+Thorium+Citadel": [
+    "Tundra+Thorium+Bastion": [
       "Tundra",
       "Thorium",
       "CitadelT"
     ],
-    "Tundra+Moonglow Ink+Citadel": [
+    "Tundra+Moonglow Ink+Bastion": [
       "Tundra",
       "Moonglow Ink",
       "CitadelT"
     ],
-    "Tundra+Mageweave+Citadel": [
+    "Tundra+Gems+Bastion": [
+      "Tundra",
+      "Gems",
+      "CitadelT"
+    ],
+    "Tundra+Gold Ore+Bastion": [
+      "Tundra",
+      "Gold Ore",
+      "CitadelT"
+    ],
+    "Tundra+Mageweave+Bastion": [
       "Tundra",
       "Mageweave",
       "CitadelT"
     ],
-    "Tundra+Sunfruit+Citadel": [
+    "Tundra+Spices+Bastion": [
+      "Tundra",
+      "Spices",
+      "CitadelT"
+    ],
+    "Tundra+Sunfruit+Bastion": [
       "Tundra",
       "Sunfruit",
       "CitadelT"
     ],
-    "Tundra+Glowcap+Citadel": [
+    "Tundra+Glowcap+Bastion": [
       "Tundra",
       "Glowcap",
       "CitadelT"
     ],
-    "Tundra+Hill+Azerite+Citadel": [
+    "Tundra+Hill+Bastion": [
+      "Tundra+Hill",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Deer+Bastion": [
+      "Tundra+Hill",
+      "Deer",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Stone+Bastion": [
+      "Tundra+Hill",
+      "Stone",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Marble+Bastion": [
+      "Tundra+Hill",
+      "Marble",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Iron+Bastion": [
+      "Tundra+Hill",
+      "Iron",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Azerite+Bastion": [
       "Tundra+Hill",
       "Azerite",
       "CitadelT"
     ],
-    "Tundra+Hill+Elementium+Citadel": [
+    "Tundra+Hill+Elementium+Bastion": [
       "Tundra+Hill",
       "Elementium",
       "CitadelT"
     ],
-    "Tundra+Hill+Arcane Crystals+Citadel": [
+    "Tundra+Hill+Arcane Crystals+Bastion": [
       "Tundra+Hill",
       "Arcane Crystals",
       "CitadelT"
     ],
-    "Tundra+Hill+Rugged Leather+Citadel": [
+    "Tundra+Hill+Rugged Leather+Bastion": [
       "Tundra+Hill",
       "FursT",
       "CitadelT"
     ],
-    "Tundra+Hill+Truesilver+Citadel": [
+    "Tundra+Hill+Truesilver+Bastion": [
       "Tundra+Hill",
       "Truesilver",
       "CitadelT"
     ],
-    "Tundra+Hill+Deeprock Salt+Citadel": [
+    "Tundra+Hill+Copper+Bastion": [
+      "Tundra+Hill",
+      "Copper",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Deeprock Salt+Bastion": [
       "Tundra+Hill",
       "Deeprock Salt",
       "CitadelT"
     ],
-    "Tundra+Hill+Thorium+Citadel": [
+    "Tundra+Hill+Thorium+Bastion": [
       "Tundra+Hill",
       "Thorium",
       "CitadelT"
     ],
-    "Tundra+Hill+Moonglow Ink+Citadel": [
+    "Tundra+Hill+Moonglow Ink+Bastion": [
       "Tundra+Hill",
       "Moonglow Ink",
       "CitadelT"
     ],
-    "Tundra+Hill+Mageweave+Citadel": [
+    "Tundra+Hill+Gems+Bastion": [
+      "Tundra+Hill",
+      "Gems",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Gold Ore+Bastion": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Mageweave+Bastion": [
       "Tundra+Hill",
       "Mageweave",
       "CitadelT"
     ],
-    "Tundra+Hill+Sunfruit+Citadel": [
+    "Tundra+Hill+Spices+Bastion": [
+      "Tundra+Hill",
+      "Spices",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Sunfruit+Bastion": [
       "Tundra+Hill",
       "Sunfruit",
       "CitadelT"
     ],
-    "Tundra+Hill+Glowcap+Citadel": [
+    "Tundra+Hill+Glowcap+Bastion": [
       "Tundra+Hill",
       "Glowcap",
       "CitadelT"
     ],
-    "Snow+Azerite+Citadel": [
+    "Tundra+Hill+Sheep+Bastion": [
+      "Tundra+Hill",
+      "Sheep",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Horses+Bastion": [
+      "Tundra+Hill",
+      "Horses",
+      "CitadelT"
+    ],
+    "Snow+Iron+Bastion": [
+      "Snow",
+      "Iron",
+      "CitadelT"
+    ],
+    "Snow+Azerite+Bastion": [
       "Snow",
       "Azerite",
       "CitadelT"
     ],
-    "Snow+Elementium+Citadel": [
+    "Snow+Elementium+Bastion": [
       "Snow",
       "Elementium",
       "CitadelT"
     ],
-    "Snow+Arcane Crystals+Citadel": [
+    "Snow+Arcane Crystals+Bastion": [
       "Snow",
       "Arcane Crystals",
       "CitadelT"
     ],
-    "Snow+Hill+Azerite+Citadel": [
+    "Snow+Hill+Iron+Bastion": [
+      "Snow+Hill",
+      "Iron",
+      "CitadelT"
+    ],
+    "Snow+Hill+Azerite+Bastion": [
       "Snow+Hill",
       "Azerite",
       "CitadelT"
     ],
-    "Snow+Hill+Elementium+Citadel": [
+    "Snow+Hill+Elementium+Bastion": [
       "Snow+Hill",
       "Elementium",
       "CitadelT"
     ],
-    "Snow+Hill+Arcane Crystals+Citadel": [
+    "Snow+Hill+Arcane Crystals+Bastion": [
       "Snow+Hill",
       "Arcane Crystals",
       "CitadelT"
     ],
-    "Tundra+Azerite+Customs house": [
+    "Snow+Bastion": [
+      "Snow",
+      "CitadelT"
+    ],
+    "Snow+Hill+Bastion": [
+      "Snow+Hill",
+      "CitadelT"
+    ],
+    "Tundra+Trade Company": [
+      "Tundra",
+      "Customs houseT"
+    ],
+    "Tundra+Deer+Trade Company": [
+      "Tundra",
+      "Deer",
+      "Customs houseT"
+    ],
+    "Tundra+Stone+Trade Company": [
+      "Tundra",
+      "Stone",
+      "Customs houseT"
+    ],
+    "Tundra+Iron+Trade Company": [
+      "Tundra",
+      "Iron",
+      "Customs houseT"
+    ],
+    "Tundra+Azerite+Trade Company": [
       "Tundra",
       "Azerite",
       "Customs houseT"
     ],
-    "Tundra+Elementium+Customs house": [
+    "Tundra+Elementium+Trade Company": [
       "Tundra",
       "Elementium",
       "Customs houseT"
     ],
-    "Tundra+Arcane Crystals+Customs house": [
+    "Tundra+Arcane Crystals+Trade Company": [
       "Tundra",
       "Arcane Crystals",
       "Customs houseT"
     ],
-    "Tundra+Rugged Leather+Customs house": [
+    "Tundra+Rugged Leather+Trade Company": [
       "Tundra",
       "FursT",
       "Customs houseT"
     ],
-    "Tundra+Truesilver+Customs house": [
+    "Tundra+Truesilver+Trade Company": [
       "Tundra",
       "Truesilver",
       "Customs houseT"
     ],
-    "Tundra+Deeprock Salt+Customs house": [
+    "Tundra+Copper+Trade Company": [
+      "Tundra",
+      "Copper",
+      "Customs houseT"
+    ],
+    "Tundra+Deeprock Salt+Trade Company": [
       "Tundra",
       "Deeprock Salt",
       "Customs houseT"
     ],
-    "Tundra+Thorium+Customs house": [
+    "Tundra+Thorium+Trade Company": [
       "Tundra",
       "Thorium",
       "Customs houseT"
     ],
-    "Tundra+Moonglow Ink+Customs house": [
+    "Tundra+Moonglow Ink+Trade Company": [
       "Tundra",
       "Moonglow Ink",
       "Customs houseT"
     ],
-    "Tundra+Mageweave+Customs house": [
+    "Tundra+Gems+Trade Company": [
+      "Tundra",
+      "Gems",
+      "Customs houseT"
+    ],
+    "Tundra+Gold Ore+Trade Company": [
+      "Tundra",
+      "Gold Ore",
+      "Customs houseT"
+    ],
+    "Tundra+Mageweave+Trade Company": [
       "Tundra",
       "Mageweave",
       "Customs houseT"
     ],
-    "Tundra+Sunfruit+Customs house": [
+    "Tundra+Spices+Trade Company": [
+      "Tundra",
+      "Spices",
+      "Customs houseT"
+    ],
+    "Tundra+Sunfruit+Trade Company": [
       "Tundra",
       "Sunfruit",
       "Customs houseT"
     ],
-    "Tundra+Glowcap+Customs house": [
+    "Tundra+Glowcap+Trade Company": [
       "Tundra",
       "Glowcap",
       "Customs houseT"
     ],
-    "Tundra+Hill+Azerite+Customs house": [
+    "Tundra+Hill+Trade Company": [
+      "Tundra+Hill",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Deer+Trade Company": [
+      "Tundra+Hill",
+      "Deer",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Stone+Trade Company": [
+      "Tundra+Hill",
+      "Stone",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Iron+Trade Company": [
+      "Tundra+Hill",
+      "Iron",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Azerite+Trade Company": [
       "Tundra+Hill",
       "Azerite",
       "Customs houseT"
     ],
-    "Tundra+Hill+Elementium+Customs house": [
+    "Tundra+Hill+Elementium+Trade Company": [
       "Tundra+Hill",
       "Elementium",
       "Customs houseT"
     ],
-    "Tundra+Hill+Arcane Crystals+Customs house": [
+    "Tundra+Hill+Arcane Crystals+Trade Company": [
       "Tundra+Hill",
       "Arcane Crystals",
       "Customs houseT"
     ],
-    "Tundra+Hill+Rugged Leather+Customs house": [
+    "Tundra+Hill+Rugged Leather+Trade Company": [
       "Tundra+Hill",
       "FursT",
       "Customs houseT"
     ],
-    "Tundra+Hill+Truesilver+Customs house": [
+    "Tundra+Hill+Truesilver+Trade Company": [
       "Tundra+Hill",
       "Truesilver",
       "Customs houseT"
     ],
-    "Tundra+Hill+Deeprock Salt+Customs house": [
+    "Tundra+Hill+Copper+Trade Company": [
+      "Tundra+Hill",
+      "Copper",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Deeprock Salt+Trade Company": [
       "Tundra+Hill",
       "Deeprock Salt",
       "Customs houseT"
     ],
-    "Tundra+Hill+Thorium+Customs house": [
+    "Tundra+Hill+Thorium+Trade Company": [
       "Tundra+Hill",
       "Thorium",
       "Customs houseT"
     ],
-    "Tundra+Hill+Moonglow Ink+Customs house": [
+    "Tundra+Hill+Moonglow Ink+Trade Company": [
       "Tundra+Hill",
       "Moonglow Ink",
       "Customs houseT"
     ],
-    "Tundra+Hill+Mageweave+Customs house": [
+    "Tundra+Hill+Gems+Trade Company": [
+      "Tundra+Hill",
+      "Gems",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Gold Ore+Trade Company": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Mageweave+Trade Company": [
       "Tundra+Hill",
       "Mageweave",
       "Customs houseT"
     ],
-    "Tundra+Hill+Sunfruit+Customs house": [
+    "Tundra+Hill+Spices+Trade Company": [
+      "Tundra+Hill",
+      "Spices",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Sunfruit+Trade Company": [
       "Tundra+Hill",
       "Sunfruit",
       "Customs houseT"
     ],
-    "Tundra+Hill+Glowcap+Customs house": [
+    "Tundra+Hill+Glowcap+Trade Company": [
       "Tundra+Hill",
       "Glowcap",
       "Customs houseT"
     ],
-    "Snow+Azerite+Customs house": [
+    "Tundra+Hill+Sheep+Trade Company": [
+      "Tundra+Hill",
+      "Sheep",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Horses+Trade Company": [
+      "Tundra+Hill",
+      "Horses",
+      "Customs houseT"
+    ],
+    "Snow+Iron+Trade Company": [
+      "Snow",
+      "Iron",
+      "Customs houseT"
+    ],
+    "Snow+Azerite+Trade Company": [
       "Snow",
       "Azerite",
       "Customs houseT"
     ],
-    "Snow+Elementium+Customs house": [
+    "Snow+Elementium+Trade Company": [
       "Snow",
       "Elementium",
       "Customs houseT"
     ],
-    "Snow+Arcane Crystals+Customs house": [
+    "Snow+Arcane Crystals+Trade Company": [
       "Snow",
       "Arcane Crystals",
       "Customs houseT"
     ],
-    "Snow+Hill+Azerite+Customs house": [
+    "Snow+Hill+Iron+Trade Company": [
+      "Snow+Hill",
+      "Iron",
+      "Customs houseT"
+    ],
+    "Snow+Hill+Azerite+Trade Company": [
       "Snow+Hill",
       "Azerite",
       "Customs houseT"
     ],
-    "Snow+Hill+Elementium+Customs house": [
+    "Snow+Hill+Elementium+Trade Company": [
       "Snow+Hill",
       "Elementium",
       "Customs houseT"
     ],
-    "Snow+Hill+Arcane Crystals+Customs house": [
+    "Snow+Hill+Arcane Crystals+Trade Company": [
       "Snow+Hill",
       "Arcane Crystals",
       "Customs houseT"
     ],
-    "Tundra+Azerite+Holy site": [
+    "Snow+Trade Company": [
+      "Snow",
+      "Customs houseT"
+    ],
+    "Snow+Hill+Trade Company": [
+      "Snow+Hill",
+      "Customs houseT"
+    ],
+    "Tundra+Sacred Grounds": [
+      "Tundra",
+      "Holy siteT"
+    ],
+    "Tundra+Deer+Sacred Grounds": [
+      "Tundra",
+      "Deer",
+      "Holy siteT"
+    ],
+    "Tundra+Stone+Sacred Grounds": [
+      "Tundra",
+      "Stone",
+      "Holy siteT"
+    ],
+    "Tundra+Iron+Sacred Grounds": [
+      "Tundra",
+      "Iron",
+      "Holy siteT"
+    ],
+    "Tundra+Azerite+Sacred Grounds": [
       "Tundra",
       "Azerite",
       "Holy siteT"
     ],
-    "Tundra+Elementium+Holy site": [
+    "Tundra+Elementium+Sacred Grounds": [
       "Tundra",
       "Elementium",
       "Holy siteT"
     ],
-    "Tundra+Arcane Crystals+Holy site": [
+    "Tundra+Arcane Crystals+Sacred Grounds": [
       "Tundra",
       "Arcane Crystals",
       "Holy siteT"
     ],
-    "Tundra+Rugged Leather+Holy site": [
+    "Tundra+Rugged Leather+Sacred Grounds": [
       "Tundra",
       "FursT",
       "Holy siteT"
     ],
-    "Tundra+Truesilver+Holy site": [
+    "Tundra+Truesilver+Sacred Grounds": [
       "Tundra",
       "Truesilver",
       "Holy siteT"
     ],
-    "Tundra+Deeprock Salt+Holy site": [
+    "Tundra+Copper+Sacred Grounds": [
+      "Tundra",
+      "Copper",
+      "Holy siteT"
+    ],
+    "Tundra+Deeprock Salt+Sacred Grounds": [
       "Tundra",
       "Deeprock Salt",
       "Holy siteT"
     ],
-    "Tundra+Thorium+Holy site": [
+    "Tundra+Thorium+Sacred Grounds": [
       "Tundra",
       "Thorium",
       "Holy siteT"
     ],
-    "Tundra+Moonglow Ink+Holy site": [
+    "Tundra+Moonglow Ink+Sacred Grounds": [
       "Tundra",
       "Moonglow Ink",
       "Holy siteT"
     ],
-    "Tundra+Mageweave+Holy site": [
+    "Tundra+Gems+Sacred Grounds": [
+      "Tundra",
+      "Gems",
+      "Holy siteT"
+    ],
+    "Tundra+Gold Ore+Sacred Grounds": [
+      "Tundra",
+      "Gold Ore",
+      "Holy siteT"
+    ],
+    "Tundra+Mageweave+Sacred Grounds": [
       "Tundra",
       "Mageweave",
       "Holy siteT"
     ],
-    "Tundra+Sunfruit+Holy site": [
+    "Tundra+Spices+Sacred Grounds": [
+      "Tundra",
+      "Spices",
+      "Holy siteT"
+    ],
+    "Tundra+Sunfruit+Sacred Grounds": [
       "Tundra",
       "Sunfruit",
       "Holy siteT"
     ],
-    "Tundra+Glowcap+Holy site": [
+    "Tundra+Glowcap+Sacred Grounds": [
       "Tundra",
       "Glowcap",
       "Holy siteT"
     ],
-    "Tundra+Hill+Azerite+Holy site": [
+    "Tundra+Hill+Sacred Grounds": [
+      "Tundra+Hill",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Deer+Sacred Grounds": [
+      "Tundra+Hill",
+      "Deer",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Stone+Sacred Grounds": [
+      "Tundra+Hill",
+      "Stone",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Marble+Sacred Grounds": [
+      "Tundra+Hill",
+      "Marble",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Iron+Sacred Grounds": [
+      "Tundra+Hill",
+      "Iron",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Azerite+Sacred Grounds": [
       "Tundra+Hill",
       "Azerite",
       "Holy siteT"
     ],
-    "Tundra+Hill+Elementium+Holy site": [
+    "Tundra+Hill+Elementium+Sacred Grounds": [
       "Tundra+Hill",
       "Elementium",
       "Holy siteT"
     ],
-    "Tundra+Hill+Arcane Crystals+Holy site": [
+    "Tundra+Hill+Arcane Crystals+Sacred Grounds": [
       "Tundra+Hill",
       "Arcane Crystals",
       "Holy siteT"
     ],
-    "Tundra+Hill+Rugged Leather+Holy site": [
+    "Tundra+Hill+Rugged Leather+Sacred Grounds": [
       "Tundra+Hill",
       "FursT",
       "Holy siteT"
     ],
-    "Tundra+Hill+Truesilver+Holy site": [
+    "Tundra+Hill+Truesilver+Sacred Grounds": [
       "Tundra+Hill",
       "Truesilver",
       "Holy siteT"
     ],
-    "Tundra+Hill+Deeprock Salt+Holy site": [
+    "Tundra+Hill+Copper+Sacred Grounds": [
+      "Tundra+Hill",
+      "Copper",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Deeprock Salt+Sacred Grounds": [
       "Tundra+Hill",
       "Deeprock Salt",
       "Holy siteT"
     ],
-    "Tundra+Hill+Thorium+Holy site": [
+    "Tundra+Hill+Thorium+Sacred Grounds": [
       "Tundra+Hill",
       "Thorium",
       "Holy siteT"
     ],
-    "Tundra+Hill+Moonglow Ink+Holy site": [
+    "Tundra+Hill+Moonglow Ink+Sacred Grounds": [
       "Tundra+Hill",
       "Moonglow Ink",
       "Holy siteT"
     ],
-    "Tundra+Hill+Mageweave+Holy site": [
+    "Tundra+Hill+Gems+Sacred Grounds": [
+      "Tundra+Hill",
+      "Gems",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Gold Ore+Sacred Grounds": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Mageweave+Sacred Grounds": [
       "Tundra+Hill",
       "Mageweave",
       "Holy siteT"
     ],
-    "Tundra+Hill+Sunfruit+Holy site": [
+    "Tundra+Hill+Spices+Sacred Grounds": [
+      "Tundra+Hill",
+      "Spices",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Sunfruit+Sacred Grounds": [
       "Tundra+Hill",
       "Sunfruit",
       "Holy siteT"
     ],
-    "Tundra+Hill+Glowcap+Holy site": [
+    "Tundra+Hill+Glowcap+Sacred Grounds": [
       "Tundra+Hill",
       "Glowcap",
       "Holy siteT"
     ],
-    "Snow+Azerite+Holy site": [
+    "Tundra+Hill+Sheep+Sacred Grounds": [
+      "Tundra+Hill",
+      "Sheep",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Horses+Sacred Grounds": [
+      "Tundra+Hill",
+      "Horses",
+      "Holy siteT"
+    ],
+    "Snow+Iron+Sacred Grounds": [
+      "Snow",
+      "Iron",
+      "Holy siteT"
+    ],
+    "Snow+Azerite+Sacred Grounds": [
       "Snow",
       "Azerite",
       "Holy siteT"
     ],
-    "Snow+Elementium+Holy site": [
+    "Snow+Elementium+Sacred Grounds": [
       "Snow",
       "Elementium",
       "Holy siteT"
     ],
-    "Snow+Arcane Crystals+Holy site": [
+    "Snow+Arcane Crystals+Sacred Grounds": [
       "Snow",
       "Arcane Crystals",
       "Holy siteT"
     ],
-    "Snow+Hill+Azerite+Holy site": [
+    "Snow+Hill+Iron+Sacred Grounds": [
+      "Snow+Hill",
+      "Iron",
+      "Holy siteT"
+    ],
+    "Snow+Hill+Azerite+Sacred Grounds": [
       "Snow+Hill",
       "Azerite",
       "Holy siteT"
     ],
-    "Snow+Hill+Elementium+Holy site": [
+    "Snow+Hill+Elementium+Sacred Grounds": [
       "Snow+Hill",
       "Elementium",
       "Holy siteT"
     ],
-    "Snow+Hill+Arcane Crystals+Holy site": [
+    "Snow+Hill+Arcane Crystals+Sacred Grounds": [
       "Snow+Hill",
       "Arcane Crystals",
       "Holy siteT"
     ],
-    "Tundra+Azerite+Landmark": [
+    "Snow+Sacred Grounds": [
+      "Snow",
+      "Holy siteT"
+    ],
+    "Snow+Hill+Sacred Grounds": [
+      "Snow+Hill",
+      "Holy siteT"
+    ],
+    "Tundra+Hall of Heroes": [
+      "Tundra",
+      "LandmarkT"
+    ],
+    "Tundra+Deer+Hall of Heroes": [
+      "Tundra",
+      "Deer",
+      "LandmarkT"
+    ],
+    "Tundra+Stone+Hall of Heroes": [
+      "Tundra",
+      "Stone",
+      "LandmarkT"
+    ],
+    "Tundra+Iron+Hall of Heroes": [
+      "Tundra",
+      "Iron",
+      "LandmarkT"
+    ],
+    "Tundra+Azerite+Hall of Heroes": [
       "Tundra",
       "Azerite",
       "LandmarkT"
     ],
-    "Tundra+Elementium+Landmark": [
+    "Tundra+Elementium+Hall of Heroes": [
       "Tundra",
       "Elementium",
       "LandmarkT"
     ],
-    "Tundra+Arcane Crystals+Landmark": [
+    "Tundra+Arcane Crystals+Hall of Heroes": [
       "Tundra",
       "Arcane Crystals",
       "LandmarkT"
     ],
-    "Tundra+Rugged Leather+Landmark": [
+    "Tundra+Rugged Leather+Hall of Heroes": [
       "Tundra",
       "FursT",
       "LandmarkT"
     ],
-    "Tundra+Truesilver+Landmark": [
+    "Tundra+Truesilver+Hall of Heroes": [
       "Tundra",
       "Truesilver",
       "LandmarkT"
     ],
-    "Tundra+Deeprock Salt+Landmark": [
+    "Tundra+Copper+Hall of Heroes": [
+      "Tundra",
+      "Copper",
+      "LandmarkT"
+    ],
+    "Tundra+Deeprock Salt+Hall of Heroes": [
       "Tundra",
       "Deeprock Salt",
       "LandmarkT"
     ],
-    "Tundra+Thorium+Landmark": [
+    "Tundra+Thorium+Hall of Heroes": [
       "Tundra",
       "Thorium",
       "LandmarkT"
     ],
-    "Tundra+Moonglow Ink+Landmark": [
+    "Tundra+Moonglow Ink+Hall of Heroes": [
       "Tundra",
       "Moonglow Ink",
       "LandmarkT"
     ],
-    "Tundra+Mageweave+Landmark": [
+    "Tundra+Gems+Hall of Heroes": [
+      "Tundra",
+      "Gems",
+      "LandmarkT"
+    ],
+    "Tundra+Gold Ore+Hall of Heroes": [
+      "Tundra",
+      "Gold Ore",
+      "LandmarkT"
+    ],
+    "Tundra+Mageweave+Hall of Heroes": [
       "Tundra",
       "Mageweave",
       "LandmarkT"
     ],
-    "Tundra+Sunfruit+Landmark": [
+    "Tundra+Spices+Hall of Heroes": [
+      "Tundra",
+      "Spices",
+      "LandmarkT"
+    ],
+    "Tundra+Sunfruit+Hall of Heroes": [
       "Tundra",
       "Sunfruit",
       "LandmarkT"
     ],
-    "Tundra+Glowcap+Landmark": [
+    "Tundra+Glowcap+Hall of Heroes": [
       "Tundra",
       "Glowcap",
       "LandmarkT"
     ],
-    "Tundra+Hill+Azerite+Landmark": [
+    "Tundra+Hill+Hall of Heroes": [
+      "Tundra+Hill",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Deer+Hall of Heroes": [
+      "Tundra+Hill",
+      "Deer",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Stone+Hall of Heroes": [
+      "Tundra+Hill",
+      "Stone",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Marble+Hall of Heroes": [
+      "Tundra+Hill",
+      "Marble",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Iron+Hall of Heroes": [
+      "Tundra+Hill",
+      "Iron",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Azerite+Hall of Heroes": [
       "Tundra+Hill",
       "Azerite",
       "LandmarkT"
     ],
-    "Tundra+Hill+Elementium+Landmark": [
+    "Tundra+Hill+Elementium+Hall of Heroes": [
       "Tundra+Hill",
       "Elementium",
       "LandmarkT"
     ],
-    "Tundra+Hill+Arcane Crystals+Landmark": [
+    "Tundra+Hill+Arcane Crystals+Hall of Heroes": [
       "Tundra+Hill",
       "Arcane Crystals",
       "LandmarkT"
     ],
-    "Tundra+Hill+Rugged Leather+Landmark": [
+    "Tundra+Hill+Rugged Leather+Hall of Heroes": [
       "Tundra+Hill",
       "FursT",
       "LandmarkT"
     ],
-    "Tundra+Hill+Truesilver+Landmark": [
+    "Tundra+Hill+Truesilver+Hall of Heroes": [
       "Tundra+Hill",
       "Truesilver",
       "LandmarkT"
     ],
-    "Tundra+Hill+Deeprock Salt+Landmark": [
+    "Tundra+Hill+Copper+Hall of Heroes": [
+      "Tundra+Hill",
+      "Copper",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Deeprock Salt+Hall of Heroes": [
       "Tundra+Hill",
       "Deeprock Salt",
       "LandmarkT"
     ],
-    "Tundra+Hill+Thorium+Landmark": [
+    "Tundra+Hill+Thorium+Hall of Heroes": [
       "Tundra+Hill",
       "Thorium",
       "LandmarkT"
     ],
-    "Tundra+Hill+Moonglow Ink+Landmark": [
+    "Tundra+Hill+Moonglow Ink+Hall of Heroes": [
       "Tundra+Hill",
       "Moonglow Ink",
       "LandmarkT"
     ],
-    "Tundra+Hill+Mageweave+Landmark": [
+    "Tundra+Hill+Gems+Hall of Heroes": [
+      "Tundra+Hill",
+      "Gems",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Gold Ore+Hall of Heroes": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Mageweave+Hall of Heroes": [
       "Tundra+Hill",
       "Mageweave",
       "LandmarkT"
     ],
-    "Tundra+Hill+Sunfruit+Landmark": [
+    "Tundra+Hill+Spices+Hall of Heroes": [
+      "Tundra+Hill",
+      "Spices",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Sunfruit+Hall of Heroes": [
       "Tundra+Hill",
       "Sunfruit",
       "LandmarkT"
     ],
-    "Tundra+Hill+Glowcap+Landmark": [
+    "Tundra+Hill+Glowcap+Hall of Heroes": [
       "Tundra+Hill",
       "Glowcap",
       "LandmarkT"
     ],
-    "Snow+Azerite+Landmark": [
+    "Tundra+Hill+Sheep+Hall of Heroes": [
+      "Tundra+Hill",
+      "Sheep",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Horses+Hall of Heroes": [
+      "Tundra+Hill",
+      "Horses",
+      "LandmarkT"
+    ],
+    "Snow+Iron+Hall of Heroes": [
+      "Snow",
+      "Iron",
+      "LandmarkT"
+    ],
+    "Snow+Azerite+Hall of Heroes": [
       "Snow",
       "Azerite",
       "LandmarkT"
     ],
-    "Snow+Elementium+Landmark": [
+    "Snow+Elementium+Hall of Heroes": [
       "Snow",
       "Elementium",
       "LandmarkT"
     ],
-    "Snow+Arcane Crystals+Landmark": [
+    "Snow+Arcane Crystals+Hall of Heroes": [
       "Snow",
       "Arcane Crystals",
       "LandmarkT"
     ],
-    "Snow+Hill+Azerite+Landmark": [
+    "Snow+Hill+Iron+Hall of Heroes": [
+      "Snow+Hill",
+      "Iron",
+      "LandmarkT"
+    ],
+    "Snow+Hill+Azerite+Hall of Heroes": [
       "Snow+Hill",
       "Azerite",
       "LandmarkT"
     ],
-    "Snow+Hill+Elementium+Landmark": [
+    "Snow+Hill+Elementium+Hall of Heroes": [
       "Snow+Hill",
       "Elementium",
       "LandmarkT"
     ],
-    "Snow+Hill+Arcane Crystals+Landmark": [
+    "Snow+Hill+Arcane Crystals+Hall of Heroes": [
       "Snow+Hill",
       "Arcane Crystals",
+      "LandmarkT"
+    ],
+    "Snow+Hall of Heroes": [
+      "Snow",
+      "LandmarkT"
+    ],
+    "Snow+Hill+Hall of Heroes": [
+      "Snow+Hill",
       "LandmarkT"
     ],
     "Tundra+Great Workshop": [
