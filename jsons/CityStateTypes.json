@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Cultured",
+    "friendBonusUniques": [
+      "[+3 Culture] <before the [Age of the Dark Portal]>",
+      "[+6 Culture] <starting from the [Age of the Dark Portal]> <before the [Age of the Lich King]>",
+      "[+13 Culture] <starting from the [Age of the Lich King]>"
+    ],
+    "allyBonusUniques": [
+      "[+6 Culture] <before the [Age of the Dark Portal]>",
+      "[+12 Culture] <starting from the [Age of the Dark Portal]> <before the [Age of the Lich King]>",
+      "[+26 Culture] <starting from the [Age of the Lich King]>"
+    ],
+    "color": [
+      139,
+      96,
+      255
+    ]
+  },
+  {
+    "name": "Maritime",
+    "friendBonusUniques": [
+      "[+2 Food] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+2 Food] [in capital]",
+      "[+1 Food] [in all cities]"
+    ],
+    "uniques": [
+      "Start bias [Coast]"
+    ],
+    "color": [
+      56,
+      255,
+      112
+    ]
+  },
+  {
+    "name": "Mercantile",
+    "friendBonusUniques": [
+      "[+2 Happiness] <before the [Age of the Dark Portal]>",
+      "[+3 Happiness] <starting from the [Age of the Dark Portal]>"
+    ],
+    "allyBonusUniques": [
+      "[+2 Happiness] <before the [Age of the Dark Portal]>",
+      "[+3 Happiness] <starting from the [Age of the Dark Portal]>",
+      "Provides a unique luxury"
+    ],
+    "color": [
+      255,
+      216,
+      0
+    ]
+  },
+  {
+    "name": "Militaristic",
+    "friendBonusUniques": [
+      "Provides military units every ≈[20] turns"
+    ],
+    "allyBonusUniques": [
+      "Provides military units every ≈[17] turns"
+    ],
+    "color": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "Religious",
+    "friendBonusUniques": [
+      "[+3 Faith] <before the [Age of the Dark Portal]>",
+      "[+6 Faith] <starting from the [Age of the Dark Portal]> <before the [Age of the Lich King]>",
+      "[+13 Faith] <starting from the [Age of the Lich King]>"
+    ],
+    "allyBonusUniques": [
+      "[+6 Faith] <before the [Age of the Dark Portal]>",
+      "[+12 Faith] <starting from the [Age of the Dark Portal]> <before the [Age of the Lich King]>",
+      "[+26 Faith] <starting from the [Age of the Lich King]>"
+    ],
+    "color": [
+      255,
+      255,
+      255
+    ]
+  }
+]

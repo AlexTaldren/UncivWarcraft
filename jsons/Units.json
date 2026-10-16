@@ -1,0 +1,1226 @@
+[
+  {
+    "name": "Peasant",
+    "unitType": "Civilian",
+    "movement": 2,
+    "requiredTech": "Agriculture",
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action"
+    ],
+    "cost": 70
+  },
+  {
+    "name": "Settler",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 106,
+    "requiredTech": "Agriculture",
+    "uniques": [
+      "Founds a new city <by consuming this unit>",
+      "Excess Food converted to Production when under construction",
+      "Requires at least [2] population"
+    ],
+    "hurryCostModifier": 20
+  },
+  {
+    "name": "Scout",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 5,
+    "cost": 25,
+    "requiredTech": "Agriculture",
+    "obsoleteTech": "Arcane Science",
+    "uniques": [
+      "May upgrade to [Archer] through ruins-like effects",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Ignore terrain cost"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Warrior",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 8,
+    "cost": 40,
+    "requiredTech": "Agriculture",
+    "obsoleteTech": "Metal Casting",
+    "upgradesTo": "Swordsman",
+    "uniques": [
+      "May upgrade to [Spearman] through ruins-like effects"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "This is your basic, club-swinging fighter."
+      }
+    ]
+  },
+  {
+    "name": "Archer",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 5,
+    "rangedStrength": 7,
+    "cost": 40,
+    "requiredTech": "Archery",
+    "obsoleteTech": "Construction",
+    "upgradesTo": "Ranger",
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Fishing Skiff",
+    "unitType": "Civilian Water",
+    "movement": 4,
+    "cost": 30,
+    "requiredTech": "Sailing",
+    "uniques": [
+      "Cannot enter ocean tiles <before discovering [Astronomy]>",
+      "May create improvements on water resources",
+      "Uncapturable",
+      "Automation is a primary action"
+    ]
+  },
+  {
+    "name": "Longboat",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "strength": 10,
+    "cost": 45,
+    "requiredTech": "Sailing",
+    "uniques": [
+      "Cannot enter ocean tiles",
+      "Never appears as a Barbarian unit"
+    ],
+    "upgradesTo": "Brigantine",
+    "obsoleteTech": "Astronomy",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Mounted Archer",
+    "unitType": "Archery",
+    "movement": 4,
+    "strength": 6,
+    "rangedStrength": 10,
+    "cost": 56,
+    "requiredTech": "The Wheel",
+    "requiredResource": "Horses",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Chivalry",
+    "uniques": [
+      "No defensive terrain bonus",
+      "Rough terrain penalty",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Spearman",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 11,
+    "cost": 56,
+    "requiredTech": "Bronze Working",
+    "obsoleteTech": "Arathi Law",
+    "upgradesTo": "Pikeman",
+    "uniques": [
+      "[+50]% Strength <vs [Mounted] units>"
+    ],
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Outrider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 12,
+    "cost": 75,
+    "requiredTech": "Riding",
+    "requiredResource": "Horses",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Chivalry",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse"
+  },
+  {
+    "name": "Catapult",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 8,
+    "cost": 75,
+    "requiredTech": "Mathematics",
+    "obsoleteTech": "Natural Philosophy",
+    "upgradesTo": "Trebuchet",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "throw"
+  },
+  {
+    "name": "Ranger",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Construction",
+    "obsoleteTech": "Machinery",
+    "upgradesTo": "Crossbowman",
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Swordsman",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 14,
+    "cost": 75,
+    "requiredTech": "Blacksmithing",
+    "upgradesTo": "Vanguard",
+    "obsoleteTech": "Steel",
+    "requiredResource": "Iron",
+    "hurryCostModifier": 20,
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Pikeman",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 16,
+    "cost": 90,
+    "requiredTech": "Arathi Law",
+    "uniques": [
+      "[+50]% Strength <vs [Mounted] units>"
+    ],
+    "upgradesTo": "Lancer",
+    "obsoleteTech": "Metallurgy",
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Battle Galley",
+    "unitType": "Ranged Water",
+    "movement": 3,
+    "strength": 16,
+    "rangedStrength": 17,
+    "cost": 100,
+    "requiredTech": "Seafaring",
+    "obsoleteTech": "Navigation",
+    "upgradesTo": "Frigate",
+    "uniques": [
+      "Cannot enter ocean tiles"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Knight",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 20,
+    "cost": 120,
+    "requiredTech": "Chivalry",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "horse"
+  },
+  {
+    "name": "Crossbowman",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 13,
+    "rangedStrength": 18,
+    "cost": 120,
+    "requiredTech": "Machinery",
+    "upgradesTo": "Steam Gatling",
+    "obsoleteTech": "Steamworks",
+    "attackSound": "crossbow"
+  },
+  {
+    "name": "Trebuchet",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 14,
+    "cost": 120,
+    "requiredTech": "Natural Philosophy",
+    "obsoleteTech": "Alchemy",
+    "upgradesTo": "Cannon",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "throw"
+  },
+  {
+    "name": "Vanguard",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 21,
+    "cost": 120,
+    "requiredTech": "Steel",
+    "upgradesTo": "Musketeer",
+    "obsoleteTech": "Blackpowder",
+    "requiredResource": "Iron",
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Brigantine",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "strength": 20,
+    "cost": 120,
+    "requiredTech": "Astronomy",
+    "upgradesTo": "Ironclad",
+    "obsoleteTech": "Combustion",
+    "uniques": [
+      "[+1] Sight",
+      "Withdraws before melee combat <with [80]% chance>"
+    ],
+    "hurryCostModifier": 30,
+    "attackSound": "cannon"
+  },
+  {
+    "name": "Musketeer",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 24,
+    "cost": 150,
+    "requiredTech": "Blackpowder",
+    "upgradesTo": "Rifleman",
+    "obsoleteTech": "Rifling",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Buccaneer",
+    "unitType": "Melee Water",
+    "movement": 5,
+    "strength": 25,
+    "cost": 150,
+    "requiredTech": "Navigation",
+    "upgradesTo": "Destroyer",
+    "promotions": [
+      "Coastal Raider I",
+      "[Buccaneer] ability"
+    ],
+    "attackSound": "cannon"
+  },
+  {
+    "name": "Frigate",
+    "unitType": "Ranged Water",
+    "movement": 5,
+    "strength": 25,
+    "rangedStrength": 28,
+    "cost": 185,
+    "requiredResource": "Iron",
+    "requiredTech": "Navigation",
+    "obsoleteTech": "Arcane Circuitry",
+    "upgradesTo": "Dreadnought",
+    "hurryCostModifier": 20,
+    "attackSound": "shipCannonVolley"
+  },
+  {
+    "name": "Lancer",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 25,
+    "cost": 185,
+    "requiredTech": "Metallurgy",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Formation I"
+    ],
+    "upgradesTo": "Tankbuster Cannon",
+    "obsoleteTech": "Combined Arms",
+    "attackSound": "horse"
+  },
+  {
+    "name": "Cannon",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 14,
+    "rangedStrength": 20,
+    "cost": 185,
+    "requiredTech": "Alchemy",
+    "upgradesTo": "Mortar Team",
+    "obsoleteTech": "Seaforium",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "cannon"
+  },
+  {
+    "name": "Steam Gatling",
+    "unitType": "Ranged Gunpowder",
+    "range": 1,
+    "movement": 2,
+    "strength": 30,
+    "rangedStrength": 30,
+    "cost": 225,
+    "requiredTech": "Steamworks",
+    "upgradesTo": "Gun Nest",
+    "obsoleteTech": "Ballistics",
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Rifleman",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 34,
+    "cost": 225,
+    "requiredTech": "Rifling",
+    "obsoleteTech": "Interchangeable Cogs",
+    "upgradesTo": "Fusilier",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Cavalry",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 34,
+    "cost": 225,
+    "requiredTech": "War Doctrine",
+    "obsoleteTech": "Combustion",
+    "requiredResource": "Horses",
+    "upgradesTo": "Steam Tank",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "cavalry"
+  },
+  {
+    "name": "Ironclad",
+    "unitType": "Melee Water",
+    "movement": 3,
+    "strength": 45,
+    "cost": 250,
+    "requiredTech": "Steam Power",
+    "requiredResource": "Thorium",
+    "upgradesTo": "Destroyer",
+    "obsoleteTech": "Combustion",
+    "uniques": [
+      "[+33]% Strength <vs cities>",
+      "Double movement in [Coast]",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Mortar Team",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 21,
+    "rangedStrength": 28,
+    "range": 3,
+    "cost": 320,
+    "requiredTech": "Seaforium",
+    "upgradesTo": "Rocket Battery",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "Must set up to ranged attack",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "artillery"
+  },
+  {
+    "name": "Submersible",
+    "unitType": "Submarine",
+    "movement": 5,
+    "strength": 35,
+    "rangedStrength": 60,
+    "cost": 325,
+    "requiredTech": "Frost Enchantment",
+    "upgradesTo": "Arcane Submersible",
+    "uniques": [
+      "[+75]% Strength <when attacking>",
+      "Can only attack [Water] tiles",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "torpedo"
+  },
+  {
+    "name": "Fusilier",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 50,
+    "cost": 320,
+    "requiredTech": "Interchangeable Cogs",
+    "upgradesTo": "Shock Trooper",
+    "obsoleteTech": "Synthetic Alloys",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Gyrocopter",
+    "unitType": "Fighter",
+    "movement": 1,
+    "strength": 35,
+    "rangedStrength": 35,
+    "range": 5,
+    "interceptRange": 5,
+    "cost": 325,
+    "requiredTech": "Flight",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Strike Gyro",
+    "obsoleteTech": "Scrying",
+    "uniques": [
+      "[50]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Bomber] units>",
+      "[+150]% Strength <vs [Helicopter] units>"
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Bomber Zeppelin",
+    "unitType": "Bomber",
+    "movement": 1,
+    "strength": 50,
+    "rangedStrength": 50,
+    "range": 6,
+    "cost": 325,
+    "requiredTech": "Flight",
+    "requiredResource": "Azerite",
+    "upgradesTo": "War Zeppelin",
+    "obsoleteTech": "Scrying",
+    "attackSound": "bombing"
+  },
+  {
+    "name": "Shock Trooper",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 70,
+    "cost": 375,
+    "requiredTech": "Synthetic Alloys",
+    "upgradesTo": "Mechano-Trooper",
+    "obsoleteTech": "Mobile Tactics",
+    "attackSound": "shot"
+  },
+  {
+    "name": "Airship Tender",
+    "unitType": "Aircraft Carrier",
+    "movement": 5,
+    "strength": 40,
+    "cost": 375,
+    "requiredTech": "Arcane Circuitry",
+    "uniques": [
+      "Cannot attack",
+      "Can carry [2] [Aircraft] units"
+    ]
+  },
+  {
+    "name": "Dreadnought",
+    "unitType": "Ranged Water",
+    "movement": 5,
+    "strength": 55,
+    "rangedStrength": 55,
+    "range": 3,
+    "cost": 375,
+    "requiredResource": "Azerite",
+    "requiredTech": "Arcane Circuitry",
+    "uniques": [
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Gun Nest",
+    "unitType": "Ranged Gunpowder",
+    "range": 1,
+    "movement": 2,
+    "strength": 60,
+    "rangedStrength": 60,
+    "cost": 350,
+    "requiredTech": "Ballistics",
+    "upgradesTo": "Mechano-Trooper",
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Flak Cannon",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "interceptRange": 2,
+    "strength": 50,
+    "cost": 375,
+    "requiredTech": "Ballistics",
+    "upgradesTo": "Mobile Flak",
+    "obsoleteTech": "Rocketry",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Air] units>",
+      "[+150]% Strength <vs [Helicopter] units>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Steam Tank",
+    "unitType": "Armored",
+    "movement": 4,
+    "strength": 60,
+    "cost": 350,
+    "requiredTech": "Combustion",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Siege Tank",
+    "obsoleteTech": "Combined Arms",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "tankshot"
+  },
+  {
+    "name": "Destroyer",
+    "unitType": "Melee Water",
+    "movement": 6,
+    "strength": 55,
+    "interceptRange": 2,
+    "cost": 375,
+    "requiredTech": "Combustion",
+    "uniques": [
+      "Can see invisible [Submarine] units",
+      "[40]% chance to intercept air attacks",
+      "Withdraws before melee combat <with [80]% chance>",
+      "[+100]% Strength <vs [Submarine] units>"
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Marine",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 65,
+    "cost": 400,
+    "requiredTech": "Elixir Mastery",
+    "promotions": [
+      "Amphibious"
+    ],
+    "uniques": [
+      "[+1] Sight <when [Embarked]>",
+      "[+100]% Strength <when defending> <when [Embarked]>"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Strike Gyro",
+    "unitType": "Fighter",
+    "movement": 1,
+    "strength": 45,
+    "rangedStrength": 45,
+    "range": 8,
+    "interceptRange": 8,
+    "cost": 375,
+    "requiredTech": "Scrying",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Sky Golem",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Bomber] units>",
+      "[+150]% Strength <vs [Helicopter] units>"
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "War Zeppelin",
+    "unitType": "Bomber",
+    "movement": 1,
+    "strength": 65,
+    "rangedStrength": 65,
+    "range": 10,
+    "cost": 375,
+    "requiredTech": "Scrying",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Void Bomber",
+    "attackSound": "bombing"
+  },
+  {
+    "name": "Rocketeer",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 65,
+    "cost": 375,
+    "requiredTech": "Scrying",
+    "uniques": [
+      "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "shot"
+  },
+  {
+    "name": "Siege Tank",
+    "unitType": "Armored",
+    "movement": 5,
+    "strength": 70,
+    "cost": 375,
+    "requiredTech": "Combined Arms",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Mechano-Tank",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "tankshot"
+  },
+  {
+    "name": "Tankbuster Cannon",
+    "unitType": "Gunpowder",
+    "movement": 2,
+    "strength": 50,
+    "cost": 300,
+    "requiredTech": "Combined Arms",
+    "upgradesTo": "Gunship Gyro",
+    "uniques": [
+      "[+100]% Strength <vs [Armored] units>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Mana Bomb",
+    "unitType": "Atomic Bomber",
+    "movement": 1,
+    "strength": 150,
+    "rangedStrength": 150,
+    "range": 10,
+    "cost": 600,
+    "requiredTech": "Mana Fission",
+    "requiredResource": "Arcane Crystals",
+    "promotions": [
+      "Evasion"
+    ],
+    "uniques": [
+      "Nuclear weapon of Strength [1]",
+      "Only available <if [Mana Bomb Project] is constructed>",
+      "Self-destructs when attacking",
+      "Blast radius [2]"
+    ],
+    "attackSound": "nuke"
+  },
+  {
+    "name": "Rocket Battery",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 45,
+    "rangedStrength": 60,
+    "range": 3,
+    "cost": 425,
+    "requiredTech": "Rocketry",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "artillery"
+  },
+  {
+    "name": "Mobile Flak",
+    "unitType": "Gunpowder",
+    "movement": 3,
+    "interceptRange": 2,
+    "strength": 65,
+    "cost": 425,
+    "requiredTech": "Rocketry",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Air] units>",
+      "[+150]% Strength <vs [Helicopter] units>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "missile"
+  },
+  {
+    "name": "Arcane Missile",
+    "unitType": "Missile",
+    "movement": 1,
+    "strength": 60,
+    "rangedStrength": 60,
+    "range": 8,
+    "cost": 150,
+    "requiredTech": "Advanced Ballistics",
+    "uniques": [
+      "[-100]% maintenance costs"
+    ],
+    "attackSound": "missile"
+  },
+  {
+    "name": "Mana Missile",
+    "unitType": "Missile",
+    "movement": 1,
+    "strength": 300,
+    "rangedStrength": 300,
+    "range": 12,
+    "cost": 1000,
+    "requiredTech": "Advanced Ballistics",
+    "uniques": [
+      "Nuclear weapon of Strength [2]",
+      "Only available <if [Mana Bomb Project] is constructed>",
+      "Blast radius [2]",
+      "Consumes [2] [Arcane Crystals]"
+    ],
+    "attackSound": "nuke"
+  },
+  {
+    "name": "Gunship Gyro",
+    "unitType": "Helicopter",
+    "movement": 6,
+    "strength": 60,
+    "cost": 425,
+    "requiredTech": "Titan Logic",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "[+100]% Strength <vs [Armored] units>",
+      "No defensive terrain bonus",
+      "Can move after attacking",
+      "All tiles cost 1 movement",
+      "Ignores Zone of Control",
+      "Unable to capture cities",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "machinegun"
+  },
+  {
+    "name": "Arcane Submersible",
+    "unitType": "Submarine",
+    "movement": 6,
+    "strength": 50,
+    "range": 3,
+    "rangedStrength": 85,
+    "cost": 425,
+    "requiredTech": "Portal Networks",
+    "uniques": [
+      "[+75]% Strength <when attacking>",
+      "Can only attack [Water] tiles",
+      "[+1] Sight",
+      "Can carry [2] [Missile] units",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "torpedo"
+  },
+  {
+    "name": "Mechano-Trooper",
+    "unitType": "Gunpowder",
+    "movement": 3,
+    "strength": 90,
+    "cost": 375,
+    "requiredTech": "Mobile Tactics",
+    "uniques": [
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "tankshot"
+  },
+  {
+    "name": "Arcane Cruiser",
+    "unitType": "Ranged Water",
+    "movement": 7,
+    "strength": 80,
+    "rangedStrength": 100,
+    "range": 3,
+    "interceptRange": 2,
+    "cost": 425,
+    "requiredTech": "Mechagnomics",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "Can see invisible [Submarine] units",
+      "Can carry [3] [Missile] units",
+      "[+100]% Strength <vs [Submarine] units>",
+      "Never appears as a Barbarian unit"
+    ],
+    "promotions": [
+      "Indirect Fire"
+    ],
+    "attackSound": "shipguns"
+  },
+  {
+    "name": "Mechano-Tank",
+    "unitType": "Armored",
+    "movement": 5,
+    "strength": 100,
+    "cost": 425,
+    "requiredTech": "Focused Arcana",
+    "requiredResource": "Elementium",
+    "upgradesTo": "Iron Colossus",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "tankshot"
+  },
+  {
+    "name": "Sky Golem",
+    "unitType": "Fighter",
+    "movement": 1,
+    "strength": 75,
+    "rangedStrength": 75,
+    "range": 10,
+    "interceptRange": 10,
+    "cost": 425,
+    "requiredTech": "Focused Arcana",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Bomber] units>",
+      "[+150]% Strength <vs [Helicopter] units>"
+    ],
+    "attackSound": "jetgun"
+  },
+  {
+    "name": "Iron Colossus",
+    "unitType": "Armored",
+    "movement": 5,
+    "strength": 150,
+    "cost": 425,
+    "requiredTech": "Titanforging",
+    "requiredResource": "Arcane Crystals",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "gdrAttack"
+  },
+  {
+    "name": "Void Bomber",
+    "unitType": "Bomber",
+    "movement": 2,
+    "strength": 85,
+    "rangedStrength": 85,
+    "range": 20,
+    "cost": 425,
+    "requiredTech": "Cloaking Fields",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "Damage taken from interception reduced by [100]%",
+      "Cannot be carried by [Airship Tender] units",
+      "[+4] Sight",
+      "Can see over obstacles"
+    ],
+    "promotions": [
+      "Evasion"
+    ],
+    "attackSound": "bombing"
+  },
+  {
+    "name": "Great Artist",
+    "unitType": "Civilian",
+    "uniques": [
+      "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+      "Can instantly construct a [Landmark] improvement <by consuming this unit>",
+      "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Artist] group",
+      "Great Person - [Culture]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  },
+  {
+    "name": "Great Scientist",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can hurry technology research",
+      "Can instantly construct a [Academy] improvement <by consuming this unit>",
+      "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Scientist] group",
+      "Great Person - [Science]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  },
+  {
+    "name": "Great Merchant",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+      "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+      "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Merchant] group",
+      "Great Person - [Gold]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  },
+  {
+    "name": "Great Engineer",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can speed up construction of a building",
+      "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+      "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Engineer] group",
+      "Great Person - [Production]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  },
+  {
+    "name": "Great Prophet",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+      "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+      "Removes other religions when spreading religion",
+      "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+      "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+      "Is part of Great Person group [Prophet]",
+      "[This Unit] gets a name from the [Prophet] group",
+      "May enter foreign tiles without open borders",
+      "[-1] Sight",
+      "Great Person - [Faith]",
+      "Unbuildable",
+      "Religious Unit",
+      "Only available <when religion is enabled>",
+      "Takes your religion over the one in their birth city"
+    ],
+    "movement": 2,
+    "religiousStrength": 1000
+  },
+  {
+    "name": "Great General",
+    "unitType": "Civilian",
+    "uniques": [
+      "[+15]% Strength bonus for [{Military} {Land}] units within [2] tiles",
+      "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+      "Can be earned through combat <for [Land] units>",
+      "Is part of Great Person group [General]",
+      "[This Unit] gets a name from the [General] group",
+      "Great Person - [War]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2
+  },
+  {
+    "name": "Great Admiral",
+    "unitType": "Civilian Water",
+    "uniques": [
+      "May Paradrop to [{your} {Coastal} {City center}] tiles up to [25] tiles away <in [City center] tiles>",
+      "[+15]% Strength bonus for [{Military} {Water}] units within [2] tiles",
+      "Can be earned through combat <for [Water] units>",
+      "Is part of Great Person group [Admiral]",
+      "[This Unit] gets a name from the [Admiral] group",
+      "Great Person - [War]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 4
+  },
+  {
+    "name": "Missionary",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>",
+      "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+      "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+      "[-1] Sight",
+      "Unbuildable",
+      "Religious Unit",
+      "Only available <when religion is enabled>"
+    ],
+    "movement": 4,
+    "religiousStrength": 1000
+  },
+  {
+    "name": "Inquisitor",
+    "unitType": "Civilian",
+    "uniques": [
+      "Prevents spreading of religion to the city it is next to",
+      "Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>",
+      "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+      "[+1] Sight",
+      "Only available <when religion is enabled>",
+      "Unbuildable",
+      "Religious Unit"
+    ],
+    "movement": 3
+  },
+  {
+    "name": "Arcane Thruster",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 750,
+    "requiredTech": "Advanced Ballistics",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "Spaceship part",
+      "Cannot be purchased",
+      "Only available <if [Titan Ascension Project] is constructed>",
+      "Uncapturable",
+      "Can be added to [The Spaceship] in the Capital",
+      "Limited to [3] per Civilization",
+      "Only available <when [Scientific] Victory is enabled>"
+    ]
+  },
+  {
+    "name": "Navigation Crystal",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 750,
+    "requiredTech": "Orbital Constructs",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "Spaceship part",
+      "Cannot be purchased",
+      "Only available <if [Titan Ascension Project] is constructed>",
+      "Uncapturable",
+      "Can be added to [The Spaceship] in the Capital",
+      "Limited to [1] per Civilization",
+      "Only available <when [Scientific] Victory is enabled>"
+    ]
+  },
+  {
+    "name": "Titan Engine",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 750,
+    "requiredTech": "Azerite Refinement",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "Spaceship part",
+      "Cannot be purchased",
+      "Only available <if [Titan Ascension Project] is constructed>",
+      "Uncapturable",
+      "Can be added to [The Spaceship] in the Capital",
+      "Limited to [1] per Civilization",
+      "Only available <when [Scientific] Victory is enabled>"
+    ]
+  },
+  {
+    "name": "Stasis Vault",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 750,
+    "requiredTech": "Ethereal Technology",
+    "requiredResource": "Elementium",
+    "uniques": [
+      "Spaceship part",
+      "Cannot be purchased",
+      "Only available <if [Titan Ascension Project] is constructed>",
+      "Uncapturable",
+      "Can be added to [The Spaceship] in the Capital",
+      "Limited to [1] per Civilization",
+      "Only available <when [Scientific] Victory is enabled>"
+    ]
+  },
+  {
+    "name": "Footman",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 16,
+    "cost": 75,
+    "requiredTech": "Blacksmithing",
+    "upgradesTo": "Vanguard",
+    "obsoleteTech": "Steel",
+    "hurryCostModifier": 20,
+    "attackSound": "metalhit",
+    "replaces": "Swordsman",
+    "uniqueTo": "Humans",
+    "promotions": [
+      "Cover I"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The backbone of every human army. Footmen are trained to fight in shield-walls that turn aside arrows, and unlike swordsmen they need no Iron to equip."
+      }
+    ]
+  },
+  {
+    "name": "Paladin",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 22,
+    "cost": 120,
+    "requiredTech": "Chivalry",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "horse",
+    "replaces": "Knight",
+    "uniqueTo": "Humans",
+    "promotions": [
+      "Medic"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Holy warriors of the Order of the Silver Hand. Paladins ride into battle wielding the Light, mending the wounds of the soldiers fighting beside them."
+      }
+    ]
+  },
+  {
+    "name": "Mage",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Machinery",
+    "upgradesTo": "Steam Gatling",
+    "obsoleteTech": "Steamworks",
+    "attackSound": "crossbow",
+    "replaces": "Crossbowman",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "Trained in the arcane academies of the human kingdoms, mages hurl fire and frost from afar. Their spells arc over hills and forests that would block an ordinary bolt."
+      }
+    ],
+    "uniques": [
+      "Ranged attacks may be performed over obstacles"
+    ]
+  }
+]

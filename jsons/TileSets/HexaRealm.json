@@ -1,0 +1,1720 @@
+{
+  "ruleVariants": {
+    "Tundra+Rugged Leather": [
+      "Tundra",
+      "FursT"
+    ],
+    "Tundra+Forest+Rugged Leather": [
+      "Tundra",
+      "ForestTUp",
+      "FursT",
+      "ForestTLow"
+    ],
+    "Tundra+Hill+Forest+Rugged Leather": [
+      "Tundra+Hill",
+      "ForestTUp",
+      "FursT",
+      "ForestTLow"
+    ],
+    "Grassland+Forest+Rugged Leather": [
+      "Grassland",
+      "ForestGUp",
+      "Furs",
+      "ForestGLow"
+    ],
+    "Grassland+Hill+Forest+Rugged Leather": [
+      "Grassland+Hill",
+      "ForestGHUp",
+      "Furs",
+      "ForestGHLow"
+    ],
+    "Plains+Forest+Rugged Leather": [
+      "Plains",
+      "ForestPUp",
+      "Furs",
+      "ForestPLow"
+    ],
+    "Plains+Hill+Forest+Rugged Leather": [
+      "Plains+Hill",
+      "ForestPHUp",
+      "Furs",
+      "ForestPHLow"
+    ],
+    "Tundra+Rugged Leather+Camp": [
+      "Tundra",
+      "FursT+Camp"
+    ],
+    "Tundra+Forest+Rugged Leather+Camp": [
+      "Tundra",
+      "ForestTUp",
+      "FursT+Camp",
+      "ForestTLow"
+    ],
+    "Tundra+Hill+Forest+Rugged Leather+Camp": [
+      "Tundra+Hill",
+      "ForestTUp",
+      "FursT+Camp",
+      "ForestTLow"
+    ],
+    "Grassland+Forest+Rugged Leather+Camp": [
+      "Grassland",
+      "ForestGUp",
+      "Furs+Camp",
+      "ForestGLow"
+    ],
+    "Grassland+Hill+Forest+Rugged Leather+Camp": [
+      "Grassland+Hill",
+      "ForestGHUp",
+      "Furs+Camp",
+      "ForestGHLow"
+    ],
+    "Plains+Forest+Rugged Leather+Camp": [
+      "Plains",
+      "ForestPUp",
+      "Furs+Camp",
+      "ForestPLow"
+    ],
+    "Plains+Hill+Forest+Rugged Leather+Camp": [
+      "Plains+Hill",
+      "ForestPHUp",
+      "Furs+Camp",
+      "ForestPHLow"
+    ],
+    "Tundra+Forest+Elementium": [
+      "Tundra",
+      "Aluminum",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Elementium": [
+      "Tundra+Hill",
+      "Aluminum",
+      "ForestT"
+    ],
+    "Grassland+Jungle+Elementium": [
+      "Grassland",
+      "Aluminum",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Elementium": [
+      "Grassland+Hill",
+      "Aluminum",
+      "ForestGH"
+    ],
+    "Plains+Jungle+Elementium": [
+      "Plains",
+      "Aluminum",
+      "JungleP"
+    ],
+    "Plains+Hill+Forest+Elementium": [
+      "Plains+Hill",
+      "Aluminum",
+      "ForestPH"
+    ],
+    "Tundra+Forest+Thorium": [
+      "Tundra",
+      "Coal",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Thorium": [
+      "Tundra+Hill",
+      "Coal",
+      "ForestT"
+    ],
+    "Grassland+Forest+Thorium": [
+      "Grassland",
+      "Coal",
+      "ForestG"
+    ],
+    "Grassland+Jungle+Thorium": [
+      "Grassland",
+      "Coal",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Thorium": [
+      "Grassland+Hill",
+      "Coal",
+      "ForestGH"
+    ],
+    "Plains+Forest+Thorium": [
+      "Plains",
+      "Coal",
+      "ForestP"
+    ],
+    "Plains+Jungle+Thorium": [
+      "Plains",
+      "Coal",
+      "JungleP"
+    ],
+    "Plains+Hill+Forest+Thorium": [
+      "Plains+Hill",
+      "Coal",
+      "ForestPH"
+    ],
+    "Grassland+Marsh+Thorium": [
+      "Grassland",
+      "Coal",
+      "Marsh"
+    ],
+    "Tundra+Forest+Truesilver": [
+      "Tundra",
+      "Silver",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Truesilver": [
+      "Tundra+Hill",
+      "Silver",
+      "ForestT"
+    ],
+    "Grassland+Forest+Truesilver": [
+      "Grassland",
+      "Silver",
+      "ForestG"
+    ],
+    "Grassland+Jungle+Truesilver": [
+      "Grassland",
+      "Silver",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Truesilver": [
+      "Grassland+Hill",
+      "Silver",
+      "ForestGH"
+    ],
+    "Plains+Forest+Truesilver": [
+      "Plains",
+      "Silver",
+      "ForestP"
+    ],
+    "Plains+Jungle+Truesilver": [
+      "Plains",
+      "Silver",
+      "JungleP"
+    ],
+    "Plains+Hill+Forest+Truesilver": [
+      "Plains+Hill",
+      "Silver",
+      "ForestPH"
+    ],
+    "Tundra+Forest+Arcane Crystals": [
+      "Tundra",
+      "Uranium",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Arcane Crystals": [
+      "Tundra+Hill",
+      "Uranium",
+      "ForestT"
+    ],
+    "Grassland+Forest+Arcane Crystals": [
+      "Grassland",
+      "Uranium",
+      "ForestG"
+    ],
+    "Grassland+Jungle+Arcane Crystals": [
+      "Grassland",
+      "Uranium",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Arcane Crystals": [
+      "Grassland+Hill",
+      "Uranium",
+      "ForestGH"
+    ],
+    "Plains+Forest+Arcane Crystals": [
+      "Plains",
+      "Uranium",
+      "ForestP"
+    ],
+    "Plains+Jungle+Arcane Crystals": [
+      "Plains",
+      "Uranium",
+      "JungleP"
+    ],
+    "Plains+Hill+Forest+Arcane Crystals": [
+      "Plains+Hill",
+      "Uranium",
+      "ForestPH"
+    ],
+    "Grassland+Marsh+Arcane Crystals": [
+      "Grassland",
+      "Uranium",
+      "Marsh"
+    ],
+    "Grassland+Jungle+Azerite": [
+      "Grassland",
+      "Oil",
+      "JungleG"
+    ],
+    "Plains+Jungle+Azerite": [
+      "Plains",
+      "Oil",
+      "JungleP"
+    ],
+    "Coast+Azerite": [
+      "Coast",
+      "OilS"
+    ],
+    "Grassland+Marsh+Azerite": [
+      "Grassland",
+      "Oil",
+      "Marsh"
+    ],
+    "Tundra+Forest+Mageweave": [
+      "Tundra",
+      "Silk",
+      "ForestT"
+    ],
+    "Tundra+Hill+Forest+Mageweave": [
+      "Tundra+Hill",
+      "Silk",
+      "ForestT"
+    ],
+    "Grassland+Forest+Mageweave": [
+      "Grassland",
+      "Silk",
+      "ForestG"
+    ],
+    "Grassland+Jungle+Mageweave": [
+      "Grassland",
+      "Silk",
+      "JungleG"
+    ],
+    "Grassland+Hill+Forest+Mageweave": [
+      "Grassland+Hill",
+      "Silk",
+      "ForestGH"
+    ],
+    "Plains+Forest+Mageweave": [
+      "Plains",
+      "Silk",
+      "ForestP"
+    ],
+    "Plains+Jungle+Mageweave": [
+      "Plains",
+      "Silk",
+      "JungleP"
+    ],
+    "Plains+Hill+Forest+Mageweave": [
+      "Plains+Hill",
+      "Silk",
+      "ForestPH"
+    ],
+    "Grassland+Azerite+Farm": [
+      "Grassland",
+      "Oil",
+      "FarmG"
+    ],
+    "Grassland+Elementium+Farm": [
+      "Grassland",
+      "Aluminum",
+      "FarmG"
+    ],
+    "Grassland+Arcane Crystals+Farm": [
+      "Grassland",
+      "Uranium",
+      "FarmG"
+    ],
+    "Grassland+Rugged Leather+Farm": [
+      "Grassland",
+      "FarmG",
+      "FursT"
+    ],
+    "Grassland+Truesilver+Farm": [
+      "Grassland",
+      "Silver",
+      "FarmG"
+    ],
+    "Grassland+Thorium+Farm": [
+      "Grassland",
+      "Coal",
+      "FarmG"
+    ],
+    "Grassland+Mageweave+Farm": [
+      "Grassland",
+      "FarmG",
+      "Silk"
+    ],
+    "Grassland+Peacebloom+Farm": [
+      "Grassland",
+      "FarmG",
+      "Cotton"
+    ],
+    "Grassland+Ale+Farm": [
+      "Grassland",
+      "FarmG",
+      "Wine"
+    ],
+    "Grassland+Hill+Azerite+Farm": [
+      "Grassland+Hill",
+      "Oil",
+      "FarmGH"
+    ],
+    "Grassland+Hill+Elementium+Farm": [
+      "Grassland+Hill",
+      "Aluminum",
+      "FarmGH"
+    ],
+    "Grassland+Hill+Arcane Crystals+Farm": [
+      "Grassland+Hill",
+      "Uranium",
+      "FarmGH"
+    ],
+    "Grassland+Hill+Rugged Leather+Farm": [
+      "Grassland+Hill",
+      "FarmGH",
+      "Furs"
+    ],
+    "Grassland+Hill+Truesilver+Farm": [
+      "Grassland+Hill",
+      "Silver",
+      "FarmGH"
+    ],
+    "Grassland+Hill+Thorium+Farm": [
+      "Grassland+Hill",
+      "Coal",
+      "FarmGH"
+    ],
+    "Grassland+Hill+Mageweave+Farm": [
+      "Grassland+Hill",
+      "FarmGH",
+      "Silk"
+    ],
+    "Plains+Azerite+Farm": [
+      "Plains",
+      "Oil",
+      "FarmP"
+    ],
+    "Plains+Elementium+Farm": [
+      "Plains",
+      "Aluminum",
+      "FarmP"
+    ],
+    "Plains+Arcane Crystals+Farm": [
+      "Plains",
+      "Uranium",
+      "FarmP"
+    ],
+    "Plains+Rugged Leather+Farm": [
+      "Plains",
+      "FarmP",
+      "FursT"
+    ],
+    "Plains+Truesilver+Farm": [
+      "Plains",
+      "Silver",
+      "FarmP"
+    ],
+    "Plains+Thorium+Farm": [
+      "Plains",
+      "Coal",
+      "FarmP"
+    ],
+    "Plains+Mageweave+Farm": [
+      "Plains",
+      "FarmP",
+      "Silk"
+    ],
+    "Plains+Ale+Farm": [
+      "Plains",
+      "FarmP",
+      "Wine"
+    ],
+    "Plains+Mageroyal+Farm": [
+      "Plains",
+      "FarmP",
+      "Incense"
+    ],
+    "Plains+Hill+Azerite+Farm": [
+      "Plains+Hill",
+      "Oil",
+      "FarmPH"
+    ],
+    "Plains+Hill+Elementium+Farm": [
+      "Plains+Hill",
+      "Aluminum",
+      "FarmPH"
+    ],
+    "Plains+Hill+Arcane Crystals+Farm": [
+      "Plains+Hill",
+      "Uranium",
+      "FarmPH"
+    ],
+    "Plains+Hill+Rugged Leather+Farm": [
+      "Plains+Hill",
+      "FarmPH",
+      "Furs"
+    ],
+    "Plains+Hill+Truesilver+Farm": [
+      "Plains+Hill",
+      "Silver",
+      "FarmPH"
+    ],
+    "Plains+Hill+Thorium+Farm": [
+      "Plains+Hill",
+      "Coal",
+      "FarmPH"
+    ],
+    "Plains+Hill+Mageweave+Farm": [
+      "Plains+Hill",
+      "FarmPH",
+      "Silk"
+    ],
+    "Desert+Azerite+Farm": [
+      "Desert",
+      "Oil",
+      "FarmD"
+    ],
+    "Desert+Elementium+Farm": [
+      "Desert",
+      "Aluminum",
+      "FarmD"
+    ],
+    "Desert+Mageroyal+Farm": [
+      "Desert",
+      "FarmD",
+      "Incense"
+    ],
+    "Desert+Hill+Azerite+Farm": [
+      "Desert+Hill",
+      "Oil",
+      "FarmDH"
+    ],
+    "Desert+Hill+Elementium+Farm": [
+      "Desert+Hill",
+      "Aluminum",
+      "FarmDH"
+    ],
+    "Desert+Hill+Truesilver+Farm": [
+      "Desert+Hill",
+      "Silver",
+      "FarmDH"
+    ],
+    "Desert+Hill+Thorium+Farm": [
+      "Desert+Hill",
+      "Coal",
+      "FarmDH"
+    ],
+    "Desert+Flood plains+Peacebloom+Farm": [
+      "Desert",
+      "Flood plains",
+      "FarmP",
+      "Cotton"
+    ],
+    "Desert+Flood plains+Mageroyal+Farm": [
+      "Desert",
+      "Flood plains",
+      "FarmP",
+      "Incense"
+    ],
+    "Tundra+Azerite+Farm": [
+      "Tundra",
+      "Oil",
+      "FarmT"
+    ],
+    "Tundra+Elementium+Farm": [
+      "Tundra",
+      "Aluminum",
+      "FarmT"
+    ],
+    "Tundra+Arcane Crystals+Farm": [
+      "Tundra",
+      "Uranium",
+      "FarmT"
+    ],
+    "Tundra+Rugged Leather+Farm": [
+      "Tundra",
+      "FarmT",
+      "FursT"
+    ],
+    "Tundra+Truesilver+Farm": [
+      "Tundra",
+      "Silver",
+      "FarmT"
+    ],
+    "Tundra+Thorium+Farm": [
+      "Tundra",
+      "Coal",
+      "FarmT"
+    ],
+    "Tundra+Mageweave+Farm": [
+      "Tundra",
+      "FarmT",
+      "Silk"
+    ],
+    "Tundra+Hill+Azerite+Farm": [
+      "Tundra+Hill",
+      "Oil",
+      "FarmTH"
+    ],
+    "Tundra+Hill+Elementium+Farm": [
+      "Tundra+Hill",
+      "Aluminum",
+      "FarmTH"
+    ],
+    "Tundra+Hill+Arcane Crystals+Farm": [
+      "Tundra+Hill",
+      "Uranium",
+      "FarmTH"
+    ],
+    "Tundra+Hill+Rugged Leather+Farm": [
+      "Tundra+Hill",
+      "FarmTH",
+      "FursT"
+    ],
+    "Tundra+Hill+Truesilver+Farm": [
+      "Tundra+Hill",
+      "Silver",
+      "FarmTH"
+    ],
+    "Tundra+Hill+Thorium+Farm": [
+      "Tundra+Hill",
+      "Coal",
+      "FarmTH"
+    ],
+    "Tundra+Hill+Mageweave+Farm": [
+      "Tundra+Hill",
+      "FarmTH",
+      "Silk"
+    ],
+    "Snow+Azerite+Farm": [
+      "Snow",
+      "Oil",
+      "FarmS"
+    ],
+    "Snow+Elementium+Farm": [
+      "Snow",
+      "Aluminum",
+      "FarmS"
+    ],
+    "Snow+Arcane Crystals+Farm": [
+      "Snow",
+      "Uranium",
+      "FarmS"
+    ],
+    "Snow+Hill+Azerite+Farm": [
+      "Snow+Hill",
+      "Oil",
+      "FarmSH"
+    ],
+    "Snow+Hill+Elementium+Farm": [
+      "Snow+Hill",
+      "Aluminum",
+      "FarmSH"
+    ],
+    "Snow+Hill+Arcane Crystals+Farm": [
+      "Snow+Hill",
+      "Uranium",
+      "FarmSH"
+    ],
+    "Coast+Azerite Drill": [
+      "Coast",
+      "Oil WellC"
+    ],
+    "Coast+Azerite+Azerite Drill": [
+      "Coast",
+      "Oil WellC"
+    ],
+    "Coast+Azerite+Offshore Platform": [
+      "Coast",
+      "Offshore Platform"
+    ],
+    "Tundra+Azerite+Academy": [
+      "Tundra",
+      "Oil",
+      "AcademyT"
+    ],
+    "Tundra+Elementium+Academy": [
+      "Tundra",
+      "Aluminum",
+      "AcademyT"
+    ],
+    "Tundra+Arcane Crystals+Academy": [
+      "Tundra",
+      "Uranium",
+      "AcademyT"
+    ],
+    "Tundra+Rugged Leather+Academy": [
+      "Tundra",
+      "FursT",
+      "AcademyT"
+    ],
+    "Tundra+Truesilver+Academy": [
+      "Tundra",
+      "Silver",
+      "AcademyT"
+    ],
+    "Tundra+Thorium+Academy": [
+      "Tundra",
+      "Coal",
+      "AcademyT"
+    ],
+    "Tundra+Mageweave+Academy": [
+      "Tundra",
+      "Silk",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Azerite+Academy": [
+      "Tundra+Hill",
+      "Oil",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Elementium+Academy": [
+      "Tundra+Hill",
+      "Aluminum",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Academy": [
+      "Tundra+Hill",
+      "Uranium",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Rugged Leather+Academy": [
+      "Tundra+Hill",
+      "FursT",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Truesilver+Academy": [
+      "Tundra+Hill",
+      "Silver",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Thorium+Academy": [
+      "Tundra+Hill",
+      "Coal",
+      "AcademyT"
+    ],
+    "Tundra+Hill+Mageweave+Academy": [
+      "Tundra+Hill",
+      "Silk",
+      "AcademyT"
+    ],
+    "Snow+Azerite+Academy": [
+      "Snow",
+      "Oil",
+      "AcademyT"
+    ],
+    "Snow+Elementium+Academy": [
+      "Snow",
+      "Aluminum",
+      "AcademyT"
+    ],
+    "Snow+Arcane Crystals+Academy": [
+      "Snow",
+      "Uranium",
+      "AcademyT"
+    ],
+    "Snow+Hill+Azerite+Academy": [
+      "Snow+Hill",
+      "Oil",
+      "AcademyT"
+    ],
+    "Snow+Hill+Elementium+Academy": [
+      "Snow+Hill",
+      "Aluminum",
+      "AcademyT"
+    ],
+    "Snow+Hill+Arcane Crystals+Academy": [
+      "Snow+Hill",
+      "Uranium",
+      "AcademyT"
+    ],
+    "Tundra+Azerite+Citadel": [
+      "Tundra",
+      "Oil",
+      "CitadelT"
+    ],
+    "Tundra+Elementium+Citadel": [
+      "Tundra",
+      "Aluminum",
+      "CitadelT"
+    ],
+    "Tundra+Arcane Crystals+Citadel": [
+      "Tundra",
+      "Uranium",
+      "CitadelT"
+    ],
+    "Tundra+Rugged Leather+Citadel": [
+      "Tundra",
+      "FursT",
+      "CitadelT"
+    ],
+    "Tundra+Truesilver+Citadel": [
+      "Tundra",
+      "Silver",
+      "CitadelT"
+    ],
+    "Tundra+Thorium+Citadel": [
+      "Tundra",
+      "Coal",
+      "CitadelT"
+    ],
+    "Tundra+Mageweave+Citadel": [
+      "Tundra",
+      "Silk",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Azerite+Citadel": [
+      "Tundra+Hill",
+      "Oil",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Elementium+Citadel": [
+      "Tundra+Hill",
+      "Aluminum",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Citadel": [
+      "Tundra+Hill",
+      "Uranium",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Rugged Leather+Citadel": [
+      "Tundra+Hill",
+      "FursT",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Truesilver+Citadel": [
+      "Tundra+Hill",
+      "Silver",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Thorium+Citadel": [
+      "Tundra+Hill",
+      "Coal",
+      "CitadelT"
+    ],
+    "Tundra+Hill+Mageweave+Citadel": [
+      "Tundra+Hill",
+      "Silk",
+      "CitadelT"
+    ],
+    "Snow+Azerite+Citadel": [
+      "Snow",
+      "Oil",
+      "CitadelT"
+    ],
+    "Snow+Elementium+Citadel": [
+      "Snow",
+      "Aluminum",
+      "CitadelT"
+    ],
+    "Snow+Arcane Crystals+Citadel": [
+      "Snow",
+      "Uranium",
+      "CitadelT"
+    ],
+    "Snow+Hill+Azerite+Citadel": [
+      "Snow+Hill",
+      "Oil",
+      "CitadelT"
+    ],
+    "Snow+Hill+Elementium+Citadel": [
+      "Snow+Hill",
+      "Aluminum",
+      "CitadelT"
+    ],
+    "Snow+Hill+Arcane Crystals+Citadel": [
+      "Snow+Hill",
+      "Uranium",
+      "CitadelT"
+    ],
+    "Tundra+Azerite+Customs house": [
+      "Tundra",
+      "Oil",
+      "Customs houseT"
+    ],
+    "Tundra+Elementium+Customs house": [
+      "Tundra",
+      "Aluminum",
+      "Customs houseT"
+    ],
+    "Tundra+Arcane Crystals+Customs house": [
+      "Tundra",
+      "Uranium",
+      "Customs houseT"
+    ],
+    "Tundra+Rugged Leather+Customs house": [
+      "Tundra",
+      "FursT",
+      "Customs houseT"
+    ],
+    "Tundra+Truesilver+Customs house": [
+      "Tundra",
+      "Silver",
+      "Customs houseT"
+    ],
+    "Tundra+Thorium+Customs house": [
+      "Tundra",
+      "Coal",
+      "Customs houseT"
+    ],
+    "Tundra+Mageweave+Customs house": [
+      "Tundra",
+      "Silk",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Azerite+Customs house": [
+      "Tundra+Hill",
+      "Oil",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Elementium+Customs house": [
+      "Tundra+Hill",
+      "Aluminum",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Customs house": [
+      "Tundra+Hill",
+      "Uranium",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Rugged Leather+Customs house": [
+      "Tundra+Hill",
+      "FursT",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Truesilver+Customs house": [
+      "Tundra+Hill",
+      "Silver",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Thorium+Customs house": [
+      "Tundra+Hill",
+      "Coal",
+      "Customs houseT"
+    ],
+    "Tundra+Hill+Mageweave+Customs house": [
+      "Tundra+Hill",
+      "Silk",
+      "Customs houseT"
+    ],
+    "Snow+Azerite+Customs house": [
+      "Snow",
+      "Oil",
+      "Customs houseT"
+    ],
+    "Snow+Elementium+Customs house": [
+      "Snow",
+      "Aluminum",
+      "Customs houseT"
+    ],
+    "Snow+Arcane Crystals+Customs house": [
+      "Snow",
+      "Uranium",
+      "Customs houseT"
+    ],
+    "Snow+Hill+Azerite+Customs house": [
+      "Snow+Hill",
+      "Oil",
+      "Customs houseT"
+    ],
+    "Snow+Hill+Elementium+Customs house": [
+      "Snow+Hill",
+      "Aluminum",
+      "Customs houseT"
+    ],
+    "Snow+Hill+Arcane Crystals+Customs house": [
+      "Snow+Hill",
+      "Uranium",
+      "Customs houseT"
+    ],
+    "Tundra+Azerite+Holy site": [
+      "Tundra",
+      "Oil",
+      "Holy siteT"
+    ],
+    "Tundra+Elementium+Holy site": [
+      "Tundra",
+      "Aluminum",
+      "Holy siteT"
+    ],
+    "Tundra+Arcane Crystals+Holy site": [
+      "Tundra",
+      "Uranium",
+      "Holy siteT"
+    ],
+    "Tundra+Rugged Leather+Holy site": [
+      "Tundra",
+      "FursT",
+      "Holy siteT"
+    ],
+    "Tundra+Truesilver+Holy site": [
+      "Tundra",
+      "Silver",
+      "Holy siteT"
+    ],
+    "Tundra+Thorium+Holy site": [
+      "Tundra",
+      "Coal",
+      "Holy siteT"
+    ],
+    "Tundra+Mageweave+Holy site": [
+      "Tundra",
+      "Silk",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Azerite+Holy site": [
+      "Tundra+Hill",
+      "Oil",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Elementium+Holy site": [
+      "Tundra+Hill",
+      "Aluminum",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Holy site": [
+      "Tundra+Hill",
+      "Uranium",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Rugged Leather+Holy site": [
+      "Tundra+Hill",
+      "FursT",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Truesilver+Holy site": [
+      "Tundra+Hill",
+      "Silver",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Thorium+Holy site": [
+      "Tundra+Hill",
+      "Coal",
+      "Holy siteT"
+    ],
+    "Tundra+Hill+Mageweave+Holy site": [
+      "Tundra+Hill",
+      "Silk",
+      "Holy siteT"
+    ],
+    "Snow+Azerite+Holy site": [
+      "Snow",
+      "Oil",
+      "Holy siteT"
+    ],
+    "Snow+Elementium+Holy site": [
+      "Snow",
+      "Aluminum",
+      "Holy siteT"
+    ],
+    "Snow+Arcane Crystals+Holy site": [
+      "Snow",
+      "Uranium",
+      "Holy siteT"
+    ],
+    "Snow+Hill+Azerite+Holy site": [
+      "Snow+Hill",
+      "Oil",
+      "Holy siteT"
+    ],
+    "Snow+Hill+Elementium+Holy site": [
+      "Snow+Hill",
+      "Aluminum",
+      "Holy siteT"
+    ],
+    "Snow+Hill+Arcane Crystals+Holy site": [
+      "Snow+Hill",
+      "Uranium",
+      "Holy siteT"
+    ],
+    "Tundra+Azerite+Landmark": [
+      "Tundra",
+      "Oil",
+      "LandmarkT"
+    ],
+    "Tundra+Elementium+Landmark": [
+      "Tundra",
+      "Aluminum",
+      "LandmarkT"
+    ],
+    "Tundra+Arcane Crystals+Landmark": [
+      "Tundra",
+      "Uranium",
+      "LandmarkT"
+    ],
+    "Tundra+Rugged Leather+Landmark": [
+      "Tundra",
+      "FursT",
+      "LandmarkT"
+    ],
+    "Tundra+Truesilver+Landmark": [
+      "Tundra",
+      "Silver",
+      "LandmarkT"
+    ],
+    "Tundra+Thorium+Landmark": [
+      "Tundra",
+      "Coal",
+      "LandmarkT"
+    ],
+    "Tundra+Mageweave+Landmark": [
+      "Tundra",
+      "Silk",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Azerite+Landmark": [
+      "Tundra+Hill",
+      "Oil",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Elementium+Landmark": [
+      "Tundra+Hill",
+      "Aluminum",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Landmark": [
+      "Tundra+Hill",
+      "Uranium",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Rugged Leather+Landmark": [
+      "Tundra+Hill",
+      "FursT",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Truesilver+Landmark": [
+      "Tundra+Hill",
+      "Silver",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Thorium+Landmark": [
+      "Tundra+Hill",
+      "Coal",
+      "LandmarkT"
+    ],
+    "Tundra+Hill+Mageweave+Landmark": [
+      "Tundra+Hill",
+      "Silk",
+      "LandmarkT"
+    ],
+    "Snow+Azerite+Landmark": [
+      "Snow",
+      "Oil",
+      "LandmarkT"
+    ],
+    "Snow+Elementium+Landmark": [
+      "Snow",
+      "Aluminum",
+      "LandmarkT"
+    ],
+    "Snow+Arcane Crystals+Landmark": [
+      "Snow",
+      "Uranium",
+      "LandmarkT"
+    ],
+    "Snow+Hill+Azerite+Landmark": [
+      "Snow+Hill",
+      "Oil",
+      "LandmarkT"
+    ],
+    "Snow+Hill+Elementium+Landmark": [
+      "Snow+Hill",
+      "Aluminum",
+      "LandmarkT"
+    ],
+    "Snow+Hill+Arcane Crystals+Landmark": [
+      "Snow+Hill",
+      "Uranium",
+      "LandmarkT"
+    ],
+    "Tundra+Azerite+Manufactory": [
+      "Tundra",
+      "Oil",
+      "ManufactoryT"
+    ],
+    "Tundra+Elementium+Manufactory": [
+      "Tundra",
+      "Aluminum",
+      "ManufactoryT"
+    ],
+    "Tundra+Arcane Crystals+Manufactory": [
+      "Tundra",
+      "Uranium",
+      "ManufactoryT"
+    ],
+    "Tundra+Rugged Leather+Manufactory": [
+      "Tundra",
+      "FursT",
+      "ManufactoryT"
+    ],
+    "Tundra+Truesilver+Manufactory": [
+      "Tundra",
+      "Silver",
+      "ManufactoryT"
+    ],
+    "Tundra+Thorium+Manufactory": [
+      "Tundra",
+      "Coal",
+      "ManufactoryT"
+    ],
+    "Tundra+Mageweave+Manufactory": [
+      "Tundra",
+      "Silk",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Azerite+Manufactory": [
+      "Tundra+Hill",
+      "Oil",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Elementium+Manufactory": [
+      "Tundra+Hill",
+      "Aluminum",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Manufactory": [
+      "Tundra+Hill",
+      "Uranium",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Rugged Leather+Manufactory": [
+      "Tundra+Hill",
+      "FursT",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Truesilver+Manufactory": [
+      "Tundra+Hill",
+      "Silver",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Thorium+Manufactory": [
+      "Tundra+Hill",
+      "Coal",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Mageweave+Manufactory": [
+      "Tundra+Hill",
+      "Silk",
+      "ManufactoryT"
+    ],
+    "Snow+Azerite+Manufactory": [
+      "Snow",
+      "Oil",
+      "ManufactoryT"
+    ],
+    "Snow+Elementium+Manufactory": [
+      "Snow",
+      "Aluminum",
+      "ManufactoryT"
+    ],
+    "Snow+Arcane Crystals+Manufactory": [
+      "Snow",
+      "Uranium",
+      "ManufactoryT"
+    ],
+    "Snow+Hill+Azerite+Manufactory": [
+      "Snow+Hill",
+      "Oil",
+      "ManufactoryT"
+    ],
+    "Snow+Hill+Elementium+Manufactory": [
+      "Snow+Hill",
+      "Aluminum",
+      "ManufactoryT"
+    ],
+    "Snow+Hill+Arcane Crystals+Manufactory": [
+      "Snow+Hill",
+      "Uranium",
+      "ManufactoryT"
+    ],
+    "Tundra+Azerite+Trading post": [
+      "Tundra",
+      "Oil",
+      "Trading postT"
+    ],
+    "Tundra+Elementium+Trading post": [
+      "Tundra",
+      "Aluminum",
+      "Trading postT"
+    ],
+    "Tundra+Arcane Crystals+Trading post": [
+      "Tundra",
+      "Uranium",
+      "Trading postT"
+    ],
+    "Tundra+Rugged Leather+Trading post": [
+      "Tundra",
+      "FursT",
+      "Trading postT"
+    ],
+    "Tundra+Truesilver+Trading post": [
+      "Tundra",
+      "Silver",
+      "Trading postT"
+    ],
+    "Tundra+Thorium+Trading post": [
+      "Tundra",
+      "Coal",
+      "Trading postT"
+    ],
+    "Tundra+Mageweave+Trading post": [
+      "Tundra",
+      "Silk",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Azerite+Trading post": [
+      "Tundra+Hill",
+      "Oil",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Elementium+Trading post": [
+      "Tundra+Hill",
+      "Aluminum",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Trading post": [
+      "Tundra+Hill",
+      "Uranium",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Rugged Leather+Trading post": [
+      "Tundra+Hill",
+      "FursT",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Truesilver+Trading post": [
+      "Tundra+Hill",
+      "Silver",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Thorium+Trading post": [
+      "Tundra+Hill",
+      "Coal",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Mageweave+Trading post": [
+      "Tundra+Hill",
+      "Silk",
+      "Trading postT"
+    ],
+    "Tundra+Azerite+Forest+Trading post": [
+      "Tundra",
+      "Oil",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Elementium+Forest+Trading post": [
+      "Tundra",
+      "Aluminum",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Arcane Crystals+Forest+Trading post": [
+      "Tundra",
+      "Uranium",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Rugged Leather+Forest+Trading post": [
+      "Tundra",
+      "FursT",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Truesilver+Forest+Trading post": [
+      "Tundra",
+      "Silver",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Thorium+Forest+Trading post": [
+      "Tundra",
+      "Coal",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Mageweave+Forest+Trading post": [
+      "Tundra",
+      "Silk",
+      "ForestT",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Azerite+Forest+Trading post": [
+      "Tundra+Hill",
+      "Oil",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Elementium+Forest+Trading post": [
+      "Tundra+Hill",
+      "Aluminum",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Forest+Trading post": [
+      "Tundra+Hill",
+      "Uranium",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Rugged Leather+Forest+Trading post": [
+      "Tundra+Hill",
+      "FursT",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Truesilver+Forest+Trading post": [
+      "Tundra+Hill",
+      "Silver",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Thorium+Forest+Trading post": [
+      "Tundra+Hill",
+      "Coal",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Hill+Mageweave+Forest+Trading post": [
+      "Tundra+Hill",
+      "Silk",
+      "ForestTH",
+      "Trading postT"
+    ],
+    "Tundra+Azerite+Forest+Lumber mill": [
+      "Tundra",
+      "Oil",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Elementium+Forest+Lumber mill": [
+      "Tundra",
+      "Aluminum",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Arcane Crystals+Forest+Lumber mill": [
+      "Tundra",
+      "Uranium",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Rugged Leather+Forest+Lumber mill": [
+      "Tundra",
+      "FursT",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Truesilver+Forest+Lumber mill": [
+      "Tundra",
+      "Silver",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Thorium+Forest+Lumber mill": [
+      "Tundra",
+      "Coal",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Mageweave+Forest+Lumber mill": [
+      "Tundra",
+      "Silk",
+      "ForestT",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Azerite+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Oil",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Elementium+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Aluminum",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Uranium",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Rugged Leather+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "FursT",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Truesilver+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Silver",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Thorium+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Coal",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Hill+Mageweave+Forest+Lumber mill": [
+      "Tundra+Hill",
+      "Silk",
+      "ForestTH",
+      "Lumber millT"
+    ],
+    "Tundra+Elementium+Mine": [
+      "Tundra",
+      "Aluminum",
+      "MineT"
+    ],
+    "Tundra+Arcane Crystals+Mine": [
+      "Tundra",
+      "Uranium",
+      "MineT"
+    ],
+    "Tundra+Truesilver+Mine": [
+      "Tundra",
+      "Silver",
+      "MineT"
+    ],
+    "Tundra+Thorium+Mine": [
+      "Tundra",
+      "Coal",
+      "MineT"
+    ],
+    "Tundra+Hill+Elementium+Mine": [
+      "Tundra+Hill",
+      "Aluminum",
+      "MineT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Mine": [
+      "Tundra+Hill",
+      "Uranium",
+      "MineT"
+    ],
+    "Tundra+Hill+Truesilver+Mine": [
+      "Tundra+Hill",
+      "Silver",
+      "MineT"
+    ],
+    "Tundra+Hill+Thorium+Mine": [
+      "Tundra+Hill",
+      "Coal",
+      "MineT"
+    ],
+    "Snow+Elementium+Mine": [
+      "Snow",
+      "Aluminum",
+      "MineT"
+    ],
+    "Snow+Arcane Crystals+Mine": [
+      "Snow",
+      "Uranium",
+      "MineT"
+    ],
+    "Snow+Hill+Elementium+Mine": [
+      "Snow+Hill",
+      "Aluminum",
+      "MineT"
+    ],
+    "Snow+Hill+Arcane Crystals+Mine": [
+      "Snow+Hill",
+      "Uranium",
+      "MineT"
+    ],
+    "Tundra+Azerite+Fort": [
+      "Tundra",
+      "Oil",
+      "FortT"
+    ],
+    "Tundra+Elementium+Fort": [
+      "Tundra",
+      "Aluminum",
+      "FortT"
+    ],
+    "Tundra+Arcane Crystals+Fort": [
+      "Tundra",
+      "Uranium",
+      "FortT"
+    ],
+    "Tundra+Rugged Leather+Fort": [
+      "Tundra",
+      "FursT",
+      "FortT"
+    ],
+    "Tundra+Truesilver+Fort": [
+      "Tundra",
+      "Silver",
+      "FortT"
+    ],
+    "Tundra+Thorium+Fort": [
+      "Tundra",
+      "Coal",
+      "FortT"
+    ],
+    "Tundra+Mageweave+Fort": [
+      "Tundra",
+      "Silk",
+      "FortT"
+    ],
+    "Tundra+Hill+Azerite+Fort": [
+      "Tundra+Hill",
+      "Oil",
+      "FortT"
+    ],
+    "Tundra+Hill+Elementium+Fort": [
+      "Tundra+Hill",
+      "Aluminum",
+      "FortT"
+    ],
+    "Tundra+Hill+Arcane Crystals+Fort": [
+      "Tundra+Hill",
+      "Uranium",
+      "FortT"
+    ],
+    "Tundra+Hill+Rugged Leather+Fort": [
+      "Tundra+Hill",
+      "FursT",
+      "FortT"
+    ],
+    "Tundra+Hill+Truesilver+Fort": [
+      "Tundra+Hill",
+      "Silver",
+      "FortT"
+    ],
+    "Tundra+Hill+Thorium+Fort": [
+      "Tundra+Hill",
+      "Coal",
+      "FortT"
+    ],
+    "Tundra+Hill+Mageweave+Fort": [
+      "Tundra+Hill",
+      "Silk",
+      "FortT"
+    ],
+    "Snow+Azerite+Fort": [
+      "Snow",
+      "Oil",
+      "FortT"
+    ],
+    "Snow+Elementium+Fort": [
+      "Snow",
+      "Aluminum",
+      "FortT"
+    ],
+    "Snow+Arcane Crystals+Fort": [
+      "Snow",
+      "Uranium",
+      "FortT"
+    ],
+    "Snow+Hill+Azerite+Fort": [
+      "Snow+Hill",
+      "Oil",
+      "FortT"
+    ],
+    "Snow+Hill+Elementium+Fort": [
+      "Snow+Hill",
+      "Aluminum",
+      "FortT"
+    ],
+    "Snow+Hill+Arcane Crystals+Fort": [
+      "Snow+Hill",
+      "Uranium",
+      "FortT"
+    ],
+    "Tundra+Azerite+GI": [
+      "Tundra",
+      "Oil",
+      "GIT"
+    ],
+    "Tundra+Elementium+GI": [
+      "Tundra",
+      "Aluminum",
+      "GIT"
+    ],
+    "Tundra+Arcane Crystals+GI": [
+      "Tundra",
+      "Uranium",
+      "GIT"
+    ],
+    "Tundra+Rugged Leather+GI": [
+      "Tundra",
+      "FursT",
+      "GIT"
+    ],
+    "Tundra+Truesilver+GI": [
+      "Tundra",
+      "Silver",
+      "GIT"
+    ],
+    "Tundra+Thorium+GI": [
+      "Tundra",
+      "Coal",
+      "GIT"
+    ],
+    "Tundra+Mageweave+GI": [
+      "Tundra",
+      "Silk",
+      "GIT"
+    ],
+    "Tundra+Hill+Azerite+GI": [
+      "Tundra+Hill",
+      "Oil",
+      "GIT"
+    ],
+    "Tundra+Hill+Elementium+GI": [
+      "Tundra+Hill",
+      "Aluminum",
+      "GIT"
+    ],
+    "Tundra+Hill+Arcane Crystals+GI": [
+      "Tundra+Hill",
+      "Uranium",
+      "GIT"
+    ],
+    "Tundra+Hill+Rugged Leather+GI": [
+      "Tundra+Hill",
+      "FursT",
+      "GIT"
+    ],
+    "Tundra+Hill+Truesilver+GI": [
+      "Tundra+Hill",
+      "Silver",
+      "GIT"
+    ],
+    "Tundra+Hill+Thorium+GI": [
+      "Tundra+Hill",
+      "Coal",
+      "GIT"
+    ],
+    "Tundra+Hill+Mageweave+GI": [
+      "Tundra+Hill",
+      "Silk",
+      "GIT"
+    ],
+    "Snow+Azerite+GI": [
+      "Snow",
+      "Oil",
+      "GIT"
+    ],
+    "Snow+Elementium+GI": [
+      "Snow",
+      "Aluminum",
+      "GIT"
+    ],
+    "Snow+Arcane Crystals+GI": [
+      "Snow",
+      "Uranium",
+      "GIT"
+    ],
+    "Snow+Hill+Azerite+GI": [
+      "Snow+Hill",
+      "Oil",
+      "GIT"
+    ],
+    "Snow+Hill+Elementium+GI": [
+      "Snow+Hill",
+      "Aluminum",
+      "GIT"
+    ],
+    "Snow+Hill+Arcane Crystals+GI": [
+      "Snow+Hill",
+      "Uranium",
+      "GIT"
+    ]
+  }
+}

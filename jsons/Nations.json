@@ -1,0 +1,1105 @@
+[
+  {
+    "name": "Spectator",
+    "outerColor": [
+      255,
+      255,
+      255
+    ]
+  },
+  {
+    "name": "Humans",
+    "leaderName": "Anduin Wrynn",
+    "adjective": [
+      "Human"
+    ],
+    "startBias": [
+      "Grassland"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Anduin Wrynn",
+    "startIntroPart1": "Hail, Anduin Wrynn, High King of Stormwind and leader of the Alliance. Your people have endured orcish invasion, plague and cataclysm, and each time they have rebuilt from the ashes, stone by stone and law by law.",
+    "startIntroPart2": "Will you unite the kingdoms of men once more, and lead them to a lasting peace?",
+    "declaringWar": "I take no joy in this. But Stormwind will defend what is hers.",
+    "attacked": "You will find the Lion of Stormwind still has teeth.",
+    "defeated": "The Light... it fades. Stormwind is yours.",
+    "denounced": "Your deeds betray every promise you have made.",
+    "introduction": "Greetings. I am Anduin Wrynn, King of Stormwind. May the Light guide us both.",
+    "neutralHello": "Well met, friend.",
+    "hateHello": "You again. Speak quickly.",
+    "tradeRequest": "Stormwind's merchants have goods to offer. Shall we trade?",
+    "outerColor": [
+      24,
+      55,
+      130
+    ],
+    "innerColor": [
+      235,
+      195,
+      70
+    ],
+    "favoredReligion": "Holy Light",
+    "uniqueName": "The Human Spirit",
+    "uniques": [
+      "[-50]% City-State Influence degradation",
+      "Resting point for Influence with City-States is increased by [20]",
+      "[+15]% Great Person generation [in all cities]"
+    ],
+    "cities": [
+      "Stormwind City",
+      "Lordaeron",
+      "Goldshire",
+      "Lakeshire",
+      "Darkshire",
+      "Sentinel Hill",
+      "Northshire",
+      "Moonbrook",
+      "Stratholme",
+      "Andorhal",
+      "Hearthglen",
+      "Southshore",
+      "Tyr's Hand",
+      "Caer Darrow",
+      "Alterac",
+      "Nethergarde Keep",
+      "Morgan's Vigil",
+      "Durnholde Keep",
+      "Eastvale",
+      "Raven Hill",
+      "Westbrook",
+      "Hammerfall",
+      "Corin's Crossing",
+      "Stormwind Harbor",
+      "Valiance Keep",
+      "Wildhammer Stronghold",
+      "Westguard Keep"
+    ]
+  },
+  {
+    "name": "Orcs",
+    "leaderName": "Thrall",
+    "adjective": [
+      "Orcish"
+    ],
+    "startBias": [
+      "Plains"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Thrall",
+    "startIntroPart1": "Lok'tar, Thrall, Warchief of the Horde. Freed from the internment camps and the demon blood that once enslaved your people, you led the orcs across the sea to forge a new home in the red land of Durotar.",
+    "startIntroPart2": "Will the Horde rise as a free and honorable people, or will its old bloodlust claim it again?",
+    "declaringWar": "The drums of war are beating. The Horde is coming for you!",
+    "attacked": "You dare strike the Horde? You will regret it.",
+    "defeated": "We are defeated... but the spirits will remember our courage.",
+    "denounced": "You have no honor.",
+    "introduction": "I am Thrall, son of Durotan, Warchief of the Horde. Speak your business.",
+    "neutralHello": "The Horde greets you.",
+    "hateHello": "What do you want, coward?",
+    "tradeRequest": "Durotar has goods to trade. Will you deal fairly?",
+    "outerColor": [
+      95,
+      25,
+      15
+    ],
+    "innerColor": [
+      215,
+      215,
+      215
+    ],
+    "favoredReligion": "Shamanism",
+    "uniqueName": "Blood Fury",
+    "uniques": [
+      "[+15]% Strength <for [Melee] units> <when attacking>",
+      "Earn [50]% of killed [Military] unit's [Strength] as [Culture]"
+    ],
+    "cities": [
+      "Orgrimmar",
+      "Razor Hill",
+      "Sen'jin Watch",
+      "Crossroads",
+      "Grom'gol",
+      "Kargath",
+      "Hammerfall Camp",
+      "Splintertree Post",
+      "Bloodvenom Post",
+      "Warsong Hold",
+      "Agmar's Hammer",
+      "Garrosh'ar Point",
+      "Kor'kron Vanguard",
+      "Stonard",
+      "Bladefist Bay",
+      "Durnholde Camp",
+      "Blackrock Camp",
+      "Dragonmaw Port",
+      "Zoram'gar Outpost",
+      "Valormok"
+    ]
+  },
+  {
+    "name": "Night Elves",
+    "leaderName": "Tyrande Whisperwind",
+    "adjective": [
+      "Night Elven"
+    ],
+    "startBias": [
+      "Forest"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Tyrande Whisperwind",
+    "startIntroPart1": "Elune's blessings upon you, Tyrande Whisperwind, High Priestess and ruler of the Kaldorei. For ten thousand years your sentinels have guarded the forests of Kalimdor while the younger races squabbled.",
+    "startIntroPart2": "Will the children of the stars endure another age, or will their ancient forests fall?",
+    "declaringWar": "The Sentinels will hunt you through every grove.",
+    "attacked": "Elune's wrath will find you.",
+    "defeated": "The forests weep... we are undone.",
+    "denounced": "You have betrayed the trust of the forest.",
+    "introduction": "I am Tyrande Whisperwind. Tread lightly in the lands of the Kaldorei.",
+    "neutralHello": "Ishnu-alah.",
+    "hateHello": "You are not welcome in these woods.",
+    "tradeRequest": "The Kaldorei will consider a fair exchange.",
+    "outerColor": [
+      60,
+      30,
+      110
+    ],
+    "innerColor": [
+      150,
+      220,
+      230
+    ],
+    "favoredReligion": "Elune",
+    "uniqueName": "Shadowmeld",
+    "uniques": [
+      "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
+      "[+20]% Strength <for [Land] units> <when fighting in [Forest] tiles>"
+    ],
+    "cities": [
+      "Darnassus",
+      "Astranaar",
+      "Auberdine",
+      "Nighthaven",
+      "Shadowsong Shrine",
+      "Lor'danel",
+      "Nijel's Point",
+      "Talonbranch Glade",
+      "Shadowglen",
+      "Dolanaar",
+      "Rut'theran Village",
+      "Forest Song",
+      "Thalanaar",
+      "Silverwind Refuge",
+      "Stars' Rest",
+      "Eldre'thalas",
+      "Zin-Azshari",
+      "Suramar",
+      "Ameth'Aran",
+      "Nordrassil Glade"
+    ]
+  },
+  {
+    "name": "Dwarves",
+    "leaderName": "Magni Bronzebeard",
+    "adjective": [
+      "Dwarven"
+    ],
+    "startBias": [
+      "Hill"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Magni Bronzebeard",
+    "startIntroPart1": "Hail, Magni Bronzebeard, King of Ironforge! Deep beneath the snowy peaks of Khaz Modan your people hammer steel, brew ale and dig for the secrets of their Titan makers.",
+    "startIntroPart2": "Will the mountain kingdom uncover its true origins and prosper?",
+    "declaringWar": "Ye've made a grave mistake. Ironforge marches!",
+    "attacked": "Ye picked the wrong dwarf to anger!",
+    "defeated": "Ironforge... has fallen. Ach.",
+    "denounced": "Ye're no friend o' Ironforge.",
+    "introduction": "I'm Magni Bronzebeard, King o' Ironforge. Pull up a stool!",
+    "neutralHello": "Well met, friend!",
+    "hateHello": "Ach, it's you. What d'ye want?",
+    "tradeRequest": "Fancy a trade? Ironforge's forges are always busy.",
+    "outerColor": [
+      90,
+      60,
+      35
+    ],
+    "innerColor": [
+      225,
+      145,
+      40
+    ],
+    "favoredReligion": "Titans",
+    "uniqueName": "Mountain King",
+    "uniques": [
+      "Units ignore terrain costs when moving into any tile with Hills",
+      "[+1 Production] from [Mine] tiles [in all cities]"
+    ],
+    "cities": [
+      "Ironforge",
+      "Kharanos",
+      "Thelsamar",
+      "Menethil Harbor",
+      "Aerie Peak",
+      "Thandol Span",
+      "Dun Algaz",
+      "Dun Modr",
+      "Kelli's Camp",
+      "Thorium Point",
+      "Gol'Bolar Quarry",
+      "Anvilmar",
+      "Brewnall Village",
+      "Frostmane Hold",
+      "Kharanos Hold",
+      "Bael'dun Keep",
+      "Dun Niffelem",
+      "Frosthold",
+      "Thunderbrew Village",
+      "Shadowforge City"
+    ]
+  },
+  {
+    "name": "Gnomes",
+    "leaderName": "Gelbin Mekkatorque",
+    "adjective": [
+      "Gnomish"
+    ],
+    "startBias": [
+      "Tundra"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Gelbin Mekkatorque",
+    "startIntroPart1": "Greetings, High Tinker Gelbin Mekkatorque! Your brilliant, diminutive people built a marvelous city of machines beneath Dun Morogh, and lost it to treachery and radiation.",
+    "startIntroPart2": "Will gnomish ingenuity reclaim Gnomeregan and engineer a brighter future?",
+    "declaringWar": "Gnomeregan forever! Deploy the battle-mechs!",
+    "attacked": "That was a miscalculation on your part!",
+    "defeated": "Our calculations... were off.",
+    "denounced": "Your behavior has been logged as unacceptable.",
+    "introduction": "High Tinker Mekkatorque, at your service! Mind the gears.",
+    "neutralHello": "Salutations!",
+    "hateHello": "Oh. It's you. Hmph.",
+    "tradeRequest": "We've invented something you need. Care to trade?",
+    "outerColor": [
+      38,
+      133,
+      133
+    ],
+    "innerColor": [
+      250,
+      207,
+      231
+    ],
+    "favoredReligion": "Titans",
+    "uniqueName": "Expansive Mind",
+    "uniques": [
+      "[+10]% [Science] [in all cities]",
+      "[+25]% Production when constructing [Siege] units [in all cities]"
+    ],
+    "cities": [
+      "Gnomeregan",
+      "Tinker Town",
+      "New Tinkertown",
+      "Mekkatorque's Workshop",
+      "Steelgrill's Depot",
+      "Fizzcrank Airstrip",
+      "Toshley's Station",
+      "Gnomish Spire",
+      "Cogspin Station",
+      "Sprocketport",
+      "Gearshift Point",
+      "Whirligig Hollow",
+      "Boltbreak Junction",
+      "Fizzle Village",
+      "Springvalve",
+      "Tinkerton"
+    ]
+  },
+  {
+    "name": "Tauren",
+    "leaderName": "Cairne Bloodhoof",
+    "adjective": [
+      "Tauren"
+    ],
+    "startBias": [
+      "Plains"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Cairne Bloodhoof",
+    "startIntroPart1": "May the Earth Mother watch over you, Cairne Bloodhoof, High Chieftain of the Tauren. Your people wandered the plains of Kalimdor for ages, hunted by centaur, until the Horde helped them find a home in Mulgore.",
+    "startIntroPart2": "Will the Tauren live in harmony with the land and see their people thrive?",
+    "declaringWar": "We did not seek this war, but we will finish it.",
+    "attacked": "You will feel the wrath of the Earth Mother!",
+    "defeated": "The Earth Mother calls us home.",
+    "denounced": "You walk a dishonorable path.",
+    "introduction": "I am Cairne Bloodhoof. The winds bring you to Mulgore, traveler.",
+    "neutralHello": "Peace be upon you.",
+    "hateHello": "Your presence troubles the spirits.",
+    "tradeRequest": "Mulgore offers its bounty. What do you offer in return?",
+    "outerColor": [
+      150,
+      95,
+      40
+    ],
+    "innerColor": [
+      250,
+      235,
+      200
+    ],
+    "favoredReligion": "Earth Mother",
+    "uniqueName": "Endurance",
+    "uniques": [
+      "[+1 Food] from [Pasture] tiles [in all cities]",
+      "[+10]% Strength <for [Land] units> <when defending>"
+    ],
+    "cities": [
+      "Thunder Bluff",
+      "Bloodhoof Village",
+      "Camp Taurajo",
+      "Camp Mojache",
+      "Freewind Post",
+      "Sun Rock Retreat",
+      "Camp Narache",
+      "Camp Una'fe",
+      "Taurajo Ruins",
+      "Desolation Hold",
+      "Camp Winterhoof",
+      "Bloodhoof Camp",
+      "Taunka'le Village",
+      "Camp Oneqwah",
+      "Ragetotem Rise",
+      "Highmountain"
+    ]
+  },
+  {
+    "name": "Trolls",
+    "leaderName": "Vol'jin",
+    "adjective": [
+      "Troll"
+    ],
+    "startBias": [
+      "Jungle"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Vol'jin",
+    "startIntroPart1": "The loa smile upon you, Vol'jin, chieftain of the Darkspear. Once your people ruled great empires spanning Azeroth; now the scattered tribes look to you to lead them out of the shadows.",
+    "startIntroPart2": "Will the trolls rise to reclaim their ancient glory?",
+    "declaringWar": "Da Darkspear be comin' for ya, mon!",
+    "attacked": "Ya gonna regret dat, mon.",
+    "defeated": "Da spirits... dey be waitin' for me.",
+    "denounced": "Ya got no respect, mon.",
+    "introduction": "I be Vol'jin, chief of da Darkspear. What ya want?",
+    "neutralHello": "Stay away from da voodoo.",
+    "hateHello": "Ya be testin' my patience.",
+    "tradeRequest": "Got some things ya might want. Wanna trade, mon?",
+    "outerColor": [
+      20,
+      110,
+      90
+    ],
+    "innerColor": [
+      250,
+      210,
+      90
+    ],
+    "favoredReligion": "Loa",
+    "uniqueName": "Regeneration",
+    "uniques": [
+      "[+10] HP when healing <for [Land] units>",
+      "[+15]% Strength <for [Land] units> <when fighting in [Jungle] tiles>"
+    ],
+    "cities": [
+      "Sen'jin Village",
+      "Darkspear Isle",
+      "Zul'Aman",
+      "Zul'Farrak",
+      "Zul'Drak",
+      "Gundrak",
+      "Zuldazar",
+      "Jintha'Alor",
+      "Shadra'Alor",
+      "Zul'Mashar",
+      "Hiri'watha",
+      "Zun'watha",
+      "Zul'Dare",
+      "Kalai Ruins",
+      "Zul'Kunda",
+      "Bambala",
+      "Gurubashi Arena",
+      "Mizjah Ruins",
+      "Balia'mah Ruins",
+      "Shadowpine Hold"
+    ]
+  },
+  {
+    "name": "Blood Elves",
+    "leaderName": "Lor'themar Theron",
+    "adjective": [
+      "Blood Elven"
+    ],
+    "startBias": [
+      "Forest"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Lor'themar Theron",
+    "startIntroPart1": "Bal'a dash, Lor'themar Theron, Regent Lord of Quel'Thalas. Your people survived the Scourge's onslaught and the death of the Sunwell, and renamed themselves in honor of the fallen.",
+    "startIntroPart2": "Will the sin'dorei restore the glory of Silvermoon and master their thirst for magic?",
+    "declaringWar": "Quel'Thalas will not suffer your insolence any longer.",
+    "attacked": "You will regret this.",
+    "defeated": "Silvermoon... falls again.",
+    "denounced": "Your actions are beneath contempt.",
+    "introduction": "I am Lor'themar Theron, Regent Lord of Quel'Thalas.",
+    "neutralHello": "Bal'a dash, malanore.",
+    "hateHello": "What do you want now?",
+    "tradeRequest": "Silvermoon's enchanters have wares to offer.",
+    "outerColor": [
+      170,
+      25,
+      35
+    ],
+    "innerColor": [
+      245,
+      205,
+      70
+    ],
+    "favoredReligion": "Light of the Sunwell",
+    "uniqueName": "Arcane Torrent",
+    "uniques": [
+      "[+2 Science] from every [Library]",
+      "[+15]% [Culture] [in all cities]"
+    ],
+    "cities": [
+      "Silvermoon City",
+      "Falconwing Square",
+      "Fairbreeze Village",
+      "Tranquillien",
+      "Farstrider Retreat",
+      "Suncrown Village",
+      "Goldenbough Pass",
+      "Saltheril's Haven",
+      "Sanctum of the Sun",
+      "Isle of Quel'Danas",
+      "Windrunner Village",
+      "Sunsail Anchorage",
+      "Duskwither Grounds",
+      "Thuron's Livery",
+      "Shalandis Isle",
+      "Elrendar Crossing"
+    ]
+  },
+  {
+    "name": "High Elves",
+    "leaderName": "Anasterian Sunstrider",
+    "adjective": [
+      "High Elven"
+    ],
+    "startBias": [
+      "Forest"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Anasterian Sunstrider",
+    "startIntroPart1": "Hail, Anasterian Sunstrider, King of Quel'Thalas. Your quel'dorei crossed the sea in ancient times and raised a shining kingdom around the Sunwell, guarded by runestones and rangers.",
+    "startIntroPart2": "Will the high elves keep their realm eternal while the world around them changes?",
+    "declaringWar": "The rangers of Quel'Thalas will see you fall.",
+    "attacked": "You strike at the eternal kingdom? Foolish.",
+    "defeated": "The light of Quel'Thalas dims...",
+    "denounced": "You have proven yourself unworthy of our regard.",
+    "introduction": "I am Anasterian Sunstrider, King of Quel'Thalas.",
+    "neutralHello": "Shorel'aran.",
+    "hateHello": "Your presence offends us.",
+    "tradeRequest": "Our artisans may part with some treasures, for a price.",
+    "outerColor": [
+      235,
+      235,
+      240
+    ],
+    "innerColor": [
+      40,
+      90,
+      190
+    ],
+    "favoredReligion": "Light of the Sunwell",
+    "uniqueName": "Children of the Sunwell",
+    "uniques": [
+      "[+20]% Strength <for [Archery] units>",
+      "[+1] Sight <for [Archery] units>"
+    ],
+    "cities": [
+      "Quel'Thalas",
+      "Quel'Danas",
+      "Windrunner Spire",
+      "An'owyn",
+      "Elrendar",
+      "Thalassian Pass",
+      "Quel'Lithien Lodge",
+      "Andilien Estate",
+      "Sunsail Isle",
+      "Thas'alah",
+      "Farstrider Lodge",
+      "Dawnstar Spire"
+    ]
+  },
+  {
+    "name": "Pandaren",
+    "leaderName": "Emperor Shaohao",
+    "adjective": [
+      "Pandaren"
+    ],
+    "startBias": [
+      "Coast"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Emperor Shaohao",
+    "startIntroPart1": "May the winds carry you far, Emperor Shaohao. Your pandaren have lived in harmony behind the mists for ten thousand years, guided by the August Celestials.",
+    "startIntroPart2": "Will your people stay at peace, or must they step out of the mists into a world at war?",
+    "declaringWar": "Balance must be restored, by force if need be.",
+    "attacked": "You have disturbed our harmony.",
+    "defeated": "The mists close around us...",
+    "denounced": "Your path has strayed far from balance.",
+    "introduction": "I am Shaohao, Emperor of Pandaria. Share a cup of tea with me.",
+    "neutralHello": "Peace and good fortune to you.",
+    "hateHello": "Hmm. You again.",
+    "tradeRequest": "Our brewers have something special. Shall we trade?",
+    "outerColor": [
+      25,
+      25,
+      25
+    ],
+    "innerColor": [
+      120,
+      210,
+      140
+    ],
+    "favoredReligion": "August Celestials",
+    "uniqueName": "Inner Peace",
+    "uniques": [
+      "[+15]% [Food] [in all cities]",
+      "[+1 Faith] from every [Shrine]"
+    ],
+    "cities": [
+      "Shrine of Two Moons",
+      "Halfhill",
+      "Pang's Stead",
+      "Dawn's Blossom",
+      "Binan Village",
+      "Stoneplow",
+      "Kun-Lai Summit",
+      "One Keg",
+      "Zouchin Village",
+      "Thunder Cleft",
+      "Niuzao Temple",
+      "Wandering Isle",
+      "Peak of Serenity",
+      "Jade Temple Grounds",
+      "Pearlfin Village",
+      "Mudmug's Place"
+    ]
+  },
+  {
+    "name": "Forsaken",
+    "leaderName": "Sylvanas Windrunner",
+    "adjective": [
+      "Forsaken"
+    ],
+    "startBias": [
+      "Marsh"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Sylvanas Windrunner",
+    "startIntroPart1": "Rise, Sylvanas Windrunner, the Banshee Queen. Freed from the Lich King's will, your Forsaken have claimed the ruins of Lordaeron and answer to no one but you.",
+    "startIntroPart2": "Will the Forsaken find their place in a world that fears them?",
+    "declaringWar": "Death comes for you.",
+    "attacked": "You will join us in death.",
+    "defeated": "Darkness... welcomes us back.",
+    "denounced": "You will regret crossing the Banshee Queen.",
+    "introduction": "I am Sylvanas Windrunner. Choose your words carefully, living one.",
+    "neutralHello": "What is it?",
+    "hateHello": "Leave me, mortal.",
+    "tradeRequest": "The Forsaken may have use for your goods.",
+    "outerColor": [
+      45,
+      45,
+      55
+    ],
+    "innerColor": [
+      150,
+      230,
+      90
+    ],
+    "favoredReligion": "Forgotten Shadow",
+    "uniqueName": "Will of the Forsaken",
+    "uniques": [
+      "[+25]% Strength <for [Land] units> <when below [50] HP>",
+      "Earn [50]% of killed [Military] unit's [Strength] as [Faith]"
+    ],
+    "cities": [
+      "Undercity",
+      "Brill",
+      "The Sepulcher",
+      "Tarren Mill",
+      "Deathknell",
+      "Andorhal Ruins",
+      "Venomweb Vale",
+      "Forsaken High Command",
+      "Vengeance Landing",
+      "New Agamand",
+      "Galen's Fall",
+      "Bulwark",
+      "Ambermill",
+      "Forsaken Rear Guard",
+      "Pyrewood Village",
+      "Fenris Isle"
+    ]
+  },
+  {
+    "name": "Draenei",
+    "leaderName": "Velen",
+    "adjective": [
+      "Draenei"
+    ],
+    "startBias": [
+      "Coast"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Velen",
+    "startIntroPart1": "Light guide you, Prophet Velen. For twenty-five thousand years your people fled the Burning Legion across the stars, until the Exodar crashed upon the shores of Azeroth.",
+    "startIntroPart2": "Will the draenei find a lasting home at last?",
+    "declaringWar": "The Light demands justice. We will deliver it.",
+    "attacked": "You have chosen the path of darkness.",
+    "defeated": "We will rise again, as we always have.",
+    "denounced": "Your actions serve only darkness.",
+    "introduction": "I am Velen, Prophet of the draenei. The Light has foretold our meeting.",
+    "neutralHello": "Light be with you.",
+    "hateHello": "I sense ill intent in you.",
+    "tradeRequest": "The Exodar can spare some crystals. Shall we trade?",
+    "outerColor": [
+      120,
+      90,
+      190
+    ],
+    "innerColor": [
+      230,
+      240,
+      255
+    ],
+    "favoredReligion": "Holy Light",
+    "uniqueName": "Gift of the Naaru",
+    "uniques": [
+      "[+1 Faith] from every [Shrine]",
+      "[+1 Faith] from every [Temple]"
+    ],
+    "cities": [
+      "The Exodar",
+      "Azure Watch",
+      "Blood Watch",
+      "Odesyus' Landing",
+      "Ammen Vale",
+      "Stillpine Hold",
+      "Wrathscale Point",
+      "Vindicator's Rest",
+      "Emberglade",
+      "Silvermyst Isle",
+      "Bristlelimb Village",
+      "Geezle's Camp",
+      "Kessel's Crossing",
+      "Fairbridge Strand"
+    ]
+  },
+  {
+    "name": "Goblins",
+    "leaderName": "Jastor Gallywix",
+    "adjective": [
+      "Goblin"
+    ],
+    "startBias": [
+      "Coast"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Jastor Gallywix",
+    "startIntroPart1": "Time is money, Trade Prince Gallywix! You talked, bribed and swindled your way to the top of the Bilgewater Cartel, and now the rest of Azeroth is your marketplace.",
+    "startIntroPart2": "Will the goblins buy their way to greatness, or blow themselves up trying?",
+    "declaringWar": "Business is business. And business says WAR!",
+    "attacked": "You're gonna pay for that. With interest!",
+    "defeated": "This... was a bad investment.",
+    "denounced": "You're cut off. No more credit!",
+    "introduction": "Trade Prince Gallywix! Pleasure doin' business with ya. Probably.",
+    "neutralHello": "Whaddya want?",
+    "hateHello": "You're bad for business.",
+    "tradeRequest": "Have I got a deal for you!",
+    "outerColor": [
+      60,
+      130,
+      40
+    ],
+    "innerColor": [
+      250,
+      210,
+      40
+    ],
+    "favoredReligion": "Shamanism",
+    "uniqueName": "Time Is Money",
+    "uniques": [
+      "[+20]% [Gold] [in all cities]",
+      "[+1 Gold] from every [Trading post]"
+    ],
+    "cities": [
+      "Bilgewater Harbor",
+      "Kezan",
+      "Undermine",
+      "Gadgetzan Docks",
+      "Azshara Port",
+      "Bilgewater Port",
+      "Steamwheedle Fleet",
+      "Mudsprocket",
+      "Fizzcrank Depot",
+      "Bootlegger Outpost",
+      "Kaja'Cola Plant",
+      "Gallywix Docks",
+      "Lost Isles"
+    ]
+  },
+  {
+    "name": "Worgen",
+    "leaderName": "Genn Greymane",
+    "adjective": [
+      "Gilnean"
+    ],
+    "startBias": [
+      "Forest"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Genn Greymane",
+    "startIntroPart1": "Stand fast, King Genn Greymane. Behind the great wall your kingdom stood alone, until the worgen curse turned your own people into beasts of the night.",
+    "startIntroPart2": "Will Gilneas master the curse and reclaim its pride?",
+    "declaringWar": "Gilneas will have its vengeance!",
+    "attacked": "You will feel the fury of the worgen!",
+    "defeated": "Gilneas... I failed you.",
+    "denounced": "You have shown your true colors.",
+    "introduction": "I am Genn Greymane, King of Gilneas.",
+    "neutralHello": "Good day.",
+    "hateHello": "What is it now?",
+    "tradeRequest": "Gilneas is open for trade, for now.",
+    "outerColor": [
+      60,
+      60,
+      70
+    ],
+    "innerColor": [
+      200,
+      200,
+      200
+    ],
+    "favoredReligion": "Cenarion Circle",
+    "uniqueName": "Darkflight",
+    "uniques": [
+      "[+15]% Strength <for [Land] units> <when fighting in [Forest] tiles>",
+      "[+1] Movement <for [Melee] units>"
+    ],
+    "cities": [
+      "Gilneas City",
+      "Duskhaven",
+      "Stormglen Village",
+      "Keel Harbor",
+      "Tempest's Reach",
+      "Aderic's Repose",
+      "Greymane Court",
+      "Tal'doren",
+      "Emberstone Village",
+      "Hailwood Marsh",
+      "Light's Dawn Cathedral",
+      "Northgate",
+      "Wahl Cottage",
+      "Gilneas Liberation Front Camp"
+    ]
+  },
+  {
+    "name": "Dalaran",
+    "adjective": [
+      "Dalaran"
+    ],
+    "cityStateType": "Cultured",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      80,
+      20,
+      120
+    ],
+    "innerColor": [
+      210,
+      160,
+      255
+    ],
+    "cities": [
+      "Dalaran"
+    ]
+  },
+  {
+    "name": "Theramore",
+    "adjective": [
+      "Theramore"
+    ],
+    "cityStateType": "Militaristic",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      20,
+      50,
+      110
+    ],
+    "innerColor": [
+      240,
+      240,
+      240
+    ],
+    "cities": [
+      "Theramore"
+    ]
+  },
+  {
+    "name": "Stromgarde",
+    "adjective": [
+      "Stromgarde"
+    ],
+    "cityStateType": "Militaristic",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      100,
+      15,
+      15
+    ],
+    "innerColor": [
+      230,
+      230,
+      230
+    ],
+    "cities": [
+      "Stromgarde"
+    ]
+  },
+  {
+    "name": "Gadgetzan",
+    "adjective": [
+      "Gadgetzan"
+    ],
+    "cityStateType": "Mercantile",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      190,
+      150,
+      60
+    ],
+    "innerColor": [
+      60,
+      40,
+      20
+    ],
+    "cities": [
+      "Gadgetzan"
+    ]
+  },
+  {
+    "name": "Booty Bay",
+    "adjective": [
+      "Booty Bay"
+    ],
+    "cityStateType": "Maritime",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      30,
+      90,
+      120
+    ],
+    "innerColor": [
+      240,
+      220,
+      160
+    ],
+    "cities": [
+      "Booty Bay"
+    ]
+  },
+  {
+    "name": "Ratchet",
+    "adjective": [
+      "Ratchet"
+    ],
+    "cityStateType": "Maritime",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      90,
+      70,
+      40
+    ],
+    "innerColor": [
+      240,
+      240,
+      200
+    ],
+    "cities": [
+      "Ratchet"
+    ]
+  },
+  {
+    "name": "Everlook",
+    "adjective": [
+      "Everlook"
+    ],
+    "cityStateType": "Mercantile",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      180,
+      200,
+      220
+    ],
+    "innerColor": [
+      50,
+      70,
+      100
+    ],
+    "cities": [
+      "Everlook"
+    ]
+  },
+  {
+    "name": "Steamwheedle Port",
+    "adjective": [
+      "Steamwheedle Port"
+    ],
+    "cityStateType": "Mercantile",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      120,
+      80,
+      30
+    ],
+    "innerColor": [
+      250,
+      230,
+      150
+    ],
+    "cities": [
+      "Steamwheedle Port"
+    ]
+  },
+  {
+    "name": "Light's Hope",
+    "adjective": [
+      "Light's Hope"
+    ],
+    "cityStateType": "Religious",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      240,
+      230,
+      190
+    ],
+    "innerColor": [
+      160,
+      110,
+      20
+    ],
+    "cities": [
+      "Light's Hope"
+    ]
+  },
+  {
+    "name": "Cenarion Hold",
+    "adjective": [
+      "Cenarion Hold"
+    ],
+    "cityStateType": "Religious",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      40,
+      80,
+      30
+    ],
+    "innerColor": [
+      200,
+      240,
+      150
+    ],
+    "cities": [
+      "Cenarion Hold"
+    ]
+  },
+  {
+    "name": "Argent Vanguard",
+    "adjective": [
+      "Argent Vanguard"
+    ],
+    "cityStateType": "Militaristic",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      220,
+      220,
+      230
+    ],
+    "innerColor": [
+      60,
+      90,
+      150
+    ],
+    "cities": [
+      "Argent Vanguard"
+    ]
+  },
+  {
+    "name": "Feathermoon",
+    "adjective": [
+      "Feathermoon"
+    ],
+    "cityStateType": "Cultured",
+    "declaringWar": "You leave us no choice. To arms!",
+    "attacked": "This insult will not be forgotten.",
+    "defeated": "Our walls have fallen...",
+    "outerColor": [
+      70,
+      50,
+      110
+    ],
+    "innerColor": [
+      230,
+      230,
+      250
+    ],
+    "cities": [
+      "Feathermoon"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ],
+    "uniques": [
+      "Can only heal by pillaging",
+      "Excluded from map editor",
+      "[Water] units gain the [Unable to pillage tiles] promotion"
+    ]
+  }
+]

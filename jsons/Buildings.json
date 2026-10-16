@@ -1,0 +1,1377 @@
+[
+  {
+    "name": "Palace",
+    "isNationalWonder": true,
+    "production": 3,
+    "science": 3,
+    "gold": 3,
+    "culture": 1,
+    "cityStrength": 2.5,
+    "cost": 0,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Monument",
+    "culture": 2,
+    "cost": 40,
+    "hurryCostModifier": 40,
+    "maintenance": 1,
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Granary",
+    "food": 2,
+    "maintenance": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+1 Food] from [Deer] tiles [in this city]",
+      "[+1 Food] from [Bananas] tiles [in this city]",
+      "[+1 Food] from [Wheat] tiles [in this city]"
+    ],
+    "requiredTech": "Pottery"
+  },
+  {
+    "name": "Shrine",
+    "faith": 1,
+    "cost": 40,
+    "maintenance": 1,
+    "requiredTech": "Pottery",
+    "uniques": [
+      "Only available <when religion is enabled>"
+    ]
+  },
+  {
+    "name": "Temple of Elune",
+    "culture": 1,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "uniques": [
+      "[+10]% [Food] [in all cities]",
+      "[+15]% Production when constructing [Archery] units [in this city]",
+      "[+15]% Production when constructing [Ranged Gunpowder] units [in this city]"
+    ],
+    "requiredTech": "Archery"
+  },
+  {
+    "name": "Stone Works",
+    "happiness": 1,
+    "production": 1,
+    "requiredNearbyImprovedResources": [
+      "Marble",
+      "Stone"
+    ],
+    "maintenance": 1,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "Must not be on [Plains]",
+      "[+1 Production] from [Stone] tiles [in this city]",
+      "[+1 Production] from [Marble] tiles [in this city]"
+    ],
+    "requiredTech": "Herbalism"
+  },
+  {
+    "name": "Circle of Binding",
+    "faith": 5,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "requiredTech": "Herbalism"
+  },
+  {
+    "name": "Library",
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "uniques": [
+      "[+1 Science] per [2] population [in this city]"
+    ],
+    "requiredTech": "Runic Script"
+  },
+  {
+    "name": "The Violet Citadel",
+    "science": 3,
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Scientist": 1
+    },
+    "isWonder": true,
+    "requiredTech": "Runic Script",
+    "uniques": [
+      "Free Technology",
+      "Gain a free [Library] [in this city]"
+    ]
+  },
+  {
+    "name": "Fighting Pit",
+    "requiredNearbyImprovedResources": [
+      "Ivory",
+      "Horses"
+    ],
+    "happiness": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Skinning"
+  },
+  {
+    "name": "Water Mill",
+    "maintenance": 2,
+    "food": 2,
+    "production": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Must be on [River]"
+    ],
+    "requiredTech": "The Wheel"
+  },
+  {
+    "name": "Walls",
+    "cityStrength": 5,
+    "cityHealth": 50,
+    "hurryCostModifier": 25,
+    "requiredTech": "Masonry",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Halls of Origination",
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Can build [all] improvements at a [+25]% rate",
+      "[2] free [Peasant] units appear"
+    ],
+    "requiredTech": "Masonry"
+  },
+  {
+    "name": "Uther's Tomb",
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+      "[+2 Gold] from [Marble] tiles [in this city]",
+      "[+2 Gold] from [Stone] tiles [in this city]"
+    ],
+    "requiredTech": "Masonry"
+  },
+  {
+    "name": "Barracks",
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "uniques": [
+      "New [Military] units start with [15] XP [in this city]",
+      "Destroyed when the city is captured"
+    ],
+    "requiredTech": "Bronze Working"
+  },
+  {
+    "name": "Valley of Heroes",
+    "culture": 1,
+    "isWonder": true,
+    "uniques": [
+      "[+15]% Strength <for [All] units> <vs cities> <when attacking>"
+    ],
+    "requiredTech": "Bronze Working"
+  },
+  {
+    "name": "Lighthouse",
+    "cost": 75,
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "uniques": [
+      "Must be next to [Coast]",
+      "[+1 Food] from [Ocean] tiles [in this city]",
+      "[+1 Food] from [Coast] tiles [in this city]",
+      "[+1 Food] from [Fish] tiles [in this city]"
+    ],
+    "requiredTech": "Optics"
+  },
+  {
+    "name": "Westfall Lighthouse",
+    "cost": 185,
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Must be next to [Coast]",
+      "[+1] Movement <for [{Military} {Water}] units>",
+      "[+1] Sight <for [{Military} {Water}] units>",
+      "Gain a free [Lighthouse] [in this city]"
+    ],
+    "requiredTech": "Optics"
+  },
+  {
+    "name": "Stable",
+    "maintenance": 1,
+    "requiredNearbyImprovedResources": [
+      "Horses",
+      "Sheep",
+      "Cattle"
+    ],
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+15]% Production when constructing [Mounted] units [in this city]",
+      "[+1 Production] from [Cattle] tiles [in this city]",
+      "[+1 Production] from [Horses] tiles [in this city]",
+      "[+1 Production] from [Sheep] tiles [in this city]"
+    ],
+    "requiredTech": "Riding"
+  },
+  {
+    "name": "Grand Coliseum",
+    "cost": 125,
+    "happiness": 5,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Arena] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Riding"
+  },
+  {
+    "name": "Magistrate's Hall",
+    "maintenance": 4,
+    "hurryCostModifier": 50,
+    "uniques": [
+      "Removes extra unhappiness from annexed cities",
+      "Can only be built <in [Annexed] cities>"
+    ],
+    "requiredTech": "Mathematics"
+  },
+  {
+    "name": "Vale of Eternal Blossoms",
+    "greatPersonPoints": {
+      "Great Artist": 1
+    },
+    "food": 6,
+    "culture": 1,
+    "isWonder": true,
+    "requiredTech": "Mathematics",
+    "uniques": [
+      "Gain a free [Garden] [in this city]"
+    ]
+  },
+  {
+    "name": "Arena",
+    "maintenance": 1,
+    "happiness": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Construction"
+  },
+  {
+    "name": "Mogu'shan Vaults",
+    "culture": 6,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Artist": 1
+    },
+    "requiredTech": "Construction"
+  },
+  {
+    "name": "Temple",
+    "faith": 2,
+    "requiredBuilding": "Shrine",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Grand Library",
+    "cost": 125,
+    "science": 3,
+    "culture": 1,
+    "isNationalWonder": true,
+    "percentStatBonus": {
+      "science": 50
+    },
+    "uniques": [
+      "Only available <if [Library] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Philosophy"
+  },
+  {
+    "name": "Sanctum of the Oracles",
+    "culture": 3,
+    "greatPersonPoints": {
+      "Great Scientist": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Free Social Policy"
+    ],
+    "requiredTech": "Philosophy"
+  },
+  {
+    "name": "Amphitheater",
+    "culture": 3,
+    "specialistSlots": {
+      "Artist": 1
+    },
+    "requiredBuilding": "Monument",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "requiredTech": "Bardic Lore"
+  },
+  {
+    "name": "Hall of Legends",
+    "cost": 125,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
+      "[+25]% Great Person generation [in this city]",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Bardic Lore"
+  },
+  {
+    "name": "Market",
+    "gold": 2,
+    "specialistSlots": {
+      "Merchant": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "gold": 25
+    },
+    "requiredTech": "Coinage"
+  },
+  {
+    "name": "Mint",
+    "maintenance": 0,
+    "requiredNearbyImprovedResources": [
+      "Gold Ore",
+      "Truesilver"
+    ],
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+2 Gold] from [Gold Ore] tiles [in this city]",
+      "[+2 Gold] from [Truesilver] tiles [in this city]"
+    ],
+    "requiredTech": "Coinage"
+  },
+  {
+    "name": "Caverns of Time",
+    "culture": 1,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "uniques": [
+      "Must be next to [Desert]",
+      "[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]",
+      "Gain a free [Amphitheater] [in this city]",
+      "[+6 Culture] [in this city] <after discovering [Archaeology]>"
+    ],
+    "requiredTech": "Coinage"
+  },
+  {
+    "name": "Aqueduct",
+    "maintenance": 1,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "[40]% Food is carried over after population increases [in this city]"
+    ],
+    "requiredTech": "Engineering"
+  },
+  {
+    "name": "The Greymane Wall",
+    "culture": 3,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Seaforium]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
+      "Gain a free [Walls] [in this city]"
+    ],
+    "requiredTech": "Engineering"
+  },
+  {
+    "name": "Hall of Champions",
+    "cost": 125,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Barracks] is constructed in all [non-[Puppeted]] cities>",
+      "All newly-trained [non-[Air]] units [in this city] receive the [Morale] promotion",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Blacksmithing"
+  },
+  {
+    "name": "Admiralty of Boralus",
+    "cost": 185,
+    "culture": 1,
+    "gold": 5,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Must be next to [Coast]",
+      "[+1 Gold] from [Water] tiles [in this city]"
+    ],
+    "requiredTech": "Blacksmithing"
+  },
+  {
+    "name": "Garden",
+    "uniques": [
+      "[+25]% Great Person generation [in this city]",
+      "Must be next to [Fresh water]"
+    ],
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "requiredTech": "Theology"
+  },
+  {
+    "name": "Cathedral of Light",
+    "faith": 3,
+    "greatPersonPoints": {
+      "Great Artist": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Gain a free [Temple] [in this city]",
+      "Free [Great Prophet] appears",
+      "Only available <when religion is enabled>"
+    ],
+    "requiredTech": "Theology"
+  },
+  {
+    "name": "Shrine of Seven Stars",
+    "culture": 1,
+    "faith": 3,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Gain a free [Sanctuary] [in this city]",
+      "Only available <when religion is enabled>",
+      "All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
+      "All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion"
+    ],
+    "requiredTech": "Theology"
+  },
+  {
+    "name": "High Temple",
+    "cost": 125,
+    "culture": 1,
+    "faith": 8,
+    "uniques": [
+      "Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city",
+      "[+100]% Natural religion spread [in this city]",
+      "Only available <when religion is enabled>",
+      "Can only be built <in [Holy] cities>"
+    ],
+    "requiredTech": "Theology",
+    "isNationalWonder": true
+  },
+  {
+    "name": "Zul'Gurub",
+    "culture": 1,
+    "happiness": 4,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "[+50]% Golden Age length"
+    ],
+    "requiredTech": "Arathi Law"
+  },
+  {
+    "name": "Royal Vault",
+    "cost": 125,
+    "gold": 8,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Market] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Trade Guilds"
+  },
+  {
+    "name": "Thunder Totem",
+    "gold": 5,
+    "faith": 2,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "[+25]% [Gold] from Trade Routes",
+      "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
+    ],
+    "requiredTech": "Trade Guilds"
+  },
+  {
+    "name": "Workshop",
+    "maintenance": 2,
+    "production": 2,
+    "specialistSlots": {
+      "Engineer": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "requiredTech": "Metal Casting"
+  },
+  {
+    "name": "Forge",
+    "maintenance": 1,
+    "hurryCostModifier": 25,
+    "requiredNearbyImprovedResources": [
+      "Iron"
+    ],
+    "requiredTech": "Metal Casting",
+    "uniques": [
+      "[+15]% Production when constructing [Land] units [in this city]",
+      "[+1 Production] from [Iron] tiles [in this city]"
+    ]
+  },
+  {
+    "name": "Harbor",
+    "cost": 120,
+    "maintenance": 3,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+1 Production] from [Water resource] tiles [in this city]",
+      "Connects trade routes over water",
+      "Must be next to [Coast]"
+    ],
+    "requiredTech": "Seafaring"
+  },
+  {
+    "name": "Arcane Academy",
+    "maintenance": 2,
+    "hurryCostModifier": 15,
+    "percentStatBonus": {
+      "science": 33
+    },
+    "specialistSlots": {
+      "Scientist": 2
+    },
+    "requiredBuilding": "Library",
+    "uniques": [
+      "[+2 Science] from [Jungle] tiles [in this city]"
+    ],
+    "requiredTech": "Scholarship"
+  },
+  {
+    "name": "College of Magi",
+    "cost": 125,
+    "science": 3,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Arcane Academy] is constructed in all [non-[Puppeted]] cities>",
+      "Free Technology",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Scholarship"
+  },
+  {
+    "name": "Temple of the White Tiger",
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "[-25]% Culture cost of natural border growth [in all cities]",
+      "[-25]% Gold cost of acquiring tiles [in all cities]"
+    ],
+    "requiredTech": "Scholarship"
+  },
+  {
+    "name": "Keep",
+    "cityStrength": 7,
+    "cityHealth": 25,
+    "hurryCostModifier": 25,
+    "requiredBuilding": "Walls",
+    "requiredTech": "Chivalry",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Sunfury Spire",
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Artist": 1
+    },
+    "isWonder": true,
+    "percentStatBonus": {
+      "culture": 20
+    },
+    "uniques": [
+      "All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
+      "Gain a free [Keep] [in this city]"
+    ],
+    "requiredTech": "Chivalry"
+  },
+  {
+    "name": "Great Foundry",
+    "cost": 125,
+    "production": 8,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Machinery"
+  },
+  {
+    "name": "Northshire Abbey",
+    "faith": 4,
+    "happiness": 10,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "requiredTech": "Natural Philosophy"
+  },
+  {
+    "name": "Armory",
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "requiredBuilding": "Barracks",
+    "uniques": [
+      "New [Military] units start with [15] XP [in this city]",
+      "Destroyed when the city is captured"
+    ],
+    "requiredTech": "Steel"
+  },
+  {
+    "name": "Observatory",
+    "maintenance": 0,
+    "hurryCostModifier": 15,
+    "percentStatBonus": {
+      "science": 50
+    },
+    "requiredBuilding": "Library",
+    "uniques": [
+      "Must be next to [Mountain]"
+    ],
+    "requiredTech": "Astronomy"
+  },
+  {
+    "name": "Bardic Hall",
+    "culture": 4,
+    "specialistSlots": {
+      "Artist": 1
+    },
+    "hurryCostModifier": 10,
+    "requiredBuilding": "Amphitheater",
+    "maintenance": 2,
+    "requiredTech": "Acoustics",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Karazhan",
+    "culture": 1,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Artist": 2
+    },
+    "uniques": [
+      "[+25]% [Culture] [in all cities]"
+    ],
+    "requiredTech": "Acoustics"
+  },
+  {
+    "name": "Bank",
+    "gold": 2,
+    "specialistSlots": {
+      "Merchant": 1
+    },
+    "hurryCostModifier": 15,
+    "percentStatBonus": {
+      "gold": 25
+    },
+    "requiredBuilding": "Market",
+    "requiredTech": "Banking"
+  },
+  {
+    "name": "City Watch",
+    "cost": 160,
+    "maintenance": 1,
+    "hurryCostModifier": 10,
+    "uniques": [
+      "Only available <when espionage is enabled>",
+      "[-25]% enemy spy effectiveness [in this city]"
+    ],
+    "requiredTech": "Banking"
+  },
+  {
+    "name": "Mogu'shan Palace",
+    "culture": 1,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Artist": 1
+    },
+    "uniques": [
+      "[-10]% Unhappiness from [Population] [in all non-occupied cities]"
+    ],
+    "requiredTech": "Banking"
+  },
+  {
+    "name": "Menagerie",
+    "happiness": 3,
+    "hurryCostModifier": 10,
+    "maintenance": 2,
+    "requiredBuilding": "Arena",
+    "requiredTech": "Inscription"
+  },
+  {
+    "name": "Tower of Azora",
+    "culture": 1,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Artist": 1
+    },
+    "uniques": [
+      "[+25]% Great Person generation [in all cities]",
+      "Free Great Person"
+    ],
+    "requiredTech": "Inscription"
+  },
+  {
+    "name": "Grim Batol",
+    "culture": 3,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Engineer": 2
+    },
+    "uniques": [
+      "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+      "Gain a free [Keep] [in this city]"
+    ],
+    "requiredTech": "Blackpowder"
+  },
+  {
+    "name": "Seaport",
+    "hurryCostModifier": 25,
+    "maintenance": 2,
+    "requiredBuilding": "Harbor",
+    "uniques": [
+      "[+1 Production, +1 Gold] from [Water resource] tiles [in this city]",
+      "Must be next to [Coast]",
+      "[+15]% Production when constructing [Water] units [in this city]"
+    ],
+    "requiredTech": "Navigation"
+  },
+  {
+    "name": "Royal Gallery",
+    "cost": 125,
+    "percentStatBonus": {
+      "culture": 50
+    },
+    "culture": 5,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <if [Bardic Hall] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Architecture"
+  },
+  {
+    "name": "Sunwell Plateau",
+    "culture": 1,
+    "happiness": 4,
+    "greatPersonPoints": {
+      "Great Artist": 2
+    },
+    "isWonder": true,
+    "uniques": [
+      "Empire enters golden age"
+    ],
+    "requiredTech": "Architecture"
+  },
+  {
+    "name": "Ulduar",
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Scientist": 2
+    },
+    "isWonder": true,
+    "uniques": [
+      "Free [Great Scientist] appears",
+      "Science gained from research agreements [+50]%"
+    ],
+    "requiredTech": "Architecture"
+  },
+  {
+    "name": "Windmill",
+    "production": 2,
+    "specialistSlots": {
+      "Engineer": 1
+    },
+    "hurryCostModifier": 25,
+    "maintenance": 2,
+    "uniques": [
+      "Must not be on [Hill]",
+      "[+10]% Production when constructing [All] buildings [in this city]"
+    ],
+    "requiredTech": "Mercantilism"
+  },
+  {
+    "name": "Arsenal",
+    "cost": 300,
+    "cityStrength": 9,
+    "cityHealth": 25,
+    "hurryCostModifier": 25,
+    "requiredBuilding": "Keep",
+    "requiredTech": "Metallurgy",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Icecrown Citadel",
+    "culture": 3,
+    "cityStrength": 12,
+    "greatPersonPoints": {
+      "Great Scientist": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "[+25]% City Strength from defensive buildings"
+    ],
+    "requiredTech": "Metallurgy"
+  },
+  {
+    "name": "Museum",
+    "culture": 5,
+    "specialistSlots": {
+      "Artist": 2
+    },
+    "requiredBuilding": "Bardic Hall",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "requiredTech": "Archaeology",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Hall of Explorers",
+    "culture": 4,
+    "greatPersonPoints": {
+      "Great Artist": 2
+    },
+    "isWonder": true,
+    "uniques": [
+      "[2] free [Great Artist] units appear"
+    ],
+    "requiredTech": "Archaeology"
+  },
+  {
+    "name": "Public School",
+    "science": 3,
+    "specialistSlots": {
+      "Scientist": 1
+    },
+    "requiredBuilding": "Arcane Academy",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "[+1 Science] per [2] population [in this city]"
+    ],
+    "requiredTech": "Arcane Science"
+  },
+  {
+    "name": "Foundry",
+    "cost": 360,
+    "production": 4,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "specialistSlots": {
+      "Engineer": 2
+    },
+    "requiredBuilding": "Workshop",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "requiredResource": "Thorium",
+    "requiredTech": "Steamworks"
+  },
+  {
+    "name": "Undermine Exchange",
+    "culture": 1,
+    "gold": 4,
+    "greatPersonPoints": {
+      "Great Merchant": 2
+    },
+    "isWonder": true,
+    "uniques": [
+      "[Gold] cost of purchasing items in cities [-15]%"
+    ],
+    "requiredTech": "Steamworks"
+  },
+  {
+    "name": "Military Academy",
+    "hurryCostModifier": 0,
+    "maintenance": 1,
+    "requiredBuilding": "Armory",
+    "uniques": [
+      "New [Military] units start with [15] XP [in this city]",
+      "Destroyed when the city is captured"
+    ],
+    "requiredTech": "War Doctrine"
+  },
+  {
+    "name": "Gates of Ahn'Qiraj",
+    "culture": 3,
+    "greatPersonPoints": {
+      "Great Scientist": 2
+    },
+    "isWonder": true,
+    "uniques": [
+      "Free [Great General] appears",
+      "New [Military] units start with [15] XP [in this city]"
+    ],
+    "requiredTech": "War Doctrine"
+  },
+  {
+    "name": "House of Healing",
+    "food": 5,
+    "requiredBuilding": "Aqueduct",
+    "maintenance": 2,
+    "hurryCostModifier": 0,
+    "requiredTech": "Biology"
+  },
+  {
+    "name": "Auction House",
+    "gold": 3,
+    "percentStatBonus": {
+      "gold": 33
+    },
+    "specialistSlots": {
+      "Merchant": 2
+    },
+    "hurryCostModifier": 15,
+    "requiredBuilding": "Bank",
+    "requiredTech": "Electricity"
+  },
+  {
+    "name": "Hydroworks",
+    "requiredResource": "Elementium",
+    "hurryCostModifier": 0,
+    "maintenance": 3,
+    "uniques": [
+      "Must be on [River]",
+      "[+1 Production] from [River] tiles [in this city]"
+    ],
+    "requiredTech": "Electricity"
+  },
+  {
+    "name": "Guard Post",
+    "cost": 300,
+    "maintenance": 1,
+    "hurryCostModifier": 10,
+    "uniques": [
+      "Only available <when espionage is enabled>",
+      "[-25]% enemy spy effectiveness [in this city]"
+    ],
+    "requiredBuilding": "City Watch",
+    "requiredTech": "Electricity"
+  },
+  {
+    "name": "Grand Arena",
+    "happiness": 4,
+    "requiredBuilding": "Menagerie",
+    "maintenance": 2,
+    "requiredTech": "Frost Enchantment"
+  },
+  {
+    "name": "Arcane Beacon",
+    "culture": 3,
+    "percentStatBonus": {
+      "culture": 33
+    },
+    "requiredBuilding": "Museum",
+    "maintenance": 3,
+    "requiredTech": "Communication Crystals",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Wyrmrest Temple",
+    "culture": 1,
+    "happiness": 5,
+    "greatPersonPoints": {
+      "Great Merchant": 2
+    },
+    "isWonder": true,
+    "uniques": [
+      "[+1 Happiness] per [2] social policies adopted"
+    ],
+    "requiredTech": "Communication Crystals"
+  },
+  {
+    "name": "Spymaster's Guild",
+    "cost": 120,
+    "culture": 1,
+    "isNationalWonder": true,
+    "uniques": [
+      "Only available <when espionage is enabled>",
+      "New spies start with [1] level(s)",
+      "Promotes all spies [1] time(s)",
+      "Gain an extra spy",
+      "[-15]% enemy spy effectiveness [in this city]",
+      "Only available <if [Guard Post] is constructed in all [non-[Puppeted]] cities>",
+      "Cost increases by [30] per owned city"
+    ],
+    "requiredTech": "Communication Crystals"
+  },
+  {
+    "name": "Fortress",
+    "cityStrength": 12,
+    "cityHealth": 25,
+    "hurryCostModifier": 25,
+    "requiredBuilding": "Arsenal",
+    "requiredTech": "Interchangeable Cogs",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Lion's Rest",
+    "culture": 1,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Engineer": 2
+    },
+    "uniques": [
+      "[+1 Production] from every specialist [in all cities]"
+    ],
+    "requiredTech": "Interchangeable Cogs"
+  },
+  {
+    "name": "Shadowfang Keep",
+    "happiness": 2,
+    "culture": 4,
+    "gold": 6,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "[+1 Happiness, +2 Culture, +3 Gold] from every [Keep]",
+      "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
+    ],
+    "requiredTech": "Railroads"
+  },
+  {
+    "name": "Arcane Laboratory",
+    "science": 4,
+    "percentStatBonus": {
+      "science": 50
+    },
+    "specialistSlots": {
+      "Scientist": 1
+    },
+    "requiredBuilding": "Public School",
+    "maintenance": 3,
+    "requiredTech": "Synthetic Alloys"
+  },
+  {
+    "name": "Seat of the Naaru",
+    "culture": 5,
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Artist": 2
+    },
+    "uniques": [
+      "[-10]% Culture cost of adopting new Policies"
+    ],
+    "requiredTech": "Synthetic Alloys"
+  },
+  {
+    "name": "Alchemy Lab",
+    "requiredBuilding": "House of Healing",
+    "maintenance": 3,
+    "requiredTech": "Elixir Mastery",
+    "uniques": [
+      "[25]% Food is carried over after population increases [in this city]"
+    ]
+  },
+  {
+    "name": "Mana Bomb Project",
+    "cost": 750,
+    "isNationalWonder": true,
+    "uniques": [
+      "Enables nuclear weapon",
+      "Triggers a global alert upon completion",
+      "Cannot be hurried"
+    ],
+    "requiredTech": "Mana Theory"
+  },
+  {
+    "name": "Grommash Hold",
+    "isWonder": true,
+    "culture": 3,
+    "greatPersonPoints": {
+      "Great Engineer": 2
+    },
+    "uniques": [
+      "[-33]% Gold cost of upgrading <for [Military] units>"
+    ],
+    "requiredTech": "Combined Arms"
+  },
+  {
+    "name": "Sun Crystal Array",
+    "production": 5,
+    "percentStatBonus": {
+      "production": 15
+    },
+    "requiredBuilding": "Foundry",
+    "maintenance": 3,
+    "requiredTech": "Druidic Ecology",
+    "uniques": [
+      "Must be next to [Desert]",
+      "Only available <in cities without a [Mana Reactor]>"
+    ]
+  },
+  {
+    "name": "Salvage Yard",
+    "maintenance": 3,
+    "requiredTech": "Druidic Ecology",
+    "uniques": [
+      "Provides [2] [Elementium]",
+      "Limited to [5] per Civilization"
+    ]
+  },
+  {
+    "name": "The Nighthold",
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Artist": 2
+    },
+    "percentStatBonus": {
+      "culture": 50
+    },
+    "uniques": [
+      "Free Social Policy",
+      "Must be next to [Coast]"
+    ],
+    "requiredTech": "Druidic Ecology"
+  },
+  {
+    "name": "Mana Reactor",
+    "production": 5,
+    "percentStatBonus": {
+      "production": 15
+    },
+    "requiredBuilding": "Foundry",
+    "maintenance": 3,
+    "requiredResource": "Arcane Crystals",
+    "requiredTech": "Mana Fission",
+    "uniques": [
+      "Only available <in cities without a [Sun Crystal Array]>"
+    ]
+  },
+  {
+    "name": "Titan Ascension Project",
+    "cost": 750,
+    "isNationalWonder": true,
+    "uniques": [
+      "Enables construction of Spaceship parts",
+      "Triggers a global alert upon completion",
+      "Only available <when [Scientific] Victory is enabled>",
+      "Cannot be hurried"
+    ],
+    "requiredTech": "Rocketry",
+    "civilopediaText": [
+      {
+        "text": "Once you have completed the Apollo Program, you can start constructing spaceship parts in your cities (with the relevant technologies) to win a Scientific Victory!"
+      }
+    ]
+  },
+  {
+    "name": "Great Arcane Ward",
+    "isWonder": true,
+    "uniques": [
+      "Only available <when espionage is enabled>",
+      "[-99]% enemy spy effectiveness [in this city]",
+      "[-25]% enemy spy effectiveness [in all cities]"
+    ],
+    "requiredTech": "Titan Logic"
+  },
+  {
+    "name": "Mechagon Spire",
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "uniques": [
+      "[+1] population [in all cities]",
+      "[+1 Happiness] [in all cities]",
+      "Gain a free [Arcane Beacon] [in all cities]"
+    ],
+    "requiredTech": "Portal Networks"
+  },
+  {
+    "name": "Warded Bunker",
+    "cost": 300,
+    "maintenance": 1,
+    "requiredTech": "Portal Networks",
+    "uniques": [
+      "Population loss from nuclear attacks [-75]% [in this city]",
+      "Damage to garrison from nuclear attacks [-75]% [in this city]",
+      "Only available <when nuclear weapons are enabled> <hidden from users>"
+    ]
+  },
+  {
+    "name": "Celestial Planetarium",
+    "isWonder": true,
+    "greatPersonPoints": {
+      "Great Scientist": 1
+    },
+    "uniques": [
+      "[2] free [Great Scientist] units appear",
+      "[+25]% Production when constructing [Spaceship part] units [in this city]",
+      "Gain a free [Skyship Foundry] [in this city]"
+    ],
+    "requiredTech": "Orbital Constructs"
+  },
+  {
+    "name": "Skyship Foundry",
+    "production": 3,
+    "maintenance": 3,
+    "requiredResource": "Elementium",
+    "cost": 360,
+    "requiredBuilding": "Foundry",
+    "uniques": [
+      "[+50]% Production when constructing [Spaceship part] units [in this city]"
+    ],
+    "requiredTech": "Mechagnomics"
+  },
+  {
+    "name": "Grand Council of Azeroth",
+    "isWonder": true,
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Merchant": 2
+    },
+    "requiredTech": "Azerothian Unity",
+    "uniques": [
+      "Triggers voting for the Diplomatic Victory",
+      "Only available <when [Diplomatic] Victory is enabled>",
+      "Triggers a global alert upon completion"
+    ]
+  },
+  {
+    "name": "Well of Eternity",
+    "cost": 1500,
+    "isNationalWonder": true,
+    "uniques": [
+      "Unavailable <when number of [Completed Policy branches] is less than [5]>",
+      "Triggers a global alert upon build start",
+      "Triggers a Cultural Victory upon completion",
+      "Only available <when [Cultural] Victory is enabled>",
+      "Cannot be hurried"
+    ]
+  },
+  {
+    "name": "Cathedral",
+    "cost": 0,
+    "faith": 1,
+    "culture": 3,
+    "happiness": 1,
+    "specialistSlots": {
+      "Artist": 1
+    },
+    "uniques": [
+      "Unbuildable",
+      "Only available <when religion is enabled>"
+    ]
+  },
+  {
+    "name": "Monastery",
+    "cost": 0,
+    "culture": 2,
+    "faith": 2,
+    "uniques": [
+      "[+1 Culture, +1 Faith] from [Ale] tiles [in this city]",
+      "[+1 Culture, +1 Faith] from [Mageroyal] tiles [in this city]",
+      "Unbuildable",
+      "Only available <when religion is enabled>",
+      "Destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Sanctuary",
+    "cost": 0,
+    "culture": 2,
+    "faith": 3,
+    "happiness": 1,
+    "uniques": [
+      "Unbuildable",
+      "Only available <when religion is enabled>"
+    ]
+  },
+  {
+    "name": "Pagoda",
+    "cost": 0,
+    "culture": 2,
+    "faith": 2,
+    "happiness": 2,
+    "uniques": [
+      "Unbuildable",
+      "Only available <when religion is enabled>"
+    ]
+  },
+  {
+    "name": "Chapel of the Light",
+    "faith": 3,
+    "requiredBuilding": "Shrine",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Destroyed when the city is captured"
+    ],
+    "culture": 1,
+    "replaces": "Temple",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "Bells ring out from these chapels in every human town, calling the faithful to the Holy Light. Provides more Faith and Culture than the Temple it replaces."
+      }
+    ]
+  }
+]

@@ -1,0 +1,953 @@
+[
+  {
+    "columnNumber": 0,
+    "era": "Age of Tribes",
+    "techCost": 20,
+    "buildingCost": 40,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Agriculture",
+        "row": 6,
+        "uniques": [
+          "Starting tech"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 1,
+    "era": "Age of Tribes",
+    "techCost": 35,
+    "buildingCost": 60,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Pottery",
+        "row": 2,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Beast Taming",
+        "row": 5,
+        "prerequisites": [
+          "Agriculture"
+        ]
+      },
+      {
+        "name": "Archery",
+        "row": 7,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Mining",
+        "row": 9,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Age of Tribes",
+    "techCost": 55,
+    "buildingCost": 75,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Sailing",
+        "row": 1,
+        "prerequisites": [
+          "Pottery"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Herbalism",
+        "row": 2,
+        "prerequisites": [
+          "Pottery"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Runic Script",
+        "row": 3,
+        "prerequisites": [
+          "Pottery"
+        ],
+        "uniques": [
+          "Enables establishment of embassies <Civilopedia link [Tutorials/Embassies]>"
+        ]
+      },
+      {
+        "name": "Skinning",
+        "row": 5,
+        "prerequisites": [
+          "Beast Taming"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "The Wheel",
+        "row": 7,
+        "prerequisites": [
+          "Beast Taming",
+          "Archery"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Masonry",
+        "row": 9,
+        "prerequisites": [
+          "Mining"
+        ]
+      },
+      {
+        "name": "Bronze Working",
+        "row": 10,
+        "prerequisites": [
+          "Mining"
+        ],
+        "uniques": [
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Age of Arathor",
+    "techCost": 105,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Optics",
+        "cost": 85,
+        "row": 1,
+        "prerequisites": [
+          "Sailing"
+        ],
+        "uniques": [
+          "Enables embarkation for land units"
+        ]
+      },
+      {
+        "name": "Riding",
+        "row": 5,
+        "prerequisites": [
+          "Skinning",
+          "The Wheel"
+        ],
+        "uniques": [
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Mathematics",
+        "row": 7,
+        "prerequisites": [
+          "The Wheel"
+        ]
+      },
+      {
+        "name": "Construction",
+        "row": 9,
+        "prerequisites": [
+          "Masonry",
+          "The Wheel"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Age of Arathor",
+    "techCost": 175,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Philosophy",
+        "row": 2,
+        "prerequisites": [
+          "Runic Script",
+          "Herbalism"
+        ]
+      },
+      {
+        "name": "Bardic Lore",
+        "row": 3,
+        "prerequisites": [
+          "Runic Script"
+        ]
+      },
+      {
+        "name": "Coinage",
+        "row": 7,
+        "prerequisites": [
+          "Mathematics"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Engineering",
+        "row": 8,
+        "prerequisites": [
+          "Mathematics",
+          "Construction"
+        ],
+        "uniques": [
+          "Roads connect tiles across rivers",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Blacksmithing",
+        "row": 10,
+        "prerequisites": [
+          "Bronze Working"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 5,
+    "era": "Age of the Dark Portal",
+    "techCost": 275,
+    "buildingCost": 120,
+    "wonderCost": 300,
+    "techs": [
+      {
+        "name": "Theology",
+        "row": 2,
+        "prerequisites": [
+          "Philosophy",
+          "Bardic Lore"
+        ]
+      },
+      {
+        "name": "Arathi Law",
+        "row": 5,
+        "prerequisites": [
+          "Coinage",
+          "Riding",
+          "Bardic Lore"
+        ],
+        "uniques": [
+          "Enables Open Borders agreements <Civilopedia link [Tutorials/Open Borders]>",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Trade Guilds",
+        "row": 7,
+        "prerequisites": [
+          "Coinage"
+        ],
+        "uniques": [
+          "Enables conversion of city production to [Gold]"
+        ]
+      },
+      {
+        "name": "Metal Casting",
+        "row": 9,
+        "prerequisites": [
+          "Engineering",
+          "Blacksmithing"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 6,
+    "era": "Age of the Dark Portal",
+    "techCost": 485,
+    "buildingCost": 160,
+    "wonderCost": 400,
+    "techs": [
+      {
+        "name": "Seafaring",
+        "cost": 375,
+        "row": 1,
+        "prerequisites": [
+          "Optics",
+          "Theology"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Scholarship",
+        "row": 3,
+        "prerequisites": [
+          "Theology",
+          "Arathi Law"
+        ],
+        "uniques": [
+          "Enables conversion of city production to [Science]",
+          "Enables Research agreements <Civilopedia link [Tutorials/Research Agreements]>",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Chivalry",
+        "row": 6,
+        "prerequisites": [
+          "Arathi Law",
+          "Trade Guilds"
+        ],
+        "uniques": [
+          "Enables Defensive Pacts <Civilopedia link [Tutorials/Defensive Pacts]>"
+        ]
+      },
+      {
+        "name": "Machinery",
+        "row": 8,
+        "prerequisites": [
+          "Trade Guilds",
+          "Engineering"
+        ],
+        "uniques": [
+          "Improves movement speed on roads"
+        ]
+      },
+      {
+        "name": "Natural Philosophy",
+        "row": 9,
+        "prerequisites": [
+          "Metal Casting"
+        ]
+      },
+      {
+        "name": "Steel",
+        "row": 10,
+        "prerequisites": [
+          "Metal Casting"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 7,
+    "era": "Age of the Third War",
+    "techCost": 780,
+    "buildingCost": 200,
+    "wonderCost": 500,
+    "techs": [
+      {
+        "name": "Astronomy",
+        "row": 2,
+        "uniques": [
+          "[+1] Movement <for [Embarked] units>",
+          "Enables [Embarked] units to enter ocean tiles",
+          "[+50]% weight to this choice for AI decisions"
+        ],
+        "prerequisites": [
+          "Seafaring",
+          "Scholarship"
+        ]
+      },
+      {
+        "name": "Acoustics",
+        "row": 4,
+        "prerequisites": [
+          "Scholarship"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Banking",
+        "row": 6,
+        "prerequisites": [
+          "Chivalry",
+          "Scholarship"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Inscription",
+        "row": 8,
+        "prerequisites": [
+          "Machinery",
+          "Natural Philosophy",
+          "Chivalry"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Blackpowder",
+        "row": 10,
+        "prerequisites": [
+          "Natural Philosophy",
+          "Steel"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 8,
+    "era": "Age of the Third War",
+    "techCost": 1150,
+    "buildingCost": 250,
+    "wonderCost": 625,
+    "techs": [
+      {
+        "name": "Navigation",
+        "row": 2,
+        "prerequisites": [
+          "Astronomy"
+        ]
+      },
+      {
+        "name": "Architecture",
+        "row": 4,
+        "prerequisites": [
+          "Acoustics",
+          "Banking"
+        ]
+      },
+      {
+        "name": "Mercantilism",
+        "row": 6,
+        "prerequisites": [
+          "Banking",
+          "Inscription"
+        ],
+        "uniques": [
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Metallurgy",
+        "row": 9,
+        "prerequisites": [
+          "Inscription",
+          "Blackpowder"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Alchemy",
+        "row": 10,
+        "prerequisites": [
+          "Blackpowder"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 9,
+    "era": "Age of the Lich King",
+    "techCost": 1600,
+    "buildingCost": 300,
+    "wonderCost": 750,
+    "techs": [
+      {
+        "name": "Archaeology",
+        "row": 2,
+        "prerequisites": [
+          "Navigation",
+          "Architecture"
+        ],
+        "uniques": [
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Arcane Science",
+        "row": 4,
+        "prerequisites": [
+          "Architecture",
+          "Mercantilism"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Steamworks",
+        "row": 6,
+        "prerequisites": [
+          "Mercantilism"
+        ],
+        "uniques": [
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Rifling",
+        "row": 7,
+        "prerequisites": [
+          "Mercantilism",
+          "Metallurgy"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "War Doctrine",
+        "row": 9,
+        "prerequisites": [
+          "Metallurgy",
+          "Alchemy"
+        ]
+      },
+      {
+        "name": "Soil Enrichment",
+        "row": 10,
+        "prerequisites": [
+          "Alchemy"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 10,
+    "era": "Age of the Lich King",
+    "techCost": 2350,
+    "buildingCost": 360,
+    "wonderCost": 900,
+    "techs": [
+      {
+        "name": "Biology",
+        "row": 2,
+        "prerequisites": [
+          "Archaeology",
+          "Arcane Science"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Electricity",
+        "row": 3,
+        "prerequisites": [
+          "Arcane Science"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Steam Power",
+        "row": 6,
+        "uniques": [
+          "[+1] Movement <for [Embarked] units>"
+        ],
+        "prerequisites": [
+          "Steamworks",
+          "Arcane Science",
+          "Rifling"
+        ]
+      },
+      {
+        "name": "Seaforium",
+        "row": 9,
+        "prerequisites": [
+          "Soil Enrichment",
+          "War Doctrine"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 11,
+    "era": "Age of the Cataclysm",
+    "techCost": 3100,
+    "buildingCost": 500,
+    "wonderCost": 1060,
+    "techs": [
+      {
+        "name": "Frost Enchantment",
+        "row": 2,
+        "prerequisites": [
+          "Biology",
+          "Electricity"
+        ],
+        "uniques": [
+          "[-75]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Communication Crystals",
+        "row": 3,
+        "prerequisites": [
+          "Electricity"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Interchangeable Cogs",
+        "row": 4,
+        "prerequisites": [
+          "Electricity",
+          "Steam Power"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Flight",
+        "row": 6,
+        "prerequisites": [
+          "Steam Power"
+        ]
+      },
+      {
+        "name": "Railroads",
+        "row": 8,
+        "prerequisites": [
+          "Steam Power",
+          "Seaforium"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 12,
+    "era": "Age of the Cataclysm",
+    "techCost": 4100,
+    "buildingCost": 500,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Synthetic Alloys",
+        "row": 3,
+        "prerequisites": [
+          "Communication Crystals",
+          "Interchangeable Cogs"
+        ],
+        "uniques": [
+          "[+200]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Arcane Circuitry",
+        "row": 5,
+        "prerequisites": [
+          "Interchangeable Cogs",
+          "Flight"
+        ]
+      },
+      {
+        "name": "Ballistics",
+        "row": 6,
+        "prerequisites": [
+          "Flight"
+        ]
+      },
+      {
+        "name": "Combustion",
+        "row": 8,
+        "prerequisites": [
+          "Railroads"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 13,
+    "era": "Age of the Legion",
+    "techCost": 5100,
+    "buildingCost": 500,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Elixir Mastery",
+        "row": 2,
+        "prerequisites": [
+          "Synthetic Alloys",
+          "Frost Enchantment"
+        ]
+      },
+      {
+        "name": "Mana Theory",
+        "row": 4,
+        "prerequisites": [
+          "Synthetic Alloys",
+          "Arcane Circuitry"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Scrying",
+        "row": 6,
+        "prerequisites": [
+          "Ballistics",
+          "Arcane Circuitry"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Combined Arms",
+        "row": 8,
+        "prerequisites": [
+          "Ballistics",
+          "Combustion"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 14,
+    "era": "Age of the Legion",
+    "techCost": 6400,
+    "buildingCost": 500,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Druidic Ecology",
+        "row": 2,
+        "prerequisites": [
+          "Mana Theory",
+          "Elixir Mastery"
+        ]
+      },
+      {
+        "name": "Mana Fission",
+        "row": 4,
+        "prerequisites": [
+          "Mana Theory",
+          "Scrying"
+        ]
+      },
+      {
+        "name": "Rocketry",
+        "row": 6,
+        "prerequisites": [
+          "Scrying"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Titan Logic",
+        "row": 8,
+        "prerequisites": [
+          "Combined Arms",
+          "Scrying"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 15,
+    "era": "Age of Azerite",
+    "techCost": 7700,
+    "buildingCost": 750,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Portal Networks",
+        "row": 2,
+        "prerequisites": [
+          "Druidic Ecology"
+        ]
+      },
+      {
+        "name": "Mobile Tactics",
+        "row": 3,
+        "prerequisites": [
+          "Druidic Ecology",
+          "Mana Fission"
+        ]
+      },
+      {
+        "name": "Advanced Ballistics",
+        "row": 5,
+        "prerequisites": [
+          "Mana Fission",
+          "Rocketry"
+        ]
+      },
+      {
+        "name": "Orbital Constructs",
+        "row": 6,
+        "prerequisites": [
+          "Rocketry"
+        ],
+        "uniques": [
+          "Reveals the entire map",
+          "[+200]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Mechagnomics",
+        "row": 7,
+        "prerequisites": [
+          "Rocketry",
+          "Titan Logic"
+        ]
+      },
+      {
+        "name": "Focused Arcana",
+        "row": 8,
+        "prerequisites": [
+          "Titan Logic"
+        ],
+        "uniques": [
+          "[-100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 16,
+    "era": "Age of Azerite",
+    "techCost": 8800,
+    "buildingCost": 750,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Azerothian Unity",
+        "row": 2,
+        "prerequisites": [
+          "Portal Networks"
+        ],
+        "uniques": [
+          "[-100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Azerite Refinement",
+        "row": 3,
+        "prerequisites": [
+          "Portal Networks",
+          "Mobile Tactics",
+          "Advanced Ballistics"
+        ]
+      },
+      {
+        "name": "Titanforging",
+        "row": 6,
+        "prerequisites": [
+          "Advanced Ballistics",
+          "Orbital Constructs",
+          "Mechagnomics"
+        ],
+        "uniques": [
+          "[-100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "name": "Ethereal Technology",
+        "row": 7,
+        "prerequisites": [
+          "Mechagnomics"
+        ]
+      },
+      {
+        "name": "Cloaking Fields",
+        "row": 8,
+        "prerequisites": [
+          "Mechagnomics",
+          "Focused Arcana"
+        ],
+        "uniques": [
+          "[-100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 17,
+    "era": "Age of the Void",
+    "techCost": 9500,
+    "buildingCost": 750,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Future Tech",
+        "row": 5,
+        "prerequisites": [
+          "Azerothian Unity",
+          "Azerite Refinement",
+          "Titanforging",
+          "Ethereal Technology",
+          "Cloaking Fields"
+        ],
+        "uniques": [
+          "Can be continually researched"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Who knows what the future holds?"
+          }
+        ]
+      }
+    ]
+  }
+]
