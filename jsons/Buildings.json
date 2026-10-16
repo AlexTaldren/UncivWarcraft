@@ -10,6 +10,11 @@
     "cost": 0,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seat of your rule: a Town Hall that grows into a Keep and then a Castle as your realm matures."
+      }
     ]
   },
   {
@@ -29,7 +34,7 @@
     "hurryCostModifier": 25,
     "uniques": [
       "[+1 Food] from [Deer] tiles [in this city]",
-      "[+1 Food] from [Bananas] tiles [in this city]",
+      "[+1 Food] from [Tel'Abim Bananas] tiles [in this city]",
       "[+1 Food] from [Wheat] tiles [in this city]"
     ],
     "requiredTech": "Pottery"
@@ -56,7 +61,12 @@
       "[+15]% Production when constructing [Archery] units [in this city]",
       "[+15]% Production when constructing [Ranged Firearm] units [in this city]"
     ],
-    "requiredTech": "Archery"
+    "requiredTech": "Archery",
+    "civilopediaText": [
+      {
+        "text": "A moonlit temple of the night elves' goddess, whose priestesses have guided their people for ten thousand years."
+      }
+    ]
   },
   {
     "name": "Stone Works",
@@ -82,7 +92,12 @@
     "greatPersonPoints": {
       "Great Engineer": 1
     },
-    "requiredTech": "Herbalism"
+    "requiredTech": "Herbalism",
+    "civilopediaText": [
+      {
+        "text": "A ring of standing stones raised in Arathi by the first humans, where shamans and druids once bound the earth's power."
+      }
+    ]
   },
   {
     "name": "Library",
@@ -105,12 +120,17 @@
     "uniques": [
       "Free Technology",
       "Gain a free [Library] [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The heart of Dalaran, city of the Kirin Tor, whose libraries hold the greatest collection of arcane lore in the Eastern Kingdoms."
+      }
     ]
   },
   {
     "name": "Fighting Pit",
     "requiredNearbyImprovedResources": [
-      "Ivory",
+      "Mammoth Ivory",
       "Horses"
     ],
     "happiness": 2,
@@ -149,7 +169,12 @@
       "Can build [all] improvements at a [+25]% rate",
       "[2] free [Peasant] units appear"
     ],
-    "requiredTech": "Masonry"
+    "requiredTech": "Masonry",
+    "civilopediaText": [
+      {
+        "text": "The titans' vast facility in Uldum, built to shape the world and guarded by the tol'vir since before history began."
+      }
+    ]
   },
   {
     "name": "Uther's Tomb",
@@ -163,7 +188,12 @@
       "[+2 Gold] from [Marble] tiles [in this city]",
       "[+2 Gold] from [Stone] tiles [in this city]"
     ],
-    "requiredTech": "Masonry"
+    "requiredTech": "Masonry",
+    "civilopediaText": [
+      {
+        "text": "The resting place of Uther the Lightbringer, first of the paladins, slain by his own pupil Arthas in the Plaguelands."
+      }
+    ]
   },
   {
     "name": "Barracks",
@@ -182,7 +212,12 @@
     "uniques": [
       "[+15]% Strength <for [All] units> <vs cities> <when attacking>"
     ],
-    "requiredTech": "Bronze Working"
+    "requiredTech": "Bronze Working",
+    "civilopediaText": [
+      {
+        "text": "The avenue of statues before the gates of Stormwind, honoring Lothar, Turalyon, Khadgar and the heroes of the Second War."
+      }
+    ]
   },
   {
     "name": "Lighthouse",
@@ -211,7 +246,12 @@
       "[+1] Sight <for [{Military} {Water}] units>",
       "Gain a free [Lighthouse] [in this city]"
     ],
-    "requiredTech": "Optics"
+    "requiredTech": "Optics",
+    "civilopediaText": [
+      {
+        "text": "The great lighthouse on the Westfall coast, guiding ships of the Alliance safely past the rocks."
+      }
+    ]
   },
   {
     "name": "Stable",
@@ -240,7 +280,12 @@
       "Only available <if [Arena] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Riding"
+    "requiredTech": "Riding",
+    "civilopediaText": [
+      {
+        "text": "An arena in the manner of the Ring of Valor and the Gurubashi Arena, where champions fight for glory and gold."
+      }
+    ]
   },
   {
     "name": "Magistrate's Hall",
@@ -263,6 +308,11 @@
     "requiredTech": "Mathematics",
     "uniques": [
       "Gain a free [Garden] [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The sacred heart of Pandaria, where the waters of the Pools of Power once nourished an eternal spring."
+      }
     ]
   },
   {
@@ -279,7 +329,12 @@
     "greatPersonPoints": {
       "Great Artist": 1
     },
-    "requiredTech": "Construction"
+    "requiredTech": "Construction",
+    "civilopediaText": [
+      {
+        "text": "The mogu emperors' vaults beneath Kun-Lai, where an army of stone guardians waits to be woken."
+      }
+    ]
   },
   {
     "name": "Temple",
@@ -306,7 +361,12 @@
       "Only available <if [Library] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Philosophy"
+    "requiredTech": "Philosophy",
+    "civilopediaText": [
+      {
+        "text": "A great library on the model of the Royal Library of Stormwind, where scribes copy every tome they can find."
+      }
+    ]
   },
   {
     "name": "Sanctum of the Oracles",
@@ -318,7 +378,12 @@
     "uniques": [
       "Free Social Policy"
     ],
-    "requiredTech": "Philosophy"
+    "requiredTech": "Philosophy",
+    "civilopediaText": [
+      {
+        "text": "Where the oracles of Sholazar and the seers of the Exodar read the threads of fate."
+      }
+    ]
   },
   {
     "name": "Amphitheater",
@@ -344,7 +409,12 @@
       "[+25]% Great Person generation [in this city]",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Bardic Lore"
+    "requiredTech": "Bardic Lore",
+    "civilopediaText": [
+      {
+        "text": "A hall where bards and lorewalkers keep the songs and sagas of your people."
+      }
+    ]
   },
   {
     "name": "Market",
@@ -385,7 +455,12 @@
       "Gain a free [Amphitheater] [in this city]",
       "[+6 Culture] [in this city] <after discovering [Archaeology]>"
     ],
-    "requiredTech": "Coinage"
+    "requiredTech": "Coinage",
+    "civilopediaText": [
+      {
+        "text": "The lair of the bronze dragonflight in Tanaris, where Nozdormu's servants guard the true timeline."
+      }
+    ]
   },
   {
     "name": "Aqueduct",
@@ -407,7 +482,12 @@
       "Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Seaforium]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
       "Gain a free [Walls] [in this city]"
     ],
-    "requiredTech": "Engineering"
+    "requiredTech": "Engineering",
+    "civilopediaText": [
+      {
+        "text": "The great wall Genn Greymane raised to cut Gilneas off from the troubles of the other kingdoms."
+      }
+    ]
   },
   {
     "name": "Hall of Champions",
@@ -419,7 +499,12 @@
       "All newly-trained [non-[Air]] units [in this city] receive the [Morale] promotion",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Iron Forged Swords"
+    "requiredTech": "Iron Forged Swords",
+    "civilopediaText": [
+      {
+        "text": "Where your greatest warriors are honored, and from which new recruits march with their courage high."
+      }
+    ]
   },
   {
     "name": "Admiralty of Boralus",
@@ -434,7 +519,12 @@
       "Must be next to [Coast]",
       "[+1 Gold] from [Water] tiles [in this city]"
     ],
-    "requiredTech": "Iron Forged Swords"
+    "requiredTech": "Iron Forged Swords",
+    "civilopediaText": [
+      {
+        "text": "The great harbor of Kul Tiras and its admiralty, home of the Proudmoore fleets."
+      }
+    ]
   },
   {
     "name": "Garden",
@@ -458,7 +548,12 @@
       "Free [Great Prophet] appears",
       "Only available <when religion is enabled>"
     ],
-    "requiredTech": "Priesthood"
+    "requiredTech": "Priesthood",
+    "civilopediaText": [
+      {
+        "text": "The great cathedral of Stormwind, seat of the Church of the Holy Light and its archbishops."
+      }
+    ]
   },
   {
     "name": "Shrine of Seven Stars",
@@ -474,7 +569,12 @@
       "All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
       "All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion"
     ],
-    "requiredTech": "Priesthood"
+    "requiredTech": "Priesthood",
+    "civilopediaText": [
+      {
+        "text": "The Alliance's embassy in the Vale of Eternal Blossoms, a place of scholarship and trade."
+      }
+    ]
   },
   {
     "name": "High Temple",
@@ -489,7 +589,12 @@
       "Can only be built <in [Holy] cities>"
     ],
     "requiredTech": "Priesthood",
-    "isNationalWonder": true
+    "isNationalWonder": true,
+    "civilopediaText": [
+      {
+        "text": "The holy seat of your people's faith, where its highest priests gather."
+      }
+    ]
   },
   {
     "name": "Zul'Gurub",
@@ -502,7 +607,12 @@
     "uniques": [
       "[+50]% Golden Age length"
     ],
-    "requiredTech": "Arathi Law"
+    "requiredTech": "Arathi Law",
+    "civilopediaText": [
+      {
+        "text": "The great jungle city of the Gurubashi trolls in Stranglethorn, once given over to the blood god Hakkar."
+      }
+    ]
   },
   {
     "name": "Royal Vault",
@@ -514,7 +624,12 @@
       "Only available <if [Market] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Trade Guilds"
+    "requiredTech": "Trade Guilds",
+    "civilopediaText": [
+      {
+        "text": "The guarded treasury of the realm, behind doors no thief has ever opened."
+      }
+    ]
   },
   {
     "name": "Thunder Totem",
@@ -528,7 +643,12 @@
       "[+25]% [Gold] from Trade Routes",
       "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
     ],
-    "requiredTech": "Trade Guilds"
+    "requiredTech": "Trade Guilds",
+    "civilopediaText": [
+      {
+        "text": "The towering totem of the Highmountain tauren, carved with the story of every tribe."
+      }
+    ]
   },
   {
     "name": "Workshop",
@@ -595,7 +715,12 @@
       "Free Technology",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Scholarship"
+    "requiredTech": "Scholarship",
+    "civilopediaText": [
+      {
+        "text": "An academy of the arcane on the model of Dalaran's, where young mages learn to master their power."
+      }
+    ]
   },
   {
     "name": "Temple of the White Tiger",
@@ -608,7 +733,12 @@
       "[-25]% Culture cost of natural border growth [in all cities]",
       "[-25]% Gold cost of acquiring tiles [in all cities]"
     ],
-    "requiredTech": "Scholarship"
+    "requiredTech": "Scholarship",
+    "civilopediaText": [
+      {
+        "text": "The temple of Xuen, the celestial White Tiger, high in Kun-Lai Summit, where pandaren train body and spirit."
+      }
+    ]
   },
   {
     "name": "Keep",
@@ -635,7 +765,12 @@
       "All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
       "Gain a free [Keep] [in this city]"
     ],
-    "requiredTech": "Animal War Training"
+    "requiredTech": "Animal War Training",
+    "civilopediaText": [
+      {
+        "text": "The palace of the Sunstrider dynasty in Silvermoon, its red-and-gold halls glowing with arcane light."
+      }
+    ]
   },
   {
     "name": "Great Foundry",
@@ -647,7 +782,12 @@
       "Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Clockwork"
+    "requiredTech": "Clockwork",
+    "civilopediaText": [
+      {
+        "text": "A foundry in the spirit of Ironforge's Great Forge, whose fires never go out."
+      }
+    ]
   },
   {
     "name": "Northshire Abbey",
@@ -657,7 +797,12 @@
       "Great Merchant": 1
     },
     "isWonder": true,
-    "requiredTech": "Siege Engineering"
+    "requiredTech": "Siege Engineering",
+    "civilopediaText": [
+      {
+        "text": "The abbey in Elwynn Forest where the brothers of the Light train every young priest and paladin of Stormwind."
+      }
+    ]
   },
   {
     "name": "Armory",
@@ -707,7 +852,12 @@
     "uniques": [
       "[+25]% [Culture] [in all cities]"
     ],
-    "requiredTech": "Choral Hymns"
+    "requiredTech": "Choral Hymns",
+    "civilopediaText": [
+      {
+        "text": "Medivh's tower in Deadwind Pass, built on a nexus of ley lines and full of strange echoes of the past."
+      }
+    ]
   },
   {
     "name": "Bank",
@@ -743,7 +893,12 @@
     "uniques": [
       "[-10]% Unhappiness from [Population] [in all non-occupied cities]"
     ],
-    "requiredTech": "Banking"
+    "requiredTech": "Banking",
+    "civilopediaText": [
+      {
+        "text": "The palace of the mogu emperors in the Vale, later home of the Golden Lotus."
+      }
+    ]
   },
   {
     "name": "Beastiary",
@@ -764,7 +919,12 @@
       "[+25]% Great Person generation [in all cities]",
       "Free Great Person"
     ],
-    "requiredTech": "Inscription"
+    "requiredTech": "Inscription",
+    "civilopediaText": [
+      {
+        "text": "The tower of the mage Theocritus in Elwynn Forest, its leaning silhouette visible for miles."
+      }
+    ]
   },
   {
     "name": "Grim Batol",
@@ -777,7 +937,12 @@
       "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
       "Gain a free [Keep] [in this city]"
     ],
-    "requiredTech": "Blackpowder"
+    "requiredTech": "Blackpowder",
+    "civilopediaText": [
+      {
+        "text": "The great fortress of the Wildhammer dwarves in the Wetlands, cursed and abandoned, later a stronghold of the Dragonmaw."
+      }
+    ]
   },
   {
     "name": "Port",
@@ -803,7 +968,12 @@
       "Only available <if [Bardic Hall] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Architecture"
+    "requiredTech": "Architecture",
+    "civilopediaText": [
+      {
+        "text": "A gallery of treasures, paintings and trophies gathered from every corner of Azeroth."
+      }
+    ]
   },
   {
     "name": "Sunwell Plateau",
@@ -816,7 +986,12 @@
     "uniques": [
       "Empire enters golden age"
     ],
-    "requiredTech": "Architecture"
+    "requiredTech": "Architecture",
+    "civilopediaText": [
+      {
+        "text": "The Sunwell of Quel'Danas, the fount of holy and arcane power that sustains the elves of Quel'Thalas."
+      }
+    ]
   },
   {
     "name": "Ulduar",
@@ -829,7 +1004,12 @@
       "Free [Great Scientist] appears",
       "Science gained from research agreements [+50]%"
     ],
-    "requiredTech": "Architecture"
+    "requiredTech": "Architecture",
+    "civilopediaText": [
+      {
+        "text": "The titan city in the Storm Peaks, prison of the Old God Yogg-Saron and seat of the Keepers."
+      }
+    ]
   },
   {
     "name": "Windmill",
@@ -868,7 +1048,12 @@
     "uniques": [
       "[+25]% City Strength from defensive buildings"
     ],
-    "requiredTech": "Mithril Forged Swords"
+    "requiredTech": "Mithril Forged Swords",
+    "civilopediaText": [
+      {
+        "text": "The Lich King's fortress atop the Frozen Throne, rising from the glacier of Icecrown."
+      }
+    ]
   },
   {
     "name": "Museum",
@@ -894,7 +1079,12 @@
     "uniques": [
       "[2] free [Great Artist] units appear"
     ],
-    "requiredTech": "Archaeology"
+    "requiredTech": "Archaeology",
+    "civilopediaText": [
+      {
+        "text": "The museum of the Explorers' League in Ironforge, home of Brann Bronzebeard's discoveries."
+      }
+    ]
   },
   {
     "name": "Mage Tower",
@@ -937,7 +1127,12 @@
     "uniques": [
       "[Gold] cost of purchasing items in cities [-15]%"
     ],
-    "requiredTech": "Steamworks"
+    "requiredTech": "Steamworks",
+    "civilopediaText": [
+      {
+        "text": "The trade hub of the goblin cartels beneath Kezan, where fortunes are made and lost in an hour."
+      }
+    ]
   },
   {
     "name": "Training Grounds",
@@ -961,7 +1156,12 @@
       "Free [Great General] appears",
       "New [Military] units start with [15] XP [in this city]"
     ],
-    "requiredTech": "War Doctrine"
+    "requiredTech": "War Doctrine",
+    "civilopediaText": [
+      {
+        "text": "The Scarab Wall in Silithus, sealing the qiraji and their Old God master away from the world."
+      }
+    ]
   },
   {
     "name": "House of Healing",
@@ -1038,7 +1238,12 @@
     "uniques": [
       "[+1 Happiness] per [2] social policies adopted"
     ],
-    "requiredTech": "Communication Crystals"
+    "requiredTech": "Communication Crystals",
+    "civilopediaText": [
+      {
+        "text": "The great temple of the dragonflights in Dragonblight, where the Aspects meet."
+      }
+    ]
   },
   {
     "name": "Spymaster's Guild",
@@ -1054,7 +1259,12 @@
       "Only available <if [Guard Tower] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Communication Crystals"
+    "requiredTech": "Communication Crystals",
+    "civilopediaText": [
+      {
+        "text": "A network of spies and agents on the model of SI:7, the shadows that protect the realm."
+      }
+    ]
   },
   {
     "name": "Fortress",
@@ -1077,7 +1287,12 @@
     "uniques": [
       "[+1 Production] from every specialist [in all cities]"
     ],
-    "requiredTech": "Gnomish Gearworks"
+    "requiredTech": "Gnomish Gearworks",
+    "civilopediaText": [
+      {
+        "text": "The monument at Stormwind's gate to the heroes who fell at the Wrathgate in Northrend."
+      }
+    ]
   },
   {
     "name": "Shadowfang Keep",
@@ -1092,7 +1307,12 @@
       "[+1 Happiness, +2 Culture, +3 Gold] from every [Keep]",
       "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
     ],
-    "requiredTech": "Tramways"
+    "requiredTech": "Tramways",
+    "civilopediaText": [
+      {
+        "text": "Archmage Arugal's castle above Pyrewood, overrun by his worgen."
+      }
+    ]
   },
   {
     "name": "Arcane Laboratory",
@@ -1117,7 +1337,12 @@
     "uniques": [
       "[-10]% Culture cost of adopting new Policies"
     ],
-    "requiredTech": "Arcanite Alloys"
+    "requiredTech": "Arcanite Alloys",
+    "civilopediaText": [
+      {
+        "text": "Where the naaru, beings of pure Light, speak with the faithful, as in the Exodar and Shattrath."
+      }
+    ]
   },
   {
     "name": "Alchemy Lab",
@@ -1137,7 +1362,12 @@
       "Triggers a global alert upon completion",
       "Cannot be hurried"
     ],
-    "requiredTech": "Mana Theory"
+    "requiredTech": "Mana Theory",
+    "civilopediaText": [
+      {
+        "text": "The arcane foundries where the terrible mana bombs are made, like the one that destroyed Theramore."
+      }
+    ]
   },
   {
     "name": "Grommash Hold",
@@ -1149,7 +1379,12 @@
     "uniques": [
       "[-33]% Gold cost of upgrading <for [Military] units>"
     ],
-    "requiredTech": "Battle Formations"
+    "requiredTech": "Battle Formations",
+    "civilopediaText": [
+      {
+        "text": "The great hall of the Warchief in Orgrimmar, named for Grom Hellscream."
+      }
+    ]
   },
   {
     "name": "Sun Crystal Array",
@@ -1187,7 +1422,12 @@
       "Free Social Policy",
       "Must be next to [Coast]"
     ],
-    "requiredTech": "Nature's Blessing"
+    "requiredTech": "Nature's Blessing",
+    "civilopediaText": [
+      {
+        "text": "The palace of the nightborne elves in Suramar City, built around the Nightwell."
+      }
+    ]
   },
   {
     "name": "Mana Reactor",
@@ -1228,7 +1468,12 @@
       "[-99]% enemy spy effectiveness [in this city]",
       "[-25]% enemy spy effectiveness [in all cities]"
     ],
-    "requiredTech": "Titan Logic"
+    "requiredTech": "Titan Logic",
+    "civilopediaText": [
+      {
+        "text": "A shield of arcane wards over the realm, like the dome that protected Quel'Thalas."
+      }
+    ]
   },
   {
     "name": "Mechagon Spire",
@@ -1241,7 +1486,12 @@
       "[+1 Happiness] [in all cities]",
       "Gain a free [Arcane Beacon] [in all cities]"
     ],
-    "requiredTech": "Portal Networks"
+    "requiredTech": "Portal Networks",
+    "civilopediaText": [
+      {
+        "text": "The spire of Mechagon, the mechagnomes' island of gears and steam."
+      }
+    ]
   },
   {
     "name": "Burrow",
@@ -1265,7 +1515,12 @@
       "[+25]% Production when constructing [Spaceship part] units [in this city]",
       "Gain a free [Skyship Foundry] [in this city]"
     ],
-    "requiredTech": "Eye of Kilrogg"
+    "requiredTech": "Eye of Kilrogg",
+    "civilopediaText": [
+      {
+        "text": "An observatory of the titans' design that charts the stars and the worlds beyond them."
+      }
+    ]
   },
   {
     "name": "Skyship Foundry",
@@ -1291,6 +1546,11 @@
       "Triggers voting for the Diplomatic Victory",
       "Only available <when [Diplomatic] Victory is enabled>",
       "Triggers a global alert upon completion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A council of all the peoples of Azeroth, gathered to face the threats no one race can face alone."
+      }
     ]
   },
   {
@@ -1303,6 +1563,11 @@
       "Triggers a Cultural Victory upon completion",
       "Only available <when [Cultural] Victory is enabled>",
       "Cannot be hurried"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The restoration of the Well of Eternity, the source of all magic in the ancient world."
+      }
     ]
   },
   {

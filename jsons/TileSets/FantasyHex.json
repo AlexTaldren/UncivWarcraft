@@ -3,165 +3,187 @@
     "Hill+Forest+Arcane Crystals": [
       "Grassland",
       "Hill",
-      "Uranium",
+      "Arcane Crystals",
       "Forest"
     ],
     "Hill+Forest+Rugged Leather": [
       "Grassland",
       "Hill",
-      "Furs",
+      "Rugged Leather",
       "HillForest"
     ],
     "Grassland+Jungle+Azerite": [
       "Grassland",
-      "Oil",
+      "Azerite",
       "Jungle"
     ],
     "Grassland+Forest+Thorium": [
       "Grassland",
-      "Coal",
+      "Thorium",
       "GrasslandForest"
     ],
     "Grassland+Forest+Elementium": [
       "Grassland",
-      "Aluminum",
+      "Elementium",
       "GrasslandForest"
     ],
     "Grassland+Forest+Arcane Crystals": [
       "Grassland",
-      "Uranium",
+      "Arcane Crystals",
       "GrasslandForest"
     ],
     "Grassland+Forest+Rugged Leather": [
       "Grassland",
-      "Furs",
+      "Rugged Leather",
+      "GrasslandForest"
+    ],
+    "Grassland+Forest+Glowcap": [
+      "Grassland",
+      "Glowcap",
       "GrasslandForest"
     ],
     "Grassland+Hill+Forest+Thorium": [
       "Grassland",
       "Hill",
-      "Coal",
+      "Thorium",
       "Forest"
     ],
     "Grassland+Hill+Forest+Elementium": [
       "Grassland",
       "Hill",
-      "Aluminum",
+      "Elementium",
       "Forest"
     ],
     "Grassland+Hill+Forest+Arcane Crystals": [
       "Grassland",
       "Hill",
-      "Uranium",
+      "Arcane Crystals",
       "Forest"
     ],
     "Grassland+Hill+Forest+Rugged Leather": [
       "Grassland",
       "Hill",
-      "Furs",
+      "Rugged Leather",
+      "Forest"
+    ],
+    "Grassland+Hill+Forest+Glowcap": [
+      "Grassland",
+      "Hill",
+      "Glowcap",
       "Forest"
     ],
     "Plains+Jungle+Azerite": [
       "Plains",
-      "Oil",
+      "Azerite",
       "PlainsJungle"
     ],
     "Plains+Forest+Thorium": [
       "Plains",
-      "Coal",
+      "Thorium",
       "PlainsForest"
     ],
     "Plains+Forest+Elementium": [
       "Plains",
-      "Aluminum",
+      "Elementium",
       "PlainsForest"
     ],
     "Plains+Forest+Arcane Crystals": [
       "Plains",
-      "Uranium",
+      "Arcane Crystals",
       "PlainsForest"
     ],
     "Plains+Forest+Rugged Leather": [
       "Plains",
-      "Furs",
+      "Rugged Leather",
+      "PlainsForest"
+    ],
+    "Plains+Forest+Glowcap": [
+      "Plains",
+      "Glowcap",
       "PlainsForest"
     ],
     "Plains+Hill+Forest+Thorium": [
       "Plains",
       "Hill",
-      "Coal",
+      "Thorium",
       "Forest"
     ],
     "Plains+Hill+Forest+Elementium": [
       "Plains",
       "Hill",
-      "Aluminum",
+      "Elementium",
       "Forest"
     ],
     "Plains+Hill+Forest+Arcane Crystals": [
       "Plains",
       "Hill",
-      "Uranium",
+      "Arcane Crystals",
       "Forest"
     ],
     "Plains+Hill+Forest+Rugged Leather": [
       "Plains",
       "Hill",
-      "Furs",
+      "Rugged Leather",
+      "Forest"
+    ],
+    "Plains+Hill+Forest+Glowcap": [
+      "Plains",
+      "Hill",
+      "Glowcap",
       "Forest"
     ],
     "Tundra+Jungle+Azerite": [
       "Tundra",
-      "Oil",
+      "Azerite",
       "TundraForest"
     ],
     "Tundra+Forest+Thorium": [
       "Tundra",
-      "Coal",
+      "Thorium",
       "TundraForest"
     ],
     "Tundra+Forest+Elementium": [
       "Tundra",
-      "Aluminum",
+      "Elementium",
       "TundraForest"
     ],
     "Tundra+Forest+Arcane Crystals": [
       "Tundra",
-      "Uranium",
+      "Arcane Crystals",
       "TundraForest"
     ],
     "Tundra+Forest+Rugged Leather": [
       "Tundra",
-      "Furs",
+      "Rugged Leather",
       "TundraForest"
     ],
     "Tundra+Hill+Forest+Thorium": [
       "Tundra",
       "Hill",
-      "Coal",
+      "Thorium",
       "TundraForest"
     ],
     "Tundra+Hill+Forest+Elementium": [
       "Tundra",
       "Hill",
-      "Aluminum",
+      "Elementium",
       "TundraForest"
     ],
     "Tundra+Hill+Forest+Arcane Crystals": [
       "Tundra",
       "Hill",
-      "Uranium",
+      "Arcane Crystals",
       "TundraForest"
     ],
     "Tundra+Hill+Forest+Rugged Leather": [
       "Tundra",
       "Hill",
-      "Furs",
+      "Rugged Leather",
       "TundraForest"
     ],
     "Coast+Azerite+Azerite Drill": [
       "Coast",
-      "Offshore Platform"
+      "Tidal Drill"
     ]
   }
 }

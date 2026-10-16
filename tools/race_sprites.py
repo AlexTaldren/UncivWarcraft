@@ -372,7 +372,10 @@ def write_all(atlas, images_dir, renames, eras, races=RACES):
                     if suffix.count("-") == 1:              # "-<Era>" only
                         variants.append(suffix)
             for variant in variants:
-                layers = [atlas.crop(P + src + variant + s) for s in ("", "-1", "-2")]
+                import late_units
+                layers = (late_units.source_layers(atlas, src) if not variant else
+                          [atlas.crop(P + src + variant + s) for s in ("", "-1", "-2")])
+                dressed = not variant and late_units.is_dressed(src)
                 era = ""
                 if variant:
                     old_era = variant[1:]
@@ -380,6 +383,8 @@ def write_all(atlas, images_dir, renames, eras, races=RACES):
                 for race in races:
                     if mode == "mounted":
                         out = mounted(atlas, layers, race, src)
+                    elif dressed:
+                        out = late_units.source_layers(atlas, src, lambda ls, b, race=race: make(ls, race, b, mode))
                     else:
                         out = make(layers, race, src, mode)
                     for s, im in zip(("", "-1", "-2"), out):

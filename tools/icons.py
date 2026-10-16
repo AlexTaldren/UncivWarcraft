@@ -37,6 +37,7 @@ class Icon:
                    fill=v, width=int(w * SS))
 
     def rect(self, x0, y0, x1, y1, v=255):
+        x0, x1 = sorted((x0, x1)); y0, y1 = sorted((y0, y1))
         self.d.rectangle([x0 * SS, y0 * SS, x1 * SS, y1 * SS], fill=v)
 
     def line(self, pts, w, v=255, caps=True):

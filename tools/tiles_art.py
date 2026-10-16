@@ -620,7 +620,7 @@ WONDERS = {
 def render_all(atlas):
     art = Art(atlas)
     out = {}
-    for n, f in {**FEATURES, **WONDERS}.items():
+    for n, f in {**FEATURES, **WONDERS, **RESOURCES}.items():
         out[n] = f(art)
     return out
 
@@ -634,3 +634,133 @@ def write_all(atlas, images_dir):
             os.makedirs(os.path.dirname(path), exist_ok=True)
             (im.resize(size, Image.BOX) if size else im).save(path)
     return len(tiles)
+
+
+# ======================================================================= resources & drills (v0.8)
+def _cluster(p, x, y, cols, n=3, h=6, w=1.6, part="c"):
+    for k in range(n):
+        dx = (k - (n - 1) / 2) * 2.6
+        crystal(p, x + dx, y + abs(dx) * 0.3, h - abs(dx) * 0.6, w, cols[k % len(cols)], "%s%d" % (part, k))
+
+
+def _rock_bed(p, x, y, r, col, part):
+    p.ell(x, y, r, r * 0.55, col, part)
+    p.ell(x - r * 0.4, y - r * 0.2, r * 0.45, r * 0.3, shade(col, 1.12), part + "h")
+
+
+def res_azerite(art):
+    """Azerite: golden crystal shards shot through with blue light, bursting from the ground."""
+    rng = random.Random(41)
+    p = Paint(TW, TH)
+    for i, (x, y) in enumerate(((22, 30), (40, 26), (33, 40))):
+        _rock_bed(p, x, y + 1, 6, (95, 80, 70), "bed%d" % i)
+        _cluster(p, x, y, [(250, 200, 80), (255, 225, 120), (235, 175, 60)], n=3, h=rng.randint(8, 11), part="az%d" % i)
+    l = layer(p, outline=(80, 55, 20))
+    sp = Paint(TW, TH)
+    for x, y in ((21, 24), (41, 20), (33, 33), (26, 29), (38, 25)):
+        sp.dot(x, y, (140, 220, 255), "spark")
+    return art.clip(stack(glow(l, (255, 200, 90), 1.6, 0.9), glow(layer(sp), (110, 200, 255), 1.0, 1.4)))
+
+
+def res_arcane(art):
+    p = Paint(TW, TH)
+    for i, (x, y) in enumerate(((20, 28), (42, 30), (31, 40))):
+        _rock_bed(p, x, y + 1, 6, (110, 105, 120), "bed%d" % i)
+        _cluster(p, x, y, [(190, 120, 255), (230, 160, 255), (150, 110, 240)], n=3, h=9, part="ar%d" % i)
+    return art.clip(glow(layer(p, outline=(60, 35, 100)), (200, 140, 255), 1.6, 1.0))
+
+
+def res_ore(art, vein, bright, seed, rock=(105, 100, 98)):
+    rng = random.Random(seed)
+    p = Paint(TW, TH)
+    for i, (x, y) in enumerate(((20, 28), (42, 26), (31, 39), (47, 38))):
+        r = 7 if i < 3 else 4.5
+        _rock_bed(p, x, y, r, rock, "rock%d" % i)
+        for k in range(4 if i < 3 else 2):
+            vx, vy = x + rng.uniform(-r * 0.6, r * 0.6), y + rng.uniform(-r * 0.3, r * 0.3)
+            p.line(vx, vy, vx + rng.choice((-2, 2)), vy + rng.choice((-1, 1)), 1, vein, "vein%d%d" % (i, k))
+            p.dot(vx, vy, bright, "vein%d%d" % (i, k))
+    return art.clip(layer(p, outline=(45, 42, 40)))
+
+
+def res_honeycomb(art, with_farm=False):
+    p = Paint(TW, TH)
+    for i, (x, y) in enumerate(((20, 32), (34, 27), (44, 38))):
+        for k in range(3):                               # straw skep hive: stacked rings
+            p.ell(x, y - k * 2.6, 5 - k * 1.3, 2.2, (215, 170, 80) if k % 2 == 0 else (190, 145, 60), "skep%d%d" % (i, k))
+        p.ell(x, y + 1, 1.2, 0.9, (60, 40, 20), "door%d" % i)
+    for i, (x, y) in enumerate(((27, 40), (39, 20))):  # spilled honeycomb
+        for dx, dy in ((0, 0), (2, 0), (1, 1.6)):
+            p.ell(x + dx, y + dy, 1, 0.8, (250, 200, 60), "comb%d" % i)
+    l = layer(p, outline=(90, 60, 25))
+    b = Paint(TW, TH)
+    for x, y in ((24, 22), (31, 18), (47, 30), (16, 26), (40, 31)):
+        b.dot(x, y, (30, 25, 15), "bee")
+        b.dot(x + 1, y, (250, 210, 60), "bee")
+    return art.clip(stack(l, layer(b)))
+
+
+def res_glowcap(art):
+    p = Paint(TW, TH)
+    for i, (x, y, s) in enumerate(((20, 32, 1.0), (27, 36, 0.7), (40, 28, 1.1), (46, 33, 0.7), (33, 42, 0.9))):
+        p.line(x, y, x, y - 5 * s, 2 if s > 0.8 else 1, (210, 220, 200), "stem%d" % i)
+        p.ell(x, y - 5 * s - 1, 4 * s + 0.5, 2.3 * s + 0.4, (90, 210, 200), "cap%d" % i)
+        p.dot(x - 1, y - 5 * s - 2, (200, 255, 245), "cap%d" % i)
+    return art.clip(glow(layer(p, outline=(25, 70, 70)), (110, 240, 220), 1.6, 1.0))
+
+
+def drill(art, sea=False, pillaged=False):
+    """A goblin drilling rig: timber-and-brass derrick, gears and a glow of Azerite."""
+    p = Paint(TW, TH)
+    if sea:
+        p.poly([(14, 40), (50, 40), (46, 46), (18, 46)], (120, 90, 60), "deck")
+        for x in (18, 30, 44):
+            p.line(x, 46, x, 52, 2, (90, 65, 45), "pile")
+    else:
+        p.ell(32, 42, 12, 4, (100, 80, 60), "pad")
+        p.ell(32, 42, 4, 1.5, (250, 200, 80), "pool")
+    wood, brass = (150, 100, 60), (210, 170, 70)
+    top = 8 if not pillaged else 18
+    p.line(24, 41, 31 if not pillaged else 26, top, 2, wood, "legL")
+    p.line(40, 41, 33 if not pillaged else 36, top + (0 if not pillaged else 6), 2, wood, "legR")
+    for y in range(top + 6, 40, 7):
+        p.line(26, y, 38, y, 1, shade(wood, 0.85), "brace%d" % y)
+    if not pillaged:
+        p.line(32, top, 32, top - 3, 1, (90, 90, 95), "crown")
+        p.ell(22, 36, 4, 4, brass, "gear")
+        p.ell(22, 36, 1.5, 1.5, (110, 85, 40), "hub")
+        p.poly([(38, 40), (46, 40), (46, 33), (38, 33)], (180, 70, 45), "engine")
+        p.line(44, 33, 44, 26, 2, (90, 90, 95), "stack")
+    l = layer(p, outline=(50, 35, 25))
+    s = Paint(TW, TH)
+    if not pillaged:
+        s.ell(45, 23, 2.5, 2, (170, 170, 170), "smoke")
+        s.ell(48, 19, 3, 2.3, (200, 200, 200), "smoke2")
+    else:
+        s.ell(33, 40, 3, 2, (60, 55, 50), "wreck")
+    return art.clip(stack(glow(l, (255, 200, 90), 1.2, 0.5) if not pillaged else l, layer(s)))
+
+
+def with_base(art, name, over):
+    """Combine a stock improvement image (camp, plantation) with our resource art."""
+    im = art.a.crop(HR + name) if (HR + name) in art.a.regions else Image.new("RGBA", (TW, TH))
+    out = Image.new("RGBA", (TW, TH))
+    out.alpha_composite(over(art))
+    out.alpha_composite(im, (0, TH - im.height) if im.height <= TH else (0, 0))
+    return out
+
+
+RESOURCES = {
+    "Azerite": res_azerite, "OilS": res_azerite, "Arcane Crystals": res_arcane,
+    "Elementium": lambda art: res_ore(art, (90, 200, 220), (200, 250, 255), 42),
+    "Thorium": lambda art: res_ore(art, (140, 190, 110), (220, 245, 190), 43, rock=(80, 78, 80)),
+    "Honeycomb": res_honeycomb, "Glowcap": res_glowcap,
+    "Glowcap+Camp": lambda art: with_base(art, "Camp", res_glowcap),
+    "Glowcap+CampT": lambda art: with_base(art, "CampT" if (HR + "CampT") in art.a.regions else "Camp", res_glowcap),
+    "Honeycomb+Plantation": lambda art: with_base(art, "Plantation", res_honeycomb),
+    "Azerite Drill": lambda art: drill(art), "Azerite Drill-Pillaged": lambda art: drill(art, pillaged=True),
+    "Azerite+Azerite Drill": lambda art: stack(res_azerite(art), drill(art)),
+    "Azerite+Azerite Drill-Pillaged": lambda art: stack(res_azerite(art), drill(art, pillaged=True)),
+    "Oil WellC": lambda art: drill(art, sea=True),
+    "Tidal Drill": lambda art: drill(art, sea=True), "Azerite+Tidal Drill": lambda art: drill(art, sea=True),
+}

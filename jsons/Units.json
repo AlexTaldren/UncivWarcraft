@@ -8,7 +8,12 @@
       "Can build [Land] improvements on tiles",
       "Automation is a primary action"
     ],
-    "cost": 70
+    "cost": 70,
+    "civilopediaText": [
+      {
+        "text": "Ready to work! Peasants build farms, mines and roads, and gather the realm's resources."
+      }
+    ]
   },
   {
     "name": "Settler",
@@ -21,7 +26,12 @@
       "Excess Food converted to Production when under construction",
       "Requires at least [2] population"
     ],
-    "hurryCostModifier": 20
+    "hurryCostModifier": 20,
+    "civilopediaText": [
+      {
+        "text": "Families who set out to found a new town on the frontier."
+      }
+    ]
   },
   {
     "name": "Scout",
@@ -38,7 +48,12 @@
     "promotions": [
       "Ignore terrain cost"
     ],
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Fast, lightly armed explorers who chart the lands ahead."
+      }
+    ]
   },
   {
     "name": "Militia",
@@ -69,7 +84,12 @@
     "requiredTech": "Archery",
     "obsoleteTech": "Construction",
     "upgradesTo": "Ranger",
-    "attackSound": "arrow"
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "Bowmen and huntresses who strike from a distance."
+      }
+    ]
   },
   {
     "name": "Fishing Skiff",
@@ -82,6 +102,11 @@
       "May create improvements on water resources",
       "Uncapturable",
       "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Small boats that bring in fish, crabs and pearls."
+      }
     ]
   },
   {
@@ -97,7 +122,12 @@
     ],
     "upgradesTo": "Brigantine",
     "obsoleteTech": "Astronomy",
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "The first fighting ships, rowed along the coasts."
+      }
+    ]
   },
   {
     "name": "Mounted Archer",
@@ -115,7 +145,12 @@
       "Rough terrain penalty",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "arrow"
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "Archers on horseback, wolfback or raptorback, quick to strike and quick to withdraw."
+      }
+    ]
   },
   {
     "name": "Spearman",
@@ -129,7 +164,12 @@
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>"
     ],
-    "attackSound": "metalhit"
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Spears and shields to stop a charge."
+      }
+    ]
   },
   {
     "name": "Outrider",
@@ -147,7 +187,12 @@
       "[-33]% Strength <vs cities> <when attacking>"
     ],
     "hurryCostModifier": 20,
-    "attackSound": "horse"
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Light riders who scout and raid ahead of the army."
+      }
+    ]
   },
   {
     "name": "Catapult",
@@ -167,7 +212,12 @@
       "Never appears as a Barbarian unit"
     ],
     "hurryCostModifier": 20,
-    "attackSound": "throw"
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A stone-throwing siege engine, the Horde's answer to city walls."
+      }
+    ]
   },
   {
     "name": "Ranger",
@@ -179,7 +229,12 @@
     "requiredTech": "Construction",
     "obsoleteTech": "Clockwork",
     "upgradesTo": "Crossbowman",
-    "attackSound": "arrow"
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "Skilled bowmen of the forests, like the rangers of Quel'Thalas."
+      }
+    ]
   },
   {
     "name": "Swordsman",
@@ -192,7 +247,12 @@
     "obsoleteTech": "Steel Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
-    "attackSound": "metalhit"
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Armoured infantry with blade and shield."
+      }
+    ]
   },
   {
     "name": "Pikeman",
@@ -206,7 +266,12 @@
     ],
     "upgradesTo": "Lancer",
     "obsoleteTech": "Mithril Forged Swords",
-    "attackSound": "metalhit"
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Long pikes to hold back cavalry."
+      }
+    ]
   },
   {
     "name": "War Galley",
@@ -221,7 +286,12 @@
     "uniques": [
       "Cannot enter ocean tiles"
     ],
-    "attackSound": "arrow"
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "A heavy galley with ballistae, built for sea battles."
+      }
+    ]
   },
   {
     "name": "Knight",
@@ -239,7 +309,12 @@
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "horse"
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Armoured riders, the shock troops of the age of chivalry."
+      }
+    ]
   },
   {
     "name": "Crossbowman",
@@ -251,7 +326,12 @@
     "requiredTech": "Clockwork",
     "upgradesTo": "Mountaineer",
     "obsoleteTech": "Steamworks",
-    "attackSound": "crossbow"
+    "attackSound": "crossbow",
+    "civilopediaText": [
+      {
+        "text": "Crossbows that pierce armour at long range."
+      }
+    ]
   },
   {
     "name": "Ballista",
@@ -270,7 +350,12 @@
       "[-1] Sight",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "throw"
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A great siege crossbow that hurls bolts at walls and armies."
+      }
+    ]
   },
   {
     "name": "Vanguard",
@@ -282,7 +367,12 @@
     "upgradesTo": "Musketeer",
     "obsoleteTech": "Blackpowder",
     "requiredResource": "Iron",
-    "attackSound": "metalhit"
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Elite heavy infantry who lead the charge."
+      }
+    ]
   },
   {
     "name": "Brigantine",
@@ -298,7 +388,12 @@
       "Withdraws before melee combat <with [80]% chance>"
     ],
     "hurryCostModifier": 30,
-    "attackSound": "cannon"
+    "attackSound": "cannon",
+    "civilopediaText": [
+      {
+        "text": "A swift sailing ship for exploring and raiding."
+      }
+    ]
   },
   {
     "name": "Musketeer",
@@ -309,7 +404,12 @@
     "requiredTech": "Blackpowder",
     "upgradesTo": "Rifleman",
     "obsoleteTech": "Long Rifles",
-    "attackSound": "shot"
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Infantry with muskets, armed by dwarven and goblin gunsmiths."
+      }
+    ]
   },
   {
     "name": "Buccaneer",
@@ -323,7 +423,12 @@
       "Coastal Raider I",
       "[Buccaneer] ability"
     ],
-    "attackSound": "cannon"
+    "attackSound": "cannon",
+    "civilopediaText": [
+      {
+        "text": "Pirates of the South Seas, like the Bloodsail Buccaneers of Booty Bay."
+      }
+    ]
   },
   {
     "name": "Frigate",
@@ -337,7 +442,12 @@
     "obsoleteTech": "Arcane Conduits",
     "upgradesTo": "Dreadnought",
     "hurryCostModifier": 20,
-    "attackSound": "shipCannonVolley"
+    "attackSound": "shipCannonVolley",
+    "civilopediaText": [
+      {
+        "text": "A three-masted warship with cannons along both sides."
+      }
+    ]
   },
   {
     "name": "Lancer",
@@ -358,7 +468,12 @@
     ],
     "upgradesTo": "Siegebreaker",
     "obsoleteTech": "Battle Formations",
-    "attackSound": "horse"
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Riders with long lances, devastating in the charge."
+      }
+    ]
   },
   {
     "name": "Cannon",
@@ -377,7 +492,12 @@
       "[-1] Sight",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "cannon"
+    "attackSound": "cannon",
+    "civilopediaText": [
+      {
+        "text": "Blackpowder cannons that batter down walls."
+      }
+    ]
   },
   {
     "name": "Mountaineer",
@@ -390,7 +510,12 @@
     "requiredTech": "Steamworks",
     "upgradesTo": "Grenadier",
     "obsoleteTech": "Fragmentation Shards",
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Dwarven mountaineers with heavy repeating guns, defenders of the high passes."
+      }
+    ]
   },
   {
     "name": "Rifleman",
@@ -401,7 +526,12 @@
     "requiredTech": "Long Rifles",
     "obsoleteTech": "Gnomish Gearworks",
     "upgradesTo": "Fusilier",
-    "attackSound": "shot"
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Dwarven-style riflemen, deadly marksmen with long guns."
+      }
+    ]
   },
   {
     "name": "Cavalry",
@@ -419,7 +549,12 @@
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "cavalry"
+    "attackSound": "cavalry",
+    "civilopediaText": [
+      {
+        "text": "Riders with sabres and carbines who strike fast and far."
+      }
+    ]
   },
   {
     "name": "Ironclad",
@@ -436,7 +571,12 @@
       "Double movement in [Coast]",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "shipguns"
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "A steam-driven ship plated with iron."
+      }
+    ]
   },
   {
     "name": "Mortar Team",
@@ -458,7 +598,12 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "artillery"
+    "attackSound": "artillery",
+    "civilopediaText": [
+      {
+        "text": "Dwarven mortar crews whose shells arc over walls."
+      }
+    ]
   },
   {
     "name": "Gnomish Submarine",
@@ -474,7 +619,12 @@
       "Can only attack [Water] tiles",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "torpedo"
+    "attackSound": "torpedo",
+    "civilopediaText": [
+      {
+        "text": "A gnomish underwater vessel that strikes unseen from below the waves."
+      }
+    ]
   },
   {
     "name": "Fusilier",
@@ -485,7 +635,12 @@
     "requiredTech": "Gnomish Gearworks",
     "upgradesTo": "Shock Trooper",
     "obsoleteTech": "Arcanite Alloys",
-    "attackSound": "shot"
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Infantry with rifles and bayonets, the backbone of later armies."
+      }
+    ]
   },
   {
     "name": "Gyrocopter",
@@ -505,7 +660,12 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "A small dwarven flying machine with a pair of guns, fast and nimble."
+      }
+    ]
   },
   {
     "name": "Bomber Zeppelin",
@@ -519,7 +679,12 @@
     "requiredResource": "Azerite",
     "upgradesTo": "War Zeppelin",
     "obsoleteTech": "Scrying",
-    "attackSound": "bombing"
+    "attackSound": "bombing",
+    "civilopediaText": [
+      {
+        "text": "A goblin zeppelin loaded with bombs."
+      }
+    ]
   },
   {
     "name": "Shock Trooper",
@@ -530,7 +695,12 @@
     "requiredTech": "Arcanite Alloys",
     "upgradesTo": "Mechagnome Trooper",
     "obsoleteTech": "War Drums",
-    "attackSound": "shot"
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Disciplined infantry with the best arms the realm can make."
+      }
+    ]
   },
   {
     "name": "Airship Tender",
@@ -542,6 +712,11 @@
     "uniques": [
       "Cannot attack",
       "Can carry [2] [Aircraft] units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A great airship that carries gyrocopters and gryphon riders across the seas."
+      }
     ]
   },
   {
@@ -560,7 +735,12 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "shipguns"
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "A massive steam warship with great cannons."
+      }
+    ]
   },
   {
     "name": "Grenadier",
@@ -572,7 +752,12 @@
     "cost": 350,
     "requiredTech": "Fragmentation Shards",
     "upgradesTo": "Mechagnome Trooper",
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Soldiers with bombs and grenades who blast their way through enemy lines."
+      }
+    ]
   },
   {
     "name": "Flak Cannon",
@@ -590,7 +775,12 @@
       "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Guns that fill the sky with shot to bring down flyers."
+      }
+    ]
   },
   {
     "name": "War Golem",
@@ -607,7 +797,12 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot"
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "A clanking golem of iron and steam, a walking siege engine."
+      }
+    ]
   },
   {
     "name": "Destroyer",
@@ -623,7 +818,12 @@
       "Withdraws before melee combat <with [80]% chance>",
       "[+100]% Strength <vs [Gnomish Submarine] units>"
     ],
-    "attackSound": "shipguns"
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "A fast steam warship built to hunt submarines and raiders."
+      }
+    ]
   },
   {
     "name": "Kul Tiran Marine",
@@ -639,7 +839,12 @@
       "[+1] Sight <when [Embarked]>",
       "[+100]% Strength <when defending> <when [Embarked]>"
     ],
-    "attackSound": "shot"
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "The marines of Kul Tiras, who fight equally well on deck and on shore."
+      }
+    ]
   },
   {
     "name": "Gryphon Rider",
@@ -658,7 +863,12 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Wildhammer dwarves riding gryphons, hurling storm hammers from the sky."
+      }
+    ]
   },
   {
     "name": "War Zeppelin",
@@ -671,7 +881,12 @@
     "requiredTech": "Scrying",
     "requiredResource": "Azerite",
     "upgradesTo": "Void Bomber",
-    "attackSound": "bombing"
+    "attackSound": "bombing",
+    "civilopediaText": [
+      {
+        "text": "A heavily armed goblin zeppelin."
+      }
+    ]
   },
   {
     "name": "Skyguard",
@@ -684,7 +899,12 @@
       "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "shot"
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Troops who drop from airships behind enemy lines."
+      }
+    ]
   },
   {
     "name": "Siege Engine",
@@ -700,7 +920,12 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot"
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "A great steam-driven siege engine, the dwarves' answer to any fortress."
+      }
+    ]
   },
   {
     "name": "Siegebreaker",
@@ -714,7 +939,12 @@
       "[+100]% Strength <vs [War Machine] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Crews with heavy guns built to stop siege engines and golems."
+      }
+    ]
   },
   {
     "name": "Mana Bomb",
@@ -735,7 +965,12 @@
       "Self-destructs when attacking",
       "Blast radius [2]"
     ],
-    "attackSound": "nuke"
+    "attackSound": "nuke",
+    "civilopediaText": [
+      {
+        "text": "A bomb of unstable mana, like the one that destroyed Theramore. A terrible weapon."
+      }
+    ]
   },
   {
     "name": "Demolisher",
@@ -756,7 +991,12 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "artillery"
+    "attackSound": "artillery",
+    "civilopediaText": [
+      {
+        "text": "A Horde siege engine that hurls burning shot at walls from afar."
+      }
+    ]
   },
   {
     "name": "Flak Wagon",
@@ -772,7 +1012,12 @@
       "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "missile"
+    "attackSound": "missile",
+    "civilopediaText": [
+      {
+        "text": "A mobile gun wagon that brings down flyers."
+      }
+    ]
   },
   {
     "name": "Arcane Missile",
@@ -786,7 +1031,12 @@
     "uniques": [
       "[-100]% maintenance costs"
     ],
-    "attackSound": "missile"
+    "attackSound": "missile",
+    "civilopediaText": [
+      {
+        "text": "A guided bolt of focused arcane power."
+      }
+    ]
   },
   {
     "name": "Arcane Annihilator",
@@ -803,7 +1053,12 @@
       "Blast radius [2]",
       "Consumes [2] [Arcane Crystals]"
     ],
-    "attackSound": "nuke"
+    "attackSound": "nuke",
+    "civilopediaText": [
+      {
+        "text": "An arcane weapon powerful enough to lay waste to a city."
+      }
+    ]
   },
   {
     "name": "Flying Machine",
@@ -822,7 +1077,12 @@
       "Unable to capture cities",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun"
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "The gnomes' flying machine, armed with guns and bombs."
+      }
+    ]
   },
   {
     "name": "Giant Turtle",
@@ -840,7 +1100,12 @@
       "Can carry [2] [Arcane Projectile] units",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "torpedo"
+    "attackSound": "torpedo",
+    "civilopediaText": [
+      {
+        "text": "A great sea turtle trained for war, armoured and hard to see beneath the waves."
+      }
+    ]
   },
   {
     "name": "Mechagnome Trooper",
@@ -852,7 +1117,12 @@
     "uniques": [
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot"
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "Mechagnome soldiers, part flesh and part machine."
+      }
+    ]
   },
   {
     "name": "Juggernaught",
@@ -874,7 +1144,12 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "shipguns"
+    "attackSound": "shipguns",
+    "civilopediaText": [
+      {
+        "text": "A huge Horde warship, armoured and bristling with weapons."
+      }
+    ]
   },
   {
     "name": "Mechano-Tank",
@@ -890,7 +1165,12 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot"
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "A heavily armoured gnomish war machine on treads."
+      }
+    ]
   },
   {
     "name": "Sky Golem",
@@ -908,7 +1188,12 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "jetgun"
+    "attackSound": "jetgun",
+    "civilopediaText": [
+      {
+        "text": "A flying golem of arcane metal, swift and deadly."
+      }
+    ]
   },
   {
     "name": "Iron Colossus",
@@ -923,7 +1208,12 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "gdrAttack"
+    "attackSound": "gdrAttack",
+    "civilopediaText": [
+      {
+        "text": "A towering war machine of iron and arcane power, built in the titans' image."
+      }
+    ]
   },
   {
     "name": "Void Bomber",
@@ -944,7 +1234,12 @@
     "promotions": [
       "Evasion"
     ],
-    "attackSound": "bombing"
+    "attackSound": "bombing",
+    "civilopediaText": [
+      {
+        "text": "A void-touched airship that strikes unseen."
+      }
+    ]
   },
   {
     "name": "Great Artist",
@@ -958,7 +1253,12 @@
       "Unbuildable",
       "Uncapturable"
     ],
-    "movement": 2
+    "movement": 2,
+    "civilopediaText": [
+      {
+        "text": "A great bard, painter or sculptor whose work inspires a whole people."
+      }
+    ]
   },
   {
     "name": "Great Scientist",
@@ -972,7 +1272,12 @@
       "Unbuildable",
       "Uncapturable"
     ],
-    "movement": 2
+    "movement": 2,
+    "civilopediaText": [
+      {
+        "text": "A great scholar or mage whose discoveries change the world."
+      }
+    ]
   },
   {
     "name": "Great Merchant",
@@ -986,7 +1291,12 @@
       "Unbuildable",
       "Uncapturable"
     ],
-    "movement": 2
+    "movement": 2,
+    "civilopediaText": [
+      {
+        "text": "A trade prince or master merchant with a fortune to invest."
+      }
+    ]
   },
   {
     "name": "Great Engineer",
@@ -1000,7 +1310,12 @@
       "Unbuildable",
       "Uncapturable"
     ],
-    "movement": 2
+    "movement": 2,
+    "civilopediaText": [
+      {
+        "text": "A master builder or tinker who can raise wonders in record time."
+      }
+    ]
   },
   {
     "name": "Great Prophet",
@@ -1022,7 +1337,12 @@
       "Takes your religion over the one in their birth city"
     ],
     "movement": 2,
-    "religiousStrength": 1000
+    "religiousStrength": 1000,
+    "civilopediaText": [
+      {
+        "text": "A prophet of the Light, the spirits or Elune, who can found a faith."
+      }
+    ]
   },
   {
     "name": "Great General",
@@ -1037,7 +1357,12 @@
       "Unbuildable",
       "Uncapturable"
     ],
-    "movement": 2
+    "movement": 2,
+    "civilopediaText": [
+      {
+        "text": "A hero who leads armies to victory and inspires the soldiers around them."
+      }
+    ]
   },
   {
     "name": "Great Admiral",
@@ -1052,7 +1377,12 @@
       "Unbuildable",
       "Uncapturable"
     ],
-    "movement": 4
+    "movement": 4,
+    "civilopediaText": [
+      {
+        "text": "A legendary sea captain who leads fleets to victory."
+      }
+    ]
   },
   {
     "name": "Missionary",
@@ -1067,7 +1397,12 @@
       "Only available <when religion is enabled>"
     ],
     "movement": 4,
-    "religiousStrength": 1000
+    "religiousStrength": 1000,
+    "civilopediaText": [
+      {
+        "text": "Priests and shamans who spread the faith to distant cities."
+      }
+    ]
   },
   {
     "name": "Inquisitor",
@@ -1081,7 +1416,12 @@
       "Unbuildable",
       "Religious Unit"
     ],
-    "movement": 3
+    "movement": 3,
+    "civilopediaText": [
+      {
+        "text": "Zealots who root out other faiths."
+      }
+    ]
   },
   {
     "name": "Arcane Thruster",
@@ -1098,6 +1438,11 @@
       "Can be added to [The Spaceship] in the Capital",
       "Limited to [3] per Civilization",
       "Only available <when [Scientific] Victory is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A part of the Titan vessel: the arcane thrusters that lift it skyward."
+      }
     ]
   },
   {
@@ -1115,6 +1460,11 @@
       "Can be added to [The Spaceship] in the Capital",
       "Limited to [1] per Civilization",
       "Only available <when [Scientific] Victory is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A part of the Titan vessel: the crystal that charts its course among the stars."
+      }
     ]
   },
   {
@@ -1132,6 +1482,11 @@
       "Can be added to [The Spaceship] in the Capital",
       "Limited to [1] per Civilization",
       "Only available <when [Scientific] Victory is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A part of the Titan vessel: the engine of titan design that drives it."
+      }
     ]
   },
   {
@@ -1149,6 +1504,11 @@
       "Can be added to [The Spaceship] in the Capital",
       "Limited to [1] per Civilization",
       "Only available <when [Scientific] Victory is enabled>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A part of the Titan vessel: vaults that keep its crew in stasis on the long voyage."
+      }
     ]
   },
   {

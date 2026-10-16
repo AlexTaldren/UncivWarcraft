@@ -443,6 +443,11 @@ def write_all(atlas_path, images_dir, race_dir, renames, eras):
                            and r[len(P + src):].count("-") == 1]
         for v in variants:
             era = "-" + eras.get(v[1:], v[1:]) if v else ""
-            save(race_dir, f"{new}-Humans{era}", human_variant(layers(a, src + v), src))
+            import late_units
+            if not v and late_units.is_dressed(src):
+                out = late_units.source_layers(a, src, lambda ls, b: human_variant(ls, b))
+            else:
+                out = human_variant(late_units.source_layers(a, src) if not v else layers(a, src + v), src)
+            save(race_dir, f"{new}-Humans{era}", out)
             count += 3
     return count

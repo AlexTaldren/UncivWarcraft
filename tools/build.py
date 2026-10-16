@@ -10,7 +10,8 @@ import wc_renames as R
 import wc_factions as F
 import wc_names as NG
 import wc_terrain as WT
-import icons, race_sprites, human_sprites, tiles_art, citycenters
+import wc_lore as LORE
+import icons, race_sprites, human_sprites, tiles_art, citycenters, late_units
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -221,12 +222,43 @@ barb = [n for n in files["Nations"] if n["name"] == "Barbarians"]
 spec = [n for n in files["Nations"] if n["name"] == "Spectator"]
 files["Nations"] = spec + majors + minors + barb
 
+# ------------------------------------------------------------ 5b. Warcraft lore in the civilopedia
+def add_lore(obj, text):
+    if text and not obj.get("civilopediaText"):
+        obj["civilopediaText"] = [{"text": text}]
+for u in files["Units"]:
+    add_lore(u, LORE.UNITS.get(u["name"]))
+for b in files["Buildings"]:
+    add_lore(b, LORE.WONDERS.get(b["name"]))
+for col in files["Techs"]:
+    for t in col["techs"]:
+        add_lore(t, LORE.TECHS.get(t["name"]))
+missing = [u["name"] for u in files["Units"] if not u.get("civilopediaText")] + \
+          [t["name"] for c in files["Techs"] for t in c["techs"] if not t.get("civilopediaText")] + \
+          [b["name"] for b in files["Buildings"] if (b.get("isWonder") or b.get("isNationalWonder")) and not b.get("civilopediaText")]
+print("lore missing:", missing)
+
 files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth Large]"]}
 
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))
 
-# ------------------------------------------------------------ 6. tileset layering rules for renamed things
+# ------------------------------------------------------------ 6. tileset layering rules
+MODERN_ERAS = ("Industrial era", "Modern era", "Atomic era", "Information era", "Future era")
+
+def rename_leaf(leaf):
+    """Rename an image name like "Truffles+Camp-Pillaged" token by token."""
+    def one(tok):
+        for old, new in R.ALL.items():
+            if tok == old or tok.startswith(old + "-"):
+                return new + tok[len(old):]
+        return tok
+    out = "+".join(one(t) for t in leaf.split("+"))
+    for old, new in R.ERAS.items():   # era-specific variants, e.g. "Great Artist-Industrial era"
+        out = out.replace("-" + old, "-" + new)
+    return out
+
+# tileset layering rules for renamed things
 TS = os.path.join(SRC, "jsons", "TileSets")
 os.makedirs(os.path.join(J, "TileSets"), exist_ok=True)
 for f in os.listdir(TS):
@@ -235,7 +267,8 @@ for f in os.listdir(TS):
     for key, layers in cfg.get("ruleVariants", {}).items():
         toks = key.split("+")
         if any(t in R.ALL for t in toks):
-            extra["+".join(R.ALL.get(t, t) for t in toks)] = layers
+            # layer images are renamed token by token too, so our own art is used
+            extra["+".join(R.ALL.get(t, t) for t in toks)] = [rename_leaf(l) for l in layers]
     if extra:
         ljson.dump({"ruleVariants": extra}, os.path.join(J, "TileSets", f))
 
@@ -248,13 +281,10 @@ for a in atlases:
         folder, _, leaf = region.rpartition("/")
         if folder not in R.IMAGE_FOLDERS:
             continue
-        newleaf = leaf
-        for old, new in R.ALL.items():
-            if leaf == old or leaf.startswith(old + "-"):
-                newleaf = new + leaf[len(old):]
-                break
-        for old, new in R.ERAS.items():   # era-specific variants, e.g. "Great Artist-Industrial era"
-            newleaf = newleaf.replace("-" + old, "-" + new)
+        # map tiles keep their pre-industrial look in every era (no bunkers or glass towers)
+        if folder.endswith("/Tiles") and any(e in leaf for e in MODERN_ERAS):
+            continue
+        newleaf = rename_leaf(leaf)
         if newleaf != leaf:
             path = os.path.join(IMG, folder, newleaf + ".png")
             if not os.path.exists(path):
@@ -265,9 +295,22 @@ print("re-keyed images:", count)
 
 # ------------------------------------------------------------ 8. original Warcraft art
 icons.write_all(IMG)
+import icon_set
+print("warcraft icons:", icon_set.write_all(IMG))
 
+# Icons for techs, buildings and policies in their own pack so "game" stays one page.
+for _f in ("TechIcons", "BuildingIcons", "PolicyIcons"):
+    shutil.move(os.path.join(IMG, _f), os.path.join(OUT, "Images.WarcraftIcons", _f))
 # Map art (unit sprites, tiles) goes in its own texture pack so nothing spills into a 2nd page.
 shutil.move(os.path.join(IMG, "TileSets"), os.path.join(OUT, "Images.WarcraftMap", "TileSets"))
+# Warcraft replacements for the modern-era unit sprites (every civ)
+_lu = Atlas(os.path.join(SRC, "AbsoluteUnits.atlas"))
+for src in late_units.SOURCES:
+    for suf, im in zip(("", "-1", "-2"), late_units.source_layers(_lu, src)):
+        path = os.path.join(OUT, "Images.WarcraftMap", late_units.P, R.ALL.get(src, src) + suf + ".png")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        im.save(path)
+print("late-era sprites:", len(late_units.SOURCES))
 # Race-specific versions of every person unit ("Swordsman-Orcs" ...), in their own texture pack
 n = race_sprites.write_all(Atlas(os.path.join(SRC, "AbsoluteUnits.atlas")),
                            os.path.join(OUT, "Images.RaceUnits"), R.ALL, R.ERAS)

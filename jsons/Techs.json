@@ -11,6 +11,11 @@
         "row": 6,
         "uniques": [
           "Starting tech"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The first fields of grain, tilled by the tribes that would become the nations of Azeroth."
+          }
         ]
       }
     ]
@@ -30,6 +35,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Clay vessels to store food and water through the long winters."
+          }
         ]
       },
       {
@@ -37,6 +47,11 @@
         "row": 5,
         "prerequisites": [
           "Farming"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Taming wolves, kodo, boars and the other beasts of the wild."
+          }
         ]
       },
       {
@@ -47,6 +62,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The bow, first weapon of the hunter and the ranger."
+          }
         ]
       },
       {
@@ -57,6 +77,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Digging copper and tin from the hills, as the dwarves of Khaz Modan do best."
+          }
         ]
       }
     ]
@@ -76,6 +101,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Boats and rafts to fish the coasts and cross to the islands."
+          }
         ]
       },
       {
@@ -86,6 +116,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Knowing Peacebloom from Silverleaf: the first remedies and reagents."
+          }
         ]
       },
       {
@@ -96,6 +131,11 @@
         ],
         "uniques": [
           "Enables establishment of embassies <Civilopedia link [Tutorials/Embassies]>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Writing in runes, as the titans' servants first taught the dwarves and the trolls."
+          }
         ]
       },
       {
@@ -106,6 +146,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Turning hides and furs into leather."
+          }
         ]
       },
       {
@@ -117,6 +162,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Carts and wagons to carry goods between villages."
+          }
         ]
       },
       {
@@ -124,6 +174,11 @@
         "row": 9,
         "prerequisites": [
           "Mining"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Cutting and stacking stone into walls and halls."
+          }
         ]
       },
       {
@@ -134,6 +189,11 @@
         ],
         "uniques": [
           "[+50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Alloying copper and tin into bronze for tools and blades."
+          }
         ]
       }
     ]
@@ -154,6 +214,11 @@
         ],
         "uniques": [
           "Enables embarkation for land units"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Lenses and spyglasses, for sailors and astrologers alike."
+          }
         ]
       },
       {
@@ -165,6 +230,11 @@
         ],
         "uniques": [
           "[+50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Riding horses, wolves and other mounts to war."
+          }
         ]
       },
       {
@@ -172,6 +242,11 @@
         "row": 7,
         "prerequisites": [
           "The Wheel"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Numbers and geometry, the tools of builders and engineers."
+          }
         ]
       },
       {
@@ -183,6 +258,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Timber frames, arches and bridges."
+          }
         ]
       }
     ]
@@ -200,6 +280,11 @@
         "prerequisites": [
           "Runic Script",
           "Herbalism"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Thinking about the Light, the spirits and the nature of the world."
+          }
         ]
       },
       {
@@ -207,6 +292,11 @@
         "row": 3,
         "prerequisites": [
           "Runic Script"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Songs and stories that keep the memory of a people."
+          }
         ]
       },
       {
@@ -217,6 +307,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Copper, silver and gold coins to pay for goods and soldiers."
+          }
         ]
       },
       {
@@ -229,6 +324,11 @@
         "uniques": [
           "Roads connect tiles across rivers",
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Aqueducts, cranes and siege machines."
+          }
         ]
       },
       {
@@ -239,6 +339,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Forging iron blades, the first of the blacksmith's great upgrades."
+          }
         ]
       }
     ]
@@ -256,6 +361,11 @@
         "prerequisites": [
           "Philosophy",
           "Bardic Lore"
+        ],
+        "civilopediaText": [
+          {
+            "text": "An ordered clergy, like the Church of the Holy Light or the Sisterhood of Elune."
+          }
         ]
       },
       {
@@ -269,6 +379,11 @@
         "uniques": [
           "Enables Open Borders agreements <Civilopedia link [Tutorials/Open Borders]>",
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The laws of the Arathi Empire, first human nation, that let a realm be ruled from afar."
+          }
         ]
       },
       {
@@ -279,6 +394,11 @@
         ],
         "uniques": [
           "Enables conversion of city production to [Gold]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Guilds of craftsmen and merchants, like the Stonemasons' Guild of Stormwind."
+          }
         ]
       },
       {
@@ -290,6 +410,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The anvil and the forge: casting and hammering metal into weapons and armour."
+          }
         ]
       }
     ]
@@ -311,6 +436,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The compass and the charts that take ships across the Great Sea."
+          }
         ]
       },
       {
@@ -324,6 +454,11 @@
           "Enables conversion of city production to [Science]",
           "Enables Research agreements <Civilopedia link [Tutorials/Research Agreements]>",
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Schools and academies where the young learn from the old."
+          }
         ]
       },
       {
@@ -335,6 +470,11 @@
         ],
         "uniques": [
           "Enables Defensive Pacts <Civilopedia link [Tutorials/Defensive Pacts]>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Training horses and beasts to stand firm in battle, an upgrade of the Warcraft II stables."
+          }
         ]
       },
       {
@@ -346,6 +486,11 @@
         ],
         "uniques": [
           "Improves movement speed on roads"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Springs, gears and escapements, the first steps toward gnomish engineering."
+          }
         ]
       },
       {
@@ -353,6 +498,11 @@
         "row": 9,
         "prerequisites": [
           "Blacksmithing"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Counterweights and torsion: the science behind the catapult and the ballista."
+          }
         ]
       },
       {
@@ -363,6 +513,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Steel blades, the second of the blacksmith's great upgrades."
+          }
         ]
       }
     ]
@@ -385,6 +540,11 @@
         "prerequisites": [
           "Seafaring",
           "Scholarship"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Charting the stars and the two moons of Azeroth."
+          }
         ]
       },
       {
@@ -395,6 +555,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Choirs and great halls built to carry the sound of song and prayer."
+          }
         ]
       },
       {
@@ -406,6 +571,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Banks and letters of credit, as in the vaults of Stormwind and the Undermine Exchange."
+          }
         ]
       },
       {
@@ -418,6 +588,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The scribe's craft: inks, glyphs, scrolls and printed books."
+          }
         ]
       },
       {
@@ -429,6 +604,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The dwarves' explosive powder, which made the first guns and cannons possible."
+          }
         ]
       }
     ]
@@ -445,6 +625,11 @@
         "row": 2,
         "prerequisites": [
           "Astronomy"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Navigators who sail by the stars far out of sight of land."
+          }
         ]
       },
       {
@@ -453,6 +638,11 @@
         "prerequisites": [
           "Choral Hymns",
           "Banking"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Grand halls, towers and cathedrals."
+          }
         ]
       },
       {
@@ -464,6 +654,11 @@
         ],
         "uniques": [
           "[+50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The auction houses, where any good can find its price."
+          }
         ]
       },
       {
@@ -475,6 +670,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Mithril blades, the finest of the blacksmith's upgrades."
+          }
         ]
       },
       {
@@ -485,6 +685,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Transmuting metals and brewing potions and flasks."
+          }
         ]
       }
     ]
@@ -505,6 +710,11 @@
         ],
         "uniques": [
           "[+50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Digging up the past, as the Explorers' League does across the world."
+          }
         ]
       },
       {
@@ -516,6 +726,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Studying magic as a science rather than an art, in the manner of Dalaran."
+          }
         ]
       },
       {
@@ -526,6 +741,11 @@
         ],
         "uniques": [
           "[+50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Steam engines driving forges, mills and machines."
+          }
         ]
       },
       {
@@ -537,6 +757,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The dwarves' long-barrelled rifles, which extend a rifleman's reach."
+          }
         ]
       },
       {
@@ -545,6 +770,11 @@
         "prerequisites": [
           "Mithril Forged Swords",
           "Alchemy"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Officers, drill and strategy: the study of war itself."
+          }
         ]
       },
       {
@@ -555,6 +785,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Alchemical fertilisers and better farming for growing cities."
+          }
         ]
       }
     ]
@@ -575,6 +810,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The druids' understanding of plants, beasts and the living world."
+          }
         ]
       },
       {
@@ -585,6 +825,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The Wildhammer's storm hammers, which call down lightning, and the study of that power."
+          }
         ]
       },
       {
@@ -597,6 +842,11 @@
           "Steamworks",
           "Arcane Science",
           "Long Rifles"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Steam that drives ships, engines and goblin contraptions."
+          }
         ]
       },
       {
@@ -605,6 +855,11 @@
         "prerequisites": [
           "Soil Enrichment",
           "War Doctrine"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Goblin seaforium charges, explosive enough to blow open any wall."
+          }
         ]
       }
     ]
@@ -625,6 +880,11 @@
         ],
         "uniques": [
           "[-75]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Enchantments of frost that keep food fresh and ships' holds cold."
+          }
         ]
       },
       {
@@ -635,6 +895,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Crystals that carry voices across great distances."
+          }
         ]
       },
       {
@@ -646,6 +911,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Standard gnomish parts that let machines be built and repaired quickly."
+          }
         ]
       },
       {
@@ -653,6 +923,11 @@
         "row": 6,
         "prerequisites": [
           "Steam Power"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Gyrocopters and flying machines take to the skies."
+          }
         ]
       },
       {
@@ -664,6 +939,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Rails and steam wagons, like the Deeprun Tram beneath the mountains."
+          }
         ]
       }
     ]
@@ -684,6 +964,11 @@
         ],
         "uniques": [
           "[+200]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Arcanite, a transmuted metal lighter and stronger than any other."
+          }
         ]
       },
       {
@@ -692,6 +977,11 @@
         "prerequisites": [
           "Gnomish Gearworks",
           "Gnomish Flight"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Wires and conduits that carry arcane power to machines."
+          }
         ]
       },
       {
@@ -699,6 +989,11 @@
         "row": 6,
         "prerequisites": [
           "Gnomish Flight"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Explosive shells that burst into shards, an artillery upgrade."
+          }
         ]
       },
       {
@@ -709,6 +1004,11 @@
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The Horde's liquid fire, which burns even stone, and the engines it powers."
+          }
         ]
       }
     ]
@@ -726,6 +1026,11 @@
         "prerequisites": [
           "Arcanite Alloys",
           "Frost Enchantment"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Potions and elixirs that heal wounds and cure plagues."
+          }
         ]
       },
       {
@@ -737,6 +1042,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Understanding the raw mana that flows through all things."
+          }
         ]
       },
       {
@@ -748,6 +1058,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Crystal balls and far sight to watch enemy armies from afar."
+          }
         ]
       },
       {
@@ -756,6 +1071,11 @@
         "prerequisites": [
           "Fragmentation Shards",
           "Liquid Fire"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Armies of many arms fighting as one."
+          }
         ]
       }
     ]
@@ -773,6 +1093,11 @@
         "prerequisites": [
           "Mana Theory",
           "Elixir Mastery"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Living in balance with the land, as the Cenarion Circle teaches."
+          }
         ]
       },
       {
@@ -781,6 +1106,11 @@
         "prerequisites": [
           "Mana Theory",
           "Scrying"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Mana pushed to the breaking point: the secret of the mana bomb."
+          }
         ]
       },
       {
@@ -791,6 +1121,11 @@
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Rockets and explosives for the battlefield."
+          }
         ]
       },
       {
@@ -799,6 +1134,11 @@
         "prerequisites": [
           "Battle Formations",
           "Scrying"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The thinking machines of the titans, studied and copied at last."
+          }
         ]
       }
     ]
@@ -815,6 +1155,11 @@
         "row": 2,
         "prerequisites": [
           "Nature's Blessing"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Portals and waystones linking every city in the realm."
+          }
         ]
       },
       {
@@ -823,6 +1168,11 @@
         "prerequisites": [
           "Nature's Blessing",
           "Unstable Mana"
+        ],
+        "civilopediaText": [
+          {
+            "text": "War drums that keep armies moving fast and fighting hard."
+          }
         ]
       },
       {
@@ -831,6 +1181,11 @@
         "prerequisites": [
           "Unstable Mana",
           "Demolition"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Long-range bombardment by siege engines and airships."
+          }
         ]
       },
       {
@@ -842,6 +1197,11 @@
         "uniques": [
           "Reveals the entire map",
           "[+200]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The orc warlock's floating eye, an all-seeing spy in the sky."
+          }
         ]
       },
       {
@@ -850,6 +1210,11 @@
         "prerequisites": [
           "Demolition",
           "Titan Logic"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Mechanical bodies and mechagnomes, the craft of Mechagon."
+          }
         ]
       },
       {
@@ -860,6 +1225,11 @@
         ],
         "uniques": [
           "[-100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Beams of focused arcane power that cut through any armour."
+          }
         ]
       }
     ]
@@ -879,6 +1249,11 @@
         ],
         "uniques": [
           "[-100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The peoples of Azeroth bound together by trade and need."
+          }
         ]
       },
       {
@@ -888,6 +1263,11 @@
           "Portal Networks",
           "War Drums",
           "Siege Barrage"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Refining Azerite, the lifeblood of the world, into power."
+          }
         ]
       },
       {
@@ -900,6 +1280,11 @@
         ],
         "uniques": [
           "[-100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The titans' own forging, the power to shape matter itself."
+          }
         ]
       },
       {
@@ -907,6 +1292,11 @@
         "row": 7,
         "prerequisites": [
           "Mechagnomics"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The secrets of the ethereals, beings of pure energy."
+          }
         ]
       },
       {
@@ -918,6 +1308,11 @@
         ],
         "uniques": [
           "[-100]% weight to this choice for AI decisions"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Spells and devices that hide whole armies from sight."
+          }
         ]
       }
     ]
