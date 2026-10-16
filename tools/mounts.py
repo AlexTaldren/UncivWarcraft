@@ -80,8 +80,9 @@ class Paint:
             for dx in range(-1, max(1, wd - 1)):
                 self.dot(x + bend * .3 + dx, top + length, hoof, part + "h")
 
-    def render(self):
-        """Return (base, inner, outer) RGBA images: auto-shaded and outlined."""
+    def render(self, outline=OUTLINE):
+        """Return (base, inner, outer) RGBA images: auto-shaded and outlined
+        (outline=None for no outline)."""
         base = Image.new("RGBA", (self.w, self.h))
         l1, l2 = Image.new("RGBA", (self.w, self.h)), Image.new("RGBA", (self.w, self.h))
         bp, p1, p2 = base.load(), l1.load(), l2.load()
@@ -101,13 +102,13 @@ class Paint:
                 g = int(max(0, min(255, 225 * k)))
                 (p1 if layer == 1 else p2)[x, y] = (g, g, g, 255)
                 bp[x, y] = (g, g, g, 255)
-        for y in range(self.h):
+        for y in range(self.h if outline else 0):
             for x in range(self.w):
                 if (x, y) in self.c:
                     continue
                 for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                     if (x + dx, y + dy) in self.c:
-                        bp[x, y] = OUTLINE + (255,)
+                        bp[x, y] = tuple(outline) + (255,)
                         break
         return base, l1, l2
 

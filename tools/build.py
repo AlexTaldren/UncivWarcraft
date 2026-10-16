@@ -9,7 +9,8 @@ from atlas import Atlas
 import wc_renames as R
 import wc_factions as F
 import wc_names as NG
-import icons, race_sprites, human_sprites
+import wc_terrain as WT
+import icons, race_sprites, human_sprites, tiles_art
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -87,6 +88,16 @@ files["Terrains"].append(_fo)
 _rb = next(i for i in files["TileImprovements"] if i["name"] == "Remove Blighted Land")
 _rf = copy.deepcopy(_rb); _rf["name"] = "Remove Fallout"
 files["TileImprovements"].append(_rf)
+
+# ------------------------------------------------------------ 2c. Warcraft terrain and landmarks
+files["Terrains"] += copy.deepcopy(WT.FEATURES) + copy.deepcopy(WT.WONDERS)
+for t in files["Terrains"]:
+    if t["name"] in WT.WONDER_TEXT:
+        t["civilopediaText"] = [{"text": WT.WONDER_TEXT[t["name"]]}]
+for feat, (tech, turns) in WT.CLEANSE.items():
+    imp = copy.deepcopy(_rb)
+    imp.update({"name": "Remove " + feat, "techRequired": tech, "turnsToBuild": turns})
+    files["TileImprovements"].append(imp)
 
 # ------------------------------------------------------------ 2b. text clean-up
 # Drop Unciv's legacy unit types that no unit uses (AtomicBomber, WaterSubmarine, ...)
@@ -264,6 +275,9 @@ print("race sprites:", n)
 n = human_sprites.write_all(os.path.join(SRC, "AbsoluteUnits.atlas"), os.path.join(OUT, "Images.WarcraftMap"),
                             os.path.join(OUT, "Images.RaceUnits"), R.ALL, R.ERAS)
 print("human sprites:", n)
+# Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
+n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
+print("tile art:", n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
     # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
     f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,

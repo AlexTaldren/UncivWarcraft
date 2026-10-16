@@ -6,7 +6,10 @@ COL = {"Ocean": (38, 72, 120), "Coast": (62, 110, 160), "Lakes": (70, 130, 180),
        "Grassland": (98, 150, 70), "Plains": (170, 165, 90), "Tundra": (140, 140, 120),
        "Desert": (220, 195, 130), "Snow": (235, 240, 245), "Mountain": (105, 95, 90)}
 FEAT = {"Forest": (40, 95, 45), "Jungle": (20, 120, 60), "Marsh": (80, 110, 100),
-        "Blighted Land": (120, 140, 40), "Oasis": (60, 170, 160), "Ice": (220, 235, 245)}
+        "Blighted Land": (120, 140, 40), "Oasis": (60, 170, 160), "Ice": (220, 235, 245),
+        "Fel-Scorched Land": (110, 235, 60), "Plagued Land": (120, 95, 130), "Ancient Woods": (110, 75, 165),
+        "Bamboo Grove": (130, 190, 70), "Molten Fields": (240, 110, 30), "Crystal Grove": (160, 170, 255),
+        "Titan Ruins": (200, 200, 190)}
 
 
 def render(spec, out, s=11, labels=True):

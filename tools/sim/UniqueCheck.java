@@ -39,7 +39,8 @@ public class UniqueCheck {
         check("Humans", r.getNations().get("Humans").getUniqueObjects());
         for (String n : args[0].split(","))
             if (r.getUnits().containsKey(n)) check(n, r.getUnits().get(n).getUniqueObjects());
-            else check(n, r.getBuildings().get(n).getUniqueObjects());
+            else if (r.getBuildings().containsKey(n)) check(n, r.getBuildings().get(n).getUniqueObjects());
+            else check(n, r.getTerrains().get(n).getUniqueObjects());
 
         GameParameters gp = new GameParameters();
         gp.setBaseRuleset("UncivWarcraft");

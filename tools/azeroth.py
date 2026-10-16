@@ -45,24 +45,29 @@ LAND = {
 # ------------------------------------------------------------------ zones
 # name: (landmass, [seed points], biome)
 # biome: base terrain weights, then chances for Forest / Jungle / Marsh / Hill / Mountain / Blight / Oasis
-def B(base, forest=0, jungle=0, marsh=0, hill=0, mountain=0, blight=0, oasis=0):
+def B(base, forest=0, jungle=0, marsh=0, hill=0, mountain=0, blight=0, oasis=0,
+      fel=0, plague=0, ancient=0, bamboo=0, molten=0, crystal=0, titan=0):
+    """Zone biome. forest..oasis: chance per tile. fel/plague/molten/titan: chance per
+    tile (fel and plague overrun vegetation). ancient/bamboo/crystal: share of the
+    zone's forests that are that kind of forest instead."""
     return dict(base=base, forest=forest, jungle=jungle, marsh=marsh, hill=hill,
-                mountain=mountain, blight=blight, oasis=oasis)
+                mountain=mountain, blight=blight, oasis=oasis, fel=fel, plague=plague,
+                ancient=ancient, bamboo=bamboo, molten=molten, crystal=crystal, titan=titan)
 
 G, P, T, D, S = "Grassland", "Plains", "Tundra", "Desert", "Snow"
 
 ZONES = {
     # --- Kalimdor
-    "Teldrassil": ("Teldrassil", [(9, 17)], B({G: 1}, forest=.75)),
-    "Bloodmyst Isle": ("Bloodmyst Isle", [(5, 22)], B({P: 1}, forest=.4, marsh=.15)),
-    "Azuremyst Isle": ("Azuremyst Isle", [(5, 28)], B({G: 1}, forest=.45, hill=.1)),
-    "Darkshore": ("Kalimdor", [(14, 21), (13, 26)], B({G: .7, P: .3}, forest=.65, hill=.1)),
-    "Moonglade": ("Kalimdor", [(20, 17)], B({G: 1}, forest=.35)),
+    "Teldrassil": ("Teldrassil", [(9, 17)], B({G: 1}, forest=.75, ancient=.6)),
+    "Bloodmyst Isle": ("Bloodmyst Isle", [(5, 22)], B({P: 1}, forest=.4, marsh=.15, crystal=.2)),
+    "Azuremyst Isle": ("Azuremyst Isle", [(5, 28)], B({G: 1}, forest=.45, hill=.1, crystal=.25)),
+    "Darkshore": ("Kalimdor", [(14, 21), (13, 26)], B({G: .7, P: .3}, forest=.65, hill=.1, ancient=.4)),
+    "Moonglade": ("Kalimdor", [(20, 17)], B({G: 1}, forest=.35, ancient=.5)),
     "Winterspring": ("Kalimdor", [(25, 16), (30, 18)], B({S: .45, T: .55}, forest=.3, hill=.25, mountain=.06)),
-    "Felwood": ("Kalimdor", [(19, 21), (18, 24)], B({P: .6, G: .4}, forest=.65, marsh=.15, blight=.15)),
-    "Mount Hyjal": ("Kalimdor", [(27, 22)], B({G: .7, T: .3}, forest=.55, hill=.3, mountain=.18)),
-    "Azshara": ("Kalimdor", [(33, 22), (35, 25)], B({G: .6, P: .4}, forest=.4, hill=.2)),
-    "Ashenvale": ("Kalimdor", [(19, 28), (25, 27)], B({G: 1}, forest=.8, hill=.08)),
+    "Felwood": ("Kalimdor", [(19, 21), (18, 24)], B({P: .6, G: .4}, forest=.65, marsh=.15, fel=.3)),
+    "Mount Hyjal": ("Kalimdor", [(27, 22)], B({G: .7, T: .3}, forest=.55, hill=.3, mountain=.18, ancient=.4)),
+    "Azshara": ("Kalimdor", [(33, 22), (35, 25)], B({G: .6, P: .4}, forest=.4, hill=.2, ancient=.2)),
+    "Ashenvale": ("Kalimdor", [(19, 28), (25, 27)], B({G: 1}, forest=.8, hill=.08, ancient=.6)),
     "Stonetalon Mountains": ("Kalimdor", [(15, 31), (14, 35)], B({P: .6, T: .4}, forest=.2, hill=.4, mountain=.25)),
     "Durotar": ("Kalimdor", [(32, 30), (32, 33)], B({P: .75, D: .25}, hill=.2, forest=.05)),
     "Northern Barrens": ("Kalimdor", [(26, 32), (29, 35)], B({P: .9, G: .1}, forest=.04, hill=.1)),
@@ -70,22 +75,22 @@ ZONES = {
     "Mulgore": ("Kalimdor", [(19, 38)], B({G: .6, P: .4}, hill=.15)),
     "Southern Barrens": ("Kalimdor", [(24, 40), (28, 39)], B({P: 1}, hill=.15, forest=.05)),
     "Dustwallow Marsh": ("Kalimdor", [(30, 42), (30, 45)], B({G: 1}, marsh=.6, forest=.15)),
-    "Feralas": ("Kalimdor", [(12, 48), (15, 51)], B({G: 1}, jungle=.5, forest=.25, hill=.1)),
+    "Feralas": ("Kalimdor", [(12, 48), (15, 51)], B({G: 1}, jungle=.5, forest=.25, hill=.1, ancient=.3)),
     "Thousand Needles": ("Kalimdor", [(21, 45), (26, 46)], B({D: .5, P: .5}, hill=.3, mountain=.18)),
-    "Tanaris": ("Kalimdor", [(28, 50), (30, 53)], B({D: 1}, hill=.15, oasis=.05)),
-    "Un'Goro Crater": ("Kalimdor", [(22, 51)], B({G: 1}, jungle=.7, hill=.2)),
+    "Tanaris": ("Kalimdor", [(28, 50), (30, 53)], B({D: 1}, hill=.15, oasis=.05, titan=.02)),
+    "Un'Goro Crater": ("Kalimdor", [(22, 51)], B({G: 1}, jungle=.7, hill=.2, molten=.04)),
     "Silithus": ("Kalimdor", [(16, 54), (19, 57)], B({D: 1}, hill=.15)),
-    "Uldum": ("Kalimdor", [(24, 58), (27, 58)], B({D: 1}, oasis=.1, hill=.05)),
+    "Uldum": ("Kalimdor", [(24, 58), (27, 58)], B({D: 1}, oasis=.1, hill=.05, titan=.08)),
     "Echo Isles": ("Echo Isles", [(36, 35)], B({P: 1}, jungle=.3)),
     "Theramore Isle": ("Theramore Isle", [(34, 42)], B({G: 1}, marsh=.2)),
     "Sardor Isle": ("Sardor Isle", [(6, 46)], B({G: 1}, forest=.5)),
     # --- Eastern Kingdoms
     "Isle of Quel'Danas": ("Isle of Quel'Danas", [(88, 5)], B({G: 1}, forest=.35)),
     "Eversong Woods": ("Eastern Kingdoms", [(87, 12), (92, 12)], B({G: 1}, forest=.6)),
-    "Ghostlands": ("Eastern Kingdoms", [(92, 16)], B({P: .6, G: .4}, forest=.5, marsh=.1, blight=.1)),
-    "Eastern Plaguelands": ("Eastern Kingdoms", [(90, 20), (94, 22)], B({P: .7, T: .3}, forest=.2, hill=.15, blight=.3)),
-    "Western Plaguelands": ("Eastern Kingdoms", [(85, 20)], B({P: 1}, forest=.1, hill=.1, blight=.2)),
-    "Tirisfal Glades": ("Eastern Kingdoms", [(77, 17), (81, 15)], B({G: .7, P: .3}, forest=.4, marsh=.2)),
+    "Ghostlands": ("Eastern Kingdoms", [(92, 16)], B({P: .6, G: .4}, forest=.5, marsh=.1, plague=.15)),
+    "Eastern Plaguelands": ("Eastern Kingdoms", [(90, 20), (94, 22)], B({P: .7, T: .3}, forest=.2, hill=.15, plague=.35)),
+    "Western Plaguelands": ("Eastern Kingdoms", [(85, 20)], B({P: 1}, forest=.1, hill=.1, plague=.25)),
+    "Tirisfal Glades": ("Eastern Kingdoms", [(77, 17), (81, 15)], B({G: .7, P: .3}, forest=.4, marsh=.2, plague=.05)),
     "Silverpine Forest": ("Eastern Kingdoms", [(74, 21), (73, 25)], B({T: .5, P: .5}, forest=.7, hill=.2)),
     "Gilneas": ("Eastern Kingdoms", [(70, 30)], B({G: .5, P: .5}, forest=.5, hill=.2)),
     "Hillsbrad Foothills": ("Eastern Kingdoms", [(78, 28)], B({G: 1}, forest=.2, hill=.2)),
@@ -96,33 +101,33 @@ ZONES = {
     "Twilight Highlands": ("Eastern Kingdoms", [(90, 38), (91, 42)], B({P: .5, G: .5}, hill=.4, mountain=.15)),
     "Dun Morogh": ("Eastern Kingdoms", [(77, 42)], B({S: .25, T: .75}, hill=.35, mountain=.1, forest=.2)),
     "Loch Modan": ("Eastern Kingdoms", [(84, 40)], B({G: .5, P: .5}, hill=.3)),
-    "Badlands": ("Eastern Kingdoms", [(88, 45)], B({D: 1}, hill=.4, mountain=.15)),
-    "Searing Gorge": ("Eastern Kingdoms", [(81, 45)], B({D: .5, P: .5}, hill=.4, mountain=.2)),
-    "Burning Steppes": ("Eastern Kingdoms", [(83, 48)], B({D: .6, P: .4}, hill=.4)),
+    "Badlands": ("Eastern Kingdoms", [(88, 45)], B({D: 1}, hill=.4, mountain=.15, titan=.08)),
+    "Searing Gorge": ("Eastern Kingdoms", [(81, 45)], B({D: .5, P: .5}, hill=.4, mountain=.2, molten=.35)),
+    "Burning Steppes": ("Eastern Kingdoms", [(83, 48)], B({D: .6, P: .4}, hill=.4, molten=.45)),
     "Elwynn Forest": ("Eastern Kingdoms", [(77, 50)], B({G: 1}, forest=.4)),
     "Redridge Mountains": ("Eastern Kingdoms", [(87, 50)], B({P: .5, G: .5}, hill=.5, mountain=.2)),
     "Westfall": ("Eastern Kingdoms", [(74, 54)], B({P: 1}, hill=.05)),
     "Duskwood": ("Eastern Kingdoms", [(78, 55)], B({G: 1}, forest=.8)),
     "Deadwind Pass": ("Eastern Kingdoms", [(82, 55)], B({T: .5, P: .5}, hill=.4, mountain=.5)),
     "Swamp of Sorrows": ("Eastern Kingdoms", [(88, 53)], B({G: 1}, marsh=.7, jungle=.2)),
-    "Blasted Lands": ("Eastern Kingdoms", [(89, 57)], B({D: 1}, hill=.25, blight=.2)),
+    "Blasted Lands": ("Eastern Kingdoms", [(89, 57)], B({D: 1}, hill=.25, fel=.4)),
     "Stranglethorn Vale": ("Eastern Kingdoms", [(77, 59), (78, 61)], B({G: 1}, jungle=.8, hill=.2)),
     "Tol Barad": ("Tol Barad", [(72, 35)], B({P: 1}, hill=.3)),
     # --- Northrend
     "Borean Tundra": ("Northrend", [(41, 15), (39, 12)], B({T: 1}, forest=.1, marsh=.1, hill=.1)),
-    "Sholazar Basin": ("Northrend", [(40, 7)], B({G: 1}, jungle=.7)),
-    "Icecrown": ("Northrend", [(46, 5), (51, 4)], B({S: 1}, hill=.3, mountain=.25)),
+    "Sholazar Basin": ("Northrend", [(40, 7)], B({G: 1}, jungle=.7, titan=.05)),
+    "Icecrown": ("Northrend", [(46, 5), (51, 4)], B({S: 1}, hill=.3, mountain=.25, plague=.15)),
     "Wintergrasp": ("Northrend", [(46, 10)], B({S: .5, T: .5}, hill=.3)),
-    "Dragonblight": ("Northrend", [(50, 13), (54, 13)], B({S: .7, T: .3}, hill=.15)),
-    "Crystalsong Forest": ("Northrend", [(55, 8)], B({T: 1}, forest=.7)),
-    "The Storm Peaks": ("Northrend", [(59, 4), (63, 5)], B({S: 1}, mountain=.5, hill=.3)),
-    "Zul'Drak": ("Northrend", [(62, 10)], B({T: .6, S: .4}, hill=.3)),
+    "Dragonblight": ("Northrend", [(50, 13), (54, 13)], B({S: .7, T: .3}, hill=.15, plague=.08)),
+    "Crystalsong Forest": ("Northrend", [(55, 8)], B({T: 1}, forest=.7, crystal=.6)),
+    "The Storm Peaks": ("Northrend", [(59, 4), (63, 5)], B({S: 1}, mountain=.5, hill=.3, titan=.07)),
+    "Zul'Drak": ("Northrend", [(62, 10)], B({T: .6, S: .4}, hill=.3, plague=.08)),
     "Grizzly Hills": ("Northrend", [(63, 14)], B({T: 1}, forest=.7, hill=.25)),
     "Howling Fjord": ("Northrend", [(66, 16), (60, 17)], B({T: 1}, forest=.4, hill=.3, mountain=.1)),
     # --- South Seas
     "Kezan": ("Kezan", [(57, 41)], B({G: 1}, jungle=.5)),
     "The Lost Isles": ("The Lost Isles", [(48, 41)], B({P: 1}, jungle=.5, hill=.2)),
-    "The Wandering Isle": ("The Wandering Isle", [(51, 52)], B({G: 1}, forest=.4, hill=.2)),
+    "The Wandering Isle": ("The Wandering Isle", [(51, 52)], B({G: 1}, forest=.4, hill=.2, bamboo=.9)),
 }
 
 # ------------------------------------------------------------------ mountain ranges & lakes
@@ -156,7 +161,17 @@ NATURAL_WONDERS = {
     "Blackrock Mountain": (81, 47),
     "Cape of Stranglethorn": (76, 62),
     "Kelp'thar Forest": (69, 50),
+    "The Dark Portal": (90, 58),       # Blasted Lands
+    "The Nexus": (37, 11),             # Coldarra, Borean Tundra
+    "Galakrond's Rest": (52, 14),      # Dragonblight
+    "Sunken Temple": (89, 53),         # Swamp of Sorrows
+    "Maraudon": (12, 42),              # Desolace
+    "The Lifeblood Pillar": (40, 7),   # Sholazar Basin
 }
+NW_BASE = {"Un'Goro Crater": "Desert", "The Dark Portal": "Desert", "The Nexus": "Snow",
+           "Galakrond's Rest": "Snow", "Sunken Temple": "Grassland", "Maraudon": "Desert",
+           "The Lifeblood Pillar": "Grassland"}
+HARMFUL = {"Blighted Land", "Fel-Scorched Land", "Plagued Land", "Molten Fields"}
 
 CAPITALS = {  # major nations -> their capital's tile
     "Humans": (76, 50),            # Stormwind, Elwynn Forest
@@ -235,6 +250,7 @@ def build(seed=7, width=W, height=H):
     rings = [(S(c), rad * k, ch) for c, rad, ch in RINGS]
     nb = lambda c, r: neighbors(c, r, width, height)
     rng = random.Random(seed)
+    rng2 = random.Random(seed + 1000)                     # Warcraft features (v0.6)
 
     grid = [[None] * width for _ in range(height)]          # zone name or None (water)
     for r in range(height):
@@ -293,6 +309,22 @@ def build(seed=7, width=W, height=H):
                     veg -= b[key]
                 if rng.random() < b["blight"] and "Marsh" not in t["f"]:
                     t["f"].append("Blighted Land")
+                for key, feat in (("ancient", "Ancient Woods"), ("bamboo", "Bamboo Grove"),
+                                  ("crystal", "Crystal Grove")):
+                    if "Forest" in t["f"] and rng2.random() < b[key]:
+                        t["f"] = [feat if f == "Forest" else f for f in t["f"]]
+                VEG = ("Forest", "Jungle", "Marsh", "Ancient Woods", "Bamboo Grove", "Crystal Grove")
+                for key, feat, bases in (("fel", "Fel-Scorched Land", (G, P, D, T)),
+                                         ("plague", "Plagued Land", (G, P, T, S)),
+                                         ("molten", "Molten Fields", (D, P, T)),
+                                         ("titan", "Titan Ruins", (G, P, D, T, S))):
+                    if base in bases and rng2.random() < b[key] and "Blighted Land" not in t["f"]:
+                        if key in ("fel", "plague"):
+                            t["f"] = [f for f in t["f"] if f not in VEG]
+                        elif any(f in VEG for f in t["f"]) or "Oasis" in t["f"]:
+                            continue
+                        t["f"].append(feat)
+                        break
             tiles[r][c] = t
 
     ridge_width = 0.6 * max(1.0, k * 0.85)
@@ -348,12 +380,13 @@ def build(seed=7, width=W, height=H):
             if tiles[nr][nc]["t"] in ("Mountain", "Lakes") and land(nc, nr):
                 b = zones[grid[nr][nc]][2]["base"]
                 tiles[nr][nc] = {"t": max(b, key=b.get), "f": ["Hill"]}
-            tiles[nr][nc]["f"] = [f for f in tiles[nr][nc]["f"] if f != "Blighted Land"]
+            tiles[nr][nc]["f"] = [f for f in tiles[nr][nc]["f"] if f not in HARMFUL]
+        tiles[r][c]["f"] = [f for f in tiles[r][c]["f"] if f not in HARMFUL]
 
     wonders = {}
     for name, pt in NATURAL_WONDERS.items():
         water = name in ("The Maelstrom", "Kelp'thar Forest")
-        c, r = pt if k == 1 else snap(S(pt), want_land=not water, avoid=taken)
+        c, r = snap(S(pt), want_land=not water, avoid=taken)
         assert land(c, r) != water, name
         wonders[name] = (c, r)
         taken.add((c, r))
@@ -362,7 +395,7 @@ def build(seed=7, width=W, height=H):
             if name == "Kelp'thar Forest":           # occurs as a pair of tiles
                 tiles[r + 1][c] = {"t": "Ocean", "f": [], "nw": name}
         else:
-            tiles[r][c] = {"t": "Plains" if name != "Un'Goro Crater" else "Desert", "f": [], "nw": name}
+            tiles[r][c] = {"t": NW_BASE.get(name, "Plains"), "f": [], "nw": name}
 
     return dict(width=width, height=height, tiles=tiles, zones=grid,
                 capitals=capitals, cityStates=city_states, wonders=wonders)

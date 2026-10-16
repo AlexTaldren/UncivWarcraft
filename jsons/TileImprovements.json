@@ -461,5 +461,25 @@
       "Excluded from map editor"
     ],
     "shortcutKey": "X"
+  },
+  {
+    "name": "Remove Fel-Scorched Land",
+    "turnsToBuild": 5,
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "X",
+    "techRequired": "Priesthood"
+  },
+  {
+    "name": "Remove Plagued Land",
+    "turnsToBuild": 4,
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "X",
+    "techRequired": "Priesthood"
   }
 ]
