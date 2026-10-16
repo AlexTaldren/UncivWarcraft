@@ -9,7 +9,7 @@ from atlas import Atlas
 import wc_renames as R
 import wc_factions as F
 import wc_names as NG
-import icons, sprites
+import icons, sprites, race_sprites
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -227,6 +227,15 @@ sprites.write_all(os.path.join(SRC, "AbsoluteUnits.atlas"), IMG)
 
 # Map art (unit sprites, tiles) goes in its own texture pack so nothing spills into a 2nd page.
 shutil.move(os.path.join(IMG, "TileSets"), os.path.join(OUT, "Images.WarcraftMap", "TileSets"))
+# Race-specific versions of every person unit ("Swordsman-Orcs" ...), in their own texture pack
+n = race_sprites.write_all(Atlas(os.path.join(SRC, "AbsoluteUnits.atlas")),
+                           os.path.join(OUT, "Images.RaceUnits"), R.ALL, R.ERAS)
+print("race sprites:", n)
+with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
+    # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
+    f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,
+                        "maxHeight": 2048, "paddingX": 2, "paddingY": 2, "duplicatePadding": True,
+                        "filterMin": "MipMapLinearLinear", "filterMag": "MipMapLinearLinear"}, indent=1))
 shutil.copy(os.path.join(os.path.dirname(__file__), "README.md"), OUT)
 print("nations:", len(majors), "city-states:", len(minors), "units:", len(files["Units"]),
       "buildings:", len(files["Buildings"]))
