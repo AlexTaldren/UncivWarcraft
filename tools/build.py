@@ -199,7 +199,7 @@ majors = []
 for n in F.NATIONS:
     n = dict(n)
     n.pop("_basis")
-    p = {"name": n["leaderName"], **copy.deepcopy(F.PERSONALITIES[n["name"]])}
+    p = {"name": n["leaderName"], **rn(copy.deepcopy(F.PERSONALITIES[n["name"]]))}
     if n["name"] == "Humans":
         extra = []
         for x in F.HUMAN_ABILITY_EXTRA:

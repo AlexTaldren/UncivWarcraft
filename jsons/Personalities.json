@@ -17,15 +17,15 @@
     "loyal": 8,
     "expansion": 5,
     "priorities": {
-      "Tradition": 6,
-      "Liberty": 7,
-      "Honor": 5,
-      "Piety": 6,
-      "Patronage": 7,
-      "Commerce": 6,
+      "Old Kingdoms": 6,
+      "Frontier": 7,
+      "Blood and Thunder": 5,
+      "Devotion": 6,
+      "Diplomacy": 7,
+      "Trade Princes": 6,
       "Arcane Inquiry": 5,
       "Free Peoples": 9,
-      "Order": 5,
+      "Unity": 5,
       "Dominion": 1
     },
     "uniques": [
@@ -51,10 +51,10 @@
     "loyal": 6,
     "expansion": 7,
     "priorities": {
-      "Honor": 10,
-      "Tradition": 5,
+      "Blood and Thunder": 10,
+      "Old Kingdoms": 5,
       "Dominion": 9,
-      "Order": 6,
+      "Unity": 6,
       "Free Peoples": 1
     },
     "uniques": [
@@ -82,12 +82,12 @@
     "loyal": 8,
     "expansion": 4,
     "priorities": {
-      "Tradition": 8,
-      "Piety": 9,
-      "Patronage": 7,
+      "Old Kingdoms": 8,
+      "Devotion": 9,
+      "Diplomacy": 7,
       "Arcane Inquiry": 4,
       "Free Peoples": 7,
-      "Order": 5,
+      "Unity": 5,
       "Dominion": 1
     },
     "uniques": [
@@ -114,12 +114,12 @@
     "loyal": 9,
     "expansion": 5,
     "priorities": {
-      "Tradition": 7,
-      "Honor": 6,
-      "Commerce": 6,
+      "Old Kingdoms": 7,
+      "Blood and Thunder": 6,
+      "Trade Princes": 6,
       "Arcane Inquiry": 8,
       "Free Peoples": 6,
-      "Order": 7,
+      "Unity": 7,
       "Dominion": 1
     },
     "uniques": [
@@ -147,12 +147,12 @@
     "loyal": 8,
     "expansion": 4,
     "priorities": {
-      "Liberty": 7,
-      "Commerce": 5,
-      "Patronage": 5,
+      "Frontier": 7,
+      "Trade Princes": 5,
+      "Diplomacy": 5,
       "Arcane Inquiry": 10,
       "Free Peoples": 8,
-      "Order": 6,
+      "Unity": 6,
       "Dominion": 1
     },
     "uniques": [
@@ -180,10 +180,10 @@
     "loyal": 8,
     "expansion": 5,
     "priorities": {
-      "Piety": 8,
-      "Tradition": 7,
-      "Honor": 5,
-      "Order": 6,
+      "Devotion": 8,
+      "Old Kingdoms": 7,
+      "Blood and Thunder": 5,
+      "Unity": 6,
       "Free Peoples": 4,
       "Dominion": 2
     },
@@ -210,10 +210,10 @@
     "loyal": 5,
     "expansion": 6,
     "priorities": {
-      "Honor": 8,
-      "Piety": 6,
+      "Blood and Thunder": 8,
+      "Devotion": 6,
       "Dominion": 7,
-      "Order": 5
+      "Unity": 5
     },
     "uniques": [
       "[+25]% weight to [Archery] for AI decisions",
@@ -238,10 +238,10 @@
     "loyal": 4,
     "expansion": 5,
     "priorities": {
-      "Patronage": 8,
+      "Diplomacy": 8,
       "Arcane Inquiry": 7,
-      "Tradition": 7,
-      "Order": 6,
+      "Old Kingdoms": 7,
+      "Unity": 6,
       "Dominion": 5,
       "Free Peoples": 3
     },
@@ -268,12 +268,12 @@
     "loyal": 8,
     "expansion": 3,
     "priorities": {
-      "Tradition": 9,
-      "Patronage": 7,
-      "Piety": 6,
+      "Old Kingdoms": 9,
+      "Diplomacy": 7,
+      "Devotion": 6,
       "Arcane Inquiry": 7,
       "Free Peoples": 7,
-      "Order": 5,
+      "Unity": 5,
       "Dominion": 1
     },
     "uniques": [
@@ -299,11 +299,11 @@
     "loyal": 7,
     "expansion": 5,
     "priorities": {
-      "Piety": 8,
-      "Tradition": 7,
-      "Patronage": 7,
+      "Devotion": 8,
+      "Old Kingdoms": 7,
+      "Diplomacy": 7,
       "Free Peoples": 6,
-      "Order": 6
+      "Unity": 6
     },
     "uniques": [
       "[+30]% weight to [Garden] for AI decisions",
@@ -330,9 +330,9 @@
     "expansion": 5,
     "priorities": {
       "Dominion": 10,
-      "Honor": 7,
+      "Blood and Thunder": 7,
       "Arcane Inquiry": 6,
-      "Order": 5
+      "Unity": 5
     },
     "uniques": [
       "[+30]% weight to [Melee] for AI decisions",
@@ -358,12 +358,12 @@
     "loyal": 9,
     "expansion": 5,
     "priorities": {
-      "Piety": 10,
-      "Tradition": 6,
-      "Patronage": 7,
+      "Devotion": 10,
+      "Old Kingdoms": 6,
+      "Diplomacy": 7,
       "Arcane Inquiry": 6,
       "Free Peoples": 8,
-      "Order": 5,
+      "Unity": 5,
       "Dominion": 1
     },
     "uniques": [
@@ -389,10 +389,10 @@
     "loyal": 2,
     "expansion": 5,
     "priorities": {
-      "Commerce": 10,
+      "Trade Princes": 10,
       "Arcane Inquiry": 6,
-      "Liberty": 5,
-      "Order": 5,
+      "Frontier": 5,
+      "Unity": 5,
       "Dominion": 5
     },
     "uniques": [
@@ -419,11 +419,11 @@
     "loyal": 8,
     "expansion": 5,
     "priorities": {
-      "Honor": 8,
-      "Tradition": 6,
-      "Piety": 5,
+      "Blood and Thunder": 8,
+      "Old Kingdoms": 6,
+      "Devotion": 5,
       "Free Peoples": 7,
-      "Order": 6,
+      "Unity": 6,
       "Dominion": 3
     },
     "uniques": [

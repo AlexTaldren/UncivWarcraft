@@ -1156,6 +1156,12 @@ POLICIES = {
     "Ancestral Pride": ("totem", "banner"), "Common Granaries": "wheat", "Collective Labor": ("hammer", "pick"),
 }
 
+BRANCHES = {     # policy branch icons (new names)
+    "Old Kingdoms": "crown", "Frontier": ("banner", "hut"), "Blood and Thunder": ("axe", "bolt"),
+    "Devotion": "hand_light", "Diplomacy": ("scroll", "scales"), "Trade Princes": ("coins", "anchor"),
+    "Arcane Inquiry": "orb", "Free Peoples": ("hut", "banner"), "Dominion": "fist", "Unity": ("shield", "swords"),
+}
+
 PROMOTIONS = {   # base names (icons are keyed by the base name, levels share them)
     "Morale": "banner", "Sortie": ("wing", "bolt"), "Wolfpack": ("fish", "skull"), "Aerial Combat": ("gryphon", "sword"),
     "Interception": ("wing", "target"), "Bombardment": ("bomb", "target"), "Aerial Targeting": ("wing", "target"),
@@ -1170,10 +1176,12 @@ def write_all(images_dir):
     groups = (("TechIcons", TECHS, (255, 255, 255)), ("UnitIcons", UNITS, (255, 255, 255)),
               ("ResourceIcons", RESOURCES, (255, 255, 255)), ("ImprovementIcons", IMPROVEMENTS, (255, 255, 255)),
               ("BuildingIcons", BUILDINGS, (0, 0, 0)), ("PolicyIcons", POLICIES, (255, 255, 255)),
-              ("UnitPromotionIcons", PROMOTIONS, (255, 255, 255)))
+              ("UnitPromotionIcons", PROMOTIONS, (255, 255, 255)), ("PolicyBranchIcons", BRANCHES, (255, 255, 255)))
+    import wc_renames as R
     n = 0
     for folder, table, color in groups:
         for name, recipe in table.items():
+            name = {"Secular Scholarship": "Apprentice Mages"}.get(name, R.ALL.get(name, name))
             main, badge = (recipe, None) if isinstance(recipe, str) else recipe
             save(compose(main, badge), os.path.join(images_dir, folder, name + ".png"), color)
             n += 1

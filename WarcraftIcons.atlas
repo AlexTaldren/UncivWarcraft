@@ -6,7 +6,7 @@ filter: MipMapLinearLinear, Linear
 repeat: none
 BuildingIcons/Admiralty of Boralus
   rotate: false
-  xy: 4, 1840
+  xy: 4, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -41,49 +41,49 @@ BuildingIcons/Bardic Hall
   index: -1
 BuildingIcons/Aqueduct
   rotate: false
-  xy: 220, 1732
+  xy: 328, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Arcane Beacon
   rotate: false
-  xy: 4, 1408
+  xy: 112, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Arcane Laboratory
   rotate: false
-  xy: 220, 1624
+  xy: 328, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Arcane Sanctum
   rotate: false
-  xy: 436, 1840
+  xy: 4, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/College of Magi
   rotate: false
-  xy: 436, 1840
+  xy: 4, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Arena
   rotate: false
-  xy: 544, 1840
+  xy: 4, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Grand Coliseum
   rotate: false
-  xy: 544, 1840
+  xy: 4, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -118,84 +118,84 @@ BuildingIcons/Royal Vault
   index: -1
 BuildingIcons/Beastiary
   rotate: false
-  xy: 436, 1516
+  xy: 544, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Blacksmith
   rotate: false
-  xy: 652, 1732
+  xy: 760, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Burrow
   rotate: false
-  xy: 112, 1084
+  xy: 328, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Castle
   rotate: false
-  xy: 220, 1192
+  xy: 544, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Cathedral
   rotate: false
-  xy: 328, 1300
+  xy: 652, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Cathedral of Light
   rotate: false
-  xy: 328, 1300
+  xy: 652, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Caverns of Time
   rotate: false
-  xy: 436, 1408
+  xy: 760, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Celestial Planetarium
   rotate: false
-  xy: 544, 1516
+  xy: 868, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Chapel of the Light
   rotate: false
-  xy: 652, 1624
+  xy: 4, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Circle of Binding
   rotate: false
-  xy: 868, 1840
+  xy: 220, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Monument
   rotate: false
-  xy: 868, 1840
+  xy: 220, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/City Watch
   rotate: false
-  xy: 112, 976
+  xy: 328, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -223,14 +223,14 @@ BuildingIcons/Foundry
   index: -1
 BuildingIcons/Garden
   rotate: false
-  xy: 760, 1408
+  xy: 652, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Gates of Ahn'Qiraj
   rotate: false
-  xy: 868, 1516
+  xy: 760, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -328,168 +328,168 @@ BuildingIcons/Halls of Origination
   index: -1
 BuildingIcons/High Temple
   rotate: false
-  xy: 4, 436
+  xy: 328, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Temple
   rotate: false
-  xy: 4, 436
+  xy: 328, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/House of Healing
   rotate: false
-  xy: 112, 544
+  xy: 544, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Icecrown Citadel
   rotate: false
-  xy: 436, 868
+  xy: 760, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Karazhan
   rotate: false
-  xy: 1084, 1516
+  xy: 4, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Keep
   rotate: false
-  xy: 1192, 1624
+  xy: 112, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Lion's Rest
   rotate: false
-  xy: 4, 328
+  xy: 652, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Lumber Mill
   rotate: false
-  xy: 328, 652
+  xy: 1084, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mage Tower
   rotate: false
-  xy: 436, 760
+  xy: 1192, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Magistrate's Hall
   rotate: false
-  xy: 544, 868
+  xy: 1300, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mana Bomb Project
   rotate: false
-  xy: 652, 976
+  xy: 1408, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mana Reactor
   rotate: false
-  xy: 760, 1084
+  xy: 1516, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Market
   rotate: false
-  xy: 976, 1300
+  xy: 220, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mechagon Spire
   rotate: false
-  xy: 1408, 1732
+  xy: 652, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mint
   rotate: false
-  xy: 652, 868
+  xy: 976, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mogu'shan Palace
   rotate: false
-  xy: 868, 1084
+  xy: 1192, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Mogu'shan Vaults
   rotate: false
-  xy: 976, 1192
+  xy: 1300, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Monastery
   rotate: false
-  xy: 1084, 1300
+  xy: 1408, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Museum
   rotate: false
-  xy: 1192, 1408
+  xy: 1516, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Northshire Abbey
   rotate: false
-  xy: 4, 112
+  xy: 220, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Observatory
   rotate: false
-  xy: 112, 220
+  xy: 328, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Pagoda
   rotate: false
-  xy: 652, 760
+  xy: 868, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Palace
   rotate: false
-  xy: 760, 868
+  xy: 976, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Port
   rotate: false
-  xy: 976, 1084
+  xy: 1300, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -531,70 +531,70 @@ BuildingIcons/Sanctum of the Oracles
   index: -1
 BuildingIcons/Seat of the Naaru
   rotate: false
-  xy: 1300, 1300
+  xy: 1192, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shadowfang Keep
   rotate: false
-  xy: 1624, 1624
+  xy: 1408, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/The Greymane Wall
   rotate: false
-  xy: 1624, 1624
+  xy: 1408, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shipyard
   rotate: false
-  xy: 1732, 1732
+  xy: 1624, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shrine
   rotate: false
-  xy: 1840, 1840
+  xy: 1732, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Thunder Totem
   rotate: false
-  xy: 1840, 1840
+  xy: 1732, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shrine of Seven Stars
   rotate: false
-  xy: 112, 4
+  xy: 1840, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Skyship Foundry
   rotate: false
-  xy: 544, 436
+  xy: 436, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Spymaster's Guild
   rotate: false
-  xy: 976, 868
+  xy: 760, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Stone Works
   rotate: false
-  xy: 1408, 1300
+  xy: 1300, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -622,28 +622,28 @@ BuildingIcons/Sunwell Plateau
   index: -1
 BuildingIcons/Temple of Elune
   rotate: false
-  xy: 220, 4
+  xy: 328, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Temple of the White Tiger
   rotate: false
-  xy: 328, 112
+  xy: 436, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/The Nighthold
   rotate: false
-  xy: 436, 220
+  xy: 544, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/The Violet Citadel
   rotate: false
-  xy: 544, 328
+  xy: 652, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -664,7 +664,7 @@ BuildingIcons/Titan Ascension Project
   index: -1
 BuildingIcons/Tower of Azora
   rotate: false
-  xy: 1408, 1192
+  xy: 1300, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -692,49 +692,49 @@ BuildingIcons/Undermine Exchange
   index: -1
 BuildingIcons/Uther's Tomb
   rotate: false
-  xy: 544, 220
+  xy: 436, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Vale of Eternal Blossoms
   rotate: false
-  xy: 652, 328
+  xy: 544, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Valley of Heroes
   rotate: false
-  xy: 760, 436
+  xy: 652, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Walls
   rotate: false
-  xy: 868, 544
+  xy: 760, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Water Mill
   rotate: false
-  xy: 1300, 976
+  xy: 1192, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Well of Eternity
   rotate: false
-  xy: 1408, 1084
+  xy: 1300, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Windmill
   rotate: false
-  xy: 1516, 1192
+  xy: 1408, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -753,16 +753,9 @@ BuildingIcons/Zul'Gurub
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Aesthetics
+PolicyIcons/Admiralty
   rotate: false
-  xy: 4, 1732
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-TechIcons/Bardic Lore
-  rotate: false
-  xy: 4, 1732
+  xy: 4, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -774,93 +767,79 @@ PolicyIcons/Ancestral Pride
   orig: 100, 100
   offset: 0, 0
   index: -1
+PolicyIcons/Apprentice Mages
+  rotate: false
+  xy: 220, 1732
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 PolicyIcons/Arcane Revolution
   rotate: false
-  xy: 328, 1732
+  xy: 436, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Aristocracy
+PolicyIcons/Brothers in Arms
   rotate: false
-  xy: 4, 1192
+  xy: 220, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Monarchy
+PolicyIcons/Cartel Monopolies
   rotate: false
-  xy: 4, 1192
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Citizenship
-  rotate: false
-  xy: 4, 868
+  xy: 436, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Civic Guilds
   rotate: false
-  xy: 220, 1084
+  xy: 436, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Collective Labor
   rotate: false
-  xy: 544, 1408
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Collective Rule
-  rotate: false
-  xy: 652, 1516
+  xy: 760, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Common Granaries
   rotate: false
-  xy: 760, 1624
+  xy: 868, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Farming
   rotate: false
-  xy: 760, 1624
+  xy: 868, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Common Voice
   rotate: false
-  xy: 868, 1732
+  xy: 976, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Rallying Cry
   rotate: false
-  xy: 868, 1732
+  xy: 976, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Cultural Diplomacy
+PolicyIcons/Crownlands
   rotate: false
-  xy: 112, 868
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Discipline
-  rotate: false
-  xy: 328, 1084
+  xy: 220, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -872,30 +851,23 @@ PolicyIcons/Divine Mandate
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Educated Elite
+PolicyIcons/Embassies
   rotate: false
-  xy: 544, 1300
+  xy: 652, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Philosophy
-  rotate: false
-  xy: 544, 1300
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Free Religion
+PolicyIcons/Free Towns
   rotate: false
   xy: 436, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Free Thought
+PolicyIcons/Gilded Gifts
   rotate: false
-  xy: 544, 1192
+  xy: 868, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -907,205 +879,233 @@ PolicyIcons/Grand Stewardship
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/House of Nobles
+PolicyIcons/Harbor Masters
+  rotate: false
+  xy: 1300, 1840
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Heroes of Many Lands
+  rotate: false
+  xy: 112, 544
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Philosophy
+  rotate: false
+  xy: 112, 544
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/High Kingship
   rotate: false
   xy: 220, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Humanism
+PolicyIcons/Noble Houses
   rotate: false
-  xy: 328, 760
+  xy: 220, 652
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Honor Guard
+  rotate: false
+  xy: 436, 868
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/House of Nobles
+  rotate: false
+  xy: 652, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Inquisition
   rotate: false
-  xy: 544, 976
+  xy: 868, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Iron Will
-  rotate: false
-  xy: 976, 1408
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Landed Elite
+PolicyIcons/Iron Horde Doctrine
   rotate: false
   xy: 1300, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Legalism
+PolicyIcons/Iron Will
   rotate: false
   xy: 1408, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Mercantilism
+PolicyIcons/Keep and Garrison
   rotate: false
-  xy: 1516, 1840
+  xy: 220, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Merchant Guilds
+PolicyIcons/Kingsroads
   rotate: false
-  xy: 4, 220
+  xy: 328, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Trade Guilds
+PolicyIcons/Kirin Tor Exchange
   rotate: false
-  xy: 4, 220
+  xy: 436, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Merchant Navy
+TechIcons/Scholarship
+  rotate: false
+  xy: 436, 760
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Kor'kron Regulars
+  rotate: false
+  xy: 544, 868
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Lok'tar Ogar
+  rotate: false
+  xy: 868, 1192
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Many Paths
   rotate: false
   xy: 112, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Meritocracy
+PolicyIcons/Merchant Guilds
   rotate: false
-  xy: 220, 436
+  xy: 760, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Militarism
+TechIcons/Trade Guilds
   rotate: false
-  xy: 328, 544
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Military Caste
-  rotate: false
-  xy: 436, 652
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Naval Tradition
-  rotate: false
-  xy: 1516, 1732
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Oligarchy
-  rotate: false
-  xy: 220, 328
+  xy: 760, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Open Council
   rotate: false
-  xy: 328, 436
+  xy: 436, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Organized Religion
+PolicyIcons/Open Libraries
   rotate: false
   xy: 544, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Philantropy
+PolicyIcons/Ordained Clergy
   rotate: false
-  xy: 868, 976
+  xy: 760, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Professional Army
+PolicyIcons/Patrons of Dalaran
   rotate: false
-  xy: 1408, 1516
+  xy: 1084, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Protectionism
+PolicyIcons/Pioneers' Charter
   rotate: false
-  xy: 1516, 1624
+  xy: 1192, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Representation
-  rotate: false
-  xy: 1624, 1732
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Republic
+PolicyIcons/Ready to Work
   rotate: false
   xy: 1732, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Secular Scholarship
+PolicyIcons/Shield Wall
   rotate: false
   xy: 1516, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Sovereignty
-  rotate: false
-  xy: 760, 652
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 PolicyIcons/Spiritual Renewal
   rotate: false
-  xy: 868, 760
+  xy: 652, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Theocracy
+PolicyIcons/Steamwheedle Charter
   rotate: false
-  xy: 760, 544
+  xy: 976, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Total War
+PolicyIcons/Strom's Legacy
   rotate: false
-  xy: 1300, 1084
+  xy: 1516, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/United Front
+PolicyIcons/Temple Tithes
   rotate: false
-  xy: 328, 4
+  xy: 220, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Warrior Code
+PolicyIcons/Town Councils
   rotate: false
-  xy: 1192, 868
+  xy: 1408, 1192
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Warchief's Coffers
+  rotate: false
+  xy: 1084, 760
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Wonders of the Arcane
+  rotate: false
+  xy: 1516, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1126,56 +1126,56 @@ TechIcons/Animal War Training
   index: -1
 TechIcons/Arathi Law
   rotate: false
-  xy: 328, 1840
+  xy: 4, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Charter of Kings
   rotate: false
-  xy: 328, 1840
+  xy: 4, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Arcane Conduits
   rotate: false
-  xy: 112, 1516
+  xy: 220, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Arcane Science
   rotate: false
-  xy: 4, 1300
+  xy: 112, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Arcanite Alloys
   rotate: false
-  xy: 112, 1408
+  xy: 220, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Archaeology
   rotate: false
-  xy: 220, 1516
+  xy: 328, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Archery
   rotate: false
-  xy: 328, 1624
+  xy: 436, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Architecture
   rotate: false
-  xy: 436, 1732
+  xy: 544, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1215,93 +1215,107 @@ TechIcons/Banking
   orig: 100, 100
   offset: 0, 0
   index: -1
+TechIcons/Bardic Lore
+  rotate: false
+  xy: 220, 1300
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+PolicyIcons/Courtly Grace
+  rotate: false
+  xy: 220, 1300
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 TechIcons/Battle Formations
-  rotate: false
-  xy: 220, 1300
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Military Tradition
-  rotate: false
-  xy: 220, 1300
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-TechIcons/Beast Taming
   rotate: false
   xy: 328, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
+PolicyIcons/Veterans' Lore
+  rotate: false
+  xy: 328, 1408
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Beast Taming
+  rotate: false
+  xy: 436, 1516
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 TechIcons/Blackpowder
   rotate: false
-  xy: 544, 1624
+  xy: 652, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Blacksmithing
   rotate: false
-  xy: 760, 1840
+  xy: 4, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Bronze Working
   rotate: false
-  xy: 4, 976
+  xy: 112, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Choral Hymns
   rotate: false
-  xy: 760, 1732
+  xy: 112, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Clockwork
   rotate: false
-  xy: 328, 1192
+  xy: 544, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Coinage
   rotate: false
-  xy: 436, 1300
+  xy: 652, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Communication Crystals
   rotate: false
-  xy: 976, 1840
+  xy: 4, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Construction
   rotate: false
-  xy: 4, 760
+  xy: 112, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Demolition
   rotate: false
-  xy: 220, 976
+  xy: 328, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Elixir Mastery
   rotate: false
-  xy: 652, 1408
+  xy: 544, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1343,7 +1357,7 @@ TechIcons/Fragmentation Shards
   index: -1
 TechIcons/Frost Enchantment
   rotate: false
-  xy: 652, 1300
+  xy: 544, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1364,133 +1378,133 @@ TechIcons/Gnomish Gearworks
   index: -1
 TechIcons/Herbalism
   rotate: false
-  xy: 1300, 1840
+  xy: 4, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Inscription
   rotate: false
-  xy: 652, 1084
+  xy: 976, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Invisibility
   rotate: false
-  xy: 760, 1192
+  xy: 1084, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Iron Forged Swords
   rotate: false
-  xy: 868, 1300
+  xy: 1192, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Liquid Fire
   rotate: false
-  xy: 112, 436
+  xy: 760, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Long Rifles
   rotate: false
-  xy: 220, 544
+  xy: 976, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Mana Theory
   rotate: false
-  xy: 868, 1192
+  xy: 4, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Masonry
   rotate: false
-  xy: 1084, 1408
+  xy: 328, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Mathematics
   rotate: false
-  xy: 1192, 1516
+  xy: 436, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Mechagnomics
   rotate: false
-  xy: 1300, 1624
+  xy: 544, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Mining
   rotate: false
-  xy: 544, 760
+  xy: 868, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Mithril Forged Swords
   rotate: false
-  xy: 760, 976
+  xy: 1084, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Natural Lore
   rotate: false
-  xy: 1300, 1516
+  xy: 1624, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Nature's Blessing
   rotate: false
-  xy: 1408, 1624
+  xy: 4, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Navigation
   rotate: false
-  xy: 1624, 1840
+  xy: 112, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Optics
   rotate: false
-  xy: 436, 544
+  xy: 652, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Portal Networks
   rotate: false
-  xy: 1084, 1192
+  xy: 1408, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Pottery
   rotate: false
-  xy: 1192, 1300
+  xy: 1516, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Priesthood
   rotate: false
-  xy: 1300, 1408
+  xy: 1624, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1516,107 +1530,93 @@ TechIcons/Sailing
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Scholarship
-  rotate: false
-  xy: 868, 868
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-PolicyIcons/Scholasticism
-  rotate: false
-  xy: 868, 868
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 TechIcons/Scrying
   rotate: false
-  xy: 976, 976
+  xy: 868, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Seafaring
   rotate: false
-  xy: 1084, 1084
+  xy: 976, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Seaforium
   rotate: false
-  xy: 1192, 1192
+  xy: 1084, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Secrets of the Void
   rotate: false
-  xy: 1408, 1408
+  xy: 1300, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Siege Barrage
   rotate: false
-  xy: 220, 112
+  xy: 112, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Siege Engineering
   rotate: false
-  xy: 328, 220
+  xy: 220, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Skinning
   rotate: false
-  xy: 436, 328
+  xy: 328, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Soil Enrichment
   rotate: false
-  xy: 652, 544
+  xy: 544, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Steam Power
   rotate: false
-  xy: 1084, 976
+  xy: 868, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Steamworks
   rotate: false
-  xy: 1192, 1084
+  xy: 1084, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Steel Forged Swords
   rotate: false
-  xy: 1300, 1192
+  xy: 1192, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Storm Hammers
   rotate: false
-  xy: 1516, 1408
+  xy: 1408, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/The Wheel
   rotate: false
-  xy: 652, 436
+  xy: 760, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1644,21 +1644,21 @@ TechIcons/Tramways
   index: -1
 TechIcons/Unstable Mana
   rotate: false
-  xy: 436, 112
+  xy: 328, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/War Doctrine
   rotate: false
-  xy: 976, 652
+  xy: 868, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/War Drums
   rotate: false
-  xy: 1084, 760
+  xy: 976, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
