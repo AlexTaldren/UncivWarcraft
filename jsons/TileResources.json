@@ -156,7 +156,7 @@
   {
     "name": "Iron",
     "resourceType": "Strategic",
-    "revealedBy": "Blacksmithing",
+    "revealedBy": "Iron Forged Swords",
     "terrainsCanBeFoundOn": [
       "Grassland",
       "Plains",
@@ -239,7 +239,7 @@
   {
     "name": "Azerite",
     "resourceType": "Strategic",
-    "revealedBy": "Biology",
+    "revealedBy": "Natural Lore",
     "terrainsCanBeFoundOn": [
       "Desert",
       "Coast",
@@ -251,7 +251,7 @@
     "production": 1,
     "improvedBy": [
       "Azerite Drill",
-      "Offshore Platform"
+      "Tidal Drill"
     ],
     "improvementStats": {
       "production": 3
@@ -284,7 +284,7 @@
   {
     "name": "Elementium",
     "resourceType": "Strategic",
-    "revealedBy": "Electricity",
+    "revealedBy": "Storm Hammers",
     "terrainsCanBeFoundOn": [
       "Desert",
       "Tundra",

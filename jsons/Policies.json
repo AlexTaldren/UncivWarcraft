@@ -245,7 +245,7 @@
     "uniques": [
       "[+100]% Production when constructing [Shrine] buildings [in all cities]",
       "[+100]% Production when constructing [Temple] buildings [in all cities]",
-      "Only available <before adopting [Rationalism]>",
+      "Only available <before adopting [Arcane Inquiry]>",
       "[-100]% weight to this choice for AI decisions <when religion is disabled>"
     ],
     "policies": [
@@ -259,7 +259,7 @@
         "column": 2
       },
       {
-        "name": "Mandate Of Heaven",
+        "name": "Divine Mandate",
         "uniques": [
           "[50]% of excess happiness converted to [Culture]"
         ],
@@ -278,7 +278,7 @@
         "column": 1
       },
       {
-        "name": "Reformation",
+        "name": "Spiritual Renewal",
         "uniques": [
           "[+33]% [Culture] [in all cities with a world wonder]",
           "Empire enters golden age"
@@ -295,8 +295,8 @@
           "[-10]% Culture cost of adopting new Policies"
         ],
         "requires": [
-          "Mandate Of Heaven",
-          "Reformation"
+          "Divine Mandate",
+          "Spiritual Renewal"
         ],
         "row": 3,
         "column": 4
@@ -413,11 +413,11 @@
         "column": 2
       },
       {
-        "name": "Trade Unions",
+        "name": "Merchant Guilds",
         "uniques": [
           "[-33]% maintenance on road & railroads",
-          "[+1 Gold] from every [Harbor]",
-          "[+1 Gold] from every [Seaport]"
+          "[+1 Gold] from every [Shipyard]",
+          "[+1 Gold] from every [Port]"
         ],
         "row": 1,
         "column": 4
@@ -443,7 +443,7 @@
           "[+1 Science] from every [Auction House]"
         ],
         "requires": [
-          "Trade Unions"
+          "Merchant Guilds"
         ],
         "row": 2,
         "column": 4
@@ -471,7 +471,7 @@
     ]
   },
   {
-    "name": "Rationalism",
+    "name": "Arcane Inquiry",
     "era": "Age of the Third War",
     "priorities": {
       "Neutral": 10,
@@ -486,7 +486,7 @@
     ],
     "policies": [
       {
-        "name": "Secularism",
+        "name": "Secular Scholarship",
         "uniques": [
           "[+2 Science] from every specialist [in all cities]"
         ],
@@ -496,9 +496,9 @@
       {
         "name": "Humanism",
         "uniques": [
-          "[+1 Happiness] from every [Arcane Academy]",
+          "[+1 Happiness] from every [Arcane Sanctum]",
           "[+1 Happiness] from every [Observatory]",
-          "[+1 Happiness] from every [Public School]",
+          "[+1 Happiness] from every [Mage Tower]",
           "[-50]% weight to this choice for AI decisions"
         ],
         "row": 1,
@@ -508,10 +508,10 @@
         "name": "Free Thought",
         "uniques": [
           "[+1 Science] from every [Trading post]",
-          "[+17]% [Science] from every [Arcane Academy]"
+          "[+17]% [Science] from every [Arcane Sanctum]"
         ],
         "requires": [
-          "Secularism"
+          "Secular Scholarship"
         ],
         "row": 2,
         "column": 2
@@ -528,7 +528,7 @@
         "column": 4
       },
       {
-        "name": "Scientific Revolution",
+        "name": "Arcane Revolution",
         "uniques": [
           "Science gained from research agreements [+50]%",
           "[-100]% weight to this choice for AI decisions"
@@ -540,7 +540,7 @@
         "column": 2
       },
       {
-        "name": "Rationalism Complete",
+        "name": "Arcane Inquiry Complete",
         "uniques": [
           "[2] Free Technologies",
           "May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
@@ -550,7 +550,7 @@
     ]
   },
   {
-    "name": "Freedom",
+    "name": "Free Peoples",
     "era": "Age of the Lich King",
     "priorities": {
       "Neutral": 5,
@@ -561,12 +561,12 @@
     },
     "uniques": [
       "[+25]% Great Person generation [in all cities]",
-      "Only available <before adopting [Autocracy]>",
+      "Only available <before adopting [Dominion]>",
       "Only available <before adopting [Order]>"
     ],
     "policies": [
       {
-        "name": "Constitution",
+        "name": "Charter of Kings",
         "uniques": [
           "[+2 Culture] from every [Wonder]",
           "[-100]% weight to this choice for AI decisions"
@@ -575,7 +575,7 @@
         "column": 1
       },
       {
-        "name": "Universal Suffrage",
+        "name": "Common Voice",
         "uniques": [
           "[+33]% Strength for cities <when defending>",
           "[-100]% weight to this choice for AI decisions"
@@ -584,7 +584,7 @@
         "column": 3
       },
       {
-        "name": "Civil Society",
+        "name": "Civic Guilds",
         "uniques": [
           "[-50]% Food consumption by [Specialists] [in all cities]"
         ],
@@ -592,29 +592,29 @@
         "column": 5
       },
       {
-        "name": "Free Speech",
+        "name": "Open Council",
         "uniques": [
           "[8] units cost no maintenance"
         ],
         "requires": [
-          "Constitution"
+          "Charter of Kings"
         ],
         "row": 2,
         "column": 1
       },
       {
-        "name": "Democracy",
+        "name": "House of Nobles",
         "uniques": [
           "[-50]% Unhappiness from [Specialists] [in all cities]"
         ],
         "requires": [
-          "Civil Society"
+          "Civic Guilds"
         ],
         "row": 2,
         "column": 5
       },
       {
-        "name": "Freedom Complete",
+        "name": "Free Peoples Complete",
         "uniques": [
           "[+100]% Yield from every [Great Improvement]",
           "[+50]% Golden Age length",
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "name": "Autocracy",
+    "name": "Dominion",
     "era": "Age of the Lich King",
     "priorities": {
       "Neutral": 5,
@@ -638,11 +638,11 @@
       "[-33]% maintenance costs <for [All] units>",
       "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
       "Only available <before adopting [Order]>",
-      "Only available <before adopting [Freedom]>"
+      "Only available <before adopting [Free Peoples]>"
     ],
     "policies": [
       {
-        "name": "Populism",
+        "name": "Rallying Cry",
         "uniques": [
           "[+25]% Strength <for [Wounded] units>",
           "[+100]% weight to this choice for AI decisions"
@@ -659,20 +659,20 @@
         "column": 4
       },
       {
-        "name": "Fascism",
+        "name": "Iron Will",
         "uniques": [
           "[+100]% [Strategic] resource production",
           "[+2] Movement <for [Great General] units>"
         ],
         "requires": [
-          "Populism",
+          "Rallying Cry",
           "Militarism"
         ],
         "row": 2,
         "column": 2
       },
       {
-        "name": "Police State",
+        "name": "Inquisition",
         "uniques": [
           "[+3 Happiness] from every [Magistrate's Hall]",
           "[+100]% Production when constructing [Magistrate's Hall] buildings [in all cities]",
@@ -691,14 +691,14 @@
           "New [Military] units start with [15] XP [in all cities]"
         ],
         "requires": [
-          "Police State",
-          "Fascism"
+          "Inquisition",
+          "Iron Will"
         ],
         "row": 3,
         "column": 3
       },
       {
-        "name": "Autocracy Complete",
+        "name": "Dominion Complete",
         "uniques": [
           "[+25]% Strength <when attacking> <for [Military] units> <for [50] turns>",
           "May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Age of the Lich King]>",
@@ -719,8 +719,8 @@
     },
     "uniques": [
       "[+1 Happiness] [in all cities]",
-      "Only available <before adopting [Autocracy]>",
-      "Only available <before adopting [Freedom]>"
+      "Only available <before adopting [Dominion]>",
+      "Only available <before adopting [Free Peoples]>"
     ],
     "policies": [
       {
@@ -733,7 +733,7 @@
         "column": 1
       },
       {
-        "name": "Planned Economy",
+        "name": "Grand Stewardship",
         "uniques": [
           "[+25]% [Science] from every [Foundry]",
           "[+100]% Production when constructing [Foundry] buildings [in all cities]"
@@ -742,7 +742,7 @@
         "column": 3
       },
       {
-        "name": "Nationalism",
+        "name": "Ancestral Pride",
         "uniques": [
           "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>"
         ],
@@ -750,9 +750,9 @@
         "column": 5
       },
       {
-        "name": "Socialism",
+        "name": "Common Granaries",
         "requires": [
-          "Planned Economy"
+          "Grand Stewardship"
         ],
         "uniques": [
           "[-15]% maintenance cost for [all] buildings [in all cities]"
@@ -761,9 +761,9 @@
         "column": 3
       },
       {
-        "name": "Communism",
+        "name": "Collective Labor",
         "requires": [
-          "Socialism"
+          "Common Granaries"
         ],
         "uniques": [
           "[+2 Production] [in all cities]",

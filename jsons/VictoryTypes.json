@@ -1,7 +1,7 @@
 [
   {
     "name": "Scientific",
-    "victoryScreenHeader": "Complete all the spaceship parts to win!",
+    "victoryScreenHeader": "Build the Titan Ascension Project and assemble the Titan vessel to win!",
     "milestones": [
       "Build [Titan Ascension Project]",
       "Add all [spaceship parts] in capital"
@@ -14,12 +14,12 @@
       "Arcane Thruster",
       "Arcane Thruster"
     ],
-    "victoryString": "You have achieved victory through mastery of Science! You have conquered the mysteries of nature and led your people on a voyage to a brave new world! Your triumph will be remembered as long as the stars burn in the night sky!",
+    "victoryString": "You have achieved victory through mastery of the arcane and the mechanical! You have unlocked the secrets of the Titans and led your people beyond the skies of Azeroth. Your triumph will be remembered as long as the stars burn in the night sky!",
     "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
   },
   {
     "name": "Cultural",
-    "victoryScreenHeader": "Complete 5 policy branches and build the Utopia Project to win!",
+    "victoryScreenHeader": "Complete 5 policy branches and restore the Well of Eternity to win!",
     "milestones": [
       "Complete [5] Policy branches",
       "Build [Well of Eternity]"
@@ -38,7 +38,7 @@
   },
   {
     "name": "Diplomatic",
-    "victoryScreenHeader": "Build the UN and be voted world leader to win!",
+    "victoryScreenHeader": "Build the Grand Council of Azeroth and be voted its leader to win!",
     "milestones": [
       "Anyone should build [Grand Council of Azeroth]",
       "Win diplomatic vote"

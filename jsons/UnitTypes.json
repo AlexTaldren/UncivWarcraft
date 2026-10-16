@@ -8,7 +8,7 @@
     "movementType": "Land"
   },
   {
-    "name": "Gunpowder",
+    "name": "Firearm",
     "movementType": "Land"
   },
   {
@@ -16,7 +16,7 @@
     "movementType": "Land"
   },
   {
-    "name": "Ranged Gunpowder",
+    "name": "Ranged Firearm",
     "movementType": "Land"
   },
   {
@@ -28,7 +28,7 @@
     "movementType": "Land"
   },
   {
-    "name": "Armored",
+    "name": "War Machine",
     "movementType": "Land"
   },
   {
@@ -58,15 +58,15 @@
     "uniques": [
       "Can enter ice tiles",
       "Invisible to non-adjacent units",
-      "Can see invisible [Submarine] units"
+      "Can see invisible [Gnomish Submarine] units"
     ]
   },
   {
-    "name": "Aircraft Carrier",
+    "name": "Sky Carrier",
     "movementType": "Water"
   },
   {
-    "name": "Fighter",
+    "name": "Sky Fighter",
     "movementType": "Air",
     "uniques": [
       "Aircraft",
@@ -76,21 +76,21 @@
     ]
   },
   {
-    "name": "Bomber",
+    "name": "Sky Bomber",
     "movementType": "Air",
     "uniques": [
       "Aircraft"
     ]
   },
   {
-    "name": "Atomic Bomber",
+    "name": "Mana Bomber",
     "movementType": "Air",
     "uniques": [
       "Aircraft"
     ]
   },
   {
-    "name": "Missile",
+    "name": "Arcane Projectile",
     "movementType": "Air",
     "uniques": [
       "Self-destructs when attacking",
@@ -98,46 +98,10 @@
     ]
   },
   {
-    "name": "Helicopter",
+    "name": "Gyro",
     "movementType": "Land",
     "uniques": [
       "Can pass through impassable tiles"
     ]
-  },
-  {
-    "name": "Melee",
-    "movementType": "Land"
-  },
-  {
-    "name": "Ranged",
-    "movementType": "Land"
-  },
-  {
-    "name": "Armor",
-    "movementType": "Land"
-  },
-  {
-    "name": "WaterCivilian",
-    "movementType": "Water"
-  },
-  {
-    "name": "WaterMelee",
-    "movementType": "Water"
-  },
-  {
-    "name": "WaterRanged",
-    "movementType": "Water"
-  },
-  {
-    "name": "WaterSubmarine",
-    "movementType": "Water"
-  },
-  {
-    "name": "WaterAircraftCarrier",
-    "movementType": "Water"
-  },
-  {
-    "name": "AtomicBomber",
-    "movementType": "Air"
   }
 ]

@@ -17,13 +17,15 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Mage** (replaces Crossbowman): stronger ranged attack that fires over hills and forests.
 - **Chapel of the Light** (replaces Temple): +1 Faith, +1 Culture.
 
-**Azeroth world map** (104 × 64): Kalimdor, the Eastern Kingdoms and Northrend, with every major zone in its place (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown and 50+ more), mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles and the Wandering Isle. Each race starts at its capital: Stormwind City, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon City, Quel'Danas, the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor and Gilneas City. City-states sit at their real locations. Select *Custom* map in a new game; Azeroth is preselected for this ruleset.
+**Azeroth world maps:** Kalimdor, the Eastern Kingdoms and Northrend, with every major zone in its place (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown and 50+ more), mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles and the Wandering Isle. Two sizes: **Azeroth Large** (144 × 88, preselected, room to expand) and **Azeroth** (104 × 64, faster on phones). Each race starts at its capital: Stormwind, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon, Quel'Danas, the Temple of Five Dawns on the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor and Gilneas. City-states sit at their real locations.
 
-**12 city-states:** Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope, Cenarion Hold, Argent Vanguard, Feathermoon.
+**Faction AI:** every race has its own AI personality. Orcs and Forsaken mass armies, Gnomes and Dwarves chase technology and siege engines, the elves and Draenei favor culture and faith, Goblins build markets and banks, Humans stay balanced. Alliance races are more diplomatic and loyal, so they tend to befriend one another more often; Horde races are quicker to go to war.
+
+**12 city-states:** Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold.
 
 **10 religions:** Holy Light, Elune, Earth Mother, Shamanism, Loa, Cenarion Circle, August Celestials, Titans, Forgotten Shadow, Light of the Sunwell.
 
-**Warcraft names throughout:** ~40 techs (Runic Script, Alchemy, Seaforium, Mana Fission, Portal Networks…), 45 units (Peasant, Steam Tank, Gyrocopter, Mana Bomb, Iron Colossus…), 40 world wonders (Karazhan, Ulduar, Icecrown Citadel, Zul'Gurub…), resources (Thorium, Azerite, Mageweave, Truesilver…), 14 natural wonders (Mount Hyjal, Teldrassil, Un'Goro Crater, The Maelstrom…), and Great People named after Warcraft heroes.
+**Warcraft names throughout**, drawn from the Warcraft II/III strategy games and World of Warcraft: techs (Iron, Steel and Mithril Forged Swords, Animal War Training, Long Rifles, Storm Hammers, Liquid Fire, Eye of Kilrogg…), units (Peasant, Militia, Ballista, Gryphon Rider, Mortar Team, Siege Engine, Demolisher, Flying Machine, Giant Turtle, Juggernaught…), buildings (Blacksmith, Arcane Sanctum, Mage Tower, Shipyard, Guard Tower, Beastiary, Auction House…), policies and unit types without modern terms, 40 world wonders (Karazhan, Ulduar, Icecrown Citadel, Zul'Gurub…), resources (Thorium, Azerite, Mageweave, Truesilver…), 14 natural wonders (Mount Hyjal, Teldrassil, Un'Goro Crater, The Maelstrom…), and Great People named after Warcraft heroes.
 
 ## Installing
 

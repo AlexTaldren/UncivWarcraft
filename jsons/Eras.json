@@ -5,7 +5,7 @@
     "startingSettlerCount": 1,
     "startingWorkerCount": 0,
     "startingMilitaryUnitCount": 1,
-    "startingMilitaryUnit": "Warrior",
+    "startingMilitaryUnit": "Militia",
     "settlerPopulation": 1,
     "baseUnitBuyCost": 200,
     "embarkDefense": 3,
@@ -317,7 +317,7 @@
     "startingSettlerCount": 3,
     "startingWorkerCount": 3,
     "startingMilitaryUnitCount": 5,
-    "startingMilitaryUnit": "Marine",
+    "startingMilitaryUnit": "Kul Tiran Marine",
     "startingGold": 400,
     "startingCulture": 600,
     "settlerPopulation": 5,
@@ -331,7 +331,7 @@
       "Barracks",
       "Library",
       "Arena",
-      "Menagerie",
+      "Beastiary",
       "Bank"
     ],
     "startingObsoleteWonders": [
@@ -392,7 +392,7 @@
     "startingSettlerCount": 3,
     "startingWorkerCount": 3,
     "startingMilitaryUnitCount": 5,
-    "startingMilitaryUnit": "Marine",
+    "startingMilitaryUnit": "Kul Tiran Marine",
     "startingGold": 400,
     "startingCulture": 600,
     "settlerPopulation": 5,
@@ -406,7 +406,7 @@
       "Barracks",
       "Library",
       "Arena",
-      "Menagerie",
+      "Beastiary",
       "Bank"
     ],
     "startingObsoleteWonders": [

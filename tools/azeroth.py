@@ -159,20 +159,20 @@ NATURAL_WONDERS = {
 }
 
 CAPITALS = {  # major nations -> their capital's tile
-    "Humans": (76, 50),            # Stormwind City, Elwynn Forest
+    "Humans": (76, 50),            # Stormwind, Elwynn Forest
     "Orcs": (32, 29),              # Orgrimmar, Durotar
     "Night Elves": (9, 18),        # Darnassus, Teldrassil
     "Dwarves": (80, 42),           # Ironforge, Dun Morogh
     "Gnomes": (76, 43),            # Gnomeregan, Dun Morogh
     "Tauren": (19, 38),            # Thunder Bluff, Mulgore
     "Trolls": (33, 34),            # Sen'jin Village, Durotar
-    "Blood Elves": (91, 12),       # Silvermoon City, Eversong Woods
+    "Blood Elves": (91, 12),       # Silvermoon, Eversong Woods
     "High Elves": (88, 5),         # Quel'Danas
     "Pandaren": (51, 52),          # The Wandering Isle
     "Forsaken": (78, 18),          # Undercity, Tirisfal Glades
     "Draenei": (5, 28),            # The Exodar, Azuremyst Isle
     "Goblins": (34, 24),           # Bilgewater Harbor, Azshara
-    "Worgen": (70, 31),            # Gilneas City, Gilneas
+    "Worgen": (70, 31),            # Gilneas
 }
 CITY_STATES = {
     "Dalaran": (79, 25),           # Alterac, on Lordamere Lake
@@ -183,10 +183,10 @@ CITY_STATES = {
     "Ratchet": (31, 37),           # Barrens coast
     "Everlook": (28, 17),          # Winterspring
     "Steamwheedle Port": (31, 54), # Tanaris coast
-    "Light's Hope": (93, 21),      # Eastern Plaguelands
+    "Light's Hope Chapel": (93, 21),      # Eastern Plaguelands
     "Cenarion Hold": (17, 54),     # Silithus
     "Argent Vanguard": (50, 6),    # Icecrown
-    "Feathermoon": (6, 46),        # Sardor Isle, Feralas
+    "Feathermoon Stronghold": (6, 46),        # Sardor Isle, Feralas
 }
 
 
@@ -213,37 +213,67 @@ def seg_dist(p, a, b):
     return math.hypot(px - ax - t * dx, py - ay - t * dy)
 
 
-def neighbors(c, r):
+def neighbors(c, r, w=W, h=H):
     # flat-top hex offset grid where odd columns are shifted north
     if c % 2:
         d = [(0, -1), (0, 1), (-1, -1), (-1, 0), (1, -1), (1, 0)]
     else:
         d = [(0, -1), (0, 1), (-1, 0), (-1, 1), (1, 0), (1, 1)]
-    return [(c + a, r + b) for a, b in d if 0 <= c + a < W and 0 <= r + b < H]
+    return [(c + a, r + b) for a, b in d if 0 <= c + a < w and 0 <= r + b < h]
 
 
 # ------------------------------------------------------------------ build
-def build(seed=7):
+def build(seed=7, width=W, height=H):
+    """Build the map at any size. All coordinates above are authored on the 104 x 64
+    grid and scaled here, so a larger map keeps the same shape and placements."""
+    sx, sy = width / W, height / H
+    k = (sx + sy) / 2
+    S = lambda p: (p[0] * sx, p[1] * sy)
+    land_polys = {n: [S(p) for p in poly] for n, poly in LAND.items()}
+    zones = {z: (lm, [S(p) for p in seeds], b) for z, (lm, seeds, b) in ZONES.items()}
+    ridges = [([S(p) for p in line], ch) for line, ch in RIDGES]
+    rings = [(S(c), rad * k, ch) for c, rad, ch in RINGS]
+    nb = lambda c, r: neighbors(c, r, width, height)
     rng = random.Random(seed)
-    grid = [[None] * W for _ in range(H)]          # zone name or None (water)
-    for r in range(H):
-        for c in range(W):
+
+    grid = [[None] * width for _ in range(height)]          # zone name or None (water)
+    for r in range(height):
+        for c in range(width):
             p = center(c, r)
-            for land, poly in LAND.items():
+            for land, poly in land_polys.items():
                 if inside(p, poly):
-                    best = min(((math.hypot(p[0] - sx, p[1] - sy), z)
-                                for z, (lm, seeds, _) in ZONES.items() if lm == land
-                                for sx, sy in seeds), default=(0, land))
+                    best = min(((math.hypot(p[0] - zx, p[1] - zy), z)
+                                for z, (lm, seeds, _) in zones.items() if lm == land
+                                for zx, zy in seeds), default=(0, land))
                     grid[r][c] = best[1]
                     break
 
-    tiles = [[{"t": "Ocean", "f": []} for _ in range(W)] for _ in range(H)]
-    for r in range(H):
-        for c in range(W):
+    def land(c, r):
+        return grid[r][c] is not None
+
+    def snap(pt, want_land=True, avoid=()):
+        """Nearest tile to a scaled point that is land (or sea), searching outward."""
+        c0, r0 = int(round(pt[0])), int(round(pt[1]))
+        seen, frontier = {(c0, r0)}, [(c0, r0)]
+        while frontier:
+            for c, r in frontier:
+                if 0 <= c < width and 0 <= r < height and land(c, r) == want_land and (c, r) not in avoid:
+                    return (c, r)
+            nxt = []
+            for p in frontier:
+                for q in nb(*p):
+                    if q not in seen:
+                        seen.add(q); nxt.append(q)
+            frontier = nxt
+        raise ValueError(pt)
+
+    tiles = [[{"t": "Ocean", "f": []} for _ in range(width)] for _ in range(height)]
+    for r in range(height):
+        for c in range(width):
             z = grid[r][c]
             if z is None:
                 continue
-            b = ZONES[z][2]
+            b = zones[z][2]
             base = rng.choices(list(b["base"]), list(b["base"].values()))[0]
             t = {"t": base, "f": []}
             roll = rng.random()
@@ -265,62 +295,77 @@ def build(seed=7):
                     t["f"].append("Blighted Land")
             tiles[r][c] = t
 
-    def land(c, r):
-        return grid[r][c] is not None
-
-    for line, chance in RIDGES:
-        for r in range(H):
-            for c in range(W):
-                if land(c, r) and any(seg_dist(center(c, r), line[i], line[i + 1]) < 0.6
+    ridge_width = 0.6 * max(1.0, k * 0.85)
+    for line, chance in ridges:
+        for r in range(height):
+            for c in range(width):
+                if land(c, r) and any(seg_dist(center(c, r), line[i], line[i + 1]) < ridge_width
                                       for i in range(len(line) - 1)) and rng.random() < chance:
                     tiles[r][c] = {"t": "Mountain", "f": []}
-    for (cx, cy), rad, chance in RINGS:
-        for r in range(H):
-            for c in range(W):
+    for (cx, cy), rad, chance in rings:
+        for r in range(height):
+            for c in range(width):
                 d = math.hypot(center(c, r)[0] - cx, center(c, r)[1] - cy)
-                if land(c, r) and abs(d - rad) < 0.7 and rng.random() < chance:
+                if land(c, r) and abs(d - rad) < 0.7 * max(1.0, k * 0.8) and rng.random() < chance:
                     tiles[r][c] = {"t": "Mountain", "f": []}
-    for c, r in LAKES:
+    for lake in LAKES:
+        c, r = snap(S(lake))
         tiles[r][c] = {"t": "Lakes", "f": []}
+        if k > 1.2:                                       # bigger maps get bigger lakes
+            for nc, nr in nb(c, r)[:2]:
+                if land(nc, nr):
+                    tiles[nr][nc] = {"t": "Lakes", "f": []}
 
     # Polar ice along the top edge
-    for c in range(W):
+    for c in range(width):
         for r in range(0, 2):
             if not land(c, r) and rng.random() < (0.85 if r == 0 else 0.4):
                 tiles[r][c] = {"t": "Ocean", "f": ["Ice"]}
 
+    # capitals and city-states, scaled and snapped onto land
+    capitals, city_states, taken = {}, {}, set()
+    for src, dst in ((CAPITALS, capitals), (CITY_STATES, city_states)):
+        for name, pt in src.items():
+            if k == 1:
+                assert land(*pt), f"{name} at {pt} is in the sea"
+                pos = pt
+            else:
+                pos = snap(S(pt), avoid=taken)
+            dst[name] = pos
+            taken.add(pos)
+
     # settle-able ground for every capital and city-state; no mountains right beside them
-    sites = {**CAPITALS, **CITY_STATES}
-    for name, (c, r) in sites.items():
+    for name, (c, r) in {**capitals, **city_states}.items():
         z = grid[r][c]
-        assert z is not None, f"{name} at {(c, r)} is in the sea"
         base = tiles[r][c]["t"]
         if base in ("Mountain", "Lakes", "Ocean", "Coast"):
-            base = ZONES[z][2]["base"] and max(ZONES[z][2]["base"], key=ZONES[z][2]["base"].get)
-            if base == "Snow":
-                base = "Tundra"
+            base = max(zones[z][2]["base"], key=zones[z][2]["base"].get)
         if base == "Snow":
             base = "Tundra"
         keep_hill = ["Hill"] if "Hill" in tiles[r][c]["f"] else []
         tiles[r][c] = {"t": base, "f": keep_hill}
-        for nc, nr in neighbors(c, r):
-            if tiles[nr][nc]["t"] == "Mountain":
-                b = ZONES[grid[nr][nc]][2]["base"]
+        for nc, nr in nb(c, r):
+            if tiles[nr][nc]["t"] in ("Mountain", "Lakes") and land(nc, nr):
+                b = zones[grid[nr][nc]][2]["base"]
                 tiles[nr][nc] = {"t": max(b, key=b.get), "f": ["Hill"]}
             tiles[nr][nc]["f"] = [f for f in tiles[nr][nc]["f"] if f != "Blighted Land"]
 
-    for name, (c, r) in NATURAL_WONDERS.items():
-        if name in ("The Maelstrom", "Kelp'thar Forest"):
-            assert grid[r][c] is None, name
+    wonders = {}
+    for name, pt in NATURAL_WONDERS.items():
+        water = name in ("The Maelstrom", "Kelp'thar Forest")
+        c, r = pt if k == 1 else snap(S(pt), want_land=not water, avoid=taken)
+        assert land(c, r) != water, name
+        wonders[name] = (c, r)
+        taken.add((c, r))
+        if water:
             tiles[r][c] = {"t": "Ocean", "f": [], "nw": name}
             if name == "Kelp'thar Forest":           # occurs as a pair of tiles
                 tiles[r + 1][c] = {"t": "Ocean", "f": [], "nw": name}
         else:
-            assert grid[r][c] is not None, name
             tiles[r][c] = {"t": "Plains" if name != "Un'Goro Crater" else "Desert", "f": [], "nw": name}
 
-    return dict(width=W, height=H, tiles=tiles, zones=grid,
-                capitals=CAPITALS, cityStates=CITY_STATES)
+    return dict(width=width, height=height, tiles=tiles, zones=grid,
+                capitals=capitals, cityStates=city_states, wonders=wonders)
 
 
 def write_tiles_txt(m, path):
@@ -336,9 +381,10 @@ def write_tiles_txt(m, path):
 
 if __name__ == "__main__":
     import sys
-    m = build()
+    width, height = (int(sys.argv[3]), int(sys.argv[4])) if len(sys.argv) > 4 else (W, H)
+    m = build(width=width, height=height)
     json.dump(m, open(sys.argv[1], "w"))
     if len(sys.argv) > 2:
         write_tiles_txt(m, sys.argv[2])
     land = sum(1 for row in m["zones"] for z in row if z)
-    print("land tiles:", land, "of", W * H)
+    print("land tiles:", land, "of", width * height)

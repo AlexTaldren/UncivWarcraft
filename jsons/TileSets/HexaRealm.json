@@ -614,7 +614,7 @@
       "Coast",
       "Oil WellC"
     ],
-    "Coast+Azerite+Offshore Platform": [
+    "Coast+Azerite+Tidal Drill": [
       "Coast",
       "Offshore Platform"
     ],
@@ -1118,104 +1118,255 @@
       "Uranium",
       "LandmarkT"
     ],
-    "Tundra+Azerite+Manufactory": [
+    "Tundra+Great Workshop": [
+      "Tundra",
+      "ManufactoryT"
+    ],
+    "Tundra+Deer+Great Workshop": [
+      "Tundra",
+      "Deer",
+      "ManufactoryT"
+    ],
+    "Tundra+Stone+Great Workshop": [
+      "Tundra",
+      "Stone",
+      "ManufactoryT"
+    ],
+    "Tundra+Iron+Great Workshop": [
+      "Tundra",
+      "Iron",
+      "ManufactoryT"
+    ],
+    "Tundra+Azerite+Great Workshop": [
       "Tundra",
       "Oil",
       "ManufactoryT"
     ],
-    "Tundra+Elementium+Manufactory": [
+    "Tundra+Elementium+Great Workshop": [
       "Tundra",
       "Aluminum",
       "ManufactoryT"
     ],
-    "Tundra+Arcane Crystals+Manufactory": [
+    "Tundra+Arcane Crystals+Great Workshop": [
       "Tundra",
       "Uranium",
       "ManufactoryT"
     ],
-    "Tundra+Rugged Leather+Manufactory": [
+    "Tundra+Rugged Leather+Great Workshop": [
       "Tundra",
       "FursT",
       "ManufactoryT"
     ],
-    "Tundra+Truesilver+Manufactory": [
+    "Tundra+Truesilver+Great Workshop": [
       "Tundra",
       "Silver",
       "ManufactoryT"
     ],
-    "Tundra+Thorium+Manufactory": [
+    "Tundra+Copper+Great Workshop": [
+      "Tundra",
+      "Copper",
+      "ManufactoryT"
+    ],
+    "Tundra+Salt+Great Workshop": [
+      "Tundra",
+      "Salt",
+      "ManufactoryT"
+    ],
+    "Tundra+Thorium+Great Workshop": [
       "Tundra",
       "Coal",
       "ManufactoryT"
     ],
-    "Tundra+Mageweave+Manufactory": [
+    "Tundra+Dyes+Great Workshop": [
+      "Tundra",
+      "Dyes",
+      "ManufactoryT"
+    ],
+    "Tundra+Gems+Great Workshop": [
+      "Tundra",
+      "Gems",
+      "ManufactoryT"
+    ],
+    "Tundra+Gold Ore+Great Workshop": [
+      "Tundra",
+      "Gold Ore",
+      "ManufactoryT"
+    ],
+    "Tundra+Mageweave+Great Workshop": [
       "Tundra",
       "Silk",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Azerite+Manufactory": [
+    "Tundra+Spices+Great Workshop": [
+      "Tundra",
+      "Spices",
+      "ManufactoryT"
+    ],
+    "Tundra+Citrus+Great Workshop": [
+      "Tundra",
+      "Citrus",
+      "ManufactoryT"
+    ],
+    "Tundra+Truffles+Great Workshop": [
+      "Tundra",
+      "Truffles",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Great Workshop": [
+      "Tundra+Hill",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Deer+Great Workshop": [
+      "Tundra+Hill",
+      "Deer",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Stone+Great Workshop": [
+      "Tundra+Hill",
+      "Stone",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Marble+Great Workshop": [
+      "Tundra+Hill",
+      "Marble",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Iron+Great Workshop": [
+      "Tundra+Hill",
+      "Iron",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Azerite+Great Workshop": [
       "Tundra+Hill",
       "Oil",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Elementium+Manufactory": [
+    "Tundra+Hill+Elementium+Great Workshop": [
       "Tundra+Hill",
       "Aluminum",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Arcane Crystals+Manufactory": [
+    "Tundra+Hill+Arcane Crystals+Great Workshop": [
       "Tundra+Hill",
       "Uranium",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Rugged Leather+Manufactory": [
+    "Tundra+Hill+Rugged Leather+Great Workshop": [
       "Tundra+Hill",
       "FursT",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Truesilver+Manufactory": [
+    "Tundra+Hill+Truesilver+Great Workshop": [
       "Tundra+Hill",
       "Silver",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Thorium+Manufactory": [
+    "Tundra+Hill+Copper+Great Workshop": [
+      "Tundra+Hill",
+      "Copper",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Salt+Great Workshop": [
+      "Tundra+Hill",
+      "Salt",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Thorium+Great Workshop": [
       "Tundra+Hill",
       "Coal",
       "ManufactoryT"
     ],
-    "Tundra+Hill+Mageweave+Manufactory": [
+    "Tundra+Hill+Dyes+Great Workshop": [
+      "Tundra+Hill",
+      "Dyes",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Gems+Great Workshop": [
+      "Tundra+Hill",
+      "Gems",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Gold Ore+Great Workshop": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Mageweave+Great Workshop": [
       "Tundra+Hill",
       "Silk",
       "ManufactoryT"
     ],
-    "Snow+Azerite+Manufactory": [
+    "Tundra+Hill+Spices+Great Workshop": [
+      "Tundra+Hill",
+      "Spices",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Citrus+Great Workshop": [
+      "Tundra+Hill",
+      "Citrus",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Truffles+Great Workshop": [
+      "Tundra+Hill",
+      "Truffles",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Sheep+Great Workshop": [
+      "Tundra+Hill",
+      "Sheep",
+      "ManufactoryT"
+    ],
+    "Tundra+Hill+Horses+Great Workshop": [
+      "Tundra+Hill",
+      "Horses",
+      "ManufactoryT"
+    ],
+    "Snow+Iron+Great Workshop": [
+      "Snow",
+      "Iron",
+      "ManufactoryT"
+    ],
+    "Snow+Azerite+Great Workshop": [
       "Snow",
       "Oil",
       "ManufactoryT"
     ],
-    "Snow+Elementium+Manufactory": [
+    "Snow+Elementium+Great Workshop": [
       "Snow",
       "Aluminum",
       "ManufactoryT"
     ],
-    "Snow+Arcane Crystals+Manufactory": [
+    "Snow+Arcane Crystals+Great Workshop": [
       "Snow",
       "Uranium",
       "ManufactoryT"
     ],
-    "Snow+Hill+Azerite+Manufactory": [
+    "Snow+Hill+Iron+Great Workshop": [
+      "Snow+Hill",
+      "Iron",
+      "ManufactoryT"
+    ],
+    "Snow+Hill+Azerite+Great Workshop": [
       "Snow+Hill",
       "Oil",
       "ManufactoryT"
     ],
-    "Snow+Hill+Elementium+Manufactory": [
+    "Snow+Hill+Elementium+Great Workshop": [
       "Snow+Hill",
       "Aluminum",
       "ManufactoryT"
     ],
-    "Snow+Hill+Arcane Crystals+Manufactory": [
+    "Snow+Hill+Arcane Crystals+Great Workshop": [
       "Snow+Hill",
       "Uranium",
+      "ManufactoryT"
+    ],
+    "Snow+Great Workshop": [
+      "Snow",
+      "ManufactoryT"
+    ],
+    "Snow+Hill+Great Workshop": [
+      "Snow+Hill",
       "ManufactoryT"
     ],
     "Tundra+Azerite+Trading post": [

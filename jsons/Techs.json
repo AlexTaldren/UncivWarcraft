@@ -7,7 +7,7 @@
     "wonderCost": 185,
     "techs": [
       {
-        "name": "Agriculture",
+        "name": "Farming",
         "row": 6,
         "uniques": [
           "Starting tech"
@@ -26,7 +26,7 @@
         "name": "Pottery",
         "row": 2,
         "prerequisites": [
-          "Agriculture"
+          "Farming"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
@@ -36,14 +36,14 @@
         "name": "Beast Taming",
         "row": 5,
         "prerequisites": [
-          "Agriculture"
+          "Farming"
         ]
       },
       {
         "name": "Archery",
         "row": 7,
         "prerequisites": [
-          "Agriculture"
+          "Farming"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -53,7 +53,7 @@
         "name": "Mining",
         "row": 9,
         "prerequisites": [
-          "Agriculture"
+          "Farming"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
@@ -232,7 +232,7 @@
         ]
       },
       {
-        "name": "Blacksmithing",
+        "name": "Iron Forged Swords",
         "row": 10,
         "prerequisites": [
           "Bronze Working"
@@ -251,7 +251,7 @@
     "wonderCost": 300,
     "techs": [
       {
-        "name": "Theology",
+        "name": "Priesthood",
         "row": 2,
         "prerequisites": [
           "Philosophy",
@@ -282,11 +282,11 @@
         ]
       },
       {
-        "name": "Metal Casting",
+        "name": "Blacksmithing",
         "row": 9,
         "prerequisites": [
           "Engineering",
-          "Blacksmithing"
+          "Iron Forged Swords"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
@@ -307,7 +307,7 @@
         "row": 1,
         "prerequisites": [
           "Optics",
-          "Theology"
+          "Priesthood"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -317,7 +317,7 @@
         "name": "Scholarship",
         "row": 3,
         "prerequisites": [
-          "Theology",
+          "Priesthood",
           "Arathi Law"
         ],
         "uniques": [
@@ -327,7 +327,7 @@
         ]
       },
       {
-        "name": "Chivalry",
+        "name": "Animal War Training",
         "row": 6,
         "prerequisites": [
           "Arathi Law",
@@ -338,7 +338,7 @@
         ]
       },
       {
-        "name": "Machinery",
+        "name": "Clockwork",
         "row": 8,
         "prerequisites": [
           "Trade Guilds",
@@ -349,17 +349,17 @@
         ]
       },
       {
-        "name": "Natural Philosophy",
+        "name": "Siege Engineering",
         "row": 9,
         "prerequisites": [
-          "Metal Casting"
+          "Blacksmithing"
         ]
       },
       {
-        "name": "Steel",
+        "name": "Steel Forged Swords",
         "row": 10,
         "prerequisites": [
-          "Metal Casting"
+          "Blacksmithing"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -388,7 +388,7 @@
         ]
       },
       {
-        "name": "Acoustics",
+        "name": "Choral Hymns",
         "row": 4,
         "prerequisites": [
           "Scholarship"
@@ -401,7 +401,7 @@
         "name": "Banking",
         "row": 6,
         "prerequisites": [
-          "Chivalry",
+          "Animal War Training",
           "Scholarship"
         ],
         "uniques": [
@@ -412,9 +412,9 @@
         "name": "Inscription",
         "row": 8,
         "prerequisites": [
-          "Machinery",
-          "Natural Philosophy",
-          "Chivalry"
+          "Clockwork",
+          "Siege Engineering",
+          "Animal War Training"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
@@ -424,8 +424,8 @@
         "name": "Blackpowder",
         "row": 10,
         "prerequisites": [
-          "Natural Philosophy",
-          "Steel"
+          "Siege Engineering",
+          "Steel Forged Swords"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -451,12 +451,12 @@
         "name": "Architecture",
         "row": 4,
         "prerequisites": [
-          "Acoustics",
+          "Choral Hymns",
           "Banking"
         ]
       },
       {
-        "name": "Mercantilism",
+        "name": "Auctioneering",
         "row": 6,
         "prerequisites": [
           "Banking",
@@ -467,7 +467,7 @@
         ]
       },
       {
-        "name": "Metallurgy",
+        "name": "Mithril Forged Swords",
         "row": 9,
         "prerequisites": [
           "Inscription",
@@ -512,7 +512,7 @@
         "row": 4,
         "prerequisites": [
           "Architecture",
-          "Mercantilism"
+          "Auctioneering"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
@@ -522,18 +522,18 @@
         "name": "Steamworks",
         "row": 6,
         "prerequisites": [
-          "Mercantilism"
+          "Auctioneering"
         ],
         "uniques": [
           "[+50]% weight to this choice for AI decisions"
         ]
       },
       {
-        "name": "Rifling",
+        "name": "Long Rifles",
         "row": 7,
         "prerequisites": [
-          "Mercantilism",
-          "Metallurgy"
+          "Auctioneering",
+          "Mithril Forged Swords"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -543,7 +543,7 @@
         "name": "War Doctrine",
         "row": 9,
         "prerequisites": [
-          "Metallurgy",
+          "Mithril Forged Swords",
           "Alchemy"
         ]
       },
@@ -567,7 +567,7 @@
     "wonderCost": 900,
     "techs": [
       {
-        "name": "Biology",
+        "name": "Natural Lore",
         "row": 2,
         "prerequisites": [
           "Archaeology",
@@ -578,7 +578,7 @@
         ]
       },
       {
-        "name": "Electricity",
+        "name": "Storm Hammers",
         "row": 3,
         "prerequisites": [
           "Arcane Science"
@@ -596,7 +596,7 @@
         "prerequisites": [
           "Steamworks",
           "Arcane Science",
-          "Rifling"
+          "Long Rifles"
         ]
       },
       {
@@ -620,8 +620,8 @@
         "name": "Frost Enchantment",
         "row": 2,
         "prerequisites": [
-          "Biology",
-          "Electricity"
+          "Natural Lore",
+          "Storm Hammers"
         ],
         "uniques": [
           "[-75]% weight to this choice for AI decisions"
@@ -631,17 +631,17 @@
         "name": "Communication Crystals",
         "row": 3,
         "prerequisites": [
-          "Electricity"
+          "Storm Hammers"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
         ]
       },
       {
-        "name": "Interchangeable Cogs",
+        "name": "Gnomish Gearworks",
         "row": 4,
         "prerequisites": [
-          "Electricity",
+          "Storm Hammers",
           "Steam Power"
         ],
         "uniques": [
@@ -649,14 +649,14 @@
         ]
       },
       {
-        "name": "Flight",
+        "name": "Gnomish Flight",
         "row": 6,
         "prerequisites": [
           "Steam Power"
         ]
       },
       {
-        "name": "Railroads",
+        "name": "Tramways",
         "row": 8,
         "prerequisites": [
           "Steam Power",
@@ -676,36 +676,36 @@
     "wonderCost": 1250,
     "techs": [
       {
-        "name": "Synthetic Alloys",
+        "name": "Arcanite Alloys",
         "row": 3,
         "prerequisites": [
           "Communication Crystals",
-          "Interchangeable Cogs"
+          "Gnomish Gearworks"
         ],
         "uniques": [
           "[+200]% weight to this choice for AI decisions"
         ]
       },
       {
-        "name": "Arcane Circuitry",
+        "name": "Arcane Conduits",
         "row": 5,
         "prerequisites": [
-          "Interchangeable Cogs",
-          "Flight"
+          "Gnomish Gearworks",
+          "Gnomish Flight"
         ]
       },
       {
-        "name": "Ballistics",
+        "name": "Fragmentation Shards",
         "row": 6,
         "prerequisites": [
-          "Flight"
+          "Gnomish Flight"
         ]
       },
       {
-        "name": "Combustion",
+        "name": "Liquid Fire",
         "row": 8,
         "prerequisites": [
-          "Railroads"
+          "Tramways"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -724,7 +724,7 @@
         "name": "Elixir Mastery",
         "row": 2,
         "prerequisites": [
-          "Synthetic Alloys",
+          "Arcanite Alloys",
           "Frost Enchantment"
         ]
       },
@@ -732,8 +732,8 @@
         "name": "Mana Theory",
         "row": 4,
         "prerequisites": [
-          "Synthetic Alloys",
-          "Arcane Circuitry"
+          "Arcanite Alloys",
+          "Arcane Conduits"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
@@ -743,19 +743,19 @@
         "name": "Scrying",
         "row": 6,
         "prerequisites": [
-          "Ballistics",
-          "Arcane Circuitry"
+          "Fragmentation Shards",
+          "Arcane Conduits"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
         ]
       },
       {
-        "name": "Combined Arms",
+        "name": "Battle Formations",
         "row": 8,
         "prerequisites": [
-          "Ballistics",
-          "Combustion"
+          "Fragmentation Shards",
+          "Liquid Fire"
         ]
       }
     ]
@@ -768,7 +768,7 @@
     "wonderCost": 1250,
     "techs": [
       {
-        "name": "Druidic Ecology",
+        "name": "Nature's Blessing",
         "row": 2,
         "prerequisites": [
           "Mana Theory",
@@ -776,7 +776,7 @@
         ]
       },
       {
-        "name": "Mana Fission",
+        "name": "Unstable Mana",
         "row": 4,
         "prerequisites": [
           "Mana Theory",
@@ -784,7 +784,7 @@
         ]
       },
       {
-        "name": "Rocketry",
+        "name": "Demolition",
         "row": 6,
         "prerequisites": [
           "Scrying"
@@ -797,7 +797,7 @@
         "name": "Titan Logic",
         "row": 8,
         "prerequisites": [
-          "Combined Arms",
+          "Battle Formations",
           "Scrying"
         ]
       }
@@ -814,30 +814,30 @@
         "name": "Portal Networks",
         "row": 2,
         "prerequisites": [
-          "Druidic Ecology"
+          "Nature's Blessing"
         ]
       },
       {
-        "name": "Mobile Tactics",
+        "name": "War Drums",
         "row": 3,
         "prerequisites": [
-          "Druidic Ecology",
-          "Mana Fission"
+          "Nature's Blessing",
+          "Unstable Mana"
         ]
       },
       {
-        "name": "Advanced Ballistics",
+        "name": "Siege Barrage",
         "row": 5,
         "prerequisites": [
-          "Mana Fission",
-          "Rocketry"
+          "Unstable Mana",
+          "Demolition"
         ]
       },
       {
-        "name": "Orbital Constructs",
+        "name": "Eye of Kilrogg",
         "row": 6,
         "prerequisites": [
-          "Rocketry"
+          "Demolition"
         ],
         "uniques": [
           "Reveals the entire map",
@@ -848,7 +848,7 @@
         "name": "Mechagnomics",
         "row": 7,
         "prerequisites": [
-          "Rocketry",
+          "Demolition",
           "Titan Logic"
         ]
       },
@@ -886,16 +886,16 @@
         "row": 3,
         "prerequisites": [
           "Portal Networks",
-          "Mobile Tactics",
-          "Advanced Ballistics"
+          "War Drums",
+          "Siege Barrage"
         ]
       },
       {
         "name": "Titanforging",
         "row": 6,
         "prerequisites": [
-          "Advanced Ballistics",
-          "Orbital Constructs",
+          "Siege Barrage",
+          "Eye of Kilrogg",
           "Mechagnomics"
         ],
         "uniques": [
@@ -910,7 +910,7 @@
         ]
       },
       {
-        "name": "Cloaking Fields",
+        "name": "Invisibility",
         "row": 8,
         "prerequisites": [
           "Mechagnomics",
@@ -930,21 +930,21 @@
     "wonderCost": 1250,
     "techs": [
       {
-        "name": "Future Tech",
+        "name": "Secrets of the Void",
         "row": 5,
         "prerequisites": [
           "Azerothian Unity",
           "Azerite Refinement",
           "Titanforging",
           "Ethereal Technology",
-          "Cloaking Fields"
+          "Invisibility"
         ],
         "uniques": [
           "Can be continually researched"
         ],
         "civilopediaText": [
           {
-            "text": "Who knows what the future holds?"
+            "text": "What secrets lie beyond the Void?"
           }
         ]
       }

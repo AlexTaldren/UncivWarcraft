@@ -37,7 +37,7 @@ public class BuildAzerothMap {
 
         TileMap map = new TileMap(width, height, ruleset, false);
         MapParameters mp = map.getMapParameters();
-        mp.setName("Azeroth");
+        mp.setName(Paths.get(outFile).getFileName().toString());
         mp.setShape(MapShape.rectangular);
         mp.setMapSize(new MapSize(width, height));
         mp.setWorldWrap(false);

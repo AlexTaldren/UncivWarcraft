@@ -49,7 +49,17 @@ for t in files["Terrains"]:
 
 # ------------------------------------------------------------ 2. renames
 BR = re.compile(r"\[([^\[\]]+)\]")
-SKIP_KEYS = {"unitType", "unitTypes"}
+TYPE_KEYS = {"unitType", "unitTypes"}
+
+def bracket(m):
+    """[X] inside a unique: unit-type names win (in the base rules every such
+    bracket is a unit filter), then any other renamed entity."""
+    x = m.group(1)
+    if x in R.UNIT_TYPES:
+        return "[" + R.UNIT_TYPES[x] + "]"
+    if x in R.ALL:
+        return "[" + R.ALL[x] + "]"
+    return m.group(0)
 
 def rn(o, key=None, file=None):
     if isinstance(o, dict):
@@ -57,17 +67,64 @@ def rn(o, key=None, file=None):
     if isinstance(o, list):
         return [rn(v, key, file) for v in o]
     if isinstance(o, str):
-        if key in SKIP_KEYS or file == "UnitTypes":
-            return o
+        if key in TYPE_KEYS or (file == "UnitTypes" and key == "name"):
+            return R.UNIT_TYPES.get(o, o)
         if o in R.ALL:
             return R.ALL[o]
-        return BR.sub(lambda m: "[" + R.ALL[m.group(1)] + "]"
-                      if m.group(1) in R.ALL and m.group(1) not in R.TYPE_COLLISIONS
-                      else m.group(0), o)
+        return BR.sub(bracket, o)
     return o
 
 for name in list(files):
     files[name] = rn(files[name], file=name)
+
+# ------------------------------------------------------------ 2a. engine-required names
+# Unciv's nuke code adds a terrain literally named "Fallout" (Nuke.kt). Keep one, with the
+# same rules as our Blighted Land, so Mana Bombs work; workers clear it with "Remove Fallout".
+_bl = next(t for t in files["Terrains"] if t["name"] == "Blighted Land")
+_fo = copy.deepcopy(_bl); _fo["name"] = "Fallout"
+_fo["civilopediaText"] = [{"text": "Ground scorched by arcane bombardment. Workers can clear it."}]
+files["Terrains"].append(_fo)
+_rb = next(i for i in files["TileImprovements"] if i["name"] == "Remove Blighted Land")
+_rf = copy.deepcopy(_rb); _rf["name"] = "Remove Fallout"
+files["TileImprovements"].append(_rf)
+
+# ------------------------------------------------------------ 2b. text clean-up
+# Drop Unciv's legacy unit types that no unit uses (AtomicBomber, WaterSubmarine, ...)
+used_types = {u["unitType"] for u in files["Units"]}
+files["UnitTypes"] = [t for t in files["UnitTypes"] if t["name"] in used_types]
+for p in files["UnitPromotions"]:
+    if "unitTypes" in p:
+        p["unitTypes"] = [t for t in p["unitTypes"] if t in used_types]
+
+VICTORY_TEXT = {
+    "Scientific": ("Build the Titan Ascension Project and assemble the Titan vessel to win!",
+                   "You have achieved victory through mastery of the arcane and the mechanical! You have "
+                   "unlocked the secrets of the Titans and led your people beyond the skies of Azeroth. "
+                   "Your triumph will be remembered as long as the stars burn in the night sky!"),
+    "Cultural": ("Complete 5 policy branches and restore the Well of Eternity to win!", None),
+    "Diplomatic": ("Build the Grand Council of Azeroth and be voted its leader to win!", None),
+}
+for v in files["VictoryTypes"]:
+    if v["name"] in VICTORY_TEXT:
+        header, text = VICTORY_TEXT[v["name"]]
+        v["victoryScreenHeader"] = header
+        if text:
+            v["victoryString"] = text
+
+def fix_text(o):
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if k == "text" and isinstance(v, str):
+                o[k] = (v.replace("Apollo Program", "Titan Ascension Project")
+                         .replace("spaceship parts", "Titan vessel parts")
+                         .replace("Who knows what the future holds?", "What secrets lie beyond the Void?"))
+            else:
+                fix_text(v)
+    elif isinstance(o, list):
+        for v in o:
+            fix_text(v)
+for name in files:
+    fix_text(files[name])
 
 # Eras: always start with the Peasant (not the fishing skiff) as worker
 for e in files["Eras"]:
@@ -104,8 +161,8 @@ src_pers = {p["name"]: p for p in ljson.load(os.path.join(GK, "Personalities.jso
 majors = []
 for n in F.NATIONS:
     n = dict(n)
-    basis = n.pop("_basis")
-    p = copy.deepcopy(src_pers[basis]); p["name"] = n["leaderName"]; p.pop("civilopediaText", None)
+    n.pop("_basis")
+    p = {"name": n["leaderName"], **copy.deepcopy(F.PERSONALITIES[n["name"]])}
     files["Personalities"].append(p)
     majors.append(n)
 
@@ -122,7 +179,7 @@ barb = [n for n in files["Nations"] if n["name"] == "Barbarians"]
 spec = [n for n in files["Nations"] if n["name"] == "Spectator"]
 files["Nations"] = spec + majors + minors + barb
 
-files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth]"]}
+files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth Large]"]}
 
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))

@@ -7,13 +7,13 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
       "Scout",
       "Siege",
       "Archery",
-      "Ranged Gunpowder",
-      "Armored",
+      "Ranged Firearm",
+      "War Machine",
       "Melee Water",
       "Ranged Water",
       "Submarine"
@@ -40,7 +40,7 @@
     "unitTypes": [
       "Siege",
       "Archery",
-      "Ranged Gunpowder"
+      "Ranged Firearm"
     ],
     "column": 1,
     "row": 1
@@ -56,7 +56,7 @@
     "unitTypes": [
       "Siege",
       "Archery",
-      "Ranged Gunpowder"
+      "Ranged Firearm"
     ],
     "column": 1,
     "row": 2
@@ -72,7 +72,7 @@
     "unitTypes": [
       "Siege",
       "Archery",
-      "Ranged Gunpowder"
+      "Ranged Firearm"
     ],
     "column": 1,
     "row": 3
@@ -86,7 +86,7 @@
     "unitTypes": [
       "Siege",
       "Archery",
-      "Ranged Gunpowder"
+      "Ranged Firearm"
     ],
     "column": 2,
     "row": 1
@@ -102,7 +102,7 @@
     "unitTypes": [
       "Siege",
       "Archery",
-      "Ranged Gunpowder"
+      "Ranged Firearm"
     ],
     "column": 2,
     "row": 2
@@ -118,7 +118,7 @@
     "unitTypes": [
       "Siege",
       "Archery",
-      "Ranged Gunpowder"
+      "Ranged Firearm"
     ],
     "column": 2,
     "row": 3
@@ -152,7 +152,7 @@
     ],
     "unitTypes": [
       "Archery",
-      "Ranged Gunpowder",
+      "Ranged Firearm",
       "Siege",
       "Ranged Water",
       "Submarine"
@@ -173,7 +173,7 @@
     ],
     "unitTypes": [
       "Archery",
-      "Ranged Gunpowder",
+      "Ranged Firearm",
       "Siege",
       "Ranged Water"
     ],
@@ -188,9 +188,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 4,
     "row": 1
@@ -205,9 +205,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 4,
     "row": 2
@@ -222,9 +222,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 4,
     "row": 3
@@ -237,9 +237,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 5,
     "row": 1
@@ -254,9 +254,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 5,
     "row": 2
@@ -271,9 +271,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 5,
     "row": 3
@@ -290,7 +290,7 @@
     ],
     "unitTypes": [
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 6,
     "row": 2
@@ -306,7 +306,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder"
+      "Firearm"
     ],
     "column": 6,
     "row": 3
@@ -323,7 +323,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted"
     ],
     "column": 7,
@@ -339,7 +339,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted"
     ],
     "column": 7,
@@ -356,9 +356,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
-      "Armored"
+      "War Machine"
     ],
     "column": 6,
     "row": 4
@@ -375,7 +375,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder"
+      "Firearm"
     ],
     "column": 6,
     "row": 5
@@ -392,7 +392,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder"
+      "Firearm"
     ],
     "column": 6,
     "row": 1
@@ -411,7 +411,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
       "Scout"
     ],
@@ -429,7 +429,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
       "Scout"
     ],
@@ -688,79 +688,79 @@
     "row": 3
   },
   {
-    "name": "Armor Plating I",
+    "name": "Iron Plating I",
     "uniques": [
       "[+25]% Strength <when defending>"
     ],
     "unitTypes": [
-      "Aircraft Carrier"
+      "Sky Carrier"
     ],
     "column": 15,
     "row": 1
   },
   {
-    "name": "Armor Plating II",
+    "name": "Iron Plating II",
     "prerequisites": [
-      "Armor Plating I"
+      "Iron Plating I"
     ],
     "uniques": [
       "[+25]% Strength <when defending>"
     ],
     "unitTypes": [
-      "Aircraft Carrier"
+      "Sky Carrier"
     ],
     "column": 15,
     "row": 2
   },
   {
-    "name": "Armor Plating III",
+    "name": "Iron Plating III",
     "prerequisites": [
-      "Armor Plating II"
+      "Iron Plating II"
     ],
     "uniques": [
       "[+25]% Strength <when defending>"
     ],
     "unitTypes": [
-      "Aircraft Carrier"
+      "Sky Carrier"
     ],
     "column": 15,
     "row": 3
   },
   {
-    "name": "Flight Deck I",
+    "name": "Aerie Deck I",
     "uniques": [
       "Can carry [1] extra [Aircraft] units"
     ],
     "unitTypes": [
-      "Aircraft Carrier"
+      "Sky Carrier"
     ],
     "column": 16,
     "row": 1
   },
   {
-    "name": "Flight Deck II",
+    "name": "Aerie Deck II",
     "prerequisites": [
-      "Flight Deck I"
+      "Aerie Deck I"
     ],
     "uniques": [
       "Can carry [1] extra [Aircraft] units"
     ],
     "unitTypes": [
-      "Aircraft Carrier"
+      "Sky Carrier"
     ],
     "column": 16,
     "row": 2
   },
   {
-    "name": "Flight Deck III",
+    "name": "Aerie Deck III",
     "prerequisites": [
-      "Flight Deck II"
+      "Aerie Deck II"
     ],
     "uniques": [
       "Can carry [1] extra [Aircraft] units"
     ],
     "unitTypes": [
-      "Aircraft Carrier"
+      "Sky Carrier"
     ],
     "column": 16,
     "row": 3
@@ -791,7 +791,7 @@
       "[-100]% weight to this choice for AI decisions"
     ],
     "unitTypes": [
-      "Bomber"
+      "Sky Bomber"
     ],
     "column": 17,
     "row": 1
@@ -805,7 +805,7 @@
       "[+33]% Strength <vs cities>"
     ],
     "unitTypes": [
-      "Bomber"
+      "Sky Bomber"
     ],
     "column": 17,
     "row": 2
@@ -819,7 +819,7 @@
       "[+34]% Strength <vs cities>"
     ],
     "unitTypes": [
-      "Bomber"
+      "Sky Bomber"
     ],
     "column": 17,
     "row": 3
@@ -835,7 +835,7 @@
       "[+200]% weight to this choice for AI decisions"
     ],
     "unitTypes": [
-      "Bomber"
+      "Sky Bomber"
     ],
     "column": 17,
     "row": 4
@@ -846,7 +846,7 @@
       "[+33]% Damage when intercepting"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 18,
     "row": 1
@@ -860,7 +860,7 @@
       "[+33]% Damage when intercepting"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 18,
     "row": 2
@@ -874,80 +874,80 @@
       "[+34]% Damage when intercepting"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 18,
     "row": 3
   },
   {
-    "name": "Dogfighting I",
+    "name": "Aerial Combat I",
     "uniques": [
       "[+33]% Strength when performing Air Sweep"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 19,
     "row": 1
   },
   {
-    "name": "Dogfighting II",
+    "name": "Aerial Combat II",
     "prerequisites": [
-      "Dogfighting I"
+      "Aerial Combat I"
     ],
     "uniques": [
       "[+33]% Strength when performing Air Sweep"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 19,
     "row": 2
   },
   {
-    "name": "Dogfighting III",
+    "name": "Aerial Combat III",
     "prerequisites": [
-      "Dogfighting II"
+      "Aerial Combat II"
     ],
     "uniques": [
       "[+34]% Strength when performing Air Sweep"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 19,
     "row": 3
   },
   {
-    "name": "Air Targeting I",
+    "name": "Aerial Targeting I",
     "prerequisites": [
       "Interception I",
       "Siege I",
       "Bombardment I",
-      "Dogfighting I"
+      "Aerial Combat I"
     ],
     "uniques": [
       "[+33]% Strength <vs [Water] units>",
       "[-100]% weight to this choice for AI decisions"
     ],
     "unitTypes": [
-      "Fighter",
-      "Bomber"
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 20,
     "row": 1
   },
   {
-    "name": "Air Targeting II",
+    "name": "Aerial Targeting II",
     "prerequisites": [
-      "Air Targeting I"
+      "Aerial Targeting I"
     ],
     "uniques": [
       "[+33]% Strength <vs [Water] units>"
     ],
     "unitTypes": [
-      "Fighter",
-      "Bomber"
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 20,
     "row": 2
@@ -956,23 +956,23 @@
     "name": "Sortie",
     "prerequisites": [
       "Interception II",
-      "Dogfighting II"
+      "Aerial Combat II"
     ],
     "uniques": [
       "[1] extra interceptions may be made per turn",
       "[-100]% weight to this choice for AI decisions"
     ],
     "unitTypes": [
-      "Fighter"
+      "Sky Fighter"
     ],
     "column": 21,
     "row": 2
   },
   {
-    "name": "Operational Range",
+    "name": "Long Flight",
     "prerequisites": [
       "Interception I",
-      "Dogfighting I",
+      "Aerial Combat I",
       "Siege I",
       "Bombardment I"
     ],
@@ -981,29 +981,29 @@
       "[-90]% weight to this choice for AI decisions"
     ],
     "unitTypes": [
-      "Fighter",
-      "Bomber"
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 21,
     "row": 1
   },
   {
-    "name": "Air Repair",
+    "name": "Field Repairs",
     "prerequisites": [
       "Interception II",
-      "Dogfighting II",
+      "Aerial Combat II",
       "Siege II",
       "Bombardment II",
       "Mobility II",
-      "Anti-Armor II"
+      "Armor Piercing II"
     ],
     "uniques": [
       "Unit will heal every turn, even if it performs an action"
     ],
     "unitTypes": [
-      "Fighter",
-      "Bomber",
-      "Helicopter"
+      "Sky Fighter",
+      "Sky Bomber",
+      "Gyro"
     ],
     "column": 21,
     "row": 3
@@ -1014,7 +1014,7 @@
       "[+1] Movement"
     ],
     "unitTypes": [
-      "Helicopter"
+      "Gyro"
     ],
     "column": 22,
     "row": 1
@@ -1028,32 +1028,32 @@
       "[+1] Movement"
     ],
     "unitTypes": [
-      "Helicopter"
+      "Gyro"
     ],
     "column": 22,
     "row": 2
   },
   {
-    "name": "Anti-Armor I",
+    "name": "Armor Piercing I",
     "uniques": [
-      "[+25]% Strength <vs [Armored] units>"
+      "[+25]% Strength <vs [War Machine] units>"
     ],
     "unitTypes": [
-      "Helicopter"
+      "Gyro"
     ],
     "column": 23,
     "row": 1
   },
   {
-    "name": "Anti-Armor II",
+    "name": "Armor Piercing II",
     "prerequisites": [
-      "Anti-Armor I"
+      "Armor Piercing I"
     ],
     "uniques": [
-      "[+25]% Strength <vs [Armored] units>"
+      "[+25]% Strength <vs [War Machine] units>"
     ],
     "unitTypes": [
-      "Helicopter"
+      "Gyro"
     ],
     "column": 23,
     "row": 2
@@ -1066,9 +1066,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Archery",
-      "Ranged Gunpowder",
+      "Ranged Firearm",
       "Siege"
     ],
     "column": 24,
@@ -1084,9 +1084,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Archery",
-      "Ranged Gunpowder",
+      "Ranged Firearm",
       "Siege"
     ],
     "column": 24,
@@ -1105,9 +1105,9 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Archery",
-      "Ranged Gunpowder",
+      "Ranged Firearm",
       "Siege",
       "Mounted"
     ],
@@ -1132,7 +1132,7 @@
       "Mounted",
       "Melee Water",
       "Ranged Water",
-      "Armored",
+      "War Machine",
       "Submarine"
     ],
     "column": 24,
@@ -1155,10 +1155,10 @@
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
+      "Firearm",
       "Mounted",
       "Ranged Water",
-      "Armored",
+      "War Machine",
       "Melee Water"
     ],
     "column": 24,
@@ -1176,7 +1176,7 @@
       "Boarding Party III",
       "Siege III",
       "Mobility II",
-      "Anti-Armor II"
+      "Armor Piercing II"
     ],
     "uniques": [
       "[1] additional attacks per turn",
@@ -1184,14 +1184,14 @@
     ],
     "unitTypes": [
       "Archery",
-      "Ranged Gunpowder",
+      "Ranged Firearm",
       "Siege",
       "Melee Water",
       "Ranged Water",
       "Submarine",
-      "Fighter",
-      "Bomber",
-      "Helicopter"
+      "Sky Fighter",
+      "Sky Bomber",
+      "Gyro"
     ],
     "column": 24,
     "row": 5
@@ -1199,14 +1199,14 @@
   {
     "name": "Ambush I",
     "uniques": [
-      "[+33]% Strength <vs [Armored] units>",
+      "[+33]% Strength <vs [War Machine] units>",
       "[-100]% weight to this choice for AI decisions"
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
-      "Fighter",
-      "Bomber"
+      "Firearm",
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 25,
     "row": 1
@@ -1217,13 +1217,13 @@
       "Ambush I"
     ],
     "uniques": [
-      "[+33]% Strength <vs [Armored] units>"
+      "[+33]% Strength <vs [War Machine] units>"
     ],
     "unitTypes": [
       "Sword",
-      "Gunpowder",
-      "Fighter",
-      "Bomber"
+      "Firearm",
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 25,
     "row": 2
@@ -1235,8 +1235,8 @@
     ],
     "unitTypes": [
       "Ranged Water",
-      "Fighter",
-      "Bomber"
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 26,
     "row": 1
@@ -1251,8 +1251,8 @@
     ],
     "unitTypes": [
       "Ranged Water",
-      "Fighter",
-      "Bomber"
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 26,
     "row": 2
@@ -1267,8 +1267,8 @@
     ],
     "unitTypes": [
       "Ranged Water",
-      "Fighter",
-      "Bomber"
+      "Sky Fighter",
+      "Sky Bomber"
     ],
     "column": 26,
     "row": 3

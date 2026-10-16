@@ -70,10 +70,12 @@ public class WarcraftSim {
         System.out.println("STARTED: " + gi.getCivilizations().size() + " civs on " + (mapPath != null ? mp.getName() : mp.getMapSize().getName()));
 
         gi.setSimulateUntilWin(true);
-        for (int t = 25; t <= maxTurns; t += 25) {
+        for (int t = 5; t <= maxTurns; t += 5) {
             gi.setSimulateMaxTurns(t);
             while (gi.getTurns() < t && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null)
                 gi.nextTurn(null, false);
+            sampleDiplomacy(gi);
+            if (t % 25 != 0 && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null) continue;
             report(gi);
             for (Civilization c : gi.getCivilizations()) if (c.getCivName().equals("Humans")) {
                 java.util.TreeMap<String,Integer> seen = new java.util.TreeMap<>();
@@ -83,11 +85,44 @@ public class WarcraftSim {
             if (gi.getAliveMajorCivs().size() <= 1 || gi.getVictoryData() != null) break;
         }
         System.out.println("VICTORY: " + gi.getVictoryData());
+        System.out.println("DIPLOMACY (pair-samples every 5 turns; share of known pairs in each state):");
+        for (String k : new String[]{"Alliance-Alliance", "Horde-Horde", "Alliance-Horde", "Neutral-any"}) {
+            int[] v = DIPLO.getOrDefault(k, new int[4]);
+            if (v[0] == 0) continue;
+            System.out.printf("   %-18s samples %5d | friends %5.1f%% | defensive pacts %5.1f%% | at war %5.1f%%%n",
+                k, v[0], 100.0 * v[1] / v[0], 100.0 * v[2] / v[0], 100.0 * v[3] / v[0]);
+        }
         for (Civilization c : gi.getCivilizations()) {
             if (!c.getCivName().equals("Humans")) continue;
             java.util.TreeMap<String,Integer> seen = new java.util.TreeMap<>();
             for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits())) seen.merge(u.getName(), 1, Integer::sum);
             System.out.println("HUMAN UNITS NOW: " + seen);
+        }
+    }
+
+    static final java.util.Map<String, String> FACTION = new java.util.HashMap<>();
+    static {
+        for (String n : new String[]{"Humans","Dwarves","Gnomes","Night Elves","Draenei","Worgen","High Elves"}) FACTION.put(n, "Alliance");
+        for (String n : new String[]{"Orcs","Trolls","Tauren","Forsaken","Blood Elves","Goblins"}) FACTION.put(n, "Horde");
+        FACTION.put("Pandaren", "Neutral");
+    }
+    static final java.util.Map<String, int[]> DIPLO = new java.util.TreeMap<>();
+
+    static void sampleDiplomacy(GameInfo gi) {
+        java.util.List<Civilization> majors = new ArrayList<>();
+        for (Civilization c : gi.getCivilizations()) if (c.isMajorCiv() && c.isAlive()) majors.add(c);
+        for (int i = 0; i < majors.size(); i++) for (int j = i + 1; j < majors.size(); j++) {
+            Civilization a = majors.get(i), b = majors.get(j);
+            com.unciv.logic.civilization.diplomacy.DiplomacyManager dm = a.getDiplomacyManager(b);
+            if (dm == null) continue;   // not met yet
+            String fa = FACTION.get(a.getCivName()), fb = FACTION.get(b.getCivName());
+            String key = fa.equals("Neutral") || fb.equals("Neutral") ? "Neutral-any"
+                : fa.equals(fb) ? fa + "-" + fb : "Alliance-Horde";
+            int[] v = DIPLO.computeIfAbsent(key, k -> new int[4]);
+            v[0]++;
+            if (dm.hasFlag(com.unciv.logic.civilization.diplomacy.DiplomacyFlags.DeclarationOfFriendship)) v[1]++;
+            if (dm.getDiplomaticStatus() == com.unciv.logic.civilization.diplomacy.DiplomaticStatus.DefensivePact) v[2]++;
+            if (dm.getDiplomaticStatus() == com.unciv.logic.civilization.diplomacy.DiplomaticStatus.War) v[3]++;
         }
     }
 

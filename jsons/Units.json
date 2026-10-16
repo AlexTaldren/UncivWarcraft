@@ -3,7 +3,7 @@
     "name": "Peasant",
     "unitType": "Civilian",
     "movement": 2,
-    "requiredTech": "Agriculture",
+    "requiredTech": "Farming",
     "uniques": [
       "Can build [Land] improvements on tiles",
       "Automation is a primary action"
@@ -15,7 +15,7 @@
     "unitType": "Civilian",
     "movement": 2,
     "cost": 106,
-    "requiredTech": "Agriculture",
+    "requiredTech": "Farming",
     "uniques": [
       "Founds a new city <by consuming this unit>",
       "Excess Food converted to Production when under construction",
@@ -29,7 +29,7 @@
     "movement": 2,
     "strength": 5,
     "cost": 25,
-    "requiredTech": "Agriculture",
+    "requiredTech": "Farming",
     "obsoleteTech": "Arcane Science",
     "uniques": [
       "May upgrade to [Archer] through ruins-like effects",
@@ -41,13 +41,13 @@
     "attackSound": "nonmetalhit"
   },
   {
-    "name": "Warrior",
+    "name": "Militia",
     "unitType": "Sword",
     "movement": 2,
     "strength": 8,
     "cost": 40,
-    "requiredTech": "Agriculture",
-    "obsoleteTech": "Metal Casting",
+    "requiredTech": "Farming",
+    "obsoleteTech": "Blacksmithing",
     "upgradesTo": "Swordsman",
     "uniques": [
       "May upgrade to [Spearman] through ruins-like effects"
@@ -109,7 +109,7 @@
     "requiredTech": "The Wheel",
     "requiredResource": "Horses",
     "upgradesTo": "Knight",
-    "obsoleteTech": "Chivalry",
+    "obsoleteTech": "Animal War Training",
     "uniques": [
       "No defensive terrain bonus",
       "Rough terrain penalty",
@@ -140,7 +140,7 @@
     "requiredTech": "Riding",
     "requiredResource": "Horses",
     "upgradesTo": "Knight",
-    "obsoleteTech": "Chivalry",
+    "obsoleteTech": "Animal War Training",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
@@ -157,8 +157,8 @@
     "rangedStrength": 8,
     "cost": 75,
     "requiredTech": "Mathematics",
-    "obsoleteTech": "Natural Philosophy",
-    "upgradesTo": "Trebuchet",
+    "obsoleteTech": "Siege Engineering",
+    "upgradesTo": "Ballista",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
       "No defensive terrain bonus",
@@ -177,7 +177,7 @@
     "rangedStrength": 11,
     "cost": 75,
     "requiredTech": "Construction",
-    "obsoleteTech": "Machinery",
+    "obsoleteTech": "Clockwork",
     "upgradesTo": "Crossbowman",
     "attackSound": "arrow"
   },
@@ -187,9 +187,9 @@
     "movement": 2,
     "strength": 14,
     "cost": 75,
-    "requiredTech": "Blacksmithing",
+    "requiredTech": "Iron Forged Swords",
     "upgradesTo": "Vanguard",
-    "obsoleteTech": "Steel",
+    "obsoleteTech": "Steel Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
     "attackSound": "metalhit"
@@ -205,11 +205,11 @@
       "[+50]% Strength <vs [Mounted] units>"
     ],
     "upgradesTo": "Lancer",
-    "obsoleteTech": "Metallurgy",
+    "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit"
   },
   {
-    "name": "Battle Galley",
+    "name": "War Galley",
     "unitType": "Ranged Water",
     "movement": 3,
     "strength": 16,
@@ -229,7 +229,7 @@
     "movement": 4,
     "strength": 20,
     "cost": 120,
-    "requiredTech": "Chivalry",
+    "requiredTech": "Animal War Training",
     "obsoleteTech": "War Doctrine",
     "upgradesTo": "Cavalry",
     "requiredResource": "Horses",
@@ -248,19 +248,19 @@
     "strength": 13,
     "rangedStrength": 18,
     "cost": 120,
-    "requiredTech": "Machinery",
-    "upgradesTo": "Steam Gatling",
+    "requiredTech": "Clockwork",
+    "upgradesTo": "Mountaineer",
     "obsoleteTech": "Steamworks",
     "attackSound": "crossbow"
   },
   {
-    "name": "Trebuchet",
+    "name": "Ballista",
     "unitType": "Siege",
     "movement": 2,
     "strength": 12,
     "rangedStrength": 14,
     "cost": 120,
-    "requiredTech": "Natural Philosophy",
+    "requiredTech": "Siege Engineering",
     "obsoleteTech": "Alchemy",
     "upgradesTo": "Cannon",
     "uniques": [
@@ -278,7 +278,7 @@
     "movement": 2,
     "strength": 21,
     "cost": 120,
-    "requiredTech": "Steel",
+    "requiredTech": "Steel Forged Swords",
     "upgradesTo": "Musketeer",
     "obsoleteTech": "Blackpowder",
     "requiredResource": "Iron",
@@ -292,7 +292,7 @@
     "cost": 120,
     "requiredTech": "Astronomy",
     "upgradesTo": "Ironclad",
-    "obsoleteTech": "Combustion",
+    "obsoleteTech": "Liquid Fire",
     "uniques": [
       "[+1] Sight",
       "Withdraws before melee combat <with [80]% chance>"
@@ -302,13 +302,13 @@
   },
   {
     "name": "Musketeer",
-    "unitType": "Gunpowder",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 24,
     "cost": 150,
     "requiredTech": "Blackpowder",
     "upgradesTo": "Rifleman",
-    "obsoleteTech": "Rifling",
+    "obsoleteTech": "Long Rifles",
     "attackSound": "shot"
   },
   {
@@ -334,7 +334,7 @@
     "cost": 185,
     "requiredResource": "Iron",
     "requiredTech": "Navigation",
-    "obsoleteTech": "Arcane Circuitry",
+    "obsoleteTech": "Arcane Conduits",
     "upgradesTo": "Dreadnought",
     "hurryCostModifier": 20,
     "attackSound": "shipCannonVolley"
@@ -345,7 +345,7 @@
     "movement": 4,
     "strength": 25,
     "cost": 185,
-    "requiredTech": "Metallurgy",
+    "requiredTech": "Mithril Forged Swords",
     "requiredResource": "Horses",
     "uniques": [
       "Can move after attacking",
@@ -356,8 +356,8 @@
     "promotions": [
       "Formation I"
     ],
-    "upgradesTo": "Tankbuster Cannon",
-    "obsoleteTech": "Combined Arms",
+    "upgradesTo": "Siegebreaker",
+    "obsoleteTech": "Battle Formations",
     "attackSound": "horse"
   },
   {
@@ -380,26 +380,26 @@
     "attackSound": "cannon"
   },
   {
-    "name": "Steam Gatling",
-    "unitType": "Ranged Gunpowder",
+    "name": "Mountaineer",
+    "unitType": "Ranged Firearm",
     "range": 1,
     "movement": 2,
     "strength": 30,
     "rangedStrength": 30,
     "cost": 225,
     "requiredTech": "Steamworks",
-    "upgradesTo": "Gun Nest",
-    "obsoleteTech": "Ballistics",
+    "upgradesTo": "Grenadier",
+    "obsoleteTech": "Fragmentation Shards",
     "attackSound": "machinegun"
   },
   {
     "name": "Rifleman",
-    "unitType": "Gunpowder",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 34,
     "cost": 225,
-    "requiredTech": "Rifling",
-    "obsoleteTech": "Interchangeable Cogs",
+    "requiredTech": "Long Rifles",
+    "obsoleteTech": "Gnomish Gearworks",
     "upgradesTo": "Fusilier",
     "attackSound": "shot"
   },
@@ -410,7 +410,7 @@
     "strength": 34,
     "cost": 225,
     "requiredTech": "War Doctrine",
-    "obsoleteTech": "Combustion",
+    "obsoleteTech": "Liquid Fire",
     "requiredResource": "Horses",
     "upgradesTo": "Steam Tank",
     "uniques": [
@@ -430,7 +430,7 @@
     "requiredTech": "Steam Power",
     "requiredResource": "Thorium",
     "upgradesTo": "Destroyer",
-    "obsoleteTech": "Combustion",
+    "obsoleteTech": "Liquid Fire",
     "uniques": [
       "[+33]% Strength <vs cities>",
       "Double movement in [Coast]",
@@ -447,7 +447,7 @@
     "range": 3,
     "cost": 320,
     "requiredTech": "Seaforium",
-    "upgradesTo": "Rocket Battery",
+    "upgradesTo": "Demolisher",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
       "No defensive terrain bonus",
@@ -461,14 +461,14 @@
     "attackSound": "artillery"
   },
   {
-    "name": "Submersible",
+    "name": "Gnomish Submarine",
     "unitType": "Submarine",
     "movement": 5,
     "strength": 35,
     "rangedStrength": 60,
     "cost": 325,
     "requiredTech": "Frost Enchantment",
-    "upgradesTo": "Arcane Submersible",
+    "upgradesTo": "Giant Turtle",
     "uniques": [
       "[+75]% Strength <when attacking>",
       "Can only attack [Water] tiles",
@@ -478,44 +478,44 @@
   },
   {
     "name": "Fusilier",
-    "unitType": "Gunpowder",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 50,
     "cost": 320,
-    "requiredTech": "Interchangeable Cogs",
+    "requiredTech": "Gnomish Gearworks",
     "upgradesTo": "Shock Trooper",
-    "obsoleteTech": "Synthetic Alloys",
+    "obsoleteTech": "Arcanite Alloys",
     "attackSound": "shot"
   },
   {
     "name": "Gyrocopter",
-    "unitType": "Fighter",
+    "unitType": "Sky Fighter",
     "movement": 1,
     "strength": 35,
     "rangedStrength": 35,
     "range": 5,
     "interceptRange": 5,
     "cost": 325,
-    "requiredTech": "Flight",
+    "requiredTech": "Gnomish Flight",
     "requiredResource": "Azerite",
-    "upgradesTo": "Strike Gyro",
+    "upgradesTo": "Gryphon Rider",
     "obsoleteTech": "Scrying",
     "uniques": [
       "[50]% chance to intercept air attacks",
-      "[+150]% Strength <vs [Bomber] units>",
-      "[+150]% Strength <vs [Helicopter] units>"
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>"
     ],
     "attackSound": "machinegun"
   },
   {
     "name": "Bomber Zeppelin",
-    "unitType": "Bomber",
+    "unitType": "Sky Bomber",
     "movement": 1,
     "strength": 50,
     "rangedStrength": 50,
     "range": 6,
     "cost": 325,
-    "requiredTech": "Flight",
+    "requiredTech": "Gnomish Flight",
     "requiredResource": "Azerite",
     "upgradesTo": "War Zeppelin",
     "obsoleteTech": "Scrying",
@@ -523,22 +523,22 @@
   },
   {
     "name": "Shock Trooper",
-    "unitType": "Gunpowder",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 70,
     "cost": 375,
-    "requiredTech": "Synthetic Alloys",
-    "upgradesTo": "Mechano-Trooper",
-    "obsoleteTech": "Mobile Tactics",
+    "requiredTech": "Arcanite Alloys",
+    "upgradesTo": "Mechagnome Trooper",
+    "obsoleteTech": "War Drums",
     "attackSound": "shot"
   },
   {
     "name": "Airship Tender",
-    "unitType": "Aircraft Carrier",
+    "unitType": "Sky Carrier",
     "movement": 5,
     "strength": 40,
     "cost": 375,
-    "requiredTech": "Arcane Circuitry",
+    "requiredTech": "Arcane Conduits",
     "uniques": [
       "Cannot attack",
       "Can carry [2] [Aircraft] units"
@@ -553,7 +553,7 @@
     "range": 3,
     "cost": 375,
     "requiredResource": "Azerite",
-    "requiredTech": "Arcane Circuitry",
+    "requiredTech": "Arcane Conduits",
     "uniques": [
       "Never appears as a Barbarian unit"
     ],
@@ -563,45 +563,45 @@
     "attackSound": "shipguns"
   },
   {
-    "name": "Gun Nest",
-    "unitType": "Ranged Gunpowder",
+    "name": "Grenadier",
+    "unitType": "Ranged Firearm",
     "range": 1,
     "movement": 2,
     "strength": 60,
     "rangedStrength": 60,
     "cost": 350,
-    "requiredTech": "Ballistics",
-    "upgradesTo": "Mechano-Trooper",
+    "requiredTech": "Fragmentation Shards",
+    "upgradesTo": "Mechagnome Trooper",
     "attackSound": "machinegun"
   },
   {
     "name": "Flak Cannon",
-    "unitType": "Gunpowder",
+    "unitType": "Firearm",
     "movement": 2,
     "interceptRange": 2,
     "strength": 50,
     "cost": 375,
-    "requiredTech": "Ballistics",
-    "upgradesTo": "Mobile Flak",
-    "obsoleteTech": "Rocketry",
+    "requiredTech": "Fragmentation Shards",
+    "upgradesTo": "Flak Wagon",
+    "obsoleteTech": "Demolition",
     "uniques": [
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Air] units>",
-      "[+150]% Strength <vs [Helicopter] units>",
+      "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
     "attackSound": "machinegun"
   },
   {
     "name": "Steam Tank",
-    "unitType": "Armored",
+    "unitType": "War Machine",
     "movement": 4,
     "strength": 60,
     "cost": 350,
-    "requiredTech": "Combustion",
+    "requiredTech": "Liquid Fire",
     "requiredResource": "Azerite",
-    "upgradesTo": "Siege Tank",
-    "obsoleteTech": "Combined Arms",
+    "upgradesTo": "Siege Engine",
+    "obsoleteTech": "Battle Formations",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
@@ -616,18 +616,18 @@
     "strength": 55,
     "interceptRange": 2,
     "cost": 375,
-    "requiredTech": "Combustion",
+    "requiredTech": "Liquid Fire",
     "uniques": [
-      "Can see invisible [Submarine] units",
+      "Can see invisible [Gnomish Submarine] units",
       "[40]% chance to intercept air attacks",
       "Withdraws before melee combat <with [80]% chance>",
-      "[+100]% Strength <vs [Submarine] units>"
+      "[+100]% Strength <vs [Gnomish Submarine] units>"
     ],
     "attackSound": "shipguns"
   },
   {
-    "name": "Marine",
-    "unitType": "Gunpowder",
+    "name": "Kul Tiran Marine",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 65,
     "cost": 400,
@@ -642,8 +642,8 @@
     "attackSound": "shot"
   },
   {
-    "name": "Strike Gyro",
-    "unitType": "Fighter",
+    "name": "Gryphon Rider",
+    "unitType": "Sky Fighter",
     "movement": 1,
     "strength": 45,
     "rangedStrength": 45,
@@ -655,14 +655,14 @@
     "upgradesTo": "Sky Golem",
     "uniques": [
       "[100]% chance to intercept air attacks",
-      "[+150]% Strength <vs [Bomber] units>",
-      "[+150]% Strength <vs [Helicopter] units>"
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>"
     ],
     "attackSound": "machinegun"
   },
   {
     "name": "War Zeppelin",
-    "unitType": "Bomber",
+    "unitType": "Sky Bomber",
     "movement": 1,
     "strength": 65,
     "rangedStrength": 65,
@@ -674,8 +674,8 @@
     "attackSound": "bombing"
   },
   {
-    "name": "Rocketeer",
-    "unitType": "Gunpowder",
+    "name": "Skyguard",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 65,
     "cost": 375,
@@ -687,12 +687,12 @@
     "attackSound": "shot"
   },
   {
-    "name": "Siege Tank",
-    "unitType": "Armored",
+    "name": "Siege Engine",
+    "unitType": "War Machine",
     "movement": 5,
     "strength": 70,
     "cost": 375,
-    "requiredTech": "Combined Arms",
+    "requiredTech": "Battle Formations",
     "requiredResource": "Azerite",
     "upgradesTo": "Mechano-Tank",
     "uniques": [
@@ -703,28 +703,28 @@
     "attackSound": "tankshot"
   },
   {
-    "name": "Tankbuster Cannon",
-    "unitType": "Gunpowder",
+    "name": "Siegebreaker",
+    "unitType": "Firearm",
     "movement": 2,
     "strength": 50,
     "cost": 300,
-    "requiredTech": "Combined Arms",
-    "upgradesTo": "Gunship Gyro",
+    "requiredTech": "Battle Formations",
+    "upgradesTo": "Flying Machine",
     "uniques": [
-      "[+100]% Strength <vs [Armored] units>",
+      "[+100]% Strength <vs [War Machine] units>",
       "Never appears as a Barbarian unit"
     ],
     "attackSound": "machinegun"
   },
   {
     "name": "Mana Bomb",
-    "unitType": "Atomic Bomber",
+    "unitType": "Mana Bomber",
     "movement": 1,
     "strength": 150,
     "rangedStrength": 150,
     "range": 10,
     "cost": 600,
-    "requiredTech": "Mana Fission",
+    "requiredTech": "Unstable Mana",
     "requiredResource": "Arcane Crystals",
     "promotions": [
       "Evasion"
@@ -738,14 +738,14 @@
     "attackSound": "nuke"
   },
   {
-    "name": "Rocket Battery",
+    "name": "Demolisher",
     "unitType": "Siege",
     "movement": 2,
     "strength": 45,
     "rangedStrength": 60,
     "range": 3,
     "cost": 425,
-    "requiredTech": "Rocketry",
+    "requiredTech": "Demolition",
     "requiredResource": "Elementium",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -759,44 +759,44 @@
     "attackSound": "artillery"
   },
   {
-    "name": "Mobile Flak",
-    "unitType": "Gunpowder",
+    "name": "Flak Wagon",
+    "unitType": "Firearm",
     "movement": 3,
     "interceptRange": 2,
     "strength": 65,
     "cost": 425,
-    "requiredTech": "Rocketry",
+    "requiredTech": "Demolition",
     "uniques": [
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Air] units>",
-      "[+150]% Strength <vs [Helicopter] units>",
+      "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
     "attackSound": "missile"
   },
   {
     "name": "Arcane Missile",
-    "unitType": "Missile",
+    "unitType": "Arcane Projectile",
     "movement": 1,
     "strength": 60,
     "rangedStrength": 60,
     "range": 8,
     "cost": 150,
-    "requiredTech": "Advanced Ballistics",
+    "requiredTech": "Siege Barrage",
     "uniques": [
       "[-100]% maintenance costs"
     ],
     "attackSound": "missile"
   },
   {
-    "name": "Mana Missile",
-    "unitType": "Missile",
+    "name": "Arcane Annihilator",
+    "unitType": "Arcane Projectile",
     "movement": 1,
     "strength": 300,
     "rangedStrength": 300,
     "range": 12,
     "cost": 1000,
-    "requiredTech": "Advanced Ballistics",
+    "requiredTech": "Siege Barrage",
     "uniques": [
       "Nuclear weapon of Strength [2]",
       "Only available <if [Mana Bomb Project] is constructed>",
@@ -806,15 +806,15 @@
     "attackSound": "nuke"
   },
   {
-    "name": "Gunship Gyro",
-    "unitType": "Helicopter",
+    "name": "Flying Machine",
+    "unitType": "Gyro",
     "movement": 6,
     "strength": 60,
     "cost": 425,
     "requiredTech": "Titan Logic",
     "requiredResource": "Elementium",
     "uniques": [
-      "[+100]% Strength <vs [Armored] units>",
+      "[+100]% Strength <vs [War Machine] units>",
       "No defensive terrain bonus",
       "Can move after attacking",
       "All tiles cost 1 movement",
@@ -825,7 +825,7 @@
     "attackSound": "machinegun"
   },
   {
-    "name": "Arcane Submersible",
+    "name": "Giant Turtle",
     "unitType": "Submarine",
     "movement": 6,
     "strength": 50,
@@ -837,25 +837,25 @@
       "[+75]% Strength <when attacking>",
       "Can only attack [Water] tiles",
       "[+1] Sight",
-      "Can carry [2] [Missile] units",
+      "Can carry [2] [Arcane Projectile] units",
       "Never appears as a Barbarian unit"
     ],
     "attackSound": "torpedo"
   },
   {
-    "name": "Mechano-Trooper",
-    "unitType": "Gunpowder",
+    "name": "Mechagnome Trooper",
+    "unitType": "Firearm",
     "movement": 3,
     "strength": 90,
     "cost": 375,
-    "requiredTech": "Mobile Tactics",
+    "requiredTech": "War Drums",
     "uniques": [
       "Never appears as a Barbarian unit"
     ],
     "attackSound": "tankshot"
   },
   {
-    "name": "Arcane Cruiser",
+    "name": "Juggernaught",
     "unitType": "Ranged Water",
     "movement": 7,
     "strength": 80,
@@ -866,9 +866,9 @@
     "requiredTech": "Mechagnomics",
     "uniques": [
       "[100]% chance to intercept air attacks",
-      "Can see invisible [Submarine] units",
-      "Can carry [3] [Missile] units",
-      "[+100]% Strength <vs [Submarine] units>",
+      "Can see invisible [Gnomish Submarine] units",
+      "Can carry [3] [Arcane Projectile] units",
+      "[+100]% Strength <vs [Gnomish Submarine] units>",
       "Never appears as a Barbarian unit"
     ],
     "promotions": [
@@ -878,7 +878,7 @@
   },
   {
     "name": "Mechano-Tank",
-    "unitType": "Armored",
+    "unitType": "War Machine",
     "movement": 5,
     "strength": 100,
     "cost": 425,
@@ -894,7 +894,7 @@
   },
   {
     "name": "Sky Golem",
-    "unitType": "Fighter",
+    "unitType": "Sky Fighter",
     "movement": 1,
     "strength": 75,
     "rangedStrength": 75,
@@ -905,14 +905,14 @@
     "requiredResource": "Elementium",
     "uniques": [
       "[100]% chance to intercept air attacks",
-      "[+150]% Strength <vs [Bomber] units>",
-      "[+150]% Strength <vs [Helicopter] units>"
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>"
     ],
     "attackSound": "jetgun"
   },
   {
     "name": "Iron Colossus",
-    "unitType": "Armored",
+    "unitType": "War Machine",
     "movement": 5,
     "strength": 150,
     "cost": 425,
@@ -927,13 +927,13 @@
   },
   {
     "name": "Void Bomber",
-    "unitType": "Bomber",
+    "unitType": "Sky Bomber",
     "movement": 2,
     "strength": 85,
     "rangedStrength": 85,
     "range": 20,
     "cost": 425,
-    "requiredTech": "Cloaking Fields",
+    "requiredTech": "Invisibility",
     "requiredResource": "Elementium",
     "uniques": [
       "Damage taken from interception reduced by [100]%",
@@ -993,7 +993,7 @@
     "unitType": "Civilian",
     "uniques": [
       "Can speed up construction of a building",
-      "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+      "Can instantly construct a [Great Workshop] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
       "[This Unit] gets a name from the [Engineer] group",
       "Great Person - [Production]",
@@ -1088,7 +1088,7 @@
     "unitType": "Civilian",
     "movement": 2,
     "cost": 750,
-    "requiredTech": "Advanced Ballistics",
+    "requiredTech": "Siege Barrage",
     "requiredResource": "Elementium",
     "uniques": [
       "Spaceship part",
@@ -1105,7 +1105,7 @@
     "unitType": "Civilian",
     "movement": 2,
     "cost": 750,
-    "requiredTech": "Orbital Constructs",
+    "requiredTech": "Eye of Kilrogg",
     "requiredResource": "Elementium",
     "uniques": [
       "Spaceship part",
@@ -1157,9 +1157,9 @@
     "movement": 2,
     "strength": 16,
     "cost": 75,
-    "requiredTech": "Blacksmithing",
+    "requiredTech": "Iron Forged Swords",
     "upgradesTo": "Vanguard",
-    "obsoleteTech": "Steel",
+    "obsoleteTech": "Steel Forged Swords",
     "hurryCostModifier": 20,
     "attackSound": "metalhit",
     "replaces": "Swordsman",
@@ -1179,7 +1179,7 @@
     "movement": 4,
     "strength": 22,
     "cost": 120,
-    "requiredTech": "Chivalry",
+    "requiredTech": "Animal War Training",
     "obsoleteTech": "War Doctrine",
     "upgradesTo": "Cavalry",
     "requiredResource": "Horses",
@@ -1208,8 +1208,8 @@
     "strength": 12,
     "rangedStrength": 20,
     "cost": 120,
-    "requiredTech": "Machinery",
-    "upgradesTo": "Steam Gatling",
+    "requiredTech": "Clockwork",
+    "upgradesTo": "Mountaineer",
     "obsoleteTech": "Steamworks",
     "attackSound": "crossbow",
     "replaces": "Crossbowman",

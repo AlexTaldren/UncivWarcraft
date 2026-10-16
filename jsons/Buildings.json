@@ -54,7 +54,7 @@
     "uniques": [
       "[+10]% [Food] [in all cities]",
       "[+15]% Production when constructing [Archery] units [in this city]",
-      "[+15]% Production when constructing [Ranged Gunpowder] units [in this city]"
+      "[+15]% Production when constructing [Ranged Firearm] units [in this city]"
     ],
     "requiredTech": "Archery"
   },
@@ -419,7 +419,7 @@
       "All newly-trained [non-[Air]] units [in this city] receive the [Morale] promotion",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Blacksmithing"
+    "requiredTech": "Iron Forged Swords"
   },
   {
     "name": "Admiralty of Boralus",
@@ -434,7 +434,7 @@
       "Must be next to [Coast]",
       "[+1 Gold] from [Water] tiles [in this city]"
     ],
-    "requiredTech": "Blacksmithing"
+    "requiredTech": "Iron Forged Swords"
   },
   {
     "name": "Garden",
@@ -444,7 +444,7 @@
     ],
     "hurryCostModifier": 25,
     "maintenance": 1,
-    "requiredTech": "Theology"
+    "requiredTech": "Priesthood"
   },
   {
     "name": "Cathedral of Light",
@@ -458,7 +458,7 @@
       "Free [Great Prophet] appears",
       "Only available <when religion is enabled>"
     ],
-    "requiredTech": "Theology"
+    "requiredTech": "Priesthood"
   },
   {
     "name": "Shrine of Seven Stars",
@@ -474,7 +474,7 @@
       "All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
       "All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion"
     ],
-    "requiredTech": "Theology"
+    "requiredTech": "Priesthood"
   },
   {
     "name": "High Temple",
@@ -488,7 +488,7 @@
       "Only available <when religion is enabled>",
       "Can only be built <in [Holy] cities>"
     ],
-    "requiredTech": "Theology",
+    "requiredTech": "Priesthood",
     "isNationalWonder": true
   },
   {
@@ -541,23 +541,23 @@
     "percentStatBonus": {
       "production": 10
     },
-    "requiredTech": "Metal Casting"
+    "requiredTech": "Blacksmithing"
   },
   {
-    "name": "Forge",
+    "name": "Blacksmith",
     "maintenance": 1,
     "hurryCostModifier": 25,
     "requiredNearbyImprovedResources": [
       "Iron"
     ],
-    "requiredTech": "Metal Casting",
+    "requiredTech": "Blacksmithing",
     "uniques": [
       "[+15]% Production when constructing [Land] units [in this city]",
       "[+1 Production] from [Iron] tiles [in this city]"
     ]
   },
   {
-    "name": "Harbor",
+    "name": "Shipyard",
     "cost": 120,
     "maintenance": 3,
     "hurryCostModifier": 25,
@@ -569,7 +569,7 @@
     "requiredTech": "Seafaring"
   },
   {
-    "name": "Arcane Academy",
+    "name": "Arcane Sanctum",
     "maintenance": 2,
     "hurryCostModifier": 15,
     "percentStatBonus": {
@@ -591,7 +591,7 @@
     "culture": 1,
     "isNationalWonder": true,
     "uniques": [
-      "Only available <if [Arcane Academy] is constructed in all [non-[Puppeted]] cities>",
+      "Only available <if [Arcane Sanctum] is constructed in all [non-[Puppeted]] cities>",
       "Free Technology",
       "Cost increases by [30] per owned city"
     ],
@@ -616,7 +616,7 @@
     "cityHealth": 25,
     "hurryCostModifier": 25,
     "requiredBuilding": "Walls",
-    "requiredTech": "Chivalry",
+    "requiredTech": "Animal War Training",
     "uniques": [
       "Destroyed when the city is captured"
     ]
@@ -635,7 +635,7 @@
       "All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
       "Gain a free [Keep] [in this city]"
     ],
-    "requiredTech": "Chivalry"
+    "requiredTech": "Animal War Training"
   },
   {
     "name": "Great Foundry",
@@ -647,7 +647,7 @@
       "Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
-    "requiredTech": "Machinery"
+    "requiredTech": "Clockwork"
   },
   {
     "name": "Northshire Abbey",
@@ -657,7 +657,7 @@
       "Great Merchant": 1
     },
     "isWonder": true,
-    "requiredTech": "Natural Philosophy"
+    "requiredTech": "Siege Engineering"
   },
   {
     "name": "Armory",
@@ -668,7 +668,7 @@
       "New [Military] units start with [15] XP [in this city]",
       "Destroyed when the city is captured"
     ],
-    "requiredTech": "Steel"
+    "requiredTech": "Steel Forged Swords"
   },
   {
     "name": "Observatory",
@@ -692,7 +692,7 @@
     "hurryCostModifier": 10,
     "requiredBuilding": "Amphitheater",
     "maintenance": 2,
-    "requiredTech": "Acoustics",
+    "requiredTech": "Choral Hymns",
     "uniques": [
       "Destroyed when the city is captured"
     ]
@@ -707,7 +707,7 @@
     "uniques": [
       "[+25]% [Culture] [in all cities]"
     ],
-    "requiredTech": "Acoustics"
+    "requiredTech": "Choral Hymns"
   },
   {
     "name": "Bank",
@@ -746,7 +746,7 @@
     "requiredTech": "Banking"
   },
   {
-    "name": "Menagerie",
+    "name": "Beastiary",
     "happiness": 3,
     "hurryCostModifier": 10,
     "maintenance": 2,
@@ -780,10 +780,10 @@
     "requiredTech": "Blackpowder"
   },
   {
-    "name": "Seaport",
+    "name": "Port",
     "hurryCostModifier": 25,
     "maintenance": 2,
-    "requiredBuilding": "Harbor",
+    "requiredBuilding": "Shipyard",
     "uniques": [
       "[+1 Production, +1 Gold] from [Water resource] tiles [in this city]",
       "Must be next to [Coast]",
@@ -843,7 +843,7 @@
       "Must not be on [Hill]",
       "[+10]% Production when constructing [All] buildings [in this city]"
     ],
-    "requiredTech": "Mercantilism"
+    "requiredTech": "Auctioneering"
   },
   {
     "name": "Arsenal",
@@ -852,7 +852,7 @@
     "cityHealth": 25,
     "hurryCostModifier": 25,
     "requiredBuilding": "Keep",
-    "requiredTech": "Metallurgy",
+    "requiredTech": "Mithril Forged Swords",
     "uniques": [
       "Destroyed when the city is captured"
     ]
@@ -868,7 +868,7 @@
     "uniques": [
       "[+25]% City Strength from defensive buildings"
     ],
-    "requiredTech": "Metallurgy"
+    "requiredTech": "Mithril Forged Swords"
   },
   {
     "name": "Museum",
@@ -897,12 +897,12 @@
     "requiredTech": "Archaeology"
   },
   {
-    "name": "Public School",
+    "name": "Mage Tower",
     "science": 3,
     "specialistSlots": {
       "Scientist": 1
     },
-    "requiredBuilding": "Arcane Academy",
+    "requiredBuilding": "Arcane Sanctum",
     "maintenance": 3,
     "hurryCostModifier": 0,
     "uniques": [
@@ -940,7 +940,7 @@
     "requiredTech": "Steamworks"
   },
   {
-    "name": "Military Academy",
+    "name": "Training Grounds",
     "hurryCostModifier": 0,
     "maintenance": 1,
     "requiredBuilding": "Armory",
@@ -969,7 +969,7 @@
     "requiredBuilding": "Aqueduct",
     "maintenance": 2,
     "hurryCostModifier": 0,
-    "requiredTech": "Biology"
+    "requiredTech": "Natural Lore"
   },
   {
     "name": "Auction House",
@@ -982,10 +982,10 @@
     },
     "hurryCostModifier": 15,
     "requiredBuilding": "Bank",
-    "requiredTech": "Electricity"
+    "requiredTech": "Storm Hammers"
   },
   {
-    "name": "Hydroworks",
+    "name": "Tidal Works",
     "requiredResource": "Elementium",
     "hurryCostModifier": 0,
     "maintenance": 3,
@@ -993,10 +993,10 @@
       "Must be on [River]",
       "[+1 Production] from [River] tiles [in this city]"
     ],
-    "requiredTech": "Electricity"
+    "requiredTech": "Storm Hammers"
   },
   {
-    "name": "Guard Post",
+    "name": "Guard Tower",
     "cost": 300,
     "maintenance": 1,
     "hurryCostModifier": 10,
@@ -1005,12 +1005,12 @@
       "[-25]% enemy spy effectiveness [in this city]"
     ],
     "requiredBuilding": "City Watch",
-    "requiredTech": "Electricity"
+    "requiredTech": "Storm Hammers"
   },
   {
     "name": "Grand Arena",
     "happiness": 4,
-    "requiredBuilding": "Menagerie",
+    "requiredBuilding": "Beastiary",
     "maintenance": 2,
     "requiredTech": "Frost Enchantment"
   },
@@ -1051,7 +1051,7 @@
       "Promotes all spies [1] time(s)",
       "Gain an extra spy",
       "[-15]% enemy spy effectiveness [in this city]",
-      "Only available <if [Guard Post] is constructed in all [non-[Puppeted]] cities>",
+      "Only available <if [Guard Tower] is constructed in all [non-[Puppeted]] cities>",
       "Cost increases by [30] per owned city"
     ],
     "requiredTech": "Communication Crystals"
@@ -1062,7 +1062,7 @@
     "cityHealth": 25,
     "hurryCostModifier": 25,
     "requiredBuilding": "Arsenal",
-    "requiredTech": "Interchangeable Cogs",
+    "requiredTech": "Gnomish Gearworks",
     "uniques": [
       "Destroyed when the city is captured"
     ]
@@ -1077,7 +1077,7 @@
     "uniques": [
       "[+1 Production] from every specialist [in all cities]"
     ],
-    "requiredTech": "Interchangeable Cogs"
+    "requiredTech": "Gnomish Gearworks"
   },
   {
     "name": "Shadowfang Keep",
@@ -1092,7 +1092,7 @@
       "[+1 Happiness, +2 Culture, +3 Gold] from every [Keep]",
       "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"
     ],
-    "requiredTech": "Railroads"
+    "requiredTech": "Tramways"
   },
   {
     "name": "Arcane Laboratory",
@@ -1103,9 +1103,9 @@
     "specialistSlots": {
       "Scientist": 1
     },
-    "requiredBuilding": "Public School",
+    "requiredBuilding": "Mage Tower",
     "maintenance": 3,
-    "requiredTech": "Synthetic Alloys"
+    "requiredTech": "Arcanite Alloys"
   },
   {
     "name": "Seat of the Naaru",
@@ -1117,7 +1117,7 @@
     "uniques": [
       "[-10]% Culture cost of adopting new Policies"
     ],
-    "requiredTech": "Synthetic Alloys"
+    "requiredTech": "Arcanite Alloys"
   },
   {
     "name": "Alchemy Lab",
@@ -1149,7 +1149,7 @@
     "uniques": [
       "[-33]% Gold cost of upgrading <for [Military] units>"
     ],
-    "requiredTech": "Combined Arms"
+    "requiredTech": "Battle Formations"
   },
   {
     "name": "Sun Crystal Array",
@@ -1159,7 +1159,7 @@
     },
     "requiredBuilding": "Foundry",
     "maintenance": 3,
-    "requiredTech": "Druidic Ecology",
+    "requiredTech": "Nature's Blessing",
     "uniques": [
       "Must be next to [Desert]",
       "Only available <in cities without a [Mana Reactor]>"
@@ -1168,7 +1168,7 @@
   {
     "name": "Salvage Yard",
     "maintenance": 3,
-    "requiredTech": "Druidic Ecology",
+    "requiredTech": "Nature's Blessing",
     "uniques": [
       "Provides [2] [Elementium]",
       "Limited to [5] per Civilization"
@@ -1187,7 +1187,7 @@
       "Free Social Policy",
       "Must be next to [Coast]"
     ],
-    "requiredTech": "Druidic Ecology"
+    "requiredTech": "Nature's Blessing"
   },
   {
     "name": "Mana Reactor",
@@ -1198,7 +1198,7 @@
     "requiredBuilding": "Foundry",
     "maintenance": 3,
     "requiredResource": "Arcane Crystals",
-    "requiredTech": "Mana Fission",
+    "requiredTech": "Unstable Mana",
     "uniques": [
       "Only available <in cities without a [Sun Crystal Array]>"
     ]
@@ -1213,10 +1213,10 @@
       "Only available <when [Scientific] Victory is enabled>",
       "Cannot be hurried"
     ],
-    "requiredTech": "Rocketry",
+    "requiredTech": "Demolition",
     "civilopediaText": [
       {
-        "text": "Once you have completed the Apollo Program, you can start constructing spaceship parts in your cities (with the relevant technologies) to win a Scientific Victory!"
+        "text": "Once you have completed the Titan Ascension Project, you can start constructing Titan vessel parts in your cities (with the relevant technologies) to win a Scientific Victory!"
       }
     ]
   },
@@ -1244,7 +1244,7 @@
     "requiredTech": "Portal Networks"
   },
   {
-    "name": "Warded Bunker",
+    "name": "Burrow",
     "cost": 300,
     "maintenance": 1,
     "requiredTech": "Portal Networks",
@@ -1265,7 +1265,7 @@
       "[+25]% Production when constructing [Spaceship part] units [in this city]",
       "Gain a free [Skyship Foundry] [in this city]"
     ],
-    "requiredTech": "Orbital Constructs"
+    "requiredTech": "Eye of Kilrogg"
   },
   {
     "name": "Skyship Foundry",

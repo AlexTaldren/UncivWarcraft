@@ -43,10 +43,11 @@
     "uniques": [
       "[-50]% City-State Influence degradation",
       "Resting point for Influence with City-States is increased by [20]",
-      "[+15]% Great Person generation [in all cities]"
+      "[+15]% Great Person generation [in all cities]",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
-      "Stormwind City",
+      "Stormwind",
       "Lordaeron",
       "Goldshire",
       "Lakeshire",
@@ -66,13 +67,14 @@
       "Durnholde Keep",
       "Eastvale",
       "Raven Hill",
-      "Westbrook",
-      "Hammerfall",
+      "Westbrook Garrison",
       "Corin's Crossing",
+      "Refuge Pointe",
       "Stormwind Harbor",
       "Valiance Keep",
-      "Wildhammer Stronghold",
-      "Westguard Keep"
+      "Westguard Keep",
+      "Light's Shield Tower",
+      "Watchers' Terrace"
     ]
   },
   {
@@ -110,29 +112,30 @@
     "uniqueName": "Blood Fury",
     "uniques": [
       "[+15]% Strength <for [Melee] units> <when attacking>",
-      "Earn [50]% of killed [Military] unit's [Strength] as [Culture]"
+      "Earn [50]% of killed [Military] unit's [Strength] as [Culture]",
+      "Comment [Faction: Horde]"
     ],
     "cities": [
       "Orgrimmar",
       "Razor Hill",
-      "Sen'jin Watch",
+      "Thunder Ridge",
+      "Valley of Trials",
       "Crossroads",
       "Grom'gol",
       "Kargath",
-      "Hammerfall Camp",
+      "Hammerfall",
       "Splintertree Post",
       "Bloodvenom Post",
+      "Brackenwall Village",
       "Warsong Hold",
       "Agmar's Hammer",
       "Garrosh'ar Point",
       "Kor'kron Vanguard",
       "Stonard",
-      "Bladefist Bay",
-      "Durnholde Camp",
-      "Blackrock Camp",
       "Dragonmaw Port",
       "Zoram'gar Outpost",
-      "Valormok"
+      "Valormok",
+      "Blackrock Spire"
     ]
   },
   {
@@ -170,14 +173,14 @@
     "uniqueName": "Shadowmeld",
     "uniques": [
       "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
-      "[+20]% Strength <for [Land] units> <when fighting in [Forest] tiles>"
+      "[+20]% Strength <for [Land] units> <when fighting in [Forest] tiles>",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
       "Darnassus",
       "Astranaar",
       "Auberdine",
       "Nighthaven",
-      "Shadowsong Shrine",
       "Lor'danel",
       "Nijel's Point",
       "Talonbranch Glade",
@@ -188,11 +191,12 @@
       "Thalanaar",
       "Silverwind Refuge",
       "Stars' Rest",
+      "Grove of the Ancients",
       "Eldre'thalas",
       "Zin-Azshari",
       "Suramar",
       "Ameth'Aran",
-      "Nordrassil Glade"
+      "Nordrassil"
     ]
   },
   {
@@ -230,7 +234,8 @@
     "uniqueName": "Mountain King",
     "uniques": [
       "Units ignore terrain costs when moving into any tile with Hills",
-      "[+1 Production] from [Mine] tiles [in all cities]"
+      "[+1 Production] from [Mine] tiles [in all cities]",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
       "Ironforge",
@@ -241,18 +246,18 @@
       "Thandol Span",
       "Dun Algaz",
       "Dun Modr",
-      "Kelli's Camp",
-      "Thorium Point",
+      "Algaz Station",
+      "Farstrider Lodge",
       "Gol'Bolar Quarry",
       "Anvilmar",
       "Brewnall Village",
-      "Frostmane Hold",
-      "Kharanos Hold",
+      "Dun Garok",
       "Bael'dun Keep",
-      "Dun Niffelem",
+      "Thorium Point",
       "Frosthold",
-      "Thunderbrew Village",
-      "Shadowforge City"
+      "Thunderbrew Distillery",
+      "Shadowforge City",
+      "Grim Batol Gate"
     ]
   },
   {
@@ -290,25 +295,20 @@
     "uniqueName": "Expansive Mind",
     "uniques": [
       "[+10]% [Science] [in all cities]",
-      "[+25]% Production when constructing [Siege] units [in all cities]"
+      "[+25]% Production when constructing [Siege] units [in all cities]",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
       "Gnomeregan",
-      "Tinker Town",
       "New Tinkertown",
-      "Mekkatorque's Workshop",
+      "Tinker Town",
       "Steelgrill's Depot",
       "Fizzcrank Airstrip",
       "Toshley's Station",
-      "Gnomish Spire",
-      "Cogspin Station",
-      "Sprocketport",
-      "Gearshift Point",
-      "Whirligig Hollow",
-      "Boltbreak Junction",
-      "Fizzle Village",
-      "Springvalve",
-      "Tinkerton"
+      "Mechagon City",
+      "Rustbolt",
+      "Coldridge Valley",
+      "Chill Breeze Valley"
     ]
   },
   {
@@ -346,7 +346,8 @@
     "uniqueName": "Endurance",
     "uniques": [
       "[+1 Food] from [Pasture] tiles [in all cities]",
-      "[+10]% Strength <for [Land] units> <when defending>"
+      "[+10]% Strength <for [Land] units> <when defending>",
+      "Comment [Faction: Horde]"
     ],
     "cities": [
       "Thunder Bluff",
@@ -357,13 +358,13 @@
       "Sun Rock Retreat",
       "Camp Narache",
       "Camp Una'fe",
-      "Taurajo Ruins",
       "Desolation Hold",
       "Camp Winterhoof",
-      "Bloodhoof Camp",
       "Taunka'le Village",
       "Camp Oneqwah",
-      "Ragetotem Rise",
+      "Red Cloud Mesa",
+      "Brave Wind Mesa",
+      "Camp E'thok",
       "Highmountain"
     ]
   },
@@ -402,7 +403,8 @@
     "uniqueName": "Regeneration",
     "uniques": [
       "[+10] HP when healing <for [Land] units>",
-      "[+15]% Strength <for [Land] units> <when fighting in [Jungle] tiles>"
+      "[+15]% Strength <for [Land] units> <when fighting in [Jungle] tiles>",
+      "Comment [Faction: Horde]"
     ],
     "cities": [
       "Sen'jin Village",
@@ -417,8 +419,6 @@
       "Zul'Mashar",
       "Hiri'watha",
       "Zun'watha",
-      "Zul'Dare",
-      "Kalai Ruins",
       "Zul'Kunda",
       "Bambala",
       "Gurubashi Arena",
@@ -462,10 +462,11 @@
     "uniqueName": "Arcane Torrent",
     "uniques": [
       "[+2 Science] from every [Library]",
-      "[+15]% [Culture] [in all cities]"
+      "[+15]% [Culture] [in all cities]",
+      "Comment [Faction: Horde]"
     ],
     "cities": [
-      "Silvermoon City",
+      "Silvermoon",
       "Falconwing Square",
       "Fairbreeze Village",
       "Tranquillien",
@@ -474,7 +475,6 @@
       "Goldenbough Pass",
       "Saltheril's Haven",
       "Sanctum of the Sun",
-      "Isle of Quel'Danas",
       "Windrunner Village",
       "Sunsail Anchorage",
       "Duskwither Grounds",
@@ -492,7 +492,7 @@
     "startBias": [
       "Forest"
     ],
-    "preferredVictoryType": "Scientific",
+    "preferredVictoryType": "Cultural",
     "personality": "Anasterian Sunstrider",
     "startIntroPart1": "Hail, Anasterian Sunstrider, King of Quel'Thalas. Your quel'dorei crossed the sea in ancient times and raised a shining kingdom around the Sunwell, guarded by runestones and rangers.",
     "startIntroPart2": "Will the high elves keep their realm eternal while the world around them changes?",
@@ -518,21 +518,20 @@
     "uniqueName": "Children of the Sunwell",
     "uniques": [
       "[+20]% Strength <for [Archery] units>",
-      "[+1] Sight <for [Archery] units>"
+      "[+1] Sight <for [Archery] units>",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
-      "Quel'Thalas",
       "Quel'Danas",
+      "Sun's Reach",
       "Windrunner Spire",
       "An'owyn",
-      "Elrendar",
-      "Thalassian Pass",
       "Quel'Lithien Lodge",
       "Andilien Estate",
-      "Sunsail Isle",
-      "Thas'alah",
-      "Farstrider Lodge",
-      "Dawnstar Spire"
+      "Thalassian Pass",
+      "Dawnstar Spire",
+      "The Silver Enclave",
+      "Sun's Reach Harbor"
     ]
   },
   {
@@ -570,21 +569,20 @@
     "uniqueName": "Inner Peace",
     "uniques": [
       "[+15]% [Food] [in all cities]",
-      "[+1 Faith] from every [Shrine]"
+      "[+1 Faith] from every [Shrine]",
+      "Comment [Faction: Neutral]"
     ],
     "cities": [
+      "Temple of Five Dawns",
       "Shrine of Two Moons",
       "Halfhill",
       "Pang's Stead",
       "Dawn's Blossom",
       "Binan Village",
       "Stoneplow",
-      "Kun-Lai Summit",
       "One Keg",
       "Zouchin Village",
-      "Thunder Cleft",
       "Niuzao Temple",
-      "Wandering Isle",
       "Peak of Serenity",
       "Jade Temple Grounds",
       "Pearlfin Village",
@@ -626,7 +624,8 @@
     "uniqueName": "Will of the Forsaken",
     "uniques": [
       "[+25]% Strength <for [Land] units> <when below [50] HP>",
-      "Earn [50]% of killed [Military] unit's [Strength] as [Faith]"
+      "Earn [50]% of killed [Military] unit's [Strength] as [Faith]",
+      "Comment [Faction: Horde]"
     ],
     "cities": [
       "Undercity",
@@ -634,13 +633,12 @@
       "The Sepulcher",
       "Tarren Mill",
       "Deathknell",
-      "Andorhal Ruins",
       "Venomweb Vale",
       "Forsaken High Command",
       "Vengeance Landing",
       "New Agamand",
       "Galen's Fall",
-      "Bulwark",
+      "The Bulwark",
       "Ambermill",
       "Forsaken Rear Guard",
       "Pyrewood Village",
@@ -682,23 +680,22 @@
     "uniqueName": "Gift of the Naaru",
     "uniques": [
       "[+1 Faith] from every [Shrine]",
-      "[+1 Faith] from every [Temple]"
+      "[+1 Faith] from every [Temple]",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
       "The Exodar",
       "Azure Watch",
       "Blood Watch",
-      "Odesyus' Landing",
       "Ammen Vale",
-      "Stillpine Hold",
-      "Wrathscale Point",
+      "Valaar's Berth",
       "Vindicator's Rest",
-      "Emberglade",
-      "Silvermyst Isle",
-      "Bristlelimb Village",
-      "Geezle's Camp",
       "Kessel's Crossing",
-      "Fairbridge Strand"
+      "Shattrath",
+      "Karabor",
+      "Telredor",
+      "Telaar",
+      "Ammen Ford"
     ]
   },
   {
@@ -736,22 +733,20 @@
     "uniqueName": "Time Is Money",
     "uniques": [
       "[+20]% [Gold] [in all cities]",
-      "[+1 Gold] from every [Trading post]"
+      "[+1 Gold] from every [Trading post]",
+      "Comment [Faction: Horde]"
     ],
     "cities": [
       "Bilgewater Harbor",
       "Kezan",
       "Undermine",
-      "Gadgetzan Docks",
-      "Azshara Port",
       "Bilgewater Port",
-      "Steamwheedle Fleet",
       "Mudsprocket",
-      "Fizzcrank Depot",
       "Bootlegger Outpost",
-      "Kaja'Cola Plant",
       "Gallywix Docks",
-      "Lost Isles"
+      "Gallywix Pleasure Palace",
+      "The Lost Isles",
+      "KTC Headquarters"
     ]
   },
   {
@@ -789,10 +784,11 @@
     "uniqueName": "Darkflight",
     "uniques": [
       "[+15]% Strength <for [Land] units> <when fighting in [Forest] tiles>",
-      "[+1] Movement <for [Melee] units>"
+      "[+1] Movement <for [Melee] units>",
+      "Comment [Faction: Alliance]"
     ],
     "cities": [
-      "Gilneas City",
+      "Gilneas",
       "Duskhaven",
       "Stormglen Village",
       "Keel Harbor",
@@ -993,9 +989,9 @@
     ]
   },
   {
-    "name": "Light's Hope",
+    "name": "Light's Hope Chapel",
     "adjective": [
-      "Light's Hope"
+      "Light's Hope Chapel"
     ],
     "cityStateType": "Religious",
     "declaringWar": "You leave us no choice. To arms!",
@@ -1012,7 +1008,7 @@
       20
     ],
     "cities": [
-      "Light's Hope"
+      "Light's Hope Chapel"
     ]
   },
   {
@@ -1062,9 +1058,9 @@
     ]
   },
   {
-    "name": "Feathermoon",
+    "name": "Feathermoon Stronghold",
     "adjective": [
-      "Feathermoon"
+      "Feathermoon Stronghold"
     ],
     "cityStateType": "Cultured",
     "declaringWar": "You leave us no choice. To arms!",
@@ -1081,7 +1077,7 @@
       250
     ],
     "cities": [
-      "Feathermoon"
+      "Feathermoon Stronghold"
     ]
   },
   {

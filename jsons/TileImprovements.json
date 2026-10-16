@@ -9,7 +9,7 @@
     ],
     "food": 1,
     "turnsToBuild": 7,
-    "techRequired": "Agriculture",
+    "techRequired": "Farming",
     "uniques": [
       "Can also be built on tiles adjacent to fresh water",
       "[+1 Food] from [Fresh water] tiles <after discovering [Arathi Law]>",
@@ -62,7 +62,7 @@
     "turnsToBuild": 7,
     "techRequired": "Trade Guilds",
     "uniques": [
-      "[+1 Gold] <after discovering [Mercantilism]>",
+      "[+1 Gold] <after discovering [Auctioneering]>",
       "Pillaging this improvement yields approximately [+20 Gold]"
     ],
     "shortcutKey": "T"
@@ -74,7 +74,7 @@
     "uniques": [
       "Does not need removal of [Forest]",
       "Does not need removal of [Jungle]",
-      "[+1 Gold] <after discovering [Mercantilism]>",
+      "[+1 Gold] <after discovering [Auctioneering]>",
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+10 Gold]"
     ],
@@ -83,7 +83,7 @@
   {
     "name": "Azerite Drill",
     "turnsToBuild": 9,
-    "techRequired": "Biology",
+    "techRequired": "Natural Lore",
     "uniques": [
       "Can only be built to improve a resource",
       "Cannot be built on [Water] tiles",
@@ -92,7 +92,7 @@
     "shortcutKey": "W"
   },
   {
-    "name": "Offshore Platform",
+    "name": "Tidal Drill",
     "turnsToBuild": 1,
     "techRequired": "Frost Enchantment",
     "uniques": [
@@ -203,7 +203,7 @@
       "Land"
     ],
     "turnsToBuild": 4,
-    "techRequired": "Railroads",
+    "techRequired": "Tramways",
     "uniques": [
       "Can be built outside your borders",
       "Costs [2] [Gold] per turn"
@@ -332,7 +332,7 @@
     ]
   },
   {
-    "name": "Manufactory",
+    "name": "Great Workshop",
     "terrainsCanBeBuiltOn": [
       "Land"
     ],
@@ -353,7 +353,7 @@
     "gold": 4,
     "uniques": [
       "Great Improvement",
-      "[+1 Gold] <after discovering [Mercantilism]>",
+      "[+1 Gold] <after discovering [Auctioneering]>",
       "Removes removable features when built",
       "Will not be replaced by automated units",
       "Pillaging this improvement yields approximately [+20 Gold]"
@@ -452,5 +452,14 @@
         "text": "Home to uncivilized barbarians, will spawn a hostile unit from time to time"
       }
     ]
+  },
+  {
+    "name": "Remove Fallout",
+    "turnsToBuild": 2,
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "X"
   }
 ]
