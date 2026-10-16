@@ -10,7 +10,7 @@ import wc_renames as R
 import wc_factions as F
 import wc_names as NG
 import wc_terrain as WT
-import icons, race_sprites, human_sprites, tiles_art
+import icons, race_sprites, human_sprites, tiles_art, citycenters
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -278,6 +278,9 @@ print("human sprites:", n)
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)
+n = citycenters.write_all(os.path.join(OUT, "Images.WarcraftMap"), R.ERAS, [x["name"] for x in F.NATIONS],
+                          [c[0] for c in F.CITY_STATES])
+print("city centers:", n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
     # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
     f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,

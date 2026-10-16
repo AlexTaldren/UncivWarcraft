@@ -6,3262 +6,4368 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 TileSets/AbsoluteUnits/Units/Airship Tender
   rotate: false
-  xy: 735, 1822
+  xy: 735, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Airship Tender-1
   rotate: false
-  xy: 879, 1822
+  xy: 879, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Airship Tender-2
   rotate: false
-  xy: 951, 1822
+  xy: 951, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Arcane Thruster
   rotate: false
-  xy: 210, 687
+  xy: 210, 691
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Arcane Thruster-1
   rotate: false
-  xy: 210, 614
+  xy: 210, 618
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Arcane Thruster-2
   rotate: false
-  xy: 210, 541
+  xy: 210, 545
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage
   rotate: false
-  xy: 220, 1959
+  xy: 220, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage-1
   rotate: false
-  xy: 112, 1766
+  xy: 112, 1770
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage-2
   rotate: false
-  xy: 216, 1870
+  xy: 216, 1874
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ballista
   rotate: false
-  xy: 391, 1749
+  xy: 391, 1753
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ballista-1
   rotate: false
-  xy: 463, 1749
+  xy: 463, 1753
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ballista-2
   rotate: false
-  xy: 390, 1621
+  xy: 390, 1625
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Brigantine
   rotate: false
-  xy: 751, 1758
+  xy: 751, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Brigantine-1
   rotate: false
-  xy: 895, 1758
+  xy: 895, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Brigantine-2
   rotate: false
-  xy: 967, 1758
+  xy: 967, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Buccaneer
   rotate: false
-  xy: 1039, 1758
+  xy: 1039, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Buccaneer-1
   rotate: false
-  xy: 1183, 1758
+  xy: 1183, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Buccaneer-2
   rotate: false
-  xy: 1255, 1758
+  xy: 1255, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demolisher
   rotate: false
-  xy: 296, 541
+  xy: 296, 545
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demolisher-1
   rotate: false
-  xy: 296, 468
+  xy: 296, 472
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demolisher-2
   rotate: false
-  xy: 296, 395
+  xy: 296, 399
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Dreadnought
   rotate: false
-  xy: 1183, 1694
+  xy: 453, 564
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Dreadnought-1
   rotate: false
-  xy: 1327, 1694
+  xy: 453, 500
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Dreadnought-2
   rotate: false
-  xy: 679, 1686
+  xy: 751, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Age of the Cataclysm
   rotate: false
-  xy: 823, 1622
+  xy: 895, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Spain-Age of the Cataclysm
   rotate: false
-  xy: 823, 1622
+  xy: 895, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Age of the Cataclysm-1
   rotate: false
-  xy: 967, 1630
+  xy: 1039, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Spain-Age of the Cataclysm-1
   rotate: false
-  xy: 967, 1630
+  xy: 1039, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Age of the Cataclysm-2
   rotate: false
-  xy: 1039, 1630
+  xy: 1111, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Spain-Age of the Cataclysm-2
   rotate: false
-  xy: 1039, 1630
+  xy: 1111, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Age of the Third War
   rotate: false
-  xy: 1111, 1630
+  xy: 1183, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Age of the Third War-1
   rotate: false
-  xy: 1255, 1630
+  xy: 1327, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Age of the Third War-2
   rotate: false
-  xy: 1327, 1630
+  xy: 1471, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Civilian-Spain-Age of the Third War
   rotate: false
-  xy: 463, 1685
+  xy: 1543, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Age of the Cataclysm
   rotate: false
-  xy: 535, 1685
+  xy: 1615, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Spain-Age of the Cataclysm
   rotate: false
-  xy: 535, 1685
+  xy: 1615, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Age of the Cataclysm-1
   rotate: false
-  xy: 462, 1621
+  xy: 1759, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Spain-Age of the Cataclysm-1
   rotate: false
-  xy: 462, 1621
+  xy: 1759, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Age of the Cataclysm-2
   rotate: false
-  xy: 534, 1621
+  xy: 1831, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Spain-Age of the Cataclysm-2
   rotate: false
-  xy: 534, 1621
+  xy: 1831, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Age of the Third War
   rotate: false
-  xy: 462, 1557
+  xy: 1399, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Age of the Third War-1
   rotate: false
-  xy: 534, 1557
+  xy: 1543, 1597
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Age of the Third War-2
   rotate: false
-  xy: 606, 1557
+  xy: 1615, 1597
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/EmbarkedUnit-Military-Spain-Age of the Third War
   rotate: false
-  xy: 1039, 1566
+  xy: 1687, 1597
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fishing Skiff
   rotate: false
-  xy: 1183, 1502
+  xy: 1903, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fishing Skiff-1
   rotate: false
-  xy: 1327, 1502
+  xy: 1975, 1609
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fishing Skiff-2
   rotate: false
-  xy: 1111, 1494
+  xy: 1903, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fishing Skiff-Age of the Lich King
   rotate: false
-  xy: 1255, 1438
+  xy: 535, 1689
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fishing Skiff-Age of the Lich King-1
   rotate: false
-  xy: 1327, 1438
+  xy: 607, 1689
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fishing Skiff-Age of the Lich King-2
   rotate: false
-  xy: 462, 1493
+  xy: 462, 1625
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flak Cannon
   rotate: false
-  xy: 534, 1493
+  xy: 462, 1561
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flak Cannon-1
   rotate: false
-  xy: 458, 1429
+  xy: 534, 1561
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flak Cannon-2
   rotate: false
-  xy: 530, 1429
+  xy: 606, 1625
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flak Wagon
   rotate: false
-  xy: 296, 322
+  xy: 296, 326
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flak Wagon-1
   rotate: false
-  xy: 296, 249
+  xy: 296, 253
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flak Wagon-2
   rotate: false
-  xy: 296, 176
+  xy: 296, 180
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flying Machine
   rotate: false
-  xy: 458, 1365
+  xy: 678, 1610
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flying Machine-1
   rotate: false
-  xy: 602, 1365
+  xy: 678, 1546
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Flying Machine-2
   rotate: false
-  xy: 458, 1301
+  xy: 750, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Footman
   rotate: false
-  xy: 4, 1361
+  xy: 4, 1365
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Footman-1
   rotate: false
-  xy: 323, 1959
+  xy: 323, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Footman-2
   rotate: false
-  xy: 4, 1272
+  xy: 4, 1276
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fusilier
   rotate: false
-  xy: 426, 1959
+  xy: 426, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fusilier-1
   rotate: false
-  xy: 4, 1183
+  xy: 4, 1187
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Fusilier-2
   rotate: false
-  xy: 529, 1959
+  xy: 529, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Giant Turtle
   rotate: false
-  xy: 674, 1173
+  xy: 1398, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Giant Turtle-1
   rotate: false
-  xy: 750, 1502
+  xy: 1542, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Giant Turtle-2
   rotate: false
-  xy: 822, 1558
+  xy: 1614, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Gnomish Submarine
   rotate: false
-  xy: 894, 1558
+  xy: 1686, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Gnomish Submarine-1
   rotate: false
-  xy: 746, 1374
+  xy: 530, 1433
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Gnomish Submarine-2
   rotate: false
-  xy: 678, 1621
+  xy: 458, 1412
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Artist-Age of the Lich King
   rotate: false
-  xy: 4, 1094
+  xy: 4, 1098
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Artist-Age of the Lich King-1
   rotate: false
-  xy: 632, 1959
+  xy: 632, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Artist-Age of the Lich King-2
   rotate: false
-  xy: 4, 1005
+  xy: 4, 1009
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Engineer-Age of the Lich King
   rotate: false
-  xy: 296, 103
+  xy: 296, 107
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Engineer-Age of the Lich King-1
   rotate: false
-  xy: 296, 30
+  xy: 296, 34
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Engineer-Age of the Lich King-2
   rotate: false
-  xy: 323, 1886
+  xy: 323, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great General-Age of the Lich King
   rotate: false
-  xy: 735, 1959
+  xy: 735, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great General-Age of the Lich King-1
   rotate: false
-  xy: 4, 916
+  xy: 4, 920
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great General-Age of the Lich King-2
   rotate: false
-  xy: 838, 1959
+  xy: 838, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Merchant-Age of the Lich King
   rotate: false
-  xy: 408, 1886
+  xy: 408, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Merchant-Age of the Lich King-1
   rotate: false
-  xy: 493, 1886
+  xy: 493, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Merchant-Age of the Lich King-2
   rotate: false
-  xy: 578, 1886
+  xy: 578, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Prophet-Age of the Lich King
   rotate: false
-  xy: 4, 827
+  xy: 4, 831
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Prophet-Age of the Lich King-1
   rotate: false
-  xy: 941, 1959
+  xy: 941, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Prophet-Age of the Lich King-2
   rotate: false
-  xy: 4, 738
+  xy: 4, 742
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Scientist-Age of the Lich King
   rotate: false
-  xy: 663, 1886
+  xy: 663, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Scientist-Age of the Lich King-1
   rotate: false
-  xy: 748, 1886
+  xy: 748, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Great Scientist-Age of the Lich King-2
   rotate: false
-  xy: 833, 1886
+  xy: 833, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Grenadier
   rotate: false
-  xy: 381, 334
+  xy: 526, 752
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Grenadier-1
   rotate: false
-  xy: 381, 206
+  xy: 526, 624
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Grenadier-2
   rotate: false
-  xy: 381, 142
+  xy: 750, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Inquisitor-Age of the Lich King
   rotate: false
-  xy: 1044, 1959
+  xy: 1044, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Inquisitor-Age of the Lich King-1
   rotate: false
-  xy: 4, 649
+  xy: 4, 653
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Inquisitor-Age of the Lich King-2
   rotate: false
-  xy: 1147, 1959
+  xy: 1147, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Iron Colossus
   rotate: false
-  xy: 962, 1138
+  xy: 1470, 1441
   size: 64, 84
   orig: 64, 84
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Iron Colossus-1
   rotate: false
-  xy: 385, 1172
+  xy: 1614, 1441
   size: 64, 84
   orig: 64, 84
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Iron Colossus-2
   rotate: false
-  xy: 385, 1080
+  xy: 1686, 1441
   size: 64, 84
   orig: 64, 84
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Juggernaught
   rotate: false
-  xy: 385, 952
+  xy: 1830, 1469
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Juggernaught-1
   rotate: false
-  xy: 385, 824
+  xy: 1542, 1397
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Juggernaught-2
   rotate: false
-  xy: 457, 1237
+  xy: 1758, 1397
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Man-o'-War
   rotate: false
-  xy: 457, 1036
+  xy: 526, 560
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Man-o'-War-1
   rotate: false
-  xy: 457, 972
+  xy: 525, 496
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Man-o'-War-2
   rotate: false
-  xy: 457, 908
+  xy: 525, 432
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Marine
   rotate: false
-  xy: 4, 560
+  xy: 4, 564
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Marine-1
   rotate: false
-  xy: 1250, 1959
+  xy: 1250, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Marine-2
   rotate: false
-  xy: 4, 471
+  xy: 4, 475
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat
   rotate: false
-  xy: 529, 1045
+  xy: 525, 304
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat-1
   rotate: false
-  xy: 529, 917
+  xy: 525, 240
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat-2
   rotate: false
-  xy: 529, 853
+  xy: 453, 180
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat-Barbarians
   rotate: false
-  xy: 385, 760
+  xy: 525, 176
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage
   rotate: false
-  xy: 1353, 1959
+  xy: 1353, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage-1
   rotate: false
-  xy: 4, 382
+  xy: 4, 386
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage-2
   rotate: false
-  xy: 1456, 1959
+  xy: 1456, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mechagnome Trooper
   rotate: false
-  xy: 918, 1886
+  xy: 918, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mechagnome Trooper-1
   rotate: false
-  xy: 1003, 1886
+  xy: 1003, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mechagnome Trooper-2
   rotate: false
-  xy: 1088, 1886
+  xy: 1088, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mechano-Tank
   rotate: false
-  xy: 1173, 1886
+  xy: 1173, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mechano-Tank-1
   rotate: false
-  xy: 1258, 1886
+  xy: 1258, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mechano-Tank-2
   rotate: false
-  xy: 1343, 1886
+  xy: 1343, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Militia
   rotate: false
-  xy: 4, 293
+  xy: 4, 297
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Militia-1
   rotate: false
-  xy: 1559, 1959
+  xy: 1559, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Militia-2
   rotate: false
-  xy: 4, 204
+  xy: 4, 208
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Missionary-Age of the Lich King
   rotate: false
-  xy: 1662, 1959
+  xy: 1662, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Missionary-Age of the Lich King-1
   rotate: false
-  xy: 4, 115
+  xy: 4, 119
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Missionary-Age of the Lich King-2
   rotate: false
-  xy: 1765, 1959
+  xy: 1765, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mortar Team
   rotate: false
-  xy: 966, 1430
+  xy: 966, 1354
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mortar Team-1
   rotate: false
-  xy: 601, 1173
+  xy: 1110, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mortar Team-2
   rotate: false
-  xy: 601, 1109
+  xy: 1182, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mountaineer
   rotate: false
-  xy: 601, 917
+  xy: 1398, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mountaineer-1
   rotate: false
-  xy: 601, 789
+  xy: 1542, 1269
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mountaineer-2
   rotate: false
-  xy: 673, 1109
+  xy: 822, 1298
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mounted Archer
   rotate: false
-  xy: 1428, 1881
+  xy: 1428, 1885
   size: 77, 70
   orig: 77, 70
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mounted Archer-1
   rotate: false
-  xy: 1513, 1881
+  xy: 1513, 1885
   size: 77, 70
   orig: 77, 70
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mounted Archer-2
   rotate: false
-  xy: 1598, 1881
+  xy: 1598, 1885
   size: 77, 70
   orig: 77, 70
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Musketeer
   rotate: false
-  xy: 1868, 1959
+  xy: 1868, 1963
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Musketeer-1
   rotate: false
-  xy: 216, 1781
+  xy: 216, 1785
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Musketeer-2
   rotate: false
-  xy: 215, 1692
+  xy: 215, 1696
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Musketeer-Barbarians
   rotate: false
-  xy: 112, 1677
+  xy: 112, 1681
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Navigation Crystal
   rotate: false
-  xy: 210, 468
+  xy: 210, 472
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Navigation Crystal-1
   rotate: false
-  xy: 210, 395
+  xy: 210, 399
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Navigation Crystal-2
   rotate: false
-  xy: 210, 322
+  xy: 210, 326
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Outrider
   rotate: false
-  xy: 1683, 1881
+  xy: 1683, 1885
   size: 77, 70
   orig: 77, 70
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Outrider-1
   rotate: false
-  xy: 1768, 1881
+  xy: 1768, 1885
   size: 77, 70
   orig: 77, 70
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Outrider-2
   rotate: false
-  xy: 1853, 1881
+  xy: 1853, 1885
   size: 77, 70
   orig: 77, 70
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin
   rotate: false
-  xy: 108, 1583
+  xy: 108, 1587
   size: 95, 86
   orig: 95, 86
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin-1
   rotate: false
-  xy: 108, 1489
+  xy: 108, 1493
   size: 95, 86
   orig: 95, 86
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin-2
   rotate: false
-  xy: 108, 1395
+  xy: 108, 1399
   size: 95, 86
   orig: 95, 86
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant
   rotate: false
-  xy: 107, 1306
+  xy: 107, 1310
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant-1
   rotate: false
-  xy: 107, 1217
+  xy: 107, 1221
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant-2
   rotate: false
-  xy: 107, 1128
+  xy: 107, 1132
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant-Age of the Lich King
   rotate: false
-  xy: 107, 1039
+  xy: 107, 1043
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant-Age of the Lich King-1
   rotate: false
-  xy: 107, 950
+  xy: 107, 954
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant-Age of the Lich King-2
   rotate: false
-  xy: 107, 861
+  xy: 107, 865
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Peasant-Barbarians
   rotate: false
-  xy: 112, 1855
+  xy: 112, 1859
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Priest
   rotate: false
-  xy: 107, 772
+  xy: 107, 776
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Priest-1
   rotate: false
-  xy: 107, 683
+  xy: 107, 687
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Priest-2
   rotate: false
-  xy: 107, 594
+  xy: 107, 598
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger
   rotate: false
-  xy: 107, 505
+  xy: 107, 509
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger-1
   rotate: false
-  xy: 107, 416
+  xy: 107, 420
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger-2
   rotate: false
-  xy: 107, 327
+  xy: 107, 331
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of Tribes
   rotate: false
-  xy: 4, 1658
+  xy: 4, 1662
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of Tribes-1
   rotate: false
-  xy: 4, 1554
+  xy: 4, 1558
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of Tribes-2
   rotate: false
-  xy: 4, 1450
+  xy: 4, 1454
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of the Dark Portal
   rotate: false
-  xy: 107, 238
+  xy: 107, 242
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of the Dark Portal-1
   rotate: false
-  xy: 107, 149
+  xy: 107, 153
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of the Dark Portal-2
   rotate: false
-  xy: 107, 60
+  xy: 107, 64
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of the Lich King
   rotate: false
-  xy: 4, 1851
+  xy: 4, 1855
   size: 100, 81
   orig: 100, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of the Lich King-1
   rotate: false
-  xy: 112, 1959
+  xy: 112, 1963
   size: 100, 81
   orig: 100, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Settler-Age of the Lich King-2
   rotate: false
-  xy: 4, 1762
+  xy: 4, 1766
   size: 100, 81
   orig: 100, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Shock Trooper
   rotate: false
-  xy: 215, 1603
+  xy: 215, 1607
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Shock Trooper-1
   rotate: false
-  xy: 211, 1514
+  xy: 211, 1518
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Shock Trooper-2
   rotate: false
-  xy: 211, 1425
+  xy: 211, 1429
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Siege Engine
   rotate: false
-  xy: 1938, 1886
+  xy: 1938, 1890
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Siege Engine-1
   rotate: false
-  xy: 1938, 1813
+  xy: 1938, 1817
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Siege Engine-2
   rotate: false
-  xy: 323, 1813
+  xy: 323, 1817
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Siegebreaker
   rotate: false
-  xy: 597, 597
+  xy: 1110, 1170
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Siegebreaker-1
   rotate: false
-  xy: 669, 590
+  xy: 1254, 1170
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Siegebreaker-2
   rotate: false
-  xy: 597, 469
+  xy: 1326, 1170
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Skyguard
   rotate: false
-  xy: 211, 1336
+  xy: 211, 1340
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Skyguard-1
   rotate: false
-  xy: 210, 1247
+  xy: 210, 1251
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Skyguard-2
   rotate: false
-  xy: 210, 1158
+  xy: 210, 1162
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Stasis Vault
   rotate: false
-  xy: 210, 249
+  xy: 210, 253
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Stasis Vault-1
   rotate: false
-  xy: 210, 176
+  xy: 210, 180
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Stasis Vault-2
   rotate: false
-  xy: 210, 103
+  xy: 210, 107
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Steam Tank
   rotate: false
-  xy: 597, 341
+  xy: 1470, 1121
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Steam Tank-1
   rotate: false
-  xy: 597, 277
+  xy: 1542, 1077
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Steam Tank-2
   rotate: false
-  xy: 597, 213
+  xy: 1902, 1405
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Titan Engine
   rotate: false
-  xy: 210, 30
+  xy: 210, 34
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Titan Engine-1
   rotate: false
-  xy: 296, 687
+  xy: 296, 691
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Titan Engine-2
   rotate: false
-  xy: 296, 614
+  xy: 296, 618
   size: 78, 65
   orig: 78, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Vanguard
   rotate: false
-  xy: 210, 1055
+  xy: 210, 1059
   size: 95, 95
   orig: 95, 95
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Vanguard-1
   rotate: false
-  xy: 210, 952
+  xy: 210, 956
   size: 95, 95
   orig: 95, 95
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Vanguard-2
   rotate: false
-  xy: 210, 849
+  xy: 210, 853
   size: 95, 95
   orig: 95, 95
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Vanguard-Barbarians
   rotate: false
-  xy: 210, 760
+  xy: 210, 764
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Galley
   rotate: false
-  xy: 813, 972
+  xy: 601, 921
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Galley-1
   rotate: false
-  xy: 957, 946
+  xy: 673, 1418
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Galley-2
   rotate: false
-  xy: 813, 908
+  xy: 673, 1354
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Golem
   rotate: false
-  xy: 408, 1813
+  xy: 408, 1817
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Golem-1
   rotate: false
-  xy: 493, 1813
+  xy: 493, 1817
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Golem-2
   rotate: false
-  xy: 578, 1813
+  xy: 578, 1817
   size: 77, 65
   orig: 77, 65
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Ale
   rotate: false
-  xy: 313, 762
+  xy: 601, 821
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Ancient Woods
   rotate: false
-  xy: 107, 24
+  xy: 673, 1190
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Arcane Crystals
   rotate: false
-  xy: 147, 24
+  xy: 673, 1154
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite
   rotate: false
-  xy: 493, 4
+  xy: 673, 1082
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite Drill
   rotate: false
-  xy: 533, 12
+  xy: 673, 1046
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Bamboo Grove
   rotate: false
-  xy: 1463, 1845
+  xy: 147, 28
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Blackrock Mountain
   rotate: false
-  xy: 1503, 1845
+  xy: 641, 821
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Blighted Land
   rotate: false
-  xy: 1543, 1838
+  xy: 713, 1183
   size: 32, 35
   orig: 32, 35
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Cape of Stranglethorn
   rotate: false
-  xy: 1663, 1845
+  xy: 681, 821
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/City center-Age of Arathor
+TileSets/FantasyHex/Tiles/City center
   rotate: false
-  xy: 1703, 1841
-  size: 32, 32
-  orig: 32, 32
+  xy: 597, 4
+  size: 32, 36
+  orig: 32, 36
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/City center-Age of Azerite
+TileSets/FantasyHex/Tiles/City center-Age of Arathor
   rotate: false
-  xy: 1743, 1837
+  xy: 597, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of Tribes
   rotate: false
-  xy: 1783, 1841
-  size: 32, 32
-  orig: 32, 32
+  xy: 597, 4
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Age of Azerite
+  rotate: false
+  xy: 710, 777
+  size: 32, 36
+  orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Cataclysm
   rotate: false
-  xy: 1823, 1839
-  size: 32, 34
-  orig: 32, 34
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/City center-Age of the Dark Portal
-  rotate: false
-  xy: 1863, 1841
-  size: 32, 32
-  orig: 32, 32
+  xy: 710, 777
+  size: 32, 36
+  orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Legion
   rotate: false
-  xy: 1029, 1096
-  size: 32, 34
-  orig: 32, 34
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/City center-Age of the Lich King
-  rotate: false
-  xy: 1029, 1055
-  size: 32, 33
-  orig: 32, 33
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/City center-Age of the Third War
-  rotate: false
-  xy: 1029, 1015
-  size: 32, 32
-  orig: 32, 32
+  xy: 710, 777
+  size: 32, 36
+  orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Void
   rotate: false
-  xy: 1029, 973
-  size: 32, 34
-  orig: 32, 34
+  xy: 710, 777
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Age of the Dark Portal
+  rotate: false
+  xy: 710, 733
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Age of the Lich King
+  rotate: false
+  xy: 710, 733
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Age of the Third War
+  rotate: false
+  xy: 710, 733
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Argent Vanguard-Age of Tribes
+  rotate: false
+  xy: 670, 705
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Humans-Age of Tribes
+  rotate: false
+  xy: 670, 705
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Light's Hope Chapel-Age of Tribes
+  rotate: false
+  xy: 670, 705
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Stromgarde-Age of Tribes
+  rotate: false
+  xy: 670, 705
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Theramore-Age of Tribes
+  rotate: false
+  xy: 670, 705
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Argent Vanguard-Age of the Cataclysm
+  rotate: false
+  xy: 710, 689
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Humans-Age of the Cataclysm
+  rotate: false
+  xy: 710, 689
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Light's Hope Chapel-Age of the Cataclysm
+  rotate: false
+  xy: 710, 689
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Stromgarde-Age of the Cataclysm
+  rotate: false
+  xy: 710, 689
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Theramore-Age of the Cataclysm
+  rotate: false
+  xy: 710, 689
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Argent Vanguard-Age of the Dark Portal
+  rotate: false
+  xy: 670, 661
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Humans-Age of the Dark Portal
+  rotate: false
+  xy: 670, 661
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Light's Hope Chapel-Age of the Dark Portal
+  rotate: false
+  xy: 670, 661
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Stromgarde-Age of the Dark Portal
+  rotate: false
+  xy: 670, 661
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Theramore-Age of the Dark Portal
+  rotate: false
+  xy: 670, 661
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Blood Elves-Age of Tribes
+  rotate: false
+  xy: 710, 645
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Blood Elves-Age of the Cataclysm
+  rotate: false
+  xy: 670, 617
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Blood Elves-Age of the Dark Portal
+  rotate: false
+  xy: 670, 573
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Booty Bay-Age of Tribes
+  rotate: false
+  xy: 710, 601
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Everlook-Age of Tribes
+  rotate: false
+  xy: 710, 601
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Gadgetzan-Age of Tribes
+  rotate: false
+  xy: 710, 601
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Goblins-Age of Tribes
+  rotate: false
+  xy: 710, 601
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Ratchet-Age of Tribes
+  rotate: false
+  xy: 710, 601
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Steamwheedle Port-Age of Tribes
+  rotate: false
+  xy: 710, 601
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Booty Bay-Age of the Cataclysm
+  rotate: false
+  xy: 670, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Everlook-Age of the Cataclysm
+  rotate: false
+  xy: 670, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Gadgetzan-Age of the Cataclysm
+  rotate: false
+  xy: 670, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Goblins-Age of the Cataclysm
+  rotate: false
+  xy: 670, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Ratchet-Age of the Cataclysm
+  rotate: false
+  xy: 670, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Steamwheedle Port-Age of the Cataclysm
+  rotate: false
+  xy: 670, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Booty Bay-Age of the Dark Portal
+  rotate: false
+  xy: 669, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Everlook-Age of the Dark Portal
+  rotate: false
+  xy: 669, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Gadgetzan-Age of the Dark Portal
+  rotate: false
+  xy: 669, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Goblins-Age of the Dark Portal
+  rotate: false
+  xy: 669, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Ratchet-Age of the Dark Portal
+  rotate: false
+  xy: 669, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Steamwheedle Port-Age of the Dark Portal
+  rotate: false
+  xy: 669, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Cenarion Hold-Age of Tribes
+  rotate: false
+  xy: 669, 441
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Feathermoon Stronghold-Age of Tribes
+  rotate: false
+  xy: 669, 441
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Night Elves-Age of Tribes
+  rotate: false
+  xy: 669, 441
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Cenarion Hold-Age of the Cataclysm
+  rotate: false
+  xy: 669, 397
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Feathermoon Stronghold-Age of the Cataclysm
+  rotate: false
+  xy: 669, 397
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Night Elves-Age of the Cataclysm
+  rotate: false
+  xy: 669, 397
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Cenarion Hold-Age of the Dark Portal
+  rotate: false
+  xy: 669, 353
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Feathermoon Stronghold-Age of the Dark Portal
+  rotate: false
+  xy: 669, 353
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Night Elves-Age of the Dark Portal
+  rotate: false
+  xy: 669, 353
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Dalaran-Age of Tribes
+  rotate: false
+  xy: 669, 309
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Dalaran-Age of the Cataclysm
+  rotate: false
+  xy: 669, 265
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Dalaran-Age of the Dark Portal
+  rotate: false
+  xy: 669, 221
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Draenei-Age of Tribes
+  rotate: false
+  xy: 669, 177
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Draenei-Age of the Cataclysm
+  rotate: false
+  xy: 669, 133
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Draenei-Age of the Dark Portal
+  rotate: false
+  xy: 669, 89
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Dwarves-Age of Tribes
+  rotate: false
+  xy: 669, 45
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Dwarves-Age of the Cataclysm
+  rotate: false
+  xy: 709, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Dwarves-Age of the Dark Portal
+  rotate: false
+  xy: 709, 441
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Forsaken-Age of Tribes
+  rotate: false
+  xy: 709, 397
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Forsaken-Age of the Cataclysm
+  rotate: false
+  xy: 709, 353
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Forsaken-Age of the Dark Portal
+  rotate: false
+  xy: 709, 309
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Gnomes-Age of Tribes
+  rotate: false
+  xy: 709, 265
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Gnomes-Age of the Cataclysm
+  rotate: false
+  xy: 709, 221
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Gnomes-Age of the Dark Portal
+  rotate: false
+  xy: 709, 177
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-High Elves-Age of Tribes
+  rotate: false
+  xy: 709, 133
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-High Elves-Age of the Cataclysm
+  rotate: false
+  xy: 709, 89
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-High Elves-Age of the Dark Portal
+  rotate: false
+  xy: 709, 45
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Orcs-Age of Tribes
+  rotate: false
+  xy: 710, 529
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Orcs-Age of the Cataclysm
+  rotate: false
+  xy: 749, 485
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Orcs-Age of the Dark Portal
+  rotate: false
+  xy: 749, 441
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Pandaren-Age of Tribes
+  rotate: false
+  xy: 749, 397
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Pandaren-Age of the Cataclysm
+  rotate: false
+  xy: 749, 353
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Pandaren-Age of the Dark Portal
+  rotate: false
+  xy: 749, 309
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Tauren-Age of Tribes
+  rotate: false
+  xy: 749, 265
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Tauren-Age of the Cataclysm
+  rotate: false
+  xy: 749, 221
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Tauren-Age of the Dark Portal
+  rotate: false
+  xy: 749, 177
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Trolls-Age of Tribes
+  rotate: false
+  xy: 749, 133
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Trolls-Age of the Cataclysm
+  rotate: false
+  xy: 749, 89
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Trolls-Age of the Dark Portal
+  rotate: false
+  xy: 749, 45
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Worgen-Age of Tribes
+  rotate: false
+  xy: 1614, 1353
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Worgen-Age of the Cataclysm
+  rotate: false
+  xy: 1614, 1309
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/City center-Worgen-Age of the Dark Portal
+  rotate: false
+  xy: 1614, 1265
+  size: 32, 36
+  orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Crystal Grove
   rotate: false
-  xy: 1029, 937
+  xy: 1614, 1229
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Elementium
   rotate: false
-  xy: 1583, 1809
+  xy: 1614, 1121
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Fel-Scorched Land
   rotate: false
-  xy: 1743, 1801
+  xy: 669, 9
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Galakrond's Rest
   rotate: false
-  xy: 1903, 1777
+  xy: 602, 1425
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Great Workshop
   rotate: false
-  xy: 745, 1126
+  xy: 602, 1308
   size: 32, 39
   orig: 32, 39
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Kelp'thar Forest
   rotate: false
-  xy: 745, 979
+  xy: 753, 1158
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lake Elune'ara
   rotate: false
-  xy: 745, 907
+  xy: 713, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lakkari Tar Pits
   rotate: false
-  xy: 745, 871
+  xy: 753, 1122
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lost City of the Tol'vir
   rotate: false
-  xy: 745, 799
+  xy: 713, 1026
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mageroyal
   rotate: false
-  xy: 745, 763
+  xy: 713, 990
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mageweave
   rotate: false
-  xy: 745, 727
+  xy: 713, 954
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Maraudon
   rotate: false
-  xy: 785, 872
+  xy: 713, 918
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Molten Fields
   rotate: false
-  xy: 785, 800
+  xy: 825, 1262
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Moonglade
   rotate: false
-  xy: 825, 836
+  xy: 793, 1226
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mount Hyjal
   rotate: false
-  xy: 785, 764
+  xy: 793, 1154
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Peacebloom
   rotate: false
-  xy: 905, 836
+  xy: 905, 1218
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Plagued Land
   rotate: false
-  xy: 865, 728
+  xy: 945, 1182
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Red Rocks of Mulgore
   rotate: false
-  xy: 905, 728
+  xy: 1025, 1191
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Rugged Leather
   rotate: false
-  xy: 813, 692
+  xy: 1065, 1191
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Stonetalon Peak
   rotate: false
-  xy: 985, 846
+  xy: 1185, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Sunken Temple
   rotate: false
-  xy: 945, 810
+  xy: 1225, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Teldrassil
   rotate: false
-  xy: 945, 774
+  xy: 1265, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Dark Portal
   rotate: false
-  xy: 985, 810
+  xy: 1305, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Lifeblood Pillar
   rotate: false
-  xy: 945, 738
+  xy: 1345, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Maelstrom
   rotate: false
-  xy: 985, 774
+  xy: 1385, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Nexus
   rotate: false
-  xy: 985, 738
+  xy: 1425, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Thorium
   rotate: false
-  xy: 1025, 829
+  xy: 1065, 1119
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Thousand Needles
   rotate: false
-  xy: 813, 440
+  xy: 1105, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tidal Drill
   rotate: false
-  xy: 945, 702
+  xy: 1145, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Titan Ruins
   rotate: false
-  xy: 1983, 1743
+  xy: 1225, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Truesilver
   rotate: false
-  xy: 1943, 1741
+  xy: 1265, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Un'Goro Crater
   rotate: false
-  xy: 1983, 1707
+  xy: 1305, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Airship Tender
   rotate: false
-  xy: 1383, 1850
+  xy: 457, 784
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Arcane Thruster
   rotate: false
-  xy: 453, 4
+  xy: 673, 1118
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Ballista
   rotate: false
-  xy: 1423, 1845
+  xy: 107, 28
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Brigantine
   rotate: false
-  xy: 1583, 1845
+  xy: 670, 785
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Buccaneer
   rotate: false
-  xy: 1623, 1845
+  xy: 670, 749
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demolisher
   rotate: false
-  xy: 1029, 901
+  xy: 1614, 1193
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Dreadnought
   rotate: false
-  xy: 1029, 865
+  xy: 1614, 1157
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/EmbarkedUnit-Civilian-Age of the Cataclysm
   rotate: false
-  xy: 1623, 1809
+  xy: 1614, 1085
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/EmbarkedUnit-Military-Age of the Cataclysm
   rotate: false
-  xy: 1663, 1809
+  xy: 1614, 1049
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/EmbarkedUnit-Settler-Age of the Cataclysm
   rotate: false
-  xy: 1703, 1805
+  xy: 453, 16
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Fishing Skiff
   rotate: false
-  xy: 1783, 1805
+  xy: 709, 9
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Fishing Skiff-Age of the Cataclysm
   rotate: false
-  xy: 1823, 1803
+  xy: 749, 9
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Flak Cannon
   rotate: false
-  xy: 1863, 1805
+  xy: 493, 12
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Flak Wagon
   rotate: false
-  xy: 1783, 1769
+  xy: 533, 12
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Flying Machine
   rotate: false
-  xy: 1823, 1767
+  xy: 602, 1497
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Fusilier
   rotate: false
-  xy: 1863, 1769
+  xy: 602, 1461
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Giant Turtle
   rotate: false
-  xy: 1943, 1777
+  xy: 602, 1389
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Gnomish Submarine
   rotate: false
-  xy: 1983, 1779
+  xy: 602, 1355
   size: 32, 26
   orig: 32, 26
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Grenadier
   rotate: false
-  xy: 745, 1090
+  xy: 745, 1269
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Iron Colossus
   rotate: false
-  xy: 745, 1051
+  xy: 745, 1230
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Juggernaught
   rotate: false
-  xy: 745, 1015
+  xy: 753, 1194
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Kul Tiran Marine
   rotate: false
-  xy: 745, 943
+  xy: 713, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Longboat
   rotate: false
-  xy: 745, 835
+  xy: 713, 1062
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mechagnome Trooper
   rotate: false
-  xy: 825, 872
+  xy: 713, 882
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mechano-Tank
   rotate: false
-  xy: 785, 836
+  xy: 721, 846
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Militia
   rotate: false
-  xy: 865, 872
+  xy: 785, 1262
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mortar Team
   rotate: false
-  xy: 905, 872
+  xy: 793, 1190
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mountaineer
   rotate: false
-  xy: 825, 800
+  xy: 865, 1254
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mounted Archer
   rotate: false
-  xy: 865, 836
+  xy: 905, 1254
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Musketeer
   rotate: false
-  xy: 785, 728
+  xy: 945, 1254
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Navigation Crystal
   rotate: false
-  xy: 825, 764
+  xy: 985, 1254
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Outrider
   rotate: false
-  xy: 865, 800
+  xy: 865, 1218
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant
   rotate: false
-  xy: 825, 728
+  xy: 945, 1218
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant-Age of the Cataclysm
   rotate: false
-  xy: 865, 764
+  xy: 985, 1218
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant-Barbarians
   rotate: false
-  xy: 905, 800
+  xy: 905, 1182
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant-Barbarians-Age of the Cataclysm
   rotate: false
-  xy: 905, 800
+  xy: 905, 1182
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Ranger
   rotate: false
-  xy: 905, 764
+  xy: 985, 1182
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Settler-Age of the Cataclysm
   rotate: false
-  xy: 813, 656
+  xy: 905, 1146
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Settler-Age of the Cataclysm-Barbarians
   rotate: false
-  xy: 813, 620
+  xy: 945, 1146
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Shock Trooper
   rotate: false
-  xy: 813, 584
+  xy: 985, 1146
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Siege Engine
   rotate: false
-  xy: 813, 548
+  xy: 1065, 1155
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Siegebreaker
   rotate: false
-  xy: 813, 512
+  xy: 1025, 1146
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Skyguard
   rotate: false
-  xy: 813, 476
+  xy: 1105, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Stasis Vault
   rotate: false
-  xy: 945, 846
+  xy: 1145, 1134
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Titan Engine
   rotate: false
-  xy: 985, 702
+  xy: 1185, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Vanguard
   rotate: false
-  xy: 1065, 829
+  xy: 1345, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/War Galley
   rotate: false
-  xy: 813, 404
+  xy: 1385, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/War Golem
   rotate: false
-  xy: 945, 666
+  xy: 1425, 1098
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Academy-Age of Azerite
   rotate: false
-  xy: 1971, 1976
+  xy: 1971, 1980
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Academy-Age of the Legion
   rotate: false
-  xy: 1971, 1976
+  xy: 1971, 1980
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Academy-Age of the Void
   rotate: false
-  xy: 1971, 1976
+  xy: 1971, 1980
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/AcademyT-Age of Azerite
   rotate: false
-  xy: 663, 1814
+  xy: 663, 1818
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/AcademyT-Age of the Legion
   rotate: false
-  xy: 663, 1814
+  xy: 663, 1818
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/AcademyT-Age of the Void
   rotate: false
-  xy: 663, 1814
+  xy: 663, 1818
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Ale
   rotate: false
-  xy: 1095, 1822
+  xy: 1095, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Ancient Woods
   rotate: false
-  xy: 1167, 1822
+  xy: 1167, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Arcane Crystals
   rotate: false
-  xy: 1239, 1822
+  xy: 1239, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Azerite
   rotate: false
-  xy: 319, 1749
+  xy: 319, 1753
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Azerite Drill
   rotate: false
-  xy: 318, 1684
+  xy: 318, 1688
   size: 64, 57
   orig: 64, 57
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Azerite Drill-Pillaged
   rotate: false
-  xy: 318, 1616
+  xy: 318, 1620
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bamboo Grove
   rotate: false
-  xy: 535, 1749
+  xy: 535, 1753
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Blackrock Mountain
   rotate: false
-  xy: 607, 1749
+  xy: 607, 1753
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Blighted Land
   rotate: false
-  xy: 679, 1750
+  xy: 679, 1754
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Camp-Age of the Lich King
   rotate: false
-  xy: 1327, 1758
+  xy: 1327, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cape of Stranglethorn
   rotate: false
-  xy: 318, 1552
+  xy: 318, 1556
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cattle+Pasture-Age of the Lich King
   rotate: false
-  xy: 390, 1557
+  xy: 390, 1561
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Citadel-Age of the Legion
   rotate: false
-  xy: 314, 1480
+  xy: 314, 1484
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/CitadelT-Age of the Legion
   rotate: false
-  xy: 314, 1408
+  xy: 314, 1412
   size: 64, 64
   orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center
+  rotate: false
+  xy: 314, 1332
+  size: 64, 72
+  orig: 64, 72
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/City center-Age of Arathor
   rotate: false
-  xy: 314, 1336
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/City center-Age of Azerite
-  rotate: false
-  xy: 313, 1255
-  size: 64, 73
-  orig: 64, 73
+  xy: 314, 1332
+  size: 64, 72
+  orig: 64, 72
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/City center-Age of Tribes
   rotate: false
-  xy: 313, 1183
-  size: 64, 64
-  orig: 64, 64
+  xy: 314, 1332
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Age of Azerite
+  rotate: false
+  xy: 313, 1252
+  size: 64, 72
+  orig: 64, 72
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/City center-Age of the Cataclysm
   rotate: false
-  xy: 313, 1105
-  size: 64, 70
-  orig: 64, 70
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/City center-Age of the Dark Portal
-  rotate: false
-  xy: 313, 1031
-  size: 64, 66
-  orig: 64, 66
+  xy: 313, 1252
+  size: 64, 72
+  orig: 64, 72
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/City center-Age of the Legion
   rotate: false
-  xy: 313, 950
-  size: 64, 73
-  orig: 64, 73
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/City center-Age of the Lich King
-  rotate: false
-  xy: 313, 872
-  size: 64, 70
-  orig: 64, 70
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/City center-Age of the Third War
-  rotate: false
-  xy: 313, 798
-  size: 64, 66
-  orig: 64, 66
+  xy: 313, 1252
+  size: 64, 72
+  orig: 64, 72
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/City center-Age of the Void
   rotate: false
-  xy: 386, 1467
-  size: 64, 77
-  orig: 64, 77
+  xy: 313, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Age of the Dark Portal
+  rotate: false
+  xy: 313, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Age of the Lich King
+  rotate: false
+  xy: 313, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Age of the Third War
+  rotate: false
+  xy: 313, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Argent Vanguard-Age of Tribes
+  rotate: false
+  xy: 313, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Humans-Age of Tribes
+  rotate: false
+  xy: 313, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Light's Hope Chapel-Age of Tribes
+  rotate: false
+  xy: 313, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Stromgarde-Age of Tribes
+  rotate: false
+  xy: 313, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Theramore-Age of Tribes
+  rotate: false
+  xy: 313, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Argent Vanguard-Age of the Cataclysm
+  rotate: false
+  xy: 313, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Humans-Age of the Cataclysm
+  rotate: false
+  xy: 313, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Light's Hope Chapel-Age of the Cataclysm
+  rotate: false
+  xy: 313, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Stromgarde-Age of the Cataclysm
+  rotate: false
+  xy: 313, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Theramore-Age of the Cataclysm
+  rotate: false
+  xy: 313, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Argent Vanguard-Age of the Dark Portal
+  rotate: false
+  xy: 313, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Humans-Age of the Dark Portal
+  rotate: false
+  xy: 313, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Light's Hope Chapel-Age of the Dark Portal
+  rotate: false
+  xy: 313, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Stromgarde-Age of the Dark Portal
+  rotate: false
+  xy: 313, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Theramore-Age of the Dark Portal
+  rotate: false
+  xy: 313, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Blood Elves-Age of Tribes
+  rotate: false
+  xy: 313, 852
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Blood Elves-Age of the Cataclysm
+  rotate: false
+  xy: 313, 772
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Blood Elves-Age of the Dark Portal
+  rotate: false
+  xy: 386, 1476
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Booty Bay-Age of Tribes
+  rotate: false
+  xy: 381, 538
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Everlook-Age of Tribes
+  rotate: false
+  xy: 381, 538
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Gadgetzan-Age of Tribes
+  rotate: false
+  xy: 381, 538
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Goblins-Age of Tribes
+  rotate: false
+  xy: 381, 538
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Ratchet-Age of Tribes
+  rotate: false
+  xy: 381, 538
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Steamwheedle Port-Age of Tribes
+  rotate: false
+  xy: 381, 538
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Booty Bay-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Everlook-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Gadgetzan-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Goblins-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Ratchet-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Steamwheedle Port-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Booty Bay-Age of the Dark Portal
+  rotate: false
+  xy: 385, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Everlook-Age of the Dark Portal
+  rotate: false
+  xy: 385, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Gadgetzan-Age of the Dark Portal
+  rotate: false
+  xy: 385, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Goblins-Age of the Dark Portal
+  rotate: false
+  xy: 385, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Ratchet-Age of the Dark Portal
+  rotate: false
+  xy: 385, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Steamwheedle Port-Age of the Dark Portal
+  rotate: false
+  xy: 385, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Cenarion Hold-Age of Tribes
+  rotate: false
+  xy: 385, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Feathermoon Stronghold-Age of Tribes
+  rotate: false
+  xy: 385, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Night Elves-Age of Tribes
+  rotate: false
+  xy: 385, 1092
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Cenarion Hold-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Feathermoon Stronghold-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Night Elves-Age of the Cataclysm
+  rotate: false
+  xy: 385, 1012
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Cenarion Hold-Age of the Dark Portal
+  rotate: false
+  xy: 385, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Feathermoon Stronghold-Age of the Dark Portal
+  rotate: false
+  xy: 385, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Night Elves-Age of the Dark Portal
+  rotate: false
+  xy: 385, 932
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Dalaran-Age of Tribes
+  rotate: false
+  xy: 385, 852
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Dalaran-Age of the Cataclysm
+  rotate: false
+  xy: 385, 772
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Dalaran-Age of the Dark Portal
+  rotate: false
+  xy: 382, 692
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Draenei-Age of Tribes
+  rotate: false
+  xy: 454, 692
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Draenei-Age of the Cataclysm
+  rotate: false
+  xy: 751, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Draenei-Age of the Dark Portal
+  rotate: false
+  xy: 823, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Dwarves-Age of Tribes
+  rotate: false
+  xy: 895, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Dwarves-Age of the Cataclysm
+  rotate: false
+  xy: 967, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Dwarves-Age of the Dark Portal
+  rotate: false
+  xy: 1039, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Forsaken-Age of Tribes
+  rotate: false
+  xy: 1111, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Forsaken-Age of the Cataclysm
+  rotate: false
+  xy: 1183, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Forsaken-Age of the Dark Portal
+  rotate: false
+  xy: 1255, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Gnomes-Age of Tribes
+  rotate: false
+  xy: 1327, 1682
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Gnomes-Age of the Cataclysm
+  rotate: false
+  xy: 679, 1674
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Gnomes-Age of the Dark Portal
+  rotate: false
+  xy: 1399, 1737
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-High Elves-Age of Tribes
+  rotate: false
+  xy: 1471, 1805
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-High Elves-Age of the Cataclysm
+  rotate: false
+  xy: 1543, 1805
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-High Elves-Age of the Dark Portal
+  rotate: false
+  xy: 1615, 1805
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Orcs-Age of Tribes
+  rotate: false
+  xy: 1687, 1805
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Orcs-Age of the Cataclysm
+  rotate: false
+  xy: 1759, 1805
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Orcs-Age of the Dark Portal
+  rotate: false
+  xy: 1831, 1805
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Pandaren-Age of Tribes
+  rotate: false
+  xy: 1471, 1725
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Pandaren-Age of the Cataclysm
+  rotate: false
+  xy: 1543, 1725
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Pandaren-Age of the Dark Portal
+  rotate: false
+  xy: 1615, 1725
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Tauren-Age of Tribes
+  rotate: false
+  xy: 1687, 1725
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Tauren-Age of the Cataclysm
+  rotate: false
+  xy: 1759, 1725
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Tauren-Age of the Dark Portal
+  rotate: false
+  xy: 1831, 1725
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Trolls-Age of Tribes
+  rotate: false
+  xy: 1903, 1737
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Trolls-Age of the Cataclysm
+  rotate: false
+  xy: 1975, 1737
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Trolls-Age of the Dark Portal
+  rotate: false
+  xy: 458, 1476
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Worgen-Age of Tribes
+  rotate: false
+  xy: 457, 1252
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Worgen-Age of the Cataclysm
+  rotate: false
+  xy: 457, 1172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center-Worgen-Age of the Dark Portal
+  rotate: false
+  xy: 457, 1092
+  size: 64, 72
+  orig: 64, 72
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Crystal Grove
   rotate: false
-  xy: 751, 1694
+  xy: 382, 628
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Customs house-Age of the Legion
   rotate: false
-  xy: 823, 1686
+  xy: 457, 1020
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Customs houseT-Age of the Legion
   rotate: false
-  xy: 895, 1686
+  xy: 457, 948
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Deer+Camp-Age of the Lich King
   rotate: false
-  xy: 967, 1694
+  xy: 454, 628
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Deer+CampT-Age of the Lich King
   rotate: false
-  xy: 1039, 1694
+  xy: 457, 884
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Elementium
   rotate: false
-  xy: 751, 1630
+  xy: 823, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fel-Scorched Land
   rotate: false
-  xy: 1255, 1566
+  xy: 1831, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fishing Boats-Age of the Lich King
   rotate: false
-  xy: 1327, 1566
+  xy: 1975, 1673
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fort-Age of the Legion
   rotate: false
-  xy: 530, 1301
+  xy: 822, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fort-Age of the Lich King
   rotate: false
-  xy: 602, 1301
+  xy: 894, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/FortT-Age of the Legion
   rotate: false
-  xy: 530, 1237
+  xy: 966, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/FortT-Age of the Lich King
   rotate: false
-  xy: 674, 1429
+  xy: 1038, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Furs+Camp-Age of the Lich King
   rotate: false
-  xy: 674, 1365
+  xy: 1110, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/FursT+Camp-Age of the Lich King
   rotate: false
-  xy: 674, 1301
+  xy: 1182, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Galakrond's Rest
   rotate: false
-  xy: 674, 1237
+  xy: 1326, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Great Workshop
   rotate: false
-  xy: 894, 1358
+  xy: 529, 1032
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Great Workshop-Age of the Legion
   rotate: false
-  xy: 381, 542
+  xy: 529, 960
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Great Workshop-Age of the Lich King
   rotate: false
-  xy: 381, 470
+  xy: 529, 888
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Great Workshop-Pillaged
   rotate: false
-  xy: 381, 398
+  xy: 529, 816
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Horses+Pasture-Age of the Lich King
   rotate: false
-  xy: 381, 78
+  xy: 822, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarm-Age of the Legion
   rotate: false
-  xy: 381, 14
+  xy: 894, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarm-Age of the Legion2
   rotate: false
-  xy: 818, 1292
+  xy: 966, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarm-Age of the Legion3
   rotate: false
-  xy: 890, 1294
+  xy: 1038, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarm-Age of the Lich King3
   rotate: false
-  xy: 890, 1294
+  xy: 1038, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarm-Age of the Lich King
   rotate: false
-  xy: 818, 1228
+  xy: 1110, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarm-Age of the Lich King2
   rotate: false
-  xy: 818, 1164
+  xy: 1182, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarmT-Age of the Legion
   rotate: false
-  xy: 962, 1294
+  xy: 1254, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarmT-Age of the Legion2
   rotate: false
-  xy: 962, 1230
+  xy: 1326, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarmT-Age of the Lich King
   rotate: false
-  xy: 890, 1228
+  xy: 1398, 1490
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/HutFarmT-Age of the Lich King2
   rotate: false
-  xy: 890, 1164
+  xy: 678, 1482
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Ivory+Camp-Age of the Lich King
   rotate: false
-  xy: 385, 1016
+  xy: 1758, 1461
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Kelp'thar Forest
   rotate: false
-  xy: 457, 1173
+  xy: 453, 436
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lake Elune'ara
   rotate: false
-  xy: 529, 1173
+  xy: 525, 368
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lakkari Tar Pits
   rotate: false
-  xy: 529, 1109
+  xy: 453, 308
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lost City of the Tol'vir
   rotate: false
-  xy: 457, 780
+  xy: 453, 116
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lumber mill-Age of the Lich King
   rotate: false
-  xy: 529, 789
+  xy: 525, 112
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Lumber millT-Age of the Lich King
   rotate: false
-  xy: 382, 696
+  xy: 453, 52
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mageroyal
   rotate: false
-  xy: 382, 632
+  xy: 525, 48
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mageweave
   rotate: false
-  xy: 454, 696
+  xy: 822, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/ManufactoryT-Age of the Legion
   rotate: false
-  xy: 454, 624
+  xy: 894, 1418
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/ManufactoryT-Age of the Lich King
   rotate: false
-  xy: 453, 552
+  xy: 966, 1418
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Maraudon
   rotate: false
-  xy: 453, 488
+  xy: 1038, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Marble+Quarry-Age of the Lich King
   rotate: false
-  xy: 453, 424
+  xy: 1110, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Marble+QuarryT-Age of the Lich King
   rotate: false
-  xy: 453, 360
+  xy: 1182, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mine-Age of the Lich King
   rotate: false
-  xy: 453, 104
+  xy: 1470, 1377
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/MineT-Age of the Lich King
   rotate: false
-  xy: 453, 40
+  xy: 1542, 1333
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Molten Fields
   rotate: false
-  xy: 966, 1558
+  xy: 822, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Moonglade
   rotate: false
-  xy: 966, 1494
+  xy: 894, 1354
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mount Hyjal
   rotate: false
-  xy: 601, 981
+  xy: 1326, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Pasture-Age of the Lich King
   rotate: false
-  xy: 673, 846
+  xy: 1110, 1298
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Peacebloom
   rotate: false
-  xy: 673, 782
+  xy: 1182, 1298
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Plagued Land
   rotate: false
-  xy: 525, 560
+  xy: 1398, 1298
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Polder-Age of the Lich King
   rotate: false
-  xy: 525, 496
+  xy: 1470, 1249
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Quarry-Age of the Lich King
   rotate: false
-  xy: 525, 432
+  xy: 1542, 1205
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/QuarryT-Age of the Lich King
   rotate: false
-  xy: 525, 368
+  xy: 1110, 1234
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Red Rocks of Mulgore
   rotate: false
-  xy: 525, 240
+  xy: 1254, 1234
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Rugged Leather
   rotate: false
-  xy: 525, 176
+  xy: 1326, 1234
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Sheep+Pasture-Age of the Lich King
   rotate: false
-  xy: 525, 48
+  xy: 1470, 1185
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Stone+Quarry-Age of the Lich King
   rotate: false
-  xy: 597, 149
+  xy: 1830, 1397
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Stone+QuarryT-Age of the Lich King
   rotate: false
-  xy: 597, 85
+  xy: 1902, 1341
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/StoneD+Quarry-Age of the Lich King
   rotate: false
-  xy: 597, 21
+  xy: 1974, 1469
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Stonetalon Peak
   rotate: false
-  xy: 741, 654
+  xy: 1974, 1405
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Sunken Temple
   rotate: false
-  xy: 741, 590
+  xy: 1974, 1341
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Teldrassil
   rotate: false
-  xy: 741, 526
+  xy: 1975, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Dark Portal
   rotate: false
-  xy: 669, 469
+  xy: 1974, 1277
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Lifeblood Pillar
   rotate: false
-  xy: 669, 405
+  xy: 597, 496
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Maelstrom
   rotate: false
-  xy: 741, 462
+  xy: 597, 432
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Nexus
   rotate: false
-  xy: 669, 341
+  xy: 597, 368
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Thorium
   rotate: false
-  xy: 669, 277
+  xy: 597, 304
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Thousand Needles
   rotate: false
-  xy: 669, 213
+  xy: 597, 240
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tidal Drill
   rotate: false
-  xy: 669, 149
+  xy: 597, 176
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Titan Ruins
   rotate: false
-  xy: 669, 85
+  xy: 597, 112
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Trading post-Age of the Lich King
   rotate: false
-  xy: 669, 21
+  xy: 597, 48
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Trading postT-Age of the Lich King
   rotate: false
-  xy: 813, 1100
+  xy: 598, 560
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Truesilver
   rotate: false
-  xy: 885, 1100
+  xy: 601, 1241
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Truffles+Camp-Age of the Lich King
   rotate: false
-  xy: 957, 1074
+  xy: 601, 1177
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Truffles+CampT-Age of the Lich King
   rotate: false
-  xy: 813, 1036
+  xy: 601, 1113
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Un'Goro Crater
   rotate: false
-  xy: 885, 1036
+  xy: 601, 1049
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Whales+Fishing Boats-Age of the Lich King
   rotate: false
-  xy: 957, 882
+  xy: 673, 1226
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Airship Tender
   rotate: false
-  xy: 807, 1822
+  xy: 807, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Airship Tender-Age of Azerite
   rotate: false
-  xy: 1023, 1822
+  xy: 1023, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Arcane Thruster
   rotate: false
-  xy: 1311, 1822
+  xy: 1311, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Navigation Crystal
   rotate: false
-  xy: 1311, 1822
+  xy: 1311, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Stasis Vault
   rotate: false
-  xy: 1311, 1822
+  xy: 1311, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Titan Engine
   rotate: false
-  xy: 1311, 1822
+  xy: 1311, 1826
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Ballista
   rotate: false
-  xy: 390, 1685
+  xy: 390, 1689
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Brigantine
   rotate: false
-  xy: 823, 1758
+  xy: 823, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Buccaneer
   rotate: false
-  xy: 1111, 1758
+  xy: 1111, 1762
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demolisher
   rotate: false
-  xy: 1111, 1694
+  xy: 457, 820
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Dreadnought
   rotate: false
-  xy: 1255, 1694
+  xy: 1399, 1821
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/EmbarkedUnit-Civilian-Age of the Cataclysm
   rotate: false
-  xy: 895, 1622
+  xy: 967, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/EmbarkedUnit-Civilian-Age of the Third War
   rotate: false
-  xy: 1183, 1630
+  xy: 1255, 1618
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/EmbarkedUnit-Military-Age of the Cataclysm
   rotate: false
-  xy: 607, 1685
+  xy: 1687, 1661
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/EmbarkedUnit-Military-Age of the Third War
   rotate: false
-  xy: 606, 1621
+  xy: 1471, 1597
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/EmbarkedUnit-Settler-Age of the Cataclysm
   rotate: false
-  xy: 1111, 1558
+  xy: 1759, 1589
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/EmbarkedUnit-Settler-Age of the Third War
   rotate: false
-  xy: 1183, 1566
+  xy: 1831, 1597
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Fishing Skiff
   rotate: false
-  xy: 1255, 1502
+  xy: 1903, 1597
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Fishing Skiff-Age of the Cataclysm
   rotate: false
-  xy: 1183, 1438
+  xy: 463, 1689
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Flak Cannon
   rotate: false
-  xy: 606, 1493
+  xy: 534, 1625
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Flak Wagon
   rotate: false
-  xy: 602, 1429
+  xy: 606, 1561
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Flying Machine
   rotate: false
-  xy: 530, 1365
+  xy: 530, 1497
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Fusilier
   rotate: false
-  xy: 678, 1493
+  xy: 1254, 1554
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Giant Turtle
   rotate: false
-  xy: 750, 1566
+  xy: 1470, 1533
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Gnomish Submarine
   rotate: false
-  xy: 750, 1438
+  xy: 1758, 1525
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Great Admiral-Age of the Cataclysm
   rotate: false
-  xy: 678, 1557
+  xy: 530, 1369
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Great Artist-Age of the Cataclysm
   rotate: false
-  xy: 894, 1494
+  xy: 458, 1348
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Great Engineer-Age of the Cataclysm
   rotate: false
-  xy: 822, 1493
+  xy: 530, 1305
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Great General-Age of the Cataclysm
   rotate: false
-  xy: 822, 1420
+  xy: 529, 1232
   size: 64, 65
   orig: 64, 65
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Great Merchant-Age of the Cataclysm
   rotate: false
-  xy: 894, 1430
+  xy: 529, 1168
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Great Scientist-Age of the Cataclysm
   rotate: false
-  xy: 818, 1356
+  xy: 529, 1104
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Grenadier
   rotate: false
-  xy: 381, 270
+  xy: 526, 688
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Iron Colossus
   rotate: false
-  xy: 385, 1264
+  xy: 1542, 1461
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Juggernaught
   rotate: false
-  xy: 385, 888
+  xy: 1902, 1469
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Khan-Age of the Cataclysm
   rotate: false
-  xy: 457, 1100
+  xy: 598, 743
   size: 64, 65
   orig: 64, 65
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Kul Tiran Marine
   rotate: false
-  xy: 457, 844
+  xy: 453, 372
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Longboat
   rotate: false
-  xy: 529, 981
+  xy: 453, 244
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mechagnome Trooper
   rotate: false
-  xy: 453, 296
+  xy: 1254, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mechano-Tank
   rotate: false
-  xy: 453, 232
+  xy: 1326, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Militia
   rotate: false
-  xy: 453, 168
+  xy: 1398, 1426
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mortar Team
   rotate: false
-  xy: 966, 1366
+  xy: 1038, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mortar Team-Age of the Legion
   rotate: false
-  xy: 601, 1045
+  xy: 1254, 1362
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mountaineer
   rotate: false
-  xy: 601, 853
+  xy: 1470, 1313
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mounted Archer
   rotate: false
-  xy: 673, 1045
+  xy: 894, 1290
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mounted Archer-Barbarians
   rotate: false
-  xy: 4, 26
+  xy: 4, 30
   size: 95, 81
   orig: 95, 81
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Musketeer
   rotate: false
-  xy: 673, 981
+  xy: 966, 1290
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Outrider
   rotate: false
-  xy: 673, 910
+  xy: 1038, 1291
   size: 64, 63
   orig: 64, 63
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Peasant
   rotate: false
-  xy: 601, 725
+  xy: 1254, 1298
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Peasant-Age of the Cataclysm
   rotate: false
-  xy: 673, 718
+  xy: 1326, 1298
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Ranger
   rotate: false
-  xy: 525, 304
+  xy: 1182, 1234
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Settler-Age of the Cataclysm
   rotate: false
-  xy: 525, 112
+  xy: 1398, 1234
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Shock Trooper
   rotate: false
-  xy: 597, 661
+  xy: 1038, 1227
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Siege Engine
   rotate: false
-  xy: 669, 654
+  xy: 1542, 1141
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Siegebreaker
   rotate: false
-  xy: 597, 533
+  xy: 1182, 1170
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Skyguard
   rotate: false
-  xy: 597, 405
+  xy: 1398, 1170
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Vanguard
   rotate: false
-  xy: 957, 1010
+  xy: 601, 985
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/War Galley
   rotate: false
-  xy: 885, 972
+  xy: 601, 857
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/War Golem
   rotate: false
-  xy: 885, 908
+  xy: 673, 1290
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/Minimal/Tiles/Blighted Land
   rotate: false
-  xy: 4, 1940
+  xy: 4, 1944
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

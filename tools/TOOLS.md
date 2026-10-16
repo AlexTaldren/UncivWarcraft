@@ -8,6 +8,7 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 - `wc_names.py` — Great Person names.
 - `icons.py`, `sprites.py` — the original icons and map sprites.
 - `wc_terrain.py`, `tiles_art.py` — the Warcraft terrain features and landmarks, and their tile art (HexaRealm and FantasyHex).
+- `citycenters.py` — per-race city-center tiles in three growth stages.
 - `map_tiles_preview.py` — renders part of the Azeroth map with the real tile art.
 - `human_sprites.py` — the Humans' unique-unit sprites and blue-and-gold variants.
 - `race_sprites.py`, `mounts.py` — race versions of every person unit, and each race's mounts (wolves, rams, mechanostriders, nightsabers, kodos, raptors, hawkstriders, elekks, dragon turtles, trikes, skeletal and Gilnean horses, white steeds).
