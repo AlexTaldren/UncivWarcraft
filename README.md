@@ -2,7 +2,7 @@
 
 A standalone base ruleset that turns Unciv into the world of Warcraft: the races of Azeroth as playable factions, a tech tree that runs through Azeroth's history, and Warcraft wonders, units and resources.
 
-**Status: early alpha.** The Humans are fully built out; the other races are playable with their own leaders, abilities and cities but share the common unit roster for now. Every race has its own look on the map, though: each foot, mounted and crewed unit is redrawn per race (bearded, stocky Dwarves; small Gnomes; tall, long-eared elves; tusked Trolls in varied skin tones; green, muscular Orcs; horned Tauren and Draenei; Pandaren; Worgen; Forsaken; Goblins).
+**Status: early alpha.** The Humans are fully built out; the other races are playable with their own leaders, abilities and cities but share the common unit roster for now. Every race has its own look on the map, though: each foot, mounted and crewed unit is redrawn per race (bearded, stocky Dwarves; small Gnomes; tall, long-eared elves; tusked Trolls in varied skin tones; green, muscular Orcs; horned Tauren and Draenei; Pandaren; Worgen; Forsaken; Goblins). Mounted units ride each race's own beast: wolves, rams, mechanostriders, nightsabers, kodos, raptors, hawkstriders, elekks, dragon turtles, goblin trikes, skeletal horses, white steeds and Gilnean horses.
 
 ## What's in it
 

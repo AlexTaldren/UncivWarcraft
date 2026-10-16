@@ -332,10 +332,29 @@ FOOT = ["Worker", "Settler", "Scout", "Warrior", "Archer", "Spearman", "Composit
         "Anti-Tank Gun", "Artillery", "Great Artist", "Great Scientist", "Great Merchant",
         "Great Engineer", "Great Prophet", "Great General", "Great Admiral", "Missionary",
         "Inquisitor"]
+# mounted units: the race's own mount (mounts.py) carrying the race's foot soldier
 MOUNTED = ["Chariot Archer", "Horseman", "Knight", "Lancer", "Cavalry"]
+RIDER = {"Chariot Archer": "Archer", "Horseman": "Spearman", "Knight": "Swordsman",
+         "Lancer": "Pikeman", "Cavalry": "Musketman"}
+ARMORED = {"Knight", "Lancer"}
 CREW = ["Catapult", "Trebuchet"]
 RACES = ["Orcs", "Trolls", "Tauren", "Forsaken", "Blood Elves", "Goblins", "Dwarves", "Gnomes",
          "Night Elves", "Draenei", "Worgen", "High Elves", "Pandaren"]
+
+
+def mounted(atlas, layers, race, src):
+    """The race's mount with its rider, on a canvas as wide as the foot sprites' (so the
+    rider keeps its size on the map) and with the original's proportions and footing."""
+    import mounts
+    w, h = layers[0].size
+    rsrc = RIDER[src]
+    rider_layers = make([atlas.crop(P + rsrc + s) for s in ("", "-1", "-2")], race, rsrc)
+    cw = rider_layers[0].width
+    canvas = (cw, round(h * cw / w))
+    bb = layers[0].getbbox()
+    ground = round(bb[3] / h * canvas[1])
+    center = (bb[0] + bb[2]) / 2 / w * cw
+    return mounts.compose(rider_layers, race, MOUNTED.index(src), src in ARMORED, canvas, ground, center)
 
 
 def write_all(atlas, images_dir, renames, eras, races=RACES):
@@ -359,7 +378,10 @@ def write_all(atlas, images_dir, renames, eras, races=RACES):
                     old_era = variant[1:]
                     era = "-" + eras.get(old_era, old_era)
                 for race in races:
-                    out = make(layers, race, src, mode)
+                    if mode == "mounted":
+                        out = mounted(atlas, layers, race, src)
+                    else:
+                        out = make(layers, race, src, mode)
                     for s, im in zip(("", "-1", "-2"), out):
                         path = os.path.join(images_dir, P, f"{new}-{race}{era}{s}.png")
                         os.makedirs(os.path.dirname(path), exist_ok=True)
