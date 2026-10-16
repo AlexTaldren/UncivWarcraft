@@ -10,7 +10,7 @@ RELIGIONS = ["Holy Light", "Elune", "Earth Mother", "Shamanism", "Loa",
 
 # ---------------------------------------------------------------- Humans (full)
 HUMAN_UNITS = [
-    # (base unit to copy, overrides)
+    # (base unit to copy, overrides). "addUniques" appends; "dropUniques" removes exact uniques.
     ("Swordsman", {
         "name": "Footman", "replaces": "Swordsman", "uniqueTo": "Humans",
         "strength": 16, "requiredResource": None,
@@ -21,23 +21,91 @@ HUMAN_UNITS = [
         "name": "Paladin", "replaces": "Knight", "uniqueTo": "Humans",
         "strength": 22,
         "promotions": ["Medic"],
-        "civilopediaText": [{"text": "Holy warriors of the Order of the Silver Hand. Paladins ride into battle wielding the Light, mending the wounds of the soldiers fighting beside them."}],
+        "addUniques": [
+            "[+10]% Strength bonus for [Military] units within [1] tiles",          # Devotion Aura
+            "[+20]% Strength <when defending>",                                      # Divine Shield
+            "[+25]% Strength <vs [Forsaken] units>",                                 # Light vs undead
+        ],
+        "civilopediaText": [
+            {"text": "Holy warriors of the Order of the Silver Hand, clad in heavy plate and armed with the warhammer. Paladins ride into battle wielding the Light."},
+            {"text": "Holy Light: heals the units fighting beside them. Devotion Aura: nearby military units fight 10% harder. Divine Shield: +20% Strength when defending. The Light's wrath falls hardest on the undead: +25% Strength against the Forsaken."}],
     }),
     ("Crossbowman", {
         "name": "Mage", "replaces": "Crossbowman", "uniqueTo": "Humans",
         "strength": 12, "rangedStrength": 20,
         "addUniques": ["Ranged attacks may be performed over obstacles"],
-        "civilopediaText": [{"text": "Trained in the arcane academies of the human kingdoms, mages hurl fire and frost from afar. Their spells arc over hills and forests that would block an ordinary bolt."}],
+        "civilopediaText": [{"text": "Trained in the arcane academies of Dalaran and the human kingdoms, mages hurl fire and frost from afar. Their spells arc over hills and forests that would block an ordinary bolt."}],
+    }),
+    ("Missionary", {
+        "name": "Priest", "replaces": "Missionary", "uniqueTo": "Humans",
+        "addUniques": ["All adjacent units heal [+15] HP when healing"],
+        "civilopediaText": [{"text": "Priests of the Holy Light carry the faith to distant lands and tend the wounded wherever they go: adjacent units heal 15 HP more each turn they heal."}],
+    }),
+    ("Frigate", {
+        "name": "Kul Tiran Man-o'-War", "replaces": "Frigate", "uniqueTo": "Humans",
+        "strength": 28, "rangedStrength": 32, "movement": 6,
+        "civilopediaText": [{"text": "The great warships of Kul Tiras, the island kingdom whose admiralty ruled the seas of the Eastern Kingdoms for generations. Faster and better armed than any frigate."}],
+    }),
+    ("Cannon", {
+        "name": "Steam Tank", "replaces": "Cannon", "uniqueTo": "Humans",
+        "strength": 18, "rangedStrength": 22,
+        "dropUniques": ["Must set up to ranged attack"],
+        "addUniques": ["Can move after attacking"],
+        "civilopediaText": [{"text": "A clanking, steam-driven war wagon built by the engineers of the Alliance. It needs no time to set up before it fires and can keep rolling after an attack."}],
+    }),
+    ("Great Scientist", {
+        "name": "Archmage", "replaces": "Great Scientist", "uniqueTo": "Humans",
+        "renameUniques": {"[This Unit] gets a name from the [Scientist] group":
+                          "[This Unit] gets a name from the [Archmage] group"},
+        "civilopediaText": [{"text": "The archmagi of Dalaran and the Kirin Tor: the greatest arcane minds the human kingdoms have produced."}],
     }),
 ]
 
 HUMAN_BUILDINGS = [
+    # (base building to copy or None, overrides). "replaceUniques" rewrites exact uniques.
     ("Temple", {
         "name": "Chapel of the Light", "replaces": "Temple", "uniqueTo": "Humans",
         "addStats": {"faith": 1, "culture": 1},
         "civilopediaText": [{"text": "Bells ring out from these chapels in every human town, calling the faithful to the Holy Light. Provides more Faith and Culture than the Temple it replaces."}],
     }),
+    ("Barracks", {
+        "name": "Royal Barracks", "replaces": "Barracks", "uniqueTo": "Humans",
+        "addStats": {"culture": 1},
+        "renameUniques": {"New [Military] units start with [15] XP [in this city]":
+                          "New [Military] units start with [25] XP [in this city]"},
+        "civilopediaText": [{"text": "Where the footmen and knights of the human kingdoms drill until the shield-wall moves as one. New military units start with 25 experience instead of 15."}],
+    }),
+    ("Workshop", {
+        "name": "Lumber Mill", "replaces": "Workshop", "uniqueTo": "Humans",
+        "addStats": {"production": 1},
+        "addUniques": ["[+1 Production] from [Forest] tiles [in this city]"],
+        "civilopediaText": [{"text": "Human towns grow from the forests of Elwynn and the fields of Westfall. The Lumber Mill gives more Production than a Workshop and +1 Production from Forests worked by the city."}],
+    }),
+    ("Keep", {
+        "name": "Castle", "replaces": "Keep", "uniqueTo": "Humans",
+        "cityStrength": 10, "cityHealth": 50, "addStats": {"culture": 1},
+        "civilopediaText": [{"text": "Town Hall, Keep, Castle: every human city of note rises in stone. Stronger defenses than the Keep it replaces, and +1 Culture."}],
+    }),
+    (None, {
+        "name": "Altar of Kings", "uniqueTo": "Humans", "cost": 140, "culture": 1,
+        "isNationalWonder": True, "requiredTech": "Iron Forged Swords",
+        "uniques": ["Free [Great General] appears", "[+15]% Great Person generation [in this city]",
+                    "Cost increases by [30] per owned city"],
+        "civilopediaText": [{"text": "Where the heroes of the human kingdoms are honored and new champions are called to lead. A free Great General appears when it is built; +15% Great Person generation in this city. Only the Humans can build it, once."}],
+    }),
 ]
+
+# Added to the Humans' national ability. "Call to Arms" grants the best available
+# basic infantry; build.py expands {CALL_TO_ARMS} into one unique per era.
+HUMAN_ABILITY_EXTRA = [
+    "[+10]% Strength <for [Military] units> <when fighting in [Friendly Land] tiles>",   # For Lordaeron!
+    "{CALL_TO_ARMS}",
+]
+HUMAN_ABILITY_TEXT = ("The Human Spirit: City-State influence decays 50% slower and rests 20 higher; "
+                      "+15% Great Person generation. For Lordaeron!: +10% Strength in your own lands. "
+                      "Call to Arms: when another civilization declares war on you, 2 free infantry "
+                      "units of your current era appear.")
+
 
 # ---------------------------------------------------------------- Major nations
 def _n(name, leader, adjective, outer, inner, religion, victory, bias, unique_name,

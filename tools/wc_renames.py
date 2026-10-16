@@ -116,7 +116,7 @@ UNITS = {
     "Marine": "Kul Tiran Marine",
     "Machine Gun": "Grenadier",
     "Anti-Aircraft Gun": "Flak Cannon",
-    "Landship": "Steam Tank",
+    "Landship": "War Golem",
     "Fighter": "Gryphon Rider",
     "Bomber": "War Zeppelin",
     "Paratrooper": "Skyguard",

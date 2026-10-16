@@ -9,7 +9,7 @@ from atlas import Atlas
 import wc_renames as R
 import wc_factions as F
 import wc_names as NG
-import icons, sprites, race_sprites
+import icons, race_sprites, human_sprites
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 GK = os.path.join(SRC, "jsons", "Civ V - Gods & Kings")
@@ -136,25 +136,50 @@ for g in files["UnitNameGroups"]:
         g["unitNames"] = NG.GREAT_PEOPLE[g["name"]]
 
 # ------------------------------------------------------------ 4. Human unique content
+def apply_overrides(obj, ov):
+    ov = copy.deepcopy(ov)
+    renames, drop, add = ov.pop("renameUniques", {}), ov.pop("dropUniques", []), ov.pop("addUniques", [])
+    for stat, amt in ov.pop("addStats", {}).items():
+        obj[stat] = obj.get(stat, 0) + amt
+    for k, v in ov.items():
+        if v is None: obj.pop(k, None)
+        else: obj[k] = v
+    uq = obj.get("uniques", [])
+    for old, new in renames.items():
+        assert old in uq, (obj["name"], old)
+        uq = [new if u == old else u for u in uq]
+    uq = [u for u in uq if u not in drop] + add
+    if uq: obj["uniques"] = uq
+    else: obj.pop("uniques", None)
+    return obj
+
 units = {u["name"]: u for u in files["Units"]}
 for base, ov in F.HUMAN_UNITS:
-    u = copy.deepcopy(units[base])
-    ov = dict(ov)
-    add = ov.pop("addUniques", [])
-    for k, v in ov.items():
-        if v is None: u.pop(k, None)
-        else: u[k] = v
-    if add: u["uniques"] = u.get("uniques", []) + add
-    files["Units"].append(u)
+    files["Units"].append(apply_overrides(copy.deepcopy(units[base]), ov))
 
 bld = {b["name"]: b for b in files["Buildings"]}
 for base, ov in F.HUMAN_BUILDINGS:
-    b = copy.deepcopy(bld[base])
-    ov = dict(ov)
-    for stat, amt in ov.pop("addStats", {}).items():
-        b[stat] = b.get(stat, 0) + amt
-    b.update(ov)
-    files["Buildings"].append(b)
+    files["Buildings"].append(apply_overrides(copy.deepcopy(bld[base]) if base else {}, ov))
+
+# Human-only Great Person name lists
+for group, names in NG.HUMAN_GROUPS.items():
+    files["UnitNameGroups"].append({"name": group, "unitNames": names})
+
+# "Call to Arms": 2 free infantry of the current era when war is declared on the Humans.
+# Walk the basic-infantry upgrade line from Militia, using the Humans' own versions.
+units = {u["name"]: u for u in files["Units"]}
+human_eq = {u["replaces"]: u["name"] for u in files["Units"] if u.get("uniqueTo") == "Humans" and u.get("replaces")}
+chain, u = [], "Militia"
+while u:
+    chain.append(human_eq.get(u, u))
+    u = units[u].get("upgradesTo")
+CALL_TO_ARMS = []
+for i, name in enumerate(chain):
+    cond = "<upon being declared war on by [All] Civilizations>"
+    if i > 0: cond += " <after discovering [%s]>" % units[name]["requiredTech"]
+    if i + 1 < len(chain): cond += " <before discovering [%s]>" % units[chain[i + 1]]["requiredTech"]
+    CALL_TO_ARMS.append("[2] free [%s] units appear %s" % (name, cond))
+print("call to arms:", chain)
 
 # ------------------------------------------------------------ 5. nations, personalities, city-states
 src_pers = {p["name"]: p for p in ljson.load(os.path.join(GK, "Personalities.json"))}
@@ -163,6 +188,12 @@ for n in F.NATIONS:
     n = dict(n)
     n.pop("_basis")
     p = {"name": n["leaderName"], **copy.deepcopy(F.PERSONALITIES[n["name"]])}
+    if n["name"] == "Humans":
+        extra = []
+        for x in F.HUMAN_ABILITY_EXTRA:
+            extra += CALL_TO_ARMS if x == "{CALL_TO_ARMS}" else [x]
+        n["uniques"] = n["uniques"] + extra
+        n["uniqueText"] = F.HUMAN_ABILITY_TEXT
     files["Personalities"].append(p)
     majors.append(n)
 
@@ -223,7 +254,6 @@ print("re-keyed images:", count)
 
 # ------------------------------------------------------------ 8. original Warcraft art
 icons.write_all(IMG)
-sprites.write_all(os.path.join(SRC, "AbsoluteUnits.atlas"), IMG)
 
 # Map art (unit sprites, tiles) goes in its own texture pack so nothing spills into a 2nd page.
 shutil.move(os.path.join(IMG, "TileSets"), os.path.join(OUT, "Images.WarcraftMap", "TileSets"))
@@ -231,6 +261,9 @@ shutil.move(os.path.join(IMG, "TileSets"), os.path.join(OUT, "Images.WarcraftMap
 n = race_sprites.write_all(Atlas(os.path.join(SRC, "AbsoluteUnits.atlas")),
                            os.path.join(OUT, "Images.RaceUnits"), R.ALL, R.ERAS)
 print("race sprites:", n)
+n = human_sprites.write_all(os.path.join(SRC, "AbsoluteUnits.atlas"), os.path.join(OUT, "Images.WarcraftMap"),
+                            os.path.join(OUT, "Images.RaceUnits"), R.ALL, R.ERAS)
+print("human sprites:", n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
     # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
     f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,

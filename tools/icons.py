@@ -148,6 +148,119 @@ def mage():
     return i
 
 
+
+def priest():
+    i = Icon()
+    i.rays(50, 30, 20, 34, 12, 7, rot=-90)          # radiance of the Light
+    i.circle(50, 30, 17)
+    i.circle(50, 30, 12, 0)
+    i.circle(50, 30, 7)
+    # an open holy book
+    i.poly([(14, 62), (48, 70), (48, 94), (14, 86)])
+    i.poly([(86, 62), (52, 70), (52, 94), (86, 86)])
+    i.line([(20, 70), (42, 75)], 2.5, 0)
+    i.line([(20, 77), (42, 82)], 2.5, 0)
+    i.line([(80, 70), (58, 75)], 2.5, 0)
+    i.line([(80, 77), (58, 82)], 2.5, 0)
+    return i
+
+
+def archmage():
+    i = Icon()
+    i.poly([(22, 62), (56, 6), (60, 22), (78, 62)])  # tall pointed hat
+    i.ellipse(50, 66, 42, 9)                          # brim
+    i.star(46, 40, 8, 2.5, 5, v=0)
+    i.circle(76, 84, 10)                              # arcane orb
+    i.ring(76, 84, 15, 2.5)
+    i.star(22, 86, 8, 2.2, 4)
+    return i
+
+
+def steam_tank():
+    i = Icon()
+    i.rect(10, 44, 80, 70)                            # hull
+    i.poly([(10, 44), (22, 32), (68, 32), (80, 44)])
+    i.rect(30, 20, 56, 34)                            # cab
+    i.rect(14, 8, 22, 34)                             # smokestack
+    i.circle(18, 6, 5)
+    i.line([(78, 46), (96, 40)], 7)                   # cannon
+    for cx in (22, 45, 68):                            # wheels
+        i.circle(cx, 80, 12)
+        i.circle(cx, 80, 5, 0)
+    for x in range(18, 76, 10):
+        i.circle(x, 55, 2, 0)                          # rivets
+    return i
+
+
+def man_o_war():
+    i = Icon()
+    i.poly([(8, 70), (92, 70), (80, 90), (20, 90)])   # hull
+    i.rect(47, 8, 51, 72)                             # masts
+    i.rect(23, 20, 27, 72)
+    i.rect(71, 20, 75, 72)
+    for x0, top in ((29, 10), (53, 10)):              # sails
+        i.poly([(x0, top + 4), (x0 + 16, top), (x0 + 18, top + 22), (x0 + 2, top + 26)])
+        i.poly([(x0, top + 32), (x0 + 16, top + 28), (x0 + 18, top + 52), (x0 + 2, top + 56)])
+    i.poly([(5, 30), (21, 26), (21, 62), (5, 66)])
+    i.rect(10, 76, 90, 79, 0)                         # gun-port line
+    for x in range(18, 86, 12):
+        i.rect(x, 74, x + 5, 80)
+    return i
+
+
+def royal_barracks():
+    i = Icon()
+    i.line([(16, 16), (84, 84)], 7)                    # crossed swords
+    i.line([(84, 16), (16, 84)], 7)
+    i.line([(22, 34), (34, 22)], 5)
+    i.line([(66, 22), (78, 34)], 5)
+    shield = [(28, 34), (72, 34), (72, 60), (50, 84), (28, 60)]
+    i.poly(scaled(shield, 1.18, 50, 56), 0)
+    i.poly(shield)
+    i.rect(10, 92, 90, 96)
+    return i
+
+
+def lumber_mill():
+    i = Icon()
+    i.circle(64, 38, 30)                              # saw blade
+    i.rays(64, 38, 28, 36, 16, 7)
+    i.circle(64, 38, 8, 0)
+    i.circle(64, 38, 4)
+    for y in (70, 84):                                # stacked logs
+        i.rect(6, y - 6, 70, y + 6)
+        i.circle(70, y, 6)
+        i.circle(70, y, 3, 0)
+    return i
+
+
+def castle():
+    i = Icon()
+    i.rect(14, 40, 86, 94)
+    for x in (10, 70):                                # towers
+        i.rect(x, 22, x + 20, 94)
+        for k in range(3):
+            i.rect(x + k * 7, 15, x + k * 7 + 5, 23)
+    for k in range(4):                                # battlements of the wall
+        i.rect(32 + k * 10, 33, 38 + k * 10, 41)
+    i.rect(42, 64, 58, 94, 0)                         # gate
+    i.circle(50, 64, 8, 0)
+    i.rect(16, 34, 22, 44, 0)
+    i.rect(78, 34, 84, 44, 0)
+    return i
+
+
+def altar_of_kings():
+    i = Icon()
+    i.poly([(28, 26), (36, 8), (44, 22), (50, 4), (56, 22), (64, 8), (72, 26)])  # crown
+    i.rect(28, 26, 72, 34)
+    i.rect(20, 46, 80, 56)                            # altar top
+    i.rect(30, 56, 70, 84)
+    i.rect(14, 84, 86, 94)
+    i.rect(44, 62, 56, 78, 0)
+    return i
+
+
 # ============================================================ buildings (black)
 def chapel_of_the_light():
     i = Icon()
@@ -476,8 +589,10 @@ def r_sunwell():
     return i
 
 
-UNIT_ICONS = {"Footman": footman, "Paladin": paladin, "Mage": mage}
-BUILDING_ICONS = {"Chapel of the Light": chapel_of_the_light}
+UNIT_ICONS = {"Footman": footman, "Paladin": paladin, "Mage": mage, "Priest": priest,
+              "Archmage": archmage, "Steam Tank": steam_tank, "Kul Tiran Man-o'-War": man_o_war}
+BUILDING_ICONS = {"Chapel of the Light": chapel_of_the_light, "Royal Barracks": royal_barracks,
+                  "Lumber Mill": lumber_mill, "Castle": castle, "Altar of Kings": altar_of_kings}
 NATION_ICONS = {"Humans": n_humans, "Orcs": n_orcs, "Night Elves": n_night_elves,
                 "Dwarves": n_dwarves, "Gnomes": n_gnomes, "Tauren": n_tauren, "Trolls": n_trolls,
                 "Blood Elves": n_blood_elves, "High Elves": n_high_elves, "Pandaren": n_pandaren,

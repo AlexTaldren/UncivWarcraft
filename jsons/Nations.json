@@ -44,7 +44,16 @@
       "[-50]% City-State Influence degradation",
       "Resting point for Influence with City-States is increased by [20]",
       "[+15]% Great Person generation [in all cities]",
-      "Comment [Faction: Alliance]"
+      "Comment [Faction: Alliance]",
+      "[+10]% Strength <for [Military] units> <when fighting in [Friendly Land] tiles>",
+      "[2] free [Militia] units appear <upon being declared war on by [All] Civilizations> <before discovering [Iron Forged Swords]>",
+      "[2] free [Footman] units appear <upon being declared war on by [All] Civilizations> <after discovering [Iron Forged Swords]> <before discovering [Steel Forged Swords]>",
+      "[2] free [Vanguard] units appear <upon being declared war on by [All] Civilizations> <after discovering [Steel Forged Swords]> <before discovering [Blackpowder]>",
+      "[2] free [Musketeer] units appear <upon being declared war on by [All] Civilizations> <after discovering [Blackpowder]> <before discovering [Long Rifles]>",
+      "[2] free [Rifleman] units appear <upon being declared war on by [All] Civilizations> <after discovering [Long Rifles]> <before discovering [Gnomish Gearworks]>",
+      "[2] free [Fusilier] units appear <upon being declared war on by [All] Civilizations> <after discovering [Gnomish Gearworks]> <before discovering [Arcanite Alloys]>",
+      "[2] free [Shock Trooper] units appear <upon being declared war on by [All] Civilizations> <after discovering [Arcanite Alloys]> <before discovering [War Drums]>",
+      "[2] free [Mechagnome Trooper] units appear <upon being declared war on by [All] Civilizations> <after discovering [War Drums]>"
     ],
     "cities": [
       "Stormwind",
@@ -75,7 +84,8 @@
       "Westguard Keep",
       "Light's Shield Tower",
       "Watchers' Terrace"
-    ]
+    ],
+    "uniqueText": "The Human Spirit: City-State influence decays 50% slower and rests 20 higher; +15% Great Person generation. For Lordaeron!: +10% Strength in your own lands. Call to Arms: when another civilization declares war on you, 2 free infantry units of your current era appear."
   },
   {
     "name": "Orcs",

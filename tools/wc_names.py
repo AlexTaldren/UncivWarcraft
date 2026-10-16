@@ -38,10 +38,24 @@ GREAT_PEOPLE = {
         "Engineer Wizzlecrank", "Architect Telmor", "Tinker Gearspanner", "Mason Brannick",
         "Steamsmith Brugg", "Overspark", "Builder Thorgrim", "Foreman Gutspill", "Pumper Kessel",
     ],
+    "Prophet": [
+        "Alonsus Faol", "Uther the Lightbringer", "Velen", "Archbishop Benedictus", "Tyrande Whisperwind",
+        "Zul the Prophet", "Hamuul Runetotem", "Drek'Thar", "Zen'tabra", "Moira Thaurissan",
+        "Liadrin", "Calia Menethil", "Tirion Fordring", "Yrel",
+        "Mother Kashur", "Taoshi", "Elder Cassia", "High Priest Rohan",
+    ],
     "Scientist": [
         "Antonidas", "Khadgar", "Kael'thas Sunstrider", "Brann Bronzebeard", "Rhonin",
         "Modera", "Ansirem Runeweaver", "Medivh", "Aegwynn", "Kalecgos", "Vereesa Windrunner",
         "Jaina Proudmoore", "Aethas Sunreaver", "Karlain", "Kel'Thuzad", "Arugal",
         "Archmage Vargoth", "Thalyssra", "Erevin", "Chromie",
     ],
+}
+
+
+# Names for the Humans' own Great People (Archmage replaces Great Scientist).
+HUMAN_GROUPS = {
+    "Archmage": ["Antonidas", "Khadgar", "Jaina Proudmoore", "Rhonin", "Modera", "Ansirem Runeweaver",
+                 "Kel'Thuzad", "Karlain", "Archmage Vargoth", "Drenden", "Archmage Arugal",
+                 "Archmage Ataeric", "Archmage Malin", "Archmage Xylem"],
 }

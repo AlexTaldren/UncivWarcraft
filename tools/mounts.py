@@ -446,10 +446,10 @@ SCALE = {"Tauren": 1.35, "Draenei": 1.3, "Pandaren": 1.25, "Trolls": 1.2, "Gnome
          "Goblins": 1.1, "Dwarves": 1.15}
 
 
-def draw_mount(race, variant, armored, legc=None):
+def draw_mount(race, variant, armored, legc=None, mount=None):
     """Paint the mount; if `legc` is given, also the rider's near leg down its flank."""
     p = Paint(W, H, SCALE.get(race, 1.2))
-    sx, sy = RACE_MOUNT[race](p, variant, armored)
+    sx, sy = (mount or RACE_MOUNT[race])(p, variant, armored)
     if legc:
         p.line(sx - 1, sy + 1, sx - 3, sy + 6, 3, legc, "rleg")
         p.line(sx - 3, sy + 6, sx - 2, sy + 8, 2, legc, "rleg")
@@ -481,11 +481,11 @@ def rider(layers, cut=0.56):
     return out, cx, legc or (80, 70, 60)
 
 
-def compose(rider_layers, race, variant, armored, canvas, ground, center_x):
+def compose(rider_layers, race, variant, armored, canvas, ground, center_x, mount=None):
     """Mount + seated rider on an output canvas of size `canvas`, with the mount's
     feet on `ground` and centred at `center_x`. Returns [base, -1, -2]."""
     up, rcx, legc = rider(rider_layers)
-    (mb, m1, m2), (sx, sy), gy = draw_mount(race, variant, armored, legc)
+    (mb, m1, m2), (sx, sy), gy = draw_mount(race, variant, armored, legc, mount)
     mbox = mb.getbbox()
     ox = int(center_x - (mbox[0] + mbox[2]) / 2)
     ox = max(1 - mbox[0], min(ox, canvas[0] - 1 - mbox[2]))      # keep it on the canvas

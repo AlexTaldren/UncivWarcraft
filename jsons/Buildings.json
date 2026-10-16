@@ -1373,5 +1373,83 @@
         "text": "Bells ring out from these chapels in every human town, calling the faithful to the Holy Light. Provides more Faith and Culture than the Temple it replaces."
       }
     ]
+  },
+  {
+    "name": "Royal Barracks",
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "uniques": [
+      "New [Military] units start with [25] XP [in this city]",
+      "Destroyed when the city is captured"
+    ],
+    "requiredTech": "Bronze Working",
+    "culture": 1,
+    "replaces": "Barracks",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "Where the footmen and knights of the human kingdoms drill until the shield-wall moves as one. New military units start with 25 experience instead of 15."
+      }
+    ]
+  },
+  {
+    "name": "Lumber Mill",
+    "maintenance": 2,
+    "production": 3,
+    "specialistSlots": {
+      "Engineer": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "requiredTech": "Blacksmithing",
+    "replaces": "Workshop",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "Human towns grow from the forests of Elwynn and the fields of Westfall. The Lumber Mill gives more Production than a Workshop and +1 Production from Forests worked by the city."
+      }
+    ],
+    "uniques": [
+      "[+1 Production] from [Forest] tiles [in this city]"
+    ]
+  },
+  {
+    "name": "Castle",
+    "cityStrength": 10,
+    "cityHealth": 50,
+    "hurryCostModifier": 25,
+    "requiredBuilding": "Walls",
+    "requiredTech": "Animal War Training",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "culture": 1,
+    "replaces": "Keep",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "Town Hall, Keep, Castle: every human city of note rises in stone. Stronger defenses than the Keep it replaces, and +1 Culture."
+      }
+    ]
+  },
+  {
+    "name": "Altar of Kings",
+    "uniqueTo": "Humans",
+    "cost": 140,
+    "culture": 1,
+    "isNationalWonder": true,
+    "requiredTech": "Iron Forged Swords",
+    "uniques": [
+      "Free [Great General] appears",
+      "[+15]% Great Person generation [in this city]",
+      "Cost increases by [30] per owned city"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Where the heroes of the human kingdoms are honored and new champions are called to lead. A free Great General appears when it is built; +15% Great Person generation in this city. Only the Humans can build it, once."
+      }
+    ]
   }
 ]

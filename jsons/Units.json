@@ -412,7 +412,7 @@
     "requiredTech": "War Doctrine",
     "obsoleteTech": "Liquid Fire",
     "requiredResource": "Horses",
-    "upgradesTo": "Steam Tank",
+    "upgradesTo": "War Golem",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
@@ -593,7 +593,7 @@
     "attackSound": "machinegun"
   },
   {
-    "name": "Steam Tank",
+    "name": "War Golem",
     "unitType": "War Machine",
     "movement": 4,
     "strength": 60,
@@ -1187,7 +1187,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "[+10]% Strength bonus for [Military] units within [1] tiles",
+      "[+20]% Strength <when defending>",
+      "[+25]% Strength <vs [Forsaken] units>"
     ],
     "attackSound": "horse",
     "replaces": "Knight",
@@ -1197,7 +1200,10 @@
     ],
     "civilopediaText": [
       {
-        "text": "Holy warriors of the Order of the Silver Hand. Paladins ride into battle wielding the Light, mending the wounds of the soldiers fighting beside them."
+        "text": "Holy warriors of the Order of the Silver Hand, clad in heavy plate and armed with the warhammer. Paladins ride into battle wielding the Light."
+      },
+      {
+        "text": "Holy Light: heals the units fighting beside them. Devotion Aura: nearby military units fight 10% harder. Divine Shield: +20% Strength when defending. The Light's wrath falls hardest on the undead: +25% Strength against the Forsaken."
       }
     ]
   },
@@ -1216,11 +1222,102 @@
     "uniqueTo": "Humans",
     "civilopediaText": [
       {
-        "text": "Trained in the arcane academies of the human kingdoms, mages hurl fire and frost from afar. Their spells arc over hills and forests that would block an ordinary bolt."
+        "text": "Trained in the arcane academies of Dalaran and the human kingdoms, mages hurl fire and frost from afar. Their spells arc over hills and forests that would block an ordinary bolt."
       }
     ],
     "uniques": [
       "Ranged attacks may be performed over obstacles"
+    ]
+  },
+  {
+    "name": "Priest",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>",
+      "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+      "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+      "[-1] Sight",
+      "Unbuildable",
+      "Religious Unit",
+      "Only available <when religion is enabled>",
+      "All adjacent units heal [+15] HP when healing"
+    ],
+    "movement": 4,
+    "religiousStrength": 1000,
+    "replaces": "Missionary",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "Priests of the Holy Light carry the faith to distant lands and tend the wounded wherever they go: adjacent units heal 15 HP more each turn they heal."
+      }
+    ]
+  },
+  {
+    "name": "Kul Tiran Man-o'-War",
+    "unitType": "Ranged Water",
+    "movement": 6,
+    "strength": 28,
+    "rangedStrength": 32,
+    "cost": 185,
+    "requiredResource": "Iron",
+    "requiredTech": "Navigation",
+    "obsoleteTech": "Arcane Conduits",
+    "upgradesTo": "Dreadnought",
+    "hurryCostModifier": 20,
+    "attackSound": "shipCannonVolley",
+    "replaces": "Frigate",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "The great warships of Kul Tiras, the island kingdom whose admiralty ruled the seas of the Eastern Kingdoms for generations. Faster and better armed than any frigate."
+      }
+    ]
+  },
+  {
+    "name": "Steam Tank",
+    "unitType": "Siege",
+    "movement": 2,
+    "strength": 18,
+    "rangedStrength": 22,
+    "cost": 185,
+    "requiredTech": "Alchemy",
+    "upgradesTo": "Mortar Team",
+    "obsoleteTech": "Seaforium",
+    "uniques": [
+      "[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus",
+      "[-1] Sight",
+      "Never appears as a Barbarian unit",
+      "Can move after attacking"
+    ],
+    "attackSound": "cannon",
+    "replaces": "Cannon",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "A clanking, steam-driven war wagon built by the engineers of the Alliance. It needs no time to set up before it fires and can keep rolling after an attack."
+      }
+    ]
+  },
+  {
+    "name": "Archmage",
+    "unitType": "Civilian",
+    "uniques": [
+      "Can hurry technology research",
+      "Can instantly construct a [Academy] improvement <by consuming this unit>",
+      "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Archmage] group",
+      "Great Person - [Science]",
+      "Unbuildable",
+      "Uncapturable"
+    ],
+    "movement": 2,
+    "replaces": "Great Scientist",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "The archmagi of Dalaran and the Kirin Tor: the greatest arcane minds the human kingdoms have produced."
+      }
     ]
   }
 ]

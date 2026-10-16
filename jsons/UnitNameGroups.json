@@ -160,6 +160,44 @@
   },
   {
     "name": "Prophet",
-    "unitNames": []
+    "unitNames": [
+      "Alonsus Faol",
+      "Uther the Lightbringer",
+      "Velen",
+      "Archbishop Benedictus",
+      "Tyrande Whisperwind",
+      "Zul the Prophet",
+      "Hamuul Runetotem",
+      "Drek'Thar",
+      "Zen'tabra",
+      "Moira Thaurissan",
+      "Liadrin",
+      "Calia Menethil",
+      "Tirion Fordring",
+      "Yrel",
+      "Mother Kashur",
+      "Taoshi",
+      "Elder Cassia",
+      "High Priest Rohan"
+    ]
+  },
+  {
+    "name": "Archmage",
+    "unitNames": [
+      "Antonidas",
+      "Khadgar",
+      "Jaina Proudmoore",
+      "Rhonin",
+      "Modera",
+      "Ansirem Runeweaver",
+      "Kel'Thuzad",
+      "Karlain",
+      "Archmage Vargoth",
+      "Drenden",
+      "Archmage Arugal",
+      "Archmage Ataeric",
+      "Archmage Malin",
+      "Archmage Xylem"
+    ]
   }
 ]
