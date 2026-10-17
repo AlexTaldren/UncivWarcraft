@@ -101,6 +101,30 @@ for feat, (tech, turns) in WT.CLEANSE.items():
     imp.update({"name": "Remove " + feat, "techRequired": tech, "turnsToBuild": turns})
     files["TileImprovements"].append(imp)
 
+# v0.15: no submarines in Azeroth. Drop the Submarine unit type, its units (Gnomish
+# Submarine, Giant Turtle), their promotions and every rule that names them.
+SUBS = {u["name"] for u in files["Units"] if u["unitType"] == "Submarine"}
+_gone = SUBS | {"Submarine"}
+def _names_gone(q):
+    return any("[%s]" % g in q for g in _gone)
+files["Units"] = [u for u in files["Units"] if u["name"] not in SUBS]
+for u in files["Units"]:
+    if u.get("upgradesTo") in SUBS:
+        del u["upgradesTo"]
+    if "uniques" in u:
+        u["uniques"] = [q for q in u["uniques"] if not _names_gone(q)]
+_sub_promos = {p["name"] for p in files["UnitPromotions"] if p.get("unitTypes") and
+               all(t == "Submarine" for t in p["unitTypes"])}
+files["UnitPromotions"] = [p for p in files["UnitPromotions"] if p["name"] not in _sub_promos]
+for p in files["UnitPromotions"]:
+    if "prerequisites" in p:
+        p["prerequisites"] = [x for x in p["prerequisites"] if x not in _sub_promos]
+for k in ("Buildings", "Nations", "Techs", "Policies", "Beliefs", "UnitPromotions", "Events"):
+    for x in files.get(k, []):
+        if isinstance(x, dict) and "uniques" in x:
+            x["uniques"] = [q for q in x["uniques"] if not _names_gone(q)]
+print("submarines removed:", sorted(SUBS), "promotions:", sorted(_sub_promos))
+
 # ------------------------------------------------------------ 2b. text clean-up
 # Drop Unciv's legacy unit types that no unit uses (AtomicBomber, WaterSubmarine, ...)
 used_types = {u["unitType"] for u in files["Units"]}
@@ -532,6 +556,27 @@ print("tile art:", n)
 n = citycenters.write_all(os.path.join(OUT, "Images.WarcraftMap"), R.ERAS, [x["name"] for x in F.NATIONS],
                           [c[0] for c in F.CITY_STATES])
 print("city centers:", n)
+# v0.15: race ships, hunting camps and forts
+import race_works as RW
+for name, ls in RW.ship_sprites(_lu).items():
+    for suf, im in zip(("", "-1", "-2"), ls):
+        path = os.path.join(OUT, "Images.RaceUnits", RW.P_UNITS, name + suf + ".png")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        im.save(path)
+print("race ships:", len(RW.SHIPS) * len(RW.SHIP_STYLE))
+with open(os.path.join(J, "TileSets", "HexaRealm.json")) as f:
+    _rv = json.load(f).get("ruleVariants", {})
+n = RW.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), Atlas(os.path.join(SRC, "Tilesets.atlas")),
+                   [x["name"] for x in F.NATIONS], [c[0] for c in F.CITY_STATES], R.ALL, _rv)
+print("race camps and forts:", n)
+# no art for the removed submarines (renamed stock sprites, icons, promotion icons)
+_dead = tuple(sorted(SUBS | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
+_n = 0
+for root, _, fs in os.walk(OUT):
+    for fn in fs:
+        if fn.endswith(".png") and fn.startswith(_dead):
+            os.remove(os.path.join(root, fn)); _n += 1
+print("submarine images dropped:", _n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
     # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
     f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,

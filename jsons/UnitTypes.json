@@ -53,15 +53,6 @@
     "movementType": "Water"
   },
   {
-    "name": "Submarine",
-    "movementType": "Water",
-    "uniques": [
-      "Can enter ice tiles",
-      "Invisible to non-adjacent units",
-      "Can see invisible [Gnomish Submarine] units"
-    ]
-  },
-  {
     "name": "Sky Carrier",
     "movementType": "Water"
   },

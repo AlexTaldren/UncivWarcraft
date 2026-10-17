@@ -574,7 +574,6 @@ MACHINES = {   # drawn once; these replace the stock art for every civ
     "Rocket Artillery": demolisher, "Mobile SAM": flak_wagon, "Anti-Aircraft Gun": flak_cannon,
     "Helicopter Gunship": flying_machine, "Ironclad": ironclad, "Destroyer": destroyer,
     "Battleship": dreadnought, "Carrier": airship_tender, "Missile Cruiser": juggernaught,
-    "Submarine": gnomish_submarine, "Nuclear Submarine": giant_turtle,
     "SS Booster": ss_part("thruster"), "SS Cockpit": ss_part("crystal"),
     "SS Engine": ss_part("engine"), "SS Stasis Chamber": ss_part("vault"),
 }

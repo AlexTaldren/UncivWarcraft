@@ -76,7 +76,7 @@ RACE_GP = {
     "Gnomes": {
         "General": ["Captain Fizzcrank", "Field Commander Kitty", "General Kegspark", "Commander Gearloose",
                     "Marshal Sprocketspark", "Captain Tinkerfuse"],
-        "Admiral": ["Captain Bolt", "Submarine Commander Pinwheel", "Admiral Fusegrinder", "Captain Gearheart"],
+        "Admiral": ["Captain Bolt", "Navigator Pinwheel", "Admiral Fusegrinder", "Captain Gearheart"],
         "Artist": ["Composer Fizzlebang", "Clockwork Painter Twinkla", "Holo-artist Sparkwick",
                    "Storyteller Geargrind", "Musician Cogsworth"],
         "Merchant": ["Merchant Spannerbolt", "Trader Coggle", "Factor Fizzlespark", "Banker Twinkletoes",

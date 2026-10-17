@@ -15,8 +15,7 @@
       "Ranged Firearm",
       "War Machine",
       "Melee Water",
-      "Ranged Water",
-      "Submarine"
+      "Ranged Water"
     ],
     "innerColor": [
       195,
@@ -179,8 +178,7 @@
       "Deadeye III",
       "Barrage III",
       "Broadsides II",
-      "Bombardment II",
-      "Depth Stalker II"
+      "Bombardment II"
     ],
     "uniques": [
       "[+1] Range"
@@ -189,8 +187,7 @@
       "Archery",
       "Ranged Firearm",
       "Siege",
-      "Ranged Water",
-      "Submarine"
+      "Ranged Water"
     ],
     "column": 3,
     "row": 3,
@@ -849,60 +846,6 @@
     ]
   },
   {
-    "name": "Depth Stalker I",
-    "uniques": [
-      "[+25]% Strength <when attacking>"
-    ],
-    "unitTypes": [
-      "Submarine"
-    ],
-    "column": 14,
-    "row": 1,
-    "civilopediaText": [
-      {
-        "text": "Submarine crews who hunt from the deep like the naga of Vashj'ir."
-      }
-    ]
-  },
-  {
-    "name": "Depth Stalker II",
-    "prerequisites": [
-      "Depth Stalker I"
-    ],
-    "uniques": [
-      "[+25]% Strength <when attacking>"
-    ],
-    "unitTypes": [
-      "Submarine"
-    ],
-    "column": 14,
-    "row": 2,
-    "civilopediaText": [
-      {
-        "text": "Submarine crews who hunt from the deep like the naga of Vashj'ir."
-      }
-    ]
-  },
-  {
-    "name": "Depth Stalker III",
-    "prerequisites": [
-      "Depth Stalker II"
-    ],
-    "uniques": [
-      "[+25]% Strength <when attacking>"
-    ],
-    "unitTypes": [
-      "Submarine"
-    ],
-    "column": 14,
-    "row": 3,
-    "civilopediaText": [
-      {
-        "text": "Submarine crews who hunt from the deep like the naga of Vashj'ir."
-      }
-    ]
-  },
-  {
     "name": "Iron Plating I",
     "uniques": [
       "[+25]% Strength <when defending>"
@@ -1482,8 +1425,7 @@
       "Broadsides I",
       "Bombardment I",
       "Boarding Party I",
-      "Coastal Raider I",
-      "Depth Stalker I"
+      "Coastal Raider I"
     ],
     "uniques": [
       "[+1] Movement"
@@ -1492,8 +1434,7 @@
       "Mounted",
       "Melee Water",
       "Ranged Water",
-      "War Machine",
-      "Submarine"
+      "War Machine"
     ],
     "column": 24,
     "row": 3,
@@ -1540,7 +1481,6 @@
       "Deadeye III",
       "Barrage III",
       "Broadsides III",
-      "Depth Stalker III",
       "Bombardment III",
       "Coastal Raider III",
       "Boarding Party III",
@@ -1558,7 +1498,6 @@
       "Siege",
       "Melee Water",
       "Ranged Water",
-      "Submarine",
       "Sky Fighter",
       "Sky Bomber",
       "Gyro"

@@ -17,6 +17,7 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 - `wc_lore.py` — civilopedia lore for wonders, techs and units.
 - `race_sprites.py` also draws the barbarians (murlocs, gnolls, Defias) and `tiles_art.py` their camp.
 - `citycenters.py` — per-race city-center tiles in three growth stages.
+- `race_works.py` — per-race sailing ships (`Longboat-Orcs` …) and owned-tile hunting camps and forts (`Camp-<race>`, `Fort-<race>`, `Plainstriders+Camp-<race>` …, HexaRealm), in each race's city-center architecture.
 - `map_tiles_preview.py` — renders part of the Azeroth map with the real tile art.
 - `human_sprites.py` — the Humans' unique-unit sprites and blue-and-gold variants.
 - `race_sprites.py`, `mounts.py` — race versions of every person unit, and each race's mounts (wolves, rams, mechanostriders, nightsabers, kodos, raptors, hawkstriders, elekks, dragon turtles, trikes, skeletal and Gilnean horses, white steeds).

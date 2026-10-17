@@ -138,7 +138,6 @@ PROMOTIONS = {   # keyed by base name (levels share the text)
     "Bloodlust": "The shaman's Bloodlust: a frenzy that lets warriors strike twice in a turn.",
     "Rapid Fire": "Ranged units trained to loose a second volley before the enemy can close.",
     "Broadsides": "Gunners trained to rake enemy ships with full broadsides.",
-    "Depth Stalker": "Submarine crews who hunt from the deep like the naga of Vashj'ir.",
     "Skyguard Patrol": "Air units kept on patrol, ready to intercept more often.",
     "Sky Sentinel": "Air defenders trained to intercept attacking aircraft.",
     "Ship's Carpenter": "A ship's carpenter aboard to repair damage at sea.",

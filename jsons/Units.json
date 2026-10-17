@@ -606,27 +606,6 @@
     ]
   },
   {
-    "name": "Gnomish Submarine",
-    "unitType": "Submarine",
-    "movement": 5,
-    "strength": 35,
-    "rangedStrength": 60,
-    "cost": 325,
-    "requiredTech": "Frost Enchantment",
-    "upgradesTo": "Giant Turtle",
-    "uniques": [
-      "[+75]% Strength <when attacking>",
-      "Can only attack [Water] tiles",
-      "Never appears as a Barbarian unit"
-    ],
-    "attackSound": "torpedo",
-    "civilopediaText": [
-      {
-        "text": "A gnomish underwater vessel that strikes unseen from below the waves."
-      }
-    ]
-  },
-  {
     "name": "Fusilier",
     "unitType": "Firearm",
     "movement": 2,
@@ -813,15 +792,13 @@
     "cost": 375,
     "requiredTech": "Liquid Fire",
     "uniques": [
-      "Can see invisible [Gnomish Submarine] units",
       "[40]% chance to intercept air attacks",
-      "Withdraws before melee combat <with [80]% chance>",
-      "[+100]% Strength <vs [Gnomish Submarine] units>"
+      "Withdraws before melee combat <with [80]% chance>"
     ],
     "attackSound": "shipguns",
     "civilopediaText": [
       {
-        "text": "A fast steam warship built to hunt submarines and raiders."
+        "text": "A fast steam warship built to hunt raiders and outrun pirates."
       }
     ]
   },
@@ -1088,29 +1065,6 @@
     ]
   },
   {
-    "name": "Giant Turtle",
-    "unitType": "Submarine",
-    "movement": 6,
-    "strength": 50,
-    "range": 3,
-    "rangedStrength": 85,
-    "cost": 425,
-    "requiredTech": "Portal Networks",
-    "uniques": [
-      "[+75]% Strength <when attacking>",
-      "Can only attack [Water] tiles",
-      "[+1] Sight",
-      "Can carry [2] [Arcane Projectile] units",
-      "Never appears as a Barbarian unit"
-    ],
-    "attackSound": "torpedo",
-    "civilopediaText": [
-      {
-        "text": "A great sea turtle trained for war, armoured and hard to see beneath the waves."
-      }
-    ]
-  },
-  {
     "name": "Mechagnome Trooper",
     "unitType": "Firearm",
     "movement": 3,
@@ -1139,9 +1093,7 @@
     "requiredTech": "Mechagnomics",
     "uniques": [
       "[100]% chance to intercept air attacks",
-      "Can see invisible [Gnomish Submarine] units",
       "Can carry [3] [Arcane Projectile] units",
-      "[+100]% Strength <vs [Gnomish Submarine] units>",
       "Never appears as a Barbarian unit"
     ],
     "promotions": [

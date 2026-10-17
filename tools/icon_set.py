@@ -1065,7 +1065,7 @@ UNITS = {
     "Spearman": "spear", "Catapult": ("cannon", "skull"), "Ranger": ("bow", "leaf"), "Swordsman": "sword",
     "Knight": "helm", "Lancer": ("horse", "spear"), "Cannon": "cannon", "Mountaineer": ("gun", "mountain"),
     "Rifleman": "gun", "Musketeer": ("gun", "bomb"), "Cavalry": ("horse", "gun"), "Ironclad": ("ship", "gear"),
-    "Mortar Team": ("cannon", "mountain"), "Gnomish Submarine": ("fish", "gear"), "Fusilier": ("gun", "sword"),
+    "Mortar Team": ("cannon", "mountain"), "Fusilier": ("gun", "sword"),
     "Gyrocopter": ("wing", "gear"), "Bomber Zeppelin": ("zeppelin", "bomb"), "Shock Trooper": ("helm", "gun"),
     "Airship Tender": ("zeppelin", "wing"), "Dreadnought": ("ship", "cannon"), "Grenadier": "bomb",
     "Flak Cannon": ("cannon", "wing"), "War Golem": "golem", "Destroyer": ("ship", "bolt"),
@@ -1073,7 +1073,7 @@ UNITS = {
     "Skyguard": ("wing", "gun"), "Siege Engine": ("wheel", "hammer"), "Siegebreaker": ("rocket", "shield"),
     "Mana Bomb": ("orb", "bomb"), "Demolisher": ("cannon", "flame"), "Flak Wagon": ("rocket", "wheel"),
     "Arcane Missile": ("crystal", "bolt"), "Arcane Annihilator": ("orb", "skull"), "Flying Machine": ("gear", "wing"),
-    "Giant Turtle": "turtle", "Mechagnome Trooper": ("golem", "gun"), "Juggernaught": ("ship", "skull"),
+    "Mechagnome Trooper": ("golem", "gun"), "Juggernaught": ("ship", "skull"),
     "Mechano-Tank": ("golem", "wheel"), "Sky Golem": ("golem", "wing"), "Iron Colossus": ("golem", "rune"),
     "Void Bomber": ("zeppelin", "void"), "Great Artist": "lute", "Great Merchant": "coins",
     "Great Engineer": ("gears", "hammer"), "Great Prophet": "hand_light", "Great General": "banner",
@@ -1164,7 +1164,7 @@ BRANCHES = {     # policy branch icons (new names)
 }
 
 PROMOTIONS = {   # base names (icons are keyed by the base name, levels share them)
-    "Morale": "banner", "Sortie": ("wing", "bolt"), "Wolfpack": ("fish", "skull"), "Aerial Combat": ("gryphon", "sword"),
+    "Morale": "banner", "Sortie": ("wing", "bolt"), "Aerial Combat": ("gryphon", "sword"),
     "Interception": ("wing", "target"), "Bombardment": ("bomb", "target"), "Aerial Targeting": ("wing", "target"),
     "Aerie Deck": ("gryphon", "anchor"), "Iron Plating": ("shield", "anvil"), "Armor Piercing": ("spear", "shield"),
     "Long Flight": ("wing", "compass"), "Field Repairs": ("hammer", "gear"), "Extended Range": "target",
