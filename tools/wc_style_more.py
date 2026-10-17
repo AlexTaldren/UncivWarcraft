@@ -116,6 +116,15 @@ def lantern(f, x, y, glow=(255, 210, 120)):
     f.paint(f.poly([(x - 3.6, y - 4.5), (x + 3.6, y - 4.5), (x + 2.4, y - 6.4), (x - 2.4, y - 6.4)]), (70, 60, 50), mat="metal", outline=0.3)
 
 
+def walking_stick(f, base, top, col=(120, 82, 48)):
+    """A traveller's staff: a stout, slightly crooked wooden stick with a knotted top."""
+    from wc_style_units import pole
+    mid = ((base[0] + top[0]) / 2 + 1.5, (base[1] + top[1]) / 2)
+    pole(f, base, mid, 2.3, col)
+    pole(f, mid, top, 2.3, col)
+    f.paint(f.ell(top[0], top[1] - 1, 3.4, 3.0), col, mat="wood", dark=0.9)
+
+
 def wrench(f, base, top):
     f.paint(f.cap(base, top, 1.8), DSTEEL, mat="metal")
     tx, ty = top
@@ -202,7 +211,7 @@ def warpaint(f, x=18, y=-67):
 def h_soldier(c, fx, fy, u=1.0, armor="plate", tabard=True, hat="kettle", beard=None, weapon="spear",
               shield=None, pauldron=True, back=None, capecol=False, glow=None, plain_hair=None):
     """A human foot soldier. weapon: spear, pike, halberd, sword, mace, hammer, banner, bow,
-    crossbow, musket, rifle, sniper, grenade, mortar, axe, torch, none."""
+    crossbow, musket, rifle, sniper, grenade, mortar, axe, torch, stick, none."""
     f = Fig(c, fx, fy, u)
     shadow(f, 21)
     gun = weapon in ("musket", "rifle", "sniper", "crossbow")
@@ -298,6 +307,10 @@ def h_soldier(c, fx, fy, u=1.0, armor="plate", tabard=True, hat="kettle", beard=
         arm(f, (4, -58), (12, -48), (18, -52), col, mat, glove, layer_arm)
         from wc_style_units import sword as _sw
         _sw(f, (18, -50), (30, -84), 2.4, 5)
+    elif weapon == "stick":
+        walking_stick(f, (28, -2), (24, -84))
+        arm(f, (4, -58), (12, -48), (25, -60), col, mat, glove, layer_arm)
+        f.paint(f.ell(25, -60, 4.4, 4.4), glove or STEEL, mat="skin" if glove else "metal")
     elif weapon == "torch":
         pole(f, (18, -36), (26, -70), 1.6)
         lantern(f, 26, -74, (255, 170, 70))
@@ -468,6 +481,10 @@ def o_soldier(c, fx, fy, u=0.95, armor="hide", hat="topknot", weapon="axe", shie
         bow(f, (34, -62), (26, -98), (26, -26), string_to=(12, -64))
         orc_arm(f, (6, -62), (20, -63), (32, -62))
         hand = (33, -62)
+    elif weapon == "stick":
+        walking_stick(f, (32, -2), (28, -90), (110, 74, 42))
+        orc_arm(f, (4, -55), (16, -50), (29, -62))
+        hand = (29, -62)
     elif weapon == "crossbow":
         orc_arm(f, (4, -55), (14, -46), (24, -50))
         crossbow(f, (6, -48), (42, -52))
@@ -739,7 +756,9 @@ def or_(**kw):
 # name -> (draw(c, fx, fy, u), archetype); archetype picks the size reference
 RECIPES = {
     # ---- Humans: soldiers
-    "Scout-Humans": (hs(armor="leather", tabard=False, hat="hood", weapon="bow", pauldron=False, back="quiver"), "foot"),
+    # Scouts are not ranged units (no ranged attack in the ruleset), so they carry a walking
+    # stick and a travel pack, not a bow. Keep this for every race unless its scout is ranged.
+    "Scout-Humans": (hs(armor="leather", tabard=False, hat="hood", weapon="stick", pauldron=False, back="pack"), "foot"),
     "Ranger-Humans": (hs(armor="leather", tabard=False, hat="hood", weapon="bow", pauldron=False, back="quiver", capecol=True), "foot"),
     "Pikeman-Humans": (hs(armor="plate", hat="sallet", weapon="pike", shield="round"), "foot"),
     "Vanguard-Humans": (hs(armor="plate", hat="great_helm", weapon="halberd"), "foot"),
@@ -777,7 +796,7 @@ RECIPES = {
     "Northshire Cleric": (hr(robe_col=(240, 235, 222), robe_layer="base", hat="hair", prop="light"), "civ"),
     "Uther the Lightbringer": (uther, "foot"),
     # ---- Orcs: soldiers
-    "Scout-Orcs": (os_(armor="hide", hat="mohawk", weapon="bow", pauldrons=0, back="quiver"), "foot"),
+    "Scout-Orcs": (os_(armor="hide", hat="mohawk", weapon="stick", pauldrons=0, back="pack"), "foot"),
     "Ranger-Orcs": (os_(armor="hide", hat="feathers", weapon="bow", pauldrons=0, back="quiver"), "foot"),
     "Pikeman-Orcs": (os_(armor="iron", hat="skullcap", weapon="pike", shield="hide"), "foot"),
     "Vanguard-Orcs": (os_(armor="iron", hat="warhelm", weapon="halberd", pauldrons=2), "foot"),
