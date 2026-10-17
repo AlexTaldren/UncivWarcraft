@@ -779,5 +779,48 @@
         ]
       }
     ]
+  },
+  {
+    "name": "The Ley Lines Swell",
+    "text": "Our Mana stores are brimming, and the ley lines beneath our cities hum with power. Our magi say such a surplus should be put to use before it slips away into the Nether.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "Our Mana stores are brimming, and the ley lines beneath our cities hum with power. Our magi say such a surplus should be put to use before it slips away into the Nether."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Channel it into research (-150 Mana, +Science)",
+        "uniques": [
+          "Instantly consumes [150] [Mana]",
+          "Only available <when above [149] [Mana]>",
+          "Gain [150]-[300] [Science]"
+        ]
+      },
+      {
+        "text": "Hold a festival of arcane lights (-200 Mana, 4-turn Golden Age)",
+        "uniques": [
+          "Instantly consumes [200] [Mana]",
+          "Only available <when above [199] [Mana]>",
+          "Empire enters a [4]-turn Golden Age"
+        ]
+      },
+      {
+        "text": "Bless the land (-150 Mana, +Culture and Faith)",
+        "uniques": [
+          "Instantly consumes [150] [Mana]",
+          "Only available <when above [149] [Mana]>",
+          "Gain [100] [Culture]",
+          "Gain [100] [Faith]"
+        ]
+      },
+      {
+        "text": "Keep the Mana in reserve",
+        "uniques": [
+          "[-90]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
   }
 ]

@@ -1930,11 +1930,12 @@
       "Provides [1] [Mana]"
     ],
     "culture": 1,
+    "happiness": 1,
     "replaces": "Temple",
     "uniqueTo": "Humans",
     "civilopediaText": [
       {
-        "text": "Bells ring out from these chapels in every human town, calling the faithful to the Holy Light. Provides more Faith and Culture than the Temple it replaces."
+        "text": "Bells ring out from these chapels in every human town, calling the faithful to the Holy Light. Provides more Faith and Culture than the Temple it replaces, and +1 Happiness."
       }
     ]
   },
@@ -2525,9 +2526,10 @@
     ],
     "requiredTech": "Arcane Science",
     "culture": 1,
+    "happiness": 1,
     "civilopediaText": [
       {
-        "text": "A slender spire of white stone and blue glass, home to the magisters of Quel'Thalas. +1 Culture."
+        "text": "A slender spire of white stone and blue glass, home to the magisters of Quel'Thalas. +1 Culture and +1 Happiness."
       }
     ],
     "replaces": "Mage Tower",
@@ -2566,9 +2568,10 @@
     "requiredTech": "Priesthood",
     "faith": 1,
     "food": 1,
+    "happiness": 1,
     "civilopediaText": [
       {
-        "text": "A lodge where tauren spirit walkers commune with the ancestors and the Earth Mother. +1 Faith and +1 Food."
+        "text": "A lodge where tauren spirit walkers commune with the ancestors and the Earth Mother. +1 Faith, +1 Food and +1 Happiness."
       }
     ],
     "replaces": "Herb Garden",
@@ -2727,9 +2730,10 @@
     ],
     "requiredTech": "Seafaring",
     "production": 1,
+    "happiness": 1,
     "civilopediaText": [
       {
-        "text": "The drydocks of the Proudmoore Admiralty, where the finest ships on Azeroth are built. +1 Production, and new ships start with 15 experience."
+        "text": "The drydocks of the Proudmoore Admiralty, where the finest ships on Azeroth are built. +1 Production, +1 Happiness, and new ships start with 15 experience."
       }
     ],
     "replaces": "Shipyard",

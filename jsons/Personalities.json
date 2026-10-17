@@ -29,8 +29,15 @@
       "Dominion": 1
     },
     "uniques": [
-      "[+20]% weight to [Chapel of the Light] for AI decisions",
-      "[+15]% weight to [Walls] for AI decisions"
+      "[+30]% weight to [Chapel of the Light] for AI decisions",
+      "[+15]% weight to [Walls] for AI decisions",
+      "[+20]% weight to [Fighting Pit] for AI decisions",
+      "[+20]% weight to [Arena] for AI decisions",
+      "[+50]% weight to [Footman] for AI decisions",
+      "[+50]% weight to [Paladin] for AI decisions",
+      "[+50]% weight to [Mage] for AI decisions",
+      "[+50]% weight to [Steam Tank] for AI decisions",
+      "[+50]% weight to [Knight of the Silver Hand] for AI decisions"
     ]
   },
   {
@@ -61,7 +68,10 @@
       "[+40]% weight to [Melee] for AI decisions",
       "[+25]% weight to [Mounted] for AI decisions",
       "[+25]% weight to [Barracks] for AI decisions",
-      "[-20]% weight to [Library] for AI decisions"
+      "[-20]% weight to [Library] for AI decisions",
+      "[+50]% weight to [Grunt] for AI decisions",
+      "[+50]% weight to [Wolf Rider] for AI decisions",
+      "[+50]% weight to [Raider] for AI decisions"
     ]
   },
   {
@@ -93,7 +103,11 @@
     "uniques": [
       "[+30]% weight to [Archery] for AI decisions",
       "[+25]% weight to [Temple] for AI decisions",
-      "[+20]% weight to [Storyteller's Circle] for AI decisions"
+      "[+20]% weight to [Storyteller's Circle] for AI decisions",
+      "[+50]% weight to [Huntress] for AI decisions",
+      "[+50]% weight to [Glaive Thrower] for AI decisions",
+      "[+50]% weight to [Mountain Giant] for AI decisions",
+      "[+50]% weight to [Wisp] for AI decisions"
     ]
   },
   {
@@ -112,7 +126,7 @@
     "commerce": 5,
     "diplomacy": 7,
     "loyal": 9,
-    "expansion": 5,
+    "expansion": 4,
     "priorities": {
       "Old Kingdoms": 7,
       "Blood and Thunder": 6,
@@ -126,7 +140,10 @@
       "[+30]% weight to [Firearm] for AI decisions",
       "[+30]% weight to [Siege] for AI decisions",
       "[+25]% weight to [Blacksmith] for AI decisions",
-      "[+20]% weight to [Walls] for AI decisions"
+      "[+20]% weight to [Walls] for AI decisions",
+      "[+50]% weight to [Ironforge Rifleman] for AI decisions",
+      "[+50]% weight to [Ram Rider] for AI decisions",
+      "[+50]% weight to [Steam Armor] for AI decisions"
     ]
   },
   {
@@ -159,7 +176,10 @@
       "[+40]% weight to [Library] for AI decisions",
       "[+40]% weight to [Arcane Sanctum] for AI decisions",
       "[+30]% weight to [Siege] for AI decisions",
-      "[-30]% weight to [Melee] for AI decisions"
+      "[-30]% weight to [Melee] for AI decisions",
+      "[+50]% weight to [Mechanostrider Rider] for AI decisions",
+      "[+50]% weight to [Gnomish Bombardier] for AI decisions",
+      "[+50]% weight to [Spider Tank] for AI decisions"
     ]
   },
   {
@@ -189,7 +209,12 @@
     },
     "uniques": [
       "[+30]% weight to [Temple] for AI decisions",
-      "[+20]% weight to [Melee] for AI decisions"
+      "[+20]% weight to [Melee] for AI decisions",
+      "[+20]% weight to [Fighting Pit] for AI decisions",
+      "[+20]% weight to [Arena] for AI decisions",
+      "[+50]% weight to [Tauren Warrior] for AI decisions",
+      "[+50]% weight to [Kodo Beast] for AI decisions",
+      "[+50]% weight to [Wind Rider] for AI decisions"
     ]
   },
   {
@@ -217,7 +242,10 @@
     },
     "uniques": [
       "[+25]% weight to [Archery] for AI decisions",
-      "[+25]% weight to [Shrine] for AI decisions"
+      "[+25]% weight to [Shrine] for AI decisions",
+      "[+50]% weight to [Headhunter] for AI decisions",
+      "[+50]% weight to [Batrider] for AI decisions",
+      "[+50]% weight to [Troll Berserker] for AI decisions"
     ]
   },
   {
@@ -236,7 +264,7 @@
     "commerce": 5,
     "diplomacy": 6,
     "loyal": 4,
-    "expansion": 5,
+    "expansion": 6,
     "priorities": {
       "Diplomacy": 8,
       "Arcane Inquiry": 7,
@@ -247,7 +275,10 @@
     },
     "uniques": [
       "[+30]% weight to [Storyteller's Circle] for AI decisions",
-      "[+30]% weight to [Arcane Sanctum] for AI decisions"
+      "[+30]% weight to [Arcane Sanctum] for AI decisions",
+      "[+50]% weight to [Spellbreaker] for AI decisions",
+      "[+50]% weight to [Blood Knight] for AI decisions",
+      "[+50]% weight to [Dragonhawk Rider] for AI decisions"
     ]
   },
   {
@@ -266,7 +297,7 @@
     "commerce": 5,
     "diplomacy": 7,
     "loyal": 8,
-    "expansion": 3,
+    "expansion": 5,
     "priorities": {
       "Old Kingdoms": 9,
       "Diplomacy": 7,
@@ -278,7 +309,12 @@
     },
     "uniques": [
       "[+40]% weight to [Archery] for AI decisions",
-      "[+25]% weight to [Library] for AI decisions"
+      "[+25]% weight to [Library] for AI decisions",
+      "[+20]% weight to [Fighting Pit] for AI decisions",
+      "[+20]% weight to [Arena] for AI decisions",
+      "[+50]% weight to [Farstrider] for AI decisions",
+      "[+50]% weight to [Elven Destroyer] for AI decisions",
+      "[+50]% weight to [Ranger-Lord] for AI decisions"
     ]
   },
   {
@@ -297,7 +333,7 @@
     "commerce": 5,
     "diplomacy": 8,
     "loyal": 7,
-    "expansion": 5,
+    "expansion": 6,
     "priorities": {
       "Devotion": 8,
       "Old Kingdoms": 7,
@@ -308,7 +344,10 @@
     "uniques": [
       "[+30]% weight to [Herb Garden] for AI decisions",
       "[+25]% weight to [Granary] for AI decisions",
-      "[-30]% weight to [Siege] for AI decisions"
+      "[-30]% weight to [Siege] for AI decisions",
+      "[+50]% weight to [Brewmaster] for AI decisions",
+      "[+50]% weight to [Shado-Pan Monk] for AI decisions",
+      "[+50]% weight to [Cloud Serpent Rider] for AI decisions"
     ]
   },
   {
@@ -337,7 +376,10 @@
     "uniques": [
       "[+30]% weight to [Melee] for AI decisions",
       "[+25]% weight to [Siege] for AI decisions",
-      "[+30]% weight to [Alchemy Lab] for AI decisions"
+      "[+30]% weight to [Alchemy Lab] for AI decisions",
+      "[+50]% weight to [Abomination] for AI decisions",
+      "[+50]% weight to [Meat Wagon] for AI decisions",
+      "[+50]% weight to [Deathstalker] for AI decisions"
     ]
   },
   {
@@ -368,7 +410,10 @@
     },
     "uniques": [
       "[+40]% weight to [Temple] for AI decisions",
-      "[+30]% weight to [Shrine] for AI decisions"
+      "[+30]% weight to [Shrine] for AI decisions",
+      "[+50]% weight to [Vindicator] for AI decisions",
+      "[+50]% weight to [Elekk Rider] for AI decisions",
+      "[+50]% weight to [Lightforged Warframe] for AI decisions"
     ]
   },
   {
@@ -398,7 +443,10 @@
     "uniques": [
       "[+40]% weight to [Market] for AI decisions",
       "[+40]% weight to [Bank] for AI decisions",
-      "[+30]% weight to [Siege] for AI decisions"
+      "[+30]% weight to [Siege] for AI decisions",
+      "[+50]% weight to [Goblin Shredder] for AI decisions",
+      "[+50]% weight to [Goblin Sapper] for AI decisions",
+      "[+50]% weight to [Goblin Zeppelin] for AI decisions"
     ]
   },
   {
@@ -428,7 +476,10 @@
     },
     "uniques": [
       "[+30]% weight to [Melee] for AI decisions",
-      "[+20]% weight to [Walls] for AI decisions"
+      "[+20]% weight to [Walls] for AI decisions",
+      "[+50]% weight to [Worgen Stalker] for AI decisions",
+      "[+50]% weight to [Gilnean Rifleman] for AI decisions",
+      "[+50]% weight to [Harvest Golem] for AI decisions"
     ]
   },
   {
@@ -458,7 +509,12 @@
     "uniques": [
       "[+40]% weight to [Melee] for AI decisions",
       "[+30]% weight to [Siege] for AI decisions",
-      "[+20]% weight to [Walls] for AI decisions"
+      "[+20]% weight to [Walls] for AI decisions",
+      "[+50]% weight to [Ghoul] for AI decisions",
+      "[+50]% weight to [Acolyte] for AI decisions",
+      "[+50]% weight to [Death Knight] for AI decisions",
+      "[+50]% weight to [Frost Wyrm] for AI decisions",
+      "[+50]% weight to [Crypt Fiend] for AI decisions"
     ]
   },
   {
@@ -471,13 +527,13 @@
     "culture": 4,
     "happiness": 5,
     "faith": 5,
-    "military": 7,
-    "aggressive": 5,
-    "declareWar": 4,
+    "military": 6,
+    "aggressive": 3,
+    "declareWar": 2,
     "commerce": 5,
     "diplomacy": 6,
-    "loyal": 7,
-    "expansion": 5,
+    "loyal": 9,
+    "expansion": 4,
     "priorities": {
       "Old Kingdoms": 7,
       "Blood and Thunder": 7,
@@ -490,7 +546,9 @@
     "uniques": [
       "[+35]% weight to [Siege] for AI decisions",
       "[+25]% weight to [Blacksmith] for AI decisions",
-      "[+15]% weight to [Walls] for AI decisions"
+      "[+15]% weight to [Walls] for AI decisions",
+      "[+50]% weight to [Fireguard] for AI decisions",
+      "[+50]% weight to [Dark Iron Golem] for AI decisions"
     ]
   },
   {
@@ -522,7 +580,11 @@
     "uniques": [
       "[+45]% weight to [Water] for AI decisions",
       "[+30]% weight to [Shipyard] for AI decisions",
-      "[+25]% weight to [Lighthouse] for AI decisions"
+      "[+25]% weight to [Lighthouse] for AI decisions",
+      "[+20]% weight to [Fighting Pit] for AI decisions",
+      "[+20]% weight to [Arena] for AI decisions",
+      "[+50]% weight to [Kul Tiran Man-o'-War] for AI decisions",
+      "[+50]% weight to [Admiralty Gunner] for AI decisions"
     ]
   },
   {
@@ -553,7 +615,9 @@
     "uniques": [
       "[+30]% weight to [Market] for AI decisions",
       "[+30]% weight to [Temple] for AI decisions",
-      "[+20]% weight to [Mounted] for AI decisions"
+      "[+20]% weight to [Mounted] for AI decisions",
+      "[+50]% weight to [Raptor Rider] for AI decisions",
+      "[+50]% weight to [Direhorn Rider] for AI decisions"
     ]
   }
 ]

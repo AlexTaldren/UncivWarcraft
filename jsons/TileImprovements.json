@@ -609,7 +609,7 @@
     "terrainsCanBeBuiltOn": [
       "Hill"
     ],
-    "production": 2,
+    "production": 1,
     "turnsToBuild": 7,
     "techRequired": "Mining",
     "uniques": [
@@ -622,7 +622,7 @@
     "uniqueTo": "Dwarves",
     "civilopediaText": [
       {
-        "text": "Dwarven mines go deeper than anyone else's, down to the veins of the Titans' forge. +1 Production and +1 Gold over a normal Mine."
+        "text": "Dwarven mines go deeper than anyone else's, down to the veins of the Titans' forge. +1 Gold over a normal Mine."
       }
     ]
   }

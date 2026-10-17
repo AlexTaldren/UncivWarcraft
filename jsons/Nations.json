@@ -77,7 +77,8 @@
       "Triggers a [The Blue Dragonflight] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [50]> <hidden from users>",
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
-      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>"
+      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>"
     ],
     "cities": [
       "Stormwind",
@@ -172,6 +173,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+10]% [Production] [in all cities] <when at war>",
       "[+10]% Strength <for [Military] units> <when at war>",
       "[-10]% [Culture] [in all cities] <when not at war>"
@@ -260,6 +262,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Food] from [Forest] tiles [in all cities]",
       "[+1 Culture] from [Ancient Woods] tiles [in all cities]"
     ],
@@ -347,6 +350,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Science, +1 Culture] from [Titan Ruins] tiles [in all cities]"
     ],
     "cities": [
@@ -434,7 +438,8 @@
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
       "Triggers a [A Bold Experiment] event <upon turn start> <every [3] turns> <with [3]% chance> <after turn number [20]> <hidden from users>",
-      "Triggers a [Explosive Prototype] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [30]> <hidden from users>"
+      "Triggers a [Explosive Prototype] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>"
     ],
     "cities": [
       "Gnomeregan",
@@ -510,8 +515,9 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Faith] from [Plains] tiles without [Farm] [in all cities]",
-      "[+1 Food, +1 Culture] from [Hill] tiles without [Mine] [in all cities]"
+      "[+1 Culture] from [Hill] tiles without [Mine] [in all cities]"
     ],
     "cities": [
       "Thunder Bluff",
@@ -593,6 +599,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Faith] from [Jungle] tiles [in all cities]",
       "May choose [1] additional [Follower] beliefs when [founding] a religion"
     ],
@@ -678,7 +685,9 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
-      "[-1 Happiness] [in all cities] <starting from the [Age of the Third War]> <if [Sunwell Plateau] is not constructed by anybody> <without [Arcane Crystals]>"
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
+      "[-1 Happiness] [in all cities] <starting from the [Age of the Third War]> <if [Sunwell Plateau] is not constructed by anybody> <without [Arcane Crystals]>",
+      "[+1 Happiness] from every [Magisters' Sanctum]"
     ],
     "cities": [
       "Silvermoon",
@@ -759,7 +768,9 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
-      "[+25]% Strength for cities"
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
+      "[+25]% Strength for cities",
+      "[+10]% growth [in all cities]"
     ],
     "cities": [
       "Quel'Danas",
@@ -834,7 +845,9 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
-      "Triggers a [The Wandering Isle's Choice] event <upon entering the [Age of the Dark Portal]> <hidden from users>"
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
+      "Triggers a [The Wandering Isle's Choice] event <upon entering the [Age of the Dark Portal]> <hidden from users>",
+      "Enables embarkation for land units"
     ],
     "cities": [
       "Temple of Five Dawns",
@@ -915,6 +928,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Food, +1 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
       "[+10] HP when healing <for [Land] units> <in [Plagued Land] tiles>"
     ],
@@ -997,8 +1011,8 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "Free [Settler] appears <upon founding a city> <before turn number [4]>",
-      "[-1 Production] [in capital]",
       "[+25]% Strength <for [Military] units> <vs [Barbarian] units>",
       "[+1] Movement <for [Religious] units>"
     ],
@@ -1078,6 +1092,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[Gold] cost of purchasing items in cities [-20]%",
       "[-10]% [Production] [in all cities]",
       "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately"
@@ -1155,7 +1170,8 @@
       "Triggers a [The Blue Dragonflight] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [50]> <hidden from users>",
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
-      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>"
+      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>"
     ],
     "cities": [
       "Gilneas",
@@ -1231,6 +1247,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[-50]% Food consumption by [Population] [in all cities]",
       "[+2 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
       "[1] population in a random city <upon defeating a [Military] unit> <with [50]% chance>",
@@ -1293,9 +1310,9 @@
     "uniques": [
       "Alliance",
       "[+10]% Strength <for [Military] units> <vs [Horde] units>",
-      "[+2 Production, +1 Gold] from [Molten Fields] tiles [in all cities]",
+      "[+1 Gold] from [Molten Fields] tiles [in all cities]",
       "[+20]% Production when constructing [Siege] units [in all cities]",
-      "[+15]% Strength <for [Siege] units>",
+      "[+10]% Strength <for [Siege] units>",
       "Triggers a [The Darkmoon Faire] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
       "Triggers a [Plague of Undeath] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
       "Triggers a [Legion Incursion] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
@@ -1319,6 +1336,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Production] from [{Hill} {Mine}] tiles [in all cities]"
     ],
     "cities": [
@@ -1402,6 +1420,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1] Sight <for [Water] units>",
       "[+25]% Production when constructing [Water] units [in all cities]"
     ],
@@ -1488,6 +1507,7 @@
       "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
       "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
       "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [The Ley Lines Swell] event <upon turn start> <every [5] turns> <when above [299] [Mana]> <hidden from users>",
       "[+1 Faith, +1 Culture] from [{Jungle} {Camp}] tiles [in all cities]",
       "[+10]% Strength <for [Mounted] units>"
     ],
