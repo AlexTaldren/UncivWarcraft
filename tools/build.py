@@ -522,6 +522,10 @@ for name, fn in legion.SPRITES.items():
         path = os.path.join(OUT, "Images.WarcraftMap", late_units.P, name + suf + ".png")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         im.save(path)
+# Painted-style Human and Orc sprites (closer to the Warcraft look); drawn last so they win
+import wc_style_units
+n = wc_style_units.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
+print("painted Human/Orc sprites:", n)
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)
