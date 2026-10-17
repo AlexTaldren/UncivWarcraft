@@ -364,7 +364,8 @@ RECIPES = {
     "Mountain Giant": ("Night Elves", mountain_giant, FOOT),
     "Wisp": ("Night Elves", scaled(wisp, 1.7), CIV),
     # Wisps are the Night Elves' builders, so their Peasant art is the Wisp too (user decision).
-    "Peasant-Night Elves": ("Night Elves", scaled(wisp, 1.7), CIV),
+    # (moved right so its trailing light stays on the civilian's side of the tile)
+    "Peasant-Night Elves": ("Night Elves", lambda c, fx, fy, u: wisp(c, fx + 34 * u, fy, u * 1.7), CIV),
     "Malfurion Stormrage": ("Night Elves", ctx(hr(robe_col=(70, 110, 70), robe_layer="base", hat="hair", hair=(40, 120, 90),
                                                    prop="staff", glow=(140, 255, 140)), face=face_malfurion), CIV),
     "Cenarion Druid": ("Night Elves", hr(robe_col=(90, 110, 60), robe_layer="base", hat="hair", prop="staff", glow=(150, 255, 150)), CIV),
