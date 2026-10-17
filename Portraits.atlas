@@ -1,0 +1,111 @@
+
+Portraits.png
+size: 1024, 512
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+LeaderIcons/Anasterian Sunstrider
+  rotate: false
+  xy: 4, 16
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Anduin Wrynn
+  rotate: false
+  xy: 532, 280
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Arthas Menethil
+  rotate: false
+  xy: 4, 154
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Cairne Bloodhoof
+  rotate: false
+  xy: 142, 16
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Emperor Shaohao
+  rotate: false
+  xy: 670, 280
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Gelbin Mekkatorque
+  rotate: false
+  xy: 280, 16
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Genn Greymane
+  rotate: false
+  xy: 808, 280
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Jastor Gallywix
+  rotate: false
+  xy: 532, 142
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Lor'themar Theron
+  rotate: false
+  xy: 670, 142
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Magni Bronzebeard
+  rotate: false
+  xy: 808, 142
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Sylvanas Windrunner
+  rotate: false
+  xy: 268, 154
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Thrall
+  rotate: false
+  xy: 418, 4
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Tyrande Whisperwind
+  rotate: false
+  xy: 556, 4
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Velen
+  rotate: false
+  xy: 694, 4
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+LeaderIcons/Vol'jin
+  rotate: false
+  xy: 832, 4
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
