@@ -841,7 +841,7 @@ X_SHIFT = {"Grunt": -7, "Mage": -6}
 
 
 def render(name):
-    from paint import Canvas
+    from pixelize import make_canvas as Canvas
     fn, slot = SPRITES[name]
     (w, h), fx, fy = SLOTS[slot]
     c = Canvas(w, h)

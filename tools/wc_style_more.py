@@ -838,7 +838,7 @@ def render(name, ref_path):
     """Draw recipe `name` on a 2x copy of the reference sprite's canvas, feet where the
     reference figure stands and sized to match it."""
     from PIL import Image
-    from paint import Canvas
+    from pixelize import make_canvas as Canvas
     draw, arch = RECIPES[name]
     ref = Image.open(ref_path)
     w, h = ref.size
