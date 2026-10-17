@@ -300,7 +300,20 @@ for i, p in enumerate(PS.HERO_PROMOTIONS):
     files["UnitPromotions"].append(p)
 files["UnitPromotions"] += [dict(p) for p in PS.TRAVEL_PROMOTIONS]
 
-# buildings: Inn, Flight Master, the Pandaren paths; portals in Mage Towers; Mana
+# cleansing: only Clerics (and each race's own version) can remove plague and fel
+files["Units"].append(copy.deepcopy(PS.CLERIC))
+for race, (cname, clore) in PS.CLERICS.items():
+    c = copy.deepcopy(PS.CLERIC)
+    c.update(name=cname, replaces="Cleric", uniqueTo=race)
+    c["uniques"] = [q for q in c["uniques"] if not q.startswith("Unavailable")]
+    c["civilopediaText"] = [{"text": clore}, PS.CLERIC["civilopediaText"][1]]
+    files["Units"].append(c)
+WORKER_FILTER = "Can build [{Land} %s] improvements on tiles" % " ".join("{non-[%s]}" % t for t in PS.CORRUPT_TILES)
+for u in files["Units"]:
+    if "Can build [Land] improvements on tiles" in u.get("uniques", []):
+        u["uniques"] = [WORKER_FILTER if q == "Can build [Land] improvements on tiles" else q for q in u["uniques"]]
+
+# buildings: the Pandaren paths; portals in Mage Towers; Mana
 files["Buildings"] += copy.deepcopy(PS.BUILDINGS)
 files["TileResources"].append(dict(PS.MANA))
 for b in files["Buildings"]:

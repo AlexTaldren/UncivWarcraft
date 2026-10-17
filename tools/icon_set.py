@@ -1180,6 +1180,8 @@ def write_all(images_dir):
               ("UnitPromotionIcons", PROMOTIONS, (255, 255, 255)), ("PolicyBranchIcons", BRANCHES, (255, 255, 255)))
     import wc_renames as R, race_units as RU, wc_playstyles as PS
     heroes = {h[0]: ("crown", PS.HERO_ICON_BADGE[race]) for race, h in PS.HEROES.items()}
+    heroes["Cleric"] = PS.ICONS_CLERIC
+    heroes.update({c[0]: (PS.ICONS_CLERIC, PS.HERO_ICON_BADGE[race]) for race, c in PS.CLERICS.items()})
     more = {"UnitIcons": {**RU.ICONS_UNITS, **PS.ICONS_UNITS, **heroes},
             "BuildingIcons": {**RU.ICONS_BUILDINGS, **PS.ICONS_BUILDINGS},
             "ImprovementIcons": PS.ICONS_IMPROVEMENTS, "ResourceIcons": PS.ICONS_RESOURCES,

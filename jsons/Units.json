@@ -5,7 +5,7 @@
     "movement": 2,
     "requiredTech": "Farming",
     "uniques": [
-      "Can build [Land] improvements on tiles",
+      "Can build [{Land} {non-[Plagued Land]} {non-[Fel-Scorched Land]}] improvements on tiles",
       "Automation is a primary action"
     ],
     "cost": 70,
@@ -2066,7 +2066,7 @@
     "movement": 3,
     "requiredTech": "Farming",
     "uniques": [
-      "Can build [Land] improvements on tiles",
+      "Can build [{Land} {non-[Plagued Land]} {non-[Fel-Scorched Land]}] improvements on tiles",
       "Automation is a primary action",
       "[+1] Sight"
     ],
@@ -2521,7 +2521,7 @@
     "movement": 2,
     "requiredTech": "Farming",
     "uniques": [
-      "Can build [Land] improvements on tiles",
+      "Can build [{Land} {non-[Plagued Land]} {non-[Fel-Scorched Land]}] improvements on tiles",
       "Automation is a primary action"
     ],
     "cost": 70,
@@ -2636,7 +2636,7 @@
     "movement": 2,
     "requiredTech": "Farming",
     "uniques": [
-      "Can build [Land] improvements on tiles",
+      "Can build [{Land} {non-[Plagued Land]} {non-[Fel-Scorched Land]}] improvements on tiles",
       "Automation is a primary action",
       "Double movement in [Forest]"
     ],
@@ -3139,5 +3139,368 @@
         "text": "A hero of the Scourge: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
       }
     ]
+  },
+  {
+    "name": "Cleric",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Unavailable <for [Undead] Civilizations>",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Priests, druids and shamans who cleanse land corrupted by the Scourge's plague or the Legion's fel fire, restoring it to its natural state."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ]
+  },
+  {
+    "name": "Northshire Cleric",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Clerics of Northshire Abbey, who carry the Holy Light into blighted fields."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Humans"
+  },
+  {
+    "name": "Dwarven Priest",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Priests of Ironforge who call on the Light and the earth to heal the land."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Dwarves"
+  },
+  {
+    "name": "Decontaminator",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gnomish specialists in radiation suits, veterans of cleaning up Gnomeregan. They treat plague like any other contamination."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Gnomes"
+  },
+  {
+    "name": "Cenarion Druid",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Druids of the Cenarion Circle who coax life back into dead soil."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Anchorite",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Draenei anchorites who channel the Light of the naaru to purify corrupted ground."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Draenei"
+  },
+  {
+    "name": "Harvest Witch",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gilnean harvest witches who know the old ways of the land and its healing."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Worgen"
+  },
+  {
+    "name": "Lightwarden",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightwardens of Quel'Thalas who burn away corruption with holy light."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "High Elves"
+  },
+  {
+    "name": "Sunfury Priest",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Priests of the sun who purify the land with the Light of the Sunwell."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Blood Elves"
+  },
+  {
+    "name": "Earthen Shaman",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shamans who beg the elements to forgive the land and heal it."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Orcs"
+  },
+  {
+    "name": "Witch Doctor",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Troll witch doctors whose voodoo can drive the sickness out of the soil."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Trolls"
+  },
+  {
+    "name": "Sunwalker",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tauren paladins of An'she, the Sun, who scour corruption from the Earth Mother's body."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Tauren"
+  },
+  {
+    "name": "Mistweaver",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pandaren monks whose healing mists restore balance to the land."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Pandaren"
+  },
+  {
+    "name": "Hazmat Crew",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Goblin cleanup crews in rubber suits. They'll scrub anything off the ground, for a fee."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Goblins"
   }
 ]

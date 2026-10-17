@@ -2338,36 +2338,5 @@
         "text": "The Huojin follow Ji Firepaw's path of bold action, and fight beside the Horde. +15% Strength when attacking, +10% against the Alliance, +2 Production."
       }
     ]
-  },
-  {
-    "name": "Inn",
-    "requiredTech": "Coinage",
-    "cost": 90,
-    "gold": 1,
-    "happiness": 1,
-    "maintenance": 1,
-    "uniques": [
-      "All newly-trained [Land] units [in this city] receive the [Hearthstone] promotion"
-    ],
-    "civilopediaText": [
-      {
-        "text": "A warm inn and a hearth to come home to. Units trained in this city carry a Hearthstone and can return to your cities from anywhere in your lands. +1 Gold, +1 Happiness."
-      }
-    ]
-  },
-  {
-    "name": "Flight Master",
-    "requiredTech": "Animal War Training",
-    "cost": 120,
-    "maintenance": 1,
-    "uniques": [
-      "All newly-trained [Land] units [in this city] receive the [Flight Path] promotion",
-      "[+1] Movement <for [Land] units> <in [Friendly Land] tiles>"
-    ],
-    "civilopediaText": [
-      {
-        "text": "A flight master's roost of gryphons, wyverns or hippogryphs. Your land units move 1 tile farther in your own lands, and units trained here can fly between your cities."
-      }
-    ]
   }
 ]

@@ -61,5 +61,29 @@ public class PlayCheck {
             }
             System.out.println(sb);
         }
+        // cleansing: can a Peasant / Cleric build the removal on a plagued tile, and a Farm elsewhere?
+        Civilization hum = null;
+        for (Civilization c : gi.getCivilizations()) if (c.getCivName().equals("Humans")) hum = c;
+        com.unciv.logic.map.tile.Tile cap = hum.getCities().isEmpty() ? null : hum.getCities().get(0).getCenterTile();
+        com.unciv.logic.map.tile.Tile start = null;
+        for (MapUnit u : kotlin.sequences.SequencesKt.asIterable(hum.getUnits().getCivUnits())) { start = u.getCurrentTile(); break; }
+        com.unciv.logic.map.tile.Tile plain = null, plague = null;
+        for (com.unciv.logic.map.tile.Tile t : kotlin.sequences.SequencesKt.asIterable(start.getTilesInDistance(3))) {
+            String b = t.getBaseTerrain();
+            if (t != start && (b.equals("Grassland") || b.equals("Plains") || b.equals("Tundra")) && t.getTerrainFeatures().isEmpty()) {
+                if (plain == null) plain = t; else if (plague == null) plague = t;
+            }
+        }
+        plague.addTerrainFeature("Plagued Land");
+        hum.getTech().addTechnology("Priesthood", false);
+        hum.getTech().addTechnology("Pottery", false);
+        MapUnit peasant = hum.getUnits().placeUnitNearTile(plain.getPosition(), "Peasant");
+        MapUnit cleric = hum.getUnits().placeUnitNearTile(plague.getPosition(), "Northshire Cleric");
+        var rem = r.getTileImprovements().get("Remove Plagued Land");
+        var farm = r.getTileImprovements().get("Farm");
+        System.out.println("CLEANSE peasant on plague: " + peasant.canBuildImprovement(rem, plague)
+            + " | cleric on plague: " + cleric.canBuildImprovement(rem, plague)
+            + " | peasant farm on plain: " + peasant.canBuildImprovement(farm, plain)
+            + " | cleric farm on plain: " + cleric.canBuildImprovement(farm, plain));
     }
 }

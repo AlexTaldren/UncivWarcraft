@@ -1,7 +1,7 @@
 """Warcraft terrain features and natural landmarks added to the ruleset.
 
 Features are placed by the Azeroth map builder (azeroth.py); none of them generate on
-random maps. Fel and plague can be cleansed by Peasants ("Remove ..." improvements).
+random maps. Fel and plague can be cleansed by Clerics ("Remove ..." improvements).
 """
 NO_RANDOM = "Doesn't generate naturally"
 LAND = ["Grassland", "Plains", "Desert", "Tundra", "Snow", "Hill"]
@@ -11,12 +11,12 @@ FEATURES = [
      "movementCost": 1, "defenceBonus": -0.1, "unbuildable": True,
      "occursOn": ["Grassland", "Plains", "Desert", "Tundra", "Hill"],
      "uniques": [NO_RANDOM, "Units ending their turn on this terrain take [10] damage"],
-     "civilopediaText": [{"text": "Earth scarred by the Burning Legion's fel magic, where green fire still smoulders in the cracks. Rich in raw power but poisonous to crops, and it burns any unit that lingers. Peasants can cleanse it once your people have learned Priesthood."}]},
+     "civilopediaText": [{"text": "Earth scarred by the Burning Legion's fel magic, where green fire still smoulders in the cracks. Rich in raw power but poisonous to crops, and it burns any unit that lingers. Clerics (bought with Faith once your people have learned Priesthood) can cleanse it."}]},
     {"name": "Plagued Land", "type": "TerrainFeature", "food": -1, "production": -1,
      "movementCost": 1, "defenceBonus": -0.1, "unbuildable": True,
      "occursOn": ["Grassland", "Plains", "Tundra", "Snow", "Hill"],
      "uniques": [NO_RANDOM],
-     "civilopediaText": [{"text": "Ground blighted by the Scourge's plague of undeath: grey soil, bones and bubbling slime. Little grows here until it is cleansed. Peasants can cleanse it once your people have learned Priesthood."}]},
+     "civilopediaText": [{"text": "Ground blighted by the Scourge's plague of undeath: grey soil, bones and bubbling slime. Little grows here until it is cleansed. Clerics (bought with Faith once your people have learned Priesthood) can cleanse it."}]},
     {"name": "Ancient Woods", "type": "TerrainFeature", "food": 1, "production": 1, "culture": 1,
      "overrideStats": True, "movementCost": 2, "defenceBonus": 0.25, "unbuildable": True,
      "occursOn": ["Grassland", "Plains", "Tundra", "Hill"],
@@ -44,7 +44,7 @@ FEATURES = [
      "civilopediaText": [{"text": "Broken pillars and rune-carved stone left by the titans who shaped Azeroth, as at Uldaman, Uldum and Ulduar. Their secrets reward the curious."}]},
 ]
 
-# Peasants can cleanse fel and plague. Copied from "Remove Blighted Land" in build.py.
+# Clerics can cleanse fel and plague. Copied from "Remove Blighted Land" in build.py.
 CLEANSE = {"Fel-Scorched Land": ("Priesthood", 5), "Plagued Land": ("Priesthood", 4)}
 
 WONDERS = [

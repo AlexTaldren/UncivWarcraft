@@ -119,29 +119,52 @@ BUILDINGS = [
      "uniques": ["Unbuildable", "[+15]% Strength <for [Military] units> <when attacking>",
                  "[+10]% Strength <for [Military] units> <vs [Alliance] units>"],
      "civilopediaText": _lore("The Huojin follow Ji Firepaw's path of bold action, and fight beside the Horde. +15% Strength when attacking, +10% against the Alliance, +2 Production.")},
-    {"name": "Inn", "requiredTech": "Coinage", "cost": 90, "gold": 1, "happiness": 1, "maintenance": 1,
-     "uniques": ["All newly-trained [Land] units [in this city] receive the [Hearthstone] promotion"],
-     "civilopediaText": _lore("A warm inn and a hearth to come home to. Units trained in this city carry a Hearthstone and can return to your cities from anywhere in your lands. +1 Gold, +1 Happiness.")},
-    {"name": "Flight Master", "requiredTech": "Animal War Training", "cost": 120, "maintenance": 1,
-     "uniques": ["All newly-trained [Land] units [in this city] receive the [Flight Path] promotion",
-                 "[+1] Movement <for [Land] units> <in [Friendly Land] tiles>"],
-     "civilopediaText": _lore("A flight master's roost of gryphons, wyverns or hippogryphs. Your land units move 1 tile farther in your own lands, and units trained here can fly between your cities.")},
 ]
 MAGE_TOWER_PORTALS = "All newly-trained [Military] units [in this city] receive the [Portal Attunement] promotion"
 
+PORTAL_MANA = 10
 TRAVEL_PROMOTIONS = [
-    {"name": "Hearthstone", "uniques": ["May Paradrop to [{your} {City center}] tiles up to [10] tiles away <in [Friendly Land] tiles>"],
-     "civilopediaText": _lore("This unit carries a Hearthstone from the inn where it was trained: it can return to one of your cities up to 10 tiles away from anywhere in your lands.")},
-    {"name": "Portal Attunement", "uniques": ["May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles>"],
-     "civilopediaText": _lore("Attuned to the city's Mage Tower: from one of your cities, this unit can step through a portal to another up to 20 tiles away.")},
-    {"name": "Flight Path", "uniques": ["May Paradrop to [{your} {City center}] tiles up to [14] tiles away <in [City center] tiles>"],
-     "civilopediaText": _lore("This unit knows the flight paths: from one of your cities it can fly to another up to 14 tiles away.")},
+    {"name": "Portal Attunement",
+     "uniques": ["May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles> <costs [%d] [Mana]>" % PORTAL_MANA],
+     "civilopediaText": _lore("Attuned to the Mage Tower of the city where it was trained: from one of your cities, this unit can step through a portal to another of your cities up to 20 tiles away. Each portal costs %d Mana." % PORTAL_MANA)},
 ]
+
+# ---------------------------------------------------------------- cleansing (v0.13)
+# Corrupted land (Plagued Land, Fel-Scorched Land) can only be cleansed by a priestly unit,
+# bought with Faith. Peasants and other workers can no longer remove it.
+CLEANSE = ["Remove Plagued Land", "Remove Fel-Scorched Land"]
+CORRUPT_TILES = ["Plagued Land", "Fel-Scorched Land"]
+CLERIC = {"name": "Cleric", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Priesthood",
+          "uniques": ["Can build [Remove Plagued Land] improvements on tiles",
+                      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+                      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+                      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+                      "Unbuildable", "Can be purchased with [Faith] [in all cities]",
+                      "Unavailable <for [Undead] Civilizations>", "Automation is a primary action"],
+          "civilopediaText": _lore("Priests, druids and shamans who cleanse land corrupted by the Scourge's plague or the Legion's fel fire, restoring it to its natural state.",
+                                   "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them.")}
+# race -> (name, lore); each replaces the Cleric for that race
+CLERICS = {
+    "Humans": ("Northshire Cleric", "Clerics of Northshire Abbey, who carry the Holy Light into blighted fields."),
+    "Dwarves": ("Dwarven Priest", "Priests of Ironforge who call on the Light and the earth to heal the land."),
+    "Gnomes": ("Decontaminator", "Gnomish specialists in radiation suits, veterans of cleaning up Gnomeregan. They treat plague like any other contamination."),
+    "Night Elves": ("Cenarion Druid", "Druids of the Cenarion Circle who coax life back into dead soil."),
+    "Draenei": ("Anchorite", "Draenei anchorites who channel the Light of the naaru to purify corrupted ground."),
+    "Worgen": ("Harvest Witch", "Gilnean harvest witches who know the old ways of the land and its healing."),
+    "High Elves": ("Lightwarden", "Lightwardens of Quel'Thalas who burn away corruption with holy light."),
+    "Blood Elves": ("Sunfury Priest", "Priests of the sun who purify the land with the Light of the Sunwell."),
+    "Orcs": ("Earthen Shaman", "Shamans who beg the elements to forgive the land and heal it."),
+    "Trolls": ("Witch Doctor", "Troll witch doctors whose voodoo can drive the sickness out of the soil."),
+    "Tauren": ("Sunwalker", "Tauren paladins of An'she, the Sun, who scour corruption from the Earth Mother's body."),
+    "Pandaren": ("Mistweaver", "Pandaren monks whose healing mists restore balance to the land."),
+    "Goblins": ("Hazmat Crew", "Goblin cleanup crews in rubber suits. They'll scrub anything off the ground, for a fee."),
+}
+ICONS_CLERIC = "hand_light"
 
 # ---------------------------------------------------------------- Mana
 MANA = {"name": "Mana", "resourceType": "Strategic",
         "uniques": ["Stockpiled", "Cannot be traded"],
-        "civilopediaText": _lore("Arcane energy gathered by your mages and stored for spellcraft. Arcane Sanctums, Mage Towers and Magisters' Sanctums make Mana every turn; mages, arcane missiles and Mana Bombs spend it.")}
+        "civilopediaText": _lore("Arcane energy gathered by your mages and stored for spellcraft. Arcane Sanctums, Mage Towers and Magisters' Sanctums make Mana every turn; mages, arcane missiles, Mana Bombs and Mage Tower portals spend it.")}
 MANA_SOURCES = {"Arcane Sanctum": 1, "Mage Tower": 2, "Magisters' Sanctum": 2}
 MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihilator": 60}
 
@@ -220,15 +243,13 @@ HERO_PROMO_LORE = {
 
 # ---------------------------------------------------------------- icons
 ICONS_UNITS = {"Wisp": ("sparkle", "leaf"), "Gilnean Hunter": ("bow", "wolf"), "Worgen Ravager": ("wolf", "fist")}
-ICONS_BUILDINGS = {"Tushui Monastery": ("pagoda", "shield"), "Huojin Training Hall": ("pagoda", "flame"),
-                   "Inn": ("hut", "lantern"), "Flight Master": ("gryphon", "feather_plume")}
+ICONS_BUILDINGS = {"Tushui Monastery": ("pagoda", "shield"), "Huojin Training Hall": ("pagoda", "flame")}
 ICONS_IMPROVEMENTS = {"Spread Blight": ("skull", "wave"), "Deep Mine": ("pick", "gem")}
 ICONS_RESOURCES = {"Mana": ("orb", "sparkle")}
 ICONS_PROMOTIONS = {"Hero's Might": ("crown", "sword"), "Commanding Presence": ("crown", "banner"),
                     "Second Wind": ("crown", "heart"), "Battle-Hardened": ("crown", "shield"),
                     "Swift Strider": ("crown", "boot"), "Legend of Azeroth": ("crown", "star"),
-                    "Hearthstone": ("hut", "orb"), "Portal Attunement": ("portal", "orb"),
-                    "Flight Path": ("gryphon", "compass")}
+                    "Portal Attunement": ("portal", "orb")}
 HERO_ICON_BADGE = {"Humans": "hammer", "Orcs": "axe", "Night Elves": "leaf", "Dwarves": "hammer", "Gnomes": "gear",
                    "Tauren": "totem", "Trolls": "mask", "Blood Elves": "flame", "High Elves": "bow",
                    "Pandaren": "chalice", "Forsaken": "skull", "Draenei": "naaru", "Goblins": "bomb",

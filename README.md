@@ -41,7 +41,9 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 
 **Heroes:** every race can field one hero, as in Warcraft III: Uther the Lightbringer, Grom Hellscream, Malfurion Stormrage, Muradin Bronzebeard, Kelsey Steelspark, Baine Bloodhoof, Rokhan, Kael'thas Sunstrider, Alleria Windrunner, Chen Stormstout, Nathanos Blightcaller, Maraad, Gazlowe, Darius Crowley and Kel'Thuzad. Heroes inspire nearby troops, grow stronger with the ages and have their own promotions.
 
-**Travel and magic:** units trained in a city with an **Inn** carry a Hearthstone home; **Mage Towers** attune units to portals between your cities; a **Flight Master** speeds land units through your lands and opens flight paths. **Mana** is gathered by Arcane Sanctums and Mage Towers and spent on mages, arcane missiles and Mana Bombs.
+**Magic and travel:** **Mana** is gathered by Arcane Sanctums and Mage Towers and spent on mages, arcane missiles, Mana Bombs and portals: units trained in a city with a **Mage Tower** can step through a portal between your cities for 10 Mana.
+
+**Cleansing the land:** Plagued Land and Fel-Scorched Land can only be cleansed by a **Cleric**, bought with Faith. Every living race has its own: Northshire Cleric, Dwarven Priest, Decontaminator (Gnomes), Cenarion Druid, Anchorite, Harvest Witch, Lightwarden, Sunfury Priest, Earthen Shaman, Witch Doctor, Sunwalker, Mistweaver and the Goblins' Hazmat Crew. The undead don't cleanse.
 
 **World threats:** the Scourge marches in the Age of the Lich King, the Legion invades in the Age of the Legion, and the Old Gods whisper in the last ages. The red, blue, bronze, green and black dragonflights may visit with gifts or schemes.
 
@@ -64,8 +66,8 @@ Each has its own map sprite and icon.
 **Azeroth world maps:** Kalimdor, the Eastern Kingdoms and Northrend, with every major zone in its place (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown and 50+ more), mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles and the Wandering Isle. Two sizes: **Azeroth Large** (144 × 88, preselected, room to expand) and **Azeroth** (104 × 64, faster on phones). Each race starts at its capital: Stormwind, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon, Quel'Danas, the Temple of Five Dawns on the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor and Gilneas. City-states sit at their real locations.
 
 **Warcraft terrain:** seven special tile types, placed where they belong:
-- *Fel-Scorched Land* (Felwood, Blasted Lands): +2 Production, -1 Food; units ending a turn there take 10 damage. Peasants can cleanse it after Priesthood.
-- *Plagued Land* (the Plaguelands, Ghostlands, Icecrown, Dragonblight, Zul'Drak): -1 Food, -1 Production until cleansed.
+- *Fel-Scorched Land* (Felwood, Blasted Lands): +2 Production, -1 Food; units ending a turn there take 10 damage. Clerics can cleanse it after Priesthood.
+- *Plagued Land* (the Plaguelands, Ghostlands, Icecrown, Dragonblight, Zul'Drak): -1 Food, -1 Production until a Cleric cleanses it.
 - *Ancient Woods* (Ashenvale, Darkshore, Teldrassil, Moonglade, Hyjal, Feralas, Azshara): night elf forest, +1 Culture, can't be cut down.
 - *Bamboo Grove* (the Wandering Isle): 2 Food, 1 Production.
 - *Molten Fields* (Burning Steppes, Searing Gorge, Un'Goro): +2 Production, -1 Food, rough going.

@@ -591,3 +591,18 @@ HERO_SPRITES = {
     "Kel'Thuzad": _hero("Worker", "Scourge", "full", [lambda l: headgear(l, "cult_hood"), lambda l: weapon(l, "staff")], (140, 210, 255)),
 }
 SPRITES.update(HERO_SPRITES)
+
+
+# ======================================================================= clerics (v0.13)
+def _cleric_sprites():
+    import wc_playstyles as PS
+    out = {"Cleric": ("Great Prophet", None, "raw", [lambda l: glow_aura(l, (255, 235, 160), "body")])}
+    glow = {"Night Elves": (150, 255, 170), "Orcs": (140, 200, 255), "Trolls": (160, 255, 170),
+            "Gnomes": (190, 255, 120), "Goblins": (190, 255, 120), "Pandaren": (170, 240, 220)}
+    for race, (name, _) in PS.CLERICS.items():
+        src = "Great Prophet"
+        out[name] = (src, None if race == "Humans" else race, "raw" if race == "Humans" else "full",
+                     [lambda l, g=glow.get(race, (255, 235, 160)): glow_aura(l, g, "body")]
+                     + ([lambda l: headgear(l, "goggles")] if race in ("Gnomes", "Goblins") else []))
+    return out
+SPRITES.update(_cleric_sprites())
