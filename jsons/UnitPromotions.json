@@ -1854,13 +1854,24 @@
     ]
   },
   {
-    "name": "Portal Attunement",
+    "name": "Portal Adept",
     "uniques": [
-      "May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles> <costs [10] [Mana]>"
+      "[This Unit] gains the [Portal Attunement] status for [1] turn(s) <in [City center] tiles> <for [0] movement> <costs [10] [Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "Attuned to the Mage Tower of the city where it was trained: from one of your cities, this unit can step through a portal to another of your cities up to 20 tiles away. Each portal costs 10 Mana."
+        "text": "Trained near a Mage Tower: from one of your cities, this unit can open a portal for 10 Mana, then step through it to another of your cities up to 20 tiles away on the same turn."
+      }
+    ]
+  },
+  {
+    "name": "Portal Attunement",
+    "uniques": [
+      "May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A portal stands open for this unit: it can step through to one of your cities up to 20 tiles away."
       }
     ]
   }

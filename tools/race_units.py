@@ -167,6 +167,8 @@ BUILDINGS = [
         "civilopediaText": _lore("The crypt where the Scourge raises ghouls and trains its dead. Needs Plagued Land within 3 tiles.")}),
     ("Scourge", "Walls", {"name": "Ziggurat", "addStats": {"cityStrength": 3}, "addUniques": [BLIGHT],
         "civilopediaText": _lore("A spirit tower of the Scourge, stronger than ordinary walls. Needs Plagued Land within 3 tiles.")}),
+    ("Orcs", "Shrine", {"name": "Altar of Storms", "addStats": {"culture": 1},
+        "civilopediaText": _lore("The dark altar of the Horde, where Gul'dan's warlocks once worked their magic. Orc shamans now use it to gather power. +1 Culture, +1 Mana.")}),
     ("Orcs", "Granary", {"name": "Pig Farm", "addStats": {"production": 1},
         "civilopediaText": _lore("Orcish pig farms, a fixture of every Horde town since Warcraft II: pens of grunting boars feeding the warband. +1 Production.")}),
     ("Trolls", "Shrine", {"name": "Voodoo Lounge", "addStats": {"gold": 1, "culture": 1},
@@ -211,7 +213,7 @@ ICONS_UNITS = {
 }
 ICONS_BUILDINGS = {
     "Necropolis": ("castle", "skull"), "Crypt": ("coffin", "skull"), "Ziggurat": ("ziggurat", "skull"),
-    "Pig Farm": ("wheat", "tusk"), "Voodoo Lounge": ("cauldron", "mask"), "Great Totem": "totem",
+    "Pig Farm": ("wheat", "tusk"), "Altar of Storms": ("ziggurat", "bolt"), "Voodoo Lounge": ("cauldron", "mask"), "Great Totem": "totem",
     "Apothecarium": ("flask", "skull"), "Magisters' Sanctum": ("spire", "sun"), "Goblin Bazaar": ("coins", "gear"),
     "Dwarven Forge": ("anvil", "flame"), "Tinker's Workshop": ("gears", "bolt"), "Moonwell": ("moon", "wave"),
     "Crystal Sanctum": ("crystals", "naaru"), "Gilnean Bulwark": ("castle", "wolf"), "Runestone": ("rune", "sparkle"),

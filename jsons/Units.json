@@ -1865,7 +1865,8 @@
     "uniqueTo": "Trolls",
     "uniques": [
       "[+25]% Strength <when fighting in [Jungle] tiles>",
-      "Double movement in [Jungle]"
+      "Double movement in [Jungle]",
+      "Costs [4] [Mana]"
     ]
   },
   {
@@ -1885,7 +1886,8 @@
       "[50]% chance to intercept air attacks",
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>",
-      "[+33]% Strength <vs [Land] units>"
+      "[+33]% Strength <vs [Land] units>",
+      "Costs [15] [Mana]"
     ],
     "attackSound": "machinegun",
     "civilopediaText": [
@@ -1935,7 +1937,8 @@
       "No defensive terrain bonus",
       "Rough terrain penalty",
       "Never appears as a Barbarian unit",
-      "[+10]% Strength bonus for [Military] units within [1] tiles"
+      "[+10]% Strength bonus for [Military] units within [1] tiles",
+      "Costs [6] [Mana]"
     ],
     "attackSound": "arrow",
     "civilopediaText": [
@@ -1971,7 +1974,8 @@
     "uniqueTo": "Forsaken",
     "uniques": [
       "[+15]% Strength <when defending>",
-      "Heals [10] damage if it kills a unit"
+      "Heals [10] damage if it kills a unit",
+      "Costs [8] [Mana]"
     ]
   },
   {
@@ -1989,7 +1993,8 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Costs [8] [Mana]"
     ],
     "hurryCostModifier": 20,
     "attackSound": "throw",
@@ -2027,7 +2032,8 @@
     "replaces": "Swordsman",
     "uniqueTo": "Blood Elves",
     "uniques": [
-      "[+25]% Strength <vs [Archery] units>"
+      "[+25]% Strength <vs [Archery] units>",
+      "Costs [6] [Mana]"
     ]
   },
   {
@@ -2046,7 +2052,8 @@
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit",
       "Heals [15] damage if it kills a unit",
-      "[+15]% Strength <when defending>"
+      "[+15]% Strength <when defending>",
+      "Costs [10] [Mana]"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2097,7 +2104,8 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Costs [6] [Mana]"
     ],
     "attackSound": "cannon",
     "civilopediaText": [
@@ -2149,7 +2157,8 @@
       "Can move after attacking",
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit",
-      "[+25]% Strength <when fighting in [Hill] tiles>"
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "Costs [6] [Mana]"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2206,7 +2215,8 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Costs [10] [Mana]"
     ],
     "promotions": [
       "Indirect Fire"
@@ -2268,7 +2278,8 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Costs [8] [Mana]"
     ],
     "attackSound": "throw",
     "range": 3,
@@ -2306,7 +2317,8 @@
     "uniqueTo": "Draenei",
     "uniques": [
       "[+33]% Strength <vs [Barbarian] units>",
-      "All adjacent units heal [+10] HP when healing"
+      "All adjacent units heal [+10] HP when healing",
+      "Costs [10] [Mana]"
     ]
   },
   {
@@ -2363,7 +2375,8 @@
       "[+25]% Strength <when fighting in [Forest] tiles>",
       "Double movement in [Forest]",
       "Can transform to [Gilnean Hunter]",
-      "May capture killed [Military] units"
+      "May capture killed [Military] units",
+      "Costs [4] [Mana]"
     ]
   },
   {
@@ -2414,7 +2427,8 @@
     "uniqueTo": "High Elves",
     "uniques": [
       "[+1] Sight",
-      "[+25]% Strength <when fighting in [Forest] tiles>"
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "Costs [6] [Mana]"
     ]
   },
   {
@@ -2463,7 +2477,8 @@
     "replaces": "Vanguard",
     "uniqueTo": "Pandaren",
     "uniques": [
-      "[+20]% Strength <when defending>"
+      "[+20]% Strength <when defending>",
+      "Costs [8] [Mana]"
     ]
   },
   {
@@ -2550,7 +2565,8 @@
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit",
-      "Heals [15] damage if it kills a unit"
+      "Heals [15] damage if it kills a unit",
+      "Costs [12] [Mana]"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2580,7 +2596,8 @@
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>",
-      "[+25]% Strength <vs [Land] units>"
+      "[+25]% Strength <vs [Land] units>",
+      "Costs [20] [Mana]"
     ],
     "attackSound": "machinegun",
     "civilopediaText": [
@@ -2710,7 +2727,8 @@
       "All adjacent units heal [+10] HP when healing",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2739,7 +2757,8 @@
       "[+25]% Strength <when attacking>",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2769,7 +2788,8 @@
       "Double movement in [Forest]",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2799,7 +2819,8 @@
       "[+25]% Strength <when defending>",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2829,7 +2850,8 @@
       "[+1] Movement",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2859,7 +2881,8 @@
       "All adjacent units heal [+5] HP when healing",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2889,7 +2912,8 @@
       "[+25]% Strength <when fighting in [Jungle] tiles>",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2919,7 +2943,8 @@
       "[+25]% Strength <when attacking>",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2949,7 +2974,8 @@
       "[+25]% Strength <when fighting in [Forest] tiles>",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2979,7 +3005,8 @@
       "[+15] HP when healing",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -3009,7 +3036,8 @@
       "[+10] HP when healing",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -3039,7 +3067,8 @@
       "All adjacent units heal [+5] HP when healing",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -3069,7 +3098,8 @@
       "[+1] Movement",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -3099,7 +3129,8 @@
       "May capture killed [Military] units",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -3129,7 +3160,8 @@
       "[+25]% Strength <when attacking>",
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
-      "[+60]% Strength <starting from the [Age of the Legion]>"
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
     ],
     "civilopediaText": [
       {

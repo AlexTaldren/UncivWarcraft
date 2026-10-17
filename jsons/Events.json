@@ -44,6 +44,13 @@
     ],
     "choices": [
       {
+        "text": "Ward the granaries with arcane seals (-25 Mana)",
+        "uniques": [
+          "Instantly consumes [25] [Mana]",
+          "Only available <when above [24] [Mana]>"
+        ]
+      },
+      {
         "text": "Burn the infected granaries (-120 Gold)",
         "uniques": [
           "Gain [-120] [Gold]",
@@ -81,6 +88,13 @@
           "[2] [Felguard]s rebel <before the [Age of the Lich King]>",
           "[2] [Infernal]s rebel <starting from the [Age of the Lich King]>",
           "Gain [60] [Faith]"
+        ]
+      },
+      {
+        "text": "Close the rift with a great spell (-35 Mana)",
+        "uniques": [
+          "Instantly consumes [35] [Mana]",
+          "Only available <when above [34] [Mana]>"
         ]
       },
       {
@@ -242,6 +256,12 @@
     ],
     "choices": [
       {
+        "text": "Tap the vault's power (+40 Mana)",
+        "uniques": [
+          "Instantly provides [40] [Mana]"
+        ]
+      },
+      {
         "text": "Study the Titan relics (+Science)",
         "uniques": [
           "Gain [60]-[150] [Science]"
@@ -276,6 +296,13 @@
         "uniques": [
           "Gain [-150] [Gold]",
           "Only available <when above [149] [Gold]>"
+        ]
+      },
+      {
+        "text": "Raise great wards against the fire (-50 Mana)",
+        "uniques": [
+          "Instantly consumes [50] [Mana]",
+          "Only available <when above [49] [Mana]>"
         ]
       },
       {
@@ -356,6 +383,14 @@
       }
     ],
     "choices": [
+      {
+        "text": "Pay the Kirin Tor in Mana (-30 Mana, +Science)",
+        "uniques": [
+          "Instantly consumes [30] [Mana]",
+          "Only available <when above [29] [Mana]>",
+          "Gain [100]-[160] [Science]"
+        ]
+      },
       {
         "text": "Accept the Kirin Tor's offer (-80 Gold, +Science)",
         "uniques": [
@@ -440,6 +475,13 @@
         ]
       },
       {
+        "text": "Hold them back with arcane wards (-40 Mana)",
+        "uniques": [
+          "Instantly consumes [40] [Mana]",
+          "Only available <when above [39] [Mana]>"
+        ]
+      },
+      {
         "text": "Burn the dead before they rise (-150 Gold)",
         "uniques": [
           "Gain [-150] [Gold]",
@@ -467,6 +509,13 @@
         ]
       },
       {
+        "text": "Shield the cities with a great ward (-60 Mana)",
+        "uniques": [
+          "Instantly consumes [60] [Mana]",
+          "Only available <when above [59] [Mana]>"
+        ]
+      },
+      {
         "text": "Raise every ward we have (-300 Gold)",
         "uniques": [
           "Gain [-300] [Gold]",
@@ -485,6 +534,13 @@
       }
     ],
     "choices": [
+      {
+        "text": "Seal our minds with arcane wards (-40 Mana)",
+        "uniques": [
+          "Instantly consumes [40] [Mana]",
+          "Only available <when above [39] [Mana]>"
+        ]
+      },
       {
         "text": "Resist the whispers through prayer (-100 Faith)",
         "uniques": [
@@ -542,6 +598,12 @@
       }
     ],
     "choices": [
+      {
+        "text": "Ask him to fill our Mana stores (+50 Mana)",
+        "uniques": [
+          "Instantly provides [50] [Mana]"
+        ]
+      },
       {
         "text": "Learn from the Spell-Weaver (+Science)",
         "uniques": [
@@ -638,6 +700,14 @@
       }
     ],
     "choices": [
+      {
+        "text": "Power it with Mana (-20 Mana, a safer gamble)",
+        "uniques": [
+          "Instantly consumes [20] [Mana]",
+          "Only available <when above [19] [Mana]>",
+          "Gain [80]-[220] [Science]"
+        ]
+      },
       {
         "text": "Fund the experiment (-60 Gold, a gamble on Science)",
         "uniques": [

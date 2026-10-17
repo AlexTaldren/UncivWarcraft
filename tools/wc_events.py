@@ -14,6 +14,11 @@ def _need(amount, stat):
     return "Only available <when above [%d] [%s]>" % (amount - 1, stat)
 
 
+def _mana(n):
+    """Spend n Mana (only offered when the stockpile has it)."""
+    return ["Instantly consumes [%d] [Mana]" % n, "Only available <when above [%d] [Mana]>" % (n - 1)]
+
+
 EVENTS = [
     {
         "name": "The Darkmoon Faire",
@@ -36,6 +41,7 @@ EVENTS = [
                 "once did in Lordaeron.",
         "trigger": _when(1, "<starting from the [Age of the Third War]>", "<before the [Age of the Cataclysm]>"),
         "choices": [
+            ("Ward the granaries with arcane seals (-25 Mana)", _mana(25)),
             ("Burn the infected granaries (-120 Gold)", ["Gain [-120] [Gold]", _need(120, "Gold")]),
             ("Call on the priests to cleanse the grain (-80 Faith)", ["Gain [-80] [Faith]", _need(80, "Faith")]),
             ("Seal the gates and hope (lose population)", ["[-2] population in a random city"]),
@@ -51,6 +57,7 @@ EVENTS = [
              ["[2] [Felguard]s rebel <before the [Age of the Lich King]>",
               "[2] [Infernal]s rebel <starting from the [Age of the Lich King]>",
               "Gain [60] [Faith]"]),
+            ("Close the rift with a great spell (-35 Mana)", _mana(35)),
             ("Seal the rift with arcane might (-200 Gold)", ["Gain [-200] [Gold]", _need(200, "Gold")]),
         ],
     },
@@ -118,6 +125,7 @@ EVENTS = [
                 "hum in the dark, and runes glow on the walls.",
         "trigger": _when(1, "<after turn number [30]>"),
         "choices": [
+            ("Tap the vault's power (+40 Mana)", ["Instantly provides [40] [Mana]"]),
             ("Study the Titan relics (+Science)", ["Gain [60]-[150] [Science]"]),
             ("Sell the relics to collectors (+Gold)", ["Gain [80]-[180] [Gold]"]),
             ("Seal it again. Some things are best left buried (+Faith)", ["Gain [40] [Faith]"]),
@@ -130,6 +138,7 @@ EVENTS = [
         "trigger": _when(4, "<during the [Age of the Cataclysm]>"),
         "choices": [
             ("Rebuild what was broken (-150 Gold)", ["Gain [-150] [Gold]", _need(150, "Gold")]),
+            ("Raise great wards against the fire (-50 Mana)", _mana(50)),
             ("Seek the blessing of the Dragon Aspects (-100 Faith)", ["Gain [-100] [Faith]", _need(100, "Faith")]),
             ("Endure (lose population)", ["[-2] population in a random city"]),
         ],
@@ -161,6 +170,7 @@ EVENTS = [
         "text": "An envoy from Dalaran offers to train our most gifted children in the arcane arts, for a fee.",
         "trigger": _when(1, "<after turn number [35]>"),
         "choices": [
+            ("Pay the Kirin Tor in Mana (-30 Mana, +Science)", _mana(30) + ["Gain [100]-[160] [Science]"]),
             ("Accept the Kirin Tor's offer (-80 Gold, +Science)",
              ["Gain [-80] [Gold]", "Gain [100]-[160] [Science]", _need(80, "Gold")]),
             ("Politely decline", []),
@@ -200,6 +210,7 @@ EVENTS += [
         "choices": [
             ("Hold the line! (the Scourge attacks; the faithful rally)",
              ["[2] [Ghoul]s rebel", "A [Death Knight] rebels", "Gain [60] [Faith]"]),
+            ("Hold them back with arcane wards (-40 Mana)", _mana(40)),
             ("Burn the dead before they rise (-150 Gold)", ["Gain [-150] [Gold]", _need(150, "Gold")]),
         ],
     },
@@ -209,6 +220,7 @@ EVENTS += [
         "trigger": _when(4, "<during the [Age of the Legion]>"),
         "choices": [
             ("Defend our cities! (Infernals fall; heroes rise)", ["[3] [Infernal]s rebel", "A [Felguard] rebels", "Gain [100] [Faith]"]),
+            ("Shield the cities with a great ward (-60 Mana)", _mana(60)),
             ("Raise every ward we have (-300 Gold)", ["Gain [-300] [Gold]", _need(300, "Gold")]),
         ],
     },
@@ -217,6 +229,7 @@ EVENTS += [
         "text": "In the dark, a voice whispers. Scholars dream of tentacles and eyes, and some stop sleeping altogether. The Old Gods are stirring.",
         "trigger": _when(3, "<starting from the [Age of Azerite]>"),
         "choices": [
+            ("Seal our minds with arcane wards (-40 Mana)", _mana(40)),
             ("Resist the whispers through prayer (-100 Faith)", ["Gain [-100] [Faith]", _need(100, "Faith")]),
             ("Silence the cultists (lose population)", ["[-1] population in a random city"]),
             ("Listen... (+Science, but madness spreads)", ["Gain [150]-[250] [Science]", "[-2] population in a random city", "Gain [-50] [Culture]"]),
@@ -236,6 +249,7 @@ EVENTS += [
         "text": "Kalecgos of the blue dragonflight offers to share the secrets of the arcane, if we promise to use them wisely.",
         "trigger": _when(1, "<after turn number [50]>"),
         "choices": [
+            ("Ask him to fill our Mana stores (+50 Mana)", ["Instantly provides [50] [Mana]"]),
             ("Learn from the Spell-Weaver (+Science)", ["Gain [100]-[200] [Science]"]),
             ("Politely decline the dragon's offer", []),
         ],
@@ -274,6 +288,7 @@ EVENTS += [
         "trigger": _when(3, "<after turn number [20]>"),
         "only": ["Gnomes"],
         "choices": [
+            ("Power it with Mana (-20 Mana, a safer gamble)", _mana(20) + ["Gain [80]-[220] [Science]"]),
             ("Fund the experiment (-60 Gold, a gamble on Science)", ["Gain [-60] [Gold]", "Gain [0]-[250] [Science]", _need(60, "Gold")]),
             ("Insist on more safety tests (+Science)", ["Gain [40] [Science]"]),
         ],

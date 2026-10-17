@@ -120,13 +120,19 @@ BUILDINGS = [
                  "[+10]% Strength <for [Military] units> <vs [Alliance] units>"],
      "civilopediaText": _lore("The Huojin follow Ji Firepaw's path of bold action, and fight beside the Horde. +15% Strength when attacking, +10% against the Alliance, +2 Production.")},
 ]
-MAGE_TOWER_PORTALS = "All newly-trained [Military] units [in this city] receive the [Portal Attunement] promotion"
+MAGE_TOWER_PORTALS = "All newly-trained [Military] units [in this city] receive the [Portal Adept] promotion"
 
 PORTAL_MANA = 10
+# A paradrop can't carry a resource cost itself, so the portal is two steps: units trained
+# in a Mage Tower city are Portal Adepts and can, from one of your cities, spend Mana to
+# open a portal (a one-turn Portal Attunement status that allows the jump).
 TRAVEL_PROMOTIONS = [
+    {"name": "Portal Adept",
+     "uniques": ["[This Unit] gains the [Portal Attunement] status for [1] turn(s) <in [City center] tiles> <for [0] movement> <costs [%d] [Mana]>" % PORTAL_MANA],
+     "civilopediaText": _lore("Trained near a Mage Tower: from one of your cities, this unit can open a portal for %d Mana, then step through it to another of your cities up to 20 tiles away on the same turn." % PORTAL_MANA)},
     {"name": "Portal Attunement",
-     "uniques": ["May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles> <costs [%d] [Mana]>" % PORTAL_MANA],
-     "civilopediaText": _lore("Attuned to the Mage Tower of the city where it was trained: from one of your cities, this unit can step through a portal to another of your cities up to 20 tiles away. Each portal costs %d Mana." % PORTAL_MANA)},
+     "uniques": ["May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles>"],
+     "civilopediaText": _lore("A portal stands open for this unit: it can step through to one of your cities up to 20 tiles away.")},
 ]
 
 # ---------------------------------------------------------------- cleansing (v0.13)
@@ -164,9 +170,31 @@ ICONS_CLERIC = "hand_light"
 # ---------------------------------------------------------------- Mana
 MANA = {"name": "Mana", "resourceType": "Strategic",
         "uniques": ["Stockpiled", "Cannot be traded"],
-        "civilopediaText": _lore("Arcane energy gathered by your mages and stored for spellcraft. Arcane Sanctums, Mage Towers and Magisters' Sanctums make Mana every turn; mages, arcane missiles, Mana Bombs and Mage Tower portals spend it.")}
-MANA_SOURCES = {"Arcane Sanctum": 1, "Mage Tower": 2, "Magisters' Sanctum": 2}
-MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihilator": 60}
+        "civilopediaText": _lore("Arcane energy gathered by your mages and stored for spellcraft. Every capital gathers a little each turn, and each race has its own sources (Moonwells, Voodoo Lounges, Great Totems, Necropolises, Arcane Sanctums, Mage Towers, Arcane Crystals...). Spellcasters, heroes, magical buildings and wonders, Mage Tower portals and some event choices spend it.")}
+MANA_SOURCES = {
+    "Palace": 1,                                   # every capital gathers a little
+    "Arcane Sanctum": 1, "Mage Tower": 2, "Magisters' Sanctum": 2,
+    # v0.14: a source for every race, in a building it already has
+    "Chapel of the Light": 1, "Altar of Storms": 1, "Voodoo Lounge": 1, "Great Totem": 1,
+    "Moonwell": 1, "Dwarven Forge": 1, "Tinker's Workshop": 1, "Goblin Bazaar": 1,
+    "Crystal Sanctum": 1, "Gilnean Bulwark": 1, "Runestone": 1, "Brewery": 1,
+    "Apothecarium": 1, "Necropolis": 1, "Ziggurat": 1,
+}
+# Arcane Crystals deposits feed the arcane schools
+MANA_WITH_CRYSTALS = {"Arcane Sanctum": 1, "Mage Tower": 1}
+MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihilator": 60,
+              # v0.14: each race's spellcasters and magic-touched units
+              "Spellbreaker": 6, "Blood Knight": 10, "Batrider": 15, "Death Knight": 12, "Frost Wyrm": 20,
+              "Abomination": 8, "Meat Wagon": 8, "Glaive Thrower": 8, "Gnomish Bombardier": 10,
+              "Vindicator": 10, "Kodo Beast": 6, "Headhunter": 4, "Worgen Stalker": 4,
+              "Farstrider": 6, "Brewmaster": 8, "Goblin Sapper": 6, "Ram Rider": 6}
+HERO_MANA = 30          # every hero costs this to recruit
+# magical buildings and wonders
+BUILDING_MANA_COSTS = {"Mage Tower": 20, "Arcane Laboratory": 40, "Mana Reactor": 60, "Runestone": 10,
+                       "The Violet Citadel": 15, "Caverns of Time": 30, "College of Magi": 30,
+                       "Karazhan": 50, "Tower of Azora": 40, "Sunwell Plateau": 60, "Wyrmrest Temple": 40,
+                       "Mana Bomb Project": 80, "The Nighthold": 60, "Great Arcane Ward": 80,
+                       "Celestial Planetarium": 60}
 
 # ---------------------------------------------------------------- Dwarf-only ruins
 RUINS = [
@@ -249,7 +277,7 @@ ICONS_RESOURCES = {"Mana": ("orb", "sparkle")}
 ICONS_PROMOTIONS = {"Hero's Might": ("crown", "sword"), "Commanding Presence": ("crown", "banner"),
                     "Second Wind": ("crown", "heart"), "Battle-Hardened": ("crown", "shield"),
                     "Swift Strider": ("crown", "boot"), "Legend of Azeroth": ("crown", "star"),
-                    "Portal Attunement": ("portal", "orb")}
+                    "Portal Attunement": ("portal", "orb"), "Portal Adept": ("portal", "sparkle")}
 HERO_ICON_BADGE = {"Humans": "hammer", "Orcs": "axe", "Night Elves": "leaf", "Dwarves": "hammer", "Gnomes": "gear",
                    "Tauren": "totem", "Trolls": "mask", "Blood Elves": "flame", "High Elves": "bow",
                    "Pandaren": "chalice", "Forsaken": "skull", "Draenei": "naaru", "Goblins": "bomb",

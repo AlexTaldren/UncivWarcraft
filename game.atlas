@@ -76,49 +76,49 @@ ResourceIcons/Sunfruit
   index: -1
 ImprovementIcons/Railroad
   rotate: false
-  xy: 760, 710
+  xy: 868, 818
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Blighted Land
   rotate: false
-  xy: 976, 926
+  xy: 1084, 1034
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Spread Blight
   rotate: false
-  xy: 1192, 1034
+  xy: 1300, 1142
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Tidal Drill
   rotate: false
-  xy: 760, 494
+  xy: 868, 602
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Trade Company
   rotate: false
-  xy: 1084, 818
+  xy: 1192, 926
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Trade Princes
   rotate: false
-  xy: 1084, 818
+  xy: 1192, 926
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Trading post
   rotate: false
-  xy: 1192, 926
+  xy: 1300, 1034
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -202,28 +202,28 @@ NationIcons/Pandaren
   index: -1
 NationIcons/Scourge
   rotate: false
-  xy: 1408, 1358
+  xy: 1516, 1466
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Tauren
   rotate: false
-  xy: 436, 170
+  xy: 544, 278
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Trolls
   rotate: false
-  xy: 1300, 1034
+  xy: 1408, 1142
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Worgen
   rotate: false
-  xy: 1192, 818
+  xy: 1300, 926
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -279,7 +279,7 @@ PolicyBranchIcons/Old Kingdoms
   index: -1
 PolicyBranchIcons/Unity
   rotate: false
-  xy: 1516, 1250
+  xy: 1624, 1358
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -342,14 +342,14 @@ ReligionIcons/Loa
   index: -1
 ReligionIcons/Shamanism
   rotate: false
-  xy: 1840, 1790
+  xy: 220, 62
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Titans
   rotate: false
-  xy: 976, 710
+  xy: 1084, 818
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -510,28 +510,28 @@ ResourceIcons/Plainstriders
   index: -1
 ResourceIcons/Rugged Leather
   rotate: false
-  xy: 1300, 1250
+  xy: 1408, 1358
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Star Rubies
   rotate: false
-  xy: 1300, 1142
+  xy: 1408, 1250
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Tel'Abim Bananas
   rotate: false
-  xy: 652, 386
+  xy: 760, 494
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Truesilver
   rotate: false
-  xy: 1408, 1142
+  xy: 1516, 1250
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1350,217 +1350,217 @@ UnitIcons/Peasant
   index: -1
 UnitIcons/Priest
   rotate: false
-  xy: 652, 602
+  xy: 760, 710
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ram Rider
   rotate: false
-  xy: 868, 818
+  xy: 976, 926
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rifleman
   rotate: false
-  xy: 1084, 1034
+  xy: 1192, 1142
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rokhan
   rotate: false
-  xy: 1192, 1142
+  xy: 1300, 1250
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Scout
   rotate: false
-  xy: 1516, 1466
+  xy: 1624, 1574
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Shado-Pan Monk
   rotate: false
-  xy: 1732, 1682
+  xy: 1840, 1790
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Shock Trooper
   rotate: false
-  xy: 328, 170
+  xy: 436, 278
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Siege Engine
   rotate: false
-  xy: 436, 278
+  xy: 544, 386
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Siegebreaker
   rotate: false
-  xy: 544, 386
+  xy: 652, 494
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sky Golem
   rotate: false
-  xy: 652, 494
+  xy: 760, 602
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skyguard
   rotate: false
-  xy: 760, 602
+  xy: 868, 710
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spearman
   rotate: false
-  xy: 976, 818
+  xy: 1084, 926
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spellbreaker
   rotate: false
-  xy: 1084, 926
+  xy: 1192, 1034
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Stasis Vault
   rotate: false
-  xy: 1408, 1250
+  xy: 1516, 1358
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Steam Tank
   rotate: false
-  xy: 1516, 1358
+  xy: 1624, 1466
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sunfury Priest
   rotate: false
-  xy: 1624, 1466
+  xy: 1732, 1574
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sunwalker
   rotate: false
-  xy: 1732, 1574
+  xy: 1840, 1682
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Swordsman
   rotate: false
-  xy: 328, 62
+  xy: 436, 170
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Tauren Warrior
   rotate: false
-  xy: 544, 278
+  xy: 652, 386
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Titan Engine
   rotate: false
-  xy: 868, 602
+  xy: 976, 710
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Vanguard
   rotate: false
-  xy: 1624, 1358
+  xy: 1732, 1466
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Vindicator
   rotate: false
-  xy: 1732, 1466
+  xy: 1840, 1574
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Void Bomber
   rotate: false
-  xy: 1840, 1574
+  xy: 436, 62
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/War Galley
   rotate: false
-  xy: 544, 170
+  xy: 652, 278
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/War Golem
   rotate: false
-  xy: 652, 278
+  xy: 760, 386
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/War Zeppelin
   rotate: false
-  xy: 760, 386
+  xy: 868, 494
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Wisp
   rotate: false
-  xy: 868, 494
+  xy: 976, 602
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Witch Doctor
   rotate: false
-  xy: 976, 602
+  xy: 1084, 710
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Wolf Rider
   rotate: false
-  xy: 1084, 710
+  xy: 1192, 818
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Worgen Ravager
   rotate: false
-  xy: 1300, 926
+  xy: 1408, 1034
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Worgen Stalker
   rotate: false
-  xy: 1408, 1034
+  xy: 1516, 1142
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1672,7 +1672,7 @@ UnitPromotionIcons/Deadeye
   index: -1
 UnitPromotionIcons/Defend
   rotate: false
-  xy: 1516, 1192
+  xy: 1624, 1300
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -1700,7 +1700,7 @@ UnitPromotionIcons/Hero's Might
   index: -1
 UnitPromotionIcons/Heroic Strike
   rotate: false
-  xy: 1624, 1300
+  xy: 1732, 1408
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -1726,65 +1726,72 @@ UnitPromotionIcons/Long Flight
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Portal Attunement
+UnitPromotionIcons/Portal Adept
   rotate: false
   xy: 544, 494
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitPromotionIcons/Portal Attunement
+  rotate: false
+  xy: 652, 602
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/Rapid Fire
-  rotate: false
-  xy: 1732, 1408
-  size: 50, 50
-  orig: 50, 50
-  offset: 0, 0
-  index: -1
-UnitPromotionIcons/Second Wind
-  rotate: false
-  xy: 1624, 1574
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitPromotionIcons/Ship's Carpenter
-  rotate: false
-  xy: 220, 62
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitPromotionIcons/Skyguard Patrol
-  rotate: false
-  xy: 868, 710
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitPromotionIcons/Spear Wall
   rotate: false
   xy: 1840, 1516
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
+UnitPromotionIcons/Second Wind
+  rotate: false
+  xy: 1732, 1682
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Ship's Carpenter
+  rotate: false
+  xy: 328, 170
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Skyguard Patrol
+  rotate: false
+  xy: 976, 818
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Spear Wall
+  rotate: false
+  xy: 544, 112
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/Swift Strider
   rotate: false
-  xy: 1840, 1682
+  xy: 328, 62
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Volley
   rotate: false
-  xy: 436, 62
+  xy: 544, 170
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Weapon Mastery
   rotate: false
-  xy: 544, 112
+  xy: 652, 220
   size: 50, 50
   orig: 50, 50
   offset: 0, 0

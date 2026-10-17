@@ -321,9 +321,15 @@ for b in files["Buildings"]:
         b["uniques"] = b.get("uniques", []) + [PS.MAGE_TOWER_PORTALS]
     if b["name"] in PS.MANA_SOURCES:
         b["uniques"] = b.get("uniques", []) + ["Provides [%d] [Mana]" % PS.MANA_SOURCES[b["name"]]]
+    if b["name"] in PS.MANA_WITH_CRYSTALS:
+        b["uniques"] = b.get("uniques", []) + ["Provides [%d] [Mana] <with [Arcane Crystals]>" % PS.MANA_WITH_CRYSTALS[b["name"]]]
+    if b["name"] in PS.BUILDING_MANA_COSTS:
+        b["uniques"] = b.get("uniques", []) + ["Costs [%d] [Mana]" % PS.BUILDING_MANA_COSTS[b["name"]]]
+hero_names = {h[0] for h in PS.HEROES.values()}
 for u in files["Units"]:
-    if u["name"] in PS.MANA_COSTS:
-        u["uniques"] = u.get("uniques", []) + ["Costs [%d] [Mana]" % PS.MANA_COSTS[u["name"]]]
+    cost = PS.MANA_COSTS.get(u["name"]) or (PS.HERO_MANA if u["name"] in hero_names else None)
+    if cost:
+        u["uniques"] = u.get("uniques", []) + ["Costs [%d] [Mana]" % cost]
 
 # improvements: blight, the Dwarves' Deep Mine, race restrictions
 files["TileImprovements"] += copy.deepcopy(PS.IMPROVEMENTS)

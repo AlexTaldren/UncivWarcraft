@@ -9,7 +9,8 @@
     "cityStrength": 2.5,
     "cost": 0,
     "uniques": [
-      "Indicates the capital city"
+      "Indicates the capital city",
+      "Provides [1] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -144,7 +145,8 @@
     "requiredTech": "Runic Script",
     "uniques": [
       "Free Technology",
-      "Gain a free [Library] [in this city]"
+      "Gain a free [Library] [in this city]",
+      "Costs [15] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -538,7 +540,8 @@
       "Must be next to [Desert]",
       "[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]",
       "Gain a free [Storyteller's Circle] [in this city]",
-      "[+6 Culture] [in this city] <after discovering [Archaeology]>"
+      "[+6 Culture] [in this city] <after discovering [Archaeology]>",
+      "Costs [30] [Mana]"
     ],
     "requiredTech": "Coinage",
     "civilopediaText": [
@@ -811,7 +814,8 @@
     "requiredBuilding": "Library",
     "uniques": [
       "[+2 Science] from [Jungle] tiles [in this city]",
-      "Provides [1] [Mana]"
+      "Provides [1] [Mana]",
+      "Provides [1] [Mana] <with [Arcane Crystals]>"
     ],
     "requiredTech": "Scholarship",
     "civilopediaText": [
@@ -829,7 +833,8 @@
     "uniques": [
       "Only available <if [Arcane Sanctum] is constructed in all [non-[Puppeted]] cities>",
       "Free Technology",
-      "Cost increases by [30] per owned city"
+      "Cost increases by [30] per owned city",
+      "Costs [30] [Mana]"
     ],
     "requiredTech": "Scholarship",
     "civilopediaText": [
@@ -986,7 +991,8 @@
       "Great Artist": 2
     },
     "uniques": [
-      "[+25]% [Culture] [in all cities]"
+      "[+25]% [Culture] [in all cities]",
+      "Costs [50] [Mana]"
     ],
     "requiredTech": "Choral Hymns",
     "civilopediaText": [
@@ -1068,7 +1074,8 @@
     },
     "uniques": [
       "[+25]% Great Person generation [in all cities]",
-      "Free Great Person"
+      "Free Great Person",
+      "Costs [40] [Mana]"
     ],
     "requiredTech": "Inscription",
     "civilopediaText": [
@@ -1140,7 +1147,8 @@
     },
     "isWonder": true,
     "uniques": [
-      "Empire enters golden age"
+      "Empire enters golden age",
+      "Costs [60] [Mana]"
     ],
     "requiredTech": "Architecture",
     "civilopediaText": [
@@ -1268,8 +1276,10 @@
     "hurryCostModifier": 0,
     "uniques": [
       "[+1 Science] per [2] population [in this city]",
-      "All newly-trained [Military] units [in this city] receive the [Portal Attunement] promotion",
-      "Provides [2] [Mana]"
+      "All newly-trained [Military] units [in this city] receive the [Portal Adept] promotion",
+      "Provides [2] [Mana]",
+      "Provides [1] [Mana] <with [Arcane Crystals]>",
+      "Costs [20] [Mana]"
     ],
     "requiredTech": "Arcane Science",
     "civilopediaText": [
@@ -1454,7 +1464,8 @@
     },
     "isWonder": true,
     "uniques": [
-      "[+1 Happiness] per [2] social policies adopted"
+      "[+1 Happiness] per [2] social policies adopted",
+      "Costs [40] [Mana]"
     ],
     "requiredTech": "Communication Crystals",
     "civilopediaText": [
@@ -1549,6 +1560,9 @@
     "requiredBuilding": "Mage Tower",
     "maintenance": 3,
     "requiredTech": "Arcanite Alloys",
+    "uniques": [
+      "Costs [40] [Mana]"
+    ],
     "civilopediaText": [
       {
         "text": "Workrooms of enchanted glassware and humming crystals, where arcanists push the boundaries of their art."
@@ -1593,7 +1607,8 @@
     "uniques": [
       "Enables nuclear weapon",
       "Triggers a global alert upon completion",
-      "Cannot be hurried"
+      "Cannot be hurried",
+      "Costs [80] [Mana]"
     ],
     "requiredTech": "Mana Theory",
     "civilopediaText": [
@@ -1663,7 +1678,8 @@
     },
     "uniques": [
       "Free Social Policy",
-      "Must be next to [Coast]"
+      "Must be next to [Coast]",
+      "Costs [60] [Mana]"
     ],
     "requiredTech": "Nature's Blessing",
     "civilopediaText": [
@@ -1683,7 +1699,8 @@
     "requiredResource": "Arcane Crystals",
     "requiredTech": "Unstable Mana",
     "uniques": [
-      "Only available <in cities without a [Sun Crystal Array]>"
+      "Only available <in cities without a [Sun Crystal Array]>",
+      "Costs [60] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -1714,7 +1731,8 @@
     "uniques": [
       "Only available <when espionage is enabled>",
       "[-99]% enemy spy effectiveness [in this city]",
-      "[-25]% enemy spy effectiveness [in all cities]"
+      "[-25]% enemy spy effectiveness [in all cities]",
+      "Costs [80] [Mana]"
     ],
     "requiredTech": "Titan Logic",
     "civilopediaText": [
@@ -1766,7 +1784,8 @@
     "uniques": [
       "[2] free [Great Scientist] units appear",
       "[+25]% Production when constructing [Spaceship part] units [in this city]",
-      "Gain a free [Skyship Foundry] [in this city]"
+      "Gain a free [Skyship Foundry] [in this city]",
+      "Costs [60] [Mana]"
     ],
     "requiredTech": "Eye of Kilrogg",
     "civilopediaText": [
@@ -1906,7 +1925,8 @@
     "requiredTech": "Philosophy",
     "uniques": [
       "Only available <when religion is enabled>",
-      "Destroyed when the city is captured"
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]"
     ],
     "culture": 1,
     "replaces": "Temple",
@@ -2003,7 +2023,8 @@
     "maintenance": 1,
     "uniques": [
       "Destroyed when the city is captured",
-      "Must have an owned [Plagued Land] within [3] tiles"
+      "Must have an owned [Plagued Land] within [3] tiles",
+      "Provides [1] [Mana]"
     ],
     "production": 1,
     "civilopediaText": [
@@ -2040,7 +2061,8 @@
     "requiredTech": "Masonry",
     "uniques": [
       "Destroyed when the city is captured",
-      "Must have an owned [Plagued Land] within [3] tiles"
+      "Must have an owned [Plagued Land] within [3] tiles",
+      "Provides [1] [Mana]"
     ],
     "civilopediaText": [
       {
@@ -2049,6 +2071,25 @@
     ],
     "replaces": "Walls",
     "uniqueTo": "Scourge"
+  },
+  {
+    "name": "Altar of Storms",
+    "faith": 1,
+    "cost": 40,
+    "maintenance": 1,
+    "requiredTech": "Pottery",
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Provides [1] [Mana]"
+    ],
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "The dark altar of the Horde, where Gul'dan's warlocks once worked their magic. Orc shamans now use it to gather power. +1 Culture, +1 Mana."
+      }
+    ],
+    "replaces": "Shrine",
+    "uniqueTo": "Orcs"
   },
   {
     "name": "Pig Farm",
@@ -2077,7 +2118,8 @@
     "maintenance": 1,
     "requiredTech": "Pottery",
     "uniques": [
-      "Only available <when religion is enabled>"
+      "Only available <when religion is enabled>",
+      "Provides [1] [Mana]"
     ],
     "gold": 1,
     "culture": 1,
@@ -2096,7 +2138,8 @@
     "hurryCostModifier": 40,
     "maintenance": 1,
     "uniques": [
-      "Destroyed when the city is captured"
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]"
     ],
     "faith": 1,
     "civilopediaText": [
@@ -2111,7 +2154,8 @@
     "name": "Apothecarium",
     "uniques": [
       "[+25]% Great Person generation [in this city]",
-      "Must be next to [Fresh water]"
+      "Must be next to [Fresh water]",
+      "Provides [1] [Mana]"
     ],
     "hurryCostModifier": 25,
     "maintenance": 1,
@@ -2168,7 +2212,10 @@
       }
     ],
     "replaces": "Market",
-    "uniqueTo": "Goblins"
+    "uniqueTo": "Goblins",
+    "uniques": [
+      "Provides [1] [Mana]"
+    ]
   },
   {
     "name": "Dwarven Forge",
@@ -2180,7 +2227,8 @@
     "requiredTech": "Blacksmithing",
     "uniques": [
       "[+15]% Production when constructing [Land] units [in this city]",
-      "[+1 Production] from [Iron] tiles [in this city]"
+      "[+1 Production] from [Iron] tiles [in this city]",
+      "Provides [1] [Mana]"
     ],
     "production": 2,
     "civilopediaText": [
@@ -2210,7 +2258,10 @@
       }
     ],
     "replaces": "Workshop",
-    "uniqueTo": "Gnomes"
+    "uniqueTo": "Gnomes",
+    "uniques": [
+      "Provides [1] [Mana]"
+    ]
   },
   {
     "name": "Moonwell",
@@ -2219,7 +2270,8 @@
     "maintenance": 1,
     "requiredTech": "Pottery",
     "uniques": [
-      "Only available <when religion is enabled>"
+      "Only available <when religion is enabled>",
+      "Provides [1] [Mana]"
     ],
     "food": 1,
     "civilopediaText": [
@@ -2239,7 +2291,8 @@
     "requiredTech": "Philosophy",
     "uniques": [
       "Only available <when religion is enabled>",
-      "Destroyed when the city is captured"
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]"
     ],
     "science": 1,
     "civilopediaText": [
@@ -2257,7 +2310,8 @@
     "hurryCostModifier": 25,
     "requiredTech": "Masonry",
     "uniques": [
-      "Destroyed when the city is captured"
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]"
     ],
     "culture": 1,
     "civilopediaText": [
@@ -2275,7 +2329,9 @@
     "hurryCostModifier": 25,
     "requiredTech": "Masonry",
     "uniques": [
-      "Destroyed when the city is captured"
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]",
+      "Costs [10] [Mana]"
     ],
     "science": 1,
     "civilopediaText": [
@@ -2294,7 +2350,8 @@
     "uniques": [
       "[+1 Food] from [Plainstriders] tiles [in this city]",
       "[+1 Food] from [Tel'Abim Bananas] tiles [in this city]",
-      "[+1 Food] from [Wheat] tiles [in this city]"
+      "[+1 Food] from [Wheat] tiles [in this city]",
+      "Provides [1] [Mana]"
     ],
     "requiredTech": "Pottery",
     "gold": 1,
