@@ -462,13 +462,13 @@ missing2 = [x["name"] for k in ("TileResources", "TileImprovements", "Beliefs") 
            [p["name"] for p in files["UnitPromotions"] if not p.get("civilopediaText")]
 print("lore missing (v0.10):", missing2)
 
-# attack sounds: no gunfire for creatures and demons; one stock sound per Warcraft
-# category, so a sound pack can replace each category by the stock file name
-ATTACK_SOUNDS = {"Frost Wyrm": "nonmetalhit", "Infernal": "nonmetalhit", "Worgen Ravager": "metalhit",
-                 "Batrider": "bombing", "Gryphon Rider": "jetgun", "Flak Wagon": "machinegun"}
+# v0.16: original synthesised sounds (tools/wc_sounds.py) replace the modern stock ones
+import wc_sounds
 for u in files["Units"]:
-    if u["name"] in ATTACK_SOUNDS:
-        u["attackSound"] = ATTACK_SOUNDS[u["name"]]
+    if u["name"] in wc_sounds.UNIT_SOUNDS:
+        u["attackSound"] = wc_sounds.UNIT_SOUNDS[u["name"]]
+_missing_snd = set(wc_sounds.UNIT_SOUNDS) - {u["name"] for u in files["Units"]}
+assert not _missing_snd, _missing_snd
 
 files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth Large]"]}
 
@@ -589,6 +589,7 @@ with open(os.path.join(J, "TileSets", "HexaRealm.json")) as f:
 n = RW.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), Atlas(os.path.join(SRC, "Tilesets.atlas")),
                    [x["name"] for x in F.NATIONS], [c[0] for c in F.CITY_STATES], R.ALL, _rv)
 print("race camps and forts:", n)
+print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
 # no art for the removed submarines (renamed stock sprites, icons, promotion icons)
 _dead = tuple(sorted(SUBS | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
 _n = 0

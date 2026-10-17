@@ -404,7 +404,7 @@
     "requiredTech": "Blackpowder",
     "upgradesTo": "Rifleman",
     "obsoleteTech": "Long Rifles",
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "Infantry with muskets, armed by dwarven and goblin gunsmiths."
@@ -510,7 +510,7 @@
     "requiredTech": "Steamworks",
     "upgradesTo": "Grenadier",
     "obsoleteTech": "Fragmentation Shards",
-    "attackSound": "machinegun",
+    "attackSound": "wc_gyro_guns",
     "civilopediaText": [
       {
         "text": "Dwarven mountaineers with heavy repeating guns, defenders of the high passes."
@@ -526,7 +526,7 @@
     "requiredTech": "Long Rifles",
     "obsoleteTech": "Gnomish Gearworks",
     "upgradesTo": "Fusilier",
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "Dwarven-style riflemen, deadly marksmen with long guns."
@@ -571,7 +571,7 @@
       "Double movement in [Coast]",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "shipguns",
+    "attackSound": "wc_ship_cannon",
     "civilopediaText": [
       {
         "text": "A steam-driven ship plated with iron."
@@ -598,7 +598,7 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "artillery",
+    "attackSound": "wc_mortar",
     "civilopediaText": [
       {
         "text": "Dwarven mortar crews whose shells arc over walls."
@@ -614,7 +614,7 @@
     "requiredTech": "Gnomish Gearworks",
     "upgradesTo": "Shock Trooper",
     "obsoleteTech": "Arcanite Alloys",
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "Infantry with rifles and bayonets, the backbone of later armies."
@@ -639,7 +639,7 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "wc_gyro_guns",
     "civilopediaText": [
       {
         "text": "A small dwarven flying machine with a pair of guns, fast and nimble."
@@ -658,7 +658,7 @@
     "requiredResource": "Azerite",
     "upgradesTo": "War Zeppelin",
     "obsoleteTech": "Scrying",
-    "attackSound": "bombing",
+    "attackSound": "wc_bomb",
     "civilopediaText": [
       {
         "text": "A goblin zeppelin loaded with bombs."
@@ -674,7 +674,7 @@
     "requiredTech": "Arcanite Alloys",
     "upgradesTo": "Mechagnome Trooper",
     "obsoleteTech": "War Drums",
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "Disciplined infantry with the best arms the realm can make."
@@ -714,7 +714,7 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "shipguns",
+    "attackSound": "wc_ship_cannon",
     "civilopediaText": [
       {
         "text": "A massive steam warship with great cannons."
@@ -731,7 +731,7 @@
     "cost": 350,
     "requiredTech": "Fragmentation Shards",
     "upgradesTo": "Mechagnome Trooper",
-    "attackSound": "machinegun",
+    "attackSound": "wc_bomb",
     "civilopediaText": [
       {
         "text": "Soldiers with bombs and grenades who blast their way through enemy lines."
@@ -754,7 +754,7 @@
       "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "wc_gyro_guns",
     "civilopediaText": [
       {
         "text": "Guns that fill the sky with shot to bring down flyers."
@@ -776,7 +776,7 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot",
+    "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
         "text": "A clanking golem of iron and steam, a walking siege engine."
@@ -795,7 +795,7 @@
       "[40]% chance to intercept air attacks",
       "Withdraws before melee combat <with [80]% chance>"
     ],
-    "attackSound": "shipguns",
+    "attackSound": "wc_ship_cannon",
     "upgradesTo": "Giant Turtle",
     "civilopediaText": [
       {
@@ -817,7 +817,7 @@
       "[+1] Sight <when [Embarked]>",
       "[+100]% Strength <when defending> <when [Embarked]>"
     ],
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "The marines of Kul Tiras, who fight equally well on deck and on shore."
@@ -841,7 +841,7 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "jetgun",
+    "attackSound": "wc_gryphon",
     "civilopediaText": [
       {
         "text": "Wildhammer dwarves riding gryphons, hurling storm hammers from the sky."
@@ -859,7 +859,7 @@
     "requiredTech": "Scrying",
     "requiredResource": "Azerite",
     "upgradesTo": "Void Bomber",
-    "attackSound": "bombing",
+    "attackSound": "wc_bomb",
     "civilopediaText": [
       {
         "text": "A heavily armed goblin zeppelin."
@@ -877,7 +877,7 @@
       "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "Troops who drop from airships behind enemy lines."
@@ -898,7 +898,7 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot",
+    "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
         "text": "A great steam-driven siege engine, the dwarves' answer to any fortress."
@@ -917,7 +917,7 @@
       "[+100]% Strength <vs [War Machine] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
         "text": "Crews with heavy guns built to stop siege engines and golems."
@@ -944,7 +944,7 @@
       "Blast radius [2]",
       "Costs [40] [Mana]"
     ],
-    "attackSound": "nuke",
+    "attackSound": "wc_mana_bomb",
     "civilopediaText": [
       {
         "text": "A bomb of unstable mana, like the one that destroyed Theramore. A terrible weapon."
@@ -970,7 +970,7 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "artillery",
+    "attackSound": "wc_mortar",
     "civilopediaText": [
       {
         "text": "A Horde siege engine that hurls burning shot at walls from afar."
@@ -991,7 +991,7 @@
       "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "wc_rocket",
     "civilopediaText": [
       {
         "text": "A mobile gun wagon that brings down flyers."
@@ -1011,7 +1011,7 @@
       "[-100]% maintenance costs",
       "Costs [15] [Mana]"
     ],
-    "attackSound": "missile",
+    "attackSound": "wc_arcane_blast",
     "civilopediaText": [
       {
         "text": "A guided bolt of focused arcane power."
@@ -1034,7 +1034,7 @@
       "Consumes [2] [Arcane Crystals]",
       "Costs [60] [Mana]"
     ],
-    "attackSound": "nuke",
+    "attackSound": "wc_mana_bomb",
     "civilopediaText": [
       {
         "text": "An arcane weapon powerful enough to lay waste to a city."
@@ -1058,7 +1058,7 @@
       "Unable to capture cities",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "wc_gyro_guns",
     "civilopediaText": [
       {
         "text": "The gnomes' flying machine, armed with guns and bombs."
@@ -1095,7 +1095,7 @@
     "uniques": [
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot",
+    "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
         "text": "Mechagnome soldiers, part flesh and part machine."
@@ -1120,7 +1120,7 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "shipguns",
+    "attackSound": "wc_ship_cannon",
     "civilopediaText": [
       {
         "text": "A huge Horde warship, armoured and bristling with weapons."
@@ -1141,7 +1141,7 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "tankshot",
+    "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
         "text": "A heavily armoured gnomish war machine on treads."
@@ -1164,7 +1164,7 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "jetgun",
+    "attackSound": "wc_lightning",
     "civilopediaText": [
       {
         "text": "A flying golem of arcane metal, swift and deadly."
@@ -1184,7 +1184,7 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "gdrAttack",
+    "attackSound": "wc_lightning",
     "civilopediaText": [
       {
         "text": "A towering war machine of iron and arcane power, built in the titans' image."
@@ -1210,7 +1210,7 @@
     "promotions": [
       "Evasion"
     ],
-    "attackSound": "bombing",
+    "attackSound": "wc_bomb",
     "civilopediaText": [
       {
         "text": "A void-touched airship that strikes unseen."
@@ -1657,7 +1657,7 @@
     "requiredTech": "Clockwork",
     "upgradesTo": "Mountaineer",
     "obsoleteTech": "Steamworks",
-    "attackSound": "crossbow",
+    "attackSound": "wc_arcane_blast",
     "replaces": "Crossbowman",
     "uniqueTo": "Humans",
     "civilopediaText": [
@@ -1862,7 +1862,7 @@
       "[+33]% Strength <vs [Land] units>",
       "Costs [15] [Mana]"
     ],
-    "attackSound": "bombing",
+    "attackSound": "wc_bat",
     "civilopediaText": [
       {
         "text": "Troll riders on giant bats, dropping flasks of liquid fire on the enemy below."
@@ -2101,7 +2101,7 @@
     "requiredTech": "Blackpowder",
     "upgradesTo": "Rifleman",
     "obsoleteTech": "Long Rifles",
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "Dwarven riflemen of Ironforge, whose long rifles were the envy of the Alliance in the Second War."
@@ -2194,7 +2194,7 @@
     "promotions": [
       "Indirect Fire"
     ],
-    "attackSound": "artillery",
+    "attackSound": "wc_mortar",
     "civilopediaText": [
       {
         "text": "Gnomish artillery crews with a dangerous fondness for experimental shells."
@@ -2333,7 +2333,7 @@
     "upgradesTo": "Vanguard",
     "obsoleteTech": "Steel Forged Swords",
     "hurryCostModifier": 20,
-    "attackSound": "metalhit",
+    "attackSound": "wc_snarl",
     "civilopediaText": [
       {
         "text": "Gilneans who have embraced the curse of the worgen, hunting through the forests with tooth and claw."
@@ -2361,7 +2361,7 @@
     "requiredTech": "Long Rifles",
     "obsoleteTech": "Gnomish Gearworks",
     "upgradesTo": "Fusilier",
-    "attackSound": "shot",
+    "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "The disciplined riflemen of Gilneas, who held the Greymane Wall for years."
@@ -2491,7 +2491,7 @@
       "May upgrade to [Spearman] through ruins-like effects",
       "Heals [10] damage if it kills a unit"
     ],
-    "attackSound": "nonmetalhit",
+    "attackSound": "wc_snarl",
     "civilopediaText": [
       {
         "text": "Ravenous undead raised by the plague, the foot soldiers of the Scourge."
@@ -2572,7 +2572,7 @@
       "[+25]% Strength <vs [Land] units>",
       "Costs [20] [Mana]"
     ],
-    "attackSound": "nonmetalhit",
+    "attackSound": "wc_wyrm",
     "civilopediaText": [
       {
         "text": "The skeletal remains of great dragons, raised by Sapphiron's master and breathing killing frost."
@@ -2609,7 +2609,7 @@
     "strength": 75,
     "cost": 375,
     "requiredTech": "Arcanite Alloys",
-    "attackSound": "nonmetalhit",
+    "attackSound": "wc_rock_smash",
     "uniques": [
       "Unbuildable",
       "Cannot be purchased"
@@ -2669,7 +2669,7 @@
     "strength": 40,
     "cost": 225,
     "requiredTech": "Long Rifles",
-    "attackSound": "metalhit",
+    "attackSound": "wc_snarl",
     "civilopediaText": [
       {
         "text": "A Gilnean Rifleman who has let the beast loose. The curse spreads to those it slays: it may capture the units it kills. Can shift back into human form."
@@ -2749,7 +2749,7 @@
     "strength": 20,
     "cost": 160,
     "requiredTech": "Bronze Working",
-    "attackSound": "metalhit",
+    "attackSound": "wc_arcane_blast",
     "uniqueTo": "Night Elves",
     "uniques": [
       "Limited to [1] per Civilization",
@@ -2904,7 +2904,7 @@
     "strength": 20,
     "cost": 160,
     "requiredTech": "Bronze Working",
-    "attackSound": "metalhit",
+    "attackSound": "wc_arcane_blast",
     "uniqueTo": "Blood Elves",
     "uniques": [
       "Limited to [1] per Civilization",
@@ -3121,7 +3121,7 @@
     "strength": 20,
     "cost": 160,
     "requiredTech": "Bronze Working",
-    "attackSound": "metalhit",
+    "attackSound": "wc_arcane_blast",
     "uniqueTo": "Scourge",
     "uniques": [
       "Limited to [1] per Civilization",
