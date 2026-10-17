@@ -841,7 +841,7 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "jetgun",
     "civilopediaText": [
       {
         "text": "Wildhammer dwarves riding gryphons, hurling storm hammers from the sky."
@@ -991,7 +991,7 @@
       "[+150]% Strength <vs [Gyro] units>",
       "Never appears as a Barbarian unit"
     ],
-    "attackSound": "missile",
+    "attackSound": "machinegun",
     "civilopediaText": [
       {
         "text": "A mobile gun wagon that brings down flyers."
@@ -1862,7 +1862,7 @@
       "[+33]% Strength <vs [Land] units>",
       "Costs [15] [Mana]"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "bombing",
     "civilopediaText": [
       {
         "text": "Troll riders on giant bats, dropping flasks of liquid fire on the enemy below."
@@ -2572,7 +2572,7 @@
       "[+25]% Strength <vs [Land] units>",
       "Costs [20] [Mana]"
     ],
-    "attackSound": "machinegun",
+    "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
         "text": "The skeletal remains of great dragons, raised by Sapphiron's master and breathing killing frost."
@@ -2609,7 +2609,7 @@
     "strength": 75,
     "cost": 375,
     "requiredTech": "Arcanite Alloys",
-    "attackSound": "shot",
+    "attackSound": "nonmetalhit",
     "uniques": [
       "Unbuildable",
       "Cannot be purchased"
@@ -2669,7 +2669,7 @@
     "strength": 40,
     "cost": 225,
     "requiredTech": "Long Rifles",
-    "attackSound": "shot",
+    "attackSound": "metalhit",
     "civilopediaText": [
       {
         "text": "A Gilnean Rifleman who has let the beast loose. The curse spreads to those it slays: it may capture the units it kills. Can shift back into human form."

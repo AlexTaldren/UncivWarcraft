@@ -462,6 +462,14 @@ missing2 = [x["name"] for k in ("TileResources", "TileImprovements", "Beliefs") 
            [p["name"] for p in files["UnitPromotions"] if not p.get("civilopediaText")]
 print("lore missing (v0.10):", missing2)
 
+# attack sounds: no gunfire for creatures and demons; one stock sound per Warcraft
+# category, so a sound pack can replace each category by the stock file name
+ATTACK_SOUNDS = {"Frost Wyrm": "nonmetalhit", "Infernal": "nonmetalhit", "Worgen Ravager": "metalhit",
+                 "Batrider": "bombing", "Gryphon Rider": "jetgun", "Flak Wagon": "machinegun"}
+for u in files["Units"]:
+    if u["name"] in ATTACK_SOUNDS:
+        u["attackSound"] = ATTACK_SOUNDS[u["name"]]
+
 files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth Large]"]}
 
 for name, data in files.items():
