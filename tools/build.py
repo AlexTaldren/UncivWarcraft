@@ -570,10 +570,8 @@ for name, fn in legion.SPRITES.items():
 import wc_style_units
 n = wc_style_units.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
 print("painted Human/Orc sprites:", n)
-# Leader portraits shown on the diplomacy screen (Images/LeaderIcons/<leader name>.png)
-import portraits
-n = portraits.write_all(os.path.join(OUT, "Images"), {x["name"]: x["leaderName"] for x in F.NATIONS})
-print("leader portraits:", n)
+# Leader portraits (Images/LeaderIcons) are managed by the repo owner on GitHub and are
+# never generated or overwritten by the build; tools/portraits.py can still render drafts.
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)
