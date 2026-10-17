@@ -199,6 +199,7 @@ UNITS = {
     "Arcane Annihilator": "An arcane weapon powerful enough to lay waste to a city.",
     "Flying Machine": "The gnomes' flying machine, armed with guns and bombs.",
     "Mechagnome Trooper": "Mechagnome soldiers, part flesh and part machine.",
+    "Giant Turtle": "A great sea turtle bred for war by Horde shamans, its shell plated with iron and crowned with a spiked fighting platform. Slow, but almost impossible to sink.",
     "Juggernaught": "A huge Horde warship, armoured and bristling with weapons.",
     "Mechano-Tank": "A heavily armoured gnomish war machine on treads.",
     "Sky Golem": "A flying golem of arcane metal, swift and deadly.",

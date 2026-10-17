@@ -1073,7 +1073,7 @@ UNITS = {
     "Skyguard": ("wing", "gun"), "Siege Engine": ("wheel", "hammer"), "Siegebreaker": ("rocket", "shield"),
     "Mana Bomb": ("orb", "bomb"), "Demolisher": ("cannon", "flame"), "Flak Wagon": ("rocket", "wheel"),
     "Arcane Missile": ("crystal", "bolt"), "Arcane Annihilator": ("orb", "skull"), "Flying Machine": ("gear", "wing"),
-    "Mechagnome Trooper": ("golem", "gun"), "Juggernaught": ("ship", "skull"),
+    "Giant Turtle": "turtle", "Mechagnome Trooper": ("golem", "gun"), "Juggernaught": ("ship", "skull"),
     "Mechano-Tank": ("golem", "wheel"), "Sky Golem": ("golem", "wing"), "Iron Colossus": ("golem", "rune"),
     "Void Bomber": ("zeppelin", "void"), "Great Artist": "lute", "Great Merchant": "coins",
     "Great Engineer": ("gears", "hammer"), "Great Prophet": "hand_light", "Great General": "banner",

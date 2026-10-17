@@ -796,6 +796,7 @@
       "Withdraws before melee combat <with [80]% chance>"
     ],
     "attackSound": "shipguns",
+    "upgradesTo": "Giant Turtle",
     "civilopediaText": [
       {
         "text": "A fast steam warship built to hunt raiders and outrun pirates."
@@ -1061,6 +1062,26 @@
     "civilopediaText": [
       {
         "text": "The gnomes' flying machine, armed with guns and bombs."
+      }
+    ]
+  },
+  {
+    "name": "Giant Turtle",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "strength": 70,
+    "cost": 400,
+    "requiredTech": "Portal Networks",
+    "uniques": [
+      "[+25]% Strength <when defending>",
+      "[+33]% Strength <vs cities>",
+      "Can enter ice tiles",
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "A great sea turtle bred for war by Horde shamans, its shell plated with iron and crowned with a spiked fighting platform. Slow, but almost impossible to sink."
       }
     ]
   },

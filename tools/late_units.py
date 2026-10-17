@@ -504,17 +504,25 @@ def gnomish_submarine(a):
 
 
 def giant_turtle(a):
-    """A giant sea turtle bred for war, its armoured shell riding low in the waves."""
+    """A giant sea turtle bred for war: a high armoured shell riding above the waves,
+    plated with iron, carrying a spiked fighting platform and a ram on its brow."""
     def f(p):
-        p.ell(47, 38, 16, 5, (120, 175, 195), "wave")
-        p.ell(47, 34, 13, 7, (70, 110, 60), "shell")
-        for x, y in ((41, 32), (47, 30), (53, 32), (47, 36)):
-            p.ell(x, y, 2.5, 2, (100, 140, 80), "plate%d%d" % (x, y))
-        p.poly([(40, 28), (54, 28), (52, 25), (42, 25)], (225, 225, 225), "howdah", layer=2)
-        p.ell(62, 34, 3.5, 2.5, (110, 140, 90), "head")
-        p.dot(63, 33, (20, 20, 20), "eye")
-        p.line(35, 38, 30, 41, 2, (110, 140, 90), "flipper")
-        p.line(56, 39, 60, 42, 2, (110, 140, 90), "flipper2")
+        p.ell(38, 44, 19, 4, (120, 175, 195), "wave")
+        p.line(23, 42, 17, 46, 3, (95, 130, 80), "flipper")
+        p.line(50, 43, 55, 47, 3, (95, 130, 80), "flipper2")
+        p.ell(38, 37, 16, 9, (70, 110, 60), "shell")
+        p.ell(38, 41, 16, 3.5, (150, 140, 95), "plastron")
+        for x, y in ((30, 35), (38, 32), (46, 35), (34, 39), (42, 39)):
+            p.ell(x, y, 3, 2.2, (100, 140, 80), "plate%d%d" % (x, y))
+        p.line(23, 38, 53, 38, 1, IRON_D, "band")
+        p.ell(57, 37, 4.5, 3.5, (110, 140, 90), "head")
+        p.dot(58, 35, (240, 200, 60), "eye")
+        p.poly([(60, 34), (63, 33), (61, 37)], IRON, "ram")
+        p.poly([(29, 30), (47, 30), (45, 24), (31, 24)], (225, 225, 225), "platform", layer=2)
+        for x in (30, 34, 38, 42, 46):
+            p.line(x, 24, x, 21, 1, (60, 55, 55), "spike%d" % x)
+        p.line(38, 24, 38, 14, 1, WOOD_D, "pole")
+        p.poly([(38, 14), (44, 15), (38, 18)], (225, 225, 225), "flag", layer=1)
     return paint_layers((64, 56), f)
 
 
@@ -574,6 +582,7 @@ MACHINES = {   # drawn once; these replace the stock art for every civ
     "Rocket Artillery": demolisher, "Mobile SAM": flak_wagon, "Anti-Aircraft Gun": flak_cannon,
     "Helicopter Gunship": flying_machine, "Ironclad": ironclad, "Destroyer": destroyer,
     "Battleship": dreadnought, "Carrier": airship_tender, "Missile Cruiser": juggernaught,
+    "Nuclear Submarine": giant_turtle,
     "SS Booster": ss_part("thruster"), "SS Cockpit": ss_part("crystal"),
     "SS Engine": ss_part("engine"), "SS Stasis Chamber": ss_part("vault"),
 }

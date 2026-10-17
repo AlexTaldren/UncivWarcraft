@@ -101,6 +101,18 @@ for feat, (tech, turns) in WT.CLEANSE.items():
     imp.update({"name": "Remove " + feat, "techRequired": tech, "turnsToBuild": turns})
     files["TileImprovements"].append(imp)
 
+# v0.15b: the Giant Turtle is a surface warship: an armoured late-era melee ship that
+# the Destroyer upgrades into (WC2's Horde turtle, without the diving).
+for u in files["Units"]:
+    if u["name"] == "Giant Turtle":
+        u.update({"unitType": "Melee Water", "movement": 4, "strength": 70, "cost": 400,
+                  "uniques": ["[+25]% Strength <when defending>", "[+33]% Strength <vs cities>",
+                              "Can enter ice tiles", "Never appears as a Barbarian unit"],
+                  "attackSound": "nonmetalhit"})
+        for k in ("range", "rangedStrength"):
+            u.pop(k, None)
+    elif u["name"] == "Destroyer":
+        u["upgradesTo"] = "Giant Turtle"
 # v0.15: no submarines in Azeroth. Drop the Submarine unit type, its units (Gnomish
 # Submarine, Giant Turtle), their promotions and every rule that names them.
 SUBS = {u["name"] for u in files["Units"] if u["unitType"] == "Submarine"}
