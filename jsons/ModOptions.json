@@ -1,5 +1,6 @@
 {
   "isBaseRuleset": true,
+  "unitset": "AbsoluteUnits",
   "uniques": [
     "Mod preselects map [Azeroth Large]"
   ]

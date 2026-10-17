@@ -470,7 +470,10 @@ for u in files["Units"]:
 _missing_snd = set(wc_sounds.UNIT_SOUNDS) - {u["name"] for u in files["Units"]}
 assert not _missing_snd, _missing_snd
 
-files["ModOptions"] = {"isBaseRuleset": True, "uniques": ["Mod preselects map [Azeroth Large]"]}
+# every unit sprite is drawn for the AbsoluteUnits unit set, so games with this mod use it
+# whatever unit set the player picked in Options (other sets would show stock art)
+files["ModOptions"] = {"isBaseRuleset": True, "unitset": "AbsoluteUnits",
+                       "uniques": ["Mod preselects map [Azeroth Large]"]}
 
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))
