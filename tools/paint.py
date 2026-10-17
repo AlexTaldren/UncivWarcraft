@@ -167,6 +167,27 @@ class Canvas:
         L[..., :3] = np.where(out_a > 0, (col * a + L[..., :3] * A * (1 - a)) / np.maximum(out_a, 1e-6), 0)
         L[..., 3:4] = out_a
 
+    def wash(self, m, color, alpha=0.5, blur=2.0, layer="base", clip=None):
+        """Glaze a colour over what is already painted (soft painted shadows and
+        highlights). Doesn't change coverage; `clip` limits it to another mask."""
+        a = np.asarray(m.filter(ImageFilter.GaussianBlur(blur * S)) if blur else m, np.float32) / 255.0 * alpha
+        if clip is not None:
+            a = a * (np.asarray(clip, np.float32) / 255.0)
+        L = self.layers[layer]
+        a = a[..., None] * (L[..., 3:4] > 0)
+        L[..., :3] = L[..., :3] * (1 - a) + np.array(color, np.float32) * a
+
+    def fill_background(self, inner, outer, cx=0.5, cy=0.45):
+        """Opaque radial-gradient backdrop (portraits)."""
+        yy, xx = np.mgrid[0:self.H, 0:self.W].astype(np.float32)
+        d = np.sqrt(((xx / self.W - cx) / 0.75) ** 2 + ((yy / self.H - cy) / 0.75) ** 2)
+        t = np.clip(d / 0.75, 0, 1)[..., None]
+        rgb = np.array(inner, np.float32) * (1 - t) + np.array(outer, np.float32) * t
+        rgb = rgb + self.noise[..., None] * 60
+        L = self.layers["base"]
+        L[..., :3] = np.clip(rgb, 0, 255)
+        L[..., 3] = 1.0
+
     def shadow(self, cx, cy, rx, ry, alpha=0.35):
         m = self.ellipse(cx, cy, rx, ry).filter(ImageFilter.GaussianBlur(1.5 * S))
         a = np.asarray(m, np.float32) / 255.0 * alpha
