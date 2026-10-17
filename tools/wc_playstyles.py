@@ -41,8 +41,8 @@ PLAYSTYLE = {
                 "May choose [1] additional [Follower] beliefs when [founding] a religion"],
                "Voodoo: +1 Faith from jungle tiles and one extra Follower belief for their religion."),
     "Tauren": (["[+1 Faith] from [Plains] tiles without [Farm] [in all cities]",
-                "[+1 Food, +1 Culture] from [Hill] tiles without [Mine] [in all cities]"],
-               "The Earth Mother's Gift: untouched land is sacred. Unfarmed plains give +1 Faith; hills without mines give +1 Food and +1 Culture."),
+                "[+1 Culture] from [Hill] tiles without [Mine] [in all cities]"],
+               "The Earth Mother's Gift: untouched land is sacred. Unfarmed plains give +1 Faith; hills without mines give +1 Culture."),
     "Dwarves": (["[+1 Science, +1 Culture] from [Titan Ruins] tiles [in all cities]"],
                 "Explorers' League: Titan Ruins give +1 Science and +1 Culture, ancient ruins can hold Titan relics only dwarves can read, and Deep Mines replace Mines."),
     "Gnomes": ([], "Brilliant and Reckless: gnomish experiments can bring great breakthroughs, or explosions."),
@@ -50,20 +50,21 @@ PLAYSTYLE = {
                  "[-10]% [Production] [in all cities]",
                  "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately"],
                 "Everything Has a Price: buying costs 20% less Gold, captured cities pay out 10 turns of their Gold, but Production is 10% lower."),
-    "Blood Elves": (["[-1 Happiness] [in all cities] <starting from the [Age of the Third War]> <if [Sunwell Plateau] is not constructed by anybody> <without [Arcane Crystals]>"],
-                    "Mana Addiction: from the Age of the Third War, when the Sunwell fell, every city suffers -1 Happiness until the empire controls Arcane Crystals or someone restores the Sunwell (the Sunwell Plateau wonder)."),
-    "High Elves": (["[+25]% Strength for cities"],
-                   "The Runestone Barrier: cities are 25% stronger."),
+    "Blood Elves": (["[-1 Happiness] [in all cities] <starting from the [Age of the Third War]> <if [Sunwell Plateau] is not constructed by anybody> <without [Arcane Crystals]>",
+                     "[+1 Happiness] from every [Magisters' Sanctum]"],
+                    "Mana Addiction: from the Age of the Third War, when the Sunwell fell, every city suffers -1 Happiness until the empire controls Arcane Crystals or someone restores the Sunwell (the Sunwell Plateau wonder). Each Magisters' Sanctum eases the craving (+1 Happiness)."),
+    "High Elves": (["[+25]% Strength for cities", "[+10]% growth [in all cities]"],
+                   "The Runestone Barrier: cities are 25% stronger. Blessed by the Sunwell, they grow 10% faster."),
     "Draenei": (["Free [Settler] appears <upon founding a city> <before turn number [4]>",
-                 "[-1 Production] [in capital]",
                  "[+25]% Strength <for [Military] units> <vs [Barbarian] units>",
                  "[+1] Movement <for [Religious] units>"],
-                "Exiles: the Exodar crash leaves a weaker capital (-1 Production) but a second Settler. +25% Strength against barbarians and demons; missionaries move faster."),
+                "Exiles: the survivors of the Exodar crash found a second city at once with a free Settler. +25% Strength against barbarians and demons; missionaries move faster."),
     "Worgen": ([], "The Curse: Worgen units shift between human and worgen form, and the worgen curse claims those they slay."),
-    "Pandaren": (["Triggers a [The Wandering Isle's Choice] event <upon entering the [Age of the Dark Portal]> <hidden from users>"],
-                 "The Wandering Isle's Choice: in the Age of the Dark Portal the Pandaren choose the Alliance's Tushui way, the Horde's Huojin way, or neutrality."),
+    "Pandaren": (["Triggers a [The Wandering Isle's Choice] event <upon entering the [Age of the Dark Portal]> <hidden from users>",
+                  "Enables embarkation for land units"],
+                 "Riding Shen-zin Su: Pandaren can embark from the start of the game. The Wandering Isle's Choice: in the Age of the Dark Portal the Pandaren choose the Alliance's Tushui way, the Horde's Huojin way, or neutrality."),
     "Dark Iron Dwarves": (["[+1 Production] from [{Hill} {Mine}] tiles [in all cities]"],
-                          "Children of the Mountain's Fire: mines dug into hills give +1 Production; Molten Fields that ruin other peoples' land feed the Dark Iron forges."),
+                          "Children of the Mountain's Fire: mines dug into hills give +1 Production; Molten Fields give +1 Gold."),
     "Kul Tirans": (["[+1] Sight <for [Water] units>",
                     "[+25]% Production when constructing [Water] units [in all cities]"],
                    "Tidesages: ships see farther and are built 25% faster."),
@@ -89,8 +90,8 @@ IMPROVEMENTS = [
      "civilopediaText": _lore("The undead spread their plague into the soil itself, turning it into Plagued Land. Only the Scourge and the Forsaken can do this; the improvement disappears once the blight takes hold.")},
 ]
 # Dwarves' Deep Mine: copy of Mine with more
-DEEP_MINE = {"name": "Deep Mine", "replaces": "Mine", "uniqueTo": "Dwarves", "addStats": {"production": 1, "gold": 1},
-             "civilopediaText": _lore("Dwarven mines go deeper than anyone else's, down to the veins of the Titans' forge. +1 Production and +1 Gold over a normal Mine.")}
+DEEP_MINE = {"name": "Deep Mine", "replaces": "Mine", "uniqueTo": "Dwarves", "addStats": {"gold": 1},
+             "civilopediaText": _lore("Dwarven mines go deeper than anyone else's, down to the veins of the Titans' forge. +1 Gold over a normal Mine.")}
 
 # improvements other races may not use: (improvement, unique)
 RESTRICT_IMPROVEMENTS = [

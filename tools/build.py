@@ -475,6 +475,16 @@ assert not _missing_snd, _missing_snd
 files["ModOptions"] = {"isBaseRuleset": True, "unitset": "AbsoluteUnits",
                        "uniques": ["Mod preselects map [Azeroth Large]"]}
 
+# v0.18: make each AI favour its own race's unique units (they were rarely built)
+_leader_nation = {n["leaderName"]: n["name"] for n in files["Nations"] if n.get("leaderName")}
+for p in files["Personalities"]:
+    nat = _leader_nation.get(p["name"])
+    own = [u["name"] for u in files["Units"] if u.get("uniqueTo") == nat
+           and "Unbuildable" not in u.get("uniques", []) and u.get("unitType") not in ("Hero",)
+           and not any(x.startswith("Can be purchased with [Faith]") or "Faith" in x and "purchas" in x.lower()
+                       for x in u.get("uniques", []))]
+    p.setdefault("uniques", [])
+    p["uniques"] += ["[+50]%% weight to [%s] for AI decisions" % u for u in own]
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))
 
