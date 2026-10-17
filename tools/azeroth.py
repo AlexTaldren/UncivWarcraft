@@ -40,6 +40,10 @@ LAND = {
     "Kezan": [(55.5, 39.5), (58, 39.5), (58.5, 42), (56, 42.5)],
     "The Lost Isles": [(47, 40.5), (49.5, 40.5), (49.5, 42.5), (47, 42.5)],
     "The Wandering Isle": [(48, 50), (54, 49.5), (55, 54), (49, 55)],
+    # v0.17
+    "Kul Tiras": [(57, 22), (61, 21), (64, 23), (64.5, 27), (61, 29.5), (57.5, 28.5), (56, 25)],
+    "Zandalar": [(37, 56), (42, 55), (45.5, 57), (45.5, 61), (42, 62.5), (38, 62), (36, 59)],
+    "Isle of Thunder": [(57.5, 46), (60.5, 46), (61, 48.5), (58, 49)],
 }
 
 # ------------------------------------------------------------------ zones
@@ -128,6 +132,14 @@ ZONES = {
     "Kezan": ("Kezan", [(57, 41)], B({G: 1}, jungle=.5)),
     "The Lost Isles": ("The Lost Isles", [(48, 41)], B({P: 1}, jungle=.5, hill=.2)),
     "The Wandering Isle": ("The Wandering Isle", [(51, 52)], B({G: 1}, forest=.4, hill=.2, bamboo=.9)),
+    # --- v0.17: Kul Tiras, Zandalar, the Isle of Thunder
+    "Tiragarde Sound": ("Kul Tiras", [(61, 27)], B({G: .6, P: .4}, forest=.3, hill=.2)),
+    "Drustvar": ("Kul Tiras", [(57, 24)], B({T: .5, G: .5}, forest=.7, hill=.25)),
+    "Stormsong Valley": ("Kul Tiras", [(62, 23)], B({G: .7, P: .3}, forest=.25, hill=.25)),
+    "Zuldazar": ("Zandalar", [(42, 58)], B({G: 1}, jungle=.55, hill=.3)),
+    "Nazmir": ("Zandalar", [(41, 61)], B({G: 1}, marsh=.55, jungle=.3)),
+    "Vol'dun": ("Zandalar", [(37, 58)], B({D: 1}, hill=.2, oasis=.05)),
+    "Isle of Thunder": ("Isle of Thunder", [(59, 47)], B({G: 1}, jungle=.3, hill=.3)),
 }
 
 # ------------------------------------------------------------------ mountain ranges & lakes
@@ -189,6 +201,9 @@ CAPITALS = {  # major nations -> their capital's tile
     "Goblins": (34, 24),           # Bilgewater Harbor, Azshara
     "Worgen": (70, 31),            # Gilneas
     "Scourge": (46, 5),            # Icecrown Citadel, Icecrown
+    "Dark Iron Dwarves": (85, 49), # Shadowforge City, beneath Blackrock (Burning Steppes)
+    "Kul Tirans": (61, 27),        # Boralus, Tiragarde Sound
+    "Zandalari Trolls": (42, 58),  # Zuldazar
 }
 CITY_STATES = {
     "Dalaran": (79, 25),           # Alterac, on Lordamere Lake
@@ -207,6 +222,14 @@ CITY_STATES = {
     "Explorers' League": (88, 46), # Badlands, near Uldaman
     "Thorium Brotherhood": (81, 46),         # Thorium Point, Searing Gorge
     "Feathermoon Stronghold": (6, 46),        # Sardor Isle, Feralas
+    "Timbermaw Hold": (23, 20),    # furbolgs, Felwood / Winterspring
+    "Kamagua": (64, 15),           # tuskarr, Howling Fjord
+    "Maraudine": (16, 46),         # centaurs, Desolace / Feralas
+    "Jasperlode Mine": (80, 54),   # kobolds, Duskwood edge of Elwynn
+    "Razorfen Kraul": (26, 43),    # quilboar, Southern Barrens
+    "The Consortium": (42, 14),    # ethereals, Borean Tundra
+    "Mogu'shan": (59, 47),         # mogu, Isle of Thunder
+    "Ahn'Qiraj": (20, 57),         # qiraji, Silithus
 }
 
 

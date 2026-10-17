@@ -601,6 +601,39 @@ def r_sunwell():
     return i
 
 
+def n_dark_iron():
+    """An anvil wreathed in flame."""
+    i = Icon()
+    i.poly([(10, 62), (88, 62), (88, 70), (72, 70), (64, 78), (64, 84), (76, 94), (24, 94),
+            (36, 84), (36, 78), (28, 70), (18, 70)])
+    for x, h, w in ((30, 40, 14), (50, 56, 18), (70, 42, 14)):
+        i.taper((x, 58), (x - w * 0.6, 58 - h * 0.45), (x + w * 0.3, 58 - h * 0.75), (x + 2, 58 - h), w, 1)
+    i.circle(50, 48, 6, 0)
+    return i
+
+
+def n_kul_tirans():
+    """An anchor."""
+    i = Icon()
+    i.ring(50, 14, 9, 5)
+    i.line([(50, 22), (50, 84)], 9, caps=False)
+    i.line([(30, 32), (70, 32)], 8)
+    i.arc(50, 58, 34, 20, 160, 9)
+    i.poly([(10, 66), (24, 64), (16, 78)]); i.poly([(90, 66), (76, 64), (84, 78)])
+    return i
+
+
+def n_zandalari():
+    """A stepped golden pyramid under a sun."""
+    i = Icon()
+    for k, (w, y) in enumerate(((84, 92), (66, 76), (48, 60), (30, 44))):
+        i.rect(50 - w / 2, y - 14, 50 + w / 2, y)
+    i.rect(44, 62, 56, 92, 0)
+    i.rays(50, 16, 8, 16, 8, 3)
+    i.circle(50, 16, 7)
+    return i
+
+
 UNIT_ICONS = {"Footman": footman, "Paladin": paladin, "Mage": mage, "Priest": priest,
               "Archmage": archmage, "Steam Tank": steam_tank, "Kul Tiran Man-o'-War": man_o_war}
 BUILDING_ICONS = {"Chapel of the Light": chapel_of_the_light, "Royal Barracks": royal_barracks,
@@ -609,7 +642,8 @@ NATION_ICONS = {"Humans": n_humans, "Orcs": n_orcs, "Night Elves": n_night_elves
                 "Dwarves": n_dwarves, "Gnomes": n_gnomes, "Tauren": n_tauren, "Trolls": n_trolls,
                 "Blood Elves": n_blood_elves, "High Elves": n_high_elves, "Pandaren": n_pandaren,
                 "Forsaken": n_forsaken, "Draenei": n_draenei, "Goblins": n_goblins,
-                "Worgen": n_worgen, "Scourge": n_scourge}
+                "Worgen": n_worgen, "Scourge": n_scourge, "Dark Iron Dwarves": n_dark_iron,
+                "Kul Tirans": n_kul_tirans, "Zandalari Trolls": n_zandalari}
 RELIGION_ICONS = {"Holy Light": r_holy_light, "Elune": r_elune, "Earth Mother": r_earth_mother,
                   "Shamanism": r_shamanism, "Loa": r_loa, "Cenarion Circle": r_cenarion,
                   "August Celestials": r_celestials, "Titans": r_titans,

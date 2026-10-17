@@ -17,6 +17,7 @@ TAGS = {
     "Orcs": ["Horde"], "Trolls": ["Horde"], "Tauren": ["Horde"], "Forsaken": ["Horde", "Undead"],
     "Blood Elves": ["Horde"], "Goblins": ["Horde"],
     "Pandaren": [], "Scourge": ["Undead"],
+    "Dark Iron Dwarves": ["Alliance"], "Kul Tirans": ["Alliance"], "Zandalari Trolls": ["Horde"],
 }
 RIVALRY = {   # old enemies fight a little harder against each other
     "Alliance": "[+10]% Strength <for [Military] units> <vs [Horde] units>",
@@ -61,6 +62,14 @@ PLAYSTYLE = {
     "Worgen": ([], "The Curse: Worgen units shift between human and worgen form, and the worgen curse claims those they slay."),
     "Pandaren": (["Triggers a [The Wandering Isle's Choice] event <upon entering the [Age of the Dark Portal]> <hidden from users>"],
                  "The Wandering Isle's Choice: in the Age of the Dark Portal the Pandaren choose the Alliance's Tushui way, the Horde's Huojin way, or neutrality."),
+    "Dark Iron Dwarves": (["[+1 Production] from [{Hill} {Mine}] tiles [in all cities]"],
+                          "Children of the Mountain's Fire: mines dug into hills give +1 Production; Molten Fields that ruin other peoples' land feed the Dark Iron forges."),
+    "Kul Tirans": (["[+1] Sight <for [Water] units>",
+                    "[+25]% Production when constructing [Water] units [in all cities]"],
+                   "Tidesages: ships see farther and are built 25% faster."),
+    "Zandalari Trolls": (["[+1 Faith, +1 Culture] from [{Jungle} {Camp}] tiles [in all cities]",
+                          "[+10]% Strength <for [Mounted] units>"],
+                         "Children of the Loa: jungle camps give +1 Faith and +1 Culture, and their dinosaur riders fight 10% harder."),
     "Scourge": (["[-50]% Food consumption by [Population] [in all cities]",
                  "[+2 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
                  "[1] population in a random city <upon defeating a [Military] unit> <with [50]% chance>",
@@ -164,6 +173,9 @@ CLERICS = {
     "Tauren": ("Sunwalker", "Tauren paladins of An'she, the Sun, who scour corruption from the Earth Mother's body."),
     "Pandaren": ("Mistweaver", "Pandaren monks whose healing mists restore balance to the land."),
     "Goblins": ("Hazmat Crew", "Goblin cleanup crews in rubber suits. They'll scrub anything off the ground, for a fee."),
+    "Dark Iron Dwarves": ("Flamekeeper", "Dark Iron priests who burn the corruption out of the land with forge-fire."),
+    "Kul Tirans": ("Tidesage", "Tidesages of the Storm, who wash blight and fel from the land with the power of the sea."),
+    "Zandalari Trolls": ("Loa Speaker", "Zandalari priests who call on the loa to drive the sickness from the earth."),
 }
 ICONS_CLERIC = "hand_light"
 
@@ -179,6 +191,9 @@ MANA_SOURCES = {
     "Moonwell": 1, "Dwarven Forge": 1, "Tinker's Workshop": 1, "Goblin Bazaar": 1,
     "Crystal Sanctum": 1, "Gilnean Bulwark": 1, "Runestone": 1, "Brewery": 1,
     "Apothecarium": 1, "Necropolis": 1, "Ziggurat": 1,
+    # v0.17
+    "Mana Forge": 1, "Elven Spire": 1, "Loa Shrine": 1, "Spirit Lodge": 1, "Crystal Hall": 1,
+    "Shadowforge Furnace": 1, "Admiralty Drydock": 1, "Golden Pyramid": 1, "Cathedral of Light": 1,
 }
 # Arcane Crystals deposits feed the arcane schools
 MANA_WITH_CRYSTALS = {"Arcane Sanctum": 1, "Mage Tower": 1}
@@ -187,7 +202,11 @@ MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihil
               "Spellbreaker": 6, "Blood Knight": 10, "Batrider": 15, "Death Knight": 12, "Frost Wyrm": 20,
               "Abomination": 8, "Meat Wagon": 8, "Glaive Thrower": 8, "Gnomish Bombardier": 10,
               "Vindicator": 10, "Kodo Beast": 6, "Headhunter": 4, "Worgen Stalker": 4,
-              "Farstrider": 6, "Brewmaster": 8, "Goblin Sapper": 6, "Ram Rider": 6}
+              "Farstrider": 6, "Brewmaster": 8, "Goblin Sapper": 6, "Ram Rider": 6,
+              # v0.17
+              "Knight of the Silver Hand": 10, "Lightforged Warframe": 15, "Ranger-Lord": 8, "Dragonhawk Rider": 10,
+              "Cloud Serpent Rider": 12, "Crypt Fiend": 10, "Mountain Giant": 12, "Troll Berserker": 6,
+              "Fireguard": 6, "Direhorn Rider": 8}
 HERO_MANA = 30          # every hero costs this to recruit
 # magical buildings and wonders
 BUILDING_MANA_COSTS = {"Mage Tower": 20, "Arcane Laboratory": 40, "Mana Reactor": 60, "Runestone": 10,
@@ -244,6 +263,12 @@ HEROES = {
                 "Boss of Ratchet, the goblin who built Orgrimmar for Thrall, for a reasonable fee."),
     "Worgen": ("Darius Crowley", "Lord of the Gilneas Liberation Front", ["[+25]% Strength <when fighting in [Forest] tiles>", "May capture killed [Military] units"],
                "The rebel lord who held the Greymane Wall against his own king, then fought for Gilneas as a worgen."),
+    "Dark Iron Dwarves": ("Dagran Thaurissan", "Emperor of the Dark Irons", ["[+25]% Strength <when defending>", "[+25]% Strength <vs cities>"],
+                          "The Dark Iron emperor who ruled from Shadowforge City and dared to make a Bronzebeard princess his queen."),
+    "Kul Tirans": ("Daelin Proudmoore", "Grand Admiral", ["[+25]% Strength <when attacking>", "[+1] Movement"],
+                   "Lord Admiral of Kul Tiras and hero of the Second War, father of Jaina."),
+    "Zandalari Trolls": ("Rastakhan", "King of the Zandalari", ["[+25]% Strength <when defending>", "All adjacent units heal [+10] HP when healing"],
+                         "The long-reigning king of Zandalar, who bargained with the loa of death to keep his empire alive."),
     "Scourge": ("Kel'Thuzad", "Lich", ["[+25]% Strength <vs [Alliance] units>", "[+25]% Strength <when attacking>"],
                 "Archmage of Dalaran turned necromancer, founder of the Cult of the Damned and the Lich King's first lieutenant."),
 }
@@ -281,4 +306,5 @@ ICONS_PROMOTIONS = {"Hero's Might": ("crown", "sword"), "Commanding Presence": (
 HERO_ICON_BADGE = {"Humans": "hammer", "Orcs": "axe", "Night Elves": "leaf", "Dwarves": "hammer", "Gnomes": "gear",
                    "Tauren": "totem", "Trolls": "mask", "Blood Elves": "flame", "High Elves": "bow",
                    "Pandaren": "chalice", "Forsaken": "skull", "Draenei": "naaru", "Goblins": "bomb",
-                   "Worgen": "wolf", "Scourge": "skull"}
+                   "Worgen": "wolf", "Scourge": "skull", "Dark Iron Dwarves": "flame", "Kul Tirans": "anchor",
+                   "Zandalari Trolls": "coins"}

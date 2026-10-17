@@ -435,17 +435,21 @@ RACE_MOUNT = {
     "High Elves": lambda p, v, a: horse(p, v, a, (235, 232, 222), (225, 190, 90)),
     "Worgen": lambda p, v, a: horse(p, v, a, [(60, 45, 35), (40, 38, 36), (95, 80, 65)][v % 3],
                                     (25, 22, 20)),
+    "Dark Iron Dwarves": lambda p, v, a: ram(p, 2, a),
+    "Kul Tirans": lambda p, v, a: horse(p, v, a, [(120, 80, 50), (70, 55, 45), (180, 170, 160)][v % 3], (40, 32, 28)),
+    "Zandalari Trolls": lambda p, v, a: raptor(p, v + 1, a),
 }
 MOUNT_NAME = {
     "Orcs": "wolf", "Dwarves": "ram", "Gnomes": "mechanostrider", "Night Elves": "nightsaber",
     "Tauren": "kodo", "Trolls": "raptor", "Blood Elves": "hawkstrider", "Draenei": "elekk",
     "Pandaren": "dragon turtle", "Goblins": "trike", "Forsaken": "skeletal horse", "Scourge": "frost-touched skeletal steed",
     "High Elves": "white steed", "Worgen": "Gilnean horse",
+    "Dark Iron Dwarves": "black ram", "Kul Tirans": "Kul Tiran draft horse", "Zandalari Trolls": "raptor",
 }
 
 
 SCALE = {"Tauren": 1.35, "Draenei": 1.3, "Pandaren": 1.25, "Trolls": 1.2, "Gnomes": 1.05,
-         "Goblins": 1.1, "Dwarves": 1.15}
+         "Goblins": 1.1, "Dwarves": 1.15, "Dark Iron Dwarves": 1.15, "Zandalari Trolls": 1.25}
 
 
 def draw_mount(race, variant, armored, legc=None, mount=None):

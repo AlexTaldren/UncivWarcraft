@@ -570,6 +570,9 @@ for name, fn in legion.SPRITES.items():
 import wc_style_units
 n = wc_style_units.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
 print("painted Human/Orc sprites:", n)
+import wc_style_more
+n = wc_style_more.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
+print("painted Human/Orc sprites (rest of the roster):", n)
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)

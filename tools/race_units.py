@@ -562,8 +562,9 @@ def render(atlas, name):
 
 def write_all(atlas, images_dir):
     n = 0
-    for name in SPRITES:
-        for s, im in zip(("", "-1", "-2"), render(atlas, name)):
+    for name in list(SPRITES) + list(_PAINTED_RENDER):
+        layers = _PAINTED_RENDER[name](atlas) if name in _PAINTED_RENDER else render(atlas, name)
+        for s, im in zip(("", "-1", "-2"), layers):
             path = os.path.join(images_dir, P, name + s + ".png")
             os.makedirs(os.path.dirname(path), exist_ok=True)
             im.save(path)
@@ -591,6 +592,9 @@ HERO_SPRITES = {
     "Gazlowe": _hero("Scout", "Goblins", "full", [lambda l: headgear(l, "goggles"), lambda l: back_item(l, "bomb")], (255, 200, 90)),
     "Darius Crowley": _hero("Swordsman", "Worgen", "full", [lambda l: back_item(l, "cloak")], (200, 200, 230)),
     "Kel'Thuzad": _hero("Worker", "Scourge", "full", [lambda l: headgear(l, "cult_hood"), lambda l: weapon(l, "staff")], (140, 210, 255)),
+    "Dagran Thaurissan": _hero("Swordsman", "Dark Iron Dwarves", "full", [lambda l: weapon(l, "hammer")], (255, 130, 50)),
+    "Daelin Proudmoore": _hero("Musketman", "Kul Tirans", "full", [lambda l: back_item(l, "cloak")], (150, 210, 255)),
+    "Rastakhan": _hero("Spearman", "Zandalari Trolls", "full", [lambda l: headgear(l, "mask"), lambda l: weapon(l, "staff")], (255, 215, 90)),
 }
 SPRITES.update(HERO_SPRITES)
 
@@ -608,3 +612,234 @@ def _cleric_sprites():
                      + ([lambda l: headgear(l, "goggles")] if race in ("Gnomes", "Goblins") else []))
     return out
 SPRITES.update(_cleric_sprites())
+
+
+# ======================================================================= v0.17
+# A later-era unique unit for every race (so races stay distinct past the steam age),
+# a second unique building, and the uniques of the three new races.
+UNITS += [
+    ("Orcs", "Cavalry", {"name": "Raider", "strength": 36,
+        "dropUniques": ["[-33]% Strength <vs cities> <when attacking>"],
+        "addUniques": ["No movement cost to pillage", "[+25]% Strength <vs [Mounted] units>"],
+        "civilopediaText": _lore("Wolf riders armed with chains and grappling hooks, trained to drag down walls, riders and siege engines alike.",
+                                 "Stronger than Cavalry, no penalty attacking cities, pillages without spending movement and +25% Strength against mounted units.")}),
+    ("Dwarves", "War Golem", {"name": "Steam Armor", "strength": 66,
+        "addUniques": ["[+25]% Strength <when fighting in [Hill] tiles>"],
+        "civilopediaText": _lore("A dwarf in a walking suit of riveted steel and boiler-plate, the pride of Ironforge's engineers.",
+                                 "Stronger than a War Golem, with +25% Strength in hills.")}),
+    ("Gnomes", "Siege Engine", {"name": "Spider Tank", "strength": 74, "movement": 6,
+        "addUniques": ["Ignores terrain cost"],
+        "civilopediaText": _lore("A gnomish tank on eight clockwork legs that climbs over rubble, hills and anything else in its way.",
+                                 "Stronger and faster than a Siege Engine, and ignores terrain movement costs.")}),
+    ("Night Elves", "War Golem", {"name": "Mountain Giant", "strength": 64, "requiredResource": None,
+        "dropUniques": ["No defensive terrain bonus"],
+        "addUniques": ["[+25]% Strength <when fighting in [Forest] tiles>", "[+15]% Strength <when defending>"],
+        "civilopediaText": _lore("Ancient giants of living stone and moss who answer the night elves' call to defend the forests.",
+                                 "Stronger than a War Golem, needs no Azerite, keeps terrain defence, +25% Strength in forests and +15% when defending.")}),
+    ("Draenei", "War Golem", {"name": "Lightforged Warframe", "strength": 64,
+        "addUniques": ["All adjacent units heal [+10] HP when healing", "[+33]% Strength <vs [Barbarian] units>"],
+        "civilopediaText": _lore("A towering frame of Light-infused metal from the Army of the Light, piloted by a Lightforged draenei.",
+                                 "Stronger than a War Golem, heals adjacent units 10 HP more, and +33% Strength against barbarians and demons.")}),
+    ("Worgen", "War Golem", {"name": "Harvest Golem", "strength": 62,
+        "addUniques": ["[+20]% Strength <when defending>", "[+1] Sight"],
+        "civilopediaText": _lore("Gilneas's farm golems, refitted with plate and cannon to hold the walls against the Scourge and the Forsaken.",
+                                 "Stronger than a War Golem, +20% Strength when defending, and sees farther.")}),
+    ("High Elves", "Mountaineer", {"name": "Ranger-Lord", "strength": 32, "rangedStrength": 34,
+        "addUniques": ["[+1] Sight", "[+25]% Strength <when fighting in [Forest] tiles>"],
+        "civilopediaText": _lore("The masters of the Farstriders, whose enchanted arrows outrange any rifle.",
+                                 "Stronger than a Mountaineer, sees farther and gains +25% Strength in forests.")}),
+    ("Trolls", "Musketeer", {"name": "Troll Berserker", "strength": 27,
+        "addUniques": ["Heals [10] damage if it kills a unit", "[+15]% Strength <when attacking>"],
+        "civilopediaText": _lore("Headhunters who drink a voodoo brew and charge into battle in a frenzy, throwing axes as they go.",
+                                 "Stronger than a Musketeer, +15% Strength when attacking, and heals 10 HP whenever it kills a unit.")}),
+    ("Tauren", "Gyrocopter", {"name": "Wind Rider", "strength": 37, "rangedStrength": 37, "range": 7,
+        "civilopediaText": _lore("Tauren and orc riders on wyverns, the Horde's answer to the gryphon riders of the Alliance.",
+                                 "Stronger than a Gyrocopter, with a longer range (7).")}),
+    ("Forsaken", "Rifleman", {"name": "Deathstalker", "strength": 36,
+        "addUniques": ["[+1] Sight", "Ignores Zone of Control"],
+        "civilopediaText": _lore("The Banshee Queen's assassins and scouts, undead rangers who slip between enemy lines.",
+                                 "Stronger than a Rifleman, sees farther and ignores zones of control.")}),
+    ("Blood Elves", "Gyrocopter", {"name": "Dragonhawk Rider", "strength": 38, "rangedStrength": 38,
+        "addUniques": ["[+25]% Strength <vs [Land] units>"],
+        "civilopediaText": _lore("Blood elf riders on fiery dragonhawks, raised in the aviaries of Eversong.",
+                                 "Stronger than a Gyrocopter, with +25% Strength against land units.")}),
+    ("Goblins", "Bomber Zeppelin", {"name": "Goblin Zeppelin", "strength": 55, "rangedStrength": 58,
+        "addUniques": ["[+33]% Strength <vs cities>"],
+        "civilopediaText": _lore("A patched-together goblin airship loaded with more explosives than is strictly safe.",
+                                 "Stronger than a Bomber Zeppelin, with +33% Strength against cities.")}),
+    ("Pandaren", "Gryphon Rider", {"name": "Cloud Serpent Rider", "strength": 50, "rangedStrength": 50,
+        "addUniques": ["[+15] HP when healing"],
+        "civilopediaText": _lore("Riders of the Order of the Cloud Serpent on the jade serpents of Pandaria.",
+                                 "Stronger than a Gryphon Rider and heals 15 HP more each turn it heals.")}),
+    ("Scourge", "Mountaineer", {"name": "Crypt Fiend", "strength": 32, "rangedStrength": 32, "requiredResource": None,
+        "addUniques": ["[+50]% Strength <vs [Sky Fighter] units>", "Heals [10] damage if it kills a unit"],
+        "civilopediaText": _lore("Undead nerubians that spit acid and web flying enemies out of the sky.",
+                                 "Stronger than a Mountaineer, +50% Strength against flying fighters, and heals 10 HP whenever it kills a unit.")}),
+    # ---------------------------------------------------------------- Dark Iron Dwarves
+    ("Dark Iron Dwarves", "Pikeman", {"name": "Fireguard", "strength": 18,
+        "addUniques": ["[+25]% Strength <when fighting in [Hill] tiles>", "[+15]% Strength <when defending>"],
+        "civilopediaText": _lore("Dark Iron guards in blackened plate, their halberds still glowing from the forges of Shadowforge City.",
+                                 "Stronger than a Pikeman, +25% Strength in hills and +15% when defending.")}),
+    ("Dark Iron Dwarves", "War Golem", {"name": "Dark Iron Golem", "strength": 66,
+        "addUniques": ["[+15]% Strength <when attacking>"],
+        "civilopediaText": _lore("Hulking constructs of dark iron with a furnace for a heart, built by the forgemasters of Blackrock Depths.",
+                                 "Stronger than a War Golem, with +15% Strength when attacking.")}),
+    # ---------------------------------------------------------------- Kul Tirans
+    ("Kul Tirans", "Frigate", {"name": "Kul Tiran Man-o'-War", "strength": 28, "rangedStrength": 32, "movement": 6,
+        "civilopediaText": _lore("The great warships of Kul Tiras, the island kingdom whose admiralty has ruled the seas of the Eastern Kingdoms for generations.",
+                                 "Faster and better armed than any frigate.")}),
+    ("Kul Tirans", "Musketeer", {"name": "Admiralty Gunner", "strength": 27,
+        "addUniques": ["Eliminates combat penalty for attacking across a coast", "[+1] Sight"],
+        "civilopediaText": _lore("Kul Tiran marines of the Proudmoore Admiralty, as at home storming a beach as standing on a deck.",
+                                 "Stronger than a Musketeer, attacks from ships without penalty and sees farther.")}),
+    # ---------------------------------------------------------------- Zandalari Trolls
+    ("Zandalari Trolls", "Outrider", {"name": "Raptor Rider", "strength": 13, "movement": 5,
+        "addUniques": ["[+25]% Strength <when fighting in [Jungle] tiles>"],
+        "civilopediaText": _lore("Zandalari riders on swift raptors bred in the jungles of Zuldazar.",
+                                 "Stronger and faster than an Outrider, with +25% Strength in jungle.")}),
+    ("Zandalari Trolls", "Knight", {"name": "Direhorn Rider", "strength": 23,
+        "dropUniques": ["[-33]% Strength <vs cities> <when attacking>"],
+        "addUniques": ["[+20]% Strength <when attacking>"],
+        "civilopediaText": _lore("Zandalari warriors on armored direhorns, whose charge can break a shield wall or a city gate.",
+                                 "Stronger than a Knight, no penalty attacking cities, and +20% Strength when attacking.")}),
+]
+
+BUILDINGS += [
+    ("Orcs", "Workshop", {"name": "War Mill", "addStats": {"production": 1},
+        "addUniques": ["[+15]% Production when constructing [Military] units [in this city]"],
+        "civilopediaText": _lore("Where the Horde's axes are forged and its catapults built, as in every orcish town since the Second War. +1 Production and +15% Production toward military units.")}),
+    ("Dwarves", "Foundry", {"name": "Great Forge", "addStats": {"production": 2},
+        "civilopediaText": _lore("A forge in the image of the Great Forge at the heart of Ironforge, its rivers of molten metal never cooling. +2 Production.")}),
+    ("Gnomes", "Arcane Laboratory", {"name": "Gnomeregan Laboratory", "addStats": {"science": 2},
+        "civilopediaText": _lore("A laboratory in the tradition of Gnomeregan's tinkers, full of gears, steam and the occasional small explosion. +2 Science.")}),
+    ("Night Elves", "Keep", {"name": "Tree of Life", "addStats": {"food": 2, "cityStrength": 2},
+        "civilopediaText": _lore("A great ancient that is both the heart and the shelter of a night elf town. +2 Food and stronger defences than a Keep.")}),
+    ("Draenei", "Library", {"name": "Crystal Hall", "addStats": {"faith": 1},
+        "civilopediaText": _lore("A hall of glowing crystals where draenei scholars record the teachings of the naaru. +1 Faith.")}),
+    ("Worgen", "Keep", {"name": "Greymane Watchtower", "addStats": {"culture": 1, "cityStrength": 2},
+        "civilopediaText": _lore("A watchtower of the Greymane Wall, built to keep Gilneas apart from the world. +1 Culture and stronger defences than a Keep.")}),
+    ("High Elves", "Mage Tower", {"name": "Elven Spire", "addStats": {"culture": 1},
+        "civilopediaText": _lore("A slender spire of white stone and blue glass, home to the magisters of Quel'Thalas. +1 Culture.")}),
+    ("Trolls", "Temple", {"name": "Loa Shrine", "addStats": {"culture": 1},
+        "civilopediaText": _lore("A shrine to the loa, the wild gods of the trolls, hung with masks and offerings. +1 Culture.")}),
+    ("Tauren", "Herb Garden", {"name": "Spirit Lodge", "addStats": {"faith": 1, "food": 1},
+        "civilopediaText": _lore("A lodge where tauren spirit walkers commune with the ancestors and the Earth Mother. +1 Faith and +1 Food.")}),
+    ("Forsaken", "Foundry", {"name": "Plague Cauldron", "addStats": {"science": 1},
+        "civilopediaText": _lore("Great bubbling cauldrons where the apothecaries brew new plagues. +1 Science.")}),
+    ("Blood Elves", "Foundry", {"name": "Mana Forge", "addStats": {"production": 1},
+        "civilopediaText": _lore("A blood elf forge that draws raw energy from mana itself. +1 Production, +1 Mana.")}),
+    ("Goblins", "Bank", {"name": "Trade Prince's Bank", "addStats": {"gold": 2},
+        "civilopediaText": _lore("A Bilgewater Cartel bank: secure vaults, generous loans, ruinous interest. +2 Gold.")}),
+    ("Pandaren", "Temple", {"name": "Jade Pagoda", "addStats": {"culture": 1, "happiness": 1},
+        "civilopediaText": _lore("A pagoda of carved jade where monks meditate on the balance of all things. +1 Culture and +1 Happiness.")}),
+    ("Scourge", "Foundry", {"name": "Slaughterhouse", "addStats": {"production": 1}, "addUniques": [BLIGHT],
+        "civilopediaText": _lore("Where the Scourge stitches together abominations and gathers corpses for its wagons. +1 Production. Needs Plagued Land within 3 tiles.")}),
+    ("Dark Iron Dwarves", "Blacksmith", {"name": "Shadowforge Furnace", "addStats": {"production": 2},
+        "civilopediaText": _lore("A furnace fed by the fires beneath Blackrock Mountain, where the Dark Irons work their black metal. +2 Production.")}),
+    ("Kul Tirans", "Shipyard", {"name": "Admiralty Drydock", "addStats": {"production": 1},
+        "addUniques": ["New [Water] units start with [15] XP [in this city]"],
+        "civilopediaText": _lore("The drydocks of the Proudmoore Admiralty, where the finest ships on Azeroth are built. +1 Production, and new ships start with 15 experience.")}),
+    ("Zandalari Trolls", "Market", {"name": "Golden Pyramid", "addStats": {"gold": 1, "culture": 1},
+        "civilopediaText": _lore("A pyramid capped in gold in the manner of Dazar'alor, seat of the Zandalari's wealth and pride. +1 Gold and +1 Culture over a Market.")}),
+]
+
+ICONS_UNITS.update({
+    "Raider": ("wolf", "chains"), "Steam Armor": ("golem", "gear"), "Spider Tank": ("gears", "feet"),
+    "Mountain Giant": ("mountain", "fist"), "Lightforged Warframe": ("golem", "naaru"),
+    "Harvest Golem": ("golem", "wheat"), "Ranger-Lord": ("bow", "crown"), "Troll Berserker": ("axe", "mask"),
+    "Wind Rider": ("wing", "spear"), "Deathstalker": ("skull", "eye"), "Dragonhawk Rider": ("wing", "flame"),
+    "Goblin Zeppelin": ("zeppelin", "bomb"), "Cloud Serpent Rider": ("dragon", "jade"),
+    "Crypt Fiend": ("net", "skull"), "Fireguard": ("spear", "flame"), "Dark Iron Golem": ("golem", "flame"),
+    "Admiralty Gunner": ("gun", "anchor"),
+    "Raptor Rider": ("paw", "spear"), "Direhorn Rider": ("horn", "shield"),
+})
+ICONS_BUILDINGS.update({
+    "War Mill": ("saw", "axe"), "Great Forge": ("anvil", "hammer"), "Gnomeregan Laboratory": ("gears", "flask"),
+    "Tree of Life": ("tree", "heart"), "Crystal Hall": ("crystals", "book"), "Greymane Watchtower": ("tower", "wolf"),
+    "Elven Spire": ("spire", "sparkle"), "Loa Shrine": ("temple", "mask"), "Spirit Lodge": ("tent", "feather_plume"),
+    "Plague Cauldron": ("cauldron", "skull"), "Mana Forge": ("anvil", "orb"), "Trade Prince's Bank": ("coins", "key"),
+    "Jade Pagoda": ("pagoda", "jade"), "Slaughterhouse": ("chains", "skull"), "Shadowforge Furnace": ("anvil", "flame"),
+    "Admiralty Drydock": ("ship", "hammer"), "Golden Pyramid": ("ziggurat", "coins"),
+})
+
+
+# ---- v0.17 sprites (the Human and Orc uniques are painted in wc_style_units.py)
+def wyvern_recolor(col):
+    """Re-dye a flying mount's feathers/hide (mid-saturation warm hues) to `col`."""
+    return lambda ls: LU.recolor(ls, lambda h, s, v: s > 0.18 and v > 0.25 and not (0.55 < h < 0.75),
+                                 lambda v: tuple(int(c * (0.45 + 0.65 * v)) for c in col)) or ls
+
+
+def _recolored(fn):
+    def step(ls):
+        fn(ls)
+        return ls
+    return step
+
+
+def mountain_giant(ls):
+    base, l1, l2 = RS.reshape(ls, 1.45, 1.3)
+    ls = [base, l1, l2]
+    ANCHOR[:] = _anchor(ls)
+    LU.recolor(ls, lambda h, s, v: v > 0.2, lambda v: tuple(int(c * (0.45 + 0.6 * v)) for c in (128, 132, 118)))
+    x0, y0, x1, y1 = LU.bbox_all(ls)
+    part, d = _part(base.size)
+    for i in range(6):                                       # moss on the shoulders and back
+        d.ellipse([x0 + 3 + i * 4, y0 + 6 + (i % 3), x0 + 7 + i * 4, y0 + 9 + (i % 3)], fill=(80, 130, 60, 255))
+    return _apply(ls, part)
+
+
+def crypt_fiend(ls):
+    base, l1, l2 = RS.reshape(ls, 1.4, 0.85)
+    ls = [base, l1, l2]
+    ANCHOR[:] = _anchor(ls)
+    LU.recolor(ls, lambda h, s, v: True if v > 0.15 and s > 0.1 else False,
+               lambda v: tuple(int(c * (0.4 + 0.7 * v)) for c in (60, 70, 105)))
+    x0, y0, x1, y1 = LU.bbox_all(ls)
+    part, d = _part(base.size)
+    for k in range(3):                                       # spider legs
+        d.line([(x0 + 4 + k * 5, y1 - 10), (x0 - 1 + k * 4, y1 - 1)], fill=(45, 50, 75, 255), width=2)
+        d.line([(x1 - 4 - k * 5, y1 - 10), (x1 + 1 - k * 4, y1 - 1)], fill=(45, 50, 75, 255), width=2)
+    ls = _apply(ls, part)
+    return _glow(ls, (140, 230, 120), lambda d: d.ellipse([x1 - 6, y0 + 4, x1 - 3, y0 + 7], fill=(150, 240, 120, 255)))
+
+
+def direhorn(atlas):
+    """A Zandalari rider on a direhorn (a kodo-sized beast with a bony frill and horns)."""
+    import mounts
+    src_layers = [atlas.crop(P + "Knight" + s) for s in ("", "-1", "-2")]
+    w, h = src_layers[0].size
+    rider = RS.make(LU.source_layers(atlas, "Swordsman"), "Zandalari Trolls", "Swordsman")
+    cw = rider[0].width
+    canvas = (cw, round(h * cw / w))
+    bb = src_layers[0].getbbox()
+    def dire(p, v, armored):
+        sx, sy = mounts.kodo(p, 2, armored)
+        p.poly([(50, 10), (58, 6), (60, 14), (54, 18)], (190, 160, 120), "frill")
+        p.line(56, 14, 63, 9, 2, (238, 228, 196), "horn")
+        return sx, sy
+    return mounts.compose(rider, "Zandalari Trolls", 1, True, canvas, round(bb[3] / h * canvas[1]),
+                          (bb[0] + bb[2]) / 2 / w * cw, mount=dire)
+
+
+SPRITES.update({
+    "Steam Armor": ("Landship", None, "raw", [_recolored(lambda l: recolor_metal(l, (185, 140, 80)))]),
+    "Spider Tank": ("Tank", None, "raw", [_recolored(lambda l: recolor_metal(l, (90, 175, 170))),
+                                           lambda l: headgear(l, "goggles")]),
+    "Mountain Giant": ("Swordsman", "Tauren", "full", [mountain_giant]),
+    "Lightforged Warframe": ("Landship", None, "raw", [_recolored(lambda l: recolor_metal(l, (245, 210, 120))),
+                                                       lambda l: glow_aura(l, (255, 235, 150), "body")]),
+    "Harvest Golem": ("Landship", None, "raw", [_recolored(lambda l: recolor_metal(l, (150, 110, 70)))]),
+    "Ranger-Lord": ("Composite Bowman", "High Elves", "full", [lambda l: headgear(l, "hood"), lambda l: back_item(l, "cloak"),
+                                                                lambda l: glow_aura(l, (170, 220, 255))]),
+    "Troll Berserker": ("Swordsman", "Trolls", "full", [lambda l: weapon(l, "axe"), lambda l: headgear(l, "mask")]),
+    "Deathstalker": ("Rifleman", "Forsaken", "full", [lambda l: headgear(l, "hood"), lambda l: back_item(l, "cloak")]),
+    "Crypt Fiend": ("Composite Bowman", "Scourge", "full", [crypt_fiend]),
+    "Fireguard": ("Pikeman", "Dark Iron Dwarves", "full", [lambda l: headgear(l, "horned_helm"),
+                                                             lambda l: glow_aura(l, (255, 130, 50))]),
+    "Dark Iron Golem": ("Landship", None, "raw", [_recolored(lambda l: recolor_metal(l, (85, 72, 70))),
+                                                  lambda l: glow_aura(l, (255, 120, 40), "body")]),
+    "Admiralty Gunner": ("Musketman", "Kul Tirans", "full", [lambda l: headgear(l, "top_hat")]),
+    "Raptor Rider": ("Horseman", "Zandalari Trolls", "mounted", [lambda l: headgear(l, "mask")]),
+})
+_PAINTED_RENDER = {"Direhorn Rider": direhorn}

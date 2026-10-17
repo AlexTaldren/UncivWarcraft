@@ -460,5 +460,100 @@
       "[+30]% weight to [Siege] for AI decisions",
       "[+20]% weight to [Walls] for AI decisions"
     ]
+  },
+  {
+    "name": "Moira Thaurissan",
+    "preferredVictoryType": "Scientific",
+    "production": 9,
+    "food": 5,
+    "gold": 6,
+    "science": 6,
+    "culture": 4,
+    "happiness": 5,
+    "faith": 5,
+    "military": 7,
+    "aggressive": 5,
+    "declareWar": 4,
+    "commerce": 5,
+    "diplomacy": 6,
+    "loyal": 7,
+    "expansion": 5,
+    "priorities": {
+      "Old Kingdoms": 7,
+      "Blood and Thunder": 7,
+      "Trade Princes": 5,
+      "Arcane Inquiry": 7,
+      "Free Peoples": 5,
+      "Unity": 8,
+      "Dominion": 3
+    },
+    "uniques": [
+      "[+35]% weight to [Siege] for AI decisions",
+      "[+25]% weight to [Blacksmith] for AI decisions",
+      "[+15]% weight to [Walls] for AI decisions"
+    ]
+  },
+  {
+    "name": "Jaina Proudmoore",
+    "preferredVictoryType": "Diplomatic",
+    "production": 6,
+    "food": 5,
+    "gold": 7,
+    "science": 5,
+    "culture": 5,
+    "happiness": 5,
+    "faith": 5,
+    "military": 6,
+    "aggressive": 4,
+    "declareWar": 3,
+    "commerce": 5,
+    "diplomacy": 7,
+    "loyal": 8,
+    "expansion": 6,
+    "priorities": {
+      "Trade Princes": 8,
+      "Frontier": 6,
+      "Blood and Thunder": 5,
+      "Diplomacy": 6,
+      "Free Peoples": 8,
+      "Unity": 5,
+      "Dominion": 1
+    },
+    "uniques": [
+      "[+45]% weight to [Water] for AI decisions",
+      "[+30]% weight to [Shipyard] for AI decisions",
+      "[+25]% weight to [Lighthouse] for AI decisions"
+    ]
+  },
+  {
+    "name": "Talanji",
+    "preferredVictoryType": "Cultural",
+    "production": 5,
+    "food": 5,
+    "gold": 8,
+    "science": 5,
+    "culture": 7,
+    "happiness": 5,
+    "faith": 8,
+    "military": 6,
+    "aggressive": 5,
+    "declareWar": 4,
+    "commerce": 5,
+    "diplomacy": 5,
+    "loyal": 6,
+    "expansion": 5,
+    "priorities": {
+      "Devotion": 8,
+      "Old Kingdoms": 8,
+      "Diplomacy": 6,
+      "Trade Princes": 6,
+      "Unity": 5,
+      "Dominion": 4
+    },
+    "uniques": [
+      "[+30]% weight to [Market] for AI decisions",
+      "[+30]% weight to [Temple] for AI decisions",
+      "[+20]% weight to [Mounted] for AI decisions"
+    ]
   }
 ]

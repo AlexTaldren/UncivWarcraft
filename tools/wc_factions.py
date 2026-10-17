@@ -41,17 +41,20 @@ HUMAN_UNITS = [
         "addUniques": ["All adjacent units heal [+15] HP when healing"],
         "civilopediaText": [{"text": "Priests of the Holy Light carry the faith to distant lands and tend the wounded wherever they go: adjacent units heal 15 HP more each turn they heal."}],
     }),
-    ("Frigate", {
-        "name": "Kul Tiran Man-o'-War", "replaces": "Frigate", "uniqueTo": "Humans",
-        "strength": 28, "rangedStrength": 32, "movement": 6,
-        "civilopediaText": [{"text": "The great warships of Kul Tiras, the island kingdom whose admiralty ruled the seas of the Eastern Kingdoms for generations. Faster and better armed than any frigate."}],
-    }),
     ("Cannon", {
         "name": "Steam Tank", "replaces": "Cannon", "uniqueTo": "Humans",
         "strength": 18, "rangedStrength": 22,
         "dropUniques": ["Must set up to ranged attack"],
         "addUniques": ["Can move after attacking"],
         "civilopediaText": [{"text": "A clanking, steam-driven war wagon built by the engineers of the Alliance. It needs no time to set up before it fires and can keep rolling after an attack."}],
+    }),
+    ("Cavalry", {
+        "name": "Knight of the Silver Hand", "replaces": "Cavalry", "uniqueTo": "Humans",
+        "strength": 38,
+        "addUniques": ["[+25]% Strength <vs [Undead] units>", "All adjacent units heal [+10] HP when healing"],
+        "civilopediaText": [
+            {"text": "The heirs of Uther's order: knights of the Silver Hand in gleaming plate on barded chargers, the Alliance's heavy cavalry in the age of the Lich King."},
+            {"text": "Stronger than Cavalry, +25% Strength against the undead, and units next to them heal 10 HP more."}],
     }),
     ("Great Scientist", {
         "name": "Archmage", "replaces": "Great Scientist", "uniqueTo": "Humans",
@@ -85,6 +88,11 @@ HUMAN_BUILDINGS = [
         "name": "Castle", "replaces": "Keep", "uniqueTo": "Humans",
         "cityStrength": 10, "cityHealth": 50, "addStats": {"culture": 1},
         "civilopediaText": [{"text": "Town Hall, Keep, Castle: every human city of note rises in stone. Stronger defenses than the Keep it replaces, and +1 Culture."}],
+    }),
+    ("Bardic Hall", {
+        "name": "Cathedral of Light", "replaces": "Bardic Hall", "uniqueTo": "Humans",
+        "addStats": {"faith": 2},
+        "civilopediaText": [{"text": "A great cathedral in the image of Stormwind's, where the Holy Light is preached and the Silver Hand takes its oaths. +2 Faith over the hall it replaces."}],
     }),
     (None, {
         "name": "Altar of Kings", "uniqueTo": "Humans", "cost": 140, "culture": 1,
@@ -239,7 +247,7 @@ NATIONS = [
         "[+15]% Strength <for [Land] units> <when fighting in [Jungle] tiles>"],
        "Montezuma I",
        ["Sen'jin Village", "Darkspear Isle", "Zul'Aman", "Zul'Farrak", "Zul'Drak", "Gundrak",
-        "Zuldazar", "Jintha'Alor", "Shadra'Alor", "Zul'Mashar", "Hiri'watha", "Zun'watha",
+        "Revantusk Village", "Jintha'Alor", "Shadra'Alor", "Zul'Mashar", "Hiri'watha", "Zun'watha",
         "Zul'Dare", "Kalai Ruins", "Zul'Kunda", "Bambala", "Gurubashi Arena", "Mizjah Ruins",
         "Balia'mah Ruins", "Shadowpine Hold"],
        "The loa smile upon you, Vol'jin, chieftain of the Darkspear. Once your people ruled great empires spanning Azeroth; now the scattered tribes look to you to lead them out of the shadows.",
@@ -388,6 +396,54 @@ NATIONS = [
        "The Scourge has no need of trade. But it may humor you.",
        "Your defiance is noted, and will be punished.",
        "I am Arthas, the Lich King. Kneel, or be raised to kneel."),
+    _n("Dark Iron Dwarves", "Moira Thaurissan", "Dark Iron", [40, 32, 32], [255, 120, 30], "Titans",
+       "Scientific", ["Hill"], "Shadowforge Industry",
+       ["[+2 Production, +1 Gold] from [Molten Fields] tiles [in all cities]",
+        "[+20]% Production when constructing [Siege] units [in all cities]",
+        "[+15]% Strength <for [Siege] units>"],
+       "Otto von Bismarck",
+       [],
+       "Hail, Moira Thaurissan, Queen of the Dark Iron clan. Heir of both Ironforge and Shadowforge, you have led your people out of Ragnaros's shadow and into the Alliance, but the fires of Blackrock still burn in their forges.",
+       "Will the Dark Irons prove they are more than the servants of fire?",
+       "The forges of Shadowforge have turned to war. Prepare yourselves.",
+       "Ye'll burn for that!",
+       "Shadowforge... falls dark at last.",
+       "Well met.", "Hmph. Speak, and be quick about it.",
+       "The Dark Irons have black iron and fire-forged steel to trade.",
+       "Ye've shown yer true face.",
+       "I am Moira Thaurissan, Queen of the Dark Irons and of Ironforge's Council of Three Hammers."),
+    _n("Kul Tirans", "Jaina Proudmoore", "Kul Tiran", [20, 55, 75], [230, 220, 190], "Holy Light",
+       "Diplomatic", ["Coast"], "The Proudmoore Admiralty",
+       ["[+1] Movement <for [Water] units>",
+        "[+15]% Strength <for [Water] units>",
+        "[+1 Gold] from [Coast] tiles [in all cities]"],
+       "Elizabeth",
+       [],
+       "Hail, Jaina Proudmoore, Lord Admiral of Kul Tiras. Your island kingdom's fleets once ruled the Great Sea, and its tidesages still speak to the waves. Now Kul Tiras looks outward again.",
+       "Will the Admiralty rule the seas once more?",
+       "Kul Tiras will not be threatened. Raise the anchors!",
+       "You'll regret crossing the Admiralty.",
+       "Kul Tiras... has fallen. The tide goes out.",
+       "Fair winds to you.", "What is it you want?",
+       "Boralus has cargo to trade. Name your price.",
+       "You've broken faith with Kul Tiras.",
+       "I am Jaina Proudmoore, Lord Admiral of Kul Tiras."),
+    _n("Zandalari Trolls", "Talanji", "Zandalari", [20, 90, 70], [240, 195, 60], "Loa",
+       "Cultural", ["Jungle"], "Empire of Gold",
+       ["[+1 Gold] from [Jungle] tiles [in all cities]",
+        "[+10]% [Gold] [in all cities]",
+        "[+15]% [Faith] [in all cities]"],
+       "Montezuma",
+       [],
+       "Hail, Talanji, Queen of the Zandalari Empire. From golden Dazar'alor your people have ruled for millennia, the oldest of the troll empires and the keepers of the loa.",
+       "Will the Golden Empire rise to glory once more?",
+       "The Zandalari march. Your blood will feed the loa!",
+       "You strike at Zandalar? The loa will see you punished.",
+       "The golden city... has fallen. The loa have turned their faces from us.",
+       "The Zandalari greet you.", "You again. The loa do not favour you.",
+       "Zandalar's treasuries are deep. What would you trade?",
+       "You have dishonoured yourself before the loa.",
+       "I am Talanji, Queen of the Zandalari. Show the proper respect."),
 ]
 
 # ---------------------------------------------------------------- City-states
@@ -408,6 +464,15 @@ CITY_STATES = [
     ("Cenarion Hold", "Religious", [40, 80, 30], [200, 240, 150]),
     ("Argent Vanguard", "Militaristic", [220, 220, 230], [60, 90, 150]),
     ("Feathermoon Stronghold", "Cultured", [70, 50, 110], [230, 230, 250]),
+    # v0.17: the other peoples of Azeroth
+    ("Timbermaw Hold", "Religious", [90, 60, 40], [200, 230, 150]),       # furbolgs
+    ("Kamagua", "Maritime", [50, 80, 110], [235, 225, 200]),              # tuskarr
+    ("Maraudine", "Militaristic", [120, 80, 50], [240, 200, 120]),        # centaurs
+    ("Jasperlode Mine", "Mercantile", [110, 90, 60], [250, 225, 120]),    # kobolds
+    ("Razorfen Kraul", "Militaristic", [90, 55, 40], [220, 170, 90]),     # quilboar
+    ("The Consortium", "Mercantile", [40, 30, 80], [170, 120, 255]),      # ethereals
+    ("Mogu'shan", "Cultured", [60, 50, 40], [230, 190, 90]),              # mogu
+    ("Ahn'Qiraj", "Militaristic", [70, 30, 75], [235, 200, 120]),           # qiraji
 ]
 
 
@@ -415,7 +480,7 @@ CITY_STATES = [
 # The first city is the capital. Names are places from Warcraft and World of Warcraft.
 CITIES = {
     "Humans": ["Stormwind", "New Lordaeron", "Goldshire", "Lakeshire", "Darkshire", "Sentinel Hill",
-               "Northshire", "Moonbrook", "Boralus", "Tiragarde Keep", "Hearthglen", "Southshore",
+               "Northshire", "Moonbrook", "Westfall Brigade", "Lion's Pride Inn", "Hearthglen", "Southshore",
                "Tyr's Hand", "Lion's Landing", "Alterac", "Nethergarde Keep", "Morgan's Vigil",
                "Durnholde Keep", "Eastvale", "Raven Hill", "Westbrook Garrison", "Corin's Crossing",
                "Refuge Pointe", "Stormwind Harbor", "Valiance Keep", "Westguard Keep",
@@ -431,7 +496,7 @@ CITIES = {
     "Dwarves": ["Ironforge", "Kharanos", "Thelsamar", "Menethil Harbor", "Aerie Peak", "Thandol Span",
                 "Dun Algaz", "Dun Modr", "Algaz Station", "Farstrider Lodge", "Gol'Bolar Quarry",
                 "Anvilmar", "Brewnall Village", "Dun Garok", "Bael'dun Keep", "Ironforge Airfield",
-                "Frosthold", "Thunderbrew Distillery", "Shadowforge City", "Grim Batol Gate"],
+                "Frosthold", "Thunderbrew Distillery", "Steelgrill's Depot", "Grim Batol Gate"],
     "Gnomes": ["Gnomeregan", "New Tinkertown", "Tinker Town", "Steelgrill's Depot", "Fizzcrank Airstrip",
                "Toshley's Station", "Mechagon City", "Rustbolt", "Coldridge Valley", "Chill Breeze Valley"],
     "Tauren": ["Thunder Bluff", "Bloodhoof Village", "Camp Taurajo", "Camp Mojache", "Freewind Post",
@@ -439,7 +504,7 @@ CITIES = {
                "Taunka'le Village", "Camp Oneqwah", "Red Cloud Mesa", "Brave Wind Mesa",
                "Camp E'thok", "Highmountain"],
     "Trolls": ["Sen'jin Village", "Darkspear Isle", "Zul'Aman", "Zul'Farrak", "Zul'Drak", "Gundrak",
-               "Zuldazar", "Jintha'Alor", "Shadra'Alor", "Zul'Mashar", "Hiri'watha", "Zun'watha",
+               "Revantusk Village", "Jintha'Alor", "Shadra'Alor", "Zul'Mashar", "Hiri'watha", "Zun'watha",
                "Zul'Kunda", "Bambala", "Gurubashi Arena", "Mizjah Ruins", "Balia'mah Ruins",
                "Shadowpine Hold"],
     "Blood Elves": ["Silvermoon", "Falconwing Square", "Fairbreeze Village", "Tranquillien",
@@ -465,6 +530,18 @@ CITIES = {
     "Worgen": ["Gilneas", "Duskhaven", "Stormglen Village", "Keel Harbor", "Tempest's Reach",
                "Aderic's Repose", "Greymane Court", "Tal'doren", "Emberstone Village", "Hailwood Marsh",
                "Light's Dawn Cathedral", "Northgate", "Wahl Cottage", "Gilneas Liberation Front Camp"],
+    "Dark Iron Dwarves": ["Shadowforge City", "Thaurissan", "Blackrock Depths", "Thorium Point",
+                          "Firewatch Ridge", "The Cauldron", "Grimesilt Dig Site", "Blackchar Cave", "Chiselgrip",
+                          "Flame Crest", "Iron Summit", "Lethlor Ravine", "Dark Iron Highway", "Blackthorn's Camp",
+                          "Morgan's Plot", "Dreadmaul Rock"],
+    "Kul Tirans": ["Boralus", "Tiragarde Keep", "Proudmoore Keep", "Freehold", "Arom's Stand", "Brennadam",
+                   "Corlain", "Fallhaven", "Arom's Watch", "Shrine of the Storm", "Waycrest Manor", "Fort Daelin",
+                   "Hatherford", "Millstone Hamlet", "Anglepoint Wharf", "Mariner's Row", "Stormsong Monastery",
+                   "Tidecross"],
+    "Zandalari Trolls": ["Zuldazar", "Dazar'alor", "Atal'Dazar", "Zeb'ahari", "Port of Zandalar", "Xibala",
+                         "Nazwatha", "Kal'tun", "Zul'jan Ruins", "Warport Rastari", "Vol'dun Outpost",
+                         "Vulpera Hideaway", "Nazmir Rise", "Zul'Nazman", "Temple of Akunda", "Sanctuary of the Devoted",
+                         "Talanji's Rebuke", "Dreadpearl Shallows"],
     "Scourge": ["Icecrown Citadel", "Naxxramas", "Scholomance", "Stratholme", "Andorhal", "Acherus",
                 "Azjol-Nerub", "Drak'Tharon Keep", "Corp'rethar", "Voltarus", "Kolramas", "The Shadow Vault",
                 "Pit of Saron", "Ymirheim", "Darrowshire", "Plaguewood", "Thondroril", "Caer Darrow"],
@@ -477,6 +554,7 @@ FACTION = {
     "Orcs": "Horde", "Trolls": "Horde", "Tauren": "Horde", "Forsaken": "Horde",
     "Blood Elves": "Horde", "Goblins": "Horde",
     "Pandaren": "Neutral", "Scourge": "Scourge",
+    "Dark Iron Dwarves": "Alliance", "Kul Tirans": "Alliance", "Zandalari Trolls": "Horde",
 }
 
 # ---------------------------------------------------------------- AI personalities
@@ -530,7 +608,22 @@ PERSONALITIES = {
                     priorities={"Tradition": 9, "Patronage": 7, "Piety": 6, "Arcane Inquiry": 7,
                                 "Free Peoples": 7, "Order": 5, "Dominion": 1},
                     weights=[("Archery", 40), ("Library", 25)]),
+    "Dark Iron Dwarves": P("Scientific", production=9, gold=6, science=6, military=7, aggressive=5, declareWar=4,
+                           diplomacy=6, loyal=7, culture=4,
+                           priorities={"Tradition": 7, "Honor": 7, "Commerce": 5, "Arcane Inquiry": 7,
+                                       "Free Peoples": 5, "Order": 8, "Dominion": 3},
+                           weights=[("Siege", 35), ("Blacksmith", 25), ("Walls", 15)]),
+    "Kul Tirans": P("Diplomatic", gold=7, production=6, military=6, aggressive=4, declareWar=3, diplomacy=7,
+                    loyal=8, expansion=6,
+                    priorities={"Commerce": 8, "Liberty": 6, "Honor": 5, "Patronage": 6, "Free Peoples": 8,
+                                "Order": 5, "Dominion": 1},
+                    weights=[("Water", 45), ("Shipyard", 30), ("Lighthouse", 25)]),
     # --- Horde
+    "Zandalari Trolls": P("Cultural", gold=8, faith=8, culture=7, military=6, aggressive=5, declareWar=4,
+                          diplomacy=5, loyal=6,
+                          priorities={"Piety": 8, "Tradition": 8, "Patronage": 6, "Commerce": 6, "Order": 5,
+                                      "Dominion": 4},
+                          weights=[("Market", 30), ("Temple", 30), ("Mounted", 20)]),
     "Orcs": P("Domination", military=9, aggressive=8, declareWar=8, production=7, expansion=7, science=3,
               culture=3, diplomacy=3, loyal=6, faith=4,
               priorities={"Honor": 10, "Tradition": 5, "Dominion": 9, "Order": 6, "Free Peoples": 1},

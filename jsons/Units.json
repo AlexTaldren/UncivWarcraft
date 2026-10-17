@@ -1224,6 +1224,9 @@
       "Empire enters a [8]-turn Golden Age <by consuming this unit>",
       "Can instantly construct a [Hall of Heroes] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves Artist] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans Artist] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls Artist] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Humans Artist] group <for [Humans] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs Artist] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves Artist] group <for [Night Elves] Civilizations> <hidden from users>",
@@ -1258,6 +1261,9 @@
       "Can hurry technology research",
       "Can instantly construct a [Arcane Academy] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves Scientist] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans Scientist] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls Scientist] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs Scientist] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves Scientist] group <for [Night Elves] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Dwarves Scientist] group <for [Dwarves] Civilizations> <hidden from users>",
@@ -1291,6 +1297,9 @@
       "Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
       "Can instantly construct a [Trade Company] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves Merchant] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans Merchant] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls Merchant] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Humans Merchant] group <for [Humans] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs Merchant] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves Merchant] group <for [Night Elves] Civilizations> <hidden from users>",
@@ -1325,6 +1334,9 @@
       "Can speed up construction of a building",
       "Can instantly construct a [Great Workshop] improvement <by consuming this unit>",
       "Is part of Great Person group [Great Person]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves Engineer] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans Engineer] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls Engineer] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Humans Engineer] group <for [Humans] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs Engineer] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves Engineer] group <for [Night Elves] Civilizations> <hidden from users>",
@@ -1362,6 +1374,9 @@
       "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
       "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
       "Is part of Great Person group [Prophet]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves Prophet] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans Prophet] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls Prophet] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Humans Prophet] group <for [Humans] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs Prophet] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves Prophet] group <for [Night Elves] Civilizations> <hidden from users>",
@@ -1402,6 +1417,9 @@
       "Can instantly construct a [Bastion] improvement <by consuming this unit>",
       "Can be earned through combat <for [Land] units>",
       "Is part of Great Person group [General]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves General] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans General] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls General] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Humans General] group <for [Humans] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs General] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves General] group <for [Night Elves] Civilizations> <hidden from users>",
@@ -1437,6 +1455,9 @@
       "[+15]% Strength bonus for [{Military} {Water}] units within [2] tiles",
       "Can be earned through combat <for [Water] units>",
       "Is part of Great Person group [Admiral]",
+      "[This Unit] gets a name from the [Dark Iron Dwarves Admiral] group <for [Dark Iron Dwarves] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Kul Tirans Admiral] group <for [Kul Tirans] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Zandalari Trolls Admiral] group <for [Zandalari Trolls] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Humans Admiral] group <for [Humans] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Orcs Admiral] group <for [Orcs] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Night Elves Admiral] group <for [Night Elves] Civilizations> <hidden from users>",
@@ -1694,27 +1715,6 @@
     ]
   },
   {
-    "name": "Kul Tiran Man-o'-War",
-    "unitType": "Ranged Water",
-    "movement": 6,
-    "strength": 28,
-    "rangedStrength": 32,
-    "cost": 185,
-    "requiredResource": "Iron",
-    "requiredTech": "Navigation",
-    "obsoleteTech": "Arcane Conduits",
-    "upgradesTo": "Dreadnought",
-    "hurryCostModifier": 20,
-    "attackSound": "shipCannonVolley",
-    "replaces": "Frigate",
-    "uniqueTo": "Humans",
-    "civilopediaText": [
-      {
-        "text": "The great warships of Kul Tiras, the island kingdom whose admiralty ruled the seas of the Eastern Kingdoms for generations. Faster and better armed than any frigate."
-      }
-    ]
-  },
-  {
     "name": "Steam Tank",
     "unitType": "Siege",
     "movement": 2,
@@ -1737,6 +1737,37 @@
     "civilopediaText": [
       {
         "text": "A clanking, steam-driven war wagon built by the engineers of the Alliance. It needs no time to set up before it fires and can keep rolling after an attack."
+      }
+    ]
+  },
+  {
+    "name": "Knight of the Silver Hand",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 38,
+    "cost": 225,
+    "requiredTech": "War Doctrine",
+    "obsoleteTech": "Liquid Fire",
+    "requiredResource": "Horses",
+    "upgradesTo": "War Golem",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "[+25]% Strength <vs [Undead] units>",
+      "All adjacent units heal [+10] HP when healing",
+      "Costs [10] [Mana]"
+    ],
+    "attackSound": "cavalry",
+    "replaces": "Cavalry",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "The heirs of Uther's order: knights of the Silver Hand in gleaming plate on barded chargers, the Alliance's heavy cavalry in the age of the Lich King."
+      },
+      {
+        "text": "Stronger than Cavalry, +25% Strength against the undead, and units next to them heal 10 HP more."
       }
     ]
   },
@@ -2585,6 +2616,566 @@
     "uniqueTo": "Scourge"
   },
   {
+    "name": "Raider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 36,
+    "cost": 225,
+    "requiredTech": "War Doctrine",
+    "obsoleteTech": "Liquid Fire",
+    "requiredResource": "Horses",
+    "upgradesTo": "War Golem",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "No movement cost to pillage",
+      "[+25]% Strength <vs [Mounted] units>"
+    ],
+    "attackSound": "cavalry",
+    "civilopediaText": [
+      {
+        "text": "Wolf riders armed with chains and grappling hooks, trained to drag down walls, riders and siege engines alike."
+      },
+      {
+        "text": "Stronger than Cavalry, no penalty attacking cities, pillages without spending movement and +25% Strength against mounted units."
+      }
+    ],
+    "replaces": "Cavalry",
+    "uniqueTo": "Orcs"
+  },
+  {
+    "name": "Steam Armor",
+    "unitType": "War Machine",
+    "movement": 4,
+    "strength": 66,
+    "cost": 350,
+    "requiredTech": "Liquid Fire",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Siege Engine",
+    "obsoleteTech": "Battle Formations",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "[+25]% Strength <when fighting in [Hill] tiles>"
+    ],
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "A dwarf in a walking suit of riveted steel and boiler-plate, the pride of Ironforge's engineers."
+      },
+      {
+        "text": "Stronger than a War Golem, with +25% Strength in hills."
+      }
+    ],
+    "replaces": "War Golem",
+    "uniqueTo": "Dwarves"
+  },
+  {
+    "name": "Spider Tank",
+    "unitType": "War Machine",
+    "movement": 6,
+    "strength": 74,
+    "cost": 375,
+    "requiredTech": "Battle Formations",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Mechano-Tank",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "Ignores terrain cost"
+    ],
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "A gnomish tank on eight clockwork legs that climbs over rubble, hills and anything else in its way."
+      },
+      {
+        "text": "Stronger and faster than a Siege Engine, and ignores terrain movement costs."
+      }
+    ],
+    "replaces": "Siege Engine",
+    "uniqueTo": "Gnomes"
+  },
+  {
+    "name": "Mountain Giant",
+    "unitType": "War Machine",
+    "movement": 4,
+    "strength": 64,
+    "cost": 350,
+    "requiredTech": "Liquid Fire",
+    "upgradesTo": "Siege Engine",
+    "obsoleteTech": "Battle Formations",
+    "uniques": [
+      "Can move after attacking",
+      "Never appears as a Barbarian unit",
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "[+15]% Strength <when defending>",
+      "Costs [12] [Mana]"
+    ],
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "Ancient giants of living stone and moss who answer the night elves' call to defend the forests."
+      },
+      {
+        "text": "Stronger than a War Golem, needs no Azerite, keeps terrain defence, +25% Strength in forests and +15% when defending."
+      }
+    ],
+    "replaces": "War Golem",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Lightforged Warframe",
+    "unitType": "War Machine",
+    "movement": 4,
+    "strength": 64,
+    "cost": 350,
+    "requiredTech": "Liquid Fire",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Siege Engine",
+    "obsoleteTech": "Battle Formations",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "All adjacent units heal [+10] HP when healing",
+      "[+33]% Strength <vs [Barbarian] units>",
+      "Costs [15] [Mana]"
+    ],
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "A towering frame of Light-infused metal from the Army of the Light, piloted by a Lightforged draenei."
+      },
+      {
+        "text": "Stronger than a War Golem, heals adjacent units 10 HP more, and +33% Strength against barbarians and demons."
+      }
+    ],
+    "replaces": "War Golem",
+    "uniqueTo": "Draenei"
+  },
+  {
+    "name": "Harvest Golem",
+    "unitType": "War Machine",
+    "movement": 4,
+    "strength": 62,
+    "cost": 350,
+    "requiredTech": "Liquid Fire",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Siege Engine",
+    "obsoleteTech": "Battle Formations",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "[+20]% Strength <when defending>",
+      "[+1] Sight"
+    ],
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "Gilneas's farm golems, refitted with plate and cannon to hold the walls against the Scourge and the Forsaken."
+      },
+      {
+        "text": "Stronger than a War Golem, +20% Strength when defending, and sees farther."
+      }
+    ],
+    "replaces": "War Golem",
+    "uniqueTo": "Worgen"
+  },
+  {
+    "name": "Ranger-Lord",
+    "unitType": "Ranged Firearm",
+    "range": 1,
+    "movement": 2,
+    "strength": 32,
+    "rangedStrength": 34,
+    "cost": 225,
+    "requiredTech": "Steamworks",
+    "upgradesTo": "Grenadier",
+    "obsoleteTech": "Fragmentation Shards",
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "The masters of the Farstriders, whose enchanted arrows outrange any rifle."
+      },
+      {
+        "text": "Stronger than a Mountaineer, sees farther and gains +25% Strength in forests."
+      }
+    ],
+    "replaces": "Mountaineer",
+    "uniqueTo": "High Elves",
+    "uniques": [
+      "[+1] Sight",
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "Costs [8] [Mana]"
+    ]
+  },
+  {
+    "name": "Troll Berserker",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 27,
+    "cost": 150,
+    "requiredTech": "Blackpowder",
+    "upgradesTo": "Rifleman",
+    "obsoleteTech": "Long Rifles",
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Headhunters who drink a voodoo brew and charge into battle in a frenzy, throwing axes as they go."
+      },
+      {
+        "text": "Stronger than a Musketeer, +15% Strength when attacking, and heals 10 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Musketeer",
+    "uniqueTo": "Trolls",
+    "uniques": [
+      "Heals [10] damage if it kills a unit",
+      "[+15]% Strength <when attacking>",
+      "Costs [6] [Mana]"
+    ]
+  },
+  {
+    "name": "Wind Rider",
+    "unitType": "Sky Fighter",
+    "movement": 1,
+    "strength": 37,
+    "rangedStrength": 37,
+    "range": 7,
+    "interceptRange": 5,
+    "cost": 325,
+    "requiredTech": "Gnomish Flight",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Gryphon Rider",
+    "obsoleteTech": "Scrying",
+    "uniques": [
+      "[50]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>"
+    ],
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Tauren and orc riders on wyverns, the Horde's answer to the gryphon riders of the Alliance."
+      },
+      {
+        "text": "Stronger than a Gyrocopter, with a longer range (7)."
+      }
+    ],
+    "replaces": "Gyrocopter",
+    "uniqueTo": "Tauren"
+  },
+  {
+    "name": "Deathstalker",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 36,
+    "cost": 225,
+    "requiredTech": "Long Rifles",
+    "obsoleteTech": "Gnomish Gearworks",
+    "upgradesTo": "Fusilier",
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "The Banshee Queen's assassins and scouts, undead rangers who slip between enemy lines."
+      },
+      {
+        "text": "Stronger than a Rifleman, sees farther and ignores zones of control."
+      }
+    ],
+    "replaces": "Rifleman",
+    "uniqueTo": "Forsaken",
+    "uniques": [
+      "[+1] Sight",
+      "Ignores Zone of Control"
+    ]
+  },
+  {
+    "name": "Dragonhawk Rider",
+    "unitType": "Sky Fighter",
+    "movement": 1,
+    "strength": 38,
+    "rangedStrength": 38,
+    "range": 5,
+    "interceptRange": 5,
+    "cost": 325,
+    "requiredTech": "Gnomish Flight",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Gryphon Rider",
+    "obsoleteTech": "Scrying",
+    "uniques": [
+      "[50]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>",
+      "[+25]% Strength <vs [Land] units>",
+      "Costs [10] [Mana]"
+    ],
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Blood elf riders on fiery dragonhawks, raised in the aviaries of Eversong."
+      },
+      {
+        "text": "Stronger than a Gyrocopter, with +25% Strength against land units."
+      }
+    ],
+    "replaces": "Gyrocopter",
+    "uniqueTo": "Blood Elves"
+  },
+  {
+    "name": "Goblin Zeppelin",
+    "unitType": "Sky Bomber",
+    "movement": 1,
+    "strength": 55,
+    "rangedStrength": 58,
+    "range": 6,
+    "cost": 325,
+    "requiredTech": "Gnomish Flight",
+    "requiredResource": "Azerite",
+    "upgradesTo": "War Zeppelin",
+    "obsoleteTech": "Scrying",
+    "attackSound": "bombing",
+    "civilopediaText": [
+      {
+        "text": "A patched-together goblin airship loaded with more explosives than is strictly safe."
+      },
+      {
+        "text": "Stronger than a Bomber Zeppelin, with +33% Strength against cities."
+      }
+    ],
+    "replaces": "Bomber Zeppelin",
+    "uniqueTo": "Goblins",
+    "uniques": [
+      "[+33]% Strength <vs cities>"
+    ]
+  },
+  {
+    "name": "Cloud Serpent Rider",
+    "unitType": "Sky Fighter",
+    "movement": 1,
+    "strength": 50,
+    "rangedStrength": 50,
+    "range": 8,
+    "interceptRange": 8,
+    "cost": 375,
+    "requiredTech": "Scrying",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Sky Golem",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>",
+      "[+15] HP when healing",
+      "Costs [12] [Mana]"
+    ],
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Riders of the Order of the Cloud Serpent on the jade serpents of Pandaria."
+      },
+      {
+        "text": "Stronger than a Gryphon Rider and heals 15 HP more each turn it heals."
+      }
+    ],
+    "replaces": "Gryphon Rider",
+    "uniqueTo": "Pandaren"
+  },
+  {
+    "name": "Crypt Fiend",
+    "unitType": "Ranged Firearm",
+    "range": 1,
+    "movement": 2,
+    "strength": 32,
+    "rangedStrength": 32,
+    "cost": 225,
+    "requiredTech": "Steamworks",
+    "upgradesTo": "Grenadier",
+    "obsoleteTech": "Fragmentation Shards",
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "Undead nerubians that spit acid and web flying enemies out of the sky."
+      },
+      {
+        "text": "Stronger than a Mountaineer, +50% Strength against flying fighters, and heals 10 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Mountaineer",
+    "uniqueTo": "Scourge",
+    "uniques": [
+      "[+50]% Strength <vs [Sky Fighter] units>",
+      "Heals [10] damage if it kills a unit",
+      "Costs [10] [Mana]"
+    ]
+  },
+  {
+    "name": "Fireguard",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 18,
+    "cost": 90,
+    "requiredTech": "Arathi Law",
+    "uniques": [
+      "[+50]% Strength <vs [Mounted] units>",
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "[+15]% Strength <when defending>",
+      "Costs [6] [Mana]"
+    ],
+    "upgradesTo": "Lancer",
+    "obsoleteTech": "Mithril Forged Swords",
+    "attackSound": "metalhit",
+    "civilopediaText": [
+      {
+        "text": "Dark Iron guards in blackened plate, their halberds still glowing from the forges of Shadowforge City."
+      },
+      {
+        "text": "Stronger than a Pikeman, +25% Strength in hills and +15% when defending."
+      }
+    ],
+    "replaces": "Pikeman",
+    "uniqueTo": "Dark Iron Dwarves"
+  },
+  {
+    "name": "Dark Iron Golem",
+    "unitType": "War Machine",
+    "movement": 4,
+    "strength": 66,
+    "cost": 350,
+    "requiredTech": "Liquid Fire",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Siege Engine",
+    "obsoleteTech": "Battle Formations",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "[+15]% Strength <when attacking>"
+    ],
+    "attackSound": "tankshot",
+    "civilopediaText": [
+      {
+        "text": "Hulking constructs of dark iron with a furnace for a heart, built by the forgemasters of Blackrock Depths."
+      },
+      {
+        "text": "Stronger than a War Golem, with +15% Strength when attacking."
+      }
+    ],
+    "replaces": "War Golem",
+    "uniqueTo": "Dark Iron Dwarves"
+  },
+  {
+    "name": "Kul Tiran Man-o'-War",
+    "unitType": "Ranged Water",
+    "movement": 6,
+    "strength": 28,
+    "rangedStrength": 32,
+    "cost": 185,
+    "requiredResource": "Iron",
+    "requiredTech": "Navigation",
+    "obsoleteTech": "Arcane Conduits",
+    "upgradesTo": "Dreadnought",
+    "hurryCostModifier": 20,
+    "attackSound": "shipCannonVolley",
+    "civilopediaText": [
+      {
+        "text": "The great warships of Kul Tiras, the island kingdom whose admiralty has ruled the seas of the Eastern Kingdoms for generations."
+      },
+      {
+        "text": "Faster and better armed than any frigate."
+      }
+    ],
+    "replaces": "Frigate",
+    "uniqueTo": "Kul Tirans"
+  },
+  {
+    "name": "Admiralty Gunner",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 27,
+    "cost": 150,
+    "requiredTech": "Blackpowder",
+    "upgradesTo": "Rifleman",
+    "obsoleteTech": "Long Rifles",
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "Kul Tiran marines of the Proudmoore Admiralty, as at home storming a beach as standing on a deck."
+      },
+      {
+        "text": "Stronger than a Musketeer, attacks from ships without penalty and sees farther."
+      }
+    ],
+    "replaces": "Musketeer",
+    "uniqueTo": "Kul Tirans",
+    "uniques": [
+      "Eliminates combat penalty for attacking across a coast",
+      "[+1] Sight"
+    ]
+  },
+  {
+    "name": "Raptor Rider",
+    "unitType": "Mounted",
+    "movement": 5,
+    "strength": 13,
+    "cost": 75,
+    "requiredTech": "Riding",
+    "requiredResource": "Horses",
+    "upgradesTo": "Knight",
+    "obsoleteTech": "Animal War Training",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "[+25]% Strength <when fighting in [Jungle] tiles>"
+    ],
+    "hurryCostModifier": 20,
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Zandalari riders on swift raptors bred in the jungles of Zuldazar."
+      },
+      {
+        "text": "Stronger and faster than an Outrider, with +25% Strength in jungle."
+      }
+    ],
+    "replaces": "Outrider",
+    "uniqueTo": "Zandalari Trolls"
+  },
+  {
+    "name": "Direhorn Rider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 23,
+    "cost": 120,
+    "requiredTech": "Animal War Training",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "requiredResource": "Horses",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "Never appears as a Barbarian unit",
+      "[+20]% Strength <when attacking>",
+      "Costs [8] [Mana]"
+    ],
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Zandalari warriors on armored direhorns, whose charge can break a shield wall or a city gate."
+      },
+      {
+        "text": "Stronger than a Knight, no penalty attacking cities, and +20% Strength when attacking."
+      }
+    ],
+    "replaces": "Knight",
+    "uniqueTo": "Zandalari Trolls"
+  },
+  {
     "name": "Felguard",
     "unitType": "Sword",
     "movement": 2,
@@ -3115,6 +3706,99 @@
     ]
   },
   {
+    "name": "Dagran Thaurissan",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Dark Iron Dwarves",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when defending>",
+      "[+25]% Strength <vs cities>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dagran Thaurissan, Emperor of the Dark Irons. The Dark Iron emperor who ruled from Shadowforge City and dared to make a Bronzebeard princess his queen."
+      },
+      {
+        "text": "A hero of the Dark Iron Dwarves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Daelin Proudmoore",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Kul Tirans",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when attacking>",
+      "[+1] Movement",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Daelin Proudmoore, Grand Admiral. Lord Admiral of Kul Tiras and hero of the Second War, father of Jaina."
+      },
+      {
+        "text": "A hero of the Kul Tirans: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Rastakhan",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Zandalari Trolls",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when defending>",
+      "All adjacent units heal [+10] HP when healing",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>",
+      "Costs [30] [Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rastakhan, King of the Zandalari. The long-reigning king of Zandalar, who bargained with the loa of death to keep his empire alive."
+      },
+      {
+        "text": "A hero of the Zandalari Trolls: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
     "name": "Kel'Thuzad",
     "unitType": "Hero",
     "movement": 2,
@@ -3507,5 +4191,83 @@
     ],
     "replaces": "Cleric",
     "uniqueTo": "Goblins"
+  },
+  {
+    "name": "Flamekeeper",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Iron priests who burn the corruption out of the land with forge-fire."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Dark Iron Dwarves"
+  },
+  {
+    "name": "Tidesage",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tidesages of the Storm, who wash blight and fel from the land with the power of the sea."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Kul Tirans"
+  },
+  {
+    "name": "Loa Speaker",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Priesthood",
+    "uniques": [
+      "Can build [Remove Plagued Land] improvements on tiles",
+      "Can build [Remove Fel-Scorched Land] improvements on tiles",
+      "Can build [Remove Plagued Land] improvements at a [+50]% rate",
+      "Can build [Remove Fel-Scorched Land] improvements at a [+50]% rate",
+      "Unbuildable",
+      "Can be purchased with [Faith] [in all cities]",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Zandalari priests who call on the loa to drive the sickness from the earth."
+      },
+      {
+        "text": "Bought with Faith. Only they can cleanse Plagued Land and Fel-Scorched Land, and they do it 50% faster than a worker could. The undead have no use for them."
+      }
+    ],
+    "replaces": "Cleric",
+    "uniqueTo": "Zandalari Trolls"
   }
 ]

@@ -359,6 +359,9 @@ SKIN = {
     "Worgen": [ramp((55, 50, 45), (150, 140, 125), 5), ramp((70, 50, 35), (170, 130, 95), 5)],
     "Pandaren": [ramp((40, 40, 40), (120, 115, 110), 5)],
     "Scourge": [ramp((55, 70, 90), (150, 170, 190), 5), ramp((70, 80, 75), (160, 175, 160), 5)],
+    "Dark Iron Dwarves": [ramp((55, 50, 55), (140, 128, 130), 5), ramp((65, 52, 50), (150, 125, 115), 5)],
+    "Kul Tirans": None,
+    "Zandalari Trolls": [ramp((40, 95, 85), (120, 180, 160), 5), ramp((60, 100, 70), (140, 185, 130), 5)],
     # barbarian peoples (sprites for units owned by the Barbarians)
     "Defias": None,
     "Gnolls": [ramp((110, 80, 45), (190, 150, 95), 5)],
@@ -369,6 +372,8 @@ HAIR = {
     "Gnomes": [(230, 110, 180), (90, 200, 200), (240, 240, 245), (240, 170, 60)],
     "Trolls": [(220, 60, 50), (60, 200, 220), (240, 200, 60), (200, 90, 220), (240, 240, 240)],
     "Night Elves": [(60, 160, 170), (40, 90, 160), (220, 220, 235)],
+    "Dark Iron Dwarves": [(30, 26, 26), (60, 30, 25), (150, 50, 30)],
+    "Zandalari Trolls": [(240, 230, 210), (240, 200, 70), (60, 180, 160)],
 }
 # (width, height) scale of the figure
 BODY = {
@@ -376,7 +381,8 @@ BODY = {
     "Gnomes": (0.80, 0.68), "Night Elves": (0.95, 1.10), "Blood Elves": (0.95, 1.04),
     "High Elves": (0.95, 1.04), "Forsaken": (0.90, 1.0), "Draenei": (1.0, 1.12),
     "Goblins": (0.85, 0.72), "Worgen": (1.18, 1.12), "Pandaren": (1.25, 0.95),
-    "Scourge": (0.95, 1.02), "Defias": (1.0, 1.0), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
+    "Scourge": (0.95, 1.02), "Defias": (1.0, 1.0),
+    "Dark Iron Dwarves": (1.14, 0.80), "Kul Tirans": (1.1, 1.06), "Zandalari Trolls": (0.96, 1.26), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
 }
 
 
@@ -402,6 +408,27 @@ def make(layers, race, unit, mode="full"):
         mid = skin[3]
         if race == "Dwarves":
             beard(base, hb, pick(HAIR["Dwarves"], unit), 7)
+        elif race == "Dark Iron Dwarves":
+            beard(base, hb, pick(HAIR["Dark Iron Dwarves"], unit), 7)
+            f = Feature(base.size)                       # embers glowing in the beard
+            f.dot(hb[0] + 1, hb[3] + 3, (255, 140, 40)); f.dot(hb[2] - 1, hb[3] + 5, (255, 170, 60))
+            f.apply(base, outline=False)
+        elif race == "Kul Tirans":
+            f = Feature(base.size)                       # a sailor's tricorn
+            x0, y0, x1, y1 = hb
+            for x in range(x0 - 2, x1 + 3):
+                f.dot(x, y0 - 1, (40, 36, 34))
+            for x in range(x0, x1 + 1):
+                f.dot(x, y0 - 2, (55, 50, 46))
+            f.dot(x0 - 2, y0 - 2, (40, 36, 34)); f.dot(x1 + 2, y0 - 2, (40, 36, 34))
+            f.apply(base)
+        elif race == "Zandalari Trolls":
+            topknot(base, hb, pick(HAIR["Zandalari Trolls"], unit), 5, crest=True)
+            tusks(base, hb, 3, curl=True)
+            ears(base, hb, mid, 3, True)
+            f = Feature(base.size)                       # golden ear cuff
+            f.dot(hb[0] - 1, hb[1] + 2, (245, 205, 70))
+            f.apply(base, outline=False)
         elif race == "Gnomes":
             topknot(base, hb, pick(HAIR["Gnomes"], unit), 2, crest=False)
             ears(base, hb, mid, 2, False)
@@ -454,7 +481,8 @@ RIDER = {"Chariot Archer": "Archer", "Horseman": "Spearman", "Knight": "Swordsma
          "Lancer": "Pikeman", "Cavalry": "Musketman"}
 ARMORED = {"Knight", "Lancer"}
 CREW = ["Catapult", "Trebuchet"]
-RACES = ["Orcs", "Trolls", "Tauren", "Forsaken", "Scourge", "Blood Elves", "Goblins", "Dwarves", "Gnomes",
+RACES = ["Dark Iron Dwarves", "Kul Tirans", "Zandalari Trolls",
+         "Orcs", "Trolls", "Tauren", "Forsaken", "Scourge", "Blood Elves", "Goblins", "Dwarves", "Gnomes",
          "Night Elves", "Draenei", "Worgen", "High Elves", "Pandaren"]
 
 

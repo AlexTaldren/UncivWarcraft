@@ -201,6 +201,213 @@
     ]
   },
   {
+    "name": "Dark Iron Dwarves General",
+    "unitNames": [
+      "General Angerforge",
+      "Fineous Darkvire",
+      "Bael'Gar",
+      "Warder Stilgiss",
+      "Commander Gor'shak",
+      "Overseer Maltorius",
+      "Lord Roccor"
+    ]
+  },
+  {
+    "name": "Dark Iron Dwarves Admiral",
+    "unitNames": [
+      "Captain Ironhull",
+      "Fleetmaster Coalbeard",
+      "Captain Embersteel"
+    ]
+  },
+  {
+    "name": "Dark Iron Dwarves Artist",
+    "unitNames": [
+      "Doom'rel the Sculptor",
+      "Hurley Blackbreath",
+      "Ribbly Screwspigot",
+      "Carver Ashbeard",
+      "Lokhtos Darkbargainer"
+    ]
+  },
+  {
+    "name": "Dark Iron Dwarves Merchant",
+    "unitNames": [
+      "Lokhtos Darkbargainer",
+      "Plugger Spazzring",
+      "Trader Cinderhand",
+      "Moira's Quartermaster Hjal"
+    ]
+  },
+  {
+    "name": "Dark Iron Dwarves Engineer",
+    "unitNames": [
+      "Golem Lord Argelmach",
+      "Forgemaster Thaurissan",
+      "Magmar Gearbreaker",
+      "Engineer Blackhammer",
+      "Master Smith Burninate"
+    ]
+  },
+  {
+    "name": "Dark Iron Dwarves Prophet",
+    "unitNames": [
+      "High Priestess of Thaurissan",
+      "Doomrel",
+      "Seer Embereye",
+      "Flamekeeper Vardis"
+    ]
+  },
+  {
+    "name": "Dark Iron Dwarves Scientist",
+    "unitNames": [
+      "Pyromancer Loregrain",
+      "Ambassador Flamelash",
+      "Arcanist Doan of the Forge",
+      "Lorekeeper Ironash",
+      "Archivist Galford"
+    ]
+  },
+  {
+    "name": "Kul Tirans General",
+    "unitNames": [
+      "Danath Trollbane",
+      "Halford Wyrmbane",
+      "Colonel Troteman",
+      "Brother Pike",
+      "Taelia Fordragon",
+      "Lady Ashvane",
+      "Lord Stormsong"
+    ]
+  },
+  {
+    "name": "Kul Tirans Admiral",
+    "unitNames": [
+      "Daelin Proudmoore",
+      "Katherine Proudmoore",
+      "Tandred Proudmoore",
+      "Flynn Fairwind",
+      "Cyrus Crestfall",
+      "Admiral Hartley",
+      "Lord Admiral Aldric"
+    ]
+  },
+  {
+    "name": "Kul Tirans Artist",
+    "unitNames": [
+      "Shanty-singer Maddie",
+      "Painter Hallowell",
+      "Sculptor Waycrest",
+      "Bard Fennick",
+      "Poet Tidewell"
+    ]
+  },
+  {
+    "name": "Kul Tirans Merchant",
+    "unitNames": [
+      "Priscilla Ashvane",
+      "Trader Briggs",
+      "Merchant Stockwell",
+      "Harbormaster Durnhall",
+      "Quartermaster Delia"
+    ]
+  },
+  {
+    "name": "Kul Tirans Engineer",
+    "unitNames": [
+      "Shipwright Kail",
+      "Master Builder Corlain",
+      "Engineer Fallhaven",
+      "Drydock Chief Brennadam"
+    ]
+  },
+  {
+    "name": "Kul Tirans Prophet",
+    "unitNames": [
+      "Brother Pike",
+      "Tidesage Ashlynn",
+      "Lord Stormsong",
+      "Tidesage Thaddeus",
+      "Sister Meredith"
+    ]
+  },
+  {
+    "name": "Kul Tirans Scientist",
+    "unitNames": [
+      "Lucille Waycrest",
+      "Arthur Waycrest",
+      "Navigator Fenwick",
+      "Scholar Brennadam",
+      "Tidesage Coralind"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls General",
+    "unitNames": [
+      "General Jakra'zet",
+      "Zolani",
+      "Kiro",
+      "Warlord Jin'zil",
+      "Bwonsamdi's Champion Zul",
+      "Rokhan",
+      "Prince Zul'jin"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls Admiral",
+    "unitNames": [
+      "Fleetmaster Jak'zul",
+      "Captain Zengo",
+      "Admiral Kai'ta"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls Artist",
+    "unitNames": [
+      "Hexlord Pa'ku",
+      "Carver Zen'tabra",
+      "Drummer Obu",
+      "Mask-maker Jo'kani",
+      "Singer Vul'ji"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls Merchant",
+    "unitNames": [
+      "Trade Prince Xal'atath",
+      "Golden Merchant Zek",
+      "Banker Jin'tal",
+      "Treasurer Kaz'gal"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls Engineer",
+    "unitNames": [
+      "Builder of Dazar'alor Ten'zin",
+      "Architect Zak'ati",
+      "Mason Vol'kaz"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls Prophet",
+    "unitNames": [
+      "Zul the Prophet",
+      "High Priestess Mah'Jin",
+      "Speaker of Rezan",
+      "Priest Akunda'ji",
+      "Seer Vol'jamba"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls Scientist",
+    "unitNames": [
+      "Hexlord Malacrass",
+      "Scholar Ta'zon",
+      "Archivist Zan'ji",
+      "Loremaster Kizanji"
+    ]
+  },
+  {
     "name": "Humans General",
     "unitNames": [
       "Anduin Lothar",
@@ -218,14 +425,14 @@
   {
     "name": "Humans Admiral",
     "unitNames": [
-      "Daelin Proudmoore",
-      "Tandred Proudmoore",
-      "Katherine Proudmoore",
-      "Flynn Fairwind",
       "Grand Admiral Jes-Tereth",
-      "Cyrus Crestfall",
-      "Lord Admiral Taelia Fordragon",
-      "Admiral Hartley"
+      "Admiral Taylor",
+      "Captain Angelina Soluna",
+      "Admiral Stephens",
+      "Captain Garran Vimes",
+      "Admiral Brightwater",
+      "Fleet Captain Tayne",
+      "Captain Edwin Sandoval"
     ]
   },
   {

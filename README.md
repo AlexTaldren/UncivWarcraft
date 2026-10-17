@@ -8,19 +8,19 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 
 **Eras** follow Azeroth's timeline: Age of Tribes → Age of Arathor → Age of the Dark Portal → Age of the Third War → Age of the Lich King → Age of the Cataclysm → Age of the Legion → Age of Azerite → Age of the Void.
 
-**15 races**, each with a leader, unique ability, AI personality and city list: Humans, Orcs, Night Elves, Dwarves, Gnomes, Tauren, Trolls, Blood Elves, High Elves, Pandaren, Forsaken, Draenei, Goblins, Worgen, and **the Scourge** under Arthas, the Lich King, ruling from Icecrown Citadel in Northrend.
+**18 races**, each with a leader, unique ability, AI personality and city list: Humans, Orcs, Night Elves, Dwarves, Gnomes, Tauren, Trolls, Blood Elves, High Elves, Pandaren, Forsaken, Draenei, Goblins, Worgen, **the Dark Iron Dwarves** under Moira Thaurissan in Shadowforge City, **the Kul Tirans** under Jaina Proudmoore in Boralus, **the Zandalari Trolls** under Queen Talanji in Zuldazar, and **the Scourge** under Arthas, the Lich King, ruling from Icecrown Citadel in Northrend.
 
 **Humans (complete)** — led by Anduin Wrynn, in Stormwind blue and gold
 - *The Human Spirit:* City-State influence decays 50% slower and rests 20 higher; +15% Great Person generation. *For Lordaeron!* +10% Strength in your own lands. *Call to Arms:* when another civilization declares war on you, 2 free infantry of your current era appear.
 - **Footman** (replaces Swordsman): stronger, starts with Defend I, needs no Iron; carries a heater shield with a sunburst.
 - **Paladin** (replaces Knight): plate armour and warhammer on a barded white charger. Heals adjacent units, +10% Strength to nearby units (Devotion Aura), +20% when defending (Divine Shield), +25% against the Forsaken.
-- **Mage** (replaces Crossbowman): a robed battle-mage with a crystal staff; stronger ranged attack that fires over hills and forests.
+- **Mage** (replaces Crossbowman): a bearded battle-mage hurling fire from both hands; stronger ranged attack that fires over hills and forests.
 - **Priest** (replaces Missionary): white-and-gold robes; adjacent units heal 15 HP more.
 - **Steam Tank** (replaces Cannon): no set-up before firing, and can move after attacking.
-- **Kul Tiran Man-o'-War** (replaces Frigate): faster and better armed.
+- **Knight of the Silver Hand** (replaces Cavalry): heavy holy cavalry; +25% against the undead, and units beside it heal 10 HP more.
 - **Archmage** (replaces Great Scientist): named after the archmagi of Dalaran (Antonidas, Khadgar, Jaina…).
-- **Chapel of the Light** (replaces Temple): +1 Faith, +1 Culture. **Royal Barracks** (replaces Barracks): new units start with 25 XP, +1 Culture. **Lumber Mill** (replaces Workshop): +1 Production, +1 Production from Forests. **Castle** (replaces Keep): stronger defenses, +1 Culture. **Altar of Kings** (Humans only, one per empire): a free Great General and +15% Great Person generation.
-- Every other Human unit wears blue and gold on the map, and Peasants carry lumber.
+- **Chapel of the Light** (replaces Temple): +1 Faith, +1 Culture. **Royal Barracks** (replaces Barracks): new units start with 25 XP, +1 Culture. **Lumber Mill** (replaces Workshop): +1 Production, +1 Production from Forests. **Castle** (replaces Keep): stronger defenses, +1 Culture. **Cathedral of Light** (replaces Bardic Hall): +2 Faith. **Altar of Kings** (Humans only, one per empire): a free Great General and +15% Great Person generation.
+- Every Human and Orc unit is painted in a chunky, Warcraft-like style: big shoulders, hands and weapons, saturated colour and heavy outlines, from Peasants and Peons to riflemen, riders, siege engines, Great People and heroes.
 
 **Each race plays differently:**
 - **Scourge:** the undead eat half as much, Plagued Land gives them +2 Production and +1 Science, fallen enemies can rise to swell their cities, and their key buildings (Necropolis, Crypt, Ziggurat) need blighted ground nearby. Acolytes **spread the blight**. Unique: Ghoul, Acolyte, Death Knight, Frost Wyrm.
@@ -37,33 +37,40 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Draenei:** exiles: a second Settler, a weaker capital, +25% against barbarians and demons, faster missionaries.
 - **Worgen:** units shift between human and worgen form (Worgen Stalker ↔ Gilnean Hunter, Gilnean Rifleman ↔ Worgen Ravager), and the curse lets worgen capture units they kill.
 - **Pandaren:** in the Age of the Dark Portal they choose the Tushui path (Alliance), the Huojin path (Horde) or neutrality.
+- **Dark Iron Dwarves:** Molten Fields feed their forges (+2 Production, +1 Gold), mined hills give +1 Production, and their siege engines are built 20% faster and fight 15% harder.
+- **Kul Tirans:** the Proudmoore Admiralty: ships move one tile farther, fight 15% harder, see farther and are built 25% faster; coast tiles give +1 Gold.
+- **Zandalari Trolls:** an empire of gold: +1 Gold from jungle, +10% Gold and +15% Faith; jungle camps give Faith and Culture, and their dinosaur riders fight 10% harder.
 - **Alliance and Horde** fight 10% harder against each other.
 
-**Heroes:** every race can field one hero, as in Warcraft III: Uther the Lightbringer, Grom Hellscream, Malfurion Stormrage, Muradin Bronzebeard, Kelsey Steelspark, Baine Bloodhoof, Rokhan, Kael'thas Sunstrider, Alleria Windrunner, Chen Stormstout, Nathanos Blightcaller, Maraad, Gazlowe, Darius Crowley and Kel'Thuzad. Heroes inspire nearby troops, grow stronger with the ages and have their own promotions.
+**Heroes:** every race can field one hero, as in Warcraft III: Uther the Lightbringer, Grom Hellscream, Malfurion Stormrage, Muradin Bronzebeard, Kelsey Steelspark, Baine Bloodhoof, Rokhan, Kael'thas Sunstrider, Alleria Windrunner, Chen Stormstout, Nathanos Blightcaller, Maraad, Gazlowe, Darius Crowley, Kel'Thuzad, Dagran Thaurissan, Daelin Proudmoore and Rastakhan. Heroes inspire nearby troops, grow stronger with the ages and have their own promotions.
 
 **Magic and travel:** **Mana** is a resource every race needs. Every capital gathers a little each turn, and each race has its own sources in buildings it already has: Moonwells, Voodoo Lounges, the Orcs' new Altar of Storms, Great Totems, Dwarven Forges, Tinker's Workshops, Goblin Bazaars, Crystal Sanctums, Necropolises and Ziggurats, Arcane Sanctums and Mage Towers (more with Arcane Crystals) and more. It is spent on each race's spellcasters and magic-touched units, on every hero (30 Mana), on magical buildings and wonders (Mage Tower, Arcane Laboratory, Mana Reactor, Karazhan, the Sunwell Plateau, the Nighthold...), on Mana choices in events (sealing a fel rift, warding granaries against the plague, holding back the Scourge), and on portals: units trained in a city with a **Mage Tower** can open a portal from one of your cities to another for 10 Mana.
 
-**Cleansing the land:** Plagued Land and Fel-Scorched Land can only be cleansed by a **Cleric**, bought with Faith. Every living race has its own: Northshire Cleric, Dwarven Priest, Decontaminator (Gnomes), Cenarion Druid, Anchorite, Harvest Witch, Lightwarden, Sunfury Priest, Earthen Shaman, Witch Doctor, Sunwalker, Mistweaver and the Goblins' Hazmat Crew. The undead don't cleanse.
+**Cleansing the land:** Plagued Land and Fel-Scorched Land can only be cleansed by a **Cleric**, bought with Faith. Every living race has its own: Northshire Cleric, Dwarven Priest, Decontaminator (Gnomes), Cenarion Druid, Anchorite, Harvest Witch, Lightwarden, Sunfury Priest, Earthen Shaman, Witch Doctor, Sunwalker, Mistweaver, the Goblins' Hazmat Crew, the Dark Irons' Flamekeeper, the Kul Tiran Tidesage and the Zandalari Loa Speaker. The undead don't cleanse.
 
 **World threats:** the Scourge marches in the Age of the Lich King, the Legion invades in the Age of the Legion, and the Old Gods whisper in the last ages. The red, blue, bronze, green and black dragonflights may visit with gifts or schemes.
 
 **Unique units and buildings for every race:**
-- **Orcs:** Grunt (Swordsman; heals when it kills), Wolf Rider (Outrider; pillages for free, no penalty against cities), Pig Farm (Granary, +1 Production).
-- **Trolls:** Headhunter (Ranger; stronger and faster in jungle), Batrider (Gyrocopter; strong against land units), Voodoo Lounge (Shrine, +1 Gold, +1 Culture).
-- **Tauren:** Tauren Warrior (Vanguard; much stronger, no Iron), Kodo Beast (Mounted Archer; War Drums aura), Great Totem (Town Hall, +1 Faith).
-- **Forsaken:** Abomination (Vanguard; tough, heals on kills, no Iron), Meat Wagon (Catapult; faster), Apothecarium (Herb Garden, +2 Science).
-- **Blood Elves:** Spellbreaker (Swordsman; strong against archers and mages), Blood Knight (Knight; heals on kills), Magisters' Sanctum (Arcane Sanctum, +1 Science, +1 Culture).
-- **Goblins:** Goblin Shredder (Peasant; faster, sees farther), Goblin Sapper (Cannon; devastating against cities), Goblin Bazaar (Market, +2 Gold).
-- **Dwarves:** Ironforge Rifleman (Musketeer; strong in hills), Ram Rider (Knight; keeps terrain defense, strong in hills), Dwarven Forge (Blacksmith, +2 Production).
-- **Gnomes:** Mechanostrider Rider (Outrider; 5 movement, no Horses), Gnomish Bombardier (Mortar Team; range 3), Tinker's Workshop (Workshop, +1 Science).
-- **Night Elves:** Huntress (Outrider; strong and fast in forests), Glaive Thrower (Ballista; range 3), Moonwell (Shrine, +1 Food).
-- **Draenei:** Vindicator (Vanguard; strong against barbarians and demons, heals neighbours), Elekk Rider (Knight; very strong but slow), Crystal Sanctum (Temple, +1 Science).
-- **Worgen:** Worgen Stalker (Swordsman; strong and fast in forests, no Iron), Gilnean Rifleman (Rifleman), Gilnean Bulwark (Walls, stronger, +1 Culture).
-- **High Elves:** Farstrider (Ranger; strong in forests), Elven Destroyer (War Galley; stronger and faster), Runestone (Walls, stronger, +1 Science).
-- **Pandaren:** Brewmaster (Vanguard; strong defender, no Iron), Shado-Pan Monk (Pikeman; 3 movement), Brewery (Granary, +1 Gold, +1 Happiness).
+- **Orcs:** Grunt (Swordsman; heals when it kills), Wolf Rider (Outrider; pillages for free, no penalty against cities), Raider (Cavalry; chains and hooks: no penalty against cities, strong against riders), Pig Farm (Granary, +1 Production), War Mill (Workshop; +1 Production, faster military units).
+- **Trolls:** Headhunter (Ranger; stronger and faster in jungle), Troll Berserker (Musketeer; frenzied, heals on kills), Batrider (Gyrocopter; strong against land units), Voodoo Lounge (Shrine, +1 Gold, +1 Culture), Loa Shrine (Temple, +1 Culture).
+- **Tauren:** Tauren Warrior (Vanguard; much stronger, no Iron), Kodo Beast (Mounted Archer; War Drums aura), Wind Rider (Gyrocopter; longer range), Great Totem (Town Hall, +1 Faith), Spirit Lodge (Herb Garden, +1 Faith, +1 Food).
+- **Forsaken:** Abomination (Vanguard; tough, heals on kills, no Iron), Meat Wagon (Catapult; faster), Deathstalker (Rifleman; ignores zones of control), Apothecarium (Herb Garden, +2 Science), Plague Cauldron (Foundry, +1 Science).
+- **Blood Elves:** Spellbreaker (Swordsman; strong against archers and mages), Blood Knight (Knight; heals on kills), Dragonhawk Rider (Gyrocopter; strong against land units), Magisters' Sanctum (Arcane Sanctum, +1 Science, +1 Culture), Mana Forge (Foundry, +1 Production, +1 Mana).
+- **Goblins:** Goblin Shredder (Peasant; faster, sees farther), Goblin Sapper (Cannon; devastating against cities), Goblin Zeppelin (Bomber Zeppelin; strong against cities), Goblin Bazaar (Market, +2 Gold), Trade Prince's Bank (Bank, +2 Gold).
+- **Dwarves:** Ironforge Rifleman (Musketeer; strong in hills), Ram Rider (Knight; keeps terrain defense, strong in hills), Steam Armor (War Golem; strong in hills), Dwarven Forge (Blacksmith, +2 Production), Great Forge (Foundry, +2 Production).
+- **Gnomes:** Mechanostrider Rider (Outrider; 5 movement, no Horses), Gnomish Bombardier (Mortar Team; range 3), Spider Tank (Siege Engine; faster, ignores terrain), Tinker's Workshop (Workshop, +1 Science), Gnomeregan Laboratory (Arcane Laboratory, +2 Science).
+- **Night Elves:** Huntress (Outrider; strong and fast in forests), Glaive Thrower (Ballista; range 3), Mountain Giant (War Golem; living stone, no Azerite, strong in forests), Moonwell (Shrine, +1 Food), Tree of Life (Keep, +2 Food, stronger).
+- **Draenei:** Vindicator (Vanguard; strong against barbarians and demons, heals neighbours), Elekk Rider (Knight; very strong but slow), Lightforged Warframe (War Golem; heals neighbours), Crystal Sanctum (Temple, +1 Science), Crystal Hall (Library, +1 Faith).
+- **Worgen:** Worgen Stalker (Swordsman; strong and fast in forests, no Iron), Gilnean Rifleman (Rifleman), Harvest Golem (War Golem; strong defender), Gilnean Bulwark (Walls, stronger, +1 Culture), Greymane Watchtower (Keep, +1 Culture, stronger).
+- **High Elves:** Farstrider (Ranger; strong in forests), Ranger-Lord (Mountaineer; strong in forests), Elven Destroyer (War Galley; stronger and faster), Runestone (Walls, stronger, +1 Science), Elven Spire (Mage Tower, +1 Culture).
+- **Pandaren:** Brewmaster (Vanguard; strong defender, no Iron), Shado-Pan Monk (Pikeman; 3 movement), Cloud Serpent Rider (Gryphon Rider; heals faster), Brewery (Granary, +1 Gold, +1 Happiness), Jade Pagoda (Temple, +1 Culture, +1 Happiness).
+- **Scourge:** Crypt Fiend (Mountaineer; webs flying units, heals on kills), Slaughterhouse (Foundry, +1 Production; needs blight).
+- **Dark Iron Dwarves:** Fireguard (Pikeman; strong in hills and on defence), Dark Iron Golem (War Golem; hits harder), Shadowforge Furnace (Blacksmith, +2 Production).
+- **Kul Tirans:** Kul Tiran Man-o'-War (Frigate; faster and better armed), Admiralty Gunner (Musketeer; attacks from ships without penalty), Admiralty Drydock (Shipyard; +1 Production, ships start with 15 XP).
+- **Zandalari Trolls:** Raptor Rider (Outrider; fast, strong in jungle), Direhorn Rider (Knight; a battering charge with no penalty against cities), Golden Pyramid (Market, +1 Gold, +1 Culture).
 Each has its own map sprite and icon.
 
-**Azeroth world maps:** Kalimdor, the Eastern Kingdoms and Northrend, with every major zone in its place (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown and 50+ more), mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles and the Wandering Isle. Two sizes: **Azeroth Large** (144 × 88, preselected, room to expand) and **Azeroth** (104 × 64, faster on phones). Each race starts at its capital: Stormwind, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon, Quel'Danas, the Temple of Five Dawns on the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor and Gilneas. City-states sit at their real locations.
+**Azeroth world maps:** Kalimdor, the Eastern Kingdoms and Northrend, with every major zone in its place (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown and 50+ more), mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles, the Wandering Isle, **Kul Tiras**, **Zandalar** and the **Isle of Thunder**. Two sizes: **Azeroth Large** (144 × 88, preselected, room to expand) and **Azeroth** (104 × 64, faster on phones). Each race starts at its capital: Stormwind, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon, Quel'Danas, the Temple of Five Dawns on the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor, Gilneas, Shadowforge City, Boralus and Zuldazar. City-states sit at their real locations.
 
 **Warcraft terrain:** seven special tile types, placed where they belong:
 - *Fel-Scorched Land* (Felwood, Blasted Lands): +2 Production, -1 Food; units ending a turn there take 10 damage. Clerics can cleanse it after Priesthood.
@@ -92,7 +99,7 @@ Each has its own map sprite and icon.
 
 **Faction AI:** every race has its own AI personality. Orcs and Forsaken mass armies, Gnomes and Dwarves chase technology and siege engines, the elves and Draenei favor culture and faith, Goblins build markets and banks, Humans stay balanced. Alliance races are more diplomatic and loyal, so they tend to befriend one another more often; Horde races are quicker to go to war.
 
-**16 city-states:** Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold, the Earthen Ring, the Knights of the Ebon Blade, the Explorers' League and the Thorium Brotherhood.
+**24 city-states:** the other peoples of Azeroth — the furbolgs of **Timbermaw Hold**, the tuskarr of **Kamagua**, the centaurs of **Maraudine**, the kobolds of **Jasperlode Mine**, the quilboar of **Razorfen Kraul**, the ethereals of **the Consortium**, the mogu of **Mogu'shan** and the qiraji of **Ahn'Qiraj** — alongside Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold, the Earthen Ring, the Knights of the Ebon Blade, the Explorers' League and the Thorium Brotherhood.
 
 **10 religions:** Holy Light, Elune, Earth Mother, Shamanism, Loa, Cenarion Circle, August Celestials, Titans, Forgotten Shadow, Light of the Sunwell.
 

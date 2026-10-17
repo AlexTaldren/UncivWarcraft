@@ -644,7 +644,8 @@
     "uniques": [
       "Gain a free [Temple] [in this city]",
       "Free [Great Prophet] appears",
-      "Only available <when religion is enabled>"
+      "Only available <when religion is enabled>",
+      "Provides [1] [Mana]"
     ],
     "requiredTech": "Priesthood",
     "civilopediaText": [
@@ -1998,6 +1999,29 @@
     ]
   },
   {
+    "name": "Cathedral of Light",
+    "culture": 4,
+    "specialistSlots": {
+      "Bard": 1
+    },
+    "hurryCostModifier": 10,
+    "requiredBuilding": "Storyteller's Circle",
+    "maintenance": 2,
+    "requiredTech": "Choral Hymns",
+    "uniques": [
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]"
+    ],
+    "faith": 2,
+    "replaces": "Bardic Hall",
+    "uniqueTo": "Humans",
+    "civilopediaText": [
+      {
+        "text": "A great cathedral in the image of Stormwind's, where the Holy Light is preached and the Silver Hand takes its oaths. +2 Faith over the hall it replaces."
+      }
+    ]
+  },
+  {
     "name": "Altar of Kings",
     "uniqueTo": "Humans",
     "cost": 140,
@@ -2363,6 +2387,376 @@
     ],
     "replaces": "Granary",
     "uniqueTo": "Pandaren"
+  },
+  {
+    "name": "War Mill",
+    "maintenance": 2,
+    "production": 3,
+    "specialistSlots": {
+      "Tinker": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "requiredTech": "Blacksmithing",
+    "civilopediaText": [
+      {
+        "text": "Where the Horde's axes are forged and its catapults built, as in every orcish town since the Second War. +1 Production and +15% Production toward military units."
+      }
+    ],
+    "replaces": "Workshop",
+    "uniqueTo": "Orcs",
+    "uniques": [
+      "[+15]% Production when constructing [Military] units [in this city]"
+    ]
+  },
+  {
+    "name": "Great Forge",
+    "cost": 360,
+    "production": 6,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "specialistSlots": {
+      "Tinker": 2
+    },
+    "requiredBuilding": "Workshop",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "requiredResource": "Thorium",
+    "requiredTech": "Steamworks",
+    "civilopediaText": [
+      {
+        "text": "A forge in the image of the Great Forge at the heart of Ironforge, its rivers of molten metal never cooling. +2 Production."
+      }
+    ],
+    "replaces": "Foundry",
+    "uniqueTo": "Dwarves"
+  },
+  {
+    "name": "Gnomeregan Laboratory",
+    "science": 6,
+    "percentStatBonus": {
+      "science": 50
+    },
+    "specialistSlots": {
+      "Arcanist": 1
+    },
+    "requiredBuilding": "Mage Tower",
+    "maintenance": 3,
+    "requiredTech": "Arcanite Alloys",
+    "civilopediaText": [
+      {
+        "text": "A laboratory in the tradition of Gnomeregan's tinkers, full of gears, steam and the occasional small explosion. +2 Science."
+      }
+    ],
+    "replaces": "Arcane Laboratory",
+    "uniqueTo": "Gnomes"
+  },
+  {
+    "name": "Tree of Life",
+    "cityStrength": 9,
+    "cityHealth": 25,
+    "hurryCostModifier": 25,
+    "requiredBuilding": "Walls",
+    "requiredTech": "Animal War Training",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "food": 2,
+    "civilopediaText": [
+      {
+        "text": "A great ancient that is both the heart and the shelter of a night elf town. +2 Food and stronger defences than a Keep."
+      }
+    ],
+    "replaces": "Keep",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Crystal Hall",
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "uniques": [
+      "[+1 Science] per [2] population [in this city]",
+      "Provides [1] [Mana]"
+    ],
+    "requiredTech": "Runic Script",
+    "faith": 1,
+    "civilopediaText": [
+      {
+        "text": "A hall of glowing crystals where draenei scholars record the teachings of the naaru. +1 Faith."
+      }
+    ],
+    "replaces": "Library",
+    "uniqueTo": "Draenei"
+  },
+  {
+    "name": "Greymane Watchtower",
+    "cityStrength": 9,
+    "cityHealth": 25,
+    "hurryCostModifier": 25,
+    "requiredBuilding": "Walls",
+    "requiredTech": "Animal War Training",
+    "uniques": [
+      "Destroyed when the city is captured"
+    ],
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A watchtower of the Greymane Wall, built to keep Gilneas apart from the world. +1 Culture and stronger defences than a Keep."
+      }
+    ],
+    "replaces": "Keep",
+    "uniqueTo": "Worgen"
+  },
+  {
+    "name": "Elven Spire",
+    "science": 3,
+    "specialistSlots": {
+      "Arcanist": 1
+    },
+    "requiredBuilding": "Arcane Sanctum",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "[+1 Science] per [2] population [in this city]",
+      "Provides [1] [Mana]"
+    ],
+    "requiredTech": "Arcane Science",
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A slender spire of white stone and blue glass, home to the magisters of Quel'Thalas. +1 Culture."
+      }
+    ],
+    "replaces": "Mage Tower",
+    "uniqueTo": "High Elves"
+  },
+  {
+    "name": "Loa Shrine",
+    "faith": 2,
+    "requiredBuilding": "Shrine",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Destroyed when the city is captured",
+      "Provides [1] [Mana]"
+    ],
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A shrine to the loa, the wild gods of the trolls, hung with masks and offerings. +1 Culture."
+      }
+    ],
+    "replaces": "Temple",
+    "uniqueTo": "Trolls"
+  },
+  {
+    "name": "Spirit Lodge",
+    "uniques": [
+      "[+25]% Great Person generation [in this city]",
+      "Must be next to [Fresh water]",
+      "Provides [1] [Mana]"
+    ],
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "requiredTech": "Priesthood",
+    "faith": 1,
+    "food": 1,
+    "civilopediaText": [
+      {
+        "text": "A lodge where tauren spirit walkers commune with the ancestors and the Earth Mother. +1 Faith and +1 Food."
+      }
+    ],
+    "replaces": "Herb Garden",
+    "uniqueTo": "Tauren"
+  },
+  {
+    "name": "Plague Cauldron",
+    "cost": 360,
+    "production": 4,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "specialistSlots": {
+      "Tinker": 2
+    },
+    "requiredBuilding": "Workshop",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "requiredResource": "Thorium",
+    "requiredTech": "Steamworks",
+    "science": 1,
+    "civilopediaText": [
+      {
+        "text": "Great bubbling cauldrons where the apothecaries brew new plagues. +1 Science."
+      }
+    ],
+    "replaces": "Foundry",
+    "uniqueTo": "Forsaken"
+  },
+  {
+    "name": "Mana Forge",
+    "cost": 360,
+    "production": 5,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "specialistSlots": {
+      "Tinker": 2
+    },
+    "requiredBuilding": "Workshop",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "requiredResource": "Thorium",
+    "requiredTech": "Steamworks",
+    "civilopediaText": [
+      {
+        "text": "A blood elf forge that draws raw energy from mana itself. +1 Production, +1 Mana."
+      }
+    ],
+    "replaces": "Foundry",
+    "uniqueTo": "Blood Elves",
+    "uniques": [
+      "Provides [1] [Mana]"
+    ]
+  },
+  {
+    "name": "Trade Prince's Bank",
+    "gold": 4,
+    "specialistSlots": {
+      "Trader": 1
+    },
+    "hurryCostModifier": 15,
+    "percentStatBonus": {
+      "gold": 25
+    },
+    "requiredBuilding": "Market",
+    "requiredTech": "Banking",
+    "civilopediaText": [
+      {
+        "text": "A Bilgewater Cartel bank: secure vaults, generous loans, ruinous interest. +2 Gold."
+      }
+    ],
+    "replaces": "Bank",
+    "uniqueTo": "Goblins"
+  },
+  {
+    "name": "Jade Pagoda",
+    "faith": 2,
+    "requiredBuilding": "Shrine",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Destroyed when the city is captured"
+    ],
+    "culture": 1,
+    "happiness": 1,
+    "civilopediaText": [
+      {
+        "text": "A pagoda of carved jade where monks meditate on the balance of all things. +1 Culture and +1 Happiness."
+      }
+    ],
+    "replaces": "Temple",
+    "uniqueTo": "Pandaren"
+  },
+  {
+    "name": "Slaughterhouse",
+    "cost": 360,
+    "production": 5,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "specialistSlots": {
+      "Tinker": 2
+    },
+    "requiredBuilding": "Workshop",
+    "maintenance": 3,
+    "hurryCostModifier": 0,
+    "requiredResource": "Thorium",
+    "requiredTech": "Steamworks",
+    "civilopediaText": [
+      {
+        "text": "Where the Scourge stitches together abominations and gathers corpses for its wagons. +1 Production. Needs Plagued Land within 3 tiles."
+      }
+    ],
+    "replaces": "Foundry",
+    "uniqueTo": "Scourge",
+    "uniques": [
+      "Must have an owned [Plagued Land] within [3] tiles"
+    ]
+  },
+  {
+    "name": "Shadowforge Furnace",
+    "maintenance": 1,
+    "hurryCostModifier": 25,
+    "requiredNearbyImprovedResources": [
+      "Iron"
+    ],
+    "requiredTech": "Blacksmithing",
+    "uniques": [
+      "[+15]% Production when constructing [Land] units [in this city]",
+      "[+1 Production] from [Iron] tiles [in this city]",
+      "Provides [1] [Mana]"
+    ],
+    "production": 2,
+    "civilopediaText": [
+      {
+        "text": "A furnace fed by the fires beneath Blackrock Mountain, where the Dark Irons work their black metal. +2 Production."
+      }
+    ],
+    "replaces": "Blacksmith",
+    "uniqueTo": "Dark Iron Dwarves"
+  },
+  {
+    "name": "Admiralty Drydock",
+    "cost": 120,
+    "maintenance": 3,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "[+1 Production] from [Water resource] tiles [in this city]",
+      "Connects trade routes over water",
+      "Must be next to [Coast]",
+      "New [Water] units start with [15] XP [in this city]",
+      "Provides [1] [Mana]"
+    ],
+    "requiredTech": "Seafaring",
+    "production": 1,
+    "civilopediaText": [
+      {
+        "text": "The drydocks of the Proudmoore Admiralty, where the finest ships on Azeroth are built. +1 Production, and new ships start with 15 experience."
+      }
+    ],
+    "replaces": "Shipyard",
+    "uniqueTo": "Kul Tirans"
+  },
+  {
+    "name": "Golden Pyramid",
+    "gold": 3,
+    "specialistSlots": {
+      "Trader": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "gold": 25
+    },
+    "requiredTech": "Coinage",
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A pyramid capped in gold in the manner of Dazar'alor, seat of the Zandalari's wealth and pride. +1 Gold and +1 Culture over a Market."
+      }
+    ],
+    "replaces": "Market",
+    "uniqueTo": "Zandalari Trolls",
+    "uniques": [
+      "Provides [1] [Mana]"
+    ]
   },
   {
     "name": "Tushui Monastery",

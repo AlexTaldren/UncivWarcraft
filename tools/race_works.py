@@ -51,6 +51,10 @@ SHIP_STYLE = {
     "Goblins":     dict(sail=(205, 175, 95), hull=(145, 82, 52), acc=(150, 150, 155), props=["patches", "stack"]),
     "Worgen":      dict(sail=(118, 116, 122), hull=(78, 58, 46), acc=(200, 200, 205), props=["glow"],
                         glow=(255, 215, 120)),
+    "Dark Iron Dwarves": dict(sail=(95, 85, 82), hull=(60, 52, 52), acc=(255, 120, 30), props=["rivets", "stack", "glow"],
+                              glow=(255, 130, 50)),
+    "Kul Tirans":  dict(sail=(240, 236, 224), hull=(110, 75, 45), acc=(30, 80, 110), props=["figure"]),
+    "Zandalari Trolls": dict(sail=(240, 200, 80), hull=(150, 110, 60), acc=(40, 130, 110), props=["mask", "figure"]),
 }
 
 
@@ -250,7 +254,8 @@ class Scene(CC.Scene):
         return out
 
 
-FIRE = {"Forsaken": (140, 240, 90), "Scourge": (120, 200, 255), "Draenei": (170, 150, 255)}
+FIRE = {"Forsaken": (140, 240, 90), "Scourge": (120, 200, 255), "Draenei": (170, 150, 255),
+        "Dark Iron Dwarves": (255, 120, 40)}
 
 # race: shelter kind and colours for the hunting camp, plus a camp prop
 CAMP = {
@@ -269,6 +274,9 @@ CAMP = {
     "Draenei":     dict(kind="dome", wall=(160, 145, 200), roof=(110, 90, 170), prop="crystal"),
     "Goblins":     dict(kind="flat", wall=(150, 110, 70), roof=(190, 90, 40), prop="barrel"),
     "Worgen":      dict(kind="gable", wall=(130, 125, 120), roof=(55, 60, 70), prop="lamppost"),
+    "Dark Iron Dwarves": dict(kind="flat", wall=(80, 70, 70), roof=(50, 45, 46), prop="keg"),
+    "Kul Tirans":  dict(kind="tent", wall=(230, 225, 210), roof=(40, 85, 110), prop="pennant_blue", trim=(230, 220, 190)),
+    "Zandalari Trolls": dict(kind="thatch", wall=(185, 160, 105), roof=(235, 195, 70), prop="mask"),
 }
 
 
@@ -414,6 +422,10 @@ FORT = {
                         lamp=(170, 150, 255)),
     "Goblins":     dict(wall="metal", col=(150, 105, 70), roof="flat", rcol=(190, 90, 40), flag=(240, 200, 60), rust=True),
     "Worgen":      dict(wall="stone", col=(118, 115, 112), roof="gable", rcol=(55, 60, 70), flag=(120, 40, 40)),
+    "Dark Iron Dwarves": dict(wall="stone", col=(78, 70, 70), roof="flat", rcol=(45, 40, 42), flag=(255, 120, 30), heavy=True,
+                              lamp=(255, 130, 50)),
+    "Kul Tirans":  dict(wall="stone", col=(205, 200, 188), roof="spire", rcol=(30, 70, 95), flag=(30, 80, 110)),
+    "Zandalari Trolls": dict(wall="palisade", col=(195, 170, 100), roof="thatch", rcol=(235, 195, 70), flag=(40, 130, 110)),
 }
 
 # hexagon of wall foot points, back (top) to front

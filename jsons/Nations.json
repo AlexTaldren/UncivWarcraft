@@ -88,8 +88,8 @@
       "Sentinel Hill",
       "Northshire",
       "Moonbrook",
-      "Boralus",
-      "Tiragarde Keep",
+      "Westfall Brigade",
+      "Lion's Pride Inn",
       "Hearthglen",
       "Southshore",
       "Tyr's Hand",
@@ -368,7 +368,7 @@
       "Ironforge Airfield",
       "Frosthold",
       "Thunderbrew Distillery",
-      "Shadowforge City",
+      "Steelgrill's Depot",
       "Grim Batol Gate"
     ]
   },
@@ -603,7 +603,7 @@
       "Zul'Farrak",
       "Zul'Drak",
       "Gundrak",
-      "Zuldazar",
+      "Revantusk Village",
       "Jintha'Alor",
       "Shadra'Alor",
       "Zul'Mashar",
@@ -1258,6 +1258,261 @@
     ]
   },
   {
+    "name": "Dark Iron Dwarves",
+    "leaderName": "Moira Thaurissan",
+    "adjective": [
+      "Dark Iron"
+    ],
+    "startBias": [
+      "Hill"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Moira Thaurissan",
+    "startIntroPart1": "Hail, Moira Thaurissan, Queen of the Dark Iron clan. Heir of both Ironforge and Shadowforge, you have led your people out of Ragnaros's shadow and into the Alliance, but the fires of Blackrock still burn in their forges.",
+    "startIntroPart2": "Will the Dark Irons prove they are more than the servants of fire?",
+    "declaringWar": "The forges of Shadowforge have turned to war. Prepare yourselves.",
+    "attacked": "Ye'll burn for that!",
+    "defeated": "Shadowforge... falls dark at last.",
+    "denounced": "Ye've shown yer true face.",
+    "introduction": "I am Moira Thaurissan, Queen of the Dark Irons and of Ironforge's Council of Three Hammers.",
+    "neutralHello": "Well met.",
+    "hateHello": "Hmph. Speak, and be quick about it.",
+    "tradeRequest": "The Dark Irons have black iron and fire-forged steel to trade.",
+    "outerColor": [
+      40,
+      32,
+      32
+    ],
+    "innerColor": [
+      255,
+      120,
+      30
+    ],
+    "favoredReligion": "Titans",
+    "uniqueName": "Shadowforge Industry",
+    "uniques": [
+      "Alliance",
+      "[+10]% Strength <for [Military] units> <vs [Horde] units>",
+      "[+2 Production, +1 Gold] from [Molten Fields] tiles [in all cities]",
+      "[+20]% Production when constructing [Siege] units [in all cities]",
+      "[+15]% Strength <for [Siege] units>",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [3] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>",
+      "Triggers a [The Scourge Marches] event <upon turn start> <every [3] turns> <with [2]% chance> <during the [Age of the Lich King]> <hidden from users>",
+      "Triggers a [The Legion Invades] event <upon turn start> <every [3] turns> <with [4]% chance> <during the [Age of the Legion]> <hidden from users>",
+      "Triggers a [Whispers of the Old Gods] event <upon turn start> <every [3] turns> <with [3]% chance> <starting from the [Age of Azerite]> <hidden from users>",
+      "Triggers a [The Gift of Alexstrasza] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <hidden from users>",
+      "Triggers a [The Blue Dragonflight] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [50]> <hidden from users>",
+      "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
+      "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "[+1 Production] from [{Hill} {Mine}] tiles [in all cities]"
+    ],
+    "cities": [
+      "Shadowforge City",
+      "Thaurissan",
+      "Blackrock Depths",
+      "Thorium Point",
+      "Firewatch Ridge",
+      "The Cauldron",
+      "Grimesilt Dig Site",
+      "Blackchar Cave",
+      "Chiselgrip",
+      "Flame Crest",
+      "Iron Summit",
+      "Lethlor Ravine",
+      "Dark Iron Highway",
+      "Blackthorn's Camp",
+      "Morgan's Plot",
+      "Dreadmaul Rock"
+    ]
+  },
+  {
+    "name": "Kul Tirans",
+    "leaderName": "Jaina Proudmoore",
+    "adjective": [
+      "Kul Tiran"
+    ],
+    "startBias": [
+      "Coast"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Jaina Proudmoore",
+    "startIntroPart1": "Hail, Jaina Proudmoore, Lord Admiral of Kul Tiras. Your island kingdom's fleets once ruled the Great Sea, and its tidesages still speak to the waves. Now Kul Tiras looks outward again.",
+    "startIntroPart2": "Will the Admiralty rule the seas once more?",
+    "declaringWar": "Kul Tiras will not be threatened. Raise the anchors!",
+    "attacked": "You'll regret crossing the Admiralty.",
+    "defeated": "Kul Tiras... has fallen. The tide goes out.",
+    "denounced": "You've broken faith with Kul Tiras.",
+    "introduction": "I am Jaina Proudmoore, Lord Admiral of Kul Tiras.",
+    "neutralHello": "Fair winds to you.",
+    "hateHello": "What is it you want?",
+    "tradeRequest": "Boralus has cargo to trade. Name your price.",
+    "outerColor": [
+      20,
+      55,
+      75
+    ],
+    "innerColor": [
+      230,
+      220,
+      190
+    ],
+    "favoredReligion": "Holy Light",
+    "uniqueName": "The Proudmoore Admiralty",
+    "uniques": [
+      "Alliance",
+      "[+10]% Strength <for [Military] units> <vs [Horde] units>",
+      "[+1] Movement <for [Water] units>",
+      "[+15]% Strength <for [Water] units>",
+      "[+1 Gold] from [Coast] tiles [in all cities]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [3] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>",
+      "Triggers a [The Scourge Marches] event <upon turn start> <every [3] turns> <with [2]% chance> <during the [Age of the Lich King]> <hidden from users>",
+      "Triggers a [The Legion Invades] event <upon turn start> <every [3] turns> <with [4]% chance> <during the [Age of the Legion]> <hidden from users>",
+      "Triggers a [Whispers of the Old Gods] event <upon turn start> <every [3] turns> <with [3]% chance> <starting from the [Age of Azerite]> <hidden from users>",
+      "Triggers a [The Gift of Alexstrasza] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <hidden from users>",
+      "Triggers a [The Blue Dragonflight] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [50]> <hidden from users>",
+      "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
+      "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "[+1] Sight <for [Water] units>",
+      "[+25]% Production when constructing [Water] units [in all cities]"
+    ],
+    "cities": [
+      "Boralus",
+      "Tiragarde Keep",
+      "Proudmoore Keep",
+      "Freehold",
+      "Arom's Stand",
+      "Brennadam",
+      "Corlain",
+      "Fallhaven",
+      "Arom's Watch",
+      "Shrine of the Storm",
+      "Waycrest Manor",
+      "Fort Daelin",
+      "Hatherford",
+      "Millstone Hamlet",
+      "Anglepoint Wharf",
+      "Mariner's Row",
+      "Stormsong Monastery",
+      "Tidecross"
+    ]
+  },
+  {
+    "name": "Zandalari Trolls",
+    "leaderName": "Talanji",
+    "adjective": [
+      "Zandalari"
+    ],
+    "startBias": [
+      "Jungle"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Talanji",
+    "startIntroPart1": "Hail, Talanji, Queen of the Zandalari Empire. From golden Dazar'alor your people have ruled for millennia, the oldest of the troll empires and the keepers of the loa.",
+    "startIntroPart2": "Will the Golden Empire rise to glory once more?",
+    "declaringWar": "The Zandalari march. Your blood will feed the loa!",
+    "attacked": "You strike at Zandalar? The loa will see you punished.",
+    "defeated": "The golden city... has fallen. The loa have turned their faces from us.",
+    "denounced": "You have dishonoured yourself before the loa.",
+    "introduction": "I am Talanji, Queen of the Zandalari. Show the proper respect.",
+    "neutralHello": "The Zandalari greet you.",
+    "hateHello": "You again. The loa do not favour you.",
+    "tradeRequest": "Zandalar's treasuries are deep. What would you trade?",
+    "outerColor": [
+      20,
+      90,
+      70
+    ],
+    "innerColor": [
+      240,
+      195,
+      60
+    ],
+    "favoredReligion": "Loa",
+    "uniqueName": "Empire of Gold",
+    "uniques": [
+      "Horde",
+      "[+10]% Strength <for [Military] units> <vs [Alliance] units>",
+      "[+1 Gold] from [Jungle] tiles [in all cities]",
+      "[+10]% [Gold] [in all cities]",
+      "[+15]% [Faith] [in all cities]",
+      "Triggers a [The Darkmoon Faire] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [Plague of Undeath] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [Legion Incursion] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [A Goblin Offer] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [25]> <hidden from users>",
+      "Triggers a [The Lunar Festival] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [10]> <hidden from users>",
+      "Triggers a [Brewfest] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Children's Week] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Gnomish Refugees] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Legion]> <hidden from users>",
+      "Triggers a [A Titan Vault] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [The Cataclysm] event <upon turn start> <every [3] turns> <with [4]% chance> <during the [Age of the Cataclysm]> <hidden from users>",
+      "Triggers a [A Wandering Brewmaster] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [20]> <hidden from users>",
+      "Triggers a [Hallow's End] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [15]> <hidden from users>",
+      "Triggers a [An Envoy of the Kirin Tor] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [35]> <hidden from users>",
+      "Triggers a [Murloc Raid] event <upon turn start> <every [3] turns> <with [2]% chance> <after turn number [8]> <before the [Age of the Dark Portal]> <hidden from users>",
+      "Triggers a [The Defias Brotherhood] event <upon turn start> <every [3] turns> <with [1]% chance> <starting from the [Age of Arathor]> <before the [Age of the Lich King]> <hidden from users>",
+      "Triggers a [The Scourge Marches] event <upon turn start> <every [3] turns> <with [2]% chance> <during the [Age of the Lich King]> <hidden from users>",
+      "Triggers a [The Legion Invades] event <upon turn start> <every [3] turns> <with [4]% chance> <during the [Age of the Legion]> <hidden from users>",
+      "Triggers a [Whispers of the Old Gods] event <upon turn start> <every [3] turns> <with [3]% chance> <starting from the [Age of Azerite]> <hidden from users>",
+      "Triggers a [The Gift of Alexstrasza] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <hidden from users>",
+      "Triggers a [The Blue Dragonflight] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [50]> <hidden from users>",
+      "Triggers a [Nozdormu's Warning] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [60]> <hidden from users>",
+      "Triggers a [The Emerald Dream] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [30]> <hidden from users>",
+      "Triggers a [Lord Prestor's Offer] event <upon turn start> <every [3] turns> <with [1]% chance> <after turn number [40]> <before the [Age of the Cataclysm]> <hidden from users>",
+      "[+1 Faith, +1 Culture] from [{Jungle} {Camp}] tiles [in all cities]",
+      "[+10]% Strength <for [Mounted] units>"
+    ],
+    "cities": [
+      "Zuldazar",
+      "Dazar'alor",
+      "Atal'Dazar",
+      "Zeb'ahari",
+      "Port of Zandalar",
+      "Xibala",
+      "Nazwatha",
+      "Kal'tun",
+      "Zul'jan Ruins",
+      "Warport Rastari",
+      "Vol'dun Outpost",
+      "Vulpera Hideaway",
+      "Nazmir Rise",
+      "Zul'Nazman",
+      "Temple of Akunda",
+      "Sanctuary of the Devoted",
+      "Talanji's Rebuke",
+      "Dreadpearl Shallows"
+    ]
+  },
+  {
     "name": "The Earthen Ring",
     "adjective": [
       "The Earthen Ring"
@@ -1639,6 +1894,198 @@
     ],
     "cities": [
       "Feathermoon Stronghold"
+    ]
+  },
+  {
+    "name": "Timbermaw Hold",
+    "adjective": [
+      "Timbermaw Hold"
+    ],
+    "cityStateType": "Sacred",
+    "declaringWar": "The Timbermaw have judged you an enemy of the forest. The furbolgs go to war.",
+    "attacked": "You attack the Timbermaw? The forest remembers.",
+    "defeated": "Timbermaw Hold... the tunnels fall silent.",
+    "introduction": "The Timbermaw greet you, friend. Few outsiders are welcome in our hold.",
+    "outerColor": [
+      90,
+      60,
+      40
+    ],
+    "innerColor": [
+      200,
+      230,
+      150
+    ],
+    "cities": [
+      "Timbermaw Hold"
+    ]
+  },
+  {
+    "name": "Kamagua",
+    "adjective": [
+      "Kamagua"
+    ],
+    "cityStateType": "Harbor",
+    "declaringWar": "The tuskarr of Kamagua take up their harpoons against you.",
+    "attacked": "You strike at fishermen? Kamagua will fight.",
+    "defeated": "Kamagua's nets lie empty. We are beaten.",
+    "introduction": "Welcome to Kamagua, traveler. Sit, eat, and tell us news of the world.",
+    "outerColor": [
+      50,
+      80,
+      110
+    ],
+    "innerColor": [
+      235,
+      225,
+      200
+    ],
+    "cities": [
+      "Kamagua"
+    ]
+  },
+  {
+    "name": "Maraudine",
+    "adjective": [
+      "Maraudine"
+    ],
+    "cityStateType": "Militaristic",
+    "declaringWar": "The Maraudine ride to war! Your bones will bleach in Desolace.",
+    "attacked": "You dare attack the sons of Theradras?",
+    "defeated": "The Maraudine are scattered to the winds.",
+    "introduction": "The Maraudine centaurs tolerate your presence. For now.",
+    "outerColor": [
+      120,
+      80,
+      50
+    ],
+    "innerColor": [
+      240,
+      200,
+      120
+    ],
+    "cities": [
+      "Maraudine"
+    ]
+  },
+  {
+    "name": "Jasperlode Mine",
+    "adjective": [
+      "Jasperlode Mine"
+    ],
+    "cityStateType": "Mercantile",
+    "declaringWar": "You no take candle! Kobolds fight now!",
+    "attacked": "Why you attack? Kobolds angry!",
+    "defeated": "Mine is lost... no more candle...",
+    "introduction": "You no take candle. Kobolds trade ore and shinies. Maybe.",
+    "outerColor": [
+      110,
+      90,
+      60
+    ],
+    "innerColor": [
+      250,
+      225,
+      120
+    ],
+    "cities": [
+      "Jasperlode Mine"
+    ]
+  },
+  {
+    "name": "Razorfen Kraul",
+    "adjective": [
+      "Razorfen Kraul"
+    ],
+    "cityStateType": "Militaristic",
+    "declaringWar": "The quilboar of Razorfen charge from their thorns!",
+    "attacked": "You come into the Kraul? You will not leave.",
+    "defeated": "The thorns of Razorfen wither...",
+    "introduction": "The Razorfen quilboar grunt a wary greeting from behind their thorn walls.",
+    "outerColor": [
+      90,
+      55,
+      40
+    ],
+    "innerColor": [
+      220,
+      170,
+      90
+    ],
+    "cities": [
+      "Razorfen Kraul"
+    ]
+  },
+  {
+    "name": "The Consortium",
+    "adjective": [
+      "The Consortium"
+    ],
+    "cityStateType": "Mercantile",
+    "declaringWar": "The Consortium has concluded that you are a bad investment. Hostilities commence.",
+    "attacked": "Violence is bad for business. You will be billed for this.",
+    "defeated": "The Consortium's contracts in this region are... terminated.",
+    "introduction": "Greetings, friend. The Consortium trades in rare goods from beyond this world. Interested?",
+    "outerColor": [
+      40,
+      30,
+      80
+    ],
+    "innerColor": [
+      170,
+      120,
+      255
+    ],
+    "cities": [
+      "The Consortium"
+    ]
+  },
+  {
+    "name": "Mogu'shan",
+    "adjective": [
+      "Mogu'shan"
+    ],
+    "cityStateType": "Lorekeeper",
+    "declaringWar": "The mogu remember when they ruled. They will rule again, over your corpse.",
+    "attacked": "You strike at the heirs of the Thunder King?",
+    "defeated": "The stone guardians crumble. Mogu'shan falls.",
+    "introduction": "The mogu of Mogu'shan regard you coldly. Their ancient lore may be yours, for a price.",
+    "outerColor": [
+      60,
+      50,
+      40
+    ],
+    "innerColor": [
+      230,
+      190,
+      90
+    ],
+    "cities": [
+      "Mogu'shan"
+    ]
+  },
+  {
+    "name": "Ahn'Qiraj",
+    "adjective": [
+      "Ahn'Qiraj"
+    ],
+    "cityStateType": "Militaristic",
+    "declaringWar": "The hive stirs. The silithid swarm marches against you.",
+    "attacked": "You disturb the hive of Ahn'Qiraj. You will be devoured.",
+    "defeated": "The great hive is shattered... for now.",
+    "introduction": "Beyond the Scarab Wall, the qiraji watch you with a thousand eyes.",
+    "outerColor": [
+      70,
+      30,
+      75
+    ],
+    "innerColor": [
+      235,
+      200,
+      120
+    ],
+    "cities": [
+      "Ahn'Qiraj"
     ]
   },
   {

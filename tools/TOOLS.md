@@ -21,6 +21,7 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 - `race_works.py` — per-race sailing ships (`Longboat-Orcs` …) and owned-tile hunting camps and forts (`Camp-<race>`, `Fort-<race>`, `Plainstriders+Camp-<race>` …, HexaRealm), in each race's city-center architecture.
 - `map_tiles_preview.py` — renders part of the Azeroth map with the real tile art.
 - `human_sprites.py` — the Humans' unique-unit sprites and blue-and-gold variants.
+- `paint.py`, `wc_style_units.py`, `wc_style_more.py` — the painted-style Human and Orc sprites (a supersampled painter, the first 17 units, and the rest of the roster as kit recipes). Each painted sprite takes its canvas and position from the stock sprite it replaces, at 2x resolution.
 - `race_sprites.py`, `mounts.py` — race versions of every person unit, and each race's mounts (wolves, rams, mechanostriders, nightsabers, kodos, raptors, hawkstriders, elekks, dragon turtles, trikes, skeletal and Gilnean horses, white steeds).
 - `build.py` — assembles everything into the mod folder.
 - `azeroth.py` — the Azeroth map: coastlines, zones and their terrain, mountain ranges, lakes, natural wonders, capitals and city-states. `map_preview.py` renders it.
