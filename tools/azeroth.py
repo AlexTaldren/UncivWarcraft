@@ -188,6 +188,7 @@ CAPITALS = {  # major nations -> their capital's tile
     "Draenei": (5, 28),            # The Exodar, Azuremyst Isle
     "Goblins": (34, 24),           # Bilgewater Harbor, Azshara
     "Worgen": (70, 31),            # Gilneas
+    "Scourge": (46, 5),            # Icecrown Citadel, Icecrown
 }
 CITY_STATES = {
     "Dalaran": (79, 25),           # Alterac, on Lordamere Lake
@@ -200,7 +201,11 @@ CITY_STATES = {
     "Steamwheedle Port": (31, 54), # Tanaris coast
     "Light's Hope Chapel": (93, 21),      # Eastern Plaguelands
     "Cenarion Hold": (17, 54),     # Silithus
-    "Argent Vanguard": (50, 6),    # Icecrown
+    "Argent Vanguard": (54, 7),    # Icecrown, by the Crystalsong border
+    "The Earthen Ring": (13, 41),  # Desolace
+    "Knights of the Ebon Blade": (61, 10),   # Ebon Watch, Zul'Drak
+    "Explorers' League": (88, 46), # Badlands, near Uldaman
+    "Thorium Brotherhood": (81, 46),         # Thorium Point, Searing Gorge
     "Feathermoon Stronghold": (6, 46),        # Sardor Isle, Feralas
 }
 
@@ -382,6 +387,13 @@ def build(seed=7, width=W, height=H):
                 tiles[nr][nc] = {"t": max(b, key=b.get), "f": ["Hill"]}
             tiles[nr][nc]["f"] = [f for f in tiles[nr][nc]["f"] if f not in HARMFUL]
         tiles[r][c]["f"] = [f for f in tiles[r][c]["f"] if f not in HARMFUL]
+        if name == "Scourge":   # the Lich King's capital starts amid the blight it needs
+            k_ = 0
+            for nc, nr in nb(c, r):
+                t_ = tiles[nr][nc]
+                if t_["t"] in ("Snow", "Tundra", "Plains", "Grassland") and all(f == "Hill" for f in t_["f"]) and k_ < 3:
+                    t_["f"] = t_["f"] + ["Plagued Land"]
+                    k_ += 1
 
     wonders = {}
     for name, pt in NATURAL_WONDERS.items():

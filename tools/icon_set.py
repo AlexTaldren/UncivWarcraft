@@ -1178,9 +1178,13 @@ def write_all(images_dir):
               ("ResourceIcons", RESOURCES, (255, 255, 255)), ("ImprovementIcons", IMPROVEMENTS, (255, 255, 255)),
               ("BuildingIcons", BUILDINGS, (0, 0, 0)), ("PolicyIcons", POLICIES, (255, 255, 255)),
               ("UnitPromotionIcons", PROMOTIONS, (255, 255, 255)), ("PolicyBranchIcons", BRANCHES, (255, 255, 255)))
-    import wc_renames as R, race_units as RU
-    groups = tuple((f, {**t, **RU.ICONS_UNITS} if f == "UnitIcons" else {**t, **RU.ICONS_BUILDINGS} if f == "BuildingIcons" else t, c)
-                   for f, t, c in groups)
+    import wc_renames as R, race_units as RU, wc_playstyles as PS
+    heroes = {h[0]: ("crown", PS.HERO_ICON_BADGE[race]) for race, h in PS.HEROES.items()}
+    more = {"UnitIcons": {**RU.ICONS_UNITS, **PS.ICONS_UNITS, **heroes},
+            "BuildingIcons": {**RU.ICONS_BUILDINGS, **PS.ICONS_BUILDINGS},
+            "ImprovementIcons": PS.ICONS_IMPROVEMENTS, "ResourceIcons": PS.ICONS_RESOURCES,
+            "UnitPromotionIcons": PS.ICONS_PROMOTIONS}
+    groups = tuple((f, {**t, **more.get(f, {})}, c) for f, t, c in groups)
     n = 0
     for folder, table, color in groups:
         for name, recipe in table.items():

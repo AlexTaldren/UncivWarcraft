@@ -395,6 +395,30 @@ def lm_forsaken(s, st, rng):                               # the ruined royal ke
     s.piece(OY + 28, f)
 
 
+def e_scourge(s, st, stage, rng):
+    def obelisk(p, x):
+        p.poly([(x - 2, OY + 40), (x + 2, OY + 40), (x + 1, OY + 31), (x, OY + 28), (x - 1, OY + 31)], (55, 65, 85), "ob%d" % x)
+        p.dot(x, OY + 33, (150, 220, 255), "obg%d" % x)
+    s.piece(OY + 40, lambda p: (obelisk(p, 13), obelisk(p, 51)), glow=(120, 200, 255))
+    if stage >= 1:
+        s.piece(OY + 18, lambda p: banner(p, 14, OY + 18, (40, 50, 70), (130, 200, 245), 10))
+
+
+def lm_scourge(s, st, rng):                                # a saronite spire and ziggurat
+    def f(p):
+        dark = (50, 58, 75)
+        for k, (w, h) in enumerate(((26, 4), (20, 4), (14, 4))):
+            y = OY + 30 - k * 4
+            p.poly([(32 - w / 2, y), (32 + w / 2, y), (32 + w / 2 - 2, y - h), (32 - w / 2 + 2, y - h)],
+                   shade(dark, 1 - k * 0.06), "zig%d" % k)
+        p.poly([(28, OY + 18), (36, OY + 18), (34, OY + 2), (32, OY - 6), (30, OY + 2)], (65, 75, 95), "spire")
+        for dx in (-5, 5):
+            p.poly([(32 + dx - 1, OY + 18), (32 + dx + 1, OY + 18), (32 + dx * 1.6, OY + 6)], (75, 85, 105), "spur%d" % dx)
+        p.dot(32, OY + 6, (160, 230, 255), "throne")
+        p.dot(32, OY + 7, (160, 230, 255), "throne")
+    s.piece(OY + 30, f, glow=(120, 200, 255))
+
+
 def e_draenei(s, st, stage, rng):
     def crystal(p, x, y, h):
         p.poly([(x, y - h), (x + 2, y - h * 0.5), (x + 1.2, y), (x - 1.2, y), (x - 2, y - h * 0.5)], (150, 200, 255), "cr")
@@ -490,6 +514,8 @@ STYLES = {
                   house="pagoda", big="pagoda", tower_roof="pagoda", extras=e_panda, landmark=lm_panda),
     "Forsaken": S(wall=(100, 100, 108), roof=(60, 55, 70), trim=(120, 60, 140), ground=(105, 100, 105),
                   stone=(95, 95, 105), house="gable", big="spire", win=(150, 230, 90), extras=e_forsaken, landmark=lm_forsaken),
+    "Scourge": S(wall=(80, 90, 110), roof=(45, 55, 75), trim=(130, 200, 245), ground=(185, 195, 210),
+                 stone=(80, 90, 105), house="spiky", big="spire", win=(150, 220, 255), extras=e_scourge, landmark=lm_scourge),
     "Draenei": S(wall=(160, 145, 200), roof=(110, 90, 170), trim=(160, 210, 255), ground=(150, 145, 175),
                  stone=(150, 140, 185), house="dome", big="spire", win=(170, 220, 255), extras=e_draenei, landmark=lm_draenei),
     "Goblins": S(wall=(150, 110, 70), roof=(190, 90, 40), roof2=(130, 135, 140), ground=(140, 120, 90),
@@ -506,7 +532,8 @@ CITY_STATE_STYLE = {
     "Dalaran": "_dalaran", "Theramore": "Humans", "Stromgarde": "Humans", "Gadgetzan": "Goblins",
     "Booty Bay": "Goblins", "Ratchet": "Goblins", "Everlook": "Goblins", "Steamwheedle Port": "Goblins",
     "Light's Hope Chapel": "Humans", "Cenarion Hold": "Night Elves", "Argent Vanguard": "Humans",
-    "Feathermoon Stronghold": "Night Elves",
+    "Feathermoon Stronghold": "Night Elves", "The Earthen Ring": "Tauren", "Knights of the Ebon Blade": "Scourge",
+    "Explorers' League": "Dwarves", "Thorium Brotherhood": "Dwarves",
 }
 
 # house slots per stage: (x, foot y, width, height) on the hex face, back to front

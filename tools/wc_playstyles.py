@@ -1,0 +1,235 @@
+"""Race play styles, heroes, travel, Mana and faction tags (v0.12).
+
+Everything here uses this mod's names (after renames). build.py applies it after the
+race unique units (race_units.py) are in place.
+"""
+
+def _lore(*t):
+    return [{"text": x} for x in t]
+
+
+# ---------------------------------------------------------------- faction tags
+# Untyped tag uniques: civilization and unit filters ("vs [Horde] units", "for [Undead]
+# Civilizations") match them through Unciv's nation tag lookup.
+TAGS = {
+    "Humans": ["Alliance"], "Dwarves": ["Alliance"], "Gnomes": ["Alliance"], "Night Elves": ["Alliance"],
+    "Draenei": ["Alliance"], "Worgen": ["Alliance"], "High Elves": ["Alliance"],
+    "Orcs": ["Horde"], "Trolls": ["Horde"], "Tauren": ["Horde"], "Forsaken": ["Horde", "Undead"],
+    "Blood Elves": ["Horde"], "Goblins": ["Horde"],
+    "Pandaren": [], "Scourge": ["Undead"],
+}
+RIVALRY = {   # old enemies fight a little harder against each other
+    "Alliance": "[+10]% Strength <for [Military] units> <vs [Horde] units>",
+    "Horde": "[+10]% Strength <for [Military] units> <vs [Alliance] units>",
+}
+
+# ---------------------------------------------------------------- per-race play styles
+# Extra nation uniques, and the line added to the nation's description.
+PLAYSTYLE = {
+    "Forsaken": (["[+1 Food, +1 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
+                  "[+10] HP when healing <for [Land] units> <in [Plagued Land] tiles>"],
+                 "Plague: Plagued Land feeds the Forsaken (+1 Food, +1 Production, +1 Science) and heals their units faster; Peasants can spread it."),
+    "Night Elves": (["[+1 Food] from [Forest] tiles [in all cities]",
+                     "[+1 Culture] from [Ancient Woods] tiles [in all cities]"],
+                    "Guardians of the Forest: forests give +1 Food, and Night Elves never cut them down. Wisps tend the land."),
+    "Orcs": (["[+10]% [Production] [in all cities] <when at war>",
+              "[+10]% Strength <for [Military] units> <when at war>",
+              "[-10]% [Culture] [in all cities] <when not at war>"],
+             "The Horde Thrives on War: +10% Production and +10% Strength while at war, -10% Culture in peace."),
+    "Trolls": (["[+1 Faith] from [Jungle] tiles [in all cities]",
+                "May choose [1] additional [Follower] beliefs when [founding] a religion"],
+               "Voodoo: +1 Faith from jungle tiles and one extra Follower belief for their religion."),
+    "Tauren": (["[+1 Faith] from [Plains] tiles without [Farm] [in all cities]",
+                "[+1 Food, +1 Culture] from [Hill] tiles without [Mine] [in all cities]"],
+               "The Earth Mother's Gift: untouched land is sacred. Unfarmed plains give +1 Faith; hills without mines give +1 Food and +1 Culture."),
+    "Dwarves": (["[+1 Science, +1 Culture] from [Titan Ruins] tiles [in all cities]"],
+                "Explorers' League: Titan Ruins give +1 Science and +1 Culture, ancient ruins can hold Titan relics only dwarves can read, and Deep Mines replace Mines."),
+    "Gnomes": ([], "Brilliant and Reckless: gnomish experiments can bring great breakthroughs, or explosions."),
+    "Goblins": (["[Gold] cost of purchasing items in cities [-20]%",
+                 "[-10]% [Production] [in all cities]",
+                 "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately"],
+                "Everything Has a Price: buying costs 20% less Gold, captured cities pay out 10 turns of their Gold, but Production is 10% lower."),
+    "Blood Elves": (["[-1 Happiness] [in all cities] <starting from the [Age of the Third War]> <if [Sunwell Plateau] is not constructed by anybody> <without [Arcane Crystals]>"],
+                    "Mana Addiction: from the Age of the Third War, when the Sunwell fell, every city suffers -1 Happiness until the empire controls Arcane Crystals or someone restores the Sunwell (the Sunwell Plateau wonder)."),
+    "High Elves": (["[+25]% Strength for cities"],
+                   "The Runestone Barrier: cities are 25% stronger."),
+    "Draenei": (["Free [Settler] appears <upon founding a city> <before turn number [4]>",
+                 "[-1 Production] [in capital]",
+                 "[+25]% Strength <for [Military] units> <vs [Barbarian] units>",
+                 "[+1] Movement <for [Religious] units>"],
+                "Exiles: the Exodar crash leaves a weaker capital (-1 Production) but a second Settler. +25% Strength against barbarians and demons; missionaries move faster."),
+    "Worgen": ([], "The Curse: Worgen units shift between human and worgen form, and the worgen curse claims those they slay."),
+    "Pandaren": (["Triggers a [The Wandering Isle's Choice] event <upon entering the [Age of the Dark Portal]> <hidden from users>"],
+                 "The Wandering Isle's Choice: in the Age of the Dark Portal the Pandaren choose the Alliance's Tushui way, the Horde's Huojin way, or neutrality."),
+    "Scourge": (["[-50]% Food consumption by [Population] [in all cities]",
+                 "[+2 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
+                 "[1] population in a random city <upon defeating a [Military] unit> <with [50]% chance>",
+                 "[+10] HP when healing <for [Land] units> <in [Plagued Land] tiles>"],
+                "The Plague of Undeath: the undead eat half as much, Plagued Land gives +2 Production and +1 Science, fallen enemies rise to swell their cities, and key Scourge buildings need blight nearby. Acolytes spread the blight."),
+}
+
+# ---------------------------------------------------------------- improvements
+IMPROVEMENTS = [
+    {"name": "Spread Blight", "terrainsCanBeBuiltOn": ["Grassland", "Plains", "Tundra", "Snow"],
+     "turnsToBuild": 4, "production": 2,
+     "uniques": ["Only available <for [Undead] Civilizations>",
+                 "Cannot be built on [Forest] tiles", "Cannot be built on [Jungle] tiles",
+                 "Cannot be built on [Marsh] tiles", "Cannot be built on [Hill] tiles",
+                 "Turn this tile into a [Plagued Land] tile",
+                 "Remove [Spread Blight] improvements from this tile"],
+     "civilopediaText": _lore("The undead spread their plague into the soil itself, turning it into Plagued Land. Only the Scourge and the Forsaken can do this; the improvement disappears once the blight takes hold.")},
+]
+# Dwarves' Deep Mine: copy of Mine with more
+DEEP_MINE = {"name": "Deep Mine", "replaces": "Mine", "uniqueTo": "Dwarves", "addStats": {"production": 1, "gold": 1},
+             "civilopediaText": _lore("Dwarven mines go deeper than anyone else's, down to the veins of the Titans' forge. +1 Production and +1 Gold over a normal Mine.")}
+
+# improvements other races may not use: (improvement, unique)
+RESTRICT_IMPROVEMENTS = [
+    ("Remove Forest", "Unavailable <for [Night Elves] Civilizations>"),
+    ("Remove Plagued Land", "Unavailable <for [Undead] Civilizations>"),
+]
+
+# ---------------------------------------------------------------- extra units
+# (base (mod name), overrides) -- uniqueTo/replaces are explicit here
+UNITS = [
+    ("Peasant", {"name": "Wisp", "replaces": "Peasant", "uniqueTo": "Night Elves", "cost": 55,
+                 "addUniques": ["Double movement in [Forest]"],
+                 "civilopediaText": _lore("Wisps are the spirits of departed night elves. They tend the land for their people and drift through the forests with ease.",
+                                          "Cheaper than a Peasant and moves at double speed through forests.")}),
+    ("Ranger", {"name": "Gilnean Hunter", "uniqueTo": "Worgen", "strength": 8, "rangedStrength": 11,
+                "addUniques": ["Can transform to [Worgen Stalker]", "Unbuildable"],
+                "civilopediaText": _lore("A Worgen Stalker in human form: a Gilnean hunter with a longbow. Can shift back into worgen form.")}),
+    ("Rifleman", {"name": "Worgen Ravager", "uniqueTo": "Worgen", "strength": 40,
+                  "addUniques": ["Can transform to [Gilnean Rifleman]", "May capture killed [Military] units",
+                                 "Unbuildable"],
+                  "civilopediaText": _lore("A Gilnean Rifleman who has let the beast loose. The curse spreads to those it slays: it may capture the units it kills. Can shift back into human form.")}),
+]
+UNIT_EXTRA_UNIQUES = {   # added to existing unique units
+    "Worgen Stalker": ["Can transform to [Gilnean Hunter]", "May capture killed [Military] units"],
+    "Gilnean Rifleman": ["Can transform to [Worgen Ravager]"],
+}
+
+# ---------------------------------------------------------------- buildings
+BUILDINGS = [
+    {"name": "Tushui Monastery", "uniqueTo": "Pandaren", "culture": 2, "cost": 1,
+     "uniques": ["Unbuildable", "[+15]% Strength <for [Military] units> <when defending>",
+                 "[+10]% Strength <for [Military] units> <vs [Horde] units>"],
+     "civilopediaText": _lore("The Tushui follow Aysa Cloudsinger's path of discipline and justice, and fight beside the Alliance. +15% Strength when defending, +10% against the Horde, +2 Culture.")},
+    {"name": "Huojin Training Hall", "uniqueTo": "Pandaren", "production": 2, "cost": 1,
+     "uniques": ["Unbuildable", "[+15]% Strength <for [Military] units> <when attacking>",
+                 "[+10]% Strength <for [Military] units> <vs [Alliance] units>"],
+     "civilopediaText": _lore("The Huojin follow Ji Firepaw's path of bold action, and fight beside the Horde. +15% Strength when attacking, +10% against the Alliance, +2 Production.")},
+    {"name": "Inn", "requiredTech": "Coinage", "cost": 90, "gold": 1, "happiness": 1, "maintenance": 1,
+     "uniques": ["All newly-trained [Land] units [in this city] receive the [Hearthstone] promotion"],
+     "civilopediaText": _lore("A warm inn and a hearth to come home to. Units trained in this city carry a Hearthstone and can return to your cities from anywhere in your lands. +1 Gold, +1 Happiness.")},
+    {"name": "Flight Master", "requiredTech": "Animal War Training", "cost": 120, "maintenance": 1,
+     "uniques": ["All newly-trained [Land] units [in this city] receive the [Flight Path] promotion",
+                 "[+1] Movement <for [Land] units> <in [Friendly Land] tiles>"],
+     "civilopediaText": _lore("A flight master's roost of gryphons, wyverns or hippogryphs. Your land units move 1 tile farther in your own lands, and units trained here can fly between your cities.")},
+]
+MAGE_TOWER_PORTALS = "All newly-trained [Military] units [in this city] receive the [Portal Attunement] promotion"
+
+TRAVEL_PROMOTIONS = [
+    {"name": "Hearthstone", "uniques": ["May Paradrop to [{your} {City center}] tiles up to [10] tiles away <in [Friendly Land] tiles>"],
+     "civilopediaText": _lore("This unit carries a Hearthstone from the inn where it was trained: it can return to one of your cities up to 10 tiles away from anywhere in your lands.")},
+    {"name": "Portal Attunement", "uniques": ["May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles>"],
+     "civilopediaText": _lore("Attuned to the city's Mage Tower: from one of your cities, this unit can step through a portal to another up to 20 tiles away.")},
+    {"name": "Flight Path", "uniques": ["May Paradrop to [{your} {City center}] tiles up to [14] tiles away <in [City center] tiles>"],
+     "civilopediaText": _lore("This unit knows the flight paths: from one of your cities it can fly to another up to 14 tiles away.")},
+]
+
+# ---------------------------------------------------------------- Mana
+MANA = {"name": "Mana", "resourceType": "Strategic",
+        "uniques": ["Stockpiled", "Cannot be traded"],
+        "civilopediaText": _lore("Arcane energy gathered by your mages and stored for spellcraft. Arcane Sanctums, Mage Towers and Magisters' Sanctums make Mana every turn; mages, arcane missiles and Mana Bombs spend it.")}
+MANA_SOURCES = {"Arcane Sanctum": 1, "Mage Tower": 2, "Magisters' Sanctum": 2}
+MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihilator": 60}
+
+# ---------------------------------------------------------------- Dwarf-only ruins
+RUINS = [
+    {"name": "Titan relics", "notification": "Our dwarves read the Titan runes in the ruins and recover ancient knowledge! (+[scienceAmount] Science)",
+     "uniques": ["Gain [60] [Science] <(modified by game speed)>", "Only available <for [Dwarves] Civilizations>"]},
+    {"name": "an Explorers' League survey", "notification": "An Explorers' League survey cache: maps of the whole region!",
+     "uniques": ["From a randomly chosen tile [6] tiles away from the ruins, reveal tiles up to [6] tiles away with [90]% chance",
+                 "Only available <for [Dwarves] Civilizations>"]},
+]
+
+# ---------------------------------------------------------------- heroes
+# One per race, limited to one per empire. Hero type: own promotion line. Strength grows
+# with the eras, as a Warcraft III hero levels up.
+HERO_TYPE = {"name": "Hero", "movementType": "Land"}
+HERO_SCALING = ["[+40]% Strength <starting from the [Age of the Dark Portal]>",
+                "[+40]% Strength <starting from the [Age of the Lich King]>",
+                "[+60]% Strength <starting from the [Age of the Legion]>"]
+HERO_COMMON = ["Limited to [1] per Civilization", "[+15]% Strength bonus for [Military] units within [2] tiles",
+               "Heals [10] damage if it kills a unit", "Never appears as a Barbarian unit", "Cannot be purchased"]
+# race -> (name, title, signature uniques, lore)
+HEROES = {
+    "Humans": ("Uther the Lightbringer", "Paladin", ["All adjacent units heal [+10] HP when healing"],
+               "The first paladin of the Order of the Silver Hand. The Light heals those who fight beside him."),
+    "Orcs": ("Grom Hellscream", "Blademaster", ["[+25]% Strength <when attacking>"],
+             "Chieftain of the Warsong clan, whose blade and fury broke the demigod Cenarius."),
+    "Night Elves": ("Malfurion Stormrage", "Keeper of the Grove", ["[+25]% Strength <when fighting in [Forest] tiles>", "Double movement in [Forest]"],
+                    "The first druid of the night elves, master of the Emerald Dream and the wild."),
+    "Dwarves": ("Muradin Bronzebeard", "Mountain King", ["[+25]% Strength <when fighting in [Hill] tiles>", "[+25]% Strength <when defending>"],
+                "Brother of King Magni, a mountain king who hurls storm hammers at his foes."),
+    "Gnomes": ("Kelsey Steelspark", "Infiltrator", ["Ignores Zone of Control", "[+1] Movement"],
+               "SI:7's finest gnome, who led the fight to retake Gnomeregan."),
+    "Tauren": ("Baine Bloodhoof", "Tauren Chieftain", ["[+25]% Strength <when defending>", "All adjacent units heal [+5] HP when healing"],
+               "High Chieftain of the tauren after his father, steady as the earth itself."),
+    "Trolls": ("Rokhan", "Shadow Hunter", ["All adjacent units heal [+10] HP when healing", "[+25]% Strength <when fighting in [Jungle] tiles>"],
+               "Darkspear shadow hunter and voice of the loa at Vol'jin's side."),
+    "Blood Elves": ("Kael'thas Sunstrider", "Blood Mage", ["[+25]% Strength <vs [Archery] units>", "[+25]% Strength <when attacking>"],
+                    "Prince of Quel'Thalas and master of fire and arcane, who renamed his people the sin'dorei."),
+    "High Elves": ("Alleria Windrunner", "Ranger", ["[+2] Sight", "[+25]% Strength <when fighting in [Forest] tiles>"],
+                   "Eldest of the Windrunner sisters, the finest archer of Quel'Thalas."),
+    "Pandaren": ("Chen Stormstout", "Brewmaster", ["[+25]% Strength <when defending>", "[+15] HP when healing"],
+                 "The wandering brewmaster who first brought word of the pandaren to the Horde and the Alliance."),
+    "Forsaken": ("Nathanos Blightcaller", "Champion of the Banshee Queen", ["[+25]% Strength <vs [Alliance] units>", "[+10] HP when healing"],
+                 "Once the only human ranger lord of Quel'Thalas, now Sylvanas's undead champion."),
+    "Draenei": ("Maraad", "Vindicator", ["[+50]% Strength <vs [Barbarian] units>", "All adjacent units heal [+5] HP when healing"],
+                "A vindicator of the draenei, sworn enemy of the Burning Legion."),
+    "Goblins": ("Gazlowe", "Tinker", ["[+50]% Strength <vs cities>", "[+1] Movement"],
+                "Boss of Ratchet, the goblin who built Orgrimmar for Thrall, for a reasonable fee."),
+    "Worgen": ("Darius Crowley", "Lord of the Gilneas Liberation Front", ["[+25]% Strength <when fighting in [Forest] tiles>", "May capture killed [Military] units"],
+               "The rebel lord who held the Greymane Wall against his own king, then fought for Gilneas as a worgen."),
+    "Scourge": ("Kel'Thuzad", "Lich", ["[+25]% Strength <vs [Alliance] units>", "[+25]% Strength <when attacking>"],
+                "Archmage of Dalaran turned necromancer, founder of the Cult of the Damned and the Lich King's first lieutenant."),
+}
+HERO_BASE = "Vanguard"     # stats template (copied, then given the Hero type)
+HERO_STATS = {"strength": 20, "cost": 160, "movement": 2, "requiredTech": "Bronze Working", "requiredResource": None}
+
+HERO_PROMOTIONS = [
+    {"name": "Hero's Might I", "uniques": ["[+15]% Strength"]},
+    {"name": "Hero's Might II", "prerequisites": ["Hero's Might I"], "uniques": ["[+15]% Strength"]},
+    {"name": "Commanding Presence", "prerequisites": ["Hero's Might I"], "uniques": ["[+10]% Strength bonus for [Military] units within [2] tiles"]},
+    {"name": "Second Wind", "uniques": ["[+15] HP when healing"]},
+    {"name": "Battle-Hardened", "prerequisites": ["Second Wind"], "uniques": ["[+20]% Strength <when defending>"]},
+    {"name": "Swift Strider", "prerequisites": ["Second Wind"], "uniques": ["[+1] Movement"]},
+    {"name": "Legend of Azeroth", "prerequisites": ["Hero's Might II", "Battle-Hardened"],
+     "uniques": ["[+15]% Strength", "Heals [25] damage if it kills a unit"]},
+]
+HERO_PROMO_LORE = {
+    "Hero's Might": "The hero grows stronger with every battle.",
+    "Commanding Presence": "Armies rally around the hero's banner.",
+    "Second Wind": "The hero shrugs off wounds that would fell a lesser warrior.",
+    "Battle-Hardened": "Veteran of a hundred battles, the hero is hard to bring down.",
+    "Swift Strider": "The hero moves across the battlefield with uncanny speed.",
+    "Legend of Azeroth": "Songs are sung of this hero across all of Azeroth.",
+}
+
+# ---------------------------------------------------------------- icons
+ICONS_UNITS = {"Wisp": ("sparkle", "leaf"), "Gilnean Hunter": ("bow", "wolf"), "Worgen Ravager": ("wolf", "fist")}
+ICONS_BUILDINGS = {"Tushui Monastery": ("pagoda", "shield"), "Huojin Training Hall": ("pagoda", "flame"),
+                   "Inn": ("hut", "lantern"), "Flight Master": ("gryphon", "feather_plume")}
+ICONS_IMPROVEMENTS = {"Spread Blight": ("skull", "wave"), "Deep Mine": ("pick", "gem")}
+ICONS_RESOURCES = {"Mana": ("orb", "sparkle")}
+ICONS_PROMOTIONS = {"Hero's Might": ("crown", "sword"), "Commanding Presence": ("crown", "banner"),
+                    "Second Wind": ("crown", "heart"), "Battle-Hardened": ("crown", "shield"),
+                    "Swift Strider": ("crown", "boot"), "Legend of Azeroth": ("crown", "star"),
+                    "Hearthstone": ("hut", "orb"), "Portal Attunement": ("portal", "orb"),
+                    "Flight Path": ("gryphon", "compass")}
+HERO_ICON_BADGE = {"Humans": "hammer", "Orcs": "axe", "Night Elves": "leaf", "Dwarves": "hammer", "Gnomes": "gear",
+                   "Tauren": "totem", "Trolls": "mask", "Blood Elves": "flame", "High Elves": "bow",
+                   "Pandaren": "chalice", "Forsaken": "skull", "Draenei": "naaru", "Goblins": "bomb",
+                   "Worgen": "wolf", "Scourge": "skull"}

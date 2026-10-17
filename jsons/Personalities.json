@@ -430,5 +430,35 @@
       "[+30]% weight to [Melee] for AI decisions",
       "[+20]% weight to [Walls] for AI decisions"
     ]
+  },
+  {
+    "name": "Arthas Menethil",
+    "preferredVictoryType": "Domination",
+    "production": 8,
+    "food": 2,
+    "gold": 5,
+    "science": 6,
+    "culture": 3,
+    "happiness": 3,
+    "faith": 4,
+    "military": 9,
+    "aggressive": 9,
+    "declareWar": 8,
+    "commerce": 5,
+    "diplomacy": 1,
+    "loyal": 3,
+    "expansion": 7,
+    "priorities": {
+      "Dominion": 10,
+      "Blood and Thunder": 8,
+      "Unity": 7,
+      "Arcane Inquiry": 5,
+      "Free Peoples": 1
+    },
+    "uniques": [
+      "[+40]% weight to [Melee] for AI decisions",
+      "[+30]% weight to [Siege] for AI decisions",
+      "[+20]% weight to [Walls] for AI decisions"
+    ]
   }
 ]

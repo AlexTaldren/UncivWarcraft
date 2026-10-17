@@ -963,7 +963,8 @@
       "Nuclear weapon of Strength [1]",
       "Only available <if [Mana Bomb Project] is constructed>",
       "Self-destructs when attacking",
-      "Blast radius [2]"
+      "Blast radius [2]",
+      "Costs [40] [Mana]"
     ],
     "attackSound": "nuke",
     "civilopediaText": [
@@ -1029,7 +1030,8 @@
     "cost": 150,
     "requiredTech": "Siege Barrage",
     "uniques": [
-      "[-100]% maintenance costs"
+      "[-100]% maintenance costs",
+      "Costs [15] [Mana]"
     ],
     "attackSound": "missile",
     "civilopediaText": [
@@ -1051,7 +1053,8 @@
       "Nuclear weapon of Strength [2]",
       "Only available <if [Mana Bomb Project] is constructed>",
       "Blast radius [2]",
-      "Consumes [2] [Arcane Crystals]"
+      "Consumes [2] [Arcane Crystals]",
+      "Costs [60] [Mana]"
     ],
     "attackSound": "nuke",
     "civilopediaText": [
@@ -1262,6 +1265,7 @@
       "[This Unit] gets a name from the [Draenei Artist] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins Artist] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen Artist] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge Artist] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Artist] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Culture]",
       "Unbuildable",
@@ -1294,6 +1298,7 @@
       "[This Unit] gets a name from the [Draenei Scientist] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins Scientist] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen Scientist] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge Scientist] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Scientist] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Science]",
       "Unbuildable",
@@ -1327,6 +1332,7 @@
       "[This Unit] gets a name from the [Draenei Merchant] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins Merchant] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen Merchant] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge Merchant] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Merchant] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Gold]",
       "Unbuildable",
@@ -1360,6 +1366,7 @@
       "[This Unit] gets a name from the [Draenei Engineer] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins Engineer] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen Engineer] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge Engineer] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Engineer] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [Production]",
       "Unbuildable",
@@ -1396,6 +1403,7 @@
       "[This Unit] gets a name from the [Draenei Prophet] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins Prophet] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen Prophet] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge Prophet] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Prophet] group <for [City-States] Civilizations> <hidden from users>",
       "May enter foreign tiles without open borders",
       "[-1] Sight",
@@ -1435,6 +1443,7 @@
       "[This Unit] gets a name from the [Draenei General] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins General] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen General] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge General] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [General] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [War]",
       "Unbuildable",
@@ -1469,6 +1478,7 @@
       "[This Unit] gets a name from the [Draenei Admiral] group <for [Draenei] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Goblins Admiral] group <for [Goblins] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Worgen Admiral] group <for [Worgen] Civilizations> <hidden from users>",
+      "[This Unit] gets a name from the [Scourge Admiral] group <for [Scourge] Civilizations> <hidden from users>",
       "[This Unit] gets a name from the [Admiral] group <for [City-States] Civilizations> <hidden from users>",
       "Great Person - [War]",
       "Unbuildable",
@@ -1683,7 +1693,8 @@
       }
     ],
     "uniques": [
-      "Ranged attacks may be performed over obstacles"
+      "Ranged attacks may be performed over obstacles",
+      "Costs [10] [Mana]"
     ]
   },
   {
@@ -2350,7 +2361,9 @@
     "uniqueTo": "Worgen",
     "uniques": [
       "[+25]% Strength <when fighting in [Forest] tiles>",
-      "Double movement in [Forest]"
+      "Double movement in [Forest]",
+      "Can transform to [Gilnean Hunter]",
+      "May capture killed [Military] units"
     ]
   },
   {
@@ -2374,7 +2387,8 @@
     "replaces": "Rifleman",
     "uniqueTo": "Worgen",
     "uniques": [
-      "[+1] Sight"
+      "[+1] Sight",
+      "Can transform to [Worgen Ravager]"
     ]
   },
   {
@@ -2477,6 +2491,110 @@
     "uniqueTo": "Pandaren"
   },
   {
+    "name": "Ghoul",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 10,
+    "cost": 40,
+    "requiredTech": "Farming",
+    "obsoleteTech": "Blacksmithing",
+    "upgradesTo": "Swordsman",
+    "uniques": [
+      "May upgrade to [Spearman] through ruins-like effects",
+      "Heals [10] damage if it kills a unit"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Ravenous undead raised by the plague, the foot soldiers of the Scourge."
+      },
+      {
+        "text": "Stronger than Militia, and heals 10 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Militia",
+    "uniqueTo": "Scourge"
+  },
+  {
+    "name": "Acolyte",
+    "unitType": "Civilian",
+    "movement": 2,
+    "requiredTech": "Farming",
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action"
+    ],
+    "cost": 70,
+    "civilopediaText": [
+      {
+        "text": "Living cultists of the Cult of the Damned, who serve the Lich King by raising buildings and spreading the blight."
+      },
+      {
+        "text": "Like a Peasant; Acolytes spread the blight (Spread Blight) that Scourge buildings need."
+      }
+    ],
+    "replaces": "Peasant",
+    "uniqueTo": "Scourge"
+  },
+  {
+    "name": "Death Knight",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 24,
+    "cost": 120,
+    "requiredTech": "Animal War Training",
+    "obsoleteTech": "War Doctrine",
+    "upgradesTo": "Cavalry",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "Heals [15] damage if it kills a unit"
+    ],
+    "attackSound": "horse",
+    "civilopediaText": [
+      {
+        "text": "Fallen champions raised by the Lich King, riding skeletal steeds and wielding runeblades."
+      },
+      {
+        "text": "Much stronger than a Knight, needs no Horses, and heals 15 HP whenever it kills a unit."
+      }
+    ],
+    "replaces": "Knight",
+    "uniqueTo": "Scourge"
+  },
+  {
+    "name": "Frost Wyrm",
+    "unitType": "Sky Fighter",
+    "movement": 1,
+    "strength": 52,
+    "rangedStrength": 52,
+    "range": 8,
+    "interceptRange": 8,
+    "cost": 375,
+    "requiredTech": "Scrying",
+    "requiredResource": "Azerite",
+    "upgradesTo": "Sky Golem",
+    "uniques": [
+      "[100]% chance to intercept air attacks",
+      "[+150]% Strength <vs [Sky Bomber] units>",
+      "[+150]% Strength <vs [Gyro] units>",
+      "[+25]% Strength <vs [Land] units>"
+    ],
+    "attackSound": "machinegun",
+    "civilopediaText": [
+      {
+        "text": "The skeletal remains of great dragons, raised by Sapphiron's master and breathing killing frost."
+      },
+      {
+        "text": "Stronger than a Gryphon Rider, with +25% Strength against land units."
+      }
+    ],
+    "replaces": "Gryphon Rider",
+    "uniqueTo": "Scourge"
+  },
+  {
     "name": "Felguard",
     "unitType": "Sword",
     "movement": 2,
@@ -2509,6 +2627,516 @@
     "civilopediaText": [
       {
         "text": "A meteor of fel-scorched rock hurled from the Twisting Nether. Where it lands it rises as a hulking golem of stone and green fire that smashes everything nearby."
+      }
+    ]
+  },
+  {
+    "name": "Wisp",
+    "unitType": "Civilian",
+    "movement": 2,
+    "requiredTech": "Farming",
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action",
+      "Double movement in [Forest]"
+    ],
+    "cost": 55,
+    "civilopediaText": [
+      {
+        "text": "Wisps are the spirits of departed night elves. They tend the land for their people and drift through the forests with ease."
+      },
+      {
+        "text": "Cheaper than a Peasant and moves at double speed through forests."
+      }
+    ],
+    "replaces": "Peasant",
+    "uniqueTo": "Night Elves"
+  },
+  {
+    "name": "Gilnean Hunter",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 8,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Construction",
+    "attackSound": "arrow",
+    "civilopediaText": [
+      {
+        "text": "A Worgen Stalker in human form: a Gilnean hunter with a longbow. Can shift back into worgen form."
+      }
+    ],
+    "uniqueTo": "Worgen",
+    "uniques": [
+      "Can transform to [Worgen Stalker]",
+      "Unbuildable"
+    ]
+  },
+  {
+    "name": "Worgen Ravager",
+    "unitType": "Firearm",
+    "movement": 2,
+    "strength": 40,
+    "cost": 225,
+    "requiredTech": "Long Rifles",
+    "attackSound": "shot",
+    "civilopediaText": [
+      {
+        "text": "A Gilnean Rifleman who has let the beast loose. The curse spreads to those it slays: it may capture the units it kills. Can shift back into human form."
+      }
+    ],
+    "uniqueTo": "Worgen",
+    "uniques": [
+      "Can transform to [Gilnean Rifleman]",
+      "May capture killed [Military] units",
+      "Unbuildable"
+    ]
+  },
+  {
+    "name": "Uther the Lightbringer",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Humans",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "All adjacent units heal [+10] HP when healing",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Uther the Lightbringer, Paladin. The first paladin of the Order of the Silver Hand. The Light heals those who fight beside him."
+      },
+      {
+        "text": "A hero of the Humans: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Grom Hellscream",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Orcs",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when attacking>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grom Hellscream, Blademaster. Chieftain of the Warsong clan, whose blade and fury broke the demigod Cenarius."
+      },
+      {
+        "text": "A hero of the Orcs: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Malfurion Stormrage",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Night Elves",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "Double movement in [Forest]",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Malfurion Stormrage, Keeper of the Grove. The first druid of the night elves, master of the Emerald Dream and the wild."
+      },
+      {
+        "text": "A hero of the Night Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Muradin Bronzebeard",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Dwarves",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "[+25]% Strength <when defending>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Muradin Bronzebeard, Mountain King. Brother of King Magni, a mountain king who hurls storm hammers at his foes."
+      },
+      {
+        "text": "A hero of the Dwarves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Kelsey Steelspark",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Gnomes",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "Ignores Zone of Control",
+      "[+1] Movement",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kelsey Steelspark, Infiltrator. SI:7's finest gnome, who led the fight to retake Gnomeregan."
+      },
+      {
+        "text": "A hero of the Gnomes: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Baine Bloodhoof",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Tauren",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when defending>",
+      "All adjacent units heal [+5] HP when healing",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Baine Bloodhoof, Tauren Chieftain. High Chieftain of the tauren after his father, steady as the earth itself."
+      },
+      {
+        "text": "A hero of the Tauren: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Rokhan",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Trolls",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "All adjacent units heal [+10] HP when healing",
+      "[+25]% Strength <when fighting in [Jungle] tiles>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rokhan, Shadow Hunter. Darkspear shadow hunter and voice of the loa at Vol'jin's side."
+      },
+      {
+        "text": "A hero of the Trolls: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Kael'thas Sunstrider",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Blood Elves",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <vs [Archery] units>",
+      "[+25]% Strength <when attacking>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kael'thas Sunstrider, Blood Mage. Prince of Quel'Thalas and master of fire and arcane, who renamed his people the sin'dorei."
+      },
+      {
+        "text": "A hero of the Blood Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Alleria Windrunner",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "High Elves",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+2] Sight",
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Alleria Windrunner, Ranger. Eldest of the Windrunner sisters, the finest archer of Quel'Thalas."
+      },
+      {
+        "text": "A hero of the High Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Chen Stormstout",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Pandaren",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when defending>",
+      "[+15] HP when healing",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Chen Stormstout, Brewmaster. The wandering brewmaster who first brought word of the pandaren to the Horde and the Alliance."
+      },
+      {
+        "text": "A hero of the Pandaren: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Nathanos Blightcaller",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Forsaken",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <vs [Alliance] units>",
+      "[+10] HP when healing",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nathanos Blightcaller, Champion of the Banshee Queen. Once the only human ranger lord of Quel'Thalas, now Sylvanas's undead champion."
+      },
+      {
+        "text": "A hero of the Forsaken: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Maraad",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Draenei",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+50]% Strength <vs [Barbarian] units>",
+      "All adjacent units heal [+5] HP when healing",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Maraad, Vindicator. A vindicator of the draenei, sworn enemy of the Burning Legion."
+      },
+      {
+        "text": "A hero of the Draenei: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Gazlowe",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Goblins",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+50]% Strength <vs cities>",
+      "[+1] Movement",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gazlowe, Tinker. Boss of Ratchet, the goblin who built Orgrimmar for Thrall, for a reasonable fee."
+      },
+      {
+        "text": "A hero of the Goblins: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Darius Crowley",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Worgen",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <when fighting in [Forest] tiles>",
+      "May capture killed [Military] units",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Darius Crowley, Lord of the Gilneas Liberation Front. The rebel lord who held the Greymane Wall against his own king, then fought for Gilneas as a worgen."
+      },
+      {
+        "text": "A hero of the Worgen: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      }
+    ]
+  },
+  {
+    "name": "Kel'Thuzad",
+    "unitType": "Hero",
+    "movement": 2,
+    "strength": 20,
+    "cost": 160,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit",
+    "uniqueTo": "Scourge",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "Heals [10] damage if it kills a unit",
+      "Never appears as a Barbarian unit",
+      "Cannot be purchased",
+      "[+25]% Strength <vs [Alliance] units>",
+      "[+25]% Strength <when attacking>",
+      "[+40]% Strength <starting from the [Age of the Dark Portal]>",
+      "[+40]% Strength <starting from the [Age of the Lich King]>",
+      "[+60]% Strength <starting from the [Age of the Legion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kel'Thuzad, Lich. Archmage of Dalaran turned necromancer, founder of the Cult of the Damned and the Lich King's first lieutenant."
+      },
+      {
+        "text": "A hero of the Scourge: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
       }
     ]
   }

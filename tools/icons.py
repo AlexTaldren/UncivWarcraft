@@ -482,6 +482,17 @@ def n_worgen():
     return i
 
 
+def n_scourge():
+    """The Helm of Domination: a horned crown over a dark visor."""
+    i = Icon()
+    i.poly([(22, 40), (50, 28), (78, 40), (74, 84), (50, 94), (26, 84)])            # helm
+    for x, h in ((24, 6), (36, 14), (50, 2), (64, 14), (76, 6)):                       # crown spikes
+        i.poly([(x - 6, 40 - (x == 50) * 4), (x + 6, 40 - (x == 50) * 4), (x, h)])
+    i.poly([(32, 54), (68, 54), (62, 64), (38, 64)], 0)                               # visor
+    i.rect(48, 64, 52, 86, 0)
+    return i
+
+
 # ============================================================ religions (white)
 def r_holy_light():
     i = Icon()
@@ -598,7 +609,7 @@ NATION_ICONS = {"Humans": n_humans, "Orcs": n_orcs, "Night Elves": n_night_elves
                 "Dwarves": n_dwarves, "Gnomes": n_gnomes, "Tauren": n_tauren, "Trolls": n_trolls,
                 "Blood Elves": n_blood_elves, "High Elves": n_high_elves, "Pandaren": n_pandaren,
                 "Forsaken": n_forsaken, "Draenei": n_draenei, "Goblins": n_goblins,
-                "Worgen": n_worgen}
+                "Worgen": n_worgen, "Scourge": n_scourge}
 RELIGION_ICONS = {"Holy Light": r_holy_light, "Elune": r_elune, "Earth Mother": r_earth_mother,
                   "Shamanism": r_shamanism, "Loa": r_loa, "Cenarion Circle": r_cenarion,
                   "August Celestials": r_celestials, "Titans": r_titans,

@@ -208,4 +208,16 @@ RACE_GP = {
         "Scientist": ["Krennan Aranas", "Archmage Arugal", "Alchemist Celestine", "Harvest Witch Hollinsworth",
                       "Scholar Greymoor"],
     },
+    "Scourge": {
+        "General": ["Kel'Thuzad", "Anub'arak", "Highlord Mograine", "Baron Rivendare", "Lady Deathwhisper",
+                    "Deathbringer Saurfang", "Prince Valanar", "Thassarian"],
+        "Admiral": ["Captain of the Dead Fleet", "Gravewarden Krake", "Admiral Bonesail", "Captain Blightwater"],
+        "Artist": ["Lady Blaumeux", "Bone-sculptor Mortis", "Choir of the Damned", "Whisperer Nightfall"],
+        "Merchant": ["Quartermaster Bonereaver", "Bone-trader Vexx", "Soul-broker Maldor", "Salvager Grimtusk"],
+        "Engineer": ["Grobbulus", "Stitcher Gravelor", "Bone-architect Zarnoth", "Plaguewright Vorek"],
+        "Prophet": ["Darkmaster Gandling", "Heigan the Unclean", "Noth the Plaguebringer", "Instructor Razuvious",
+                    "Faerlina the Grand Widow"],
+        "Scientist": ["Kel'Thuzad", "Grand Necrolyte Thalarion", "Ras Frostwhisper", "Professor Putricide",
+                      "Master Necromancer Malicia"],
+    },
 }

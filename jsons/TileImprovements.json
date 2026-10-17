@@ -284,7 +284,8 @@
     "techRequired": "Mining",
     "uniques": [
       "Can be built outside your borders",
-      "Excluded from map editor"
+      "Excluded from map editor",
+      "Unavailable <for [Night Elves] Civilizations>"
     ],
     "shortcutKey": "X",
     "civilopediaText": [
@@ -572,9 +573,57 @@
     "turnsToBuild": 4,
     "uniques": [
       "Can be built outside your borders",
-      "Excluded from map editor"
+      "Excluded from map editor",
+      "Unavailable <for [Undead] Civilizations>"
     ],
     "shortcutKey": "X",
     "techRequired": "Priesthood"
+  },
+  {
+    "name": "Spread Blight",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Snow"
+    ],
+    "turnsToBuild": 4,
+    "production": 2,
+    "uniques": [
+      "Only available <for [Undead] Civilizations>",
+      "Cannot be built on [Forest] tiles",
+      "Cannot be built on [Jungle] tiles",
+      "Cannot be built on [Marsh] tiles",
+      "Cannot be built on [Hill] tiles",
+      "Turn this tile into a [Plagued Land] tile",
+      "Remove [Spread Blight] improvements from this tile"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The undead spread their plague into the soil itself, turning it into Plagued Land. Only the Scourge and the Forsaken can do this; the improvement disappears once the blight takes hold."
+      }
+    ]
+  },
+  {
+    "name": "Deep Mine",
+    "terrainsCanBeBuiltOn": [
+      "Hill"
+    ],
+    "production": 2,
+    "turnsToBuild": 7,
+    "techRequired": "Mining",
+    "uniques": [
+      "[+1 Production] <after discovering [Alchemy]>",
+      "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "shortcutKey": "M",
+    "gold": 1,
+    "replaces": "Mine",
+    "uniqueTo": "Dwarves",
+    "civilopediaText": [
+      {
+        "text": "Dwarven mines go deeper than anyone else's, down to the veins of the Titans' forge. +1 Production and +1 Gold over a normal Mine."
+      }
+    ]
   }
 ]

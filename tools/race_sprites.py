@@ -256,6 +256,19 @@ def defias_mask(base, hb):
     f.apply(base)
 
 
+def scourge_face(base, hb):
+    """The Scourge: sunken, glowing blue eyes and a crown of bone spurs."""
+    f = Feature(base.size)
+    x0, y0, x1, y1 = hb
+    ey = y0 + (y1 - y0) // 2 - 1
+    f.dot(x1, ey, (150, 230, 255))
+    f.dot(x1 - 2, ey, (150, 230, 255))
+    for i, dx in enumerate((0, 2, 4)):
+        f.dot(x0 + dx, y0 - 1, (225, 220, 205))
+        f.dot(x0 + dx, y0 - 2 - (i % 2), (200, 195, 180))
+    f.apply(base)
+
+
 def gnoll_head(base, hb):
     """A gnoll: spotted hyena head with a short snout, rounded ears and a dark mane."""
     f = Feature(base.size)
@@ -345,6 +358,7 @@ SKIN = {
     "Goblins": [ramp((60, 100, 30), (160, 200, 80), 5)],
     "Worgen": [ramp((55, 50, 45), (150, 140, 125), 5), ramp((70, 50, 35), (170, 130, 95), 5)],
     "Pandaren": [ramp((40, 40, 40), (120, 115, 110), 5)],
+    "Scourge": [ramp((55, 70, 90), (150, 170, 190), 5), ramp((70, 80, 75), (160, 175, 160), 5)],
     # barbarian peoples (sprites for units owned by the Barbarians)
     "Defias": None,
     "Gnolls": [ramp((110, 80, 45), (190, 150, 95), 5)],
@@ -362,7 +376,7 @@ BODY = {
     "Gnomes": (0.80, 0.68), "Night Elves": (0.95, 1.10), "Blood Elves": (0.95, 1.04),
     "High Elves": (0.95, 1.04), "Forsaken": (0.90, 1.0), "Draenei": (1.0, 1.12),
     "Goblins": (0.85, 0.72), "Worgen": (1.18, 1.12), "Pandaren": (1.25, 0.95),
-    "Defias": (1.0, 1.0), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
+    "Scourge": (0.95, 1.02), "Defias": (1.0, 1.0), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
 }
 
 
@@ -414,6 +428,8 @@ def make(layers, race, unit, mode="full"):
             wolf_head(base, hb, mid)
         elif race == "Pandaren":
             panda_face(base, hb)
+        elif race == "Scourge":
+            scourge_face(base, hb)
         elif race == "Defias":
             defias_mask(base, hb)
         elif race == "Gnolls":
@@ -438,7 +454,7 @@ RIDER = {"Chariot Archer": "Archer", "Horseman": "Spearman", "Knight": "Swordsma
          "Lancer": "Pikeman", "Cavalry": "Musketman"}
 ARMORED = {"Knight", "Lancer"}
 CREW = ["Catapult", "Trebuchet"]
-RACES = ["Orcs", "Trolls", "Tauren", "Forsaken", "Blood Elves", "Goblins", "Dwarves", "Gnomes",
+RACES = ["Orcs", "Trolls", "Tauren", "Forsaken", "Scourge", "Blood Elves", "Goblins", "Dwarves", "Gnomes",
          "Night Elves", "Draenei", "Worgen", "High Elves", "Pandaren"]
 
 

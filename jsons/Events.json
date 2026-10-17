@@ -420,5 +420,294 @@
         ]
       }
     ]
+  },
+  {
+    "name": "The Scourge Marches",
+    "text": "The Lich King's armies pour out of the north. Ghouls and death knights fall upon our borders, and the dead rise behind them.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "The Lich King's armies pour out of the north. Ghouls and death knights fall upon our borders, and the dead rise behind them."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Hold the line! (the Scourge attacks; the faithful rally)",
+        "uniques": [
+          "[2] [Ghoul]s rebel",
+          "A [Death Knight] rebels",
+          "Gain [60] [Faith]"
+        ]
+      },
+      {
+        "text": "Burn the dead before they rise (-150 Gold)",
+        "uniques": [
+          "Gain [-150] [Gold]",
+          "Only available <when above [149] [Gold]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Legion Invades",
+    "text": "This is no mere incursion. Fel meteors rain across Azeroth as the Burning Legion begins its invasion in earnest.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "This is no mere incursion. Fel meteors rain across Azeroth as the Burning Legion begins its invasion in earnest."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Defend our cities! (Infernals fall; heroes rise)",
+        "uniques": [
+          "[3] [Infernal]s rebel",
+          "A [Felguard] rebels",
+          "Gain [100] [Faith]"
+        ]
+      },
+      {
+        "text": "Raise every ward we have (-300 Gold)",
+        "uniques": [
+          "Gain [-300] [Gold]",
+          "Only available <when above [299] [Gold]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whispers of the Old Gods",
+    "text": "In the dark, a voice whispers. Scholars dream of tentacles and eyes, and some stop sleeping altogether. The Old Gods are stirring.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "In the dark, a voice whispers. Scholars dream of tentacles and eyes, and some stop sleeping altogether. The Old Gods are stirring."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Resist the whispers through prayer (-100 Faith)",
+        "uniques": [
+          "Gain [-100] [Faith]",
+          "Only available <when above [99] [Faith]>"
+        ]
+      },
+      {
+        "text": "Silence the cultists (lose population)",
+        "uniques": [
+          "[-1] population in a random city"
+        ]
+      },
+      {
+        "text": "Listen... (+Science, but madness spreads)",
+        "uniques": [
+          "Gain [150]-[250] [Science]",
+          "[-2] population in a random city",
+          "Gain [-50] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Gift of Alexstrasza",
+    "text": "A great red dragon circles the capital and lands in the fields. Alexstrasza the Life-Binder offers her blessing to our people.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "A great red dragon circles the capital and lands in the fields. Alexstrasza the Life-Binder offers her blessing to our people."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Accept the gift of life (+2 population)",
+        "uniques": [
+          "[2] population in a random city"
+        ]
+      },
+      {
+        "text": "Ask her to bless our temples (+Faith)",
+        "uniques": [
+          "Gain [80] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Blue Dragonflight",
+    "text": "Kalecgos of the blue dragonflight offers to share the secrets of the arcane, if we promise to use them wisely.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "Kalecgos of the blue dragonflight offers to share the secrets of the arcane, if we promise to use them wisely."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Learn from the Spell-Weaver (+Science)",
+        "uniques": [
+          "Gain [100]-[200] [Science]"
+        ]
+      },
+      {
+        "text": "Politely decline the dragon's offer",
+        "uniques": []
+      }
+    ]
+  },
+  {
+    "name": "Nozdormu's Warning",
+    "text": "A bronze dragon steps out of time itself. Nozdormu the Timeless warns of a future that must not come to pass, and shows us how to change it.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "A bronze dragon steps out of time itself. Nozdormu the Timeless warns of a future that must not come to pass, and shows us how to change it."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Heed the Timeless One (a short Golden Age)",
+        "uniques": [
+          "Empire enters a [3]-turn Golden Age"
+        ]
+      },
+      {
+        "text": "Ask to see the paths of time (+Science)",
+        "uniques": [
+          "Gain [120] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Emerald Dream",
+    "text": "Our people dream of a green and endless forest. Ysera the Dreamer has touched their sleep with peace.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "Our people dream of a green and endless forest. Ysera the Dreamer has touched their sleep with peace."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Embrace the Dream (+Culture)",
+        "uniques": [
+          "Gain [60] [Culture]"
+        ]
+      },
+      {
+        "text": "Let the druids interpret it (+Faith)",
+        "uniques": [
+          "Gain [60] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lord Prestor's Offer",
+    "text": "A charming nobleman, Lord Daval Prestor, offers gold and counsel to our court. Something about his eyes is not quite right.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "A charming nobleman, Lord Daval Prestor, offers gold and counsel to our court. Something about his eyes is not quite right."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Accept his generous gift (+300 Gold, but the black dragon's influence spreads)",
+        "uniques": [
+          "Gain [300] [Gold]",
+          "Gain [-80] [Culture]",
+          "[-1] population in a random city"
+        ]
+      },
+      {
+        "text": "Unmask him! (he flees; the court is grateful)",
+        "uniques": [
+          "Gain [40] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A Bold Experiment",
+    "text": "Our tinkers want to test a new device. In theory it will revolutionize gnomish science. In theory.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "Our tinkers want to test a new device. In theory it will revolutionize gnomish science. In theory."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Fund the experiment (-60 Gold, a gamble on Science)",
+        "uniques": [
+          "Gain [-60] [Gold]",
+          "Gain [0]-[250] [Science]",
+          "Only available <when above [59] [Gold]>"
+        ]
+      },
+      {
+        "text": "Insist on more safety tests (+Science)",
+        "uniques": [
+          "Gain [40] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Explosive Prototype",
+    "text": "KA-BOOM! A prototype has exploded in the workshop. Nobody was hurt, probably, but the neighborhood is a crater.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "KA-BOOM! A prototype has exploded in the workshop. Nobody was hurt, probably, but the neighborhood is a crater."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Study the crater (+Science, lose population)",
+        "uniques": [
+          "Gain [80]-[160] [Science]",
+          "[-1] population in a random city"
+        ]
+      },
+      {
+        "text": "Pay for the repairs (-80 Gold)",
+        "uniques": [
+          "Gain [-80] [Gold]",
+          "Only available <when above [79] [Gold]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Wandering Isle's Choice",
+    "text": "The great turtle Shen-zin Su is wounded, and our people must choose a path. Aysa Cloudsinger and the Tushui would join the Alliance; Ji Firepaw and the Huojin, the Horde.",
+    "presentation": "Alert",
+    "civilopediaText": [
+      {
+        "text": "The great turtle Shen-zin Su is wounded, and our people must choose a path. Aysa Cloudsinger and the Tushui would join the Alliance; Ji Firepaw and the Huojin, the Horde."
+      }
+    ],
+    "choices": [
+      {
+        "text": "Follow the Tushui and join the Alliance (defense, +10% vs the Horde)",
+        "uniques": [
+          "Gain a free [Tushui Monastery] [in capital]"
+        ]
+      },
+      {
+        "text": "Follow the Huojin and join the Horde (attack, +10% vs the Alliance)",
+        "uniques": [
+          "Gain a free [Huojin Training Hall] [in capital]"
+        ]
+      },
+      {
+        "text": "Remain neutral and walk the middle path (+Culture)",
+        "uniques": [
+          "Gain [150] [Culture]"
+        ]
+      }
+    ]
   }
 ]

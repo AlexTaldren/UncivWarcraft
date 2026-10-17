@@ -103,5 +103,9 @@
     "uniques": [
       "Can pass through impassable tiles"
     ]
+  },
+  {
+    "name": "Hero",
+    "movementType": "Land"
   }
 ]

@@ -941,5 +941,18 @@
         "text": "Luminous mushrooms from the marshes of Zangarmarsh, eaten, brewed and traded by the Sporeggar."
       }
     ]
+  },
+  {
+    "name": "Mana",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Arcane energy gathered by your mages and stored for spellcraft. Arcane Sanctums, Mage Towers and Magisters' Sanctums make Mana every turn; mages, arcane missiles and Mana Bombs spend it."
+      }
+    ]
   }
 ]

@@ -121,5 +121,21 @@
       "Play [choir] sound"
     ],
     "color": "#CDDDF4"
+  },
+  {
+    "name": "Titan relics",
+    "notification": "Our dwarves read the Titan runes in the ruins and recover ancient knowledge! (+[scienceAmount] Science)",
+    "uniques": [
+      "Gain [60] [Science] <(modified by game speed)>",
+      "Only available <for [Dwarves] Civilizations>"
+    ]
+  },
+  {
+    "name": "an Explorers' League survey",
+    "notification": "An Explorers' League survey cache: maps of the whole region!",
+    "uniques": [
+      "From a randomly chosen tile [6] tiles away from the ruins, reveal tiles up to [6] tiles away with [90]% chance",
+      "Only available <for [Dwarves] Civilizations>"
+    ]
   }
 ]

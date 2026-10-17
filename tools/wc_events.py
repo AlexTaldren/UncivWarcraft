@@ -5,9 +5,9 @@ itself. They're triggered from GlobalUniques: a small chance every other turn, l
 to the eras the story belongs to. Names here are the mod's own (after renames).
 """
 
-# How often: <every [2] turns> <with [n]% chance> gives about n/2 % per turn per civ.
+# How often: <every [3] turns> <with [n]% chance> gives about n/3 % per turn per civ.
 def _when(chance, *extra):
-    return " ".join(["<upon turn start>", "<every [2] turns>", "<with [%d]%% chance>" % chance] + list(extra))
+    return " ".join(["<upon turn start>", "<every [3] turns>", "<with [%d]%% chance>" % chance] + list(extra))
 
 
 def _need(amount, stat):
@@ -190,6 +190,117 @@ EVENTS = [
     },
 ]
 
+# ---------------------------------------------------------------- v0.12: world threats, dragonflights, race events
+EVENTS += [
+    {
+        "name": "The Scourge Marches",
+        "text": "The Lich King's armies pour out of the north. Ghouls and death knights fall upon our borders, and the dead rise behind them.",
+        "trigger": _when(2, "<during the [Age of the Lich King]>"),
+        "not_for": ["Scourge"],
+        "choices": [
+            ("Hold the line! (the Scourge attacks; the faithful rally)",
+             ["[2] [Ghoul]s rebel", "A [Death Knight] rebels", "Gain [60] [Faith]"]),
+            ("Burn the dead before they rise (-150 Gold)", ["Gain [-150] [Gold]", _need(150, "Gold")]),
+        ],
+    },
+    {
+        "name": "The Legion Invades",
+        "text": "This is no mere incursion. Fel meteors rain across Azeroth as the Burning Legion begins its invasion in earnest.",
+        "trigger": _when(4, "<during the [Age of the Legion]>"),
+        "choices": [
+            ("Defend our cities! (Infernals fall; heroes rise)", ["[3] [Infernal]s rebel", "A [Felguard] rebels", "Gain [100] [Faith]"]),
+            ("Raise every ward we have (-300 Gold)", ["Gain [-300] [Gold]", _need(300, "Gold")]),
+        ],
+    },
+    {
+        "name": "Whispers of the Old Gods",
+        "text": "In the dark, a voice whispers. Scholars dream of tentacles and eyes, and some stop sleeping altogether. The Old Gods are stirring.",
+        "trigger": _when(3, "<starting from the [Age of Azerite]>"),
+        "choices": [
+            ("Resist the whispers through prayer (-100 Faith)", ["Gain [-100] [Faith]", _need(100, "Faith")]),
+            ("Silence the cultists (lose population)", ["[-1] population in a random city"]),
+            ("Listen... (+Science, but madness spreads)", ["Gain [150]-[250] [Science]", "[-2] population in a random city", "Gain [-50] [Culture]"]),
+        ],
+    },
+    {
+        "name": "The Gift of Alexstrasza",
+        "text": "A great red dragon circles the capital and lands in the fields. Alexstrasza the Life-Binder offers her blessing to our people.",
+        "trigger": _when(1, "<after turn number [40]>"),
+        "choices": [
+            ("Accept the gift of life (+2 population)", ["[2] population in a random city"]),
+            ("Ask her to bless our temples (+Faith)", ["Gain [80] [Faith]"]),
+        ],
+    },
+    {
+        "name": "The Blue Dragonflight",
+        "text": "Kalecgos of the blue dragonflight offers to share the secrets of the arcane, if we promise to use them wisely.",
+        "trigger": _when(1, "<after turn number [50]>"),
+        "choices": [
+            ("Learn from the Spell-Weaver (+Science)", ["Gain [100]-[200] [Science]"]),
+            ("Politely decline the dragon's offer", []),
+        ],
+    },
+    {
+        "name": "Nozdormu's Warning",
+        "text": "A bronze dragon steps out of time itself. Nozdormu the Timeless warns of a future that must not come to pass, and shows us how to change it.",
+        "trigger": _when(1, "<after turn number [60]>"),
+        "choices": [
+            ("Heed the Timeless One (a short Golden Age)", ["Empire enters a [3]-turn Golden Age"]),
+            ("Ask to see the paths of time (+Science)", ["Gain [120] [Science]"]),
+        ],
+    },
+    {
+        "name": "The Emerald Dream",
+        "text": "Our people dream of a green and endless forest. Ysera the Dreamer has touched their sleep with peace.",
+        "trigger": _when(1, "<after turn number [30]>"),
+        "choices": [
+            ("Embrace the Dream (+Culture)", ["Gain [60] [Culture]"]),
+            ("Let the druids interpret it (+Faith)", ["Gain [60] [Faith]"]),
+        ],
+    },
+    {
+        "name": "Lord Prestor's Offer",
+        "text": "A charming nobleman, Lord Daval Prestor, offers gold and counsel to our court. Something about his eyes is not quite right.",
+        "trigger": _when(1, "<after turn number [40]>", "<before the [Age of the Cataclysm]>"),
+        "choices": [
+            ("Accept his generous gift (+300 Gold, but the black dragon's influence spreads)",
+             ["Gain [300] [Gold]", "Gain [-80] [Culture]", "[-1] population in a random city"]),
+            ("Unmask him! (he flees; the court is grateful)", ["Gain [40] [Culture]"]),
+        ],
+    },
+    {
+        "name": "A Bold Experiment",
+        "text": "Our tinkers want to test a new device. In theory it will revolutionize gnomish science. In theory.",
+        "trigger": _when(3, "<after turn number [20]>"),
+        "only": ["Gnomes"],
+        "choices": [
+            ("Fund the experiment (-60 Gold, a gamble on Science)", ["Gain [-60] [Gold]", "Gain [0]-[250] [Science]", _need(60, "Gold")]),
+            ("Insist on more safety tests (+Science)", ["Gain [40] [Science]"]),
+        ],
+    },
+    {
+        "name": "Explosive Prototype",
+        "text": "KA-BOOM! A prototype has exploded in the workshop. Nobody was hurt, probably, but the neighborhood is a crater.",
+        "trigger": _when(2, "<after turn number [30]>"),
+        "only": ["Gnomes"],
+        "choices": [
+            ("Study the crater (+Science, lose population)", ["Gain [80]-[160] [Science]", "[-1] population in a random city"]),
+            ("Pay for the repairs (-80 Gold)", ["Gain [-80] [Gold]", _need(80, "Gold")]),
+        ],
+    },
+    {
+        "name": "The Wandering Isle's Choice",
+        "text": "The great turtle Shen-zin Su is wounded, and our people must choose a path. Aysa Cloudsinger and the Tushui would join the Alliance; Ji Firepaw and the Huojin, the Horde.",
+        "trigger": None,             # fired by the Pandaren's own unique, upon entering the Age of the Dark Portal
+        "only": ["Pandaren"],
+        "choices": [
+            ("Follow the Tushui and join the Alliance (defense, +10% vs the Horde)", ["Gain a free [Tushui Monastery] [in capital]"]),
+            ("Follow the Huojin and join the Horde (attack, +10% vs the Alliance)", ["Gain a free [Huojin Training Hall] [in capital]"]),
+            ("Remain neutral and walk the middle path (+Culture)", ["Gain [150] [Culture]"]),
+        ],
+    },
+]
+
 
 def json_events():
     out = []
@@ -202,5 +313,11 @@ def json_events():
     return out
 
 
-def triggers():
-    return ["Triggers a [%s] event %s" % (e["name"], e["trigger"]) for e in EVENTS]
+def triggers(race):
+    """Trigger uniques for one major civilization."""
+    out = []
+    for e in EVENTS:
+        if not e["trigger"] or race in e.get("not_for", ()) or ("only" in e and race not in e["only"]):
+            continue
+        out.append("Triggers a [%s] event %s" % (e["name"], e["trigger"]))
+    return out

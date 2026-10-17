@@ -374,10 +374,28 @@ NATIONS = [
        "Gilneas is open for trade, for now.",
        "You have shown your true colors.",
        "I am Genn Greymane, King of Gilneas."),
+    _n("Scourge", "Arthas Menethil", "Scourge", [20, 35, 60], [130, 200, 245], "Forgotten Shadow",
+       "Domination", ["Snow"], "The Lich King's Will",
+       [],
+       "Genghis Khan",
+       [],
+       "All hail Arthas Menethil, the Lich King. Once a prince of Lordaeron, you took up the cursed blade Frostmourne and claimed the Frozen Throne. Now the Scourge answers to your will alone.",
+       "Will the dead inherit Azeroth?",
+       "The dead march upon you. None will survive.",
+       "You strike at the Lich King? You will serve me in death.",
+       "The Frozen Throne... shatters.",
+       "The Lich King acknowledges you.", "Your soul will be mine.",
+       "The Scourge has no need of trade. But it may humor you.",
+       "Your defiance is noted, and will be punished.",
+       "I am Arthas, the Lich King. Kneel, or be raised to kneel."),
 ]
 
 # ---------------------------------------------------------------- City-states
 CITY_STATES = [
+    ("The Earthen Ring", "Religious", [60, 90, 120], [220, 200, 140]),
+    ("Knights of the Ebon Blade", "Militaristic", [25, 25, 35], [120, 200, 240]),
+    ("Explorers' League", "Cultured", [110, 75, 40], [235, 205, 140]),
+    ("Thorium Brotherhood", "Mercantile", [80, 40, 30], [240, 150, 60]),
     ("Dalaran", "Cultured", [80, 20, 120], [210, 160, 255]),
     ("Theramore", "Militaristic", [20, 50, 110], [240, 240, 240]),
     ("Stromgarde", "Militaristic", [100, 15, 15], [230, 230, 230]),
@@ -396,9 +414,9 @@ CITY_STATES = [
 # ---------------------------------------------------------------- City lists (lore names)
 # The first city is the capital. Names are places from Warcraft and World of Warcraft.
 CITIES = {
-    "Humans": ["Stormwind", "Lordaeron", "Goldshire", "Lakeshire", "Darkshire", "Sentinel Hill",
-               "Northshire", "Moonbrook", "Stratholme", "Andorhal", "Hearthglen", "Southshore",
-               "Tyr's Hand", "Caer Darrow", "Alterac", "Nethergarde Keep", "Morgan's Vigil",
+    "Humans": ["Stormwind", "New Lordaeron", "Goldshire", "Lakeshire", "Darkshire", "Sentinel Hill",
+               "Northshire", "Moonbrook", "Boralus", "Tiragarde Keep", "Hearthglen", "Southshore",
+               "Tyr's Hand", "Lion's Landing", "Alterac", "Nethergarde Keep", "Morgan's Vigil",
                "Durnholde Keep", "Eastvale", "Raven Hill", "Westbrook Garrison", "Corin's Crossing",
                "Refuge Pointe", "Stormwind Harbor", "Valiance Keep", "Westguard Keep",
                "Light's Shield Tower", "Watchers' Terrace"],
@@ -412,7 +430,7 @@ CITIES = {
                     "Eldre'thalas", "Zin-Azshari", "Suramar", "Ameth'Aran", "Nordrassil"],
     "Dwarves": ["Ironforge", "Kharanos", "Thelsamar", "Menethil Harbor", "Aerie Peak", "Thandol Span",
                 "Dun Algaz", "Dun Modr", "Algaz Station", "Farstrider Lodge", "Gol'Bolar Quarry",
-                "Anvilmar", "Brewnall Village", "Dun Garok", "Bael'dun Keep", "Thorium Point",
+                "Anvilmar", "Brewnall Village", "Dun Garok", "Bael'dun Keep", "Ironforge Airfield",
                 "Frosthold", "Thunderbrew Distillery", "Shadowforge City", "Grim Batol Gate"],
     "Gnomes": ["Gnomeregan", "New Tinkertown", "Tinker Town", "Steelgrill's Depot", "Fizzcrank Airstrip",
                "Toshley's Station", "Mechagon City", "Rustbolt", "Coldridge Valley", "Chill Breeze Valley"],
@@ -447,6 +465,9 @@ CITIES = {
     "Worgen": ["Gilneas", "Duskhaven", "Stormglen Village", "Keel Harbor", "Tempest's Reach",
                "Aderic's Repose", "Greymane Court", "Tal'doren", "Emberstone Village", "Hailwood Marsh",
                "Light's Dawn Cathedral", "Northgate", "Wahl Cottage", "Gilneas Liberation Front Camp"],
+    "Scourge": ["Icecrown Citadel", "Naxxramas", "Scholomance", "Stratholme", "Andorhal", "Acherus",
+                "Azjol-Nerub", "Drak'Tharon Keep", "Corp'rethar", "Voltarus", "Kolramas", "The Shadow Vault",
+                "Pit of Saron", "Ymirheim", "Darrowshire", "Plaguewood", "Thondroril", "Caer Darrow"],
 }
 
 # ---------------------------------------------------------------- Faction membership
@@ -455,7 +476,7 @@ FACTION = {
     "Draenei": "Alliance", "Worgen": "Alliance", "High Elves": "Alliance",
     "Orcs": "Horde", "Trolls": "Horde", "Tauren": "Horde", "Forsaken": "Horde",
     "Blood Elves": "Horde", "Goblins": "Horde",
-    "Pandaren": "Neutral",
+    "Pandaren": "Neutral", "Scourge": "Scourge",
 }
 
 # ---------------------------------------------------------------- AI personalities
@@ -536,6 +557,11 @@ PERSONALITIES = {
                  aggressive=5, declareWar=5, diplomacy=6, loyal=2,
                  priorities={"Commerce": 10, "Arcane Inquiry": 6, "Liberty": 5, "Order": 5, "Dominion": 5},
                  weights=[("Market", 40), ("Bank", 40), ("Siege", 30)]),
+    # --- the Scourge
+    "Scourge": P("Domination", military=9, aggressive=9, declareWar=8, production=8, expansion=7, food=2,
+                 culture=3, faith=4, happiness=3, diplomacy=1, loyal=3, science=6,
+                 priorities={"Dominion": 10, "Honor": 8, "Order": 7, "Arcane Inquiry": 5, "Free Peoples": 1},
+                 weights=[("Melee", 40), ("Siege", 30), ("Walls", 20)]),
     # --- Neutral
     "Pandaren": P("Cultural", food=8, happiness=8, faith=7, culture=7, gold=6, military=4, aggressive=2,
                   declareWar=2, diplomacy=8, loyal=7,

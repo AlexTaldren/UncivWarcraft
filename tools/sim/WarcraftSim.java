@@ -104,6 +104,17 @@ public class WarcraftSim {
             java.util.List<String> ub = new ArrayList<>();
             for (com.unciv.logic.city.City city : c.getCities()) for (com.unciv.models.ruleset.Building b : gi.getRuleset().getBuildings().values()) if (b.getUniqueTo() != null && city.getCityConstructions().isBuilt(b.getName())) ub.add(b.getName());
             if (!uu.isEmpty() || !ub.isEmpty()) System.out.println("UNIQUE " + c.getCivName() + ": units " + uu + " buildings " + new java.util.TreeSet<>(ub));
+            if (c.isMajorCiv()) {
+                int plague = 0, deep = 0, promoH = 0;
+                for (com.unciv.logic.map.tile.Tile t : gi.getTileMap().getTileList()) { if (t.getOwner() != c) continue;
+                    if (t.getTerrainFeatures().contains("Plagued Land")) plague++;
+                    if ("Deep Mine".equals(t.getImprovement())) deep++;
+                }
+                for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits()))
+                    for (String p : new String[]{"Hearthstone", "Portal Attunement", "Flight Path"}) if (u.getPromotions().getPromotions().contains(p)) promoH++;
+                System.out.println("PLAY " + c.getCivName() + ": plagued tiles " + plague + " | deep mines " + deep + " | travel promos " + promoH
+                    + " | mana " + c.getResourceAmount("Mana") + " | happiness " + c.getStats().getHappiness());
+            }
             if (c.isBarbarian()) System.out.println("BARBARIAN UNITS: " + barb);
         }
         System.out.println("EVENT SEEN: " + EVENTS);
@@ -126,7 +137,7 @@ public class WarcraftSim {
     static {
         for (String n : new String[]{"Humans","Dwarves","Gnomes","Night Elves","Draenei","Worgen","High Elves"}) FACTION.put(n, "Alliance");
         for (String n : new String[]{"Orcs","Trolls","Tauren","Forsaken","Blood Elves","Goblins"}) FACTION.put(n, "Horde");
-        FACTION.put("Pandaren", "Neutral");
+        FACTION.put("Pandaren", "Neutral"); FACTION.put("Scourge", "Neutral");
     }
     static final java.util.Map<String, Integer> EVENTS = new java.util.TreeMap<>();
     static final java.util.Map<String, int[]> DIPLO = new java.util.TreeMap<>();

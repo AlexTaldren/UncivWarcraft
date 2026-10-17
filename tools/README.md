@@ -8,7 +8,7 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 
 **Eras** follow Azeroth's timeline: Age of Tribes → Age of Arathor → Age of the Dark Portal → Age of the Third War → Age of the Lich King → Age of the Cataclysm → Age of the Legion → Age of Azerite → Age of the Void.
 
-**14 races**, each with a leader, unique ability, AI personality and city list: Humans, Orcs, Night Elves, Dwarves, Gnomes, Tauren, Trolls, Blood Elves, High Elves, Pandaren, Forsaken, Draenei, Goblins, Worgen.
+**15 races**, each with a leader, unique ability, AI personality and city list: Humans, Orcs, Night Elves, Dwarves, Gnomes, Tauren, Trolls, Blood Elves, High Elves, Pandaren, Forsaken, Draenei, Goblins, Worgen, and **the Scourge** under Arthas, the Lich King, ruling from Icecrown Citadel in Northrend.
 
 **Humans (complete)** — led by Anduin Wrynn, in Stormwind blue and gold
 - *The Human Spirit:* City-State influence decays 50% slower and rests 20 higher; +15% Great Person generation. *For Lordaeron!* +10% Strength in your own lands. *Call to Arms:* when another civilization declares war on you, 2 free infantry of your current era appear.
@@ -21,6 +21,29 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Archmage** (replaces Great Scientist): named after the archmagi of Dalaran (Antonidas, Khadgar, Jaina…).
 - **Chapel of the Light** (replaces Temple): +1 Faith, +1 Culture. **Royal Barracks** (replaces Barracks): new units start with 25 XP, +1 Culture. **Lumber Mill** (replaces Workshop): +1 Production, +1 Production from Forests. **Castle** (replaces Keep): stronger defenses, +1 Culture. **Altar of Kings** (Humans only, one per empire): a free Great General and +15% Great Person generation.
 - Every other Human unit wears blue and gold on the map, and Peasants carry lumber.
+
+**Each race plays differently:**
+- **Scourge:** the undead eat half as much, Plagued Land gives them +2 Production and +1 Science, fallen enemies can rise to swell their cities, and their key buildings (Necropolis, Crypt, Ziggurat) need blighted ground nearby. Acolytes **spread the blight**. Unique: Ghoul, Acolyte, Death Knight, Frost Wyrm.
+- **Forsaken:** Plagued Land feeds them and heals their units; they can spread it too.
+- **Night Elves:** forests give +1 Food and are never cut down; **Wisps** replace Peasants.
+- **Orcs:** +10% Production and Strength while at war, -10% Culture in peace.
+- **Trolls:** regeneration (+10 HP when healing), +1 Faith from jungle, an extra Follower belief.
+- **Tauren:** untouched land is sacred: unfarmed plains give Faith, hills without mines give Food and Culture.
+- **Dwarves:** **Deep Mines** replace Mines, Titan Ruins give Science and Culture, and some ancient ruins hold Titan relics only dwarves can read.
+- **Gnomes:** their own experiment events, with big breakthroughs or explosions.
+- **Goblins:** buying costs 20% less Gold and captured cities pay out, but Production is 10% lower.
+- **Blood Elves:** mana addiction: -1 Happiness per city from the Age of the Third War until they control Arcane Crystals or the Sunwell is restored.
+- **High Elves:** cities are 25% stronger.
+- **Draenei:** exiles: a second Settler, a weaker capital, +25% against barbarians and demons, faster missionaries.
+- **Worgen:** units shift between human and worgen form (Worgen Stalker ↔ Gilnean Hunter, Gilnean Rifleman ↔ Worgen Ravager), and the curse lets worgen capture units they kill.
+- **Pandaren:** in the Age of the Dark Portal they choose the Tushui path (Alliance), the Huojin path (Horde) or neutrality.
+- **Alliance and Horde** fight 10% harder against each other.
+
+**Heroes:** every race can field one hero, as in Warcraft III: Uther the Lightbringer, Grom Hellscream, Malfurion Stormrage, Muradin Bronzebeard, Kelsey Steelspark, Baine Bloodhoof, Rokhan, Kael'thas Sunstrider, Alleria Windrunner, Chen Stormstout, Nathanos Blightcaller, Maraad, Gazlowe, Darius Crowley and Kel'Thuzad. Heroes inspire nearby troops, grow stronger with the ages and have their own promotions.
+
+**Travel and magic:** units trained in a city with an **Inn** carry a Hearthstone home; **Mage Towers** attune units to portals between your cities; a **Flight Master** speeds land units through your lands and opens flight paths. **Mana** is gathered by Arcane Sanctums and Mage Towers and spent on mages, arcane missiles and Mana Bombs.
+
+**World threats:** the Scourge marches in the Age of the Lich King, the Legion invades in the Age of the Legion, and the Old Gods whisper in the last ages. The red, blue, bronze, green and black dragonflights may visit with gifts or schemes.
 
 **Unique units and buildings for every race:**
 - **Orcs:** Grunt (Swordsman; heals when it kills), Wolf Rider (Outrider; pillages for free, no penalty against cities), Pig Farm (Granary, +1 Production).
@@ -63,7 +86,7 @@ Each has its own map sprite and icon.
 
 **Faction AI:** every race has its own AI personality. Orcs and Forsaken mass armies, Gnomes and Dwarves chase technology and siege engines, the elves and Draenei favor culture and faith, Goblins build markets and banks, Humans stay balanced. Alliance races are more diplomatic and loyal, so they tend to befriend one another more often; Horde races are quicker to go to war.
 
-**12 city-states:** Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold.
+**16 city-states:** Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold, the Earthen Ring, the Knights of the Ebon Blade, the Explorers' League and the Thorium Brotherhood.
 
 **10 religions:** Holy Light, Elune, Earth Mother, Shamanism, Loa, Cenarion Circle, August Celestials, Titans, Forgotten Shadow, Light of the Sunwell.
 

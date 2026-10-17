@@ -810,7 +810,8 @@
     },
     "requiredBuilding": "Library",
     "uniques": [
-      "[+2 Science] from [Jungle] tiles [in this city]"
+      "[+2 Science] from [Jungle] tiles [in this city]",
+      "Provides [1] [Mana]"
     ],
     "requiredTech": "Scholarship",
     "civilopediaText": [
@@ -1266,7 +1267,9 @@
     "maintenance": 3,
     "hurryCostModifier": 0,
     "uniques": [
-      "[+1 Science] per [2] population [in this city]"
+      "[+1 Science] per [2] population [in this city]",
+      "All newly-trained [Military] units [in this city] receive the [Portal Attunement] promotion",
+      "Provides [2] [Mana]"
     ],
     "requiredTech": "Arcane Science",
     "civilopediaText": [
@@ -1993,6 +1996,61 @@
     ]
   },
   {
+    "name": "Necropolis",
+    "culture": 2,
+    "cost": 40,
+    "hurryCostModifier": 40,
+    "maintenance": 1,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "Must have an owned [Plagued Land] within [3] tiles"
+    ],
+    "production": 1,
+    "civilopediaText": [
+      {
+        "text": "The Scourge's town hall: a dark citadel raised on blighted ground. +1 Production. Needs Plagued Land within 3 tiles."
+      }
+    ],
+    "replaces": "Town Hall",
+    "uniqueTo": "Scourge"
+  },
+  {
+    "name": "Crypt",
+    "hurryCostModifier": 25,
+    "maintenance": 1,
+    "uniques": [
+      "New [Military] units start with [15] XP [in this city]",
+      "Destroyed when the city is captured",
+      "Must have an owned [Plagued Land] within [3] tiles"
+    ],
+    "requiredTech": "Bronze Working",
+    "civilopediaText": [
+      {
+        "text": "The crypt where the Scourge raises ghouls and trains its dead. Needs Plagued Land within 3 tiles."
+      }
+    ],
+    "replaces": "Barracks",
+    "uniqueTo": "Scourge"
+  },
+  {
+    "name": "Ziggurat",
+    "cityStrength": 8,
+    "cityHealth": 50,
+    "hurryCostModifier": 25,
+    "requiredTech": "Masonry",
+    "uniques": [
+      "Destroyed when the city is captured",
+      "Must have an owned [Plagued Land] within [3] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A spirit tower of the Scourge, stronger than ordinary walls. Needs Plagued Land within 3 tiles."
+      }
+    ],
+    "replaces": "Walls",
+    "uniqueTo": "Scourge"
+  },
+  {
     "name": "Pig Farm",
     "food": 2,
     "maintenance": 1,
@@ -2079,7 +2137,8 @@
     },
     "requiredBuilding": "Library",
     "uniques": [
-      "[+2 Science] from [Jungle] tiles [in this city]"
+      "[+2 Science] from [Jungle] tiles [in this city]",
+      "Provides [2] [Mana]"
     ],
     "requiredTech": "Scholarship",
     "science": 1,
@@ -2247,5 +2306,68 @@
     ],
     "replaces": "Granary",
     "uniqueTo": "Pandaren"
+  },
+  {
+    "name": "Tushui Monastery",
+    "uniqueTo": "Pandaren",
+    "culture": 2,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "[+15]% Strength <for [Military] units> <when defending>",
+      "[+10]% Strength <for [Military] units> <vs [Horde] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Tushui follow Aysa Cloudsinger's path of discipline and justice, and fight beside the Alliance. +15% Strength when defending, +10% against the Horde, +2 Culture."
+      }
+    ]
+  },
+  {
+    "name": "Huojin Training Hall",
+    "uniqueTo": "Pandaren",
+    "production": 2,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "[+15]% Strength <for [Military] units> <when attacking>",
+      "[+10]% Strength <for [Military] units> <vs [Alliance] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Huojin follow Ji Firepaw's path of bold action, and fight beside the Horde. +15% Strength when attacking, +10% against the Alliance, +2 Production."
+      }
+    ]
+  },
+  {
+    "name": "Inn",
+    "requiredTech": "Coinage",
+    "cost": 90,
+    "gold": 1,
+    "happiness": 1,
+    "maintenance": 1,
+    "uniques": [
+      "All newly-trained [Land] units [in this city] receive the [Hearthstone] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A warm inn and a hearth to come home to. Units trained in this city carry a Hearthstone and can return to your cities from anywhere in your lands. +1 Gold, +1 Happiness."
+      }
+    ]
+  },
+  {
+    "name": "Flight Master",
+    "requiredTech": "Animal War Training",
+    "cost": 120,
+    "maintenance": 1,
+    "uniques": [
+      "All newly-trained [Land] units [in this city] receive the [Flight Path] promotion",
+      "[+1] Movement <for [Land] units> <in [Friendly Land] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A flight master's roost of gryphons, wyverns or hippogryphs. Your land units move 1 tile farther in your own lands, and units trained here can fly between your cities."
+      }
+    ]
   }
 ]

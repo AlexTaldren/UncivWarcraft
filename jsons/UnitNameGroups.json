@@ -1226,5 +1226,74 @@
       "Harvest Witch Hollinsworth",
       "Scholar Greymoor"
     ]
+  },
+  {
+    "name": "Scourge General",
+    "unitNames": [
+      "Kel'Thuzad",
+      "Anub'arak",
+      "Highlord Mograine",
+      "Baron Rivendare",
+      "Lady Deathwhisper",
+      "Deathbringer Saurfang",
+      "Prince Valanar",
+      "Thassarian"
+    ]
+  },
+  {
+    "name": "Scourge Admiral",
+    "unitNames": [
+      "Captain of the Dead Fleet",
+      "Gravewarden Krake",
+      "Admiral Bonesail",
+      "Captain Blightwater"
+    ]
+  },
+  {
+    "name": "Scourge Artist",
+    "unitNames": [
+      "Lady Blaumeux",
+      "Bone-sculptor Mortis",
+      "Choir of the Damned",
+      "Whisperer Nightfall"
+    ]
+  },
+  {
+    "name": "Scourge Merchant",
+    "unitNames": [
+      "Quartermaster Bonereaver",
+      "Bone-trader Vexx",
+      "Soul-broker Maldor",
+      "Salvager Grimtusk"
+    ]
+  },
+  {
+    "name": "Scourge Engineer",
+    "unitNames": [
+      "Grobbulus",
+      "Stitcher Gravelor",
+      "Bone-architect Zarnoth",
+      "Plaguewright Vorek"
+    ]
+  },
+  {
+    "name": "Scourge Prophet",
+    "unitNames": [
+      "Darkmaster Gandling",
+      "Heigan the Unclean",
+      "Noth the Plaguebringer",
+      "Instructor Razuvious",
+      "Faerlina the Grand Widow"
+    ]
+  },
+  {
+    "name": "Scourge Scientist",
+    "unitNames": [
+      "Kel'Thuzad",
+      "Grand Necrolyte Thalarion",
+      "Ras Frostwhisper",
+      "Professor Putricide",
+      "Master Necromancer Malicia"
+    ]
   }
 ]

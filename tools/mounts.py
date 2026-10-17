@@ -431,6 +431,7 @@ RACE_MOUNT = {
     "Tauren": kodo, "Trolls": raptor, "Blood Elves": hawkstrider, "Draenei": elekk,
     "Pandaren": dragon_turtle, "Goblins": trike,
     "Forsaken": lambda p, v, a: horse(p, v, a, BONE, (70, 90, 60), skeletal=True),
+    "Scourge": lambda p, v, a: horse(p, v, a, (205, 215, 225), (60, 120, 200), skeletal=True),
     "High Elves": lambda p, v, a: horse(p, v, a, (235, 232, 222), (225, 190, 90)),
     "Worgen": lambda p, v, a: horse(p, v, a, [(60, 45, 35), (40, 38, 36), (95, 80, 65)][v % 3],
                                     (25, 22, 20)),
@@ -438,7 +439,7 @@ RACE_MOUNT = {
 MOUNT_NAME = {
     "Orcs": "wolf", "Dwarves": "ram", "Gnomes": "mechanostrider", "Night Elves": "nightsaber",
     "Tauren": "kodo", "Trolls": "raptor", "Blood Elves": "hawkstrider", "Draenei": "elekk",
-    "Pandaren": "dragon turtle", "Goblins": "trike", "Forsaken": "skeletal horse",
+    "Pandaren": "dragon turtle", "Goblins": "trike", "Forsaken": "skeletal horse", "Scourge": "frost-touched skeletal steed",
     "High Elves": "white steed", "Worgen": "Gilnean horse",
 }
 

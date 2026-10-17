@@ -139,8 +139,34 @@ UNITS = [
                                  "Stronger than a Pikeman and moves 3 tiles per turn.")}),
 ]
 
+UNITS += [
+    # ---------------------------------------------------------------- Scourge
+    ("Scourge", "Militia", {"name": "Ghoul", "strength": 10,
+        "addUniques": ["Heals [10] damage if it kills a unit"],
+        "civilopediaText": _lore("Ravenous undead raised by the plague, the foot soldiers of the Scourge.",
+                                 "Stronger than Militia, and heals 10 HP whenever it kills a unit.")}),
+    ("Scourge", "Peasant", {"name": "Acolyte",
+        "civilopediaText": _lore("Living cultists of the Cult of the Damned, who serve the Lich King by raising buildings and spreading the blight.",
+                                 "Like a Peasant; Acolytes spread the blight (Spread Blight) that Scourge buildings need.")}),
+    ("Scourge", "Knight", {"name": "Death Knight", "strength": 24, "requiredResource": None,
+        "addUniques": ["Heals [15] damage if it kills a unit"],
+        "civilopediaText": _lore("Fallen champions raised by the Lich King, riding skeletal steeds and wielding runeblades.",
+                                 "Much stronger than a Knight, needs no Horses, and heals 15 HP whenever it kills a unit.")}),
+    ("Scourge", "Gryphon Rider", {"name": "Frost Wyrm", "strength": 52, "rangedStrength": 52,
+        "addUniques": ["[+25]% Strength <vs [Land] units>"],
+        "civilopediaText": _lore("The skeletal remains of great dragons, raised by Sapphiron's master and breathing killing frost.",
+                                 "Stronger than a Gryphon Rider, with +25% Strength against land units.")}),
+]
+
 # (race, base building (mod name), overrides)
+BLIGHT = "Must have an owned [Plagued Land] within [3] tiles"
 BUILDINGS = [
+    ("Scourge", "Town Hall", {"name": "Necropolis", "addStats": {"production": 1}, "addUniques": [BLIGHT],
+        "civilopediaText": _lore("The Scourge's town hall: a dark citadel raised on blighted ground. +1 Production. Needs Plagued Land within 3 tiles.")}),
+    ("Scourge", "Barracks", {"name": "Crypt", "addUniques": [BLIGHT],
+        "civilopediaText": _lore("The crypt where the Scourge raises ghouls and trains its dead. Needs Plagued Land within 3 tiles.")}),
+    ("Scourge", "Walls", {"name": "Ziggurat", "addStats": {"cityStrength": 3}, "addUniques": [BLIGHT],
+        "civilopediaText": _lore("A spirit tower of the Scourge, stronger than ordinary walls. Needs Plagued Land within 3 tiles.")}),
     ("Orcs", "Granary", {"name": "Pig Farm", "addStats": {"production": 1},
         "civilopediaText": _lore("Orcish pig farms, a fixture of every Horde town since Warcraft II: pens of grunting boars feeding the warband. +1 Production.")}),
     ("Trolls", "Shrine", {"name": "Voodoo Lounge", "addStats": {"gold": 1, "culture": 1},
@@ -170,6 +196,8 @@ BUILDINGS = [
 ]
 
 ICONS_UNITS = {
+    "Ghoul": ("skull", "fist"), "Acolyte": ("skull", "book"), "Death Knight": ("sword", "skull"),
+    "Frost Wyrm": ("dragon", "skull"),
     "Grunt": ("axe", "fist"), "Wolf Rider": ("wolf", "axe"), "Headhunter": ("spear", "mask"),
     "Batrider": ("wing", "flame"), "Tauren Warrior": ("totem", "fist"), "Kodo Beast": ("drum", "bow"),
     "Abomination": ("skull", "chains"), "Meat Wagon": ("wheel", "skull"), "Spellbreaker": ("shield", "orb"),
@@ -182,6 +210,7 @@ ICONS_UNITS = {
     "Shado-Pan Monk": ("fist", "pagoda"),
 }
 ICONS_BUILDINGS = {
+    "Necropolis": ("castle", "skull"), "Crypt": ("coffin", "skull"), "Ziggurat": ("ziggurat", "skull"),
     "Pig Farm": ("wheat", "tusk"), "Voodoo Lounge": ("cauldron", "mask"), "Great Totem": "totem",
     "Apothecarium": ("flask", "skull"), "Magisters' Sanctum": ("spire", "sun"), "Goblin Bazaar": ("coins", "gear"),
     "Dwarven Forge": ("anvil", "flame"), "Tinker's Workshop": ("gears", "bolt"), "Moonwell": ("moon", "wave"),
@@ -307,6 +336,12 @@ def headgear(ls, kind):
         d.pieslice([hx - 5, y0 - 2, hx + 5, y0 + 8], 180, 360, fill=(70, 130, 60, 255))
     elif kind == "goggles":
         d.line([(hx - 3, y0 + 3), (hx + 3, y0 + 3)], fill=(90, 200, 230, 255), width=2)
+    elif kind == "cult_hood":
+        d.pieslice([hx - 5, y0 - 2, hx + 5, y0 + 8], 180, 360, fill=(95, 50, 120, 255))
+    elif kind == "crown":
+        d.rectangle([hx - 4, y0 - 1, hx + 4, y0 + 1], fill=(235, 195, 70, 255))
+        for k in (-4, 0, 4):
+            d.line([(hx + k, y0 - 1), (hx + k, y0 - 4)], fill=(235, 195, 70, 255))
     elif kind == "red_hood":
         d.pieslice([hx - 5, y0 - 2, hx + 5, y0 + 8], 180, 360, fill=(170, 40, 35, 255))
     elif kind == "mask":
@@ -429,6 +464,12 @@ def shredder():
 
 # per unit: (source sprite, race used to dress it, mode, list of prop steps)
 SPRITES = {
+    "Ghoul": ("Warrior", "Scourge", "full", [lambda l: pauldrons(l, (90, 95, 110), spikes=True)]),
+    "Acolyte": ("Worker", "Scourge", "full", [lambda l: headgear(l, "cult_hood")]),
+    "Death Knight": ("Knight", "Scourge", "mounted", [back_banner, lambda l: glow_aura(l, (140, 210, 255))]),
+    "Wisp": (None, None, "paint", [lambda: wisp()]),
+    "Gilnean Hunter": ("Composite Bowman", None, "raw", [lambda l: headgear(l, "top_hat")]),
+    "Worgen Ravager": ("Swordsman", "Worgen", "full", [lambda l: pauldrons(l, (60, 55, 50), spikes=True), lambda l: back_item(l, "cloak")]),
     "Grunt": ("Swordsman", "Orcs", "full", [lambda l: pauldrons(l, (70, 60, 55), spikes=True), lambda l: weapon(l, "axe")]),
     "Wolf Rider": ("Horseman", "Orcs", "mounted", [back_banner]),
     "Headhunter": ("Composite Bowman", "Trolls", "full", [lambda l: back_item(l, "spears"), lambda l: headgear(l, "mask")]),
@@ -461,17 +502,48 @@ SPRITES = {
 
 
 def _anchor(ls):
-    hb = RS.est_head(ls[0])
-    if hb is None:
-        x0, y0, x1, y1 = LU.bbox_all(ls)
-        return (x0 + x1) // 2, y0
-    return (hb[0] + hb[2]) // 2, hb[1] - 1
+    """Head centre: the first solid run from the top that sits over the figure's feet
+    (so raised weapons, banners and shields are skipped)."""
+    base = ls[0]
+    a = base.split()[3].load()
+    x0, y0, x1, y1 = base.getbbox()
+    feet = [x for x in range(x0, x1) for y in range(y1 - 4, y1) if a[x, y] > 128]
+    fx = sum(feet) / len(feet) if feet else (x0 + x1) / 2
+    for y in range(y0, y0 + (y1 - y0) // 2):
+        runs, run = [], []
+        for x in range(x0, x1 + 1):
+            if x < x1 and a[x, y] > 128:
+                run.append(x)
+            elif run:
+                runs.append(run); run = []
+        good = [r for r in runs if len(r) >= 4 and abs((r[0] + r[-1]) / 2 - fx) <= 7 and all(
+            sum(a[x, y + k] > 128 for x in range(r[0], r[-1] + 1)) >= len(r) - 1 for k in (1, 2, 3))]
+        if good:
+            r = min(good, key=lambda r: abs((r[0] + r[-1]) / 2 - fx))
+            return (r[0] + r[-1]) // 2, y
+    return int(fx), y0
+
+
+def wisp():
+    """A wisp: a glowing spirit orb with a trailing tail of light."""
+    def f(p):
+        pass
+    def lit(p):
+        p.ell(73, 44, 5, 5, (190, 240, 255), "orb")
+        p.ell(73, 44, 2.5, 2.5, (250, 255, 255), "core")
+        for i in range(1, 6):
+            p.ell(73 - i * 2.2, 47 + i * 1.6, 3.2 - i * 0.45, 2.4 - i * 0.35, (150, 220, 255), "tail%d" % i)
+        for x, y in ((68, 38), (79, 41), (77, 50)):
+            p.dot(x, y, (220, 250, 255), "spark%d%d" % (x, y))
+    return LU.paint_layers((95, 81), f, ((lit, (140, 220, 255)),))
 
 
 def render(atlas, name):
     src, race, mode, steps = SPRITES[name]
     if mode == "paint":
         ls = None
+    elif mode == "raw":
+        ls = LU.source_layers(atlas, src)
     elif mode == "mounted":
         ls = RS.mounted(atlas, [atlas.crop(P + src + s) for s in ("", "-1", "-2")], race, src)
     elif mode == "ship":
@@ -495,3 +567,27 @@ def write_all(atlas, images_dir):
             im.save(path)
             n += 1
     return n
+
+
+# ======================================================================= heroes (v0.12)
+def _hero(src, race, mode, props, glow):
+    return (src, race, mode, list(props) + [lambda l: headgear(l, "crown"), lambda l: glow_aura(l, glow, "body")])
+
+HERO_SPRITES = {
+    "Uther the Lightbringer": _hero("Swordsman", None, "raw", [lambda l: weapon(l, "hammer")], (255, 225, 130)),
+    "Grom Hellscream": _hero("Swordsman", "Orcs", "full", [lambda l: weapon(l, "axe"), lambda l: pauldrons(l, (60, 50, 45), spikes=True)], (255, 120, 80)),
+    "Malfurion Stormrage": _hero("Spearman", "Night Elves", "full", [lambda l: weapon(l, "staff"), lambda l: headgear(l, "horned_helm")], (140, 255, 160)),
+    "Muradin Bronzebeard": _hero("Swordsman", "Dwarves", "full", [lambda l: weapon(l, "hammer")], (150, 210, 255)),
+    "Kelsey Steelspark": _hero("Scout", "Gnomes", "full", [lambda l: headgear(l, "goggles")], (255, 200, 120)),
+    "Baine Bloodhoof": _hero("Swordsman", "Tauren", "full", [lambda l: weapon(l, "totem_club")], (255, 210, 140)),
+    "Rokhan": _hero("Spearman", "Trolls", "full", [lambda l: headgear(l, "mask"), lambda l: back_item(l, "spears")], (160, 255, 170)),
+    "Kael'thas Sunstrider": _hero("Spearman", "Blood Elves", "full", [lambda l: weapon(l, "staff")], (255, 150, 60)),
+    "Alleria Windrunner": _hero("Composite Bowman", "High Elves", "full", [lambda l: back_item(l, "cloak")], (170, 230, 255)),
+    "Chen Stormstout": _hero("Spearman", "Pandaren", "full", [lambda l: back_item(l, "keg"), lambda l: weapon(l, "staff")], (255, 220, 140)),
+    "Nathanos Blightcaller": _hero("Composite Bowman", "Forsaken", "full", [lambda l: headgear(l, "hood")], (150, 240, 110)),
+    "Maraad": _hero("Swordsman", "Draenei", "full", [lambda l: weapon(l, "hammer")], (255, 235, 160)),
+    "Gazlowe": _hero("Scout", "Goblins", "full", [lambda l: headgear(l, "goggles"), lambda l: back_item(l, "bomb")], (255, 200, 90)),
+    "Darius Crowley": _hero("Swordsman", "Worgen", "full", [lambda l: back_item(l, "cloak")], (200, 200, 230)),
+    "Kel'Thuzad": _hero("Worker", "Scourge", "full", [lambda l: headgear(l, "cult_hood"), lambda l: weapon(l, "staff")], (140, 210, 255)),
+}
+SPRITES.update(HERO_SPRITES)

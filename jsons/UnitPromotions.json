@@ -1723,5 +1723,167 @@
     "uniques": [
       "Unable to pillage tiles"
     ]
+  },
+  {
+    "name": "Hero's Might I",
+    "uniques": [
+      "[+15]% Strength"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 30,
+    "row": 0,
+    "civilopediaText": [
+      {
+        "text": "The hero grows stronger with every battle."
+      }
+    ]
+  },
+  {
+    "name": "Hero's Might II",
+    "prerequisites": [
+      "Hero's Might I"
+    ],
+    "uniques": [
+      "[+15]% Strength"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 31,
+    "row": 0,
+    "civilopediaText": [
+      {
+        "text": "The hero grows stronger with every battle."
+      }
+    ]
+  },
+  {
+    "name": "Commanding Presence",
+    "prerequisites": [
+      "Hero's Might I"
+    ],
+    "uniques": [
+      "[+10]% Strength bonus for [Military] units within [2] tiles"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 32,
+    "row": 0,
+    "civilopediaText": [
+      {
+        "text": "Armies rally around the hero's banner."
+      }
+    ]
+  },
+  {
+    "name": "Second Wind",
+    "uniques": [
+      "[+15] HP when healing"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 30,
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "The hero shrugs off wounds that would fell a lesser warrior."
+      }
+    ]
+  },
+  {
+    "name": "Battle-Hardened",
+    "prerequisites": [
+      "Second Wind"
+    ],
+    "uniques": [
+      "[+20]% Strength <when defending>"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 31,
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "Veteran of a hundred battles, the hero is hard to bring down."
+      }
+    ]
+  },
+  {
+    "name": "Swift Strider",
+    "prerequisites": [
+      "Second Wind"
+    ],
+    "uniques": [
+      "[+1] Movement"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 32,
+    "row": 1,
+    "civilopediaText": [
+      {
+        "text": "The hero moves across the battlefield with uncanny speed."
+      }
+    ]
+  },
+  {
+    "name": "Legend of Azeroth",
+    "prerequisites": [
+      "Hero's Might II",
+      "Battle-Hardened"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "Heals [25] damage if it kills a unit"
+    ],
+    "unitTypes": [
+      "Hero"
+    ],
+    "column": 30,
+    "row": 2,
+    "civilopediaText": [
+      {
+        "text": "Songs are sung of this hero across all of Azeroth."
+      }
+    ]
+  },
+  {
+    "name": "Hearthstone",
+    "uniques": [
+      "May Paradrop to [{your} {City center}] tiles up to [10] tiles away <in [Friendly Land] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "This unit carries a Hearthstone from the inn where it was trained: it can return to one of your cities up to 10 tiles away from anywhere in your lands."
+      }
+    ]
+  },
+  {
+    "name": "Portal Attunement",
+    "uniques": [
+      "May Paradrop to [{your} {City center}] tiles up to [20] tiles away <in [City center] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Attuned to the city's Mage Tower: from one of your cities, this unit can step through a portal to another up to 20 tiles away."
+      }
+    ]
+  },
+  {
+    "name": "Flight Path",
+    "uniques": [
+      "May Paradrop to [{your} {City center}] tiles up to [14] tiles away <in [City center] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "This unit knows the flight paths: from one of your cities it can fly to another up to 14 tiles away."
+      }
+    ]
   }
 ]

@@ -3343,7 +3343,21 @@
       "ForestTH",
       "Lumber millT"
     ],
+    "Tundra+Deep Mine": [
+      "Tundra",
+      "MineT"
+    ],
+    "Tundra+Iron+Deep Mine": [
+      "Tundra",
+      "Iron",
+      "MineT"
+    ],
     "Tundra+Elementium+Mine": [
+      "Tundra",
+      "Elementium",
+      "MineT"
+    ],
+    "Tundra+Elementium+Deep Mine": [
       "Tundra",
       "Elementium",
       "MineT"
@@ -3353,7 +3367,17 @@
       "Arcane Crystals",
       "MineT"
     ],
+    "Tundra+Arcane Crystals+Deep Mine": [
+      "Tundra",
+      "Arcane Crystals",
+      "MineT"
+    ],
     "Tundra+Truesilver+Mine": [
+      "Tundra",
+      "Truesilver",
+      "MineT"
+    ],
+    "Tundra+Truesilver+Deep Mine": [
       "Tundra",
       "Truesilver",
       "MineT"
@@ -3363,7 +3387,17 @@
       "Copper Ore",
       "MineT"
     ],
+    "Tundra+Copper Ore+Deep Mine": [
+      "Tundra",
+      "Copper Ore",
+      "MineT"
+    ],
     "Tundra+Deeprock Salt+Mine": [
+      "Tundra",
+      "Deeprock Salt",
+      "MineT"
+    ],
+    "Tundra+Deeprock Salt+Deep Mine": [
       "Tundra",
       "Deeprock Salt",
       "MineT"
@@ -3373,12 +3407,41 @@
       "Thorium",
       "MineT"
     ],
+    "Tundra+Thorium+Deep Mine": [
+      "Tundra",
+      "Thorium",
+      "MineT"
+    ],
     "Tundra+Star Rubies+Mine": [
       "Tundra",
       "Star Rubies",
       "MineT"
     ],
+    "Tundra+Star Rubies+Deep Mine": [
+      "Tundra",
+      "Star Rubies",
+      "MineT"
+    ],
+    "Tundra+Gold Ore+Deep Mine": [
+      "Tundra",
+      "Gold Ore",
+      "MineT"
+    ],
+    "Tundra+Hill+Deep Mine": [
+      "Tundra+Hill",
+      "MineT"
+    ],
+    "Tundra+Hill+Iron+Deep Mine": [
+      "Tundra+Hill",
+      "Iron",
+      "MineT"
+    ],
     "Tundra+Hill+Elementium+Mine": [
+      "Tundra+Hill",
+      "Elementium",
+      "MineT"
+    ],
+    "Tundra+Hill+Elementium+Deep Mine": [
       "Tundra+Hill",
       "Elementium",
       "MineT"
@@ -3388,7 +3451,17 @@
       "Arcane Crystals",
       "MineT"
     ],
+    "Tundra+Hill+Arcane Crystals+Deep Mine": [
+      "Tundra+Hill",
+      "Arcane Crystals",
+      "MineT"
+    ],
     "Tundra+Hill+Truesilver+Mine": [
+      "Tundra+Hill",
+      "Truesilver",
+      "MineT"
+    ],
+    "Tundra+Hill+Truesilver+Deep Mine": [
       "Tundra+Hill",
       "Truesilver",
       "MineT"
@@ -3398,7 +3471,17 @@
       "Copper Ore",
       "MineT"
     ],
+    "Tundra+Hill+Copper Ore+Deep Mine": [
+      "Tundra+Hill",
+      "Copper Ore",
+      "MineT"
+    ],
     "Tundra+Hill+Deeprock Salt+Mine": [
+      "Tundra+Hill",
+      "Deeprock Salt",
+      "MineT"
+    ],
+    "Tundra+Hill+Deeprock Salt+Deep Mine": [
       "Tundra+Hill",
       "Deeprock Salt",
       "MineT"
@@ -3408,12 +3491,37 @@
       "Thorium",
       "MineT"
     ],
+    "Tundra+Hill+Thorium+Deep Mine": [
+      "Tundra+Hill",
+      "Thorium",
+      "MineT"
+    ],
     "Tundra+Hill+Star Rubies+Mine": [
       "Tundra+Hill",
       "Star Rubies",
       "MineT"
     ],
+    "Tundra+Hill+Star Rubies+Deep Mine": [
+      "Tundra+Hill",
+      "Star Rubies",
+      "MineT"
+    ],
+    "Tundra+Hill+Gold Ore+Deep Mine": [
+      "Tundra+Hill",
+      "Gold Ore",
+      "MineT"
+    ],
+    "Snow+Iron+Deep Mine": [
+      "Snow",
+      "Iron",
+      "MineT"
+    ],
     "Snow+Elementium+Mine": [
+      "Snow",
+      "Elementium",
+      "MineT"
+    ],
+    "Snow+Elementium+Deep Mine": [
       "Snow",
       "Elementium",
       "MineT"
@@ -3423,7 +3531,22 @@
       "Arcane Crystals",
       "MineT"
     ],
+    "Snow+Arcane Crystals+Deep Mine": [
+      "Snow",
+      "Arcane Crystals",
+      "MineT"
+    ],
+    "Snow+Hill+Iron+Deep Mine": [
+      "Snow+Hill",
+      "Iron",
+      "MineT"
+    ],
     "Snow+Hill+Elementium+Mine": [
+      "Snow+Hill",
+      "Elementium",
+      "MineT"
+    ],
+    "Snow+Hill+Elementium+Deep Mine": [
       "Snow+Hill",
       "Elementium",
       "MineT"
@@ -3431,6 +3554,19 @@
     "Snow+Hill+Arcane Crystals+Mine": [
       "Snow+Hill",
       "Arcane Crystals",
+      "MineT"
+    ],
+    "Snow+Hill+Arcane Crystals+Deep Mine": [
+      "Snow+Hill",
+      "Arcane Crystals",
+      "MineT"
+    ],
+    "Snow+Deep Mine": [
+      "Snow",
+      "MineT"
+    ],
+    "Snow+Hill+Deep Mine": [
+      "Snow+Hill",
       "MineT"
     ],
     "Tundra+Plainstriders+Fort": [

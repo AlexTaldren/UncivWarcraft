@@ -266,7 +266,69 @@ for name, base, stats in legion.UNITS:
 files["Events"] = WE.json_events()
 # triggered for major civs only (city-states would otherwise roll events too), hidden in the civilopedia
 for n in majors:
-    n["uniques"] = n.get("uniques", []) + [t + " <hidden from users>" for t in WE.triggers()]
+    n["uniques"] = n.get("uniques", []) + [t + " <hidden from users>" for t in WE.triggers(n["name"])]
+
+# ------------------------------------------------------------ 5d. v0.12: play styles, heroes, travel, Mana
+import wc_playstyles as PS
+units = {u["name"]: u for u in files["Units"]}
+for base, ov in PS.UNITS:
+    u = apply_overrides(copy.deepcopy(units[base]), ov)
+    for k in ("upgradesTo", "obsoleteTech", "replaces") if "replaces" not in ov else ():
+        u.pop(k, None)
+    files["Units"].append(u)
+units = {u["name"]: u for u in files["Units"]}
+for name, extra in PS.UNIT_EXTRA_UNIQUES.items():
+    units[name]["uniques"] = units[name].get("uniques", []) + extra
+
+# heroes: their own unit type and promotion line
+files["UnitTypes"].append(dict(PS.HERO_TYPE))
+for race, (hname, title, sig, lore) in PS.HEROES.items():
+    h = copy.deepcopy(units[PS.HERO_BASE])
+    for k in ("upgradesTo", "obsoleteTech", "replaces", "promotions", "civilopediaText"):
+        h.pop(k, None)
+    h.update({k: v for k, v in PS.HERO_STATS.items() if v is not None})
+    h.pop("requiredResource", None)
+    h.update(name=hname, unitType="Hero", uniqueTo=race,
+             uniques=PS.HERO_COMMON + sig + PS.HERO_SCALING,
+             civilopediaText=[{"text": "%s, %s. %s" % (hname, title, lore)},
+                              {"text": "A hero of the %s: only one can serve at a time. Inspires nearby units (+15%%), heals on kills, gains strength in later ages and has its own line of hero promotions." % race}])
+    files["Units"].append(h)
+for i, p in enumerate(PS.HERO_PROMOTIONS):
+    p = dict(p, unitTypes=["Hero"], column=30 + (i % 3), row=i // 3)
+    base_name = re.sub(r" (I|II|III)$", "", p["name"])
+    p["civilopediaText"] = [{"text": PS.HERO_PROMO_LORE[base_name]}]
+    files["UnitPromotions"].append(p)
+files["UnitPromotions"] += [dict(p) for p in PS.TRAVEL_PROMOTIONS]
+
+# buildings: Inn, Flight Master, the Pandaren paths; portals in Mage Towers; Mana
+files["Buildings"] += copy.deepcopy(PS.BUILDINGS)
+files["TileResources"].append(dict(PS.MANA))
+for b in files["Buildings"]:
+    if b["name"] == "Mage Tower":
+        b["uniques"] = b.get("uniques", []) + [PS.MAGE_TOWER_PORTALS]
+    if b["name"] in PS.MANA_SOURCES:
+        b["uniques"] = b.get("uniques", []) + ["Provides [%d] [Mana]" % PS.MANA_SOURCES[b["name"]]]
+for u in files["Units"]:
+    if u["name"] in PS.MANA_COSTS:
+        u["uniques"] = u.get("uniques", []) + ["Costs [%d] [Mana]" % PS.MANA_COSTS[u["name"]]]
+
+# improvements: blight, the Dwarves' Deep Mine, race restrictions
+files["TileImprovements"] += copy.deepcopy(PS.IMPROVEMENTS)
+imps = {i["name"]: i for i in files["TileImprovements"]}
+files["TileImprovements"].append(apply_overrides(copy.deepcopy(imps["Mine"]), PS.DEEP_MINE))
+for name, uq in PS.RESTRICT_IMPROVEMENTS:
+    imps[name]["uniques"] = imps[name].get("uniques", []) + [uq]
+files["Ruins"] += copy.deepcopy(PS.RUINS)
+
+# nations: faction tags, rivalry and play styles
+for n in majors:
+    tags = PS.TAGS.get(n["name"], [])
+    if tags:
+        n["uniques"] = [q for q in n["uniques"] if not q.startswith("Comment [Faction:")]
+    extra, text = PS.PLAYSTYLE.get(n["name"], ([], None))
+    n["uniques"] = tags + [PS.RIVALRY[t] for t in tags if t in PS.RIVALRY] + n["uniques"] + extra
+    if n["name"] == "Humans":
+        n["uniqueText"] += " Alliance: +10% Strength against the Horde."
 
 # per-race Great Person names: each race's GP takes names from its own list
 GP_TAG = re.compile(r"^\[This Unit\] gets a name from the \[(\w+)\] group$")
@@ -376,6 +438,8 @@ for f in os.listdir(TS):
         if any(t in R.ALL for t in toks):
             # layer images are renamed token by token too, so our own art is used
             extra["+".join(R.ALL.get(t, t) for t in toks)] = [rename_leaf(l) for l in layers]
+        if "Mine" in toks:      # the Dwarves' Deep Mine looks like a Mine
+            extra["+".join("Deep Mine" if t == "Mine" else R.ALL.get(t, t) for t in toks)] = [rename_leaf(l) for l in layers]
     if extra:
         ljson.dump({"ruleVariants": extra}, os.path.join(J, "TileSets", f))
 
@@ -392,6 +456,10 @@ for a in atlases:
         if folder.endswith("/Tiles") and any(e in leaf for e in MODERN_ERAS):
             continue
         newleaf = rename_leaf(leaf)
+        if folder.endswith("/Tiles") and (leaf == "Mine" or leaf.startswith("Mine-")):
+            path = os.path.join(IMG, folder, "Deep " + leaf + ".png")
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            a.crop(region).save(path)
         if newleaf != leaf:
             path = os.path.join(IMG, folder, newleaf + ".png")
             if not os.path.exists(path):
