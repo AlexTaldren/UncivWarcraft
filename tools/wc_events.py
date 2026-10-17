@@ -317,6 +317,28 @@ EVENTS += [
 ]
 
 
+# v0.18 Mana sink: AIs were banking thousands of Mana. Whenever a civ holds 300+, every
+# 5 turns the ley lines swell and it can spend the surplus. The AI is steered away from
+# hoarding with a choice weight; a human player may always keep the Mana.
+EVENTS += [
+    {
+        "name": "The Ley Lines Swell",
+        "text": "Our Mana stores are brimming, and the ley lines beneath our cities hum with power. "
+                "Our magi say such a surplus should be put to use before it slips away into the Nether.",
+        "trigger": "<upon turn start> <every [5] turns> <when above [299] [Mana]>",
+        "choices": [
+            ("Channel it into research (-150 Mana, +Science)",
+             _mana(150) + ["Gain [150]-[300] [Science]"]),
+            ("Hold a festival of arcane lights (-200 Mana, 4-turn Golden Age)",
+             _mana(200) + ["Empire enters a [4]-turn Golden Age"]),
+            ("Bless the land (-150 Mana, +Culture and Faith)",
+             _mana(150) + ["Gain [100] [Culture]", "Gain [100] [Faith]"]),
+            ("Keep the Mana in reserve", ["[-90]% weight to this choice for AI decisions"]),
+        ],
+    },
+]
+
+
 def json_events():
     out = []
     for e in EVENTS:

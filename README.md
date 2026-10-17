@@ -19,7 +19,7 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Steam Tank** (replaces Cannon): no set-up before firing, and can move after attacking.
 - **Knight of the Silver Hand** (replaces Cavalry): heavy holy cavalry; +25% against the undead, and units beside it heal 10 HP more.
 - **Archmage** (replaces Great Scientist): named after the archmagi of Dalaran (Antonidas, Khadgar, Jaina…).
-- **Chapel of the Light** (replaces Temple): +1 Faith, +1 Culture. **Royal Barracks** (replaces Barracks): new units start with 25 XP, +1 Culture. **Lumber Mill** (replaces Workshop): +1 Production, +1 Production from Forests. **Castle** (replaces Keep): stronger defenses, +1 Culture. **Cathedral of Light** (replaces Bardic Hall): +2 Faith. **Altar of Kings** (Humans only, one per empire): a free Great General and +15% Great Person generation.
+- **Chapel of the Light** (replaces Temple): +1 Faith, +1 Culture, +1 Happiness. **Royal Barracks** (replaces Barracks): new units start with 25 XP, +1 Culture. **Lumber Mill** (replaces Workshop): +1 Production, +1 Production from Forests. **Castle** (replaces Keep): stronger defenses, +1 Culture. **Cathedral of Light** (replaces Bardic Hall): +2 Faith. **Altar of Kings** (Humans only, one per empire): a free Great General and +15% Great Person generation.
 - Every Human and Orc unit is painted in a chunky, Warcraft-like style: big shoulders, hands and weapons, saturated colour and heavy outlines, from Peasants and Peons to riflemen, riders, siege engines, Great People and heroes.
 
 **Each race plays differently:**
@@ -28,23 +28,23 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Night Elves:** forests give +1 Food and are never cut down; **Wisps** replace Peasants.
 - **Orcs:** +10% Production and Strength while at war, -10% Culture in peace.
 - **Trolls:** regeneration (+10 HP when healing), +1 Faith from jungle, an extra Follower belief.
-- **Tauren:** untouched land is sacred: unfarmed plains give Faith, hills without mines give Food and Culture.
-- **Dwarves:** **Deep Mines** replace Mines, Titan Ruins give Science and Culture, and some ancient ruins hold Titan relics only dwarves can read.
+- **Tauren:** untouched land is sacred: unfarmed plains give Faith, hills without mines give Culture.
+- **Dwarves:** **Deep Mines** (+1 Gold) replace Mines, Titan Ruins give Science and Culture, and some ancient ruins hold Titan relics only dwarves can read.
 - **Gnomes:** their own experiment events, with big breakthroughs or explosions.
 - **Goblins:** buying costs 20% less Gold and captured cities pay out, but Production is 10% lower.
-- **Blood Elves:** mana addiction: -1 Happiness per city from the Age of the Third War until they control Arcane Crystals or the Sunwell is restored.
-- **High Elves:** cities are 25% stronger.
-- **Draenei:** exiles: a second Settler, a weaker capital, +25% against barbarians and demons, faster missionaries.
+- **Blood Elves:** mana addiction: -1 Happiness per city from the Age of the Third War until they control Arcane Crystals or the Sunwell is restored; each Magisters' Sanctum eases it (+1 Happiness).
+- **High Elves:** cities are 25% stronger and grow 10% faster.
+- **Draenei:** exiles: a second Settler, +25% against barbarians and demons, faster missionaries.
 - **Worgen:** units shift between human and worgen form (Worgen Stalker ↔ Gilnean Hunter, Gilnean Rifleman ↔ Worgen Ravager), and the curse lets worgen capture units they kill.
-- **Pandaren:** in the Age of the Dark Portal they choose the Tushui path (Alliance), the Huojin path (Horde) or neutrality.
-- **Dark Iron Dwarves:** Molten Fields feed their forges (+2 Production, +1 Gold), mined hills give +1 Production, and their siege engines are built 20% faster and fight 15% harder.
+- **Pandaren:** can embark from the start; in the Age of the Dark Portal they choose the Tushui path (Alliance), the Huojin path (Horde) or neutrality.
+- **Dark Iron Dwarves:** Molten Fields feed their forges (+1 Gold), mined hills give +1 Production, and their siege engines are built 20% faster and fight 10% harder.
 - **Kul Tirans:** the Proudmoore Admiralty: ships move one tile farther, fight 15% harder, see farther and are built 25% faster; coast tiles give +1 Gold.
 - **Zandalari Trolls:** an empire of gold: +1 Gold from jungle, +10% Gold and +15% Faith; jungle camps give Faith and Culture, and their dinosaur riders fight 10% harder.
 - **Alliance and Horde** fight 10% harder against each other.
 
 **Heroes:** every race can field one hero, as in Warcraft III: Uther the Lightbringer, Grom Hellscream, Malfurion Stormrage, Muradin Bronzebeard, Kelsey Steelspark, Baine Bloodhoof, Rokhan, Kael'thas Sunstrider, Alleria Windrunner, Chen Stormstout, Nathanos Blightcaller, Maraad, Gazlowe, Darius Crowley, Kel'Thuzad, Dagran Thaurissan, Daelin Proudmoore and Rastakhan. Heroes inspire nearby troops, grow stronger with the ages and have their own promotions.
 
-**Magic and travel:** **Mana** is a resource every race needs. Every capital gathers a little each turn, and each race has its own sources in buildings it already has: Moonwells, Voodoo Lounges, the Orcs' new Altar of Storms, Great Totems, Dwarven Forges, Tinker's Workshops, Goblin Bazaars, Crystal Sanctums, Necropolises and Ziggurats, Arcane Sanctums and Mage Towers (more with Arcane Crystals) and more. It is spent on each race's spellcasters and magic-touched units, on every hero (30 Mana), on magical buildings and wonders (Mage Tower, Arcane Laboratory, Mana Reactor, Karazhan, the Sunwell Plateau, the Nighthold...), on Mana choices in events (sealing a fel rift, warding granaries against the plague, holding back the Scourge), and on portals: units trained in a city with a **Mage Tower** can open a portal from one of your cities to another for 10 Mana.
+**Magic and travel:** **Mana** is a resource every race needs. Every capital gathers a little each turn, and each race has its own sources in buildings it already has: Moonwells, Voodoo Lounges, the Orcs' new Altar of Storms, Great Totems, Dwarven Forges, Tinker's Workshops, Goblin Bazaars, Crystal Sanctums, Necropolises and Ziggurats, Arcane Sanctums and Mage Towers (more with Arcane Crystals) and more. It is spent on each race's spellcasters and magic-touched units, on every hero (30 Mana), on magical buildings and wonders (Mage Tower, Arcane Laboratory, Mana Reactor, Karazhan, the Sunwell Plateau, the Nighthold...), on Mana choices in events (sealing a fel rift, warding granaries against the plague, holding back the Scourge), on surplus Mana whenever the ley lines swell (a civ holding 300+ Mana can turn it into Science, a Golden Age, or Culture and Faith), and on portals: units trained in a city with a **Mage Tower** can open a portal from one of your cities to another for 10 Mana.
 
 **Cleansing the land:** Plagued Land and Fel-Scorched Land can only be cleansed by a **Cleric**, bought with Faith. Every living race has its own: Northshire Cleric, Dwarven Priest, Decontaminator (Gnomes), Cenarion Druid, Anchorite, Harvest Witch, Lightwarden, Sunfury Priest, Earthen Shaman, Witch Doctor, Sunwalker, Mistweaver, the Goblins' Hazmat Crew, the Dark Irons' Flamekeeper, the Kul Tiran Tidesage and the Zandalari Loa Speaker. The undead don't cleanse.
 
@@ -53,7 +53,7 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 **Unique units and buildings for every race:**
 - **Orcs:** Grunt (Swordsman; heals when it kills), Wolf Rider (Outrider; pillages for free, no penalty against cities), Raider (Cavalry; chains and hooks: no penalty against cities, strong against riders), Pig Farm (Granary, +1 Production), War Mill (Workshop; +1 Production, faster military units).
 - **Trolls:** Headhunter (Ranger; stronger and faster in jungle), Troll Berserker (Musketeer; frenzied, heals on kills), Batrider (Gyrocopter; strong against land units), Voodoo Lounge (Shrine, +1 Gold, +1 Culture), Loa Shrine (Temple, +1 Culture).
-- **Tauren:** Tauren Warrior (Vanguard; much stronger, no Iron), Kodo Beast (Mounted Archer; War Drums aura), Wind Rider (Gyrocopter; longer range), Great Totem (Town Hall, +1 Faith), Spirit Lodge (Herb Garden, +1 Faith, +1 Food).
+- **Tauren:** Tauren Warrior (Vanguard; much stronger, no Iron), Kodo Beast (Mounted Archer; War Drums aura), Wind Rider (Gyrocopter; longer range), Great Totem (Town Hall, +1 Faith), Spirit Lodge (Herb Garden, +1 Faith, +1 Food, +1 Happiness).
 - **Forsaken:** Abomination (Vanguard; tough, heals on kills, no Iron), Meat Wagon (Catapult; faster), Deathstalker (Rifleman; ignores zones of control), Apothecarium (Herb Garden, +2 Science), Plague Cauldron (Foundry, +1 Science).
 - **Blood Elves:** Spellbreaker (Swordsman; strong against archers and mages), Blood Knight (Knight; heals on kills), Dragonhawk Rider (Gyrocopter; strong against land units), Magisters' Sanctum (Arcane Sanctum, +1 Science, +1 Culture), Mana Forge (Foundry, +1 Production, +1 Mana).
 - **Goblins:** Goblin Shredder (Peasant; faster, sees farther), Goblin Sapper (Cannon; devastating against cities), Goblin Zeppelin (Bomber Zeppelin; strong against cities), Goblin Bazaar (Market, +2 Gold), Trade Prince's Bank (Bank, +2 Gold).
@@ -62,11 +62,11 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Night Elves:** Huntress (Outrider; strong and fast in forests), Glaive Thrower (Ballista; range 3), Mountain Giant (War Golem; living stone, no Azerite, strong in forests), Moonwell (Shrine, +1 Food), Tree of Life (Keep, +2 Food, stronger).
 - **Draenei:** Vindicator (Vanguard; strong against barbarians and demons, heals neighbours), Elekk Rider (Knight; very strong but slow), Lightforged Warframe (War Golem; heals neighbours), Crystal Sanctum (Temple, +1 Science), Crystal Hall (Library, +1 Faith).
 - **Worgen:** Worgen Stalker (Swordsman; strong and fast in forests, no Iron), Gilnean Rifleman (Rifleman), Harvest Golem (War Golem; strong defender), Gilnean Bulwark (Walls, stronger, +1 Culture), Greymane Watchtower (Keep, +1 Culture, stronger).
-- **High Elves:** Farstrider (Ranger; strong in forests), Ranger-Lord (Mountaineer; strong in forests), Elven Destroyer (War Galley; stronger and faster), Runestone (Walls, stronger, +1 Science), Elven Spire (Mage Tower, +1 Culture).
+- **High Elves:** Farstrider (Ranger; strong in forests), Ranger-Lord (Mountaineer; strong in forests), Elven Destroyer (War Galley; stronger and faster), Runestone (Walls, stronger, +1 Science), Elven Spire (Mage Tower, +1 Culture, +1 Happiness).
 - **Pandaren:** Brewmaster (Vanguard; strong defender, no Iron), Shado-Pan Monk (Pikeman; 3 movement), Cloud Serpent Rider (Gryphon Rider; heals faster), Brewery (Granary, +1 Gold, +1 Happiness), Jade Pagoda (Temple, +1 Culture, +1 Happiness).
 - **Scourge:** Crypt Fiend (Mountaineer; webs flying units, heals on kills), Slaughterhouse (Foundry, +1 Production; needs blight).
 - **Dark Iron Dwarves:** Fireguard (Pikeman; strong in hills and on defence), Dark Iron Golem (War Golem; hits harder), Shadowforge Furnace (Blacksmith, +2 Production).
-- **Kul Tirans:** Kul Tiran Man-o'-War (Frigate; faster and better armed), Admiralty Gunner (Musketeer; attacks from ships without penalty), Admiralty Drydock (Shipyard; +1 Production, ships start with 15 XP).
+- **Kul Tirans:** Kul Tiran Man-o'-War (Frigate; faster and better armed), Admiralty Gunner (Musketeer; attacks from ships without penalty), Admiralty Drydock (Shipyard; +1 Production, +1 Happiness, ships start with 15 XP).
 - **Zandalari Trolls:** Raptor Rider (Outrider; fast, strong in jungle), Direhorn Rider (Knight; a battering charge with no penalty against cities), Golden Pyramid (Market, +1 Gold, +1 Culture).
 Each has its own map sprite and icon.
 
