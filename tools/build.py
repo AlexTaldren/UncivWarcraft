@@ -538,5 +538,12 @@ with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") 
                         "maxHeight": 2048, "paddingX": 2, "paddingY": 2, "duplicatePadding": True,
                         "filterMin": "MipMapLinearLinear", "filterMag": "MipMapLinearLinear"}, indent=1))
 shutil.copy(os.path.join(os.path.dirname(__file__), "README.md"), OUT)
+# music: royalty-free fantasy tracks played for every faction (Ambient/Peace/Menu moods)
+MUSIC = os.path.join(os.path.dirname(__file__), "music")
+if not os.path.isdir(MUSIC):          # in the repo, the tracks live at the root, not in tools/
+    MUSIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "music")
+if os.path.isdir(MUSIC):
+    shutil.copytree(MUSIC, os.path.join(OUT, "music"), dirs_exist_ok=True)
+    print("music tracks:", len(os.listdir(MUSIC)))
 print("nations:", len(majors), "city-states:", len(minors), "units:", len(files["Units"]),
       "buildings:", len(files["Buildings"]))

@@ -94,6 +94,10 @@ Each has its own map sprite and icon.
 
 **Warcraft names throughout**, drawn from the Warcraft II/III strategy games and World of Warcraft: techs (Iron, Steel and Mithril Forged Swords, Animal War Training, Long Rifles, Storm Hammers, Liquid Fire, Eye of Kilrogg…), units (Peasant, Militia, Ballista, Gryphon Rider, Mortar Team, Siege Engine, Demolisher, Flying Machine, Giant Turtle, Juggernaught…), buildings (Town Hall, Keep, Blacksmith, Arcane Sanctum, Mage Tower, Shipyard, Guard Tower, Beastiary, Auction House, Coin Forge, Hall of Relics…), policies and unit types without modern terms, 40 world wonders (Karazhan, Ulduar, Icecrown Citadel, Zul'Gurub…), resources (Thorium, Azerite, Mageweave, Truesilver…), and Great People named after each race's own heroes.
 
+## Music
+
+A royalty-free fantasy soundtrack ("Winds of Azeroth", five tracks) plays for every faction, whichever race you choose: four ambient tracks during the game and a shorter one on the main menu.
+
 ## Installing
 
 **In Unciv (any device):** open *Mods*, search for **UncivWarcraft** and press *Download*. Or use *Download mod from URL* and paste this repository's GitHub address.

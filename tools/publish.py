@@ -22,5 +22,5 @@ if len(sys.argv) > 3:
 here = os.path.dirname(os.path.abspath(__file__))
 tools = os.path.join(repo, "tools")
 shutil.rmtree(tools, ignore_errors=True)
-shutil.copytree(here, tools, ignore=shutil.ignore_patterns("__pycache__", "*.class", "svg", "node_modules"))
+shutil.copytree(here, tools, ignore=shutil.ignore_patterns("__pycache__", "*.class", "svg", "node_modules", "music"))
 print("published", src, "->", repo)
