@@ -7,7 +7,7 @@ are original; they follow the broad Warcraft look, not any specific Blizzard uni
 """
 import math
 from wc_style_units import *          # noqa: F401,F403  (shared palette, parts and Fig)
-from wc_style_units import Fig, frame
+from wc_style_units import Fig, frame, CTX, headfig, HAIR, sword, kite_shield, spear
 from paint import mix, grey
 
 BRASS = (205, 165, 80)
@@ -116,6 +116,17 @@ def lantern(f, x, y, glow=(255, 210, 120)):
     f.paint(f.poly([(x - 3.6, y - 4.5), (x + 3.6, y - 4.5), (x + 2.4, y - 6.4), (x - 2.4, y - 6.4)]), (70, 60, 50), mat="metal", outline=0.3)
 
 
+def moonglaive(f, x, y, r=13):
+    """Night elf moonglaive: three crescent blades around a central grip."""
+    for k in range(3):
+        a = math.radians(90 + k * 120)
+        tip = (x + math.cos(a) * r, y - math.sin(a) * r)
+        a2 = a + math.radians(70)
+        mid = (x + math.cos(a2) * r * 0.75, y - math.sin(a2) * r * 0.75)
+        f.paint(f.curve([(x + math.cos(a) * 3, y - math.sin(a) * 3), mid, tip], 2.6, 0.6), STEEL, mat="metal", outline=0.6)
+    f.paint(f.ell(x, y, 3.2, 3.2), LEATHER, mat="leather", outline=0.5)
+
+
 def walking_stick(f, base, top, col=(120, 82, 48)):
     """A traveller's staff: a stout, slightly crooked wooden stick with a knotted top."""
     from wc_style_units import pole
@@ -150,6 +161,11 @@ def cape(f, top_l, top_r, bottom_y, swirl=0, layer="l2", dark=0.85):
 
 # ================================================================== headgear
 def human_hat(f, kind, x=5, y=-75):
+    f, x, y = headfig(f, x, y)
+    if CTX.spec.get("hat_swap"):
+        kind = CTX.spec["hat_swap"](f, x, y, kind)
+        if not kind:
+            return
     if kind == "sallet":            # rounded helm with a visor slit
         f.paint(f.poly([(x - 10, y + 4), (x - 10, y - 6), (x - 2, y - 12), (x + 8, y - 10), (x + 12, y - 2), (x + 12, y + 3), (x + 2, y + 1)]),
                 STEEL, mat="metal")
@@ -181,6 +197,11 @@ def human_hat(f, kind, x=5, y=-75):
 
 
 def orc_hat(f, kind, x=18, y=-67):
+    f, x, y = headfig(f, x, y)
+    if CTX.spec.get("hat_swap"):
+        kind = CTX.spec["hat_swap"](f, x, y, kind)
+        if not kind:
+            return
     if kind == "goggles":
         f.paint(f.poly([(x - 9, y - 6), (x + 12, y - 5), (x + 12, y - 2), (x - 9, y - 3)]), LEATHER, mat="leather", outline=0.5)
         f.paint(f.ell(x + 8, y - 4, 3.2, 3), BRASS, mat="gold", outline=0.4)
@@ -204,6 +225,8 @@ def orc_hat(f, kind, x=18, y=-67):
 
 
 def warpaint(f, x=18, y=-67):
+    if CTX.race:
+        return
     f.paint(f.poly([(x + 3, y - 3), (x + 13, y - 1), (x + 12, y + 1), (x + 3, y)]), WARPAINT, mat="flat", outline=0)
 
 
@@ -262,7 +285,7 @@ def h_soldier(c, fx, fy, u=1.0, armor="plate", tabard=True, hat="kettle", beard=
         human_head(f, 5, -75, hood=True, beard=beard)
     else:
         base_hat = hat if hat in ("kettle", "hair", "cap") else ("hair" if plain_hair else None)
-        human_head(f, 5, -75, hat=base_hat, beard=beard, hair=plain_hair or (110, 70, 35))
+        human_head(f, 5, -75, hat=base_hat, beard=beard, hair=plain_hair or HAIR)
         if hat in SPECIAL:
             human_hat(f, hat)
     # weapon and near arm
@@ -307,6 +330,13 @@ def h_soldier(c, fx, fy, u=1.0, armor="plate", tabard=True, hat="kettle", beard=
         arm(f, (4, -58), (12, -48), (18, -52), col, mat, glove, layer_arm)
         from wc_style_units import sword as _sw
         _sw(f, (18, -50), (30, -84), 2.4, 5)
+    elif weapon == "claws":        # bare claws raised to strike
+        arm(f, (4, -58), (14, -60), (24, -70), col, mat, glove, layer_arm)
+        for k in range(3):
+            f.paint(f.curve([(24 + k * 2.5, -74), (29 + k * 2.5, -78), (32 + k * 2.5, -74)], 1.1, 0.4), BONE, mat="bone", outline=0.5)
+    elif weapon == "glaive":       # a moonglaive: three curved blades round a grip
+        moonglaive(f, 26, -60)
+        arm(f, (4, -58), (14, -54), (24, -58), col, mat, glove, layer_arm)
     elif weapon == "stick":
         walking_stick(f, (28, -2), (24, -84))
         arm(f, (4, -58), (12, -48), (25, -60), col, mat, glove, layer_arm)
@@ -328,7 +358,7 @@ def arm(f, sh, el, hand, col, mat, glove, layer="base"):
         human_arm(f, sh, el, hand, col, mat, glove)
 
 
-def h_robed(c, fx, fy, u=1.0, robe_col=L_MAIN, robe_layer="l2", hat="hair", hair=(110, 70, 35), beard=None,
+def h_robed(c, fx, fy, u=1.0, robe_col=L_MAIN, robe_layer="l2", hat="hair", hair=HAIR, beard=None,
             prop=None, glow=None, mantle=True, hood=False, hem=("l1", L_MAIN, "gold")):
     """A robed human civilian: prophets, scholars, inquisitors, clerics, merchants."""
     f = Fig(c, fx, fy, u)
@@ -382,9 +412,14 @@ def h_rider(c, fx, fy, u=1.0, kind="outrider"):
     shadow(f, 34)
     from wc_style_units import horse
     coats = {"outrider": (150, 100, 60), "archer": (120, 85, 55), "lancer": (90, 70, 60), "silver": (235, 232, 225)}
-    horse(f, coat=coats[kind], barding=kind in ("lancer", "silver"))
-    r = Fig(c, *f.p(-4, -22), u * 0.88)
-    armor = "plate" if kind in ("lancer", "silver") else "leather"
+    if CTX.spec.get("mount"):
+        sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("lancer", "silver", "knight"))
+        ry = CTX.spec.get("body", (1, 1))[1]
+        r = Fig(c, sx_ - 2 * u, sy_ + 27 * u * 0.88 * ry, u * 0.88)
+    else:
+        horse(f, coat=coats.get(kind, (120, 85, 55)), barding=kind in ("lancer", "silver", "knight"))
+        r = Fig(c, *f.p(-4, -22), u * 0.88)
+    armor = "plate" if kind in ("lancer", "silver", "knight") else "leather"
     col, mat, glove = (STEEL, "metal", None) if armor == "plate" else (LEATHER, "leather", HSKIN)
     if kind == "silver":     # holy hammer raised behind
         human_arm(r, (-8, -60), (-18, -66), (-14, -80), STEEL, "metal", None, dark=0.8)
@@ -414,6 +449,21 @@ def h_rider(c, fx, fy, u=1.0, kind="outrider"):
         from wc_style_units import bow
         bow(r, (30, -60), (22, -92), (22, -28), string_to=(14, -60))
         human_arm(r, (4, -62), (18, -61), (30, -60), col, mat, glove)
+    elif kind == "glaive":         # night elf huntress: a moonglaive held high
+        human_head(r, 5, -75)
+        moonglaive(r, 28, -78, 12)
+        human_arm(r, (4, -60), (16, -66), (26, -76), col, mat, glove)
+    elif kind == "knight":         # sword raised, kite shield
+        human_head(r, 5, -75)
+        human_hat(r, "sallet")
+        sword(r, (22, -50), (36, -88), 2.6, 6)
+        human_arm(r, (4, -58), (12, -48), (22, -50), col, mat, glove)
+        kite_shield(r, 16, -44, 0.9)
+    elif kind == "cavalry":        # sabre and pistol era
+        human_head(r, 5, -75)
+        human_hat(r, "plumed")
+        sword(r, (20, -56), (40, -86), 2.0, 5)
+        human_arm(r, (4, -58), (12, -50), (20, -56), col, mat, glove)
 
 
 # ================================================================== orc figures
@@ -569,10 +619,15 @@ def o_rider(c, fx, fy, u=1.0, kind="archer"):
     from wc_style_units import wolf, orc_torso, orc_head, orc_arm, fist, spiked_pauldron, bow, big_axe
     f = Fig(c, fx, fy, u * 1.08)
     shadow(f, 36)
-    wolf(f, fur=(70, 66, 64) if kind in ("knight", "raider") else (92, 84, 78))
-    if kind in ("knight", "raider", "lancer"):     # iron barding on the wolf's chest
-        f.paint(f.poly([(14, -56), (34, -52), (36, -40), (16, -36)]), OIRON, mat="metal", outline=0.6)
-    r = Fig(c, *f.p(-2, -16), u * 0.84)
+    if CTX.spec.get("mount"):
+        sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("knight", "lancer", "cavalry"))
+        ry = CTX.spec.get("body", (1, 1))[1]
+        r = Fig(c, sx_ - 2 * u, sy_ + 29 * u * 0.84 * ry, u * 0.84)
+    else:
+        wolf(f, fur=(70, 66, 64) if kind in ("knight", "raider") else (92, 84, 78))
+        if kind in ("knight", "raider", "lancer"):     # iron barding on the wolf's chest
+            f.paint(f.poly([(14, -56), (34, -52), (36, -40), (16, -36)]), OIRON, mat="metal", outline=0.6)
+        r = Fig(c, *f.p(-2, -16), u * 0.84)
     if kind == "raider":
         orc_arm(r, (-16, -62), (-26, -56), (-24, -72), dark=0.75)
         fist(r, -24, -74, dark=0.75)
@@ -583,7 +638,18 @@ def o_rider(c, fx, fy, u=1.0, kind="archer"):
     r.paint(r.cap((16, -24), (15, -10), 7, 6.5), OSKIN, mat="skin")
     boot(r, 15, -4, DLEATHER, 1.0)
     spiked_pauldron(r, 0, -66, 0.95, spikes=3, trim=kind != "archer", color=OIRON if kind != "archer" else IRON)
-    if kind == "archer":
+    if kind == "outrider":         # light rider with a spear
+        spear(r, (12, -20), (42, -104), 1.6, feathers=True)
+        orc_arm(r, (6, -58), (16, -48), (24, -56))
+        orc_head(r, 19, -66)
+        fist(r, 25, -56)
+    elif kind == "cavalry":        # heavy rider, axe raised
+        big_axe(r, (24, -40), (36, -96), 0.9)
+        orc_arm(r, (6, -58), (14, -50), (25, -44))
+        orc_head(r, 19, -66, hair=None)
+        orc_hat(r, "skullcap", 19, -66)
+        fist(r, 26, -42)
+    elif kind == "archer":
         bow(r, (34, -62), (26, -98), (26, -26), string_to=(12, -64))
         orc_arm(r, (6, -60), (20, -63), (32, -62))
         orc_head(r, 19, -66)
@@ -626,7 +692,7 @@ def wheel(f, x, y, r, col=WOOD):
 def crewman(f, x, race, s=0.38):
     """A tiny crew figure standing beside an engine."""
     c = f.c
-    if race == "Orcs":
+    if race == "Orcs" or CTX.spec.get("family") == "brute":
         sub = Fig(c, *f.p(x, 0), f.u * s)
         from wc_style_units import orc_legs, orc_torso, orc_head, orc_arm, fist, loincloth
         orc_legs(sub, near=False); orc_torso(sub, loin=False); orc_legs(sub, far=False); loincloth(sub)
@@ -737,20 +803,32 @@ def grom(c, fx, fy, u=1.0):
 H, O = "Humans", "Orcs"
 
 
+class R:
+    """A recipe: a figure function plus its settings (kept so other races can adapt them)."""
+    def __init__(self, fn, kw, scale=1.0):
+        self.fn, self.kw, self.scale = fn, kw, scale
+
+    def __call__(self, c, fx, fy, u):
+        return self.fn(c, fx, fy, u * self.scale, **self.kw)
+
+    def but(self, **changes):
+        return R(self.fn, {**self.kw, **changes}, self.scale)
+
+
 def hs(**kw):
-    return lambda c, fx, fy, u: h_soldier(c, fx, fy, u, **kw)
+    return R(h_soldier, kw)
 
 
 def os_(**kw):
-    return lambda c, fx, fy, u: o_soldier(c, fx, fy, u * 0.95, **kw)
+    return R(o_soldier, kw, 0.95)
 
 
 def hr(**kw):
-    return lambda c, fx, fy, u: h_robed(c, fx, fy, u, **kw)
+    return R(h_robed, kw)
 
 
 def or_(**kw):
-    return lambda c, fx, fy, u: o_robed(c, fx, fy, u * 0.92, **kw)
+    return R(o_robed, kw, 0.92)
 
 
 # name -> (draw(c, fx, fy, u), archetype); archetype picks the size reference
@@ -769,7 +847,7 @@ RECIPES = {
     "Shock Trooper-Humans": (hs(armor="plate", hat="plumed", weapon="rifle", back="pack", capecol=True), "foot"),
     "Grenadier-Humans": (hs(armor="coat", hat="kettle", weapon="grenade", pauldron=False, back="bandolier"), "foot"),
     "Mountaineer-Humans": (hs(armor="leather", hat="goggles", weapon="sniper", pauldron=False, back="pack"), "foot"),
-    "Kul Tiran Marine-Humans": (hs(armor="coat", hat="tricorn", weapon="rifle", pauldron=False, back="bandolier", beard=(110, 70, 35)), "foot"),
+    "Kul Tiran Marine-Humans": (hs(armor="coat", hat="tricorn", weapon="rifle", pauldron=False, back="bandolier", beard=HAIR), "foot"),
     "Skyguard-Humans": (hs(armor="leather", hat="goggles", weapon="rifle", pauldron=False, back="pack", capecol=True), "foot"),
     "Siegebreaker-Humans": (hs(armor="plate", hat="great_helm", weapon="mortar", back="pack"), "foot"),
     "Swordsman-Humans": (hs(armor="plate", hat="sallet", weapon="sword", shield="kite"), "foot"),
@@ -787,11 +865,11 @@ RECIPES = {
     "Great Artist-Humans": (hr(robe_col=L_MAIN, hat="feather_cap", prop="lute", mantle=False), "civ"),
     "Great Engineer-Humans": (hs(armor="cloth", tabard=False, hat="goggles", weapon="hammer", pauldron=False, back="pack"), "civ"),
     "Great General-Humans": (hs(armor="plate", hat="crown", weapon="banner", capecol=True, beard=(120, 80, 40)), "civ"),
-    "Great Merchant-Humans": (hr(robe_col=L_MAIN, hat="hair", prop="coins", beard=(110, 70, 35)), "civ"),
+    "Great Merchant-Humans": (hr(robe_col=L_MAIN, hat="hair", prop="coins", beard=HAIR), "civ"),
     "Great Prophet-Humans": (hr(robe_col=(240, 235, 222), robe_layer="base", hat="mitre", prop="staff", glow=(255, 230, 140)), "civ"),
     "Archmage": (hr(robe_col=L_MAIN, hat="hair", hair=(205, 205, 212), beard=(232, 232, 238), prop="book",
                     glow=(170, 140, 255)), "civ"),
-    "Great Admiral-Humans": (hr(robe_col=L_MAIN, hat="tricorn", prop="spyglass", beard=(110, 70, 35)), "civ"),
+    "Great Admiral-Humans": (hr(robe_col=L_MAIN, hat="tricorn", prop="spyglass", beard=HAIR), "civ"),
     "Inquisitor-Humans": (hr(robe_col=(70, 60, 60), robe_layer="base", hood=True, prop="censer", glow=(255, 200, 110)), "civ"),
     "Northshire Cleric": (hr(robe_col=(240, 235, 222), robe_layer="base", hat="hair", prop="light"), "civ"),
     "Uther the Lightbringer": (uther, "foot"),

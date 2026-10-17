@@ -586,6 +586,10 @@ print("painted Human/Orc sprites:", n)
 import wc_style_more
 n = wc_style_more.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
 print("painted Human/Orc sprites (rest of the roster):", n)
+# The other 16 races in the same pixel-art style (race bodies, faces, gear and mounts)
+import wc_style_races
+n = wc_style_races.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
+print("pixel-art race sprites:", n)
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)

@@ -10,35 +10,74 @@ Each function draws one unit into a Canvas at feet position (fx, fy), facing rig
 import math
 from paint import Canvas, grey, mix, S
 
+# ------------------------------------------------------------------ race context
+class _Ctx:
+    """The race being drawn. Humans and Orcs leave it empty, so their sprites are
+    exactly as designed; wc_style_races sets it to recolour skin, hair and gear, change
+    body proportions and swap in the race's own head and mount."""
+    def __init__(self):
+        self.race, self.spec, self.colors = None, {}, {}
+
+
+CTX = _Ctx()
+
+
+class Dyn:
+    """A palette colour that the current race may override (a 3-item sequence, so it
+    works anywhere a colour tuple does)."""
+    def __init__(self, key, default):
+        self.key, self.default = key, tuple(default)
+
+    def _v(self):
+        return CTX.colors.get(self.key, self.default)
+
+    def __len__(self):
+        return 3
+
+    def __getitem__(self, i):
+        return self._v()[i]
+
+    def __iter__(self):
+        return iter(self._v())
+
+    def __repr__(self):
+        return "Dyn(%s=%s)" % (self.key, self._v())
+
+
 # ------------------------------------------------------------------ palette
-STEEL = (178, 188, 205)
-DSTEEL = (120, 128, 145)
-IRON = (112, 102, 96)
+STEEL = Dyn("steel", (178, 188, 205))
+DSTEEL = Dyn("dsteel", (120, 128, 145))
+IRON = Dyn("iron", (112, 102, 96))
 RUST = (130, 82, 50)
-LEATHER = (125, 78, 42)
-DLEATHER = (84, 52, 30)
-WOOD = (150, 100, 55)
-BONE = (238, 228, 196)
-HSKIN = (238, 186, 146)
-OSKIN = (98, 158, 58)
-OHAIR = (34, 28, 24)
-CLOTH_BROWN = (150, 112, 70)
-CLOTH_TAN = (200, 170, 120)
-GOLD = (240, 200, 90)
+LEATHER = Dyn("leather", (125, 78, 42))
+DLEATHER = Dyn("dleather", (84, 52, 30))
+WOOD = Dyn("wood", (150, 100, 55))
+BONE = Dyn("bone", (238, 228, 196))
+HSKIN = Dyn("skin", (238, 186, 146))
+OSKIN = Dyn("oskin", (98, 158, 58))
+OHAIR = Dyn("ohair", (34, 28, 24))
+HAIR = Dyn("hair", (110, 70, 35))
+CLOTH_BROWN = Dyn("cloth_brown", (150, 112, 70))
+CLOTH_TAN = Dyn("cloth_tan", (200, 170, 120))
+GOLD = Dyn("gold", (240, 200, 90))
 L_MAIN = grey(0.96)     # tinted-layer greys
 L_DARK = grey(0.72)
 
 
 class Fig:
-    """Local coordinates: feet at (0, 0), y up is negative, about 1 px per unit at u=1."""
-    def __init__(self, c, fx, fy, u=1.0, flip=False):
+    """Local coordinates: feet at (0, 0), y up is negative, about 1 px per unit at u=1.
+    The current race may stretch the body (CTX.spec["body"] = (sx, sy)); heads are
+    drawn on a separate, uniformly scaled Fig (see headfig) so they stay round."""
+    def __init__(self, c, fx, fy, u=1.0, flip=False, uniform=False):
         self.c, self.fx, self.fy, self.u = c, fx, fy, u
+        self.sx, self.sy = (1.0, 1.0) if uniform else CTX.spec.get("body", (1.0, 1.0))
+        self.head = uniform
 
     def p(self, x, y):
-        return (self.fx + x * self.u, self.fy + y * self.u)
+        return (self.fx + x * self.u * self.sx, self.fy + y * self.u * self.sy)
 
     def r(self, v):
-        return v * self.u
+        return v * self.u * (self.sx + self.sy) / 2
 
     # shape shortcuts in local coordinates
     def poly(self, pts, m=None):
@@ -46,7 +85,7 @@ class Fig:
 
     def ell(self, x, y, rx, ry, m=None, rot=0):
         X, Y = self.p(x, y)
-        return self.c.ellipse(X, Y, self.r(rx), self.r(ry), m, rot)
+        return self.c.ellipse(X, Y, rx * self.u * self.sx, ry * self.u * self.sy, m, rot)
 
     def cap(self, a, b, r1, r2=None, m=None):
         return self.c.capsule(self.p(*a), self.p(*b), self.r(r1), None if r2 is None else self.r(r2), m)
@@ -56,6 +95,14 @@ class Fig:
 
     def paint(self, m, color, **kw):
         self.c.paint(m, color, **kw)
+
+
+def headfig(f, x, y):
+    """(fig, x, y) to draw a head or headgear at (x, y) of body fig f. With a race
+    context, a uniform Fig centred on the head, scaled by the race's head size."""
+    if not CTX.race or f.head:
+        return f, x, y
+    return Fig(f.c, *f.p(x, y), f.u * CTX.spec.get("head", 1.0), uniform=True), 0, 0
 
 
 # ================================================================== shared parts
@@ -104,6 +151,9 @@ def loincloth(f, x=0):
 
 
 def orc_head(f, x=16, y=-73, skin=OSKIN, hair="topknot", helm=False, eye=(255, 70, 40)):
+    f, x, y = headfig(f, x, y)
+    if CTX.spec.get("bface"):
+        return CTX.spec["bface"](f, x, y, hair=hair, helm=helm)
     # pointed ear, swept back
     f.paint(f.poly([(x - 6, y - 2), (x - 18, y - 8), (x - 5, y + 4)]), skin, mat="skin", dark=0.9)
     # skull
@@ -196,11 +246,20 @@ def round_pauldron(f, x, y, size=1.0, dark=1.0, trim=True, color=STEEL):
     f.paint(f.ell(x - 3 * size, y - 3 * size, 3 * size, 2 * size), (255, 255, 255), mat="flat", outline=0, dark=0.9)
 
 
-def human_head(f, x=4, y=-74, hat=None, beard=None, skin=HSKIN, hood=False, hair=(110, 70, 35)):
-    f.paint(f.ell(x, y, 8.5, 9), skin, mat="skin")
-    f.paint(f.ell(x + 7.5, y + 1, 2.2, 2.6), skin, mat="skin", outline=0.5)            # nose
-    f.paint(f.ell(x + 4, y - 1.5, 1.1, 1.4), (40, 30, 30), mat="flat", outline=0)     # eye
-    f.paint(f.poly([(x + 2, y - 4.5), (x + 7, y - 4.5), (x + 7, y - 3.5), (x + 2, y - 3.5)]), (90, 60, 40), mat="flat", outline=0)
+def human_head(f, x=4, y=-74, hat=None, beard=None, skin=HSKIN, hood=False, hair=HAIR):
+    f, x, y = headfig(f, x, y)
+    face = CTX.spec.get("face")
+    if face:
+        hat = face(f, x, y, hat=hat, beard=beard, hood=hood, hair=hair)
+        beard = None
+        if hat not in (None, "kettle", "hair", "cap", "hood") and not hood:
+            CTX.spec["draw_hat"](f, hat, x, y)
+            hat = None
+    else:
+        f.paint(f.ell(x, y, 8.5, 9), skin, mat="skin")
+        f.paint(f.ell(x + 7.5, y + 1, 2.2, 2.6), skin, mat="skin", outline=0.5)            # nose
+        f.paint(f.ell(x + 4, y - 1.5, 1.1, 1.4), (40, 30, 30), mat="flat", outline=0)     # eye
+        f.paint(f.poly([(x + 2, y - 4.5), (x + 7, y - 4.5), (x + 7, y - 3.5), (x + 2, y - 3.5)]), (90, 60, 40), mat="flat", outline=0)
     if beard:
         f.paint(f.poly([(x - 6, y + 1), (x + 8, y + 3), (x + 6, y + 10), (x - 1, y + 11), (x - 6, y + 6)]), beard, mat="fur")
         f.paint(f.ell(x + 4, y - 1.5, 1.1, 1.4), (40, 30, 30), mat="flat", outline=0)
@@ -219,6 +278,9 @@ def human_head(f, x=4, y=-74, hat=None, beard=None, skin=HSKIN, hood=False, hair
 
 
 def great_helm(f, x=4, y=-75, plume=True):
+    f, x, y = headfig(f, x, y)
+    if CTX.spec.get("helm_swap") and CTX.spec["helm_swap"](f, x, y, "great_helm") is None:
+        return
     if plume:
         f.paint(f.curve([(x - 1, y - 10), (x - 8, y - 18), (x - 18, y - 13), (x - 19, y - 2)], 3.6, 1.8), L_MAIN, layer="l2", mat="cloth")
     f.paint(f.poly([(x - 9, y + 8), (x - 10, y - 4), (x - 5, y - 11), (x + 5, y - 11), (x + 11, y - 5), (x + 12, y + 8)]), STEEL, mat="metal")
@@ -584,7 +646,7 @@ def settler_h(c, fx, fy, u=1.0):
     human_torso(f, "cloth", tabard=False, cloth=CLOTH_BROWN)
     f.paint(f.poly([(-13, -66), (12, -66), (14, -24), (-15, -26)]), L_MAIN, layer="l2", mat="cloth")   # travel cloak
     human_legs(f, "cloth", far=False)
-    human_head(f, 5, -75, hat="hair", beard=(110, 70, 35))
+    human_head(f, 5, -75, hat="hair", beard=HAIR)
     pole(f, (22, 0), (20, -84), 1.8)
     human_arm(f, (4, -60), (12, -48), (21, -50), CLOTH_BROWN, "cloth", HSKIN)
 
