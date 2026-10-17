@@ -12,7 +12,7 @@ image exists, so every race gets its own "Camp-<race>" / "Fort-<race>" (and the 
 city centers (citycenters.STYLES). Original pixel art; Warcraft designs are only a guide
 to what each people builds.
 """
-import colorsys, math, os, random
+import colorsys, math, os, random, zlib
 from PIL import Image, ImageDraw
 import late_units as LU
 from mounts import Paint, shade
@@ -106,7 +106,7 @@ def style_ship(ls, race, unit):
     stern = max(wood, key=lambda p: (p[0] - p[1] * 0.2))
     top = min(sail | wood, key=lambda p: p[1]) if sail else stern
     sc = (sum(sx) / len(sx), sum(sy) / len(sy))                    # sail centroid
-    rng = random.Random(hash((race, unit)) & 0xffff)
+    rng = random.Random(zlib.crc32((race + unit).encode()))
     props = st["props"]
     acc = st["acc"]
     part = Image.new("RGBA", base.size)
