@@ -145,20 +145,8 @@ for p in files["UnitPromotions"]:
     if "unitTypes" in p:
         p["unitTypes"] = [t for t in p["unitTypes"] if t in used_types]
 
-VICTORY_TEXT = {
-    "Scientific": ("Build the Titan Ascension Project and assemble the Titan vessel to win!",
-                   "You have achieved victory through mastery of the arcane and the mechanical! You have "
-                   "unlocked the secrets of the Titans and led your people beyond the skies of Azeroth. "
-                   "Your triumph will be remembered as long as the stars burn in the night sky!"),
-    "Cultural": ("Complete 5 policy branches and restore the Well of Eternity to win!", None),
-    "Diplomatic": ("Build the Grand Council of Azeroth and be voted its leader to win!", None),
-}
-for v in files["VictoryTypes"]:
-    if v["name"] in VICTORY_TEXT:
-        header, text = VICTORY_TEXT[v["name"]]
-        v["victoryScreenHeader"] = header
-        if text:
-            v["victoryString"] = text
+import wc_endings   # victory/defeat texts per victory type (Oct 2026)
+wc_endings.apply_victories(files["VictoryTypes"])
 
 def fix_text(o):
     if isinstance(o, dict):
@@ -613,8 +601,9 @@ n = RW.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), Atlas(os.path.join(S
 print("race camps and forts:", n)
 import race_improvements
 n = race_improvements.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), [x["name"] for x in F.NATIONS],
-                                  [c[0] for c in F.CITY_STATES])
-print("race farms, mines, lumber mills, trading posts and pastures:", n)
+                                  [c[0] for c in F.CITY_STATES], Atlas(os.path.join(SRC, "Tilesets.atlas")), R.ALL)
+print("race farms, mines, lumber mills, trading posts, pastures, plantations, quarries, fishing boats:", n)
+print("English text for built-in messages:", wc_endings.write_english(J))
 print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
 # no art for the removed submarines (renamed stock sprites, icons, promotion icons)
 _dead = tuple(sorted(SUBS | {p.rsplit(" ", 1)[0] for p in _sub_promos}))

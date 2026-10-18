@@ -14,8 +14,8 @@
       "Arcane Thruster",
       "Arcane Thruster"
     ],
-    "victoryString": "You have achieved victory through mastery of the arcane and the mechanical! You have unlocked the secrets of the Titans and led your people beyond the skies of Azeroth. Your triumph will be remembered as long as the stars burn in the night sky!",
-    "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    "victoryString": "The Titan vessel rises on a column of arcane fire, and Azeroth watches in silence. Your artificers and magi have unlocked what the makers left behind, and your people sail beyond the Great Dark to stand among the stars. The bards will need new songs; the old ones are too small.",
+    "defeatString": "Another people's vessel has climbed into the sky, carrying the secrets of the Titans with it. Your workshops fall quiet and your scholars burn their notes. Yet the stars are patient, and so are your people. One day they will build again, and follow."
   },
   {
     "name": "Cultural",
@@ -24,8 +24,8 @@
       "Complete [5] Policy branches",
       "Build [Well of Eternity]"
     ],
-    "victoryString": "You have achieved victory through the awesome power of your Culture. Your civilization's greatness - the magnificence of its monuments and the power of its artists - have astounded the world! Poets will honor you as long as beauty brings gladness to a weary heart.",
-    "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    "victoryString": "The Well of Eternity shines again, and its light carries your name to every corner of Azeroth. Your poets, priests and loremasters have done what no army could: the world now sings your songs, keeps your holy days and tells your histories as its own.",
+    "defeatString": "The Well of Eternity has been restored, but not by your hand. Your songs are fading from the taverns and your libraries gather dust. Still, a story is never truly lost while one keeper remembers it. Your people will tell it again."
   },
   {
     "name": "Domination",
@@ -33,8 +33,8 @@
     "milestones": [
       "Capture all capitals"
     ],
-    "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
-    "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    "victoryString": "The banners of every rival capital lie torn at your feet. From the frozen wastes of Northrend to the sands of Tanaris, one power rules Azeroth, and it is yours. Let the war drums fall silent. There is no one left to answer them.",
+    "defeatString": "Your capital has fallen and your banners burn. Your armies are scattered across Azeroth, and the conquerors write the histories now. But in hidden valleys and forgotten caves, your people sharpen their blades and wait for the day of reckoning."
   },
   {
     "name": "Diplomatic",
@@ -43,8 +43,8 @@
       "Anyone should build [Grand Council of Azeroth]",
       "Win diplomatic vote"
     ],
-    "victoryString": "You have triumphed over your foes through the art of diplomacy! Your cunning and wisdom have earned you great friends - and divided and sown confusion among your enemies! Forever will you be remembered as the leader who brought peace to this weary world!",
-    "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    "victoryString": "The Grand Council of Azeroth has spoken, and every banner in the hall dips toward yours. Alliance, Horde and all who stand between have chosen you to lead them. You have won the world without a single siege, and your enemies are left wondering when they lost.",
+    "defeatString": "The Grand Council of Azeroth has chosen another to lead. Your envoys return home with empty hands and bitter words. But councils change their minds, and alliances are never made of stone. Your people will be heard again."
   },
   {
     "name": "Time",
@@ -52,7 +52,7 @@
     "milestones": [
       "Have highest score after max turns"
     ],
-    "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
-    "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    "victoryString": "The ages have turned, and when the sands of time settle, your people stand tallest. No dragonflight, no prophet and no conqueror can deny it: this era of Azeroth belongs to you.",
+    "defeatString": "The ages have turned, and the chronicles of Azeroth name another people as the greatest of this era. Your people endure, and the Timeways are long. Their hour will come."
   }
 ]
