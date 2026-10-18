@@ -611,6 +611,10 @@ with open(os.path.join(J, "TileSets", "HexaRealm.json")) as f:
 n = RW.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), Atlas(os.path.join(SRC, "Tilesets.atlas")),
                    [x["name"] for x in F.NATIONS], [c[0] for c in F.CITY_STATES], R.ALL, _rv)
 print("race camps and forts:", n)
+import race_improvements
+n = race_improvements.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), [x["name"] for x in F.NATIONS],
+                                  [c[0] for c in F.CITY_STATES])
+print("race farms, mines, lumber mills, trading posts and pastures:", n)
 print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
 # no art for the removed submarines (renamed stock sprites, icons, promotion icons)
 _dead = tuple(sorted(SUBS | {p.rsplit(" ", 1)[0] for p in _sub_promos}))

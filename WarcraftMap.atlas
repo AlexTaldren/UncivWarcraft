@@ -3287,49 +3287,49 @@ TileSets/AbsoluteUnits/Units/Great Scientist-Age of the Lich King-2
   index: -1
 TileSets/AbsoluteUnits/Units/Iron Colossus
   rotate: false
-  xy: 953, 1432
+  xy: 1352, 1696
   size: 64, 84
   orig: 64, 84
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Iron Colossus-1
   rotate: false
-  xy: 809, 1439
+  xy: 1385, 1532
   size: 64, 84
   orig: 64, 84
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Iron Colossus-2
   rotate: false
-  xy: 881, 1384
+  xy: 1025, 1440
   size: 64, 84
   orig: 64, 84
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ironclad
   rotate: false
-  xy: 953, 1368
+  xy: 1025, 1532
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ironclad-2
   rotate: false
-  xy: 737, 1404
+  xy: 1097, 1532
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Juggernaught
   rotate: false
-  xy: 809, 1375
+  xy: 1097, 1468
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Juggernaught-2
   rotate: false
-  xy: 809, 1311
+  xy: 1025, 1376
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -3357,21 +3357,21 @@ TileSets/AbsoluteUnits/Units/Knight-Barbarians-2
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Man-o'-War
   rotate: false
-  xy: 809, 1247
+  xy: 665, 498
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Man-o'-War-1
   rotate: false
-  xy: 881, 1192
+  xy: 724, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Kul Tiran Man-o'-War-2
   rotate: false
-  xy: 953, 1167
+  xy: 724, 370
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -3399,28 +3399,28 @@ TileSets/AbsoluteUnits/Units/Lancer-Barbarians-2
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat
   rotate: false
-  xy: 809, 1119
+  xy: 1457, 1596
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat-1
   rotate: false
-  xy: 953, 1039
+  xy: 1457, 1468
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat-2
   rotate: false
-  xy: 737, 1076
+  xy: 1424, 1788
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longboat-Barbarians
   rotate: false
-  xy: 809, 1055
+  xy: 1424, 1724
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -3455,21 +3455,21 @@ TileSets/AbsoluteUnits/Units/Mechano-Tank-2
   index: -1
 TileSets/AbsoluteUnits/Units/Mortar Team
   rotate: false
-  xy: 449, 562
+  xy: 940, 948
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mortar Team-1
   rotate: false
-  xy: 593, 562
+  xy: 1012, 928
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mortar Team-2
   rotate: false
-  xy: 665, 562
+  xy: 868, 900
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -3574,21 +3574,21 @@ TileSets/AbsoluteUnits/Units/Siege Engine-2
   index: -1
 TileSets/AbsoluteUnits/Units/War Galley
   rotate: false
-  xy: 1169, 1148
+  xy: 1444, 504
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Galley-1
   rotate: false
-  xy: 1097, 1020
+  xy: 1444, 440
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Galley-2
   rotate: false
-  xy: 1169, 1084
+  xy: 1444, 376
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -3623,1596 +3623,1596 @@ TileSets/FantasyHex/Tiles/Ale+Plantation
   index: -1
 TileSets/FantasyHex/Tiles/Ancient Woods
   rotate: false
-  xy: 1352, 1680
+  xy: 1784, 1816
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Arcane Academy
   rotate: false
-  xy: 1097, 976
+  xy: 1444, 268
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Arcane Academy-Snow
   rotate: false
-  xy: 1169, 1041
+  xy: 1784, 1773
   size: 32, 35
   orig: 32, 35
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Arcane Crystals
   rotate: false
-  xy: 1025, 848
+  xy: 1444, 232
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite
   rotate: false
-  xy: 1025, 812
+  xy: 1444, 196
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/OilS
   rotate: false
-  xy: 1025, 812
+  xy: 1444, 196
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite Drill
   rotate: false
-  xy: 1097, 904
+  xy: 1444, 160
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite Drill-Pillaged
   rotate: false
-  xy: 1025, 776
+  xy: 1444, 124
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite+Azerite Drill
   rotate: false
-  xy: 1025, 740
+  xy: 1444, 88
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite+Azerite Drill-Pillaged
   rotate: false
-  xy: 1025, 704
+  xy: 1444, 52
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Azerite+Tidal Drill
   rotate: false
-  xy: 1025, 668
+  xy: 364, 10
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Oil WellC
   rotate: false
-  xy: 1025, 668
+  xy: 364, 10
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tidal Drill
   rotate: false
-  xy: 1025, 668
+  xy: 364, 10
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Bamboo Grove
   rotate: false
-  xy: 1025, 596
+  xy: 1484, 276
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Barbarian encampment
   rotate: false
-  xy: 1025, 560
+  xy: 1484, 240
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Barbarian encampmentT
   rotate: false
-  xy: 1025, 524
+  xy: 1484, 204
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Bastion
   rotate: false
-  xy: 1025, 481
+  xy: 1484, 161
   size: 32, 35
   orig: 32, 35
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Bastion-Snow
   rotate: false
-  xy: 1025, 443
+  xy: 1484, 123
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Black Pearls
   rotate: false
-  xy: 1025, 407
+  xy: 1484, 87
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Blackrock Mountain
   rotate: false
-  xy: 76, 14
+  xy: 1484, 51
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Blighted Land
   rotate: false
-  xy: 1137, 977
+  xy: 1784, 1694
   size: 32, 35
   orig: 32, 35
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Cape of Stranglethorn
   rotate: false
-  xy: 1209, 1048
+  xy: 508, 14
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of Arathor
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Ahn'Qiraj-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Jasperlode Mine-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Kamagua-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Maraudine-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Mogu'shan-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Razorfen Kraul-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-The Consortium-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Timbermaw Hold-Age of Tribes
   rotate: false
-  xy: 1065, 840
+  xy: 548, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of Azerite
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Legion
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Void
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Ahn'Qiraj-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Jasperlode Mine-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Kamagua-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Maraudine-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Mogu'shan-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Razorfen Kraul-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-The Consortium-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Timbermaw Hold-Age of the Cataclysm
   rotate: false
-  xy: 1105, 860
+  xy: 588, 6
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Lich King
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Age of the Third War
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Ahn'Qiraj-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Jasperlode Mine-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Kamagua-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Maraudine-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Mogu'shan-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Razorfen Kraul-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-The Consortium-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Timbermaw Hold-Age of the Dark Portal
   rotate: false
-  xy: 1145, 861
+  xy: 628, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Argent Vanguard-Age of Tribes
   rotate: false
-  xy: 1105, 816
+  xy: 668, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Humans-Age of Tribes
   rotate: false
-  xy: 1105, 816
+  xy: 668, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Light's Hope Chapel-Age of Tribes
   rotate: false
-  xy: 1105, 816
+  xy: 668, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Stromgarde-Age of Tribes
   rotate: false
-  xy: 1105, 816
+  xy: 668, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Theramore-Age of Tribes
   rotate: false
-  xy: 1105, 816
+  xy: 668, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Argent Vanguard-Age of the Cataclysm
   rotate: false
-  xy: 1145, 817
+  xy: 708, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Humans-Age of the Cataclysm
   rotate: false
-  xy: 1145, 817
+  xy: 708, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Light's Hope Chapel-Age of the Cataclysm
   rotate: false
-  xy: 1145, 817
+  xy: 708, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Stromgarde-Age of the Cataclysm
   rotate: false
-  xy: 1145, 817
+  xy: 708, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Theramore-Age of the Cataclysm
   rotate: false
-  xy: 1145, 817
+  xy: 708, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Argent Vanguard-Age of the Dark Portal
   rotate: false
-  xy: 1177, 997
+  xy: 748, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Humans-Age of the Dark Portal
   rotate: false
-  xy: 1177, 997
+  xy: 748, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Light's Hope Chapel-Age of the Dark Portal
   rotate: false
-  xy: 1177, 997
+  xy: 748, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Stromgarde-Age of the Dark Portal
   rotate: false
-  xy: 1177, 997
+  xy: 748, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Theramore-Age of the Dark Portal
   rotate: false
-  xy: 1177, 997
+  xy: 748, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Blood Elves-Age of Tribes
   rotate: false
-  xy: 1177, 953
+  xy: 788, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Blood Elves-Age of the Cataclysm
   rotate: false
-  xy: 1177, 909
+  xy: 828, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Blood Elves-Age of the Dark Portal
   rotate: false
-  xy: 1185, 865
+  xy: 868, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Booty Bay-Age of Tribes
   rotate: false
-  xy: 1185, 821
+  xy: 908, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Everlook-Age of Tribes
   rotate: false
-  xy: 1185, 821
+  xy: 908, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Gadgetzan-Age of Tribes
   rotate: false
-  xy: 1185, 821
+  xy: 908, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Goblins-Age of Tribes
   rotate: false
-  xy: 1185, 821
+  xy: 908, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Ratchet-Age of Tribes
   rotate: false
-  xy: 1185, 821
+  xy: 908, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Steamwheedle Port-Age of Tribes
   rotate: false
-  xy: 1185, 821
+  xy: 908, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Booty Bay-Age of the Cataclysm
   rotate: false
-  xy: 1217, 1004
+  xy: 948, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Everlook-Age of the Cataclysm
   rotate: false
-  xy: 1217, 1004
+  xy: 948, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Gadgetzan-Age of the Cataclysm
   rotate: false
-  xy: 1217, 1004
+  xy: 948, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Goblins-Age of the Cataclysm
   rotate: false
-  xy: 1217, 1004
+  xy: 948, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Ratchet-Age of the Cataclysm
   rotate: false
-  xy: 1217, 1004
+  xy: 948, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Steamwheedle Port-Age of the Cataclysm
   rotate: false
-  xy: 1217, 1004
+  xy: 948, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Booty Bay-Age of the Dark Portal
   rotate: false
-  xy: 1217, 960
+  xy: 988, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Everlook-Age of the Dark Portal
   rotate: false
-  xy: 1217, 960
+  xy: 988, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Gadgetzan-Age of the Dark Portal
   rotate: false
-  xy: 1217, 960
+  xy: 988, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Goblins-Age of the Dark Portal
   rotate: false
-  xy: 1217, 960
+  xy: 988, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Ratchet-Age of the Dark Portal
   rotate: false
-  xy: 1217, 960
+  xy: 988, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Steamwheedle Port-Age of the Dark Portal
   rotate: false
-  xy: 1217, 960
+  xy: 988, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Cenarion Hold-Age of Tribes
   rotate: false
-  xy: 1217, 916
+  xy: 1028, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Feathermoon Stronghold-Age of Tribes
   rotate: false
-  xy: 1217, 916
+  xy: 1028, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Night Elves-Age of Tribes
   rotate: false
-  xy: 1217, 916
+  xy: 1028, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Cenarion Hold-Age of the Cataclysm
   rotate: false
-  xy: 1225, 872
+  xy: 1068, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Feathermoon Stronghold-Age of the Cataclysm
   rotate: false
-  xy: 1225, 872
+  xy: 1068, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Night Elves-Age of the Cataclysm
   rotate: false
-  xy: 1225, 872
+  xy: 1068, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Cenarion Hold-Age of the Dark Portal
   rotate: false
-  xy: 1225, 828
+  xy: 1108, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Feathermoon Stronghold-Age of the Dark Portal
   rotate: false
-  xy: 1225, 828
+  xy: 1108, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Night Elves-Age of the Dark Portal
   rotate: false
-  xy: 1225, 828
+  xy: 1108, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dalaran-Age of Tribes
   rotate: false
-  xy: 436, 6
+  xy: 1148, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dalaran-Age of the Cataclysm
   rotate: false
-  xy: 476, 6
+  xy: 1188, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dalaran-Age of the Dark Portal
   rotate: false
-  xy: 516, 6
+  xy: 1228, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dark Iron Dwarves-Age of Tribes
   rotate: false
-  xy: 556, 6
+  xy: 1268, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dark Iron Dwarves-Age of the Cataclysm
   rotate: false
-  xy: 596, 6
+  xy: 1308, 4
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dark Iron Dwarves-Age of the Dark Portal
   rotate: false
-  xy: 636, 6
+  xy: 737, 520
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Draenei-Age of Tribes
   rotate: false
-  xy: 676, 6
+  xy: 1588, 1168
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Draenei-Age of the Cataclysm
   rotate: false
-  xy: 716, 6
+  xy: 1588, 1124
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Draenei-Age of the Dark Portal
   rotate: false
-  xy: 756, 8
+  xy: 1588, 1080
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dwarves-Age of Tribes
   rotate: false
-  xy: 1225, 784
+  xy: 1588, 1036
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Explorers' League-Age of Tribes
   rotate: false
-  xy: 1225, 784
+  xy: 1588, 1036
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Thorium Brotherhood-Age of Tribes
   rotate: false
-  xy: 1225, 784
+  xy: 1588, 1036
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dwarves-Age of the Cataclysm
   rotate: false
-  xy: 1185, 777
+  xy: 1588, 992
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Explorers' League-Age of the Cataclysm
   rotate: false
-  xy: 1185, 777
+  xy: 1588, 992
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Thorium Brotherhood-Age of the Cataclysm
   rotate: false
-  xy: 1185, 777
+  xy: 1588, 992
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Dwarves-Age of the Dark Portal
   rotate: false
-  xy: 1225, 740
+  xy: 1588, 948
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Explorers' League-Age of the Dark Portal
   rotate: false
-  xy: 1225, 740
+  xy: 1588, 948
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Thorium Brotherhood-Age of the Dark Portal
   rotate: false
-  xy: 1225, 740
+  xy: 1588, 948
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Forsaken-Age of Tribes
   rotate: false
-  xy: 1457, 1560
+  xy: 1588, 904
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Forsaken-Age of the Cataclysm
   rotate: false
-  xy: 1424, 1808
+  xy: 1588, 860
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Forsaken-Age of the Dark Portal
   rotate: false
-  xy: 1424, 1764
+  xy: 1588, 816
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Gnomes-Age of Tribes
   rotate: false
-  xy: 1424, 1720
+  xy: 1588, 772
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Gnomes-Age of the Cataclysm
   rotate: false
-  xy: 1241, 1488
+  xy: 1588, 728
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Gnomes-Age of the Dark Portal
   rotate: false
-  xy: 1241, 1444
+  xy: 1588, 684
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-High Elves-Age of Tribes
   rotate: false
-  xy: 1241, 1400
+  xy: 1588, 640
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-High Elves-Age of the Cataclysm
   rotate: false
-  xy: 1241, 1356
+  xy: 1588, 596
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-High Elves-Age of the Dark Portal
   rotate: false
-  xy: 1241, 1312
+  xy: 1588, 552
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Knights of the Ebon Blade-Age of Tribes
   rotate: false
-  xy: 1241, 1268
+  xy: 1588, 508
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Scourge-Age of Tribes
   rotate: false
-  xy: 1241, 1268
+  xy: 1588, 508
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Knights of the Ebon Blade-Age of the Cataclysm
   rotate: false
-  xy: 1241, 1224
+  xy: 1516, 460
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Scourge-Age of the Cataclysm
   rotate: false
-  xy: 1241, 1224
+  xy: 1516, 460
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Knights of the Ebon Blade-Age of the Dark Portal
   rotate: false
-  xy: 1241, 1180
+  xy: 1516, 416
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Scourge-Age of the Dark Portal
   rotate: false
-  xy: 1241, 1180
+  xy: 1516, 416
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Kul Tirans-Age of Tribes
   rotate: false
-  xy: 1241, 1136
+  xy: 1516, 372
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Kul Tirans-Age of the Cataclysm
   rotate: false
-  xy: 1241, 1092
+  xy: 1516, 328
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Kul Tirans-Age of the Dark Portal
   rotate: false
-  xy: 1249, 1048
+  xy: 1524, 284
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Orcs-Age of Tribes
   rotate: false
-  xy: 1257, 1004
+  xy: 1524, 240
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Orcs-Age of the Cataclysm
   rotate: false
-  xy: 1257, 960
+  xy: 1524, 196
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Orcs-Age of the Dark Portal
   rotate: false
-  xy: 1257, 916
+  xy: 1524, 152
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Pandaren-Age of Tribes
   rotate: false
-  xy: 1265, 872
+  xy: 1524, 108
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Pandaren-Age of the Cataclysm
   rotate: false
-  xy: 1265, 828
+  xy: 1524, 64
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Pandaren-Age of the Dark Portal
   rotate: false
-  xy: 1265, 784
+  xy: 1524, 20
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Tauren-Age of Tribes
   rotate: false
-  xy: 1265, 740
+  xy: 1628, 1168
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-The Earthen Ring-Age of Tribes
   rotate: false
-  xy: 1265, 740
+  xy: 1628, 1168
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Tauren-Age of the Cataclysm
   rotate: false
-  xy: 796, 8
+  xy: 1628, 1124
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-The Earthen Ring-Age of the Cataclysm
   rotate: false
-  xy: 796, 8
+  xy: 1628, 1124
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Tauren-Age of the Dark Portal
   rotate: false
-  xy: 1497, 1560
+  xy: 1628, 1080
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-The Earthen Ring-Age of the Dark Portal
   rotate: false
-  xy: 1497, 1560
+  xy: 1628, 1080
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Trolls-Age of Tribes
   rotate: false
-  xy: 1457, 1616
+  xy: 1628, 1036
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Trolls-Age of the Cataclysm
   rotate: false
-  xy: 1424, 1676
+  xy: 1628, 992
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Trolls-Age of the Dark Portal
   rotate: false
-  xy: 1281, 1488
+  xy: 1628, 948
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Worgen-Age of Tribes
   rotate: false
-  xy: 1281, 1444
+  xy: 1628, 904
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Worgen-Age of the Cataclysm
   rotate: false
-  xy: 1281, 1400
+  xy: 1628, 860
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Worgen-Age of the Dark Portal
   rotate: false
-  xy: 1281, 1356
+  xy: 1628, 816
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Zandalari Trolls-Age of Tribes
   rotate: false
-  xy: 1281, 1312
+  xy: 1628, 772
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Zandalari Trolls-Age of the Cataclysm
   rotate: false
-  xy: 1281, 1268
+  xy: 1628, 728
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/City center-Zandalari Trolls-Age of the Dark Portal
   rotate: false
-  xy: 1281, 1224
+  xy: 1628, 684
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Copper Ore
   rotate: false
-  xy: 836, 4
+  xy: 1628, 648
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Crawlers
   rotate: false
-  xy: 876, 4
+  xy: 1628, 612
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Crystal Grove
   rotate: false
-  xy: 1281, 1188
+  xy: 1628, 576
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Deep Mine
   rotate: false
-  xy: 1281, 1152
+  xy: 1628, 540
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Deeprock Salt
   rotate: false
-  xy: 1281, 1116
+  xy: 1628, 504
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Elementium
   rotate: false
-  xy: 1497, 1524
+  xy: 1556, 436
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Fel-Scorched Land
   rotate: false
-  xy: 1537, 1532
+  xy: 1596, 436
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Galakrond's Rest
   rotate: false
-  xy: 1464, 1744
+  xy: 1564, 184
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Glowcap
   rotate: false
-  xy: 1464, 1672
+  xy: 1564, 112
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Glowcap+Camp
   rotate: false
-  xy: 1321, 1496
+  xy: 1564, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Glowcap+CampT
   rotate: false
-  xy: 1321, 1496
+  xy: 1564, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Grassland+Forest+Glowcap+Camp
   rotate: false
-  xy: 1321, 1457
+  xy: 1564, 37
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Grassland+Forest+Plainstriders+Camp
   rotate: false
-  xy: 1321, 1418
+  xy: 1412, 13
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Grassland+Forest+Rugged Leather+Camp
   rotate: false
-  xy: 1321, 1379
+  xy: 1452, 12
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Great Workshop
   rotate: false
-  xy: 1321, 1332
+  xy: 1668, 1033
   size: 32, 39
   orig: 32, 39
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Hall of Heroes
   rotate: false
-  xy: 1321, 1252
+  xy: 1708, 1036
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Honeycomb
   rotate: false
-  xy: 1321, 1216
+  xy: 1748, 1044
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Honeycomb+Plantation
   rotate: false
-  xy: 1321, 1180
+  xy: 1748, 1008
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Hot Spices
   rotate: false
-  xy: 1321, 1144
+  xy: 1708, 1000
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Hot Spices+Plantation
   rotate: false
-  xy: 1361, 1432
+  xy: 1668, 984
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Kelp'thar Forest
   rotate: false
-  xy: 1401, 1396
+  xy: 1748, 972
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Kodo
   rotate: false
-  xy: 1441, 1432
+  xy: 1788, 984
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Kodo+Pasture
   rotate: false
-  xy: 1441, 1392
+  xy: 1828, 980
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lake Elune'ara
   rotate: false
-  xy: 1481, 1380
+  xy: 1028, 60
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lakkari Tar Pits
   rotate: false
-  xy: 1521, 1388
+  xy: 1828, 944
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Leviathans
   rotate: false
-  xy: 1561, 1388
+  xy: 444, 10
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Leviathans+Fishing Boats
   rotate: false
-  xy: 1401, 1360
+  xy: 1636, 436
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lost City of the Tol'vir
   rotate: false
-  xy: 1481, 1344
+  xy: 1636, 364
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mageroyal
   rotate: false
-  xy: 1401, 1324
+  xy: 1636, 328
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mageroyal+Plantation
   rotate: false
-  xy: 1441, 1320
+  xy: 1636, 292
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mageweave
   rotate: false
-  xy: 1481, 1308
+  xy: 1604, 256
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mageweave+Plantation
   rotate: false
-  xy: 1401, 1288
+  xy: 1604, 220
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mammoth Ivory
   rotate: false
-  xy: 1441, 1284
+  xy: 1604, 184
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mammoth Ivory+Camp
   rotate: false
-  xy: 1481, 1272
+  xy: 1604, 148
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Maraudon
   rotate: false
-  xy: 1401, 1252
+  xy: 1604, 112
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Molten Fields
   rotate: false
-  xy: 1441, 1212
+  xy: 1644, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Moonglade
   rotate: false
-  xy: 1481, 1200
+  xy: 1676, 436
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Moonglow Ink
   rotate: false
-  xy: 1401, 1180
+  xy: 1676, 400
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Moonglow Ink+Plantation
   rotate: false
-  xy: 1441, 1176
+  xy: 1676, 364
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Mount Hyjal
   rotate: false
-  xy: 1401, 1144
+  xy: 1676, 292
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Peacebloom
   rotate: false
-  xy: 1561, 1316
+  xy: 1644, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Plagued Land
   rotate: false
-  xy: 1521, 1164
+  xy: 1684, 148
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Plainstriders
   rotate: false
-  xy: 1521, 1128
+  xy: 1684, 112
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Plainstriders+Camp
   rotate: false
-  xy: 1329, 1108
+  xy: 1684, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Plantation+Peacebloom
   rotate: false
-  xy: 1329, 1072
+  xy: 1684, 40
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Plantation+Tel'Abim Bananas
   rotate: false
-  xy: 1369, 1108
+  xy: 1684, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Red Rocks of Mulgore
   rotate: false
-  xy: 1409, 1104
+  xy: 1868, 920
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Rugged Leather
   rotate: false
-  xy: 1369, 1036
+  xy: 1908, 920
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Rugged Leather+Camp
   rotate: false
-  xy: 1537, 1624
+  xy: 1948, 920
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Sacred Grounds
   rotate: false
-  xy: 1504, 1772
+  xy: 1908, 876
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Star Rubies
   rotate: false
-  xy: 1601, 1352
+  xy: 1708, 812
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Stonetalon Peak
   rotate: false
-  xy: 1601, 1280
+  xy: 1708, 740
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Sunfruit
   rotate: false
-  xy: 1561, 1272
+  xy: 1708, 704
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Sunfruit+Plantation
   rotate: false
-  xy: 1561, 1236
+  xy: 1708, 668
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Sunken Temple
   rotate: false
-  xy: 1601, 1244
+  xy: 1708, 632
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tel'Abim Bananas
   rotate: false
-  xy: 1561, 1200
+  xy: 1708, 596
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Teldrassil
   rotate: false
-  xy: 1561, 1164
+  xy: 1708, 560
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Dark Portal
   rotate: false
-  xy: 1561, 1128
+  xy: 1708, 524
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Lifeblood Pillar
   rotate: false
-  xy: 1561, 1092
+  xy: 1708, 488
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Maelstrom
   rotate: false
-  xy: 1297, 1000
+  xy: 1716, 452
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/The Nexus
   rotate: false
-  xy: 1297, 964
+  xy: 1716, 416
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Thorium
   rotate: false
-  xy: 1297, 928
+  xy: 1716, 380
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Thousand Needles
   rotate: false
-  xy: 1297, 1036
+  xy: 1716, 344
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Titan Ruins
   rotate: false
-  xy: 1305, 856
+  xy: 1716, 272
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Trade Company
   rotate: false
-  xy: 1305, 813
+  xy: 1724, 229
   size: 32, 35
   orig: 32, 35
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Truesilver
   rotate: false
-  xy: 1305, 777
+  xy: 1724, 193
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Forest+Camp+Rugged Leather
   rotate: false
-  xy: 1305, 737
+  xy: 1724, 153
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Forest+Glowcap+Camp
   rotate: false
-  xy: 1305, 697
+  xy: 1724, 113
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Forest+Plainstriders+Camp
   rotate: false
-  xy: 1337, 996
+  xy: 1724, 73
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Un'Goro Crater
   rotate: false
-  xy: 1337, 960
+  xy: 1748, 920
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
@@ -5226,322 +5226,322 @@ TileSets/FantasyHex/Units/Airship Tender
   index: -1
 TileSets/FantasyHex/Units/Arcane Thruster
   rotate: false
-  xy: 1097, 940
+  xy: 1784, 1737
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Ballista
   rotate: false
-  xy: 1025, 632
+  xy: 76, 14
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Brigantine
   rotate: false
-  xy: 1137, 941
+  xy: 404, 10
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Buccaneer
   rotate: false
-  xy: 1137, 905
+  xy: 1372, 20
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demolisher
   rotate: false
-  xy: 1289, 1080
+  xy: 1668, 1112
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Dreadnought
   rotate: false
-  xy: 1265, 704
+  xy: 1588, 472
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/EmbarkedUnit-Civilian-Age of the Cataclysm
   rotate: false
-  xy: 1497, 1488
+  xy: 1556, 400
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/EmbarkedUnit-Military-Age of the Cataclysm
   rotate: false
-  xy: 1497, 1452
+  xy: 1556, 364
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/EmbarkedUnit-Settler-Age of the Cataclysm
   rotate: false
-  xy: 1537, 1568
+  xy: 1556, 328
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Fishing Skiff
   rotate: false
-  xy: 1537, 1496
+  xy: 1596, 400
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Fishing Skiff-Age of the Cataclysm
   rotate: false
-  xy: 1537, 1460
+  xy: 1596, 364
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Flak Cannon
   rotate: false
-  xy: 1537, 1424
+  xy: 1596, 328
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Flak Wagon
   rotate: false
-  xy: 1497, 1624
+  xy: 1564, 292
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Flying Machine
   rotate: false
-  xy: 1464, 1816
+  xy: 1564, 256
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Fusilier
   rotate: false
-  xy: 1464, 1780
+  xy: 1564, 220
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Giant Turtle
   rotate: false
-  xy: 1464, 1708
+  xy: 1564, 148
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Grenadier
   rotate: false
-  xy: 1321, 1296
+  xy: 948, 143
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Iron Colossus
   rotate: false
-  xy: 1361, 1393
+  xy: 1668, 945
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Juggernaught
   rotate: false
-  xy: 1401, 1432
+  xy: 1708, 964
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Kul Tiran Marine
   rotate: false
-  xy: 1481, 1416
+  xy: 1028, 96
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Longboat
   rotate: false
-  xy: 1441, 1356
+  xy: 1636, 400
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mechagnome Trooper
   rotate: false
-  xy: 1441, 1248
+  xy: 1604, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mechano-Tank
   rotate: false
-  xy: 1481, 1236
+  xy: 1604, 40
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Militia
   rotate: false
-  xy: 1401, 1216
+  xy: 1604, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mortar Team
   rotate: false
-  xy: 1481, 1164
+  xy: 1676, 328
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mountaineer
   rotate: false
-  xy: 1441, 1140
+  xy: 1676, 256
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mounted Archer
   rotate: false
-  xy: 1481, 1128
+  xy: 1644, 220
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Musketeer
   rotate: false
-  xy: 1561, 1352
+  xy: 1644, 184
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Navigation Crystal
   rotate: false
-  xy: 1521, 1344
+  xy: 1644, 148
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Outrider
   rotate: false
-  xy: 1521, 1308
+  xy: 1644, 112
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant
   rotate: false
-  xy: 1521, 1272
+  xy: 1644, 40
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant-Age of the Cataclysm
   rotate: false
-  xy: 1521, 1236
+  xy: 1684, 220
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant-Barbarians
   rotate: false
-  xy: 1521, 1200
+  xy: 1684, 184
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Peasant-Barbarians-Age of the Cataclysm
   rotate: false
-  xy: 1521, 1200
+  xy: 1684, 184
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Ranger
   rotate: false
-  xy: 1369, 1072
+  xy: 1724, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Settler-Age of the Cataclysm
   rotate: false
-  xy: 1577, 1568
+  xy: 1988, 920
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Settler-Age of the Cataclysm-Barbarians
   rotate: false
-  xy: 1577, 1532
+  xy: 1988, 884
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Shock Trooper
   rotate: false
-  xy: 1577, 1496
+  xy: 1988, 848
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Siege Engine
   rotate: false
-  xy: 1577, 1460
+  xy: 1708, 920
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Siegebreaker
   rotate: false
-  xy: 1577, 1424
+  xy: 1708, 884
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Skyguard
   rotate: false
-  xy: 1601, 1388
+  xy: 1708, 848
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Stasis Vault
   rotate: false
-  xy: 1601, 1316
+  xy: 1708, 776
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Titan Engine
   rotate: false
-  xy: 1305, 892
+  xy: 1716, 308
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Vanguard
   rotate: false
-  xy: 1377, 1000
+  xy: 1748, 884
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/War Galley
   rotate: false
-  xy: 1377, 964
+  xy: 1748, 848
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/War Golem
   rotate: false
-  xy: 1377, 928
+  xy: 1748, 812
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
@@ -8360,1325 +8360,3467 @@ TileSets/HexaRealm/Tiles/Hot Spices+Plantation
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Kelp'thar Forest
+TileSets/HexaRealm/Tiles/HutFarm-Argent Vanguard
   rotate: false
-  xy: 881, 1320
+  xy: 953, 1460
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Kodo
+TileSets/HexaRealm/Tiles/HutFarm-Humans
   rotate: false
-  xy: 881, 1256
+  xy: 953, 1460
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Kodo+Pasture
+TileSets/HexaRealm/Tiles/HutFarm-Light's Hope Chapel
   rotate: false
-  xy: 953, 1231
+  xy: 953, 1460
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Kodo+Pasture-Pillaged
+TileSets/HexaRealm/Tiles/HutFarm-Stromgarde
   rotate: false
-  xy: 737, 1268
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Lake Elune'ara
-  rotate: false
-  xy: 809, 1183
+  xy: 953, 1460
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Lakkari Tar Pits
+TileSets/HexaRealm/Tiles/HutFarm-Theramore
   rotate: false
-  xy: 881, 1128
+  xy: 953, 1460
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Leviathans
+TileSets/HexaRealm/Tiles/HutFarm-Blood Elves
   rotate: false
-  xy: 953, 1103
+  xy: 737, 1476
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Leviathans+Fishing Boats
+TileSets/HexaRealm/Tiles/HutFarm-Booty Bay
   rotate: false
-  xy: 737, 1140
+  xy: 809, 1467
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Lost City of the Tol'vir
+TileSets/HexaRealm/Tiles/HutFarm-Everlook
   rotate: false
-  xy: 881, 1000
+  xy: 809, 1467
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mageroyal
+TileSets/HexaRealm/Tiles/HutFarm-Gadgetzan
   rotate: false
-  xy: 953, 975
+  xy: 809, 1467
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mageroyal+Plantation
+TileSets/HexaRealm/Tiles/HutFarm-Goblins
   rotate: false
-  xy: 737, 1012
+  xy: 809, 1467
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mageweave
+TileSets/HexaRealm/Tiles/HutFarm-Ratchet
   rotate: false
-  xy: 809, 991
+  xy: 809, 1467
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mageweave+Plantation
+TileSets/HexaRealm/Tiles/HutFarm-Steamwheedle Port
   rotate: false
-  xy: 881, 936
+  xy: 809, 1467
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory
+TileSets/HexaRealm/Tiles/HutFarm-Cenarion Hold
   rotate: false
-  xy: 953, 911
+  xy: 881, 1412
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp
+TileSets/HexaRealm/Tiles/HutFarm-Feathermoon Stronghold
   rotate: false
-  xy: 737, 948
+  xy: 881, 1412
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Argent Vanguard
+TileSets/HexaRealm/Tiles/HutFarm-Night Elves
   rotate: false
-  xy: 809, 927
+  xy: 881, 1412
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Humans
+TileSets/HexaRealm/Tiles/HutFarm-Dalaran
   rotate: false
-  xy: 809, 927
+  xy: 953, 1396
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Light's Hope Chapel
+TileSets/HexaRealm/Tiles/HutFarm-High Elves
   rotate: false
-  xy: 809, 927
+  xy: 953, 1396
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Stromgarde
+TileSets/HexaRealm/Tiles/HutFarm-Dark Iron Dwarves
   rotate: false
-  xy: 809, 927
+  xy: 449, 562
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Theramore
+TileSets/HexaRealm/Tiles/HutFarm-Draenei
   rotate: false
-  xy: 809, 927
+  xy: 521, 562
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Blood Elves
+TileSets/HexaRealm/Tiles/HutFarm-Dwarves
   rotate: false
-  xy: 881, 872
+  xy: 593, 562
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Booty Bay
+TileSets/HexaRealm/Tiles/HutFarm-Explorers' League
   rotate: false
-  xy: 953, 847
+  xy: 593, 562
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Everlook
+TileSets/HexaRealm/Tiles/HutFarm-Thorium Brotherhood
   rotate: false
-  xy: 953, 847
+  xy: 593, 562
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Gadgetzan
+TileSets/HexaRealm/Tiles/HutFarm-Forsaken
   rotate: false
-  xy: 953, 847
+  xy: 1169, 1532
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Goblins
+TileSets/HexaRealm/Tiles/HutFarm-Gnomes
   rotate: false
-  xy: 953, 847
+  xy: 521, 498
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Ratchet
+TileSets/HexaRealm/Tiles/HutFarm-Knights of the Ebon Blade
   rotate: false
-  xy: 953, 847
+  xy: 364, 558
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Steamwheedle Port
+TileSets/HexaRealm/Tiles/HutFarm-Scourge
   rotate: false
-  xy: 953, 847
+  xy: 364, 558
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Cenarion Hold
+TileSets/HexaRealm/Tiles/HutFarm-Kul Tirans
   rotate: false
-  xy: 737, 884
+  xy: 364, 494
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Feathermoon Stronghold
+TileSets/HexaRealm/Tiles/HutFarm-Orcs
   rotate: false
-  xy: 737, 884
+  xy: 364, 430
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Night Elves
+TileSets/HexaRealm/Tiles/HutFarm-Pandaren
   rotate: false
-  xy: 737, 884
+  xy: 364, 366
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Dalaran
+TileSets/HexaRealm/Tiles/HutFarm-Tauren
   rotate: false
-  xy: 809, 863
+  xy: 364, 302
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-High Elves
+TileSets/HexaRealm/Tiles/HutFarm-The Earthen Ring
   rotate: false
-  xy: 809, 863
+  xy: 364, 302
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Dark Iron Dwarves
+TileSets/HexaRealm/Tiles/HutFarm-Trolls
   rotate: false
-  xy: 881, 808
+  xy: 364, 238
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Draenei
+TileSets/HexaRealm/Tiles/HutFarm-Worgen
   rotate: false
-  xy: 953, 783
+  xy: 364, 174
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Dwarves
+TileSets/HexaRealm/Tiles/HutFarm-Zandalari Trolls
   rotate: false
-  xy: 737, 820
+  xy: 364, 110
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Explorers' League
+TileSets/HexaRealm/Tiles/HutFarmT-Argent Vanguard
   rotate: false
-  xy: 737, 820
+  xy: 364, 46
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Thorium Brotherhood
+TileSets/HexaRealm/Tiles/HutFarmT-Humans
   rotate: false
-  xy: 737, 820
+  xy: 364, 46
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Forsaken
+TileSets/HexaRealm/Tiles/HutFarmT-Light's Hope Chapel
   rotate: false
-  xy: 809, 799
+  xy: 364, 46
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Gnomes
+TileSets/HexaRealm/Tiles/HutFarmT-Stromgarde
   rotate: false
-  xy: 881, 744
+  xy: 364, 46
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Knights of the Ebon Blade
+TileSets/HexaRealm/Tiles/HutFarmT-Theramore
   rotate: false
-  xy: 953, 719
+  xy: 364, 46
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Scourge
-  rotate: false
-  xy: 953, 719
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Kul Tirans
-  rotate: false
-  xy: 737, 756
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Orcs
-  rotate: false
-  xy: 809, 735
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Pandaren
-  rotate: false
-  xy: 881, 680
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Pillaged
-  rotate: false
-  xy: 953, 651
-  size: 64, 60
-  orig: 64, 60
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Tauren
-  rotate: false
-  xy: 737, 692
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-The Earthen Ring
-  rotate: false
-  xy: 737, 692
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Trolls
-  rotate: false
-  xy: 809, 671
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Worgen
-  rotate: false
-  xy: 881, 616
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Zandalari Trolls
-  rotate: false
-  xy: 953, 587
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Maraudon
-  rotate: false
-  xy: 737, 628
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Molten Fields
-  rotate: false
-  xy: 737, 564
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Moonglade
-  rotate: false
-  xy: 809, 543
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Moonglow Ink
-  rotate: false
-  xy: 881, 488
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Moonglow Ink+Plantation
-  rotate: false
-  xy: 953, 459
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Mount Hyjal
-  rotate: false
-  xy: 809, 479
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Peacebloom
-  rotate: false
-  xy: 364, 487
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Peacebloom+Plantation
-  rotate: false
-  xy: 364, 423
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plagued Land
-  rotate: false
-  xy: 364, 231
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plains+Hill+Blighted Land
-  rotate: false
-  xy: 364, 167
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders
-  rotate: false
-  xy: 364, 103
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp
-  rotate: false
-  xy: 364, 39
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Argent Vanguard
+TileSets/HexaRealm/Tiles/HutFarmT-Blood Elves
   rotate: false
   xy: 436, 498
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Humans
-  rotate: false
-  xy: 436, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Light's Hope Chapel
-  rotate: false
-  xy: 436, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Stromgarde
-  rotate: false
-  xy: 436, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Theramore
-  rotate: false
-  xy: 436, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Blood Elves
-  rotate: false
-  xy: 508, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Booty Bay
+TileSets/HexaRealm/Tiles/HutFarmT-Booty Bay
   rotate: false
   xy: 436, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Everlook
+TileSets/HexaRealm/Tiles/HutFarmT-Everlook
   rotate: false
   xy: 436, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Gadgetzan
+TileSets/HexaRealm/Tiles/HutFarmT-Gadgetzan
   rotate: false
   xy: 436, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Goblins
+TileSets/HexaRealm/Tiles/HutFarmT-Goblins
   rotate: false
   xy: 436, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Ratchet
+TileSets/HexaRealm/Tiles/HutFarmT-Ratchet
   rotate: false
   xy: 436, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Steamwheedle Port
+TileSets/HexaRealm/Tiles/HutFarmT-Steamwheedle Port
   rotate: false
   xy: 436, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Cenarion Hold
-  rotate: false
-  xy: 580, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Feathermoon Stronghold
-  rotate: false
-  xy: 580, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Night Elves
-  rotate: false
-  xy: 580, 498
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Dalaran
-  rotate: false
-  xy: 436, 370
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-High Elves
-  rotate: false
-  xy: 436, 370
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Dark Iron Dwarves
+TileSets/HexaRealm/Tiles/HutFarmT-Cenarion Hold
   rotate: false
   xy: 508, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Draenei
+TileSets/HexaRealm/Tiles/HutFarmT-Feathermoon Stronghold
   rotate: false
-  xy: 652, 498
+  xy: 508, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Dwarves
+TileSets/HexaRealm/Tiles/HutFarmT-Night Elves
   rotate: false
-  xy: 436, 306
+  xy: 508, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Explorers' League
-  rotate: false
-  xy: 436, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Thorium Brotherhood
-  rotate: false
-  xy: 436, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Forsaken
-  rotate: false
-  xy: 508, 370
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Gnomes
+TileSets/HexaRealm/Tiles/HutFarmT-Dalaran
   rotate: false
   xy: 580, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Knights of the Ebon Blade
+TileSets/HexaRealm/Tiles/HutFarmT-High Elves
   rotate: false
-  xy: 436, 242
+  xy: 580, 434
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Scourge
+TileSets/HexaRealm/Tiles/HutFarmT-Dark Iron Dwarves
   rotate: false
-  xy: 436, 242
+  xy: 508, 370
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Kul Tirans
-  rotate: false
-  xy: 508, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Orcs
+TileSets/HexaRealm/Tiles/HutFarmT-Draenei
   rotate: false
   xy: 580, 370
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Pandaren
+TileSets/HexaRealm/Tiles/HutFarmT-Dwarves
   rotate: false
-  xy: 652, 434
+  xy: 508, 306
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Tauren
+TileSets/HexaRealm/Tiles/HutFarmT-Explorers' League
   rotate: false
-  xy: 436, 178
+  xy: 508, 306
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-The Earthen Ring
+TileSets/HexaRealm/Tiles/HutFarmT-Thorium Brotherhood
   rotate: false
-  xy: 436, 178
+  xy: 508, 306
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Trolls
-  rotate: false
-  xy: 508, 242
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Worgen
+TileSets/HexaRealm/Tiles/HutFarmT-Forsaken
   rotate: false
   xy: 580, 306
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+Camp-Zandalari Trolls
+TileSets/HexaRealm/Tiles/HutFarmT-Gnomes
   rotate: false
-  xy: 652, 370
+  xy: 508, 242
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT
-  rotate: false
-  xy: 436, 114
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Argent Vanguard
-  rotate: false
-  xy: 508, 178
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Humans
-  rotate: false
-  xy: 508, 178
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Light's Hope Chapel
-  rotate: false
-  xy: 508, 178
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Stromgarde
-  rotate: false
-  xy: 508, 178
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Theramore
-  rotate: false
-  xy: 508, 178
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Blood Elves
+TileSets/HexaRealm/Tiles/HutFarmT-Knights of the Ebon Blade
   rotate: false
   xy: 580, 242
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Booty Bay
+TileSets/HexaRealm/Tiles/HutFarmT-Scourge
   rotate: false
-  xy: 652, 306
+  xy: 580, 242
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Everlook
+TileSets/HexaRealm/Tiles/HutFarmT-Kul Tirans
   rotate: false
-  xy: 652, 306
+  xy: 508, 178
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Gadgetzan
-  rotate: false
-  xy: 652, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Goblins
-  rotate: false
-  xy: 652, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Ratchet
-  rotate: false
-  xy: 652, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Steamwheedle Port
-  rotate: false
-  xy: 652, 306
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Cenarion Hold
-  rotate: false
-  xy: 436, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Feathermoon Stronghold
-  rotate: false
-  xy: 436, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Night Elves
-  rotate: false
-  xy: 436, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Dalaran
-  rotate: false
-  xy: 508, 114
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-High Elves
-  rotate: false
-  xy: 508, 114
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Dark Iron Dwarves
+TileSets/HexaRealm/Tiles/HutFarmT-Orcs
   rotate: false
   xy: 580, 178
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Draenei
+TileSets/HexaRealm/Tiles/HutFarmT-Pandaren
   rotate: false
-  xy: 652, 242
+  xy: 508, 114
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Dwarves
-  rotate: false
-  xy: 508, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Explorers' League
-  rotate: false
-  xy: 508, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Thorium Brotherhood
-  rotate: false
-  xy: 508, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Forsaken
+TileSets/HexaRealm/Tiles/HutFarmT-Tauren
   rotate: false
   xy: 580, 114
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Gnomes
+TileSets/HexaRealm/Tiles/HutFarmT-The Earthen Ring
   rotate: false
-  xy: 652, 178
+  xy: 580, 114
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Knights of the Ebon Blade
+TileSets/HexaRealm/Tiles/HutFarmT-Trolls
+  rotate: false
+  xy: 508, 50
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/HutFarmT-Worgen
   rotate: false
   xy: 580, 50
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Scourge
+TileSets/HexaRealm/Tiles/HutFarmT-Zandalari Trolls
   rotate: false
-  xy: 580, 50
+  xy: 1352, 1788
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Kul Tirans
-  rotate: false
-  xy: 652, 114
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Orcs
-  rotate: false
-  xy: 652, 50
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Pandaren
-  rotate: false
-  xy: 724, 436
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Tauren
-  rotate: false
-  xy: 724, 372
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-The Earthen Ring
-  rotate: false
-  xy: 724, 372
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Trolls
-  rotate: false
-  xy: 724, 308
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Worgen
-  rotate: false
-  xy: 724, 244
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Plainstriders+CampT-Zandalari Trolls
-  rotate: false
-  xy: 724, 180
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Red Rocks of Mulgore
-  rotate: false
-  xy: 724, 52
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather
-  rotate: false
-  xy: 796, 415
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp
-  rotate: false
-  xy: 796, 351
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Argent Vanguard
-  rotate: false
-  xy: 868, 360
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Humans
-  rotate: false
-  xy: 868, 360
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Light's Hope Chapel
-  rotate: false
-  xy: 868, 360
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Stromgarde
-  rotate: false
-  xy: 868, 360
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Theramore
-  rotate: false
-  xy: 868, 360
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Blood Elves
-  rotate: false
-  xy: 940, 331
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Booty Bay
-  rotate: false
-  xy: 868, 296
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Everlook
-  rotate: false
-  xy: 868, 296
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Gadgetzan
-  rotate: false
-  xy: 868, 296
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Goblins
-  rotate: false
-  xy: 868, 296
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Ratchet
-  rotate: false
-  xy: 868, 296
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Steamwheedle Port
-  rotate: false
-  xy: 868, 296
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Cenarion Hold
-  rotate: false
-  xy: 940, 267
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Feathermoon Stronghold
-  rotate: false
-  xy: 940, 267
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Night Elves
-  rotate: false
-  xy: 940, 267
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Dalaran
-  rotate: false
-  xy: 868, 232
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-High Elves
-  rotate: false
-  xy: 868, 232
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Dark Iron Dwarves
-  rotate: false
-  xy: 940, 203
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Draenei
-  rotate: false
-  xy: 868, 168
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Dwarves
-  rotate: false
-  xy: 940, 139
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Explorers' League
-  rotate: false
-  xy: 940, 139
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Thorium Brotherhood
-  rotate: false
-  xy: 940, 139
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Forsaken
-  rotate: false
-  xy: 868, 104
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Gnomes
-  rotate: false
-  xy: 940, 75
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Knights of the Ebon Blade
-  rotate: false
-  xy: 868, 40
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Scourge
-  rotate: false
-  xy: 868, 40
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Kul Tirans
-  rotate: false
-  xy: 940, 11
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Orcs
-  rotate: false
-  xy: 1012, 331
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Pandaren
-  rotate: false
-  xy: 1012, 267
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Tauren
-  rotate: false
-  xy: 1012, 203
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-The Earthen Ring
-  rotate: false
-  xy: 1012, 203
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Trolls
-  rotate: false
-  xy: 1012, 139
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Worgen
-  rotate: false
-  xy: 1012, 75
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Zandalari Trolls
-  rotate: false
-  xy: 1012, 11
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Sacred Grounds
-  rotate: false
-  xy: 1352, 1780
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Snow+Hill+Blighted Land
-  rotate: false
-  xy: 1097, 1532
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Star Rubies
-  rotate: false
-  xy: 1025, 1468
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Stonetalon Peak
-  rotate: false
-  xy: 1025, 1404
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Sunfruit
-  rotate: false
-  xy: 1097, 1468
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Sunfruit+Plantation
-  rotate: false
-  xy: 1025, 1340
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/Sunken Temple
+TileSets/HexaRealm/Tiles/Kelp'thar Forest
   rotate: false
   xy: 1097, 1404
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
+TileSets/HexaRealm/Tiles/Kodo
+  rotate: false
+  xy: 1169, 1331
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Kodo+Pasture
+  rotate: false
+  xy: 665, 562
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Kodo+Pasture-Pillaged
+  rotate: false
+  xy: 652, 426
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lake Elune'ara
+  rotate: false
+  xy: 724, 242
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lakkari Tar Pits
+  rotate: false
+  xy: 724, 178
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Leviathans
+  rotate: false
+  xy: 724, 114
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Leviathans+Fishing Boats
+  rotate: false
+  xy: 724, 50
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lost City of the Tol'vir
+  rotate: false
+  xy: 1457, 1660
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Argent Vanguard
+  rotate: false
+  xy: 796, 370
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Humans
+  rotate: false
+  xy: 796, 370
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Light's Hope Chapel
+  rotate: false
+  xy: 796, 370
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Stromgarde
+  rotate: false
+  xy: 796, 370
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Theramore
+  rotate: false
+  xy: 796, 370
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Blood Elves
+  rotate: false
+  xy: 1529, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Booty Bay
+  rotate: false
+  xy: 1529, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Everlook
+  rotate: false
+  xy: 1529, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Gadgetzan
+  rotate: false
+  xy: 1529, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Goblins
+  rotate: false
+  xy: 1529, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Ratchet
+  rotate: false
+  xy: 1529, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Steamwheedle Port
+  rotate: false
+  xy: 1529, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Cenarion Hold
+  rotate: false
+  xy: 1529, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Feathermoon Stronghold
+  rotate: false
+  xy: 1529, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Night Elves
+  rotate: false
+  xy: 1529, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Dalaran
+  rotate: false
+  xy: 1529, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-High Elves
+  rotate: false
+  xy: 1529, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Dark Iron Dwarves
+  rotate: false
+  xy: 1241, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Draenei
+  rotate: false
+  xy: 1241, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Dwarves
+  rotate: false
+  xy: 1241, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Explorers' League
+  rotate: false
+  xy: 1241, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Thorium Brotherhood
+  rotate: false
+  xy: 1241, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Forsaken
+  rotate: false
+  xy: 1241, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Gnomes
+  rotate: false
+  xy: 1496, 1788
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Knights of the Ebon Blade
+  rotate: false
+  xy: 1496, 1724
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Scourge
+  rotate: false
+  xy: 1496, 1724
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Kul Tirans
+  rotate: false
+  xy: 1529, 1660
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Orcs
+  rotate: false
+  xy: 1601, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Pandaren
+  rotate: false
+  xy: 1601, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Tauren
+  rotate: false
+  xy: 1601, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-The Earthen Ring
+  rotate: false
+  xy: 1601, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Trolls
+  rotate: false
+  xy: 1601, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Worgen
+  rotate: false
+  xy: 1601, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber mill-Zandalari Trolls
+  rotate: false
+  xy: 1313, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Argent Vanguard
+  rotate: false
+  xy: 1385, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Humans
+  rotate: false
+  xy: 1385, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Light's Hope Chapel
+  rotate: false
+  xy: 1385, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Stromgarde
+  rotate: false
+  xy: 1385, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Theramore
+  rotate: false
+  xy: 1385, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Blood Elves
+  rotate: false
+  xy: 1313, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Booty Bay
+  rotate: false
+  xy: 1313, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Everlook
+  rotate: false
+  xy: 1313, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Gadgetzan
+  rotate: false
+  xy: 1313, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Goblins
+  rotate: false
+  xy: 1313, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Ratchet
+  rotate: false
+  xy: 1313, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Steamwheedle Port
+  rotate: false
+  xy: 1313, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Cenarion Hold
+  rotate: false
+  xy: 1313, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Feathermoon Stronghold
+  rotate: false
+  xy: 1313, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Night Elves
+  rotate: false
+  xy: 1313, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Dalaran
+  rotate: false
+  xy: 1385, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-High Elves
+  rotate: false
+  xy: 1385, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Dark Iron Dwarves
+  rotate: false
+  xy: 1457, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Draenei
+  rotate: false
+  xy: 1385, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Dwarves
+  rotate: false
+  xy: 1385, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Explorers' League
+  rotate: false
+  xy: 1385, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Thorium Brotherhood
+  rotate: false
+  xy: 1385, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Forsaken
+  rotate: false
+  xy: 1457, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Gnomes
+  rotate: false
+  xy: 1529, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Knights of the Ebon Blade
+  rotate: false
+  xy: 1457, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Scourge
+  rotate: false
+  xy: 1457, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Kul Tirans
+  rotate: false
+  xy: 1529, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Orcs
+  rotate: false
+  xy: 1601, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Pandaren
+  rotate: false
+  xy: 1313, 1212
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Tauren
+  rotate: false
+  xy: 1568, 1788
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-The Earthen Ring
+  rotate: false
+  xy: 1568, 1788
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Trolls
+  rotate: false
+  xy: 1568, 1724
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Worgen
+  rotate: false
+  xy: 1601, 1660
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Lumber millT-Zandalari Trolls
+  rotate: false
+  xy: 1640, 1788
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mageroyal
+  rotate: false
+  xy: 1640, 1724
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mageroyal+Plantation
+  rotate: false
+  xy: 1712, 1788
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mageweave
+  rotate: false
+  xy: 1712, 1724
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mageweave+Plantation
+  rotate: false
+  xy: 1673, 1660
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory
+  rotate: false
+  xy: 1673, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp
+  rotate: false
+  xy: 1673, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Argent Vanguard
+  rotate: false
+  xy: 1673, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Humans
+  rotate: false
+  xy: 1673, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Light's Hope Chapel
+  rotate: false
+  xy: 1673, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Stromgarde
+  rotate: false
+  xy: 1673, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Theramore
+  rotate: false
+  xy: 1673, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Blood Elves
+  rotate: false
+  xy: 1673, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Booty Bay
+  rotate: false
+  xy: 1673, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Everlook
+  rotate: false
+  xy: 1673, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Gadgetzan
+  rotate: false
+  xy: 1673, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Goblins
+  rotate: false
+  xy: 1673, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Ratchet
+  rotate: false
+  xy: 1673, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Steamwheedle Port
+  rotate: false
+  xy: 1673, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Cenarion Hold
+  rotate: false
+  xy: 1673, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Feathermoon Stronghold
+  rotate: false
+  xy: 1673, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Night Elves
+  rotate: false
+  xy: 1673, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Dalaran
+  rotate: false
+  xy: 1673, 1212
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-High Elves
+  rotate: false
+  xy: 1673, 1212
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Dark Iron Dwarves
+  rotate: false
+  xy: 1673, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Draenei
+  rotate: false
+  xy: 1745, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Dwarves
+  rotate: false
+  xy: 1745, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Explorers' League
+  rotate: false
+  xy: 1745, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Thorium Brotherhood
+  rotate: false
+  xy: 1745, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Forsaken
+  rotate: false
+  xy: 1745, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Gnomes
+  rotate: false
+  xy: 1745, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Knights of the Ebon Blade
+  rotate: false
+  xy: 1745, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Scourge
+  rotate: false
+  xy: 1745, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Kul Tirans
+  rotate: false
+  xy: 1745, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Orcs
+  rotate: false
+  xy: 1745, 1212
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Pandaren
+  rotate: false
+  xy: 1745, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Pillaged
+  rotate: false
+  xy: 1745, 1080
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Tauren
+  rotate: false
+  xy: 1817, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-The Earthen Ring
+  rotate: false
+  xy: 1817, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Trolls
+  rotate: false
+  xy: 1817, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Worgen
+  rotate: false
+  xy: 1817, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mammoth Ivory+Camp-Zandalari Trolls
+  rotate: false
+  xy: 1817, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Maraudon
+  rotate: false
+  xy: 1817, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Argent Vanguard
+  rotate: false
+  xy: 1817, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Humans
+  rotate: false
+  xy: 1817, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Light's Hope Chapel
+  rotate: false
+  xy: 1817, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Stromgarde
+  rotate: false
+  xy: 1817, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Theramore
+  rotate: false
+  xy: 1817, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Blood Elves
+  rotate: false
+  xy: 1817, 1020
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Booty Bay
+  rotate: false
+  xy: 1889, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Everlook
+  rotate: false
+  xy: 1889, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Gadgetzan
+  rotate: false
+  xy: 1889, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Goblins
+  rotate: false
+  xy: 1889, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Ratchet
+  rotate: false
+  xy: 1889, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Steamwheedle Port
+  rotate: false
+  xy: 1889, 1596
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Cenarion Hold
+  rotate: false
+  xy: 1889, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Feathermoon Stronghold
+  rotate: false
+  xy: 1889, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Night Elves
+  rotate: false
+  xy: 1889, 1532
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Dalaran
+  rotate: false
+  xy: 1889, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-High Elves
+  rotate: false
+  xy: 1889, 1468
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Dark Iron Dwarves
+  rotate: false
+  xy: 1889, 1404
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Draenei
+  rotate: false
+  xy: 1889, 1340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Dwarves
+  rotate: false
+  xy: 1889, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Explorers' League
+  rotate: false
+  xy: 1889, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Thorium Brotherhood
+  rotate: false
+  xy: 1889, 1276
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Forsaken
+  rotate: false
+  xy: 1889, 1212
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Gnomes
+  rotate: false
+  xy: 1889, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Knights of the Ebon Blade
+  rotate: false
+  xy: 1889, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Scourge
+  rotate: false
+  xy: 1889, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Kul Tirans
+  rotate: false
+  xy: 1889, 1020
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Orcs
+  rotate: false
+  xy: 1961, 1540
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Pandaren
+  rotate: false
+  xy: 1889, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Tauren
+  rotate: false
+  xy: 796, 1403
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-The Earthen Ring
+  rotate: false
+  xy: 796, 1403
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Trolls
+  rotate: false
+  xy: 796, 1339
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Worgen
+  rotate: false
+  xy: 868, 1348
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mine-Zandalari Trolls
+  rotate: false
+  xy: 940, 1332
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Argent Vanguard
+  rotate: false
+  xy: 1012, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Humans
+  rotate: false
+  xy: 1012, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Light's Hope Chapel
+  rotate: false
+  xy: 1012, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Stromgarde
+  rotate: false
+  xy: 1012, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Theramore
+  rotate: false
+  xy: 1012, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Blood Elves
+  rotate: false
+  xy: 868, 1284
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Booty Bay
+  rotate: false
+  xy: 940, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Everlook
+  rotate: false
+  xy: 940, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Gadgetzan
+  rotate: false
+  xy: 940, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Goblins
+  rotate: false
+  xy: 940, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Ratchet
+  rotate: false
+  xy: 940, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Steamwheedle Port
+  rotate: false
+  xy: 940, 1268
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Cenarion Hold
+  rotate: false
+  xy: 796, 1275
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Feathermoon Stronghold
+  rotate: false
+  xy: 796, 1275
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Night Elves
+  rotate: false
+  xy: 796, 1275
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Dalaran
+  rotate: false
+  xy: 1012, 1248
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-High Elves
+  rotate: false
+  xy: 1012, 1248
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Dark Iron Dwarves
+  rotate: false
+  xy: 868, 1220
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Draenei
+  rotate: false
+  xy: 940, 1204
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Dwarves
+  rotate: false
+  xy: 796, 1211
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Explorers' League
+  rotate: false
+  xy: 796, 1211
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Thorium Brotherhood
+  rotate: false
+  xy: 796, 1211
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Forsaken
+  rotate: false
+  xy: 1012, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Gnomes
+  rotate: false
+  xy: 868, 1156
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Knights of the Ebon Blade
+  rotate: false
+  xy: 940, 1140
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Scourge
+  rotate: false
+  xy: 940, 1140
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Kul Tirans
+  rotate: false
+  xy: 796, 1147
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Orcs
+  rotate: false
+  xy: 1012, 1120
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Pandaren
+  rotate: false
+  xy: 868, 1092
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Tauren
+  rotate: false
+  xy: 940, 1076
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-The Earthen Ring
+  rotate: false
+  xy: 940, 1076
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Trolls
+  rotate: false
+  xy: 796, 1083
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Worgen
+  rotate: false
+  xy: 1012, 1056
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/MineT-Zandalari Trolls
+  rotate: false
+  xy: 868, 1028
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Molten Fields
+  rotate: false
+  xy: 940, 1012
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Moonglade
+  rotate: false
+  xy: 796, 1019
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Moonglow Ink
+  rotate: false
+  xy: 1012, 992
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Moonglow Ink+Plantation
+  rotate: false
+  xy: 868, 964
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mount Hyjal
+  rotate: false
+  xy: 796, 891
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Argent Vanguard
+  rotate: false
+  xy: 1012, 800
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Humans
+  rotate: false
+  xy: 1012, 800
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Light's Hope Chapel
+  rotate: false
+  xy: 1012, 800
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Stromgarde
+  rotate: false
+  xy: 1012, 800
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Theramore
+  rotate: false
+  xy: 1012, 800
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Blood Elves
+  rotate: false
+  xy: 868, 772
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Booty Bay
+  rotate: false
+  xy: 940, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Everlook
+  rotate: false
+  xy: 940, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Gadgetzan
+  rotate: false
+  xy: 940, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Goblins
+  rotate: false
+  xy: 940, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Ratchet
+  rotate: false
+  xy: 940, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Steamwheedle Port
+  rotate: false
+  xy: 940, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Cenarion Hold
+  rotate: false
+  xy: 796, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Feathermoon Stronghold
+  rotate: false
+  xy: 796, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Night Elves
+  rotate: false
+  xy: 796, 756
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Dalaran
+  rotate: false
+  xy: 1012, 736
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-High Elves
+  rotate: false
+  xy: 1012, 736
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Dark Iron Dwarves
+  rotate: false
+  xy: 868, 708
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Draenei
+  rotate: false
+  xy: 940, 692
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Dwarves
+  rotate: false
+  xy: 796, 692
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Explorers' League
+  rotate: false
+  xy: 796, 692
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Thorium Brotherhood
+  rotate: false
+  xy: 796, 692
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Forsaken
+  rotate: false
+  xy: 1012, 672
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Gnomes
+  rotate: false
+  xy: 868, 644
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Knights of the Ebon Blade
+  rotate: false
+  xy: 940, 628
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Scourge
+  rotate: false
+  xy: 940, 628
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Kul Tirans
+  rotate: false
+  xy: 796, 628
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Orcs
+  rotate: false
+  xy: 1012, 608
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Pandaren
+  rotate: false
+  xy: 868, 580
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Tauren
+  rotate: false
+  xy: 940, 564
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-The Earthen Ring
+  rotate: false
+  xy: 940, 564
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Trolls
+  rotate: false
+  xy: 796, 564
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Worgen
+  rotate: false
+  xy: 1012, 544
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Pasture-Zandalari Trolls
+  rotate: false
+  xy: 868, 516
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Peacebloom
+  rotate: false
+  xy: 940, 500
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Peacebloom+Plantation
+  rotate: false
+  xy: 796, 500
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plagued Land
+  rotate: false
+  xy: 868, 388
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plains+Hill+Blighted Land
+  rotate: false
+  xy: 940, 436
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders
+  rotate: false
+  xy: 1012, 480
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp
+  rotate: false
+  xy: 868, 324
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Argent Vanguard
+  rotate: false
+  xy: 1084, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Humans
+  rotate: false
+  xy: 1084, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Light's Hope Chapel
+  rotate: false
+  xy: 1084, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Stromgarde
+  rotate: false
+  xy: 1084, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Theramore
+  rotate: false
+  xy: 1084, 1312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Blood Elves
+  rotate: false
+  xy: 1084, 1248
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Booty Bay
+  rotate: false
+  xy: 1084, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Everlook
+  rotate: false
+  xy: 1084, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Gadgetzan
+  rotate: false
+  xy: 1084, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Goblins
+  rotate: false
+  xy: 1084, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Ratchet
+  rotate: false
+  xy: 1084, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Steamwheedle Port
+  rotate: false
+  xy: 1084, 1184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Cenarion Hold
+  rotate: false
+  xy: 1084, 1120
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Feathermoon Stronghold
+  rotate: false
+  xy: 1084, 1120
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Night Elves
+  rotate: false
+  xy: 1084, 1120
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Dalaran
+  rotate: false
+  xy: 1084, 1056
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-High Elves
+  rotate: false
+  xy: 1084, 1056
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Dark Iron Dwarves
+  rotate: false
+  xy: 1084, 992
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Draenei
+  rotate: false
+  xy: 1084, 928
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Dwarves
+  rotate: false
+  xy: 1084, 864
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Explorers' League
+  rotate: false
+  xy: 1084, 864
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Thorium Brotherhood
+  rotate: false
+  xy: 1084, 864
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Forsaken
+  rotate: false
+  xy: 1084, 800
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Gnomes
+  rotate: false
+  xy: 1084, 736
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Knights of the Ebon Blade
+  rotate: false
+  xy: 1084, 672
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Scourge
+  rotate: false
+  xy: 1084, 672
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Kul Tirans
+  rotate: false
+  xy: 1084, 608
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Orcs
+  rotate: false
+  xy: 1084, 544
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Pandaren
+  rotate: false
+  xy: 1084, 480
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Tauren
+  rotate: false
+  xy: 1156, 1267
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-The Earthen Ring
+  rotate: false
+  xy: 1156, 1267
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Trolls
+  rotate: false
+  xy: 1156, 1203
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Worgen
+  rotate: false
+  xy: 1156, 1139
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+Camp-Zandalari Trolls
+  rotate: false
+  xy: 1156, 1075
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT
+  rotate: false
+  xy: 1156, 1011
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Argent Vanguard
+  rotate: false
+  xy: 1156, 947
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Humans
+  rotate: false
+  xy: 1156, 947
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Light's Hope Chapel
+  rotate: false
+  xy: 1156, 947
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Stromgarde
+  rotate: false
+  xy: 1156, 947
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Theramore
+  rotate: false
+  xy: 1156, 947
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Blood Elves
+  rotate: false
+  xy: 1156, 883
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Booty Bay
+  rotate: false
+  xy: 1156, 819
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Everlook
+  rotate: false
+  xy: 1156, 819
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Gadgetzan
+  rotate: false
+  xy: 1156, 819
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Goblins
+  rotate: false
+  xy: 1156, 819
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Ratchet
+  rotate: false
+  xy: 1156, 819
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Steamwheedle Port
+  rotate: false
+  xy: 1156, 819
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Cenarion Hold
+  rotate: false
+  xy: 1156, 755
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Feathermoon Stronghold
+  rotate: false
+  xy: 1156, 755
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Night Elves
+  rotate: false
+  xy: 1156, 755
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Dalaran
+  rotate: false
+  xy: 1156, 691
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-High Elves
+  rotate: false
+  xy: 1156, 691
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Dark Iron Dwarves
+  rotate: false
+  xy: 1156, 627
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Draenei
+  rotate: false
+  xy: 1156, 563
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Dwarves
+  rotate: false
+  xy: 1156, 499
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Explorers' League
+  rotate: false
+  xy: 1156, 499
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Thorium Brotherhood
+  rotate: false
+  xy: 1156, 499
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Forsaken
+  rotate: false
+  xy: 1228, 1212
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Gnomes
+  rotate: false
+  xy: 1228, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Knights of the Ebon Blade
+  rotate: false
+  xy: 1228, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Scourge
+  rotate: false
+  xy: 1228, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Kul Tirans
+  rotate: false
+  xy: 1300, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Orcs
+  rotate: false
+  xy: 1300, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Pandaren
+  rotate: false
+  xy: 1156, 435
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Tauren
+  rotate: false
+  xy: 1084, 416
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-The Earthen Ring
+  rotate: false
+  xy: 1084, 416
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Trolls
+  rotate: false
+  xy: 1156, 371
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Worgen
+  rotate: false
+  xy: 1084, 352
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Plainstriders+CampT-Zandalari Trolls
+  rotate: false
+  xy: 1156, 307
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Red Rocks of Mulgore
+  rotate: false
+  xy: 1372, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather
+  rotate: false
+  xy: 1300, 1020
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp
+  rotate: false
+  xy: 1372, 1020
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Argent Vanguard
+  rotate: false
+  xy: 1228, 1016
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Humans
+  rotate: false
+  xy: 1228, 1016
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Light's Hope Chapel
+  rotate: false
+  xy: 1228, 1016
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Stromgarde
+  rotate: false
+  xy: 1228, 1016
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Theramore
+  rotate: false
+  xy: 1228, 1016
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Blood Elves
+  rotate: false
+  xy: 1228, 952
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Booty Bay
+  rotate: false
+  xy: 1300, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Everlook
+  rotate: false
+  xy: 1300, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Gadgetzan
+  rotate: false
+  xy: 1300, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Goblins
+  rotate: false
+  xy: 1300, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Ratchet
+  rotate: false
+  xy: 1300, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Steamwheedle Port
+  rotate: false
+  xy: 1300, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Cenarion Hold
+  rotate: false
+  xy: 1228, 888
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Feathermoon Stronghold
+  rotate: false
+  xy: 1228, 888
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Night Elves
+  rotate: false
+  xy: 1228, 888
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Dalaran
+  rotate: false
+  xy: 1300, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-High Elves
+  rotate: false
+  xy: 1300, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Dark Iron Dwarves
+  rotate: false
+  xy: 1372, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Draenei
+  rotate: false
+  xy: 1228, 824
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Dwarves
+  rotate: false
+  xy: 1372, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Explorers' League
+  rotate: false
+  xy: 1372, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Thorium Brotherhood
+  rotate: false
+  xy: 1372, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Forsaken
+  rotate: false
+  xy: 1228, 760
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Gnomes
+  rotate: false
+  xy: 1228, 696
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Knights of the Ebon Blade
+  rotate: false
+  xy: 1228, 632
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Scourge
+  rotate: false
+  xy: 1228, 632
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Kul Tirans
+  rotate: false
+  xy: 1228, 568
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Orcs
+  rotate: false
+  xy: 1228, 504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Pandaren
+  rotate: false
+  xy: 1228, 440
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Tauren
+  rotate: false
+  xy: 1228, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-The Earthen Ring
+  rotate: false
+  xy: 1228, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Trolls
+  rotate: false
+  xy: 1228, 312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Worgen
+  rotate: false
+  xy: 1228, 248
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rugged Leather+Camp-Zandalari Trolls
+  rotate: false
+  xy: 868, 260
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Sacred Grounds
+  rotate: false
+  xy: 940, 316
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Snow+Hill+Blighted Land
+  rotate: false
+  xy: 940, 243
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Star Rubies
+  rotate: false
+  xy: 1012, 196
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Stonetalon Peak
+  rotate: false
+  xy: 1084, 160
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Sunfruit
+  rotate: false
+  xy: 1156, 179
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Sunfruit+Plantation
+  rotate: false
+  xy: 1228, 184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Sunken Temple
+  rotate: false
+  xy: 868, 196
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/Tel'Abim Bananas
   rotate: false
-  xy: 1169, 1468
+  xy: 940, 179
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tel'Abim Bananas+Plantation
   rotate: false
-  xy: 1025, 1276
+  xy: 1012, 132
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Teldrassil
   rotate: false
-  xy: 1097, 1340
+  xy: 1084, 96
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Dark Portal
   rotate: false
-  xy: 1169, 1404
+  xy: 1372, 828
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Lifeblood Pillar
   rotate: false
-  xy: 1025, 1212
+  xy: 1300, 824
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Maelstrom
   rotate: false
-  xy: 1097, 1276
+  xy: 1300, 760
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/The Nexus
   rotate: false
-  xy: 1169, 1340
+  xy: 1372, 764
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Thorium
   rotate: false
-  xy: 1025, 1148
+  xy: 1300, 696
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Thousand Needles
   rotate: false
-  xy: 1097, 1212
+  xy: 1300, 632
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Titan Ruins
   rotate: false
-  xy: 1169, 1276
+  xy: 1300, 568
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Trade Company
   rotate: false
-  xy: 1025, 1076
+  xy: 1300, 496
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
+TileSets/HexaRealm/Tiles/Trading post-Argent Vanguard
+  rotate: false
+  xy: 1300, 432
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Humans
+  rotate: false
+  xy: 1300, 432
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Light's Hope Chapel
+  rotate: false
+  xy: 1300, 432
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Stromgarde
+  rotate: false
+  xy: 1300, 432
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Theramore
+  rotate: false
+  xy: 1300, 432
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Blood Elves
+  rotate: false
+  xy: 1300, 368
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Booty Bay
+  rotate: false
+  xy: 1300, 304
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Everlook
+  rotate: false
+  xy: 1300, 304
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Gadgetzan
+  rotate: false
+  xy: 1300, 304
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Goblins
+  rotate: false
+  xy: 1300, 304
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Ratchet
+  rotate: false
+  xy: 1300, 304
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Steamwheedle Port
+  rotate: false
+  xy: 1300, 304
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Cenarion Hold
+  rotate: false
+  xy: 1300, 240
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Feathermoon Stronghold
+  rotate: false
+  xy: 1300, 240
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Night Elves
+  rotate: false
+  xy: 1300, 240
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Dalaran
+  rotate: false
+  xy: 1300, 176
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-High Elves
+  rotate: false
+  xy: 1300, 176
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Dark Iron Dwarves
+  rotate: false
+  xy: 1300, 112
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Draenei
+  rotate: false
+  xy: 1444, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Dwarves
+  rotate: false
+  xy: 1444, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Explorers' League
+  rotate: false
+  xy: 1444, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Thorium Brotherhood
+  rotate: false
+  xy: 1444, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Forsaken
+  rotate: false
+  xy: 1444, 1020
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Gnomes
+  rotate: false
+  xy: 1444, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Knights of the Ebon Blade
+  rotate: false
+  xy: 1444, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Scourge
+  rotate: false
+  xy: 1444, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Kul Tirans
+  rotate: false
+  xy: 1444, 828
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Orcs
+  rotate: false
+  xy: 1444, 764
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Pandaren
+  rotate: false
+  xy: 1444, 700
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Tauren
+  rotate: false
+  xy: 1372, 696
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-The Earthen Ring
+  rotate: false
+  xy: 1372, 696
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Trolls
+  rotate: false
+  xy: 1372, 632
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Worgen
+  rotate: false
+  xy: 1444, 636
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading post-Zandalari Trolls
+  rotate: false
+  xy: 1372, 568
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Argent Vanguard
+  rotate: false
+  xy: 1372, 504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Humans
+  rotate: false
+  xy: 1372, 504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Light's Hope Chapel
+  rotate: false
+  xy: 1372, 504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Stromgarde
+  rotate: false
+  xy: 1372, 504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Theramore
+  rotate: false
+  xy: 1372, 504
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Blood Elves
+  rotate: false
+  xy: 1372, 440
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Booty Bay
+  rotate: false
+  xy: 1372, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Everlook
+  rotate: false
+  xy: 1372, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Gadgetzan
+  rotate: false
+  xy: 1372, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Goblins
+  rotate: false
+  xy: 1372, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Ratchet
+  rotate: false
+  xy: 1372, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Steamwheedle Port
+  rotate: false
+  xy: 1372, 376
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Cenarion Hold
+  rotate: false
+  xy: 1372, 312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Feathermoon Stronghold
+  rotate: false
+  xy: 1372, 312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Night Elves
+  rotate: false
+  xy: 1372, 312
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Dalaran
+  rotate: false
+  xy: 1372, 248
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-High Elves
+  rotate: false
+  xy: 1372, 248
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Dark Iron Dwarves
+  rotate: false
+  xy: 1372, 184
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Draenei
+  rotate: false
+  xy: 1372, 120
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Dwarves
+  rotate: false
+  xy: 1372, 56
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Explorers' League
+  rotate: false
+  xy: 1372, 56
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Thorium Brotherhood
+  rotate: false
+  xy: 1372, 56
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Forsaken
+  rotate: false
+  xy: 1156, 96
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Gnomes
+  rotate: false
+  xy: 1228, 96
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Knights of the Ebon Blade
+  rotate: false
+  xy: 1300, 48
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Scourge
+  rotate: false
+  xy: 1300, 48
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Kul Tirans
+  rotate: false
+  xy: 1516, 1148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Orcs
+  rotate: false
+  xy: 1516, 1084
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Pandaren
+  rotate: false
+  xy: 1516, 1020
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Tauren
+  rotate: false
+  xy: 1516, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-The Earthen Ring
+  rotate: false
+  xy: 1516, 956
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Trolls
+  rotate: false
+  xy: 1516, 892
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Worgen
+  rotate: false
+  xy: 1516, 828
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Trading postT-Zandalari Trolls
+  rotate: false
+  xy: 1516, 764
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/Truesilver
   rotate: false
-  xy: 1097, 1148
+  xy: 1516, 700
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra+Hill+Blighted Land
   rotate: false
-  xy: 1169, 1212
+  xy: 1516, 636
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Un'Goro Crater
   rotate: false
-  xy: 1025, 1012
+  xy: 1516, 572
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -9902,175 +12044,175 @@ TileSets/HexaRealm/Units/Grenadier
   index: -1
 TileSets/HexaRealm/Units/Iron Colossus
   rotate: false
-  xy: 737, 1468
+  xy: 1385, 1624
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Juggernaught
   rotate: false
-  xy: 737, 1340
+  xy: 1169, 1468
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Khan-Age of the Cataclysm
   rotate: false
-  xy: 953, 1295
+  xy: 1169, 1395
   size: 64, 65
   orig: 64, 65
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Kul Tiran Marine
   rotate: false
-  xy: 737, 1204
+  xy: 724, 306
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Longboat
   rotate: false
-  xy: 881, 1064
+  xy: 1457, 1532
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mechagnome Trooper
   rotate: false
-  xy: 809, 607
+  xy: 1817, 1276
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mechano-Tank
   rotate: false
-  xy: 881, 552
+  xy: 1817, 1212
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Militia
   rotate: false
-  xy: 953, 523
+  xy: 1817, 1148
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mortar Team
   rotate: false
-  xy: 521, 562
+  xy: 796, 955
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mortar Team-Age of the Legion
   rotate: false
-  xy: 737, 500
+  xy: 940, 884
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mountaineer
   rotate: false
-  xy: 881, 424
+  xy: 1012, 864
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Mounted Archer
   rotate: false
-  xy: 953, 395
+  xy: 868, 836
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Musketeer
   rotate: false
-  xy: 1169, 1532
+  xy: 940, 820
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Outrider
   rotate: false
-  xy: 364, 551
+  xy: 796, 820
   size: 64, 63
   orig: 64, 63
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Peasant
   rotate: false
-  xy: 364, 359
+  xy: 796, 436
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Peasant-Age of the Cataclysm
   rotate: false
-  xy: 364, 295
+  xy: 868, 452
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Ranger
   rotate: false
-  xy: 724, 116
+  xy: 1372, 1148
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Settler-Age of the Cataclysm
   rotate: false
-  xy: 1352, 1716
+  xy: 1012, 324
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Shock Trooper
   rotate: false
-  xy: 1385, 1596
+  xy: 1084, 288
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Siege Engine
   rotate: false
-  xy: 1385, 1532
+  xy: 1156, 243
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Siegebreaker
   rotate: false
-  xy: 1385, 1468
+  xy: 1012, 260
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Skyguard
   rotate: false
-  xy: 1025, 1532
+  xy: 1084, 224
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Vanguard
   rotate: false
-  xy: 1097, 1084
+  xy: 1444, 568
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/War Galley
   rotate: false
-  xy: 1025, 948
+  xy: 1516, 508
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/War Golem
   rotate: false
-  xy: 1025, 884
+  xy: 1444, 312
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
