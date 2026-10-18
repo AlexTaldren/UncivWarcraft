@@ -3,11 +3,6 @@
     "name": "The Darkmoon Faire",
     "text": "A caravan of striped tents and creaking wagons rolls into view: Silas Darkmoon's Faire has come to our lands! Games of chance, strange beasts, a fortune-teller named Sayge and a great many tickets for sale.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "A caravan of striped tents and creaking wagons rolls into view: Silas Darkmoon's Faire has come to our lands! Games of chance, strange beasts, a fortune-teller named Sayge and a great many tickets for sale."
-      }
-    ],
     "choices": [
       {
         "text": "Host the Faire in our capital (-100 Gold, a short Golden Age)",
@@ -37,11 +32,6 @@
     "name": "Plague of Undeath",
     "text": "Grain from the north has been tainted. Those who ate the bread sicken, die... and rise again. The Cult of the Damned is spreading the plague of undeath through our granaries, as it once did in Lordaeron.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Grain from the north has been tainted. Those who ate the bread sicken, die... and rise again. The Cult of the Damned is spreading the plague of undeath through our granaries, as it once did in Lordaeron."
-      }
-    ],
     "choices": [
       {
         "text": "Ward the granaries with arcane seals (-25 Mana)",
@@ -76,11 +66,6 @@
     "name": "Legion Incursion",
     "text": "The sky tears open in a wound of green fire. A fel rift has opened near our lands, and the demons of the Burning Legion are pouring through!",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "The sky tears open in a wound of green fire. A fel rift has opened near our lands, and the demons of the Burning Legion are pouring through!"
-      }
-    ],
     "choices": [
       {
         "text": "Stand and fight! (demons attack; heroes rise to meet them)",
@@ -110,11 +95,6 @@
     "name": "A Goblin Offer",
     "text": "A Steamwheedle Cartel zeppelin touches down outside the capital. A goblin in a fine suit steps out: \"Time is money, friend! Have I got a deal for you...\"",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "A Steamwheedle Cartel zeppelin touches down outside the capital. A goblin in a fine suit steps out: \"Time is money, friend! Have I got a deal for you...\""
-      }
-    ],
     "choices": [
       {
         "text": "Buy the goblin blueprints (-100 Gold, +Science)",
@@ -141,11 +121,6 @@
     "name": "The Lunar Festival",
     "text": "The Lunar Festival has come, and the spirits of the elders walk among us. Lanterns float over the rooftops and the people ask how we will honor the old ones.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "The Lunar Festival has come, and the spirits of the elders walk among us. Lanterns float over the rooftops and the people ask how we will honor the old ones."
-      }
-    ],
     "choices": [
       {
         "text": "Pay homage to the elders (+Faith)",
@@ -167,11 +142,6 @@
     "name": "Brewfest",
     "text": "Dwarven brewers have rolled their kegs into town for Brewfest. The people are already singing, and the Dark Iron dwarves are sure to crash the party.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Dwarven brewers have rolled their kegs into town for Brewfest. The people are already singing, and the Dark Iron dwarves are sure to crash the party."
-      }
-    ],
     "choices": [
       {
         "text": "Sponsor the festival (-80 Gold, a short Golden Age)",
@@ -193,11 +163,6 @@
     "name": "Children's Week",
     "text": "War has left many orphans in our lands. The matrons of the orphanage ask our citizens to take them in.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "War has left many orphans in our lands. The matrons of the orphanage ask our citizens to take them in."
-      }
-    ],
     "choices": [
       {
         "text": "Take in the orphans (-30 Gold, +1 population)",
@@ -219,11 +184,6 @@
     "name": "Gnomish Refugees",
     "text": "Gnomes driven from irradiated Gnomeregan arrive at our gates with nothing but their tools and a great deal of enthusiasm.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Gnomes driven from irradiated Gnomeregan arrive at our gates with nothing but their tools and a great deal of enthusiasm."
-      }
-    ],
     "choices": [
       {
         "text": "Welcome them into our cities (-40 Gold, +2 population)",
@@ -249,11 +209,6 @@
     "name": "A Titan Vault",
     "text": "Explorers' League diggers have broken into a sealed vault of the Titans. Strange machines hum in the dark, and runes glow on the walls.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Explorers' League diggers have broken into a sealed vault of the Titans. Strange machines hum in the dark, and runes glow on the walls."
-      }
-    ],
     "choices": [
       {
         "text": "Tap the vault's power (+40 Mana)",
@@ -285,11 +240,6 @@
     "name": "The Cataclysm",
     "text": "Deathwing the Destroyer has burst from Deepholm. The earth splits, the sea rises and fire falls from the sky across Azeroth.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Deathwing the Destroyer has burst from Deepholm. The earth splits, the sea rises and fire falls from the sky across Azeroth."
-      }
-    ],
     "choices": [
       {
         "text": "Rebuild what was broken (-150 Gold)",
@@ -324,11 +274,6 @@
     "name": "A Wandering Brewmaster",
     "text": "A Pandaren brewmaster with a keg on his back wanders into the capital, looking for a good brew and a better story.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "A Pandaren brewmaster with a keg on his back wanders into the capital, looking for a good brew and a better story."
-      }
-    ],
     "choices": [
       {
         "text": "Invite him to stay (-60 Gold, +Culture, +1 population)",
@@ -351,11 +296,6 @@
     "name": "Hallow's End",
     "text": "It is Hallow's End, and the Headless Horseman has been seen riding by moonlight. The people beg us to light the Wickerman to keep him away.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "It is Hallow's End, and the Headless Horseman has been seen riding by moonlight. The people beg us to light the Wickerman to keep him away."
-      }
-    ],
     "choices": [
       {
         "text": "Light the Wickerman (+Culture)",
@@ -377,11 +317,6 @@
     "name": "An Envoy of the Kirin Tor",
     "text": "An envoy from Dalaran offers to train our most gifted children in the arcane arts, for a fee.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "An envoy from Dalaran offers to train our most gifted children in the arcane arts, for a fee."
-      }
-    ],
     "choices": [
       {
         "text": "Pay the Kirin Tor in Mana (-30 Mana, +Science)",
@@ -409,11 +344,6 @@
     "name": "Murloc Raid",
     "text": "\"Mrglglglgl!\" A tribe of murlocs has crawled out of the surf and is raiding our fishing villages.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "\"Mrglglglgl!\" A tribe of murlocs has crawled out of the surf and is raiding our fishing villages."
-      }
-    ],
     "choices": [
       {
         "text": "Drive them back into the sea! (murlocs attack)",
@@ -434,11 +364,6 @@
     "name": "The Defias Brotherhood",
     "text": "The stonemasons who rebuilt our walls were never paid. Now they wear red masks, and call themselves the Defias Brotherhood.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "The stonemasons who rebuilt our walls were never paid. Now they wear red masks, and call themselves the Defias Brotherhood."
-      }
-    ],
     "choices": [
       {
         "text": "Pay the Stonemasons' Guild what it is owed (-150 Gold)",
@@ -460,11 +385,6 @@
     "name": "The Scourge Marches",
     "text": "The Lich King's armies pour out of the north. Ghouls and death knights fall upon our borders, and the dead rise behind them.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "The Lich King's armies pour out of the north. Ghouls and death knights fall upon our borders, and the dead rise behind them."
-      }
-    ],
     "choices": [
       {
         "text": "Hold the line! (the Scourge attacks; the faithful rally)",
@@ -494,11 +414,6 @@
     "name": "The Legion Invades",
     "text": "This is no mere incursion. Fel meteors rain across Azeroth as the Burning Legion begins its invasion in earnest.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "This is no mere incursion. Fel meteors rain across Azeroth as the Burning Legion begins its invasion in earnest."
-      }
-    ],
     "choices": [
       {
         "text": "Defend our cities! (Infernals fall; heroes rise)",
@@ -528,11 +443,6 @@
     "name": "Whispers of the Old Gods",
     "text": "In the dark, a voice whispers. Scholars dream of tentacles and eyes, and some stop sleeping altogether. The Old Gods are stirring.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "In the dark, a voice whispers. Scholars dream of tentacles and eyes, and some stop sleeping altogether. The Old Gods are stirring."
-      }
-    ],
     "choices": [
       {
         "text": "Seal our minds with arcane wards (-40 Mana)",
@@ -568,11 +478,6 @@
     "name": "The Gift of Alexstrasza",
     "text": "A great red dragon circles the capital and lands in the fields. Alexstrasza the Life-Binder offers her blessing to our people.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "A great red dragon circles the capital and lands in the fields. Alexstrasza the Life-Binder offers her blessing to our people."
-      }
-    ],
     "choices": [
       {
         "text": "Accept the gift of life (+2 population)",
@@ -592,11 +497,6 @@
     "name": "The Blue Dragonflight",
     "text": "Kalecgos of the blue dragonflight offers to share the secrets of the arcane, if we promise to use them wisely.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Kalecgos of the blue dragonflight offers to share the secrets of the arcane, if we promise to use them wisely."
-      }
-    ],
     "choices": [
       {
         "text": "Ask him to fill our Mana stores (+50 Mana)",
@@ -620,11 +520,6 @@
     "name": "Nozdormu's Warning",
     "text": "A bronze dragon steps out of time itself. Nozdormu the Timeless warns of a future that must not come to pass, and shows us how to change it.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "A bronze dragon steps out of time itself. Nozdormu the Timeless warns of a future that must not come to pass, and shows us how to change it."
-      }
-    ],
     "choices": [
       {
         "text": "Heed the Timeless One (a short Golden Age)",
@@ -644,11 +539,6 @@
     "name": "The Emerald Dream",
     "text": "Our people dream of a green and endless forest. Ysera the Dreamer has touched their sleep with peace.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Our people dream of a green and endless forest. Ysera the Dreamer has touched their sleep with peace."
-      }
-    ],
     "choices": [
       {
         "text": "Embrace the Dream (+Culture)",
@@ -668,11 +558,6 @@
     "name": "Lord Prestor's Offer",
     "text": "A charming nobleman, Lord Daval Prestor, offers gold and counsel to our court. Something about his eyes is not quite right.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "A charming nobleman, Lord Daval Prestor, offers gold and counsel to our court. Something about his eyes is not quite right."
-      }
-    ],
     "choices": [
       {
         "text": "Accept his generous gift (+300 Gold, but the black dragon's influence spreads)",
@@ -694,11 +579,6 @@
     "name": "A Bold Experiment",
     "text": "Our tinkers want to test a new device. In theory it will revolutionize gnomish science. In theory.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Our tinkers want to test a new device. In theory it will revolutionize gnomish science. In theory."
-      }
-    ],
     "choices": [
       {
         "text": "Power it with Mana (-20 Mana, a safer gamble)",
@@ -728,11 +608,6 @@
     "name": "Explosive Prototype",
     "text": "KA-BOOM! A prototype has exploded in the workshop. Nobody was hurt, probably, but the neighborhood is a crater.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "KA-BOOM! A prototype has exploded in the workshop. Nobody was hurt, probably, but the neighborhood is a crater."
-      }
-    ],
     "choices": [
       {
         "text": "Study the crater (+Science, lose population)",
@@ -754,11 +629,6 @@
     "name": "The Wandering Isle's Choice",
     "text": "The great turtle Shen-zin Su is wounded, and our people must choose a path. Aysa Cloudsinger and the Tushui would join the Alliance; Ji Firepaw and the Huojin, the Horde.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "The great turtle Shen-zin Su is wounded, and our people must choose a path. Aysa Cloudsinger and the Tushui would join the Alliance; Ji Firepaw and the Huojin, the Horde."
-      }
-    ],
     "choices": [
       {
         "text": "Follow the Tushui and join the Alliance (defense, +10% vs the Horde)",
@@ -784,11 +654,6 @@
     "name": "The Ley Lines Swell",
     "text": "Our Mana stores are brimming, and the ley lines beneath our cities hum with power. Our magi say such a surplus should be put to use before it slips away into the Nether.",
     "presentation": "Alert",
-    "civilopediaText": [
-      {
-        "text": "Our Mana stores are brimming, and the ley lines beneath our cities hum with power. Our magi say such a surplus should be put to use before it slips away into the Nether."
-      }
-    ],
     "choices": [
       {
         "text": "Channel it into research (-150 Mana, +Science)",

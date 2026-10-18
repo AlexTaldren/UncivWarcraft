@@ -343,8 +343,9 @@ def json_events():
     out = []
     for e in EVENTS:
         out.append({
+            # no civilopediaText: Unciv's event popup shows it under the text, so a copy of
+            # the text there printed the story twice
             "name": e["name"], "text": e["text"], "presentation": "Alert",
-            "civilopediaText": [{"text": e["text"]}],
             "choices": [{"text": t, "uniques": u} for t, u in e["choices"]],
         })
     return out
