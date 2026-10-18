@@ -257,6 +257,8 @@ for n in F.NATIONS:
         n["uniqueText"] = F.HUMAN_ABILITY_TEXT
     files["Personalities"].append(p)
     majors.append(n)
+import wc_dialogue
+wc_dialogue.apply(majors)       # leader lines in each faction's own voice
 
 minors = []
 for name, cstype, outer, inner in F.CITY_STATES:
