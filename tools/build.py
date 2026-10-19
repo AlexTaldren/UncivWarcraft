@@ -538,6 +538,8 @@ print("re-keyed images:", count)
 icons.write_all(IMG)
 import icon_set
 print("warcraft icons:", icon_set.write_all(IMG))
+import air_icons   # Oct 2026: lore icons for the 15 flying units (replace the generic ones)
+print("flying unit icons:", air_icons.write_all(IMG))
 
 # Icons for techs, buildings and policies in their own pack so "game" stays one page.
 for _f in ("TechIcons", "BuildingIcons", "PolicyIcons"):
