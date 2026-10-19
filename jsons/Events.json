@@ -687,5 +687,754 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Raid: Onyxia",
+    "text": "Black dragons have been seen circling our borders. The Brood Mother is hunting. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Onyxia rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Onyxia] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-150 Gold)",
+        "uniques": [
+          "Gain [-150] [Gold]",
+          "Only available <when above [149] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: Hakkar",
+    "text": "Gurubashi priests are spilling blood on jungle altars. The Soulflayer answers. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Hakkar rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Hakkar the Soulflayer] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-160 Gold)",
+        "uniques": [
+          "Gain [-160] [Gold]",
+          "Only available <when above [159] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: Ragnaros",
+    "text": "The mountains near our lands split open and spill fire. The Firelord has broken through. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Ragnaros rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Ragnaros the Firelord] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-190 Gold)",
+        "uniques": [
+          "Gain [-190] [Gold]",
+          "Only available <when above [189] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: C'Thun",
+    "text": "A great eye has opened beneath the sands near our borders. Its whispers keep our people awake. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (C'Thun rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [C'Thun] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-220 Gold)",
+        "uniques": [
+          "Gain [-220] [Gold]",
+          "Only available <when above [219] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: Sapphiron",
+    "text": "A killing frost descends from a cloudless sky. A frost wyrm of Naxxramas is on the wing. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Sapphiron rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Sapphiron] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-240 Gold)",
+        "uniques": [
+          "Gain [-240] [Gold]",
+          "Only available <when above [239] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: Deathwing",
+    "text": "The earth shakes and the sky burns orange. Deathwing has come out of Deepholm. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Deathwing rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Deathwing the Destroyer] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-300 Gold)",
+        "uniques": [
+          "Gain [-300] [Gold]",
+          "Only available <when above [299] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: Kil'jaeden",
+    "text": "Fel fire rains on the hills near our cities. Kil'jaeden the Deceiver walks Azeroth. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Kil'jaeden rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Kil'jaeden the Deceiver] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-350 Gold)",
+        "uniques": [
+          "Gain [-350] [Gold]",
+          "Only available <when above [349] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: N'Zoth",
+    "text": "The sea boils and black tendrils rise from the ground. The Corruptor has awakened. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (N'Zoth rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [N'Zoth the Corruptor] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-410 Gold)",
+        "uniques": [
+          "Gain [-410] [Gold]",
+          "Only available <when above [409] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Fel Offer",
+    "text": "A cloaked warlock comes before our council with a chalice of green fire. 'Drink,' he says, 'and no army on Azeroth will stand against you.' The blood of demons glows in the cup.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Drink from the chalice (+15% Strength for military units, -15% growth)",
+        "uniques": [
+          "Adopt [Embraced the Fel]",
+          "[-20]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Cast it down (+15% Faith, +20% Strength against raiders and demons)",
+        "uniques": [
+          "Adopt [Rejected the Fel]",
+          "[+20]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Sunwell Reborn",
+    "text": "The Sunwell can burn again. The priests say it must be reborn in the Light of the naaru; the magisters say it must be rebuilt as it was, pure arcane fire.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Rekindle it with the Light (+15% Faith, +2 Culture in the capital)",
+        "uniques": [
+          "Adopt [Sunwell Restored by the Light]"
+        ]
+      },
+      {
+        "text": "Rebuild the arcane font (+10% Science, +2 Science in the capital)",
+        "uniques": [
+          "Adopt [Sunwell Rekindled by Arcane]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Covenants Call",
+    "text": "The veil to the Shadowlands has torn. Envoys of four great covenants stand before us, each asking for our allegiance in the war for the realm of death.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Bastion's Kyrian (+2 Faith in every city, faster healing)",
+        "uniques": [
+          "Adopt [Kyrian Covenant]"
+        ]
+      },
+      {
+        "text": "Revendreth's Venthyr (+15% Gold, +10% attack)",
+        "uniques": [
+          "Adopt [Venthyr Covenant]"
+        ]
+      },
+      {
+        "text": "Ardenweald's Night Fae (+10% Food, +10% Strength in forests)",
+        "uniques": [
+          "Adopt [Night Fae Covenant]"
+        ]
+      },
+      {
+        "text": "Maldraxxus's Necrolords (+10% Production, +10% defence)",
+        "uniques": [
+          "Adopt [Necrolord Covenant]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Humans",
+    "text": "Our first city rises on the bones of Arathor, the old kingdom of men. The Light and the sword will guard it.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise a militia (a free Militia)",
+        "uniques": [
+          "Free [Militia] appears"
+        ]
+      },
+      {
+        "text": "Build a chapel (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Orcs",
+    "text": "The clans have come together under one banner. Our first stronghold is raised in a land as harsh as we are.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sharpen the axes (a free Spearman)",
+        "uniques": [
+          "Free [Spearman] appears"
+        ]
+      },
+      {
+        "text": "Beat the war drums (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Night Elves",
+    "text": "Beneath the boughs of the ancient forest, the Kaldorei found their first city in the light of Elune.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Send the Sentinels into the woods (a free Scout)",
+        "uniques": [
+          "Free [Scout] appears"
+        ]
+      },
+      {
+        "text": "Pray at the moonwell (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Dwarves",
+    "text": "Deep in the mountains, the first halls of our kingdom are carved and the first forge is lit.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Open the first mine (+40 Production worth of Gold)",
+        "uniques": [
+          "Gain [40] [Gold]"
+        ]
+      },
+      {
+        "text": "Toast the founding (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Gnomes",
+    "text": "Our first city is founded, and three gnomes have already proposed improvements to it.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Fund the inventors (+40 Science)",
+        "uniques": [
+          "Gain [40] [Science]"
+        ]
+      },
+      {
+        "text": "Build a clockwork scout (a free Scout)",
+        "uniques": [
+          "Free [Scout] appears"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Tauren",
+    "text": "The tribes gather on the plains and raise their first great tent. The Earth Mother watches over us.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Hunt the plainstriders (+1 population)",
+        "uniques": [
+          "[1] population in a random city"
+        ]
+      },
+      {
+        "text": "Speak with the spirits (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Trolls",
+    "text": "The Darkspear plant their totems on new ground. The loa have shown us the way.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Call the hunters (a free Scout)",
+        "uniques": [
+          "Free [Scout] appears"
+        ]
+      },
+      {
+        "text": "Honor the loa (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Blood Elves",
+    "text": "From the ashes of the old kingdom, the sin'dorei raise a new city of gold and crimson.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Gather the magisters (+40 Science)",
+        "uniques": [
+          "Gain [40] [Science]"
+        ]
+      },
+      {
+        "text": "Hold a grand reception (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: High Elves",
+    "text": "The quel'dorei found their first city in the eternal spring of Eversong, guarded by runestones.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise the runestones (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      },
+      {
+        "text": "Send out the Farstriders (a free Scout)",
+        "uniques": [
+          "Free [Scout] appears"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Pandaren",
+    "text": "The pandaren raise their first village among misty peaks and terraced fields. The tea is warm.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Brew a celebration (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      },
+      {
+        "text": "Tend the fields (+1 population)",
+        "uniques": [
+          "[1] population in a random city"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Forsaken",
+    "text": "Free of the Lich King's will, the Forsaken claim their first city among the ruins of the living.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise the walls (+40 Gold)",
+        "uniques": [
+          "Gain [40] [Gold]"
+        ]
+      },
+      {
+        "text": "Put the apothecaries to work (+40 Science)",
+        "uniques": [
+          "Gain [40] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Draenei",
+    "text": "After ages of flight across the stars, the draenei set down and build their first city. The Light has led us here.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Pray in thanks (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      },
+      {
+        "text": "Salvage the crystals (+40 Science)",
+        "uniques": [
+          "Gain [40] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Goblins",
+    "text": "A new city, a new market! The first shop is already open and the prices are already high.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Open for business (+60 Gold)",
+        "uniques": [
+          "Gain [60] [Gold]"
+        ]
+      },
+      {
+        "text": "Hire some muscle (a free Militia)",
+        "uniques": [
+          "Free [Militia] appears"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Worgen",
+    "text": "Behind the Greymane Wall, Gilneas raises its first city. Whatever comes, we will face it together.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Muster the watch (a free Militia)",
+        "uniques": [
+          "Free [Militia] appears"
+        ]
+      },
+      {
+        "text": "Build the harvest hall (+1 population)",
+        "uniques": [
+          "[1] population in a random city"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Scourge",
+    "text": "The cold of Northrend gathers into a will. The first necropolis rises, and the dead begin to stir.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise the fallen (a free Ghoul)",
+        "uniques": [
+          "Free [Ghoul] appears"
+        ]
+      },
+      {
+        "text": "Spread the plague (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Dark Iron Dwarves",
+    "text": "In the shadow of the mountain, the Dark Irons light their forges. Fire is our birthright.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Stoke the forges (+40 Gold)",
+        "uniques": [
+          "Gain [40] [Gold]"
+        ]
+      },
+      {
+        "text": "Arm the guard (a free Spearman)",
+        "uniques": [
+          "Free [Spearman] appears"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Kul Tirans",
+    "text": "The first city of Kul Tiras rises above a deep harbor. The sea will make us great.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Build the docks (+40 Gold)",
+        "uniques": [
+          "Gain [40] [Gold]"
+        ]
+      },
+      {
+        "text": "Bless the tides (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Zandalari Trolls",
+    "text": "The Zandalari raise a golden temple at the heart of their first city. An empire begins.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Honor the loa of kings (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      },
+      {
+        "text": "Gather tribute (+40 Gold)",
+        "uniques": [
+          "Gain [40] [Gold]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Age of Arathor",
+    "text": "Kingdoms rise where tribes once roamed. Thoradin's Arathor unites the humans, and the elves teach them magic.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Build roads between our cities (+60 Gold)",
+        "uniques": [
+          "Gain [60] [Gold]"
+        ]
+      },
+      {
+        "text": "Found a school of magic (+60 Science)",
+        "uniques": [
+          "Gain [60] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Dark Portal Opens",
+    "text": "A rift has opened in the Black Morass and the orcish Horde pours through. The age of war has begun.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise our defences (a free Spearman)",
+        "uniques": [
+          "Free [Spearman] appears"
+        ]
+      },
+      {
+        "text": "Gird our faith (+60 Faith)",
+        "uniques": [
+          "Gain [60] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Third War",
+    "text": "Plague in Lordaeron, demons in Ashenvale, a prince who took up a cursed blade. The world will not be the same.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Prepare for the worst (+80 Gold)",
+        "uniques": [
+          "Gain [80] [Gold]"
+        ]
+      },
+      {
+        "text": "Seek the prophet's counsel (+80 Culture)",
+        "uniques": [
+          "Gain [80] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Lich King Stirs",
+    "text": "Atop the Frozen Throne, the Lich King gathers his armies. Every people of Azeroth looks north.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Forge weapons against the dead (+100 Production worth of Gold)",
+        "uniques": [
+          "Gain [100] [Gold]"
+        ]
+      },
+      {
+        "text": "Call the priests (+100 Faith)",
+        "uniques": [
+          "Gain [100] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Cataclysm",
+    "text": "Deathwing has torn the world apart. Coastlines are drowned, mountains split and old roads gone.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Rebuild our cities (+1 population)",
+        "uniques": [
+          "[1] population in a random city"
+        ]
+      },
+      {
+        "text": "Study the elemental chaos (+120 Science)",
+        "uniques": [
+          "Gain [120] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Legion Returns",
+    "text": "The Burning Legion has come again, in greater numbers than ever. Azeroth must stand together or burn.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Rally every soldier (a 3-turn Golden Age)",
+        "uniques": [
+          "Empire enters a [3]-turn Golden Age"
+        ]
+      },
+      {
+        "text": "Seek the Pillars of Creation (+150 Science)",
+        "uniques": [
+          "Gain [150] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Age of Azerite",
+    "text": "The world-soul of Azeroth bleeds a golden ore of terrible power, and every nation wants it.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Mine the azerite (+200 Gold)",
+        "uniques": [
+          "Gain [200] [Gold]"
+        ]
+      },
+      {
+        "text": "Heal the world-soul (+200 Faith)",
+        "uniques": [
+          "Gain [200] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Void Beckons",
+    "text": "Beyond the Shadowlands and the stars, the Void watches. The last age of Azeroth has begun.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Hold to the Light (+250 Faith)",
+        "uniques": [
+          "Gain [250] [Faith]"
+        ]
+      },
+      {
+        "text": "Study the darkness (+250 Science)",
+        "uniques": [
+          "Gain [250] [Science]"
+        ]
+      }
+    ]
   }
 ]

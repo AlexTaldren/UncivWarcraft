@@ -2793,5 +2793,392 @@
         "text": "The Huojin follow Ji Firepaw's path of bold action, and fight beside the Horde. +15% Strength when attacking, +10% against the Alliance, +2 Production."
       }
     ]
+  },
+  {
+    "name": "Stormwind Throne Room",
+    "isNationalWonder": true,
+    "uniqueTo": "Humans",
+    "cost": 300,
+    "requiredTech": "War Doctrine",
+    "culture": 1,
+    "uniques": [
+      "[+15]% Production when constructing [Military] units [in all cities]",
+      "[+2 Happiness] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Where the kings of Stormwind hold court beneath the banners of the Alliance."
+      },
+      {
+        "text": "A national wonder of the Humans."
+      }
+    ]
+  },
+  {
+    "name": "Ring of Valor",
+    "isNationalWonder": true,
+    "uniqueTo": "Orcs",
+    "cost": 300,
+    "requiredTech": "War Doctrine",
+    "culture": 1,
+    "uniques": [
+      "[+10]% Strength <for [Military] units>",
+      "[+2 Culture] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An arena where orcs prove their strength before the Warchief and the Horde."
+      },
+      {
+        "text": "A national wonder of the Orcs."
+      }
+    ]
+  },
+  {
+    "name": "Temple of the Moon",
+    "isNationalWonder": true,
+    "uniqueTo": "Night Elves",
+    "cost": 280,
+    "requiredTech": "Astronomy",
+    "culture": 1,
+    "uniques": [
+      "[+1 Faith] [in all cities]",
+      "[+15]% Strength <when fighting in [Forest] tiles> <for [Military] units>",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The moonlit temple of the Sisters of Elune, where Tyrande's priestesses keep vigil."
+      },
+      {
+        "text": "A national wonder of the Night Elves."
+      }
+    ]
+  },
+  {
+    "name": "High Seat of Ironforge",
+    "isNationalWonder": true,
+    "uniqueTo": "Dwarves",
+    "cost": 300,
+    "requiredTech": "Steamworks",
+    "culture": 1,
+    "uniques": [
+      "[+10]% [Production] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The throne room of Ironforge, hewn from the heart of Khaz Modan beside the Great Forge."
+      },
+      {
+        "text": "A national wonder of the Dwarves."
+      }
+    ]
+  },
+  {
+    "name": "Tinkertown Workshops",
+    "isNationalWonder": true,
+    "uniqueTo": "Gnomes",
+    "cost": 280,
+    "requiredTech": "Steamworks",
+    "culture": 1,
+    "uniques": [
+      "[+10]% [Science] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Workshops crammed with half-finished inventions, where every gnome has a better idea."
+      },
+      {
+        "text": "A national wonder of the Gnomes."
+      }
+    ]
+  },
+  {
+    "name": "Spirit Rise",
+    "isNationalWonder": true,
+    "uniqueTo": "Tauren",
+    "cost": 280,
+    "requiredTech": "Archaeology",
+    "culture": 1,
+    "uniques": [
+      "[+1 Food, +1 Faith] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The quiet mesa of Thunder Bluff where the elders speak with the spirits of the ancestors."
+      },
+      {
+        "text": "A national wonder of the Tauren."
+      }
+    ]
+  },
+  {
+    "name": "Darkspear Voodoo Hall",
+    "isNationalWonder": true,
+    "uniqueTo": "Trolls",
+    "cost": 260,
+    "requiredTech": "Alchemy",
+    "culture": 1,
+    "uniques": [
+      "[+10] HP when healing <for [Military] units>",
+      "[+2 Faith] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Where the witch doctors of the Echo Isles brew the hexes and healing draughts of the Darkspear."
+      },
+      {
+        "text": "A national wonder of the Trolls."
+      }
+    ]
+  },
+  {
+    "name": "Court of the Sun",
+    "isNationalWonder": true,
+    "uniqueTo": "Blood Elves",
+    "cost": 300,
+    "requiredTech": "Arcane Science",
+    "culture": 1,
+    "uniques": [
+      "[+15]% [Gold] [in all cities]",
+      "Provides [2] [Mana]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The gilded court of Silvermoon, where magisters and nobles vie for the Regent Lord's favour."
+      },
+      {
+        "text": "A national wonder of the Blood Elves."
+      }
+    ]
+  },
+  {
+    "name": "Sunstrider Spire",
+    "isNationalWonder": true,
+    "uniqueTo": "High Elves",
+    "cost": 300,
+    "requiredTech": "Arcane Science",
+    "culture": 1,
+    "uniques": [
+      "[+15]% [Culture] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The soaring palace of the Sunstrider dynasty, older than any human kingdom."
+      },
+      {
+        "text": "A national wonder of the High Elves."
+      }
+    ]
+  },
+  {
+    "name": "Temple of the Jade Serpent",
+    "isNationalWonder": true,
+    "uniqueTo": "Pandaren",
+    "cost": 280,
+    "requiredTech": "Natural Lore",
+    "culture": 1,
+    "uniques": [
+      "[+15]% Great Person generation [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The temple of Yu'lon, the Jade Serpent, where scholars seek wisdom in the waters of the Jade Forest."
+      },
+      {
+        "text": "A national wonder of the Pandaren."
+      }
+    ]
+  },
+  {
+    "name": "Royal Apothecary Society",
+    "isNationalWonder": true,
+    "uniqueTo": "Forsaken",
+    "cost": 280,
+    "requiredTech": "Alchemy",
+    "culture": 1,
+    "uniques": [
+      "[+10]% [Science] [in all cities]",
+      "[+2 Gold] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The vats beneath the Undercity, where the apothecaries brew remedies and worse."
+      },
+      {
+        "text": "A national wonder of the Forsaken."
+      }
+    ]
+  },
+  {
+    "name": "Vault of Lights",
+    "isNationalWonder": true,
+    "uniqueTo": "Draenei",
+    "cost": 280,
+    "requiredTech": "Choral Hymns",
+    "culture": 1,
+    "uniques": [
+      "[+1 Faith, +1 Science] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The sanctum of the Exodar, where the naaru's light is kept and the anchorites pray."
+      },
+      {
+        "text": "A national wonder of the Draenei."
+      }
+    ]
+  },
+  {
+    "name": "Steamwheedle Exchange",
+    "isNationalWonder": true,
+    "uniqueTo": "Goblins",
+    "cost": 280,
+    "requiredTech": "Auctioneering",
+    "culture": 1,
+    "uniques": [
+      "[+20]% [Gold] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The trading floor of the Steamwheedle Cartel. Everything has a price; most things are on sale."
+      },
+      {
+        "text": "A national wonder of the Goblins."
+      }
+    ]
+  },
+  {
+    "name": "Greymane Court",
+    "isNationalWonder": true,
+    "uniqueTo": "Worgen",
+    "cost": 280,
+    "requiredTech": "Long Rifles",
+    "culture": 1,
+    "uniques": [
+      "[+20]% Strength <when fighting in [Forest] tiles> <for [Military] units>",
+      "[+2 Culture] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The court of King Genn Greymane, where Gilneas plans its vengeance."
+      },
+      {
+        "text": "A national wonder of the Worgen."
+      }
+    ]
+  },
+  {
+    "name": "Throne of the Damned",
+    "isNationalWonder": true,
+    "uniqueTo": "Scourge",
+    "cost": 320,
+    "requiredTech": "Frost Enchantment",
+    "culture": 1,
+    "uniques": [
+      "[+15]% Strength <for [Military] units>",
+      "[+2 Faith] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A throne of ice and bone from which the Lich King's will reaches every ghoul and wyrm."
+      },
+      {
+        "text": "A national wonder of the Scourge."
+      }
+    ]
+  },
+  {
+    "name": "Black Anvil",
+    "isNationalWonder": true,
+    "uniqueTo": "Dark Iron Dwarves",
+    "cost": 300,
+    "requiredTech": "Steamworks",
+    "culture": 1,
+    "uniques": [
+      "[+15]% Production when constructing [Siege] units [in all cities]",
+      "[+10]% [Production] [in all cities]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The great anvil of Shadowforge City, struck by the Dark Iron forgemasters in the glow of molten fire."
+      },
+      {
+        "text": "A national wonder of the Dark Iron Dwarves."
+      }
+    ]
+  },
+  {
+    "name": "Proudmoore Admiralty",
+    "isNationalWonder": true,
+    "uniqueTo": "Kul Tirans",
+    "cost": 280,
+    "requiredTech": "Navigation",
+    "culture": 1,
+    "uniques": [
+      "[+20]% Production when constructing [Water] units [in all cities]",
+      "[+2 Gold] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The halls of the Lord Admiral in Boralus, from which the greatest fleet on Azeroth is commanded."
+      },
+      {
+        "text": "A national wonder of the Kul Tirans."
+      }
+    ]
+  },
+  {
+    "name": "Great Seal of Dazar'alor",
+    "isNationalWonder": true,
+    "uniqueTo": "Zandalari Trolls",
+    "cost": 300,
+    "requiredTech": "Auctioneering",
+    "culture": 1,
+    "uniques": [
+      "[+15]% [Culture] [in all cities]",
+      "[+2 Gold] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The golden seat of the Zandalari Empire atop the great pyramid of Dazar'alor."
+      },
+      {
+        "text": "A national wonder of the Zandalari Trolls."
+      }
+    ]
+  },
+  {
+    "name": "Trophy Hall",
+    "isNationalWonder": true,
+    "cost": 260,
+    "requiredTech": "Archaeology",
+    "culture": 2,
+    "uniques": [
+      "[+2 Culture] [in capital] <for every [Raid Trophy]>",
+      "[+15]% Strength <vs [Raid Boss] units> <for [Military] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A hall of heads, hammers and dragon scales, where the deeds of your raiders are remembered. +2 Culture in the capital for every Raid Trophy, and your soldiers fight harder against raid bosses."
+      }
+    ]
   }
 ]

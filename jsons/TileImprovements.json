@@ -614,7 +614,8 @@
     "techRequired": "Mining",
     "uniques": [
       "[+1 Production] <after discovering [Alchemy]>",
-      "Pillaging this improvement yields approximately [+20 Gold]"
+      "Pillaging this improvement yields approximately [+20 Gold]",
+      "[+1 Production] for each adjacent [Mountain]"
     ],
     "shortcutKey": "M",
     "gold": 1,

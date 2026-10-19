@@ -954,5 +954,18 @@
         "text": "Arcane energy gathered by your mages and stored for spellcraft. Every capital gathers a little each turn, and each race has its own sources (Moonwells, Voodoo Lounges, Great Totems, Necropolises, Arcane Sanctums, Mage Towers, Arcane Crystals...). Spellcasters, heroes, magical buildings and wonders, Mage Tower portals and some event choices spend it."
       }
     ]
+  },
+  {
+    "name": "Raid Trophy",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Proof of a raid boss slain: Onyxia's head, Ragnaros's hammer, a scale of Deathwing. Earned by the civilization whose unit lands the killing blow. Collect 10 to win a Raid victory."
+      }
+    ]
   }
 ]

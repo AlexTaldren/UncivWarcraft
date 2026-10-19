@@ -98,5 +98,21 @@
   {
     "name": "Hero",
     "movementType": "Land"
+  },
+  {
+    "name": "Raid Boss",
+    "movementType": "Land"
+  },
+  {
+    "name": "Champion Hero",
+    "movementType": "Land"
+  },
+  {
+    "name": "Arcane Hero",
+    "movementType": "Land"
+  },
+  {
+    "name": "Marksman Hero",
+    "movementType": "Land"
   }
 ]
