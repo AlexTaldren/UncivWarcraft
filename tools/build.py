@@ -460,6 +460,10 @@ for u in files["Units"]:
 _missing_snd = set(wc_sounds.UNIT_SOUNDS) - {u["name"] for u in files["Units"]}
 assert not _missing_snd, _missing_snd
 
+# Oct 2026 unit lines (user request): melee without guns, Hunter > Ranger or Rifleman, the Humans' magic line
+import wc_lines
+wc_lines.apply(files)
+
 # Oct 2026 depth pass: raids, new victories, stealth/auras, fateful choices, hero classes,
 # national wonders, openings, ages and guide pages (tools/wc_depth.py)
 import wc_depth
@@ -552,6 +556,7 @@ import air_icons   # Oct 2026: lore icons for the 15 flying units (replace the g
 print("flying unit icons:", air_icons.write_all(IMG))
 print("depth pass icons:", wc_depth.write_icons(IMG))
 print("systems pass icons:", wc_systems.write_icons(IMG))
+print("unit line icons:", wc_lines.write_icons(IMG))
 
 # Icons for techs, buildings and policies in their own pack so "game" stays one page.
 for _f in ("TechIcons", "BuildingIcons", "PolicyIcons", "UnitPromotionIcons"):   # promotions: Oct 2026 spells
@@ -583,6 +588,9 @@ for name, fn in legion.SPRITES.items():
         path = os.path.join(OUT, "Images.WarcraftMap", late_units.P, name + suf + ".png")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         im.save(path)
+# Oct 2026 unit lines: move each old sprite to the unit that now carries its weapon, and give the new
+# units a canvas (the pixel-art steps below redraw them all)
+print("unit line sprites moved:", wc_lines.rename_art([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")], _lu))
 # Painted-style Human and Orc sprites (closer to the Warcraft look); drawn last so they win
 import wc_style_units
 n = wc_style_units.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])

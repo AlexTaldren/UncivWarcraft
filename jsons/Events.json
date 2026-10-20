@@ -376,7 +376,7 @@
         "text": "Crush the Brotherhood! (bandits attack)",
         "uniques": [
           "[2] [Pikeman]s rebel <before the [Age of the Third War]>",
-          "[2] [Musketeer]s rebel <starting from the [Age of the Third War]>"
+          "[2] [Man-at-Arms]s rebel <starting from the [Age of the Third War]>"
         ]
       }
     ]
@@ -1725,7 +1725,7 @@
       {
         "text": "Let the dissenters take up arms.",
         "uniques": [
-          "A [Musketeer] rebels",
+          "A [Man-at-Arms] rebels",
           "Only available <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]>",
           "[-30]% weight to this choice for AI decisions"
         ]
@@ -1733,7 +1733,7 @@
       {
         "text": "Let the dissenters take up arms.",
         "uniques": [
-          "A [Rifleman] rebels",
+          "A [Gladiator] rebels",
           "Only available <starting from the [Age of the Cataclysm]> <before the [Age of Azerite]>",
           "[-30]% weight to this choice for AI decisions"
         ]
@@ -1741,7 +1741,7 @@
       {
         "text": "Let the dissenters take up arms.",
         "uniques": [
-          "A [Shock Trooper] rebels",
+          "A [Vanquisher] rebels",
           "Only available <starting from the [Age of Azerite]>",
           "[-30]% weight to this choice for AI decisions"
         ]
@@ -1818,7 +1818,7 @@
       {
         "text": "Let the dissenters take up arms.",
         "uniques": [
-          "A [Musketeer] rebels",
+          "A [Man-at-Arms] rebels",
           "Only available <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]>",
           "[-30]% weight to this choice for AI decisions"
         ]
@@ -1826,7 +1826,7 @@
       {
         "text": "Let the dissenters take up arms.",
         "uniques": [
-          "A [Rifleman] rebels",
+          "A [Gladiator] rebels",
           "Only available <starting from the [Age of the Cataclysm]> <before the [Age of Azerite]>",
           "[-30]% weight to this choice for AI decisions"
         ]
@@ -1834,7 +1834,7 @@
       {
         "text": "Let the dissenters take up arms.",
         "uniques": [
-          "A [Shock Trooper] rebels",
+          "A [Vanquisher] rebels",
           "Only available <starting from the [Age of Azerite]>",
           "[-30]% weight to this choice for AI decisions"
         ]

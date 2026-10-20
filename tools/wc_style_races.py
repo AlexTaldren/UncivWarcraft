@@ -547,11 +547,12 @@ def _f(fn, *a, **kw):
     return lambda c, fx, fy, u: fn(c, fx, fy, u, *a, **kw)
 
 
-GENERIC = ["Archer", "Ballista", "Catapult", "Cavalry", "Crossbowman", "Fusilier", "Great Admiral", "Great Artist",
-           "Great Engineer", "Great General", "Great Merchant", "Great Prophet", "Great Scientist", "Grenadier", "Inquisitor",
-           "Knight", "Kul Tiran Marine", "Lancer", "Militia", "Missionary", "Mortar Team", "Mountaineer", "Mounted Archer",
-           "Musketeer", "Outrider", "Peasant", "Pikeman", "Ranger", "Rifleman", "Scout", "Settler", "Shock Trooper",
-           "Siegebreaker", "Skyguard", "Spearman", "Swordsman", "Vanguard"]
+GENERIC = ["Archer", "Azerite Sharpshooter", "Ballista", "Catapult", "Cavalry", "Gladiator", "Great Admiral",
+           "Great Artist", "Great Engineer", "Great General", "Great Merchant", "Great Prophet", "Great Scientist",
+           "Grenadier", "Hunter", "Inquisitor", "Knight", "Kul Tiran Marine", "Lancer", "Man-at-Arms", "Militia",
+           "Missionary", "Mortar Team", "Mountaineer", "Mounted Archer", "Outrider", "Peasant", "Pikeman", "Ranger",
+           "Ranger Captain", "Ranger-General", "Rifleman", "Royal Guard", "Scout", "Settler", "Siegebreaker",
+           "Skyguard", "Spearman", "Swordsman", "Vanguard", "Vanquisher"]
 
 
 def base_recipe(family, unit):
@@ -588,8 +589,11 @@ def race_recipe(race, unit):
 def recipes():
     """{sprite name: (race, unit, draw, archetype)} for every race and generic unit."""
     out = {}
+    import wc_lines
     for race in RACES:
-        for unit in GENERIC:
+        for unit in GENERIC + list(wc_lines.SCHOOL_RACES) + ["Warbringer"]:
+            if race not in wc_lines.SCHOOL_RACES.get(unit, [race]):
+                continue          # magic schools: only their own races
             out[unit + "-" + race] = (race, unit) + race_recipe(race, unit)
     try:
         import wc_style_uniques as UQ

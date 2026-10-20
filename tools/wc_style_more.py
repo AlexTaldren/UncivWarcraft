@@ -837,14 +837,21 @@ RECIPES = {
     # Scouts are not ranged units (no ranged attack in the ruleset), so they carry a walking
     # stick and a travel pack, not a bow. Keep this for every race unless its scout is ranged.
     "Scout-Humans": (hs(armor="leather", tabard=False, hat="hood", weapon="stick", pauldron=False, back="pack"), "foot"),
+    # Oct 2026 unit lines (wc_lines): Archer -> Hunter -> Ranger line (bows) or Rifleman line (guns);
+    # the melee line carries no guns: Vanguard -> Man-at-Arms -> Royal Guard -> Gladiator -> Vanquisher
+    "Hunter-Humans": (hs(armor="leather", tabard=False, hat="hair", weapon="bow", pauldron=False, back="quiver"), "foot"),
     "Ranger-Humans": (hs(armor="leather", tabard=False, hat="hood", weapon="bow", pauldron=False, back="quiver", capecol=True), "foot"),
+    "Ranger Captain-Humans": (hs(armor="coat", tabard=False, hat="hood", weapon="bow", pauldron=True, back="quiver", capecol=True), "foot"),
+    "Ranger-General-Humans": (hs(armor="plate", hat="plumed", weapon="bow", back="quiver", capecol=True), "foot"),
+    "Man-at-Arms-Humans": (hs(armor="plate", hat="kettle", weapon="mace", shield="kite"), "foot"),
+    "Royal Guard-Humans": (hs(armor="plate", hat="great_helm", weapon="sword", shield="kite", capecol=True), "foot"),
+    "Gladiator-Humans": (hs(armor="plate", hat="sallet", weapon="axe", shield="round", capecol=True), "foot"),
+    "Vanquisher-Humans": (hs(armor="plate", hat="plumed", weapon="halberd", capecol=True), "foot"),
+    "Azerite Sharpshooter-Humans": (hs(armor="plate", hat="goggles", weapon="sniper", back="pack", capecol=True), "foot"),
+    "Warbringer-Humans": (hs(armor="plate", hat="great_helm", weapon="axe", back="banner", capecol=True), "foot"),
     "Pikeman-Humans": (hs(armor="plate", hat="sallet", weapon="pike", shield="round"), "foot"),
     "Vanguard-Humans": (hs(armor="plate", hat="great_helm", weapon="halberd"), "foot"),
-    "Crossbowman-Humans": (hs(armor="leather", hat="kettle", weapon="crossbow", pauldron=False, back="quiver"), "foot"),
-    "Musketeer-Humans": (hs(armor="coat", hat="tricorn", weapon="musket", pauldron=False, back="bandolier"), "foot"),
-    "Rifleman-Humans": (hs(armor="coat", hat="officer", weapon="rifle", pauldron=False, back="bandolier"), "foot"),
-    "Fusilier-Humans": (hs(armor="plate", hat="sallet", weapon="rifle", back="pack"), "foot"),
-    "Shock Trooper-Humans": (hs(armor="plate", hat="plumed", weapon="rifle", back="pack", capecol=True), "foot"),
+    "Rifleman-Humans": (hs(armor="coat", hat="tricorn", weapon="musket", pauldron=False, back="bandolier"), "foot"),
     "Grenadier-Humans": (hs(armor="coat", hat="kettle", weapon="grenade", pauldron=False, back="bandolier"), "foot"),
     "Mountaineer-Humans": (hs(armor="leather", hat="goggles", weapon="sniper", pauldron=False, back="pack"), "foot"),
     "Kul Tiran Marine-Humans": (hs(armor="coat", hat="tricorn", weapon="rifle", pauldron=False, back="bandolier", beard=HAIR), "foot"),
@@ -875,14 +882,19 @@ RECIPES = {
     "Uther the Lightbringer": (uther, "foot"),
     # ---- Orcs: soldiers
     "Scout-Orcs": (os_(armor="hide", hat="mohawk", weapon="stick", pauldrons=0, back="pack"), "foot"),
-    "Ranger-Orcs": (os_(armor="hide", hat="feathers", weapon="bow", pauldrons=0, back="quiver"), "foot"),
+    "Hunter-Orcs": (os_(armor="hide", hat="feathers", weapon="bow", pauldrons=0, back="quiver"), "foot"),
+    "Ranger-Orcs": (os_(armor="hide", hat="hood", weapon="bow", pauldrons=0, back="quiver"), "foot"),
+    "Ranger Captain-Orcs": (os_(armor="iron", hat="feathers", weapon="bow", pauldrons=1, back="quiver"), "foot"),
+    "Ranger-General-Orcs": (os_(armor="iron", hat="warhelm", weapon="bow", pauldrons=2, back="quiver", paint_face=True), "foot"),
+    "Man-at-Arms-Orcs": (os_(armor="iron", hat="skullcap", weapon="axe", shield="hide", pauldrons=1), "foot"),
+    "Royal Guard-Orcs": (os_(armor="iron", hat="warhelm", weapon="axe", shield="hide", pauldrons=2), "foot"),
+    "Gladiator-Orcs": (os_(armor="iron", hat="warhelm", weapon="axe", shield="hide", pauldrons=2, back="banner"), "foot"),
+    "Vanquisher-Orcs": (os_(armor="iron", hat="warhelm", weapon="cleaver", pauldrons=2, paint_face=True), "foot"),
+    "Warbringer-Orcs": (os_(armor="iron", hat="warhelm", weapon="axe", pauldrons=2, back="banner", paint_face=True), "foot"),
+    "Azerite Sharpshooter-Orcs": (os_(armor="iron", hat="goggles", weapon="sniper", pauldrons=1, back="pack"), "foot"),
     "Pikeman-Orcs": (os_(armor="iron", hat="skullcap", weapon="pike", shield="hide"), "foot"),
     "Vanguard-Orcs": (os_(armor="iron", hat="warhelm", weapon="halberd", pauldrons=2), "foot"),
-    "Crossbowman-Orcs": (os_(armor="hide", hat="topknot", weapon="crossbow", pauldrons=0, back="quiver"), "foot"),
-    "Musketeer-Orcs": (os_(armor="hide", hat="skullcap", weapon="musket", pauldrons=1, back="pack"), "foot"),
-    "Rifleman-Orcs": (os_(armor="iron", hat="skullcap", weapon="rifle", pauldrons=1, back="pack"), "foot"),
-    "Fusilier-Orcs": (os_(armor="iron", hat="warhelm", weapon="rifle", pauldrons=2, back="pack"), "foot"),
-    "Shock Trooper-Orcs": (os_(armor="iron", hat="warhelm", weapon="rifle", pauldrons=2, back="banner", paint_face=True), "foot"),
+    "Rifleman-Orcs": (os_(armor="hide", hat="skullcap", weapon="musket", pauldrons=1, back="pack"), "foot"),
     "Grenadier-Orcs": (os_(armor="hide", hat="goggles", weapon="grenade", pauldrons=1), "foot"),
     "Mountaineer-Orcs": (os_(armor="hide", hat="goggles", weapon="sniper", pauldrons=0, back="pack"), "foot"),
     "Kul Tiran Marine-Orcs": (os_(armor="coat", hat="tricorn", weapon="rifle", pauldrons=0, back="pack"), "foot"),
@@ -910,6 +922,10 @@ RECIPES = {
     "Earthen Shaman": (or_(prop="light", hat="feathers", glow=(150, 255, 160)), "civ"),
     "Grom Hellscream": (grom, "foot"),
 }
+
+# Oct 2026: the magic schools' units ("<unit>-Humans" / "<unit>-Orcs" templates) and the Kirin Tor Magus
+import wc_lines as _lines
+RECIPES.update(_lines.magic_recipes(hr, or_))
 
 # canvases (1x) for sprites the stock art doesn't have (new units): copied from their base unit's sprite
 NEW_CANVAS = {"Knight of the Silver Hand": "Cavalry-Humans", "Raider": "Cavalry-Orcs"}

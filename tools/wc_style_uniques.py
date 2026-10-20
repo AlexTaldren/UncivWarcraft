@@ -356,6 +356,11 @@ RECIPES = {
     "Mechanostrider Rider": ("Gnomes", rider("outrider"), MOUNT),
     "Gnomish Bombardier": ("Gnomes", lambda c, fx, fy, u: M.mortar_team(c, fx, fy, u * 1.45, "Humans"), SIEGE),
     "Spider Tank": ("Gnomes", spider_tank, SIEGE),
+    # Oct 2026: the Gnomes' own top melee unit - a gnome rebuilt in mechanical plate (Mechagon)
+    "Mechagnome Trooper": ("Gnomes", scaled(ctx(hs(armor="plate", hat="goggles", weapon="hammer", shield="kite", pauldron=True,
+                                                   glow=(120, 220, 255)),
+                                               {"steel": (150, 160, 178), "dsteel": (96, 104, 120), "skin": (200, 205, 215),
+                                                "gold": (120, 220, 255)}), 1.12), FOOT),
     "Kelsey Steelspark": ("Gnomes", hs(armor="leather", tabard=False, hat="hair", weapon="sword", pauldron=False, capecol=True), FOOT),
     "Decontaminator": ("Gnomes", hr(robe_col=(215, 200, 70), robe_layer="base", hat="goggles", prop="censer", glow=(150, 240, 120)), CIV),
     # ---- Night Elves

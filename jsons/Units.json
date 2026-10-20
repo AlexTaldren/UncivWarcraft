@@ -96,7 +96,7 @@
     "strength": 8,
     "cost": 40,
     "requiredTech": "Farming",
-    "obsoleteTech": "Blacksmithing",
+    "obsoleteTech": "Iron Forged Swords",
     "upgradesTo": "Swordsman",
     "uniques": [
       "May upgrade to [Spearman] through ruins-like effects",
@@ -130,7 +130,7 @@
     "cost": 40,
     "requiredTech": "Archery",
     "obsoleteTech": "Construction",
-    "upgradesTo": "Ranger",
+    "upgradesTo": "Hunter",
     "attackSound": "arrow",
     "civilopediaText": [
       {
@@ -357,22 +357,22 @@
     ]
   },
   {
-    "name": "Ranger",
+    "name": "Hunter",
     "unitType": "Archery",
     "movement": 2,
     "strength": 7,
     "rangedStrength": 11,
     "cost": 75,
     "requiredTech": "Construction",
-    "obsoleteTech": "Clockwork",
-    "upgradesTo": "Crossbowman",
+    "upgradesTo": "Ranger",
     "attackSound": "arrow",
     "civilopediaText": [
       {
-        "text": "Skilled bowmen of the forests, like the rangers of Quel'Thalas."
+        "text": "Woodsmen and trackers with longbows. A Hunter can train as a Ranger (bows) or a Rifleman (guns)."
       }
     ],
     "uniques": [
+      "Can upgrade to [Rifleman]",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -523,22 +523,25 @@
     ]
   },
   {
-    "name": "Crossbowman",
+    "name": "Ranger",
     "unitType": "Archery",
     "movement": 2,
-    "strength": 13,
-    "rangedStrength": 18,
+    "strength": 12,
+    "rangedStrength": 17,
     "cost": 120,
-    "requiredTech": "Clockwork",
-    "upgradesTo": "Mountaineer",
-    "obsoleteTech": "Steamworks",
-    "attackSound": "crossbow",
+    "requiredTech": "Scholarship",
+    "upgradesTo": "Ranger Captain",
+    "obsoleteTech": "Natural Lore",
+    "attackSound": "arrow",
     "civilopediaText": [
       {
-        "text": "Crossbows that pierce armour at long range."
+        "text": "Rangers of the wilds, who move through forests twice as fast, see farther and fight better among the trees."
       }
     ],
     "uniques": [
+      "[+1] Sight",
+      "Double movement in [Forest]",
+      "[+20]% Strength <when fighting in [Forest] tiles>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -598,8 +601,8 @@
     "strength": 21,
     "cost": 120,
     "requiredTech": "Steel Forged Swords",
-    "upgradesTo": "Musketeer",
-    "obsoleteTech": "Blackpowder",
+    "upgradesTo": "Man-at-Arms",
+    "obsoleteTech": "Mithril Forged Swords",
     "requiredResource": "Iron",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -631,7 +634,7 @@
     "cost": 120,
     "requiredTech": "Astronomy",
     "upgradesTo": "Ironclad",
-    "obsoleteTech": "Liquid Fire",
+    "obsoleteTech": "Steam Power",
     "uniques": [
       "[+1] Sight",
       "Withdraws before melee combat <with [80]% chance>",
@@ -658,18 +661,18 @@
     ]
   },
   {
-    "name": "Musketeer",
-    "unitType": "Firearm",
+    "name": "Man-at-Arms",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 24,
     "cost": 150,
-    "requiredTech": "Blackpowder",
-    "upgradesTo": "Rifleman",
-    "obsoleteTech": "Long Rifles",
-    "attackSound": "wc_rifle",
+    "requiredTech": "Mithril Forged Swords",
+    "upgradesTo": "Royal Guard",
+    "obsoleteTech": "Storm Hammers",
+    "attackSound": "metalhit",
     "civilopediaText": [
       {
-        "text": "Infantry with muskets, armed by dwarven and goblin gunsmiths."
+        "text": "Veteran foot soldiers in mail and plate, the core of every kingdom's army after the Second War."
       }
     ],
     "uniques": [
@@ -840,7 +843,7 @@
     "strength": 30,
     "rangedStrength": 30,
     "cost": 225,
-    "requiredTech": "Steamworks",
+    "requiredTech": "Long Rifles",
     "upgradesTo": "Grenadier",
     "obsoleteTech": "Fragmentation Shards",
     "attackSound": "wc_gyro_guns",
@@ -850,6 +853,7 @@
       }
     ],
     "uniques": [
+      "[+33]% Strength <vs [Mounted] units>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -866,18 +870,18 @@
     ]
   },
   {
-    "name": "Rifleman",
-    "unitType": "Firearm",
+    "name": "Royal Guard",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 34,
     "cost": 225,
-    "requiredTech": "Long Rifles",
+    "requiredTech": "Storm Hammers",
     "obsoleteTech": "Gnomish Gearworks",
-    "upgradesTo": "Fusilier",
-    "attackSound": "wc_rifle",
+    "upgradesTo": "Gladiator",
+    "attackSound": "metalhit",
     "civilopediaText": [
       {
-        "text": "Dwarven-style riflemen, deadly marksmen with long guns."
+        "text": "The elite guard of the capital, in polished plate with sword and tower shield."
       }
     ],
     "uniques": [
@@ -1008,18 +1012,18 @@
     ]
   },
   {
-    "name": "Fusilier",
-    "unitType": "Firearm",
+    "name": "Gladiator",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 50,
     "cost": 320,
     "requiredTech": "Gnomish Gearworks",
-    "upgradesTo": "Shock Trooper",
+    "upgradesTo": "Vanquisher",
     "obsoleteTech": "Arcanite Alloys",
-    "attackSound": "wc_rifle",
+    "attackSound": "metalhit",
     "civilopediaText": [
       {
-        "text": "Infantry with rifles and bayonets, the backbone of later armies."
+        "text": "Arena-hardened warriors of every race, masters of axe and shield, champions of the Ring of Valor and the Gurubashi Arena."
       }
     ],
     "uniques": [
@@ -1111,18 +1115,18 @@
     ]
   },
   {
-    "name": "Shock Trooper",
-    "unitType": "Firearm",
+    "name": "Vanquisher",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 70,
     "cost": 375,
     "requiredTech": "Arcanite Alloys",
-    "upgradesTo": "Mechagnome Trooper",
+    "upgradesTo": "Warbringer",
     "obsoleteTech": "War Drums",
-    "attackSound": "wc_rifle",
+    "attackSound": "metalhit",
     "civilopediaText": [
       {
-        "text": "Disciplined infantry with the best arms the realm can make."
+        "text": "Champions of the last wars, in arcanite plate, who break the enemy line wherever it stands."
       }
     ],
     "uniques": [
@@ -1216,7 +1220,7 @@
     "rangedStrength": 60,
     "cost": 350,
     "requiredTech": "Fragmentation Shards",
-    "upgradesTo": "Mechagnome Trooper",
+    "upgradesTo": "Azerite Sharpshooter",
     "attackSound": "wc_bomb",
     "civilopediaText": [
       {
@@ -1224,6 +1228,7 @@
       }
     ],
     "uniques": [
+      "[+33]% Strength <vs [Mounted] units>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -1241,7 +1246,7 @@
   },
   {
     "name": "Flak Cannon",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "interceptRange": 2,
     "strength": 50,
@@ -1345,7 +1350,7 @@
   },
   {
     "name": "Kul Tiran Marine",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 65,
     "cost": 400,
@@ -1449,7 +1454,7 @@
   },
   {
     "name": "Skyguard",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 65,
     "cost": 375,
@@ -1514,7 +1519,7 @@
   },
   {
     "name": "Siegebreaker",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 50,
     "cost": 300,
@@ -1625,7 +1630,7 @@
   },
   {
     "name": "Flak Wagon",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 3,
     "interceptRange": 2,
     "strength": 65,
@@ -1798,9 +1803,9 @@
   },
   {
     "name": "Mechagnome Trooper",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 3,
-    "strength": 90,
+    "strength": 95,
     "cost": 375,
     "requiredTech": "War Drums",
     "uniques": [
@@ -1822,9 +1827,14 @@
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
-        "text": "Mechagnome soldiers, part flesh and part machine."
+        "text": "Mechagnomes of Mechagon, more machine than gnome, who fight in place of the Warbringer."
+      },
+      {
+        "text": "Stronger than a Warbringer."
       }
-    ]
+    ],
+    "uniqueTo": "Gnomes",
+    "replaces": "Warbringer"
   },
   {
     "name": "Juggernaught",
@@ -2626,49 +2636,6 @@
     ]
   },
   {
-    "name": "Mage",
-    "unitType": "Archery",
-    "movement": 2,
-    "strength": 12,
-    "rangedStrength": 20,
-    "cost": 120,
-    "requiredTech": "Clockwork",
-    "upgradesTo": "Mountaineer",
-    "obsoleteTech": "Steamworks",
-    "attackSound": "wc_arcane_blast",
-    "replaces": "Crossbowman",
-    "uniqueTo": "Humans",
-    "civilopediaText": [
-      {
-        "text": "Trained in the arcane academies of Dalaran and the human kingdoms, mages hurl fire and frost from afar. Their spells arc over hills and forests that would block an ordinary bolt."
-      },
-      {
-        "text": "Spell: Frost Armor. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
-      }
-    ],
-    "uniques": [
-      "Ranged attacks may be performed over obstacles",
-      "Costs [10] [Mana]",
-      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <for units without [Frost Armor Cooldown]> <for [0] movement> <costs [8] [Mana]>",
-      "[This Unit] gains the [Frost Armor Cooldown] status for [5] turn(s) <upon gaining the [Frost Armor] status> <hidden from users>",
-      "Instantly consumes [8] [Mana] <upon gaining the [Frost Armor] status> <for [AI player] Civilizations> <hidden from users>",
-      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <upon entering combat> <for units without [Frost Armor Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
-      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
-      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
-      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
-      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
-      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
-      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
-      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
-      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
-      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
-      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ]
-  },
-  {
     "name": "Priest",
     "unitType": "Civilian",
     "uniques": [
@@ -2905,26 +2872,26 @@
     "rangedStrength": 12,
     "cost": 75,
     "requiredTech": "Construction",
-    "obsoleteTech": "Clockwork",
-    "upgradesTo": "Crossbowman",
+    "upgradesTo": "Ranger",
     "attackSound": "arrow",
     "civilopediaText": [
       {
         "text": "Darkspear trolls who hurl barbed spears with deadly aim. At home in the jungles of Stranglethorn and the Echo Isles."
       },
       {
-        "text": "Stronger than a Ranger, +25% Strength in jungle and moves through it at double speed."
+        "text": "Stronger than a Hunter, +25% Strength in jungle and moves through it at double speed."
       },
       {
         "text": "Spell: Berserk. Troll fury: +30% Strength when attacking for 1 turn. Costs 6 Mana."
       }
     ],
-    "replaces": "Ranger",
+    "replaces": "Hunter",
     "uniqueTo": "Trolls",
     "uniques": [
       "[+25]% Strength <when fighting in [Jungle] tiles>",
       "Double movement in [Jungle]",
       "Costs [4] [Mana]",
+      "Can upgrade to [Rifleman]",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -2997,8 +2964,8 @@
     "strength": 25,
     "cost": 120,
     "requiredTech": "Steel Forged Swords",
-    "upgradesTo": "Musketeer",
-    "obsoleteTech": "Blackpowder",
+    "upgradesTo": "Man-at-Arms",
+    "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
       {
@@ -3077,8 +3044,8 @@
     "strength": 24,
     "cost": 120,
     "requiredTech": "Steel Forged Swords",
-    "upgradesTo": "Musketeer",
-    "obsoleteTech": "Blackpowder",
+    "upgradesTo": "Man-at-Arms",
+    "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
       {
@@ -3340,12 +3307,12 @@
   },
   {
     "name": "Ironforge Rifleman",
-    "unitType": "Firearm",
+    "unitType": "Ranged Firearm",
     "movement": 2,
-    "strength": 27,
+    "strength": 18,
     "cost": 150,
     "requiredTech": "Blackpowder",
-    "upgradesTo": "Rifleman",
+    "upgradesTo": "Mountaineer",
     "obsoleteTech": "Long Rifles",
     "attackSound": "wc_rifle",
     "civilopediaText": [
@@ -3353,13 +3320,14 @@
         "text": "Dwarven riflemen of Ironforge, whose long rifles were the envy of the Alliance in the Second War."
       },
       {
-        "text": "Stronger than a Musketeer, with +25% Strength in hills."
+        "text": "Stronger than a Rifleman, with +25% Strength in hills."
       }
     ],
-    "replaces": "Musketeer",
+    "replaces": "Rifleman",
     "uniqueTo": "Dwarves",
     "uniques": [
       "[+25]% Strength <when fighting in [Hill] tiles>",
+      "[+33]% Strength <vs [Mounted] units>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -3373,7 +3341,9 @@
       "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
       "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ]
+    ],
+    "range": 2,
+    "rangedStrength": 26
   },
   {
     "name": "Ram Rider",
@@ -3605,8 +3575,8 @@
     "strength": 23,
     "cost": 120,
     "requiredTech": "Steel Forged Swords",
-    "upgradesTo": "Musketeer",
-    "obsoleteTech": "Blackpowder",
+    "upgradesTo": "Man-at-Arms",
+    "obsoleteTech": "Mithril Forged Swords",
     "requiredResource": "Iron",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -3742,27 +3712,28 @@
   },
   {
     "name": "Gilnean Rifleman",
-    "unitType": "Firearm",
+    "unitType": "Ranged Firearm",
     "movement": 2,
-    "strength": 37,
+    "strength": 32,
     "cost": 225,
     "requiredTech": "Long Rifles",
-    "obsoleteTech": "Gnomish Gearworks",
-    "upgradesTo": "Fusilier",
+    "obsoleteTech": "Fragmentation Shards",
+    "upgradesTo": "Grenadier",
     "attackSound": "wc_rifle",
     "civilopediaText": [
       {
         "text": "The disciplined riflemen of Gilneas, who held the Greymane Wall for years."
       },
       {
-        "text": "Stronger than a Rifleman, and sees farther."
+        "text": "Stronger than a Mountaineer."
       }
     ],
-    "replaces": "Rifleman",
+    "replaces": "Mountaineer",
     "uniqueTo": "Worgen",
     "uniques": [
       "[+1] Sight",
       "Can transform to [Worgen Ravager]",
+      "[+33]% Strength <vs [Mounted] units>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -3776,7 +3747,9 @@
       "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
       "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ]
+    ],
+    "range": 2,
+    "rangedStrength": 34
   },
   {
     "name": "Farstrider",
@@ -3786,26 +3759,26 @@
     "rangedStrength": 13,
     "cost": 75,
     "requiredTech": "Construction",
-    "obsoleteTech": "Clockwork",
-    "upgradesTo": "Crossbowman",
+    "upgradesTo": "Ranger",
     "attackSound": "arrow",
     "civilopediaText": [
       {
         "text": "The rangers of Quel'Thalas, who guard the elven forests with bow and blade."
       },
       {
-        "text": "Stronger ranged attack than a Ranger, sees farther and gains +25% Strength in forests."
+        "text": "Stronger ranged attack than a Hunter, sees farther and gains +25% Strength in forests."
       },
       {
         "text": "Spell: Aimed Shot. A careful shot: +25% Strength when attacking for 1 turn. Costs 6 Mana."
       }
     ],
-    "replaces": "Ranger",
+    "replaces": "Hunter",
     "uniqueTo": "High Elves",
     "uniques": [
       "[+1] Sight",
       "[+25]% Strength <when fighting in [Forest] tiles>",
       "Costs [6] [Mana]",
+      "Can upgrade to [Rifleman]",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -3871,8 +3844,8 @@
     "strength": 23,
     "cost": 120,
     "requiredTech": "Steel Forged Swords",
-    "upgradesTo": "Musketeer",
-    "obsoleteTech": "Blackpowder",
+    "upgradesTo": "Man-at-Arms",
+    "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
       {
@@ -3962,7 +3935,7 @@
     "strength": 10,
     "cost": 40,
     "requiredTech": "Farming",
-    "obsoleteTech": "Blacksmithing",
+    "obsoleteTech": "Iron Forged Swords",
     "upgradesTo": "Swordsman",
     "uniques": [
       "May upgrade to [Spearman] through ruins-like effects",
@@ -4377,33 +4350,33 @@
   },
   {
     "name": "Ranger-Lord",
-    "unitType": "Ranged Firearm",
-    "range": 1,
+    "unitType": "Archery",
     "movement": 2,
-    "strength": 32,
-    "rangedStrength": 34,
+    "strength": 27,
+    "rangedStrength": 32,
     "cost": 225,
-    "requiredTech": "Steamworks",
-    "upgradesTo": "Grenadier",
-    "obsoleteTech": "Fragmentation Shards",
-    "attackSound": "machinegun",
+    "requiredTech": "Natural Lore",
+    "upgradesTo": "Ranger-General",
+    "obsoleteTech": "Nature's Blessing",
+    "attackSound": "arrow",
     "civilopediaText": [
       {
         "text": "The masters of the Farstriders, whose enchanted arrows outrange any rifle."
       },
       {
-        "text": "Stronger than a Mountaineer, sees farther and gains +25% Strength in forests."
+        "text": "Stronger than a Ranger Captain, sees farther and gains +25% Strength in forests."
       },
       {
         "text": "Spell: Aimed Shot. A careful shot: +25% Strength when attacking for 1 turn. Costs 6 Mana."
       }
     ],
-    "replaces": "Mountaineer",
+    "replaces": "Ranger Captain",
     "uniqueTo": "High Elves",
     "uniques": [
       "[+1] Sight",
       "[+25]% Strength <when fighting in [Forest] tiles>",
       "Costs [8] [Mana]",
+      "Double movement in [Forest]",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -4426,26 +4399,26 @@
   },
   {
     "name": "Troll Berserker",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 27,
     "cost": 150,
-    "requiredTech": "Blackpowder",
-    "upgradesTo": "Rifleman",
-    "obsoleteTech": "Long Rifles",
+    "requiredTech": "Mithril Forged Swords",
+    "upgradesTo": "Royal Guard",
+    "obsoleteTech": "Storm Hammers",
     "attackSound": "shot",
     "civilopediaText": [
       {
         "text": "Headhunters who drink a voodoo brew and charge into battle in a frenzy, throwing axes as they go."
       },
       {
-        "text": "Stronger than a Musketeer, +15% Strength when attacking, and heals 10 HP whenever it kills a unit."
+        "text": "Stronger than a Man-at-Arms, +15% Strength when attacking, and heals 10 HP whenever it kills a unit."
       },
       {
         "text": "Spell: Berserk. Troll fury: +30% Strength when attacking for 1 turn. Costs 6 Mana."
       }
     ],
-    "replaces": "Musketeer",
+    "replaces": "Man-at-Arms",
     "uniqueTo": "Trolls",
     "uniques": [
       "Heals [10] damage if it kills a unit",
@@ -4516,23 +4489,23 @@
   },
   {
     "name": "Deathstalker",
-    "unitType": "Firearm",
+    "unitType": "Archery",
     "movement": 2,
-    "strength": 36,
+    "strength": 26,
     "cost": 225,
-    "requiredTech": "Long Rifles",
-    "obsoleteTech": "Gnomish Gearworks",
-    "upgradesTo": "Fusilier",
-    "attackSound": "shot",
+    "requiredTech": "Natural Lore",
+    "obsoleteTech": "Nature's Blessing",
+    "upgradesTo": "Ranger-General",
+    "attackSound": "crossbow",
     "civilopediaText": [
       {
         "text": "The Banshee Queen's assassins and scouts, undead rangers who slip between enemy lines."
       },
       {
-        "text": "Stronger than a Rifleman, sees farther and ignores zones of control."
+        "text": "Stronger than a Ranger Captain, sees farther, ignores zones of control and is invisible to units that aren't adjacent."
       }
     ],
-    "replaces": "Rifleman",
+    "replaces": "Ranger Captain",
     "uniqueTo": "Forsaken",
     "uniques": [
       "[+1] Sight",
@@ -4551,7 +4524,8 @@
       "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
       "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ]
+    ],
+    "rangedStrength": 30
   },
   {
     "name": "Dragonhawk Rider",
@@ -4690,7 +4664,7 @@
     "strength": 32,
     "rangedStrength": 32,
     "cost": 225,
-    "requiredTech": "Steamworks",
+    "requiredTech": "Long Rifles",
     "upgradesTo": "Grenadier",
     "obsoleteTech": "Fragmentation Shards",
     "attackSound": "machinegun",
@@ -4852,12 +4826,12 @@
   },
   {
     "name": "Admiralty Gunner",
-    "unitType": "Firearm",
+    "unitType": "Ranged Firearm",
     "movement": 2,
-    "strength": 27,
+    "strength": 17,
     "cost": 150,
     "requiredTech": "Blackpowder",
-    "upgradesTo": "Rifleman",
+    "upgradesTo": "Mountaineer",
     "obsoleteTech": "Long Rifles",
     "attackSound": "shot",
     "civilopediaText": [
@@ -4865,14 +4839,15 @@
         "text": "Kul Tiran marines of the Proudmoore Admiralty, as at home storming a beach as standing on a deck."
       },
       {
-        "text": "Stronger than a Musketeer, attacks from ships without penalty and sees farther."
+        "text": "Stronger than a Rifleman, attacks from ships without penalty and sees farther."
       }
     ],
-    "replaces": "Musketeer",
+    "replaces": "Rifleman",
     "uniqueTo": "Kul Tirans",
     "uniques": [
       "Eliminates combat penalty for attacking across a coast",
       "[+1] Sight",
+      "[+33]% Strength <vs [Mounted] units>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -4886,7 +4861,9 @@
       "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
       "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ]
+    ],
+    "range": 2,
+    "rangedStrength": 25
   },
   {
     "name": "Raptor Rider",
@@ -4995,7 +4972,7 @@
   },
   {
     "name": "Infernal",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 75,
     "cost": 375,
@@ -5082,7 +5059,7 @@
   },
   {
     "name": "Worgen Ravager",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 40,
     "cost": 225,
@@ -5670,7 +5647,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Alleria Windrunner, Ranger. Eldest of the Windrunner sisters, the finest archer of Quel'Thalas."
+        "text": "Alleria Windrunner, Hunter. Eldest of the Windrunner sisters, the finest archer of Quel'Thalas."
       },
       {
         "text": "A hero of the High Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
@@ -6872,6 +6849,1467 @@
     "uniqueTo": "Zandalari Trolls"
   },
   {
+    "name": "Apprentice",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Arcane Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Students of the arcane, fresh from the academies of Dalaran and Silvermoon."
+      },
+      {
+        "text": "Arcane school (Humans, Gnomes, High Elves, Blood Elves)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Mage"
+  },
+  {
+    "name": "Mage",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Arcane Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <for units without [Frost Armor Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Frost Armor Cooldown] status for [5] turn(s) <upon gaining the [Frost Armor] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Frost Armor] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <upon entering combat> <for units without [Frost Armor Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mages who hurl fire and frost from afar."
+      },
+      {
+        "text": "Arcane school (Humans, Gnomes, High Elves, Blood Elves)."
+      },
+      {
+        "text": "Spell: Frost Armor. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Sorcerer"
+  },
+  {
+    "name": "Sorcerer",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Arcane Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <for units without [Frost Armor Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Frost Armor Cooldown] status for [5] turn(s) <upon gaining the [Frost Armor] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Frost Armor] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <upon entering combat> <for units without [Frost Armor Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Masters of the arcane whose spells can level a battlefield."
+      },
+      {
+        "text": "Arcane school (Humans, Gnomes, High Elves, Blood Elves)."
+      },
+      {
+        "text": "Spell: Frost Armor. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Magus"
+  },
+  {
+    "name": "Magus",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Arcane Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "Costs [20] [Mana]",
+      "[+1] Range",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <for units without [Frost Armor Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Frost Armor Cooldown] status for [5] turn(s) <upon gaining the [Frost Armor] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Frost Armor] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <upon entering combat> <for units without [Frost Armor Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The greatest wizards of the age, who strike from farther away than any other mage."
+      },
+      {
+        "text": "Arcane school (Humans, Gnomes, High Elves, Blood Elves)."
+      },
+      {
+        "text": "Spell: Frost Armor. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Fel Initiate",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Fel Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+20]% Strength <when attacking>",
+      "[-10]% Strength <when defending>",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Students of forbidden magic, drawn to the power of the Burning Legion."
+      },
+      {
+        "text": "Fel school (Orcs, Forsaken, Goblins)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Warlock"
+  },
+  {
+    "name": "Warlock",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Fel Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+20]% Strength <when attacking>",
+      "[-10]% Strength <when defending>",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Drain Life] status for [1] turn(s) <for units without [Drain Life Cooldown]> <for [1] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Drain Life Cooldown] status for [5] turn(s) <upon gaining the [Drain Life] status> <hidden from users>",
+      "[This Unit] heals [30] HP <upon gaining the [Drain Life] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Drain Life] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Drain Life] status for [1] turn(s) <upon turn start> <when below [50] HP> <for units without [Drain Life Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Warlocks who burn their foes with fel fire and shadow, heedless of the cost."
+      },
+      {
+        "text": "Fel school (Orcs, Forsaken, Goblins)."
+      },
+      {
+        "text": "Spell: Drain Life. Drains the life from nearby foes: heals the warlock for 30 HP. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Demonologist"
+  },
+  {
+    "name": "Demonologist",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Fel Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+20]% Strength <when attacking>",
+      "[-10]% Strength <when defending>",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Drain Life] status for [1] turn(s) <for units without [Drain Life Cooldown]> <for [1] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Drain Life Cooldown] status for [5] turn(s) <upon gaining the [Drain Life] status> <hidden from users>",
+      "[This Unit] heals [30] HP <upon gaining the [Drain Life] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Drain Life] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Drain Life] status for [1] turn(s) <upon turn start> <when below [50] HP> <for units without [Drain Life Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Warlocks who bind demons to their will."
+      },
+      {
+        "text": "Fel school (Orcs, Forsaken, Goblins)."
+      },
+      {
+        "text": "Spell: Drain Life. Drains the life from nearby foes: heals the warlock for 30 HP. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Grand Warlock"
+  },
+  {
+    "name": "Grand Warlock",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Fel Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+20]% Strength <when attacking>",
+      "[-10]% Strength <when defending>",
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Drain Life] status for [1] turn(s) <for units without [Drain Life Cooldown]> <for [1] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Drain Life Cooldown] status for [5] turn(s) <upon gaining the [Drain Life] status> <hidden from users>",
+      "[This Unit] heals [30] HP <upon gaining the [Drain Life] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Drain Life] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Drain Life] status for [1] turn(s) <upon turn start> <when below [50] HP> <for units without [Drain Life Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Masters of the fel, in the tradition of Gul'dan and the Shadow Council."
+      },
+      {
+        "text": "Fel school (Orcs, Forsaken, Goblins)."
+      },
+      {
+        "text": "Spell: Drain Life. Drains the life from nearby foes: heals the warlock for 30 HP. Costs 8 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Druid Initiate",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Nature Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [5] HP when healing",
+      "Double movement in [Forest]",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Young druids learning the ways of the wild from the Cenarion Circle."
+      },
+      {
+        "text": "Nature school (Night Elves, Tauren, Worgen)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Druid of the Talon"
+  },
+  {
+    "name": "Druid of the Talon",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Nature Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [5] HP when healing",
+      "Double movement in [Forest]",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Wild Growth] status for [2] turn(s) <for units without [Wild Growth Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Wild Growth Cooldown] status for [5] turn(s) <upon gaining the [Wild Growth] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Wild Growth] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Wild Growth] status for [2] turn(s) <upon entering combat> <for units without [Wild Growth Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Druids of the storm and sky, who call down lightning and moonfire."
+      },
+      {
+        "text": "Nature school (Night Elves, Tauren, Worgen)."
+      },
+      {
+        "text": "Spell: Wild Growth. Nature's healing: adjacent units heal 20 HP more for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Keeper of the Grove"
+  },
+  {
+    "name": "Keeper of the Grove",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Nature Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [5] HP when healing",
+      "Double movement in [Forest]",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Wild Growth] status for [2] turn(s) <for units without [Wild Growth Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Wild Growth Cooldown] status for [5] turn(s) <upon gaining the [Wild Growth] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Wild Growth] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Wild Growth] status for [2] turn(s) <upon entering combat> <for units without [Wild Growth Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ancient guardians of the forest who command roots, thorns and storms."
+      },
+      {
+        "text": "Nature school (Night Elves, Tauren, Worgen)."
+      },
+      {
+        "text": "Spell: Wild Growth. Nature's healing: adjacent units heal 20 HP more for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Archdruid"
+  },
+  {
+    "name": "Archdruid",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Nature Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [5] HP when healing",
+      "Double movement in [Forest]",
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Wild Growth] status for [2] turn(s) <for units without [Wild Growth Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Wild Growth Cooldown] status for [5] turn(s) <upon gaining the [Wild Growth] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Wild Growth] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Wild Growth] status for [2] turn(s) <upon entering combat> <for units without [Wild Growth Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The greatest of druids, heirs to Malfurion and Hamuul Runetotem."
+      },
+      {
+        "text": "Nature school (Night Elves, Tauren, Worgen)."
+      },
+      {
+        "text": "Spell: Wild Growth. Nature's healing: adjacent units heal 20 HP more for 2 turns. Costs 8 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Seer",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Elemental Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+25]% Strength <when defending>",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Seers who listen to the spirits of earth, fire, water and air."
+      },
+      {
+        "text": "Elemental school (Dwarves, Dark Iron Dwarves, Kul Tirans, Pandaren)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Shaman"
+  },
+  {
+    "name": "Shaman",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Elemental Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+25]% Strength <when defending>",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Lightning Shield] status for [2] turn(s) <for units without [Lightning Shield Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Lightning Shield Cooldown] status for [5] turn(s) <upon gaining the [Lightning Shield] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Lightning Shield] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Lightning Shield] status for [2] turn(s) <upon entering combat> <for units without [Lightning Shield Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shamans who call lightning, fire and stone to the battle."
+      },
+      {
+        "text": "Elemental school (Dwarves, Dark Iron Dwarves, Kul Tirans, Pandaren)."
+      },
+      {
+        "text": "Spell: Lightning Shield. A crackling shield: +30% Strength when defending and adjacent enemies -10%, for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Far Seer"
+  },
+  {
+    "name": "Far Seer",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Elemental Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+25]% Strength <when defending>",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Lightning Shield] status for [2] turn(s) <for units without [Lightning Shield Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Lightning Shield Cooldown] status for [5] turn(s) <upon gaining the [Lightning Shield] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Lightning Shield] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Lightning Shield] status for [2] turn(s) <upon entering combat> <for units without [Lightning Shield Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shamans who see beyond the horizon and command the storm."
+      },
+      {
+        "text": "Elemental school (Dwarves, Dark Iron Dwarves, Kul Tirans, Pandaren)."
+      },
+      {
+        "text": "Spell: Lightning Shield. A crackling shield: +30% Strength when defending and adjacent enemies -10%, for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Stormlord"
+  },
+  {
+    "name": "Stormlord",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Elemental Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[+25]% Strength <when defending>",
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Lightning Shield] status for [2] turn(s) <for units without [Lightning Shield Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Lightning Shield Cooldown] status for [5] turn(s) <upon gaining the [Lightning Shield] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Lightning Shield] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Lightning Shield] status for [2] turn(s) <upon entering combat> <for units without [Lightning Shield Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Masters of the elemental lords, whose word is thunder."
+      },
+      {
+        "text": "Elemental school (Dwarves, Dark Iron Dwarves, Kul Tirans, Pandaren)."
+      },
+      {
+        "text": "Spell: Lightning Shield. A crackling shield: +30% Strength when defending and adjacent enemies -10%, for 2 turns. Costs 8 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Disciple",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Holy Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [10] HP when healing",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Disciples of the Light, taught by the naaru."
+      },
+      {
+        "text": "Holy school (Draenei)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Oracle"
+  },
+  {
+    "name": "Oracle",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Holy Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [10] HP when healing",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Holy Ward] status for [2] turn(s) <for units without [Holy Ward Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Holy Ward Cooldown] status for [5] turn(s) <upon gaining the [Holy Ward] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Holy Ward] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Holy Ward] status for [2] turn(s) <upon entering combat> <for units without [Holy Ward Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Oracles who smite the enemy with holy fire and shield their allies."
+      },
+      {
+        "text": "Holy school (Draenei)."
+      },
+      {
+        "text": "Spell: Holy Ward. A ward of the Light: +40% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Exarch"
+  },
+  {
+    "name": "Exarch",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Holy Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [10] HP when healing",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Holy Ward] status for [2] turn(s) <for units without [Holy Ward Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Holy Ward Cooldown] status for [5] turn(s) <upon gaining the [Holy Ward] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Holy Ward] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Holy Ward] status for [2] turn(s) <upon entering combat> <for units without [Holy Ward Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "High priests of the Light, whose prayers heal whole armies."
+      },
+      {
+        "text": "Holy school (Draenei)."
+      },
+      {
+        "text": "Spell: Holy Ward. A ward of the Light: +40% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Hierarch"
+  },
+  {
+    "name": "Hierarch",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Holy Magic",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "All adjacent units heal [10] HP when healing",
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Holy Ward] status for [2] turn(s) <for units without [Holy Ward Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Holy Ward Cooldown] status for [5] turn(s) <upon gaining the [Holy Ward] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Holy Ward] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Holy Ward] status for [2] turn(s) <upon entering combat> <for units without [Holy Ward Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The holiest of the Light's servants, in the footsteps of the Prophet Velen."
+      },
+      {
+        "text": "Holy school (Draenei)."
+      },
+      {
+        "text": "Spell: Holy Ward. A ward of the Light: +40% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Cult Initiate",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Necromancy",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[This Unit] heals [10] HP <upon defeating a [Military] unit>",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Recruits of the Cult of the Damned, who trade their lives for the Lich King's promise."
+      },
+      {
+        "text": "Necromancy school (Scourge)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Necromancer"
+  },
+  {
+    "name": "Necromancer",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Necromancy",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[This Unit] heals [10] HP <upon defeating a [Military] unit>",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raise Ghoul] status for [1] turn(s) <for units without [Raise Ghoul Cooldown]> <for [1] movement> <costs [12] [Mana]>",
+      "[This Unit] gains the [Raise Ghoul Cooldown] status for [8] turn(s) <upon gaining the [Raise Ghoul] status> <hidden from users>",
+      "[1] free [Ghoul] units appear <upon gaining the [Raise Ghoul] status> <hidden from users>",
+      "Instantly consumes [12] [Mana] <upon gaining the [Raise Ghoul] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Raise Ghoul] status for [1] turn(s) <upon turn start> <when at war> <for units without [Raise Ghoul Cooldown]> <for [AI player] Civilizations> <when above [11] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Necromancers who raise the fallen and wither the living."
+      },
+      {
+        "text": "Necromancy school (Scourge)."
+      },
+      {
+        "text": "Spell: Raise Ghoul. A Ghoul claws its way out of the grave. Costs 12 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Lich"
+  },
+  {
+    "name": "Lich",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Necromancy",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[This Unit] heals [10] HP <upon defeating a [Military] unit>",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raise Ghoul] status for [1] turn(s) <for units without [Raise Ghoul Cooldown]> <for [1] movement> <costs [12] [Mana]>",
+      "[This Unit] gains the [Raise Ghoul Cooldown] status for [8] turn(s) <upon gaining the [Raise Ghoul] status> <hidden from users>",
+      "[1] free [Ghoul] units appear <upon gaining the [Raise Ghoul] status> <hidden from users>",
+      "Instantly consumes [12] [Mana] <upon gaining the [Raise Ghoul] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Raise Ghoul] status for [1] turn(s) <upon turn start> <when at war> <for units without [Raise Ghoul Cooldown]> <for [AI player] Civilizations> <when above [11] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Undying sorcerers of ice and death."
+      },
+      {
+        "text": "Necromancy school (Scourge)."
+      },
+      {
+        "text": "Spell: Raise Ghoul. A Ghoul claws its way out of the grave. Costs 12 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Archlich"
+  },
+  {
+    "name": "Archlich",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Necromancy",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[This Unit] heals [10] HP <upon defeating a [Military] unit>",
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raise Ghoul] status for [1] turn(s) <for units without [Raise Ghoul Cooldown]> <for [1] movement> <costs [12] [Mana]>",
+      "[This Unit] gains the [Raise Ghoul Cooldown] status for [8] turn(s) <upon gaining the [Raise Ghoul] status> <hidden from users>",
+      "[1] free [Ghoul] units appear <upon gaining the [Raise Ghoul] status> <hidden from users>",
+      "Instantly consumes [12] [Mana] <upon gaining the [Raise Ghoul] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Raise Ghoul] status for [1] turn(s) <upon turn start> <when at war> <for units without [Raise Ghoul Cooldown]> <for [AI player] Civilizations> <when above [11] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The mightiest liches, peers of Kel'Thuzad."
+      },
+      {
+        "text": "Necromancy school (Scourge)."
+      },
+      {
+        "text": "Spell: Raise Ghoul. A Ghoul claws its way out of the grave. Costs 12 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Hexer",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 7,
+    "rangedStrength": 11,
+    "cost": 75,
+    "requiredTech": "Philosophy",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Voodoo",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Troll hexers who curse their enemies with voodoo."
+      },
+      {
+        "text": "Voodoo school (Trolls, Zandalari Trolls)."
+      }
+    ],
+    "obsoleteTech": "Scholarship",
+    "upgradesTo": "Shadow Hunter"
+  },
+  {
+    "name": "Shadow Hunter",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 12,
+    "rangedStrength": 20,
+    "cost": 120,
+    "requiredTech": "Scholarship",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Voodoo",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Hex] status for [2] turn(s) <for units without [Hex Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Hex Cooldown] status for [5] turn(s) <upon gaining the [Hex] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Hex] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Hex] status for [2] turn(s) <upon entering combat> <for units without [Hex Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Masters of hexes and healing waves, chosen of the loa."
+      },
+      {
+        "text": "Voodoo school (Trolls, Zandalari Trolls)."
+      },
+      {
+        "text": "Spell: Hex. A voodoo hex: adjacent enemies fight at -20% Strength for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Arcane Science",
+    "upgradesTo": "Hexlord"
+  },
+  {
+    "name": "Hexlord",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 32,
+    "cost": 200,
+    "requiredTech": "Arcane Science",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Voodoo",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Hex] status for [2] turn(s) <for units without [Hex Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Hex Cooldown] status for [5] turn(s) <upon gaining the [Hex] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Hex] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Hex] status for [2] turn(s) <upon entering combat> <for units without [Hex Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hexlords who bargain with the loa for dark power."
+      },
+      {
+        "text": "Voodoo school (Trolls, Zandalari Trolls)."
+      },
+      {
+        "text": "Spell: Hex. A voodoo hex: adjacent enemies fight at -20% Strength for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "obsoleteTech": "Mana Theory",
+    "upgradesTo": "Loa Herald"
+  },
+  {
+    "name": "Loa Herald",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 50,
+    "rangedStrength": 64,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Voodoo",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Hex] status for [2] turn(s) <for units without [Hex Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Hex Cooldown] status for [5] turn(s) <upon gaining the [Hex] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Hex] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Hex] status for [2] turn(s) <upon entering combat> <for units without [Hex Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Living vessels of the loa, speaking with the voice of the gods."
+      },
+      {
+        "text": "Voodoo school (Trolls, Zandalari Trolls)."
+      },
+      {
+        "text": "Spell: Hex. A voodoo hex: adjacent enemies fight at -20% Strength for 2 turns. Costs 8 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Kirin Tor Magus",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 54,
+    "rangedStrength": 68,
+    "cost": 320,
+    "requiredTech": "Mana Theory",
+    "attackSound": "wc_arcane_blast",
+    "uniqueTo": "Humans",
+    "uniques": [
+      "Ranged attacks may be performed over obstacles",
+      "Costs [20] [Mana]",
+      "[+1] Range",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <for units without [Frost Armor Cooldown]> <for [0] movement> <costs [8] [Mana]>",
+      "[This Unit] gains the [Frost Armor Cooldown] status for [5] turn(s) <upon gaining the [Frost Armor] status> <hidden from users>",
+      "Instantly consumes [8] [Mana] <upon gaining the [Frost Armor] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Frost Armor] status for [2] turn(s) <upon entering combat> <for units without [Frost Armor Cooldown]> <for [AI player] Civilizations> <when above [7] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The magi of the Kirin Tor, the ruling council of Dalaran, who can strike from farther away than any other mage."
+      },
+      {
+        "text": "Stronger than a Magus."
+      },
+      {
+        "text": "Spell: Frost Armor. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
+      }
+    ],
+    "replaces": "Magus"
+  },
+  {
+    "name": "Ranger Captain",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 24,
+    "rangedStrength": 28,
+    "cost": 200,
+    "requiredTech": "Natural Lore",
+    "obsoleteTech": "Nature's Blessing",
+    "upgradesTo": "Ranger-General",
+    "attackSound": "arrow",
+    "uniques": [
+      "[+1] Sight",
+      "Double movement in [Forest]",
+      "[+20]% Strength <when fighting in [Forest] tiles>",
+      "Can see invisible [Land] units",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Aimed Shot] status for [1] turn(s) <for units without [Aimed Shot Cooldown]> <for [0] movement> <costs [6] [Mana]>",
+      "[This Unit] gains the [Aimed Shot Cooldown] status for [5] turn(s) <upon gaining the [Aimed Shot] status> <hidden from users>",
+      "Instantly consumes [6] [Mana] <upon gaining the [Aimed Shot] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Aimed Shot] status for [1] turn(s) <upon entering combat> <for units without [Aimed Shot Cooldown]> <for [AI player] Civilizations> <when above [5] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Veteran rangers who lead the scouts of the realm. They see stealthed units nearby."
+      },
+      {
+        "text": "Spell: Aimed Shot. A careful shot: +25% Strength when attacking for 1 turn. Costs 6 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Ranger-General",
+    "unitType": "Archery",
+    "movement": 3,
+    "strength": 50,
+    "rangedStrength": 58,
+    "cost": 320,
+    "requiredTech": "Nature's Blessing",
+    "attackSound": "arrow",
+    "uniques": [
+      "[+1] Sight",
+      "Double movement in [Forest]",
+      "[+20]% Strength <when fighting in [Forest] tiles>",
+      "Can see invisible [Land] units",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Aimed Shot] status for [1] turn(s) <for units without [Aimed Shot Cooldown]> <for [0] movement> <costs [6] [Mana]>",
+      "[This Unit] gains the [Aimed Shot Cooldown] status for [5] turn(s) <upon gaining the [Aimed Shot] status> <hidden from users>",
+      "Instantly consumes [6] [Mana] <upon gaining the [Aimed Shot] status> <for [AI player] Civilizations> <hidden from users>",
+      "[This Unit] gains the [Aimed Shot] status for [1] turn(s) <upon entering combat> <for units without [Aimed Shot Cooldown]> <for [AI player] Civilizations> <when above [5] [Mana]> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The greatest archers of the age, in the tradition of Sylvanas and Alleria Windrunner."
+      },
+      {
+        "text": "Spell: Aimed Shot. A careful shot: +25% Strength when attacking for 1 turn. Costs 6 Mana."
+      }
+    ]
+  },
+  {
+    "name": "Rifleman",
+    "unitType": "Ranged Firearm",
+    "range": 2,
+    "movement": 2,
+    "strength": 16,
+    "rangedStrength": 24,
+    "cost": 150,
+    "requiredTech": "Blackpowder",
+    "obsoleteTech": "Long Rifles",
+    "upgradesTo": "Mountaineer",
+    "attackSound": "wc_rifle",
+    "uniques": [
+      "[+33]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Riflemen with long guns in the style of Ironforge, deadly against charging cavalry."
+      }
+    ]
+  },
+  {
+    "name": "Azerite Sharpshooter",
+    "unitType": "Ranged Firearm",
+    "range": 2,
+    "movement": 2,
+    "strength": 75,
+    "rangedStrength": 85,
+    "cost": 450,
+    "requiredTech": "Azerite Refinement",
+    "requiredResource": "Azerite",
+    "attackSound": "wc_rifle",
+    "uniques": [
+      "[+33]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Marksmen whose rifles fire Azerite-charged rounds, the deadliest guns ever made on Azeroth."
+      }
+    ]
+  },
+  {
+    "name": "Warbringer",
+    "unitType": "Heavy Infantry",
+    "movement": 2,
+    "strength": 90,
+    "cost": 450,
+    "requiredTech": "War Drums",
+    "attackSound": "metalhit",
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The greatest warriors of the Azerite age, who carry the war banner at the head of every charge."
+      }
+    ]
+  },
+  {
     "name": "Onyxia",
     "unitType": "Raid Boss",
     "movement": 3,
@@ -7096,7 +8534,7 @@
         "text": "Fielded only by the barbarians, in place of the Militia."
       }
     ],
-    "obsoleteTech": "Blacksmithing",
+    "obsoleteTech": "Iron Forged Swords",
     "attackSound": "nonmetalhit"
   },
   {
@@ -7179,18 +8617,19 @@
     "rangedStrength": 11,
     "cost": 75,
     "requiredTech": "Construction",
-    "uniques": [],
+    "uniques": [
+      "Can upgrade to [Rifleman]"
+    ],
     "uniqueTo": "Barbarians",
-    "replaces": "Ranger",
+    "replaces": "Hunter",
     "civilopediaText": [
       {
         "text": "Winged harpies who nest in cliffs and hurl curses and javelins at travellers."
       },
       {
-        "text": "Fielded only by the barbarians, in place of the Ranger."
+        "text": "Fielded only by the barbarians, in place of the Hunter."
       }
     ],
-    "obsoleteTech": "Clockwork",
     "attackSound": "arrow"
   },
   {
@@ -7243,23 +8682,27 @@
     "name": "Naga Siren",
     "unitType": "Archery",
     "movement": 2,
-    "strength": 13,
-    "rangedStrength": 18,
+    "strength": 12,
+    "rangedStrength": 17,
     "cost": 120,
-    "requiredTech": "Clockwork",
-    "uniques": [],
+    "requiredTech": "Scholarship",
+    "uniques": [
+      "[+1] Sight",
+      "Double movement in [Forest]",
+      "[+20]% Strength <when fighting in [Forest] tiles>"
+    ],
     "uniqueTo": "Barbarians",
-    "replaces": "Crossbowman",
+    "replaces": "Ranger",
     "civilopediaText": [
       {
         "text": "Serpentine servants of Queen Azshara, risen from the sea with bows and frost magic."
       },
       {
-        "text": "Fielded only by the barbarians, in place of the Crossbowman."
+        "text": "Fielded only by the barbarians, in place of the Ranger."
       }
     ],
-    "obsoleteTech": "Steamworks",
-    "attackSound": "crossbow"
+    "obsoleteTech": "Natural Lore",
+    "attackSound": "arrow"
   },
   {
     "name": "Satyr Hellcaller",
@@ -7280,25 +8723,50 @@
         "text": "Fielded only by the barbarians, in place of the Vanguard."
       }
     ],
-    "obsoleteTech": "Blackpowder",
+    "obsoleteTech": "Mithril Forged Swords",
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Dragonmaw Marauder",
+    "unitType": "Heavy Infantry",
+    "movement": 2,
+    "strength": 24,
+    "cost": 150,
+    "requiredTech": "Mithril Forged Swords",
+    "uniques": [],
+    "uniqueTo": "Barbarians",
+    "replaces": "Man-at-Arms",
+    "civilopediaText": [
+      {
+        "text": "Orcs of the Dragonmaw clan who never laid down their axes, raiding from the Wetlands."
+      },
+      {
+        "text": "Fielded only by the barbarians, in place of the Man-at-Arms."
+      }
+    ],
+    "obsoleteTech": "Storm Hammers",
     "attackSound": "metalhit"
   },
   {
     "name": "Defias Pillager",
-    "unitType": "Firearm",
+    "unitType": "Ranged Firearm",
+    "range": 2,
     "movement": 2,
-    "strength": 24,
+    "strength": 16,
+    "rangedStrength": 24,
     "cost": 150,
     "requiredTech": "Blackpowder",
-    "uniques": [],
+    "uniques": [
+      "[+33]% Strength <vs [Mounted] units>"
+    ],
     "uniqueTo": "Barbarians",
-    "replaces": "Musketeer",
+    "replaces": "Rifleman",
     "civilopediaText": [
       {
         "text": "The red-masked Defias Brotherhood, stonemasons turned outlaws, armed with blackpowder."
       },
       {
-        "text": "Fielded only by the barbarians, in place of the Musketeer."
+        "text": "Fielded only by the barbarians, in place of the Rifleman."
       }
     ],
     "obsoleteTech": "Long Rifles",
@@ -7312,8 +8780,10 @@
     "strength": 30,
     "rangedStrength": 30,
     "cost": 225,
-    "requiredTech": "Steamworks",
-    "uniques": [],
+    "requiredTech": "Long Rifles",
+    "uniques": [
+      "[+33]% Strength <vs [Mounted] units>"
+    ],
     "uniqueTo": "Barbarians",
     "replaces": "Mountaineer",
     "civilopediaText": [
@@ -7329,45 +8799,45 @@
   },
   {
     "name": "Venture Co. Enforcer",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 34,
     "cost": 225,
-    "requiredTech": "Long Rifles",
+    "requiredTech": "Storm Hammers",
     "uniques": [],
     "uniqueTo": "Barbarians",
-    "replaces": "Rifleman",
+    "replaces": "Royal Guard",
     "civilopediaText": [
       {
         "text": "Goblin muscle hired by the Venture Company to strip the land bare."
       },
       {
-        "text": "Fielded only by the barbarians, in place of the Rifleman."
+        "text": "Fielded only by the barbarians, in place of the Royal Guard."
       }
     ],
     "obsoleteTech": "Gnomish Gearworks",
-    "attackSound": "wc_rifle"
+    "attackSound": "metalhit"
   },
   {
     "name": "Kvaldir Reaver",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 50,
     "cost": 320,
     "requiredTech": "Gnomish Gearworks",
     "uniques": [],
     "uniqueTo": "Barbarians",
-    "replaces": "Fusilier",
+    "replaces": "Gladiator",
     "civilopediaText": [
       {
         "text": "Cursed sea-raiders of the Howling Fjord, hulking and pale with kelp in their beards."
       },
       {
-        "text": "Fielded only by the barbarians, in place of the Fusilier."
+        "text": "Fielded only by the barbarians, in place of the Gladiator."
       }
     ],
     "obsoleteTech": "Arcanite Alloys",
-    "attackSound": "wc_rifle"
+    "attackSound": "metalhit"
   },
   {
     "name": "Twilight Doomcaller",
@@ -7378,7 +8848,9 @@
     "rangedStrength": 60,
     "cost": 350,
     "requiredTech": "Fragmentation Shards",
-    "uniques": [],
+    "uniques": [
+      "[+33]% Strength <vs [Mounted] units>"
+    ],
     "uniqueTo": "Barbarians",
     "replaces": "Grenadier",
     "civilopediaText": [
@@ -7393,24 +8865,24 @@
   },
   {
     "name": "Faceless Destroyer",
-    "unitType": "Firearm",
+    "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 70,
     "cost": 375,
     "requiredTech": "Arcanite Alloys",
     "uniques": [],
     "uniqueTo": "Barbarians",
-    "replaces": "Shock Trooper",
+    "replaces": "Vanquisher",
     "civilopediaText": [
       {
         "text": "Servants of the Old Gods with tentacles for faces, risen from the dark."
       },
       {
-        "text": "Fielded only by the barbarians, in place of the Shock Trooper."
+        "text": "Fielded only by the barbarians, in place of the Vanquisher."
       }
     ],
     "obsoleteTech": "War Drums",
-    "attackSound": "wc_rifle"
+    "attackSound": "metalhit"
   },
   {
     "name": "Bloodsail Corsair",
@@ -7458,7 +8930,7 @@
         "text": "Fielded only by the barbarians, in place of the Brigantine."
       }
     ],
-    "obsoleteTech": "Liquid Fire",
+    "obsoleteTech": "Steam Power",
     "attackSound": "cannon"
   },
   {

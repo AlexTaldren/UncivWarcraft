@@ -211,6 +211,8 @@ CREATURES = {
     "Naga Myrmidon": dict(family="human", body=(1.05, 1.08), head=1.0, face=face_naga, extra=naga,
                           recipe=M.hs(armor="plate", tabard=False, hat="hair", weapon="spear", shield="round", pauldron=True),
                           colors=dict(skin=(90, 170, 150), hair=(30, 70, 120), steel=(150, 190, 180), gold=(220, 200, 120))),
+    "Dragonmaw Marauder": dict(family="brute", body=(1.05, 1.0), head=1.0, bface=None,
+                               colors=dict(oskin=(110, 120, 80), ohair=(30, 26, 24), iron=(90, 60, 50))),
     "Satyr Hellcaller": dict(family="human", body=(1.0, 1.0), head=1.0, face=face_satyr,
                              colors=dict(skin=(150, 100, 160), hair=(60, 40, 50), leather=(80, 50, 70), steel=(110, 90, 100))),
     "Defias Pillager": dict(family="human", body=(1.0, 1.0), head=1.0, face=face_defias,

@@ -7,7 +7,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "Scout",
       "Siege",
@@ -230,7 +230,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -252,7 +252,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -274,7 +274,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -294,7 +294,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -316,7 +316,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -338,7 +338,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -383,7 +383,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm"
+      "Heavy Infantry"
     ],
     "column": 6,
     "row": 3,
@@ -405,7 +405,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted"
     ],
     "column": 7,
@@ -426,7 +426,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted"
     ],
     "column": 7,
@@ -448,7 +448,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "War Machine"
     ],
@@ -472,7 +472,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm"
+      "Heavy Infantry"
     ],
     "column": 6,
     "row": 5,
@@ -494,7 +494,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm"
+      "Heavy Infantry"
     ],
     "column": 6,
     "row": 1,
@@ -518,7 +518,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "Scout"
     ],
@@ -541,7 +541,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "Scout"
     ],
@@ -1354,7 +1354,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Archery",
       "Ranged Firearm",
       "Siege"
@@ -1377,7 +1377,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Archery",
       "Ranged Firearm",
       "Siege"
@@ -1403,7 +1403,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Archery",
       "Ranged Firearm",
       "Siege",
@@ -1461,7 +1461,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Mounted",
       "Ranged Water",
       "War Machine",
@@ -1518,7 +1518,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Sky Fighter",
       "Sky Bomber"
     ],
@@ -1540,7 +1540,7 @@
     ],
     "unitTypes": [
       "Sword",
-      "Firearm",
+      "Heavy Infantry",
       "Sky Fighter",
       "Sky Bomber"
     ],
@@ -1913,7 +1913,7 @@
     "name": "Hold the Line",
     "unitTypes": [
       "Sword",
-      "Firearm"
+      "Heavy Infantry"
     ],
     "prerequisites": [],
     "uniques": [
@@ -2640,6 +2640,153 @@
     "civilopediaText": [
       {
         "text": "Frost Armor is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Drain Life",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Drains the life from nearby foes: heals the warlock for 30 HP. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Drain Life Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Drain Life is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Wild Growth",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [20] HP when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Nature's healing: adjacent units heal 20 HP more for 2 turns. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Wild Growth Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Wild Growth is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Shield",
+    "unitTypes": [],
+    "uniques": [
+      "[+30]% Strength <when defending>",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A crackling shield: +30% Strength when defending and adjacent enemies -10%, for 2 turns. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Shield Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Lightning Shield is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Holy Ward",
+    "unitTypes": [],
+    "uniques": [
+      "[+40]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A ward of the Light: +40% Strength when defending for 2 turns. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Holy Ward Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Holy Ward is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Raise Ghoul",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. A Ghoul claws its way out of the grave. Costs 12 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Raise Ghoul Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Raise Ghoul is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Hex",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A voodoo hex: adjacent enemies fight at -20% Strength for 2 turns. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Hex Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Hex is recharging."
       }
     ]
   },

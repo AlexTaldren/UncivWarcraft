@@ -179,7 +179,7 @@ EXTRA_PROMOTIONS = [
      "Strikes from cover before the enemy knows it is there."),
     ("Flanker", ["Mounted"], [], ["[+50]% to Flank Attack bonuses"],
      "Rides around the enemy line to hit it where it is weakest."),
-    ("Hold the Line", ["Sword", "Firearm"], [], ["[+15]% Strength <when defending> <when adjacent to a [Military] unit>"],
+    ("Hold the Line", ["Sword", "Heavy Infantry"], [], ["[+15]% Strength <when defending> <when adjacent to a [Military] unit>"],
      "Shoulder to shoulder, the line does not break."),
 ]
 

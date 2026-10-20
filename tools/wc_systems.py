@@ -79,8 +79,21 @@ SPELLS = [
     ("Voodoo Hex", ["Rokhan"], 2, [ADJ % -20], [], 15, 6, 0, ("mask", "flask"),
      "Hexed foes stumble: adjacent enemies fight at -20% Strength for 2 turns."),
     # ---- spellcasters and other gifted units
-    ("Frost Armor", ["Mage"], 2, ["[+30]% Strength <when defending>"], [], 8, 5, 0, ("crystal", "shield"),
+    ("Frost Armor", ["Mage", "Sorcerer", "Magus", "Kirin Tor Magus"], 2, ["[+30]% Strength <when defending>"], [], 8, 5, 0, ("crystal", "shield"),
      "A coat of ice: +30% Strength when defending for 2 turns."),
+    # ---- the magic schools (wc_lines.SCHOOLS); the Arcane school has Frost Armor above
+    ("Drain Life", ["Warlock", "Demonologist", "Grand Warlock"], 1, [], ["[This Unit] heals [30] HP"], 8, 5, 1, ("flame", "heart"),
+     "Drains the life from nearby foes: heals the warlock for 30 HP."),
+    ("Wild Growth", ["Druid of the Talon", "Keeper of the Grove", "Archdruid"], 2, ["All adjacent units heal [20] HP when healing"],
+     [], 8, 5, 0, ("leaf", "heart"), "Nature's healing: adjacent units heal 20 HP more for 2 turns."),
+    ("Lightning Shield", ["Shaman", "Far Seer", "Stormlord"], 2, ["[+30]% Strength <when defending>", ADJ % -10], [], 8, 5, 0,
+     ("bolt", "shield"), "A crackling shield: +30% Strength when defending and adjacent enemies -10%, for 2 turns."),
+    ("Holy Ward", ["Oracle", "Exarch", "Hierarch"], 2, ["[+40]% Strength <when defending>"], [], 8, 5, 0, ("hand_light", "shield"),
+     "A ward of the Light: +40% Strength when defending for 2 turns."),
+    ("Raise Ghoul", ["Necromancer", "Lich", "Archlich"], 1, [], ["[1] free [Ghoul] units appear"], 12, 8, 1, ("skull", "coffin"),
+     "A Ghoul claws its way out of the grave."),
+    ("Hex", ["Shadow Hunter", "Hexlord", "Loa Herald"], 2, [ADJ % -20], [], 8, 5, 0, ("mask", "star"),
+     "A voodoo hex: adjacent enemies fight at -20% Strength for 2 turns."),
     ("Death Coil", ["Death Knight"], 1, [], ["[This Unit] heals [30] HP"], 8, 5, 1, ("skull", "heart"),
      "Unholy energy mends the death knight: heals 30 HP."),
     ("Spell Steal", ["Spellbreaker"], 1, [], ["Instantly gain [8] [Mana]"], 0, 6, 1, ("orb", "hand_light"),
@@ -99,7 +112,7 @@ SPELLS = [
      "Heals the monk for 25 HP."),
     ("Cannibalize", ["Abomination", "Ghoul"], 1, [], ["[This Unit] heals [30] HP"], 0, 5, 1, ("skull", "heart"),
      "Feeds on the fallen: heals 30 HP."),
-    ("Aimed Shot", ["Farstrider", "Ranger-Lord"], 1, ["[+25]% Strength <when attacking>"], [], 6, 5, 0, ("bow", "target"),
+    ("Aimed Shot", ["Farstrider", "Ranger-Lord", "Ranger Captain", "Ranger-General"], 1, ["[+25]% Strength <when attacking>"], [], 6, 5, 0, ("bow", "target"),
      "A careful shot: +25% Strength when attacking for 1 turn."),
     ("Sentinel Owl", ["Huntress"], 2, ["[+2] Sight", "Can see invisible [Land] units"], [], 5, 4, 0, ("eye", "moon"),
      "An owl scouts ahead: +2 Sight and sees stealthed units for 2 turns."),
@@ -234,8 +247,8 @@ def rebels(unit_by_era):
     return out
 
 
-REBELS = rebels([("Age of Tribes", "Spearman"), ("Age of the Third War", "Musketeer"), ("Age of the Cataclysm", "Rifleman"),
-                 ("Age of Azerite", "Shock Trooper")])
+REBELS = rebels([("Age of Tribes", "Spearman"), ("Age of the Third War", "Man-at-Arms"), ("Age of the Cataclysm", "Gladiator"),
+                 ("Age of Azerite", "Vanquisher")])
 
 
 def politics_events():
@@ -282,17 +295,18 @@ BARBARIANS = {
     "Gnoll Poacher": ("Archer", "Hyena-headed gnolls of the Riverpaw and Gnoll packs, quick with a crude bow."),
     "Murloc Tidehunter": ("Spearman", "Mrrgllgl! Coastal murlocs armed with spears and nets, who raid in screeching swarms."),
     "Centaur Outrunner": ("Outrider", "Raiders of the Desolace clans, the bastard children of Cenarius. Fast and merciless."),
-    "Harpy Windwitch": ("Ranger", "Winged harpies who nest in cliffs and hurl curses and javelins at travellers."),
+    "Harpy Windwitch": ("Hunter", "Winged harpies who nest in cliffs and hurl curses and javelins at travellers."),
     "Quilboar Thornguard": ("Swordsman", "Boar-men of the Razorfen, armoured in briars and blessed by Agamaggan."),
     "Ogre Mauler": ("Pikeman", "Two-headed or one, an ogre is a hill of muscle with a club."),
-    "Naga Siren": ("Crossbowman", "Serpentine servants of Queen Azshara, risen from the sea with bows and frost magic."),
+    "Naga Siren": ("Ranger", "Serpentine servants of Queen Azshara, risen from the sea with bows and frost magic."),
     "Satyr Hellcaller": ("Vanguard", "Night elves twisted by the Legion into goat-legged demons, haunting the dark woods."),
-    "Defias Pillager": ("Musketeer", "The red-masked Defias Brotherhood, stonemasons turned outlaws, armed with blackpowder."),
+    "Dragonmaw Marauder": ("Man-at-Arms", "Orcs of the Dragonmaw clan who never laid down their axes, raiding from the Wetlands."),
+    "Defias Pillager": ("Rifleman", "The red-masked Defias Brotherhood, stonemasons turned outlaws, armed with blackpowder."),
     "Bloodsail Sharpshooter": ("Mountaineer", "Marksmen of the Bloodsail Buccaneers, the terror of the South Seas."),
-    "Venture Co. Enforcer": ("Rifleman", "Goblin muscle hired by the Venture Company to strip the land bare."),
-    "Kvaldir Reaver": ("Fusilier", "Cursed sea-raiders of the Howling Fjord, hulking and pale with kelp in their beards."),
+    "Venture Co. Enforcer": ("Royal Guard", "Goblin muscle hired by the Venture Company to strip the land bare."),
+    "Kvaldir Reaver": ("Gladiator", "Cursed sea-raiders of the Howling Fjord, hulking and pale with kelp in their beards."),
     "Twilight Doomcaller": ("Grenadier", "Cultists of the Twilight's Hammer, hurling shadow-fire for the end of the world."),
-    "Faceless Destroyer": ("Shock Trooper", "Servants of the Old Gods with tentacles for faces, risen from the dark."),
+    "Faceless Destroyer": ("Vanquisher", "Servants of the Old Gods with tentacles for faces, risen from the dark."),
     # at sea
     "Bloodsail Corsair": ("War Galley", "A Bloodsail raiding galley."),
     "Naga Myrmidon": ("Brigantine", "Naga warriors who strike ships from beneath the waves."),
@@ -304,7 +318,7 @@ BARB_ICONS = {
     "Kobold Tunneler": ("pick", "lantern"), "Gnoll Poacher": ("bow", "paw"), "Murloc Tidehunter": ("fish", "spear"),
     "Centaur Outrunner": ("horse", "bow"), "Harpy Windwitch": ("wing", "spear"), "Quilboar Thornguard": ("tusk", "shield"),
     "Ogre Mauler": ("fist", "hammer"), "Naga Siren": ("wave", "bow"), "Satyr Hellcaller": ("ram_head", "flame"),
-    "Defias Pillager": ("mask", "gun"), "Bloodsail Sharpshooter": ("anchor", "gun"), "Venture Co. Enforcer": ("coins", "gun"),
+    "Defias Pillager": ("mask", "gun"), "Dragonmaw Marauder": ("axe", "dragon"), "Bloodsail Sharpshooter": ("anchor", "gun"), "Venture Co. Enforcer": ("coins", "gun"),
     "Kvaldir Reaver": ("axe", "wave"), "Twilight Doomcaller": ("void", "bomb"), "Faceless Destroyer": ("tentacle_eye", "fist"),
     "Bloodsail Corsair": ("ship", "skull"), "Naga Myrmidon": ("wave", "spear"), "Bloodsail Raider": ("ship", "swords"),
     "Bloodsail Man-o'-War": ("ship", "cannon"), "Kvaldir Longship": ("ship", "axe"),
