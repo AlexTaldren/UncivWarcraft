@@ -1082,5 +1082,160 @@
         "text": "The way of nations bound together by common purpose, sharing labor, food and the burden of defense."
       }
     ]
+  },
+  {
+    "name": "Fateful Choices",
+    "era": "Age of Tribes",
+    "priorities": {},
+    "uniques": [
+      "Unavailable"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Paths chosen at turning points of history: the fel offer of the Third War, the rebirth of the Sunwell, the covenants of the Shadowlands. They are adopted through events, cost no Culture and can never be undone."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Embraced the Fel",
+        "uniques": [
+          "[+15]% Strength <for [Military] units>",
+          "[-15]% growth [in all cities]"
+        ],
+        "row": 1,
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "We drank the power the Legion offered. Our armies burn with fel strength; our lands wither a little."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Rejected the Fel",
+        "uniques": [
+          "[+15]% [Faith] [in all cities]",
+          "[+20]% Strength <vs [Barbarian] units> <for [Military] units>"
+        ],
+        "row": 1,
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "We refused the demons' bargain. Our faith is stronger for it, and we stand fast against the Legion's raiders."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Sunwell Restored by the Light",
+        "uniques": [
+          "[+15]% [Faith] [in all cities]",
+          "[+2 Culture] [in capital]"
+        ],
+        "row": 1,
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "The naaru M'uru's light rekindled the Sunwell, holy and arcane at once."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Sunwell Rekindled by Arcane",
+        "uniques": [
+          "[+10]% [Science] [in all cities]",
+          "[+2 Science] [in capital]"
+        ],
+        "row": 1,
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "Our magisters rebuilt the Sunwell as it was: a font of pure arcane power."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Kyrian Covenant",
+        "uniques": [
+          "[+2 Faith] [in all cities]",
+          "[+5] HP when healing <for [Military] units>"
+        ],
+        "row": 2,
+        "column": 1,
+        "civilopediaText": [
+          {
+            "text": "We swore to the Kyrian of Bastion, who ferry the worthy dead and guard them with radiant wings."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Venthyr Covenant",
+        "uniques": [
+          "[+15]% [Gold] [in all cities]",
+          "[+10]% Strength <when attacking> <for [Military] units>"
+        ],
+        "row": 2,
+        "column": 2,
+        "civilopediaText": [
+          {
+            "text": "We bargained with the Venthyr of Revendreth, who refine sinful souls in gothic halls."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Night Fae Covenant",
+        "uniques": [
+          "[+10]% [Food] [in all cities]",
+          "[+10]% Strength <when fighting in [Forest] tiles> <for [Military] units>"
+        ],
+        "row": 2,
+        "column": 3,
+        "civilopediaText": [
+          {
+            "text": "We joined the Night Fae of Ardenweald, who tend the souls of nature through cycles of rebirth."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Necrolord Covenant",
+        "uniques": [
+          "[+10]% [Production] [in all cities]",
+          "[+10]% Strength <when defending> <for [Military] units>"
+        ],
+        "row": 2,
+        "column": 4,
+        "civilopediaText": [
+          {
+            "text": "We marched with the Necrolords of Maldraxxus, the armies that defend the Shadowlands."
+          },
+          {
+            "text": "A fateful choice: adopted only through an event, never bought."
+          }
+        ]
+      },
+      {
+        "name": "Fateful Choices Complete",
+        "uniques": []
+      }
+    ]
   }
 ]

@@ -43,7 +43,11 @@
     "obsoleteTech": "Arcane Science",
     "uniques": [
       "May upgrade to [Archer] through ruins-like effects",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "promotions": [
       "Ignore terrain cost"
@@ -65,7 +69,10 @@
     "obsoleteTech": "Blacksmithing",
     "upgradesTo": "Swordsman",
     "uniques": [
-      "May upgrade to [Spearman] through ruins-like effects"
+      "May upgrade to [Spearman] through ruins-like effects",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
@@ -89,6 +96,11 @@
       {
         "text": "Bowmen and huntresses who strike from a distance."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -118,7 +130,10 @@
     "requiredTech": "Sailing",
     "uniques": [
       "Cannot enter ocean tiles",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "upgradesTo": "Brigantine",
     "obsoleteTech": "Astronomy",
@@ -143,7 +158,10 @@
     "uniques": [
       "No defensive terrain bonus",
       "Rough terrain penalty",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "arrow",
     "civilopediaText": [
@@ -162,7 +180,10 @@
     "obsoleteTech": "Arathi Law",
     "upgradesTo": "Pikeman",
     "uniques": [
-      "[+50]% Strength <vs [Mounted] units>"
+      "[+50]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -184,7 +205,10 @@
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
-      "[-33]% Strength <vs cities> <when attacking>"
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "horse",
@@ -209,7 +233,10 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "throw",
@@ -234,6 +261,11 @@
       {
         "text": "Skilled bowmen of the forests, like the rangers of Quel'Thalas."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -252,6 +284,11 @@
       {
         "text": "Armoured infantry with blade and shield."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -262,7 +299,10 @@
     "cost": 90,
     "requiredTech": "Arathi Law",
     "uniques": [
-      "[+50]% Strength <vs [Mounted] units>"
+      "[+50]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "upgradesTo": "Lancer",
     "obsoleteTech": "Mithril Forged Swords",
@@ -284,7 +324,10 @@
     "obsoleteTech": "Navigation",
     "upgradesTo": "Frigate",
     "uniques": [
-      "Cannot enter ocean tiles"
+      "Cannot enter ocean tiles",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "arrow",
     "civilopediaText": [
@@ -307,7 +350,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -331,6 +377,11 @@
       {
         "text": "Crossbows that pierce armour at long range."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -348,7 +399,10 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -372,6 +426,11 @@
       {
         "text": "Elite heavy infantry who lead the charge."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -385,7 +444,10 @@
     "obsoleteTech": "Liquid Fire",
     "uniques": [
       "[+1] Sight",
-      "Withdraws before melee combat <with [80]% chance>"
+      "Withdraws before melee combat <with [80]% chance>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 30,
     "attackSound": "cannon",
@@ -409,6 +471,11 @@
       {
         "text": "Infantry with muskets, armed by dwarven and goblin gunsmiths."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -428,6 +495,11 @@
       {
         "text": "Pirates of the South Seas, like the Bloodsail Buccaneers of Booty Bay."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -447,6 +519,11 @@
       {
         "text": "A three-masted warship with cannons along both sides."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -461,7 +538,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Spear Wall I"
@@ -490,7 +570,10 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "cannon",
     "civilopediaText": [
@@ -515,6 +598,11 @@
       {
         "text": "Dwarven mountaineers with heavy repeating guns, defenders of the high passes."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -531,6 +619,11 @@
       {
         "text": "Dwarven-style riflemen, deadly marksmen with long guns."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -547,7 +640,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "cavalry",
     "civilopediaText": [
@@ -569,7 +665,10 @@
     "uniques": [
       "[+33]% Strength <vs cities>",
       "Double movement in [Coast]",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_ship_cannon",
     "civilopediaText": [
@@ -593,7 +692,10 @@
       "No defensive terrain bonus",
       "Must set up to ranged attack",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Indirect Fire"
@@ -619,6 +721,11 @@
       {
         "text": "Infantry with rifles and bayonets, the backbone of later armies."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -637,7 +744,10 @@
     "uniques": [
       "[50]% chance to intercept air attacks",
       "[+150]% Strength <vs [Sky Bomber] units>",
-      "[+150]% Strength <vs [Gyro] units>"
+      "[+150]% Strength <vs [Gyro] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_gyro_guns",
     "civilopediaText": [
@@ -663,6 +773,11 @@
       {
         "text": "A goblin zeppelin loaded with bombs."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -679,6 +794,11 @@
       {
         "text": "Disciplined infantry with the best arms the realm can make."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -690,7 +810,10 @@
     "requiredTech": "Arcane Conduits",
     "uniques": [
       "Cannot attack",
-      "Can carry [2] [Aircraft] units"
+      "Can carry [2] [Aircraft] units",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "civilopediaText": [
       {
@@ -709,7 +832,10 @@
     "requiredResource": "Azerite",
     "requiredTech": "Arcane Conduits",
     "uniques": [
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Indirect Fire"
@@ -736,6 +862,11 @@
       {
         "text": "Soldiers with bombs and grenades who blast their way through enemy lines."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -752,7 +883,10 @@
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Air] units>",
       "[+150]% Strength <vs [Gyro] units>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_gyro_guns",
     "civilopediaText": [
@@ -774,7 +908,10 @@
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
@@ -793,7 +930,10 @@
     "requiredTech": "Liquid Fire",
     "uniques": [
       "[40]% chance to intercept air attacks",
-      "Withdraws before melee combat <with [80]% chance>"
+      "Withdraws before melee combat <with [80]% chance>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_ship_cannon",
     "upgradesTo": "Giant Turtle",
@@ -815,7 +955,10 @@
     ],
     "uniques": [
       "[+1] Sight <when [Embarked]>",
-      "[+100]% Strength <when defending> <when [Embarked]>"
+      "[+100]% Strength <when defending> <when [Embarked]>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_rifle",
     "civilopediaText": [
@@ -839,7 +982,10 @@
     "uniques": [
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Sky Bomber] units>",
-      "[+150]% Strength <vs [Gyro] units>"
+      "[+150]% Strength <vs [Gyro] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_gryphon",
     "civilopediaText": [
@@ -864,6 +1010,11 @@
       {
         "text": "A heavily armed goblin zeppelin."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -875,7 +1026,10 @@
     "requiredTech": "Scrying",
     "uniques": [
       "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_rifle",
     "civilopediaText": [
@@ -896,7 +1050,10 @@
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
@@ -915,7 +1072,10 @@
     "upgradesTo": "Flying Machine",
     "uniques": [
       "[+100]% Strength <vs [War Machine] units>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
@@ -942,7 +1102,10 @@
       "Only available <if [Mana Bomb Project] is constructed>",
       "Self-destructs when attacking",
       "Blast radius [2]",
-      "Costs [40] [Mana]"
+      "Costs [40] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_mana_bomb",
     "civilopediaText": [
@@ -965,7 +1128,10 @@
       "[+200]% Strength <vs cities> <when attacking>",
       "No defensive terrain bonus",
       "[-1] Sight",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Indirect Fire"
@@ -989,7 +1155,10 @@
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Air] units>",
       "[+150]% Strength <vs [Gyro] units>",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_rocket",
     "civilopediaText": [
@@ -1009,7 +1178,10 @@
     "requiredTech": "Siege Barrage",
     "uniques": [
       "[-100]% maintenance costs",
-      "Costs [15] [Mana]"
+      "Costs [15] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_arcane_blast",
     "civilopediaText": [
@@ -1032,7 +1204,10 @@
       "Only available <if [Mana Bomb Project] is constructed>",
       "Blast radius [2]",
       "Consumes [2] [Arcane Crystals]",
-      "Costs [60] [Mana]"
+      "Costs [60] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_mana_bomb",
     "civilopediaText": [
@@ -1056,7 +1231,10 @@
       "All tiles cost 1 movement",
       "Ignores Zone of Control",
       "Unable to capture cities",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_gyro_guns",
     "civilopediaText": [
@@ -1076,7 +1254,10 @@
       "[+25]% Strength <when defending>",
       "[+33]% Strength <vs cities>",
       "Can enter ice tiles",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
@@ -1093,7 +1274,10 @@
     "cost": 375,
     "requiredTech": "War Drums",
     "uniques": [
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
@@ -1115,7 +1299,10 @@
     "uniques": [
       "[100]% chance to intercept air attacks",
       "Can carry [3] [Arcane Projectile] units",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Indirect Fire"
@@ -1139,7 +1326,10 @@
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
@@ -1162,7 +1352,10 @@
     "uniques": [
       "[100]% chance to intercept air attacks",
       "[+150]% Strength <vs [Sky Bomber] units>",
-      "[+150]% Strength <vs [Gyro] units>"
+      "[+150]% Strength <vs [Gyro] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_lightning",
     "civilopediaText": [
@@ -1182,7 +1375,10 @@
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
-      "Never appears as a Barbarian unit"
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_lightning",
     "civilopediaText": [
@@ -1205,7 +1401,10 @@
       "Damage taken from interception reduced by [100]%",
       "Cannot be carried by [Airship Tender] units",
       "[+4] Sight",
-      "Can see over obstacles"
+      "Can see over obstacles",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Evasion"
@@ -1632,6 +1831,11 @@
       {
         "text": "The backbone of every human army. Footmen are trained to fight in shield-walls that turn aside arrows, and unlike swordsmen they need no Iron to equip."
       }
+    ],
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -1651,7 +1855,11 @@
       "Never appears as a Barbarian unit",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
       "[+20]% Strength <when defending>",
-      "[+25]% Strength <vs [Forsaken] units>"
+      "[+25]% Strength <vs [Forsaken] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "All adjacent units heal [10] HP when healing"
     ],
     "attackSound": "horse",
     "replaces": "Knight",
@@ -1688,7 +1896,10 @@
     ],
     "uniques": [
       "Ranged attacks may be performed over obstacles",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -1729,7 +1940,10 @@
       "No defensive terrain bonus",
       "[-1] Sight",
       "Never appears as a Barbarian unit",
-      "Can move after attacking"
+      "Can move after attacking",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "cannon",
     "replaces": "Cannon",
@@ -1757,7 +1971,10 @@
       "Never appears as a Barbarian unit",
       "[+25]% Strength <vs [Undead] units>",
       "All adjacent units heal [+10] HP when healing",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "cavalry",
     "replaces": "Cavalry",
@@ -1815,7 +2032,11 @@
     "replaces": "Swordsman",
     "uniqueTo": "Orcs",
     "uniques": [
-      "Heals [10] damage if it kills a unit"
+      "Heals [10] damage if it kills a unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "No damage penalty for wounded units"
     ]
   },
   {
@@ -1831,7 +2052,10 @@
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
-      "No movement cost to pillage"
+      "No movement cost to pillage",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "horse",
@@ -1870,7 +2094,11 @@
     "uniques": [
       "[+25]% Strength <when fighting in [Jungle] tiles>",
       "Double movement in [Jungle]",
-      "Costs [4] [Mana]"
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Invisible to non-adjacent units <in [Jungle] tiles>"
     ]
   },
   {
@@ -1891,7 +2119,10 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>",
       "[+33]% Strength <vs [Land] units>",
-      "Costs [15] [Mana]"
+      "Costs [15] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_bat",
     "civilopediaText": [
@@ -1924,7 +2155,13 @@
       }
     ],
     "replaces": "Vanguard",
-    "uniqueTo": "Tauren"
+    "uniqueTo": "Tauren",
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[+15]% Strength <when attacking>"
+    ]
   },
   {
     "name": "Kodo Beast",
@@ -1942,7 +2179,10 @@
       "Rough terrain penalty",
       "Never appears as a Barbarian unit",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "arrow",
     "civilopediaText": [
@@ -1979,7 +2219,12 @@
     "uniques": [
       "[+15]% Strength <when defending>",
       "Heals [10] damage if it kills a unit",
-      "Costs [8] [Mana]"
+      "Costs [8] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[1] free [Ghoul] units appear <upon being defeated>"
     ]
   },
   {
@@ -1998,7 +2243,10 @@
       "Must set up to ranged attack",
       "[-1] Sight",
       "Never appears as a Barbarian unit",
-      "Costs [8] [Mana]"
+      "Costs [8] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "throw",
@@ -2037,7 +2285,11 @@
     "uniqueTo": "Blood Elves",
     "uniques": [
       "[+25]% Strength <vs [Archery] units>",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ]
   },
   {
@@ -2057,7 +2309,10 @@
       "Never appears as a Barbarian unit",
       "Heals [15] damage if it kills a unit",
       "[+15]% Strength <when defending>",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2109,7 +2364,11 @@
       "Must set up to ranged attack",
       "[-1] Sight",
       "Never appears as a Barbarian unit",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Invisible to non-adjacent units <in [Forest] tiles>"
     ],
     "attackSound": "cannon",
     "civilopediaText": [
@@ -2144,7 +2403,10 @@
     "replaces": "Musketeer",
     "uniqueTo": "Dwarves",
     "uniques": [
-      "[+25]% Strength <when fighting in [Hill] tiles>"
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -2162,7 +2424,10 @@
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit",
       "[+25]% Strength <when fighting in [Hill] tiles>",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2189,7 +2454,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
-      "[+1] Sight"
+      "[+1] Sight",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "horse",
@@ -2220,7 +2488,10 @@
       "Must set up to ranged attack",
       "[-1] Sight",
       "Never appears as a Barbarian unit",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "promotions": [
       "Indirect Fire"
@@ -2252,7 +2523,10 @@
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
       "[+25]% Strength <when fighting in [Forest] tiles>",
-      "Double movement in [Forest]"
+      "Double movement in [Forest]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "horse",
@@ -2283,7 +2557,10 @@
       "Must set up to ranged attack",
       "[-1] Sight",
       "Never appears as a Barbarian unit",
-      "Costs [8] [Mana]"
+      "Costs [8] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "throw",
     "range": 3,
@@ -2322,7 +2599,11 @@
     "uniques": [
       "[+33]% Strength <vs [Barbarian] units>",
       "All adjacent units heal [+10] HP when healing",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "All adjacent units heal [5] HP when healing"
     ]
   },
   {
@@ -2340,7 +2621,10 @@
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit",
-      "[+15]% Strength <when defending>"
+      "[+15]% Strength <when defending>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2380,7 +2664,11 @@
       "Double movement in [Forest]",
       "Can transform to [Gilnean Hunter]",
       "May capture killed [Military] units",
-      "Costs [4] [Mana]"
+      "Costs [4] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[+50]% to Flank Attack bonuses"
     ]
   },
   {
@@ -2405,7 +2693,10 @@
     "uniqueTo": "Worgen",
     "uniques": [
       "[+1] Sight",
-      "Can transform to [Worgen Ravager]"
+      "Can transform to [Worgen Ravager]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -2432,7 +2723,11 @@
     "uniques": [
       "[+1] Sight",
       "[+25]% Strength <when fighting in [Forest] tiles>",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ]
   },
   {
@@ -2446,7 +2741,10 @@
     "obsoleteTech": "Navigation",
     "upgradesTo": "Frigate",
     "uniques": [
-      "Cannot enter ocean tiles"
+      "Cannot enter ocean tiles",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "arrow",
     "civilopediaText": [
@@ -2482,7 +2780,10 @@
     "uniqueTo": "Pandaren",
     "uniques": [
       "[+20]% Strength <when defending>",
-      "Costs [8] [Mana]"
+      "Costs [8] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -2493,7 +2794,10 @@
     "cost": 90,
     "requiredTech": "Arathi Law",
     "uniques": [
-      "[+50]% Strength <vs [Mounted] units>"
+      "[+50]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "upgradesTo": "Lancer",
     "obsoleteTech": "Mithril Forged Swords",
@@ -2520,7 +2824,10 @@
     "upgradesTo": "Swordsman",
     "uniques": [
       "May upgrade to [Spearman] through ruins-like effects",
-      "Heals [10] damage if it kills a unit"
+      "Heals [10] damage if it kills a unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_snarl",
     "civilopediaText": [
@@ -2570,7 +2877,11 @@
       "[-33]% Strength <vs cities> <when attacking>",
       "Never appears as a Barbarian unit",
       "Heals [15] damage if it kills a unit",
-      "Costs [12] [Mana]"
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -2601,7 +2912,10 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>",
       "[+25]% Strength <vs [Land] units>",
-      "Costs [20] [Mana]"
+      "Costs [20] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "wc_wyrm",
     "civilopediaText": [
@@ -2630,7 +2944,10 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit",
       "No movement cost to pillage",
-      "[+25]% Strength <vs [Mounted] units>"
+      "[+25]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "cavalry",
     "civilopediaText": [
@@ -2658,7 +2975,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit",
-      "[+25]% Strength <when fighting in [Hill] tiles>"
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -2685,7 +3005,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit",
-      "Ignores terrain cost"
+      "Ignores terrain cost",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -2713,7 +3036,10 @@
       "Never appears as a Barbarian unit",
       "[+25]% Strength <when fighting in [Forest] tiles>",
       "[+15]% Strength <when defending>",
-      "Costs [12] [Mana]"
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -2743,7 +3069,10 @@
       "Never appears as a Barbarian unit",
       "All adjacent units heal [+10] HP when healing",
       "[+33]% Strength <vs [Barbarian] units>",
-      "Costs [15] [Mana]"
+      "Costs [15] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -2772,7 +3101,10 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit",
       "[+20]% Strength <when defending>",
-      "[+1] Sight"
+      "[+1] Sight",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -2811,7 +3143,11 @@
     "uniques": [
       "[+1] Sight",
       "[+25]% Strength <when fighting in [Forest] tiles>",
-      "Costs [8] [Mana]"
+      "Costs [8] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ]
   },
   {
@@ -2837,7 +3173,11 @@
     "uniques": [
       "Heals [10] damage if it kills a unit",
       "[+15]% Strength <when attacking>",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "No damage penalty for wounded units"
     ]
   },
   {
@@ -2856,7 +3196,10 @@
     "uniques": [
       "[50]% chance to intercept air attacks",
       "[+150]% Strength <vs [Sky Bomber] units>",
-      "[+150]% Strength <vs [Gyro] units>"
+      "[+150]% Strength <vs [Gyro] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "machinegun",
     "civilopediaText": [
@@ -2892,7 +3235,11 @@
     "uniqueTo": "Forsaken",
     "uniques": [
       "[+1] Sight",
-      "Ignores Zone of Control"
+      "Ignores Zone of Control",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Invisible to non-adjacent units"
     ]
   },
   {
@@ -2913,7 +3260,10 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>",
       "[+25]% Strength <vs [Land] units>",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "machinegun",
     "civilopediaText": [
@@ -2951,7 +3301,10 @@
     "replaces": "Bomber Zeppelin",
     "uniqueTo": "Goblins",
     "uniques": [
-      "[+33]% Strength <vs cities>"
+      "[+33]% Strength <vs cities>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -2971,7 +3324,10 @@
       "[+150]% Strength <vs [Sky Bomber] units>",
       "[+150]% Strength <vs [Gyro] units>",
       "[+15] HP when healing",
-      "Costs [12] [Mana]"
+      "Costs [12] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "machinegun",
     "civilopediaText": [
@@ -3010,7 +3366,10 @@
     "uniques": [
       "[+50]% Strength <vs [Sky Fighter] units>",
       "Heals [10] damage if it kills a unit",
-      "Costs [10] [Mana]"
+      "Costs [10] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -3024,7 +3383,10 @@
       "[+50]% Strength <vs [Mounted] units>",
       "[+25]% Strength <when fighting in [Hill] tiles>",
       "[+15]% Strength <when defending>",
-      "Costs [6] [Mana]"
+      "Costs [6] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "upgradesTo": "Lancer",
     "obsoleteTech": "Mithril Forged Swords",
@@ -3054,7 +3416,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit",
-      "[+15]% Strength <when attacking>"
+      "[+15]% Strength <when attacking>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -3090,7 +3455,12 @@
       }
     ],
     "replaces": "Frigate",
-    "uniqueTo": "Kul Tirans"
+    "uniqueTo": "Kul Tirans",
+    "uniques": [
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
+    ]
   },
   {
     "name": "Admiralty Gunner",
@@ -3114,7 +3484,10 @@
     "uniqueTo": "Kul Tirans",
     "uniques": [
       "Eliminates combat penalty for attacking across a coast",
-      "[+1] Sight"
+      "[+1] Sight",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ]
   },
   {
@@ -3131,7 +3504,10 @@
       "Can move after attacking",
       "No defensive terrain bonus",
       "[-33]% Strength <vs cities> <when attacking>",
-      "[+25]% Strength <when fighting in [Jungle] tiles>"
+      "[+25]% Strength <when fighting in [Jungle] tiles>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "hurryCostModifier": 20,
     "attackSound": "horse",
@@ -3161,7 +3537,10 @@
       "No defensive terrain bonus",
       "Never appears as a Barbarian unit",
       "[+20]% Strength <when attacking>",
-      "Costs [8] [Mana]"
+      "Costs [8] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "attackSound": "horse",
     "civilopediaText": [
@@ -3185,7 +3564,10 @@
     "attackSound": "metalhit",
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "civilopediaText": [
       {
@@ -3203,7 +3585,10 @@
     "attackSound": "wc_rock_smash",
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>"
     ],
     "civilopediaText": [
       {
@@ -3250,7 +3635,11 @@
     "uniqueTo": "Worgen",
     "uniques": [
       "Can transform to [Worgen Stalker]",
-      "Unbuildable"
+      "Unbuildable",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Invisible to non-adjacent units <in [Forest] tiles>"
     ]
   },
   {
@@ -3270,12 +3659,16 @@
     "uniques": [
       "Can transform to [Gilnean Rifleman]",
       "May capture killed [Military] units",
-      "Unbuildable"
+      "Unbuildable",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[+50]% to Flank Attack bonuses"
     ]
   },
   {
     "name": "Uther the Lightbringer",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3283,6 +3676,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Humans",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3292,7 +3686,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3300,12 +3698,15 @@
       },
       {
         "text": "A hero of the Humans: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Grom Hellscream",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3313,6 +3714,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Orcs",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3322,7 +3724,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3330,12 +3736,15 @@
       },
       {
         "text": "A hero of the Orcs: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Malfurion Stormrage",
-    "unitType": "Hero",
+    "unitType": "Arcane Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3343,6 +3752,7 @@
     "attackSound": "wc_arcane_blast",
     "uniqueTo": "Night Elves",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3353,7 +3763,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3361,12 +3775,15 @@
       },
       {
         "text": "A hero of the Night Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Arcane."
       }
     ]
   },
   {
     "name": "Muradin Bronzebeard",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3374,6 +3791,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Dwarves",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3384,7 +3802,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3392,12 +3814,15 @@
       },
       {
         "text": "A hero of the Dwarves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Kelsey Steelspark",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3405,6 +3830,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Gnomes",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3415,7 +3841,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3423,12 +3853,15 @@
       },
       {
         "text": "A hero of the Gnomes: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Baine Bloodhoof",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3436,6 +3869,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Tauren",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3446,7 +3880,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3454,12 +3892,15 @@
       },
       {
         "text": "A hero of the Tauren: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Rokhan",
-    "unitType": "Hero",
+    "unitType": "Marksman Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3467,6 +3908,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Trolls",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3477,7 +3919,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3485,12 +3931,15 @@
       },
       {
         "text": "A hero of the Trolls: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Marksman."
       }
     ]
   },
   {
     "name": "Kael'thas Sunstrider",
-    "unitType": "Hero",
+    "unitType": "Arcane Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3498,6 +3947,7 @@
     "attackSound": "wc_arcane_blast",
     "uniqueTo": "Blood Elves",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3508,7 +3958,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3516,12 +3970,15 @@
       },
       {
         "text": "A hero of the Blood Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Arcane."
       }
     ]
   },
   {
     "name": "Alleria Windrunner",
-    "unitType": "Hero",
+    "unitType": "Marksman Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3529,6 +3986,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "High Elves",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3539,7 +3997,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3547,12 +4009,15 @@
       },
       {
         "text": "A hero of the High Elves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Marksman."
       }
     ]
   },
   {
     "name": "Chen Stormstout",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3560,6 +4025,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Pandaren",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3570,7 +4036,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3578,12 +4048,15 @@
       },
       {
         "text": "A hero of the Pandaren: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Nathanos Blightcaller",
-    "unitType": "Hero",
+    "unitType": "Marksman Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3591,6 +4064,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Forsaken",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3601,7 +4075,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3609,12 +4087,15 @@
       },
       {
         "text": "A hero of the Forsaken: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Marksman."
       }
     ]
   },
   {
     "name": "Maraad",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3622,6 +4103,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Draenei",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3632,7 +4114,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3640,12 +4126,15 @@
       },
       {
         "text": "A hero of the Draenei: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Gazlowe",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3653,6 +4142,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Goblins",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3663,7 +4153,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3671,12 +4165,15 @@
       },
       {
         "text": "A hero of the Goblins: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Darius Crowley",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3684,6 +4181,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Worgen",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3694,7 +4192,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3702,12 +4204,15 @@
       },
       {
         "text": "A hero of the Worgen: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Dagran Thaurissan",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3715,6 +4220,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Dark Iron Dwarves",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3725,7 +4231,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3733,12 +4243,15 @@
       },
       {
         "text": "A hero of the Dark Iron Dwarves: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Daelin Proudmoore",
-    "unitType": "Hero",
+    "unitType": "Champion Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3746,6 +4259,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Kul Tirans",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3756,7 +4270,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3764,12 +4282,15 @@
       },
       {
         "text": "A hero of the Kul Tirans: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Champion."
       }
     ]
   },
   {
     "name": "Rastakhan",
-    "unitType": "Hero",
+    "unitType": "Arcane Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3777,6 +4298,7 @@
     "attackSound": "metalhit",
     "uniqueTo": "Zandalari Trolls",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3787,7 +4309,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3795,12 +4321,15 @@
       },
       {
         "text": "A hero of the Zandalari Trolls: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Arcane."
       }
     ]
   },
   {
     "name": "Kel'Thuzad",
-    "unitType": "Hero",
+    "unitType": "Arcane Hero",
     "movement": 2,
     "strength": 20,
     "cost": 160,
@@ -3808,6 +4337,7 @@
     "attackSound": "wc_arcane_blast",
     "uniqueTo": "Scourge",
     "uniques": [
+      "Hero",
       "Limited to [1] per Civilization",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "Heals [10] damage if it kills a unit",
@@ -3818,7 +4348,11 @@
       "[+40]% Strength <starting from the [Age of the Dark Portal]>",
       "[+40]% Strength <starting from the [Age of the Lich King]>",
       "[+60]% Strength <starting from the [Age of the Legion]>",
-      "Costs [30] [Mana]"
+      "Costs [30] [Mana]",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Can see invisible [Land] units"
     ],
     "civilopediaText": [
       {
@@ -3826,6 +4360,9 @@
       },
       {
         "text": "A hero of the Scourge: only one can serve at a time. Inspires nearby units (+15%), heals on kills, gains strength in later ages and has its own line of hero promotions."
+      },
+      {
+        "text": "Hero class: Arcane."
       }
     ]
   },
@@ -4269,5 +4806,210 @@
     ],
     "replaces": "Cleric",
     "uniqueTo": "Zandalari Trolls"
+  },
+  {
+    "name": "Onyxia",
+    "unitType": "Raid Boss",
+    "movement": 3,
+    "strength": 45,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "[+25]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Brood Mother of the black dragonflight and daughter of Deathwing, who once ruled Stormwind's court disguised as Lady Katrana Prestor. Her lair lies in the swamps of Dustwallow Marsh."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
+  },
+  {
+    "name": "Hakkar the Soulflayer",
+    "unitType": "Raid Boss",
+    "movement": 2,
+    "strength": 50,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "Heals [25] damage if it kills a unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Blood God of the Gurubashi trolls, summoned into Azeroth by his Atal'ai priests and fed on the blood of the living in the jungles of Zul'Gurub."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
+  },
+  {
+    "name": "Ragnaros the Firelord",
+    "unitType": "Raid Boss",
+    "movement": 2,
+    "strength": 65,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "[-15]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lord of the fire elementals, torn into the world by the Dark Iron dwarves and enthroned in the Molten Core beneath Blackrock Mountain. The ground burns wherever he stands."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
+  },
+  {
+    "name": "C'Thun",
+    "unitType": "Raid Boss",
+    "movement": 1,
+    "strength": 80,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "Cannot move"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An Old God imprisoned by the Titans beneath Ahn'Qiraj, served by the silithid and the qiraji. It does not move; it does not need to. Its gaze reaches all who come near."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ],
+    "rangedStrength": 70,
+    "range": 2
+  },
+  {
+    "name": "Sapphiron",
+    "unitType": "Raid Boss",
+    "movement": 3,
+    "strength": 90,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Heals [25] damage if it kills a unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Once a blue dragon guarding the Lich King's frozen throne, slain and raised by Kel'Thuzad as the greatest frost wyrm of Naxxramas. Its wings bring a killing cold."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
+  },
+  {
+    "name": "Deathwing the Destroyer",
+    "unitType": "Raid Boss",
+    "movement": 3,
+    "strength": 120,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "[+25]% Strength <when attacking>",
+      "Destroys tile improvements when attacking"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Aspect of Earth turned Aspect of Death, bound in molten elementium. His return from Deepholm shattered Azeroth in the Cataclysm."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
+  },
+  {
+    "name": "Kil'jaeden the Deceiver",
+    "unitType": "Raid Boss",
+    "movement": 2,
+    "strength": 145,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "[-15]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eredar lord of the Burning Legion, who corrupted the orcs and sought the draenei across the stars for thousands of years. His lies weaken the hearts of all who stand near him."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
+  },
+  {
+    "name": "N'Zoth the Corruptor",
+    "unitType": "Raid Boss",
+    "movement": 2,
+    "strength": 175,
+    "cost": 999,
+    "uniques": [
+      "Raid Boss",
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only attack [{Land} {Military}] units",
+      "[+25] HP when healing",
+      "Can see invisible [Land] units",
+      "[-20]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Heals [25] damage if it kills a unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The last free Old God, who whispered madness into Deathwing and dreamed for ages beneath Ny'alotha. When he wakes, the sky itself turns to tendrils."
+      },
+      {
+        "text": "A raid boss. Raid bosses appear only through raid events, cannot attack cities and heal quickly. Whoever slays one earns a Raid Trophy; collecting 10 wins a Raid victory."
+      }
+    ]
   }
 ]

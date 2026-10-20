@@ -54,5 +54,23 @@
     ],
     "victoryString": "The ages have turned, and when the sands of time settle, your people stand tallest. No dragonflight, no prophet and no conqueror can deny it: this era of Azeroth belongs to you.",
     "defeatString": "The ages have turned, and the chronicles of Azeroth name another people as the greatest of this era. Your people endure, and the Timeways are long. Their hour will come."
+  },
+  {
+    "name": "Raid",
+    "victoryScreenHeader": "Slay raid bosses and collect 10 Raid Trophies to win!",
+    "milestones": [
+      "Have at least [10] [Raid Trophy]"
+    ],
+    "victoryString": "Onyxia's head hangs over your gates, Ragnaros's hammer rests in your hall and the Old Gods dream no more. No people of Azeroth has faced the great terrors as yours has. Your raiders are legends, and the world bows to the slayers of gods.",
+    "defeatString": "Another people has claimed the trophies of the great raids, and the bards sing their names, not yours. Your warriors were brave, but bravery is not victory. There will be other raids."
+  },
+  {
+    "name": "Religious",
+    "victoryScreenHeader": "Make your faith the majority religion of the world to win!",
+    "milestones": [
+      "Become the world religion"
+    ],
+    "victoryString": "From the cathedrals of Stormwind to the totems of Mulgore, the people of Azeroth now kneel to your faith. Your priests, druids and shamans have won what no army could: the hearts of the world.",
+    "defeatString": "Another faith now holds the hearts of Azeroth. Your temples empty and your priests fall silent. But faith that endures in secret can still return."
   }
 ]

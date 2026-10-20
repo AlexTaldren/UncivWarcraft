@@ -77,7 +77,7 @@ public class WarcraftSim {
             sampleDiplomacy(gi);
             for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.civilization.Notification n : c.getNotifications()) {
                 String tx = n.getText();
-                for (String k : new String[]{"Darkmoon","granar","fel rift","Legion","Steamwheedle","Lunar","Brewfest","orphan","Gnome","Titan","Deathwing","brewmaster","Wickerman","Hallow","Kirin Tor","murloc","Defias","Mrgl","Golden Age","rebel"})
+                for (String k : new String[]{"Darkmoon","granar","fel rift","Legion","Steamwheedle","Lunar","Brewfest","orphan","Gnome","Titan","Deathwing","brewmaster","Wickerman","Hallow","Kirin Tor","murloc","Defias","Mrgl","Golden Age","rebel","Onyxia","Hakkar","Ragnaros","C'Thun","Sapphiron","Kil'jaeden","N'Zoth","Raid Trophy","Covenant","Fel","Sunwell"})
                     if (tx.contains(k)) EVENTS.merge(k, 1, Integer::sum);
             }
             if (t % 25 != 0 && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null) continue;
@@ -113,7 +113,8 @@ public class WarcraftSim {
                 for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits()))
                     for (String p : new String[]{"Hearthstone", "Portal Attunement", "Flight Path"}) if (u.getPromotions().getPromotions().contains(p)) promoH++;
                 System.out.println("PLAY " + c.getCivName() + ": plagued tiles " + plague + " | deep mines " + deep + " | travel promos " + promoH
-                    + " | mana " + c.getResourceAmount("Mana") + " | happiness " + c.getStats().getHappiness());
+                    + " | mana " + c.getResourceAmount("Mana") + " | happiness " + c.getStats().getHappiness()
+                    + " | trophies " + c.getResourceAmount("Raid Trophy") + " | choices " + fateful(c));
             }
             if (c.isBarbarian()) System.out.println("BARBARIAN UNITS: " + barb);
         }
@@ -160,6 +161,13 @@ public class WarcraftSim {
         }
     }
 
+    static String fateful(Civilization c) {
+        java.util.List<String> out = new ArrayList<>();
+        for (String p : c.getPolicies().getAdoptedPolicies())
+            if (p.contains("Fel") || p.contains("Sunwell") || p.contains("Covenant")) out.add(p);
+        return out.toString();
+    }
+
     static void report(GameInfo gi) {
         StringBuilder sb = new StringBuilder("TURN " + gi.getTurns() + ":");
         for (Civilization c : gi.getCivilizations()) {
@@ -169,7 +177,8 @@ public class WarcraftSim {
               .append(" | cities ").append(c.getCities().size())
               .append(" | units ").append(c.getUnits().getCivUnitsSize())
               .append(" | techs ").append(c.getTech().getTechsResearched().size())
-              .append(" | ").append(c.getEra().getName());
+              .append(" | ").append(c.getEra().getName())
+              .append(" | trophies ").append(c.getResourceAmount("Raid Trophy"));
         }
         System.out.println(sb);
     }

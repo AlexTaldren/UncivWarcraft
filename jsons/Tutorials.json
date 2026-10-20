@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Warcraft: Mana",
+    "civilopediaText": [
+      {
+        "text": "Mana is the stockpiled arcane energy of your civilization. Every capital gathers a little each turn, and each race has buildings that gather more (Moonwells, Voodoo Lounges, Arcane Sanctums...)."
+      },
+      {
+        "text": "Spellcasters, heroes, magical buildings and wonders, Mage Tower portals and some event choices spend Mana. Check your stockpile on the resource overview."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Blight and Cleansing",
+    "civilopediaText": [
+      {
+        "text": "The Scourge spread Plagued Land and demons leave Fel-Scorched Land, which ruin tile yields."
+      },
+      {
+        "text": "Only Clerics (each race has its own) can remove them, with the Remove Plagued Land and Remove Fel-Scorched Land actions. Peasants cannot."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Heroes",
+    "civilopediaText": [
+      {
+        "text": "Every faction can field one hero at a time. Heroes inspire nearby units (+15% Strength), heal when they kill and grow stronger in later ages."
+      },
+      {
+        "text": "Heroes come in three classes, each with its own promotions: Champions (front-line fighters), Arcane heroes (casters who see through stealth) and Marksmen (ranged hunters who vanish in forests)."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Portals",
+    "civilopediaText": [
+      {
+        "text": "A Mage Tower lets newly trained military units open a portal: spend 10 Mana in a city to gain Portal Attunement for one turn, then travel instantly to another of your cities up to 20 tiles away."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Alliance, Horde and Undead",
+    "civilopediaText": [
+      {
+        "text": "Factions belong to the Alliance, the Horde, the Undead or stand apart. These tags matter: some units and abilities fight harder against a rival faction."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Raids",
+    "civilopediaText": [
+      {
+        "text": "From the Age of the Dark Portal on, raid bosses (Onyxia, Ragnaros, C'Thun, Deathwing...) may stir near your lands. You choose whether to sound the call to raid."
+      },
+      {
+        "text": "Raid bosses cannot attack cities but are deadly in the field. Whoever lands the killing blow earns a Raid Trophy, 150 Gold and a Raid Veteran promotion. Collect 10 trophies for a Raid victory, and build a Trophy Hall to turn them into Culture."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Stealth and Auras",
+    "civilopediaText": [
+      {
+        "text": "Some units are hard to see: Night Elf archers and scouts Shadowmeld in forests, Forsaken Deathstalkers are always hidden, Troll Headhunters vanish in jungles. Only adjacent units, Scouts, Farstriders, Spellbreakers, raid bosses and some heroes can see them."
+      },
+      {
+        "text": "Auras affect neighbouring tiles: Death Knights and Abominations weaken adjacent enemies, Paladins and Vindicators heal allies. Orc Grunts and Troll Berserkers fight on unhurt when wounded, Worgen excel at flanking, and the Scourge raise the melee soldiers they defeat."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Fateful Choices",
+    "civilopediaText": [
+      {
+        "text": "At turning points of history your civilization must choose a path: the fel offer of the Third War, the rebirth of the Sunwell for the elves, and the covenants of the Shadowlands in the Age of the Void."
+      },
+      {
+        "text": "These choices are permanent and appear in the policy screen under Fateful Choices. They cost no Culture."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Victories",
+    "civilopediaText": [
+      {
+        "text": "Besides the usual Scientific (the Titan vessel), Cultural (the Well of Eternity), Domination and Diplomatic (the Grand Council of Azeroth) victories, UncivWarcraft adds a Raid victory (collect 10 Raid Trophies) and a Religious victory (make your faith the world's majority religion)."
+      }
+    ]
+  },
+  {
+    "name": "Warcraft: Events",
+    "civilopediaText": [
+      {
+        "text": "Festivals, plagues, refugees, demon incursions, dragonflights, raids and the changing of the ages all arrive as events with choices. Some choices cost Gold, Faith or Mana and are offered only when you can pay."
+      }
+    ]
+  }
+]
