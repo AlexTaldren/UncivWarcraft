@@ -2095,5 +2095,843 @@
         "text": "Vanishes among the trees between shots."
       }
     ]
+  },
+  {
+    "name": "Rallying Cry",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [15] HP when healing",
+      "[+15]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. The hero's war cry steadies the line: +15% Strength, and adjacent units heal 15 HP more, for 2 turns. Costs 10 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Rallying Cry Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Rallying Cry is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Mana Shield",
+    "unitTypes": [],
+    "uniques": [
+      "[+40]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A shell of pure mana: +40% Strength when defending for 2 turns. Costs 10 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Mana Shield Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Mana Shield is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Hunter's Mark",
+    "unitTypes": [],
+    "uniques": [
+      "[+25]% Strength <when attacking>",
+      "[+1] Sight"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Marks the prey: +25% Strength when attacking and +1 Sight for 2 turns. Costs 10 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Hunter's Mark Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Hunter's Mark is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Divine Shield",
+    "unitTypes": [],
+    "uniques": [
+      "[+100]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. An unbreakable bubble of holy light: +100% Strength when defending for 1 turn. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Divine Shield Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Divine Shield is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Hellscream's Fury",
+    "unitTypes": [],
+    "uniques": [
+      "[+30]% Strength <when attacking>",
+      "[+1] Movement"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Shamanic fury: +30% Strength when attacking and +1 Movement for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 7 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Hellscream's Fury Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Hellscream's Fury is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Clap",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. The ground shakes: adjacent enemies fight at -20% Strength for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 7 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Clap Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Thunder Clap is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Overclock",
+    "unitTypes": [],
+    "uniques": [
+      "[+2] Movement",
+      "[+20]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Every gear at full spin: +2 Movement and +20% Strength when attacking for 1 turn. Costs 15 Mana."
+      },
+      {
+        "text": "Recharges for 6 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Overclock Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Overclock is recharging."
+      }
+    ]
+  },
+  {
+    "name": "War Stomp",
+    "unitTypes": [],
+    "uniques": [
+      "[-30]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A tauren stomp that knocks foes off their feet: adjacent enemies fight at -30% Strength for 1 turn. Costs 15 Mana."
+      },
+      {
+        "text": "Recharges for 6 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "War Stomp Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "War Stomp is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Holy Light",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Heals the hero for 50 HP. Costs 15 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Holy Light Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Holy Light is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Call the Sappers",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Two Goblin Sappers answer the call, for a fee. Costs 30 Mana."
+      },
+      {
+        "text": "Recharges for 10 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Call the Sappers Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Call the Sappers is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Pounce",
+    "unitTypes": [],
+    "uniques": [
+      "[+2] Movement",
+      "[+15]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A worgen's leap: +2 Movement and +15% Strength when attacking for 1 turn. Costs 10 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Pounce Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Pounce is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Call the Fireguard",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. A Fireguard of the Shadowforge marches to the emperor's side. Costs 25 Mana."
+      },
+      {
+        "text": "Recharges for 10 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Call the Fireguard Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Call the Fireguard is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Rally the Admiralty",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [20] HP when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Heals the admiral for 30 HP; adjacent units heal 20 HP more for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 7 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Rally the Admiralty Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Rally the Admiralty is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Storm, Earth and Fire",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Chen splits into elemental spirits: two Brewmasters join him. Costs 35 Mana."
+      },
+      {
+        "text": "Recharges for 12 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Storm, Earth and Fire Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Storm, Earth and Fire is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Fire",
+    "unitTypes": [],
+    "uniques": [
+      "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+20]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A phoenix wreathes the prince in fire: adjacent enemies -25% Strength, +20% when attacking, for 2 turns. Costs 25 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Fire Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Phoenix Fire is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Raise Dead",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. The lich calls two Ghouls from the grave. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Raise Dead Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Raise Dead is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Pact of Bwonsamdi",
+    "unitTypes": [],
+    "uniques": [
+      "No damage penalty for wounded units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. The loa of death lends the king his strength: heals 60 HP, no wound penalty for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Pact of Bwonsamdi Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Pact of Bwonsamdi is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Tranquility",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [25] HP when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A rain of nature's magic: adjacent units heal 25 HP more for 2 turns. Costs 25 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Tranquility Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Tranquility is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Windrunner Volley",
+    "unitTypes": [],
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Arrow after arrow: +40% Strength when attacking for 1 turn. Costs 15 Mana."
+      },
+      {
+        "text": "Recharges for 6 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Windrunner Volley Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Windrunner Volley is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Black Arrow",
+    "unitTypes": [],
+    "uniques": [
+      "[+25]% Strength <when attacking>",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Blighted arrows: +25% Strength when attacking, adjacent enemies -10%, for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 7 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Black Arrow Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Black Arrow is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Voodoo Hex",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Hexed foes stumble: adjacent enemies fight at -20% Strength for 2 turns. Costs 15 Mana."
+      },
+      {
+        "text": "Recharges for 6 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Voodoo Hex Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Voodoo Hex is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Frost Armor",
+    "unitTypes": [],
+    "uniques": [
+      "[+30]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Frost Armor Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Frost Armor is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Death Coil",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Unholy energy mends the death knight: heals 30 HP. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Death Coil Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Death Coil is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Spell Steal",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Siphons magic from the air: +8 Mana for your empire."
+      },
+      {
+        "text": "Recharges for 6 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Spell Steal Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell Steal is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Drunken Haze",
+    "unitTypes": [],
+    "uniques": [
+      "[-15]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A cloud of strong brew: adjacent enemies fight at -15% Strength for 2 turns. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Drunken Haze Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Drunken Haze is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Lay on Hands",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Heals the unit for 40 HP. Costs 10 Mana."
+      },
+      {
+        "text": "Recharges for 6 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Lay on Hands Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Lay on Hands is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Berserk",
+    "unitTypes": [],
+    "uniques": [
+      "[+30]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Troll fury: +30% Strength when attacking for 1 turn. Costs 6 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Berserk Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Berserk is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Torrent",
+    "unitTypes": [],
+    "uniques": [
+      "[-15]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A burst of stolen arcane power: adjacent enemies fight at -15% Strength for 1 turn. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Torrent Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Arcane Torrent is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Web",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Sticky webs: adjacent enemies fight at -20% Strength for 1 turn. Costs 8 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Web Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Web is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Chi Wave",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Heals the monk for 25 HP. Costs 6 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Chi Wave Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Chi Wave is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Cannibalize",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spell. Feeds on the fallen: heals 30 HP."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Cannibalize Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Cannibalize is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Aimed Shot",
+    "unitTypes": [],
+    "uniques": [
+      "[+25]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A careful shot: +25% Strength when attacking for 1 turn. Costs 6 Mana."
+      },
+      {
+        "text": "Recharges for 5 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Aimed Shot Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Aimed Shot is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Sentinel Owl",
+    "unitTypes": [],
+    "uniques": [
+      "[+2] Sight",
+      "Can see invisible [Land] units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. An owl scouts ahead: +2 Sight and sees stealthed units for 2 turns. Costs 5 Mana."
+      },
+      {
+        "text": "Recharges for 4 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Sentinel Owl Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Sentinel Owl is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Feral Leap",
+    "unitTypes": [],
+    "uniques": [
+      "[+2] Movement"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. +2 Movement for 1 turn. Costs 5 Mana."
+      },
+      {
+        "text": "Recharges for 4 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Feral Leap Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Feral Leap is recharging."
+      }
+    ]
   }
 ]

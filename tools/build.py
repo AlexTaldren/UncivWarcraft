@@ -464,6 +464,9 @@ assert not _missing_snd, _missing_snd
 # national wonders, openings, ages and guide pages (tools/wc_depth.py)
 import wc_depth
 wc_depth.apply(files, majors)
+# Oct 2026 systems pass: spells, landmarks, politics, barbarians, spies, purchasing, head starts
+import wc_systems
+wc_systems.apply(files, majors)
 
 # every unit sprite is drawn for the AbsoluteUnits unit set, so games with this mod use it
 # whatever unit set the player picked in Options (other sets would show stock art)
@@ -476,9 +479,7 @@ for p in files["Personalities"]:
     nat = _leader_nation.get(p["name"])
     own = [u["name"] for u in files["Units"] if u.get("uniqueTo") == nat
            and "Unbuildable" not in u.get("uniques", []) and u.get("unitType") not in ("Hero",)
-           and "Hero" not in u.get("uniques", [])
-           and not any(x.startswith("Can be purchased with [Faith]") or "Faith" in x and "purchas" in x.lower()
-                       for x in u.get("uniques", []))]
+           and "Hero" not in u.get("uniques", [])]   # Faith-only clerics are already Unbuildable
     p.setdefault("uniques", [])
     p["uniques"] += ["[+50]%% weight to [%s] for AI decisions" % u for u in own]
 for name, data in files.items():
@@ -550,9 +551,10 @@ print("warcraft icons:", icon_set.write_all(IMG))
 import air_icons   # Oct 2026: lore icons for the 15 flying units (replace the generic ones)
 print("flying unit icons:", air_icons.write_all(IMG))
 print("depth pass icons:", wc_depth.write_icons(IMG))
+print("systems pass icons:", wc_systems.write_icons(IMG))
 
 # Icons for techs, buildings and policies in their own pack so "game" stays one page.
-for _f in ("TechIcons", "BuildingIcons", "PolicyIcons"):
+for _f in ("TechIcons", "BuildingIcons", "PolicyIcons", "UnitPromotionIcons"):   # promotions: Oct 2026 spells
     shutil.move(os.path.join(IMG, _f), os.path.join(OUT, "Images.WarcraftIcons", _f))
 # Map art (unit sprites, tiles) goes in its own texture pack so nothing spills into a 2nd page.
 shutil.move(os.path.join(IMG, "TileSets"), os.path.join(OUT, "Images.WarcraftMap", "TileSets"))
@@ -594,6 +596,10 @@ n = wc_style_races.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.joi
 print("pixel-art race sprites:", n)
 import boss_art   # Oct 2026 depth pass: the eight raid bosses
 print("raid boss sprites:", boss_art.write_all(os.path.join(OUT, "Images.WarcraftMap")))
+import barbarian_art   # Oct 2026 systems pass: themed barbarians
+print("barbarian sprites:", barbarian_art.write_all(os.path.join(OUT, "Images.WarcraftMap"),
+                                                    [os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")],
+                                                    Atlas(os.path.join(SRC, "AbsoluteUnits.atlas"))))
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)

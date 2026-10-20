@@ -3180,5 +3180,25 @@
         "text": "A hall of heads, hammers and dragon scales, where the deeds of your raiders are remembered. +2 Culture in the capital for every Raid Trophy, and your soldiers fight harder against raid bosses."
       }
     ]
+  },
+  {
+    "name": "Ravenholdt",
+    "isWonder": true,
+    "culture": 1,
+    "requiredTech": "Banking",
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "uniques": [
+      "Only available <when espionage is enabled>",
+      "Gain an extra spy",
+      "New spies start with [1] level(s)",
+      "[+15]% spy effectiveness [in all cities]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hidden manor of the Assassins' League in the Alterac foothills, where the finest rogues of Azeroth are trained. Gives a spy, makes new spies more experienced and all your spies more effective."
+      }
+    ]
   }
 ]

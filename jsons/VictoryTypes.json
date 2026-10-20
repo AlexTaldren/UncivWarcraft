@@ -57,9 +57,9 @@
   },
   {
     "name": "Raid",
-    "victoryScreenHeader": "Slay raid bosses and collect 10 Raid Trophies to win!",
+    "victoryScreenHeader": "Slay raid bosses and collect 12 Raid Trophies to win!",
     "milestones": [
-      "Have at least [10] [Raid Trophy]"
+      "Have at least [12] [Raid Trophy]"
     ],
     "victoryString": "Onyxia's head hangs over your gates, Ragnaros's hammer rests in your hall and the Old Gods dream no more. No people of Azeroth has faced the great terrors as yours has. Your raiders are legends, and the world bows to the slayers of gods.",
     "defeatString": "Another people has claimed the trophies of the great raids, and the bards sing their names, not yours. Your warriors were brave, but bravery is not victory. There will be other raids."

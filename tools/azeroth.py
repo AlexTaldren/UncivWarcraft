@@ -266,16 +266,20 @@ def neighbors(c, r, w=W, h=H):
 
 
 # ------------------------------------------------------------------ build
-def build(seed=7, width=W, height=H):
+def build(seed=7, width=W, height=H, spec=None):
     """Build the map at any size. All coordinates above are authored on the 104 x 64
     grid and scaled here, so a larger map keeps the same shape and placements."""
-    sx, sy = width / W, height / H
+    sp = spec or {}
+    LAND_, ZONES_, RIDGES_, RINGS_ = sp.get("LAND", LAND), sp.get("ZONES", ZONES), sp.get("RIDGES", RIDGES), sp.get("RINGS", RINGS)
+    LAKES_, NW_, NWB_ = sp.get("LAKES", LAKES), sp.get("NATURAL_WONDERS", NATURAL_WONDERS), sp.get("NW_BASE", NW_BASE)
+    CAPS_, CS_ = sp.get("CAPITALS", CAPITALS), sp.get("CITY_STATES", CITY_STATES)
+    sx, sy = width / sp.get("W", W), height / sp.get("H", H)
     k = (sx + sy) / 2
     S = lambda p: (p[0] * sx, p[1] * sy)
-    land_polys = {n: [S(p) for p in poly] for n, poly in LAND.items()}
-    zones = {z: (lm, [S(p) for p in seeds], b) for z, (lm, seeds, b) in ZONES.items()}
-    ridges = [([S(p) for p in line], ch) for line, ch in RIDGES]
-    rings = [(S(c), rad * k, ch) for c, rad, ch in RINGS]
+    land_polys = {n: [S(p) for p in poly] for n, poly in LAND_.items()}
+    zones = {z: (lm, [S(p) for p in seeds], b) for z, (lm, seeds, b) in ZONES_.items()}
+    ridges = [([S(p) for p in line], ch) for line, ch in RIDGES_]
+    rings = [(S(c), rad * k, ch) for c, rad, ch in RINGS_]
     nb = lambda c, r: neighbors(c, r, width, height)
     rng = random.Random(seed)
     rng2 = random.Random(seed + 1000)                     # Warcraft features (v0.6)
@@ -368,7 +372,7 @@ def build(seed=7, width=W, height=H):
                 d = math.hypot(center(c, r)[0] - cx, center(c, r)[1] - cy)
                 if land(c, r) and abs(d - rad) < 0.7 * max(1.0, k * 0.8) and rng.random() < chance:
                     tiles[r][c] = {"t": "Mountain", "f": []}
-    for lake in LAKES:
+    for lake in LAKES_:
         c, r = snap(S(lake))
         tiles[r][c] = {"t": "Lakes", "f": []}
         if k > 1.2:                                       # bigger maps get bigger lakes
@@ -377,16 +381,16 @@ def build(seed=7, width=W, height=H):
                     tiles[nr][nc] = {"t": "Lakes", "f": []}
 
     # Polar ice along the top edge
-    for c in range(width):
+    for c in range(width if sp.get("ice", True) else 0):
         for r in range(0, 2):
             if not land(c, r) and rng.random() < (0.85 if r == 0 else 0.4):
                 tiles[r][c] = {"t": "Ocean", "f": ["Ice"]}
 
     # capitals and city-states, scaled and snapped onto land
     capitals, city_states, taken = {}, {}, set()
-    for src, dst in ((CAPITALS, capitals), (CITY_STATES, city_states)):
+    for src, dst in ((CAPS_, capitals), (CS_, city_states)):
         for name, pt in src.items():
-            if k == 1:
+            if k == 1 and not sp:
                 assert land(*pt), f"{name} at {pt} is in the sea"
                 pos = pt
             else:
@@ -419,7 +423,7 @@ def build(seed=7, width=W, height=H):
                     k_ += 1
 
     wonders = {}
-    for name, pt in NATURAL_WONDERS.items():
+    for name, pt in NW_.items():
         water = name in ("The Maelstrom", "Kelp'thar Forest")
         c, r = snap(S(pt), want_land=not water, avoid=taken)
         assert land(c, r) != water, name
@@ -430,10 +434,96 @@ def build(seed=7, width=W, height=H):
             if name == "Kelp'thar Forest":           # occurs as a pair of tiles
                 tiles[r + 1][c] = {"t": "Ocean", "f": [], "nw": name}
         else:
-            tiles[r][c] = {"t": NW_BASE.get(name, "Plains"), "f": [], "nw": name}
+            tiles[r][c] = {"t": NWB_.get(name, "Plains"), "f": [], "nw": name}
 
     return dict(width=width, height=height, tiles=tiles, zones=grid,
                 capitals=capitals, cityStates=city_states, wonders=wonders)
+
+
+# ------------------------------------------------------------------ regional maps (Oct 2026)
+# Each region is a window on the world map above: only landmasses wholly inside the window are
+# kept, coordinates are shifted, and factions with a lore foothold there get extra starts
+# (Unciv places any other chosen faction on its own).
+REGIONS = {
+    "Kalimdor": dict(box=(1, 11, 48, 64), ice=False,
+                     lands=["Kalimdor", "Teldrassil", "Bloodmyst Isle", "Azuremyst Isle", "Echo Isles", "Theramore Isle",
+                            "Sardor Isle", "Zandalar"],
+                     starts={"Kul Tirans": (34, 42),       # Jaina's Theramore
+                             "Humans": (29, 45)},          # Northwatch Hold, Southern Barrens
+                     drop=["Theramore"]),
+    "Eastern Kingdoms": dict(box=(54, 1, 98, 64),
+                             lands=["Eastern Kingdoms", "Isle of Quel'Danas", "Tol Barad", "Kul Tiras", "Kezan", "Isle of Thunder"],
+                             starts={"Orcs": (74, 56),        # Grom'gol Base Camp, Stranglethorn
+                                     "Trolls": (95, 15),      # Zul'Aman, Ghostlands
+                                     "Scourge": (90, 17),     # Stratholme, Eastern Plaguelands
+                                     "Goblins": (56.5, 41)}),  # Kezan
+    "Northrend": dict(box=(36, 0, 69, 20),
+                      lands=["Northrend"],
+                      starts={"Humans": (41, 16),             # Valiance Keep, Borean Tundra
+                              "Orcs": (45, 16),               # Warsong Hold
+                              "Tauren": (51, 15),             # Taunka'le, Dragonblight
+                              "Trolls": (58, 9),              # Zul'Drak
+                              "Dwarves": (62, 16),            # Valgarde, Howling Fjord
+                              "Forsaken": (66, 13)}),         # Vengeance Landing
+}
+
+
+def region_spec(name):
+    reg = REGIONS[name]
+    x0, y0, x1, y1 = reg["box"]
+    pad = 2
+    inside = lambda p: x0 <= p[0] <= x1 and y0 <= p[1] <= y1
+    sh = lambda p: (p[0] - x0 + pad, p[1] - y0 + pad)
+    lands = {n: [sh(p) for p in poly] for n, poly in LAND.items() if n in reg["lands"]}
+    for n in reg["lands"]:
+        assert all(inside(p) for p in LAND[n]), (name, n)
+    zones = {z: (lm, [sh(p) for p in seeds], b) for z, (lm, seeds, b) in ZONES.items() if lm in lands}
+    caps = {n: sh(p) for n, p in CAPITALS.items() if inside(p) and n not in reg["starts"]}
+    caps.update({n: sh(p) for n, p in reg["starts"].items()})
+    return dict(W=x1 - x0 + 2 * pad, H=y1 - y0 + 2 * pad, LAND=lands, ZONES=zones, ice=reg.get("ice", True),
+                RIDGES=[([sh(p) for p in line], ch) for line, ch in RIDGES if all(inside(p) for p in line)],
+                RINGS=[(sh(c), r, ch) for c, r, ch in RINGS if inside(c)],
+                LAKES=[sh(p) for p in LAKES if inside(p)],
+                NATURAL_WONDERS={n: sh(p) for n, p in NATURAL_WONDERS.items() if inside(p)},
+                NW_BASE=NW_BASE, CAPITALS=caps,
+                CITY_STATES={n: sh(p) for n, p in CITY_STATES.items() if inside(p) and n not in reg.get("drop", [])})
+
+
+# Pandaria, a continent of its own (authored on a 60 x 44 grid)
+PANDARIA = dict(
+    W=60, H=44, ice=False,
+    LAND={"Pandaria": [(14, 6), (22, 4), (32, 5), (40, 7), (46, 10), (50, 15), (52, 21), (51, 27), (48, 32), (44, 36), (38, 39),
+                       (30, 40), (22, 39), (16, 36), (11, 31), (8, 25), (8, 18), (10, 11)],
+          "Timeless Isle": [(53, 34.5), (56.5, 34.5), (57, 38), (53.5, 38.5)],
+          "Isle of Giants": [(52, 3.5), (56, 3.5), (57, 7.5), (53, 8.5)],
+          "Isle of Thunder": [(3.5, 3.5), (9, 3), (10, 8), (4.5, 8.5)]},
+    ZONES={"Kun-Lai Summit": ("Pandaria", [(28, 9), (36, 10)], B({S: .45, T: .55}, hill=.35, mountain=.12, forest=.1)),
+           "Townlong Steppes": ("Pandaria", [(15, 11), (17, 17)], B({P: .6, T: .4}, hill=.2, forest=.1)),
+           "Dread Wastes": ("Pandaria", [(13, 26), (18, 31)], B({D: .5, P: .5}, hill=.15, marsh=.1, crystal=.5, forest=.08)),
+           "Krasarang Wilds": ("Pandaria", [(26, 35), (34, 35)], B({G: 1}, jungle=.45, hill=.1, bamboo=.3)),
+           "Valley of the Four Winds": ("Pandaria", [(28, 28), (36, 29)], B({G: .7, P: .3}, forest=.06, hill=.06)),
+           "The Jade Forest": ("Pandaria", [(44, 18), (45, 26), (40, 32)], B({G: 1}, forest=.6, hill=.15, bamboo=.6)),
+           "Vale of Eternal Blossoms": ("Pandaria", [(30, 20)], B({G: 1}, forest=.25, ancient=.6)),
+           "The Veiled Stair": ("Pandaria", [(38, 16)], B({G: .5, P: .5}, hill=.5, mountain=.1, bamboo=.4, forest=.2)),
+           "Timeless Isle": ("Timeless Isle", [(55, 36)], B({G: 1}, forest=.35, hill=.2, ancient=.5)),
+           "Isle of Giants": ("Isle of Giants", [(54, 6)], B({G: 1}, jungle=.5, hill=.3)),
+           "Isle of Thunder": ("Isle of Thunder", [(6, 6)], B({G: 1}, jungle=.3, hill=.3))},
+    RIDGES=[([(22, 12), (30, 13), (38, 13)], .7),            # the Kun-Lai range
+            ([(21, 18), (22, 25), (20, 32)], .85)],          # the Serpent's Spine
+    RINGS=[], LAKES=[(31, 21)], NATURAL_WONDERS={}, NW_BASE={},
+    CAPITALS={"Pandaren": (32, 28),        # Halfhill, Valley of the Four Winds
+              "Humans": (37, 37),          # Lion's Landing, Krasarang
+              "Orcs": (24, 37),            # Domination Point, Krasarang
+              "Dwarves": (45, 30),         # Paw'don Village, Jade Forest
+              "Trolls": (46, 14)},         # Honeydew Village, Jade Forest
+    CITY_STATES={"Mogu'shan": (6, 6)},
+)
+
+
+def spec_for(name):
+    if name == "Pandaria":
+        return PANDARIA
+    return region_spec(name) if name in REGIONS else None
 
 
 def write_tiles_txt(m, path):
@@ -450,7 +540,7 @@ def write_tiles_txt(m, path):
 if __name__ == "__main__":
     import sys
     width, height = (int(sys.argv[3]), int(sys.argv[4])) if len(sys.argv) > 4 else (W, H)
-    m = build(width=width, height=height)
+    m = build(width=width, height=height, spec=spec_for(sys.argv[5]) if len(sys.argv) > 5 else None)
     json.dump(m, open(sys.argv[1], "w"))
     if len(sys.argv) > 2:
         write_tiles_txt(m, sys.argv[2])
