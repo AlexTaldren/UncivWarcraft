@@ -39,7 +39,7 @@ def ai(weight):
 # ====================================================================== 1. raids
 TROPHY = "Raid Trophy"
 BOSS_TAG = "Raid Boss"
-RAID_TARGET = 10                     # trophies needed for a Raid victory
+RAID_TARGET = 12                     # trophies needed for a Raid victory
 
 BOSS_TYPE = {"name": BOSS_TAG, "movementType": "Land"}
 BOSS_COMMON = [BOSS_TAG, "Unbuildable", "Cannot be purchased", "Never appears as a Barbarian unit",
@@ -103,7 +103,7 @@ def boss_events():
                    "uniques": ["Gain [-%d] [Gold]" % (60 + strength * 2), need(60 + strength * 2, "Gold"), ai(-80)]},
               ]}
         events.append(ev)
-        cond = "<upon turn start> <every [4] turns> <with [6]%% chance> <starting from the [%s]>" % first
+        cond = "<upon turn start> <every [4] turns> <with [4]%% chance> <starting from the [%s]>" % first
         if last:
             cond += " <before the [%s]>" % last
         triggers.append("Triggers a [%s] event %s" % (ev["name"], cond))
@@ -179,7 +179,7 @@ EXTRA_PROMOTIONS = [
      "Strikes from cover before the enemy knows it is there."),
     ("Flanker", ["Mounted"], [], ["[+50]% to Flank Attack bonuses"],
      "Rides around the enemy line to hit it where it is weakest."),
-    ("Hold the Line", ["Sword", "Firearm"], [], ["[+15]% Strength <when defending> <when adjacent to a [Military] unit>"],
+    ("Hold the Line", ["Sword", "Heavy Infantry"], [], ["[+15]% Strength <when defending> <when adjacent to a [Military] unit>"],
      "Shoulder to shoulder, the line does not break."),
 ]
 

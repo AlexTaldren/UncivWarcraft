@@ -376,7 +376,7 @@
         "text": "Crush the Brotherhood! (bandits attack)",
         "uniques": [
           "[2] [Pikeman]s rebel <before the [Age of the Third War]>",
-          "[2] [Musketeer]s rebel <starting from the [Age of the Third War]>"
+          "[2] [Man-at-Arms]s rebel <starting from the [Age of the Third War]>"
         ]
       }
     ]
@@ -1433,6 +1433,448 @@
         "text": "Study the darkness (+250 Science)",
         "uniques": [
           "Gain [250] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Molten Depths",
+    "text": "Our scouts stand before Blackrock Mountain. Far below, the Firelord's servants stoke the fires of the Molten Core, and the Thorium Brotherhood trades at the mountain's foot.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Challenge the Firelord in his lair.",
+        "uniques": [
+          "A [Ragnaros the Firelord] rebels",
+          "Gain [60] [Culture]",
+          "Only available <starting from the [Age of the Third War]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Trade with the Thorium Brotherhood.",
+        "uniques": [
+          "Gain [120] [Gold]"
+        ]
+      },
+      {
+        "text": "Study the living stone of the Searing Gorge.",
+        "uniques": [
+          "Gain [80] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Temple of Atal'Hakkar",
+    "text": "In the Swamp of Sorrows, the drowned temple of the Atal'ai still echoes with chanting. They are calling their blood god back.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Break the ritual and face what answers.",
+        "uniques": [
+          "A [Hakkar the Soulflayer] rebels",
+          "Gain [50] [Culture]",
+          "Only available <starting from the [Age of the Dark Portal]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Loot the flooded outer shrines.",
+        "uniques": [
+          "Gain [100] [Gold]"
+        ]
+      },
+      {
+        "text": "Leave the swamp to its gods.",
+        "uniques": [
+          "Gain [40] [Faith]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Dark Portal",
+    "text": "A gate of carved stone towers over the Blasted Lands. Fel light flickers between its pillars, and something on the far side is watching.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Seal the gate with wards.",
+        "uniques": [
+          "Gain [80] [Faith]"
+        ]
+      },
+      {
+        "text": "Study the fel magic that powers it.",
+        "uniques": [
+          "Gain [100] [Science]",
+          "Instantly gain [15] [Mana]"
+        ]
+      },
+      {
+        "text": "Stand against the Deceiver himself.",
+        "uniques": [
+          "A [Kil'jaeden the Deceiver] rebels",
+          "Gain [100] [Culture]",
+          "Only available <starting from the [Age of the Legion]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Bones of Galakrond",
+    "text": "The bones of Galakrond, the first and greatest proto-dragon, lie across the Dragonblight. The Scourge would give much to raise them.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Study the first of dragons.",
+        "uniques": [
+          "Gain [100] [Science]"
+        ]
+      },
+      {
+        "text": "Burn the bones before the Scourge can use them.",
+        "uniques": [
+          "Gain [80] [Faith]"
+        ]
+      },
+      {
+        "text": "Hunt the frost wyrm that guards them.",
+        "uniques": [
+          "A [Sapphiron] rebels",
+          "Gain [80] [Culture]",
+          "Only available <starting from the [Age of the Lich King]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nordrassil",
+    "text": "The World Tree crowns the summit of Mount Hyjal, its roots bound to the Well of Eternity below.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Pray beneath its boughs.",
+        "uniques": [
+          "Gain [100] [Faith]"
+        ]
+      },
+      {
+        "text": "Learn from its keepers.",
+        "uniques": [
+          "Gain [60] [Culture]",
+          "Gain [40] [Science]"
+        ]
+      },
+      {
+        "text": "Renew the night elves' oath to the tree.",
+        "uniques": [
+          "Gain [150] [Faith]",
+          "[2] free [Wisp] units appear",
+          "Only available <for [Night Elves] Civilizations>",
+          "[+40]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Crater's Secrets",
+    "text": "Un'Goro is a lost world of giant plants and devilsaurs. Among the ferns stand crystal pylons left by the titans.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Decipher the titan pylons.",
+        "uniques": [
+          "Gain [120] [Science]"
+        ]
+      },
+      {
+        "text": "Harvest power crystals.",
+        "uniques": [
+          "Gain [80] [Gold]",
+          "Instantly gain [10] [Mana]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Nexus",
+    "text": "Malygos's citadel of the Blue Dragonflight floats over Coldarra, humming with gathered magic.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Draw on the ley lines.",
+        "uniques": [
+          "Instantly gain [30] [Mana]"
+        ]
+      },
+      {
+        "text": "Copy the dragonflight's tomes.",
+        "uniques": [
+          "Gain [100] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Lifeblood Pillar",
+    "text": "A titan pillar in the Sholazar Basin pours life into the jungle around it.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Tend the pillar's gardens.",
+        "uniques": [
+          "Gain [80] [Faith]"
+        ]
+      },
+      {
+        "text": "Study the titan machine.",
+        "uniques": [
+          "Gain [80] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whispers Beneath the Sands",
+    "text": "The Tol'vir guard their lost city in Uldum. Far beneath the desert, an old god dreams in the dark of Ahn'Qiraj.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "March into the depths of Ahn'Qiraj.",
+        "uniques": [
+          "A [C'Thun] rebels",
+          "Gain [80] [Culture]",
+          "Only available <starting from the [Age of the Third War]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Trade with the Tol'vir.",
+        "uniques": [
+          "Gain [100] [Gold]"
+        ]
+      },
+      {
+        "text": "Record the city's titan carvings.",
+        "uniques": [
+          "Gain [60] [Science]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Maelstrom",
+    "text": "Where the Well of Eternity imploded, the sea turns forever around a whirlpool of churning magic. Deep below lies Deepholm.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Offer prayers to calm the waters.",
+        "uniques": [
+          "Gain [60] [Faith]"
+        ]
+      },
+      {
+        "text": "Gather magic from the spray.",
+        "uniques": [
+          "Instantly gain [20] [Mana]"
+        ]
+      },
+      {
+        "text": "Face the Destroyer as he breaks free.",
+        "uniques": [
+          "A [Deathwing the Destroyer] rebels",
+          "Gain [120] [Culture]",
+          "Only available <starting from the [Age of the Cataclysm]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Brother Against Brother",
+    "presentation": "Alert",
+    "text": "We have declared war on fellow members of the Alliance. Our people and our allies are outraged.",
+    "choices": [
+      {
+        "text": "Pay reparations to quiet the dissenters.",
+        "uniques": [
+          "Gain [-150] [Gold]",
+          "Only available <when above [149] [Gold]>",
+          "[+20]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Justify the war in every square and temple.",
+        "uniques": [
+          "Gain [-100] [Culture]",
+          "Only available <when above [99] [Culture]>",
+          "[+10]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Spearman] rebels",
+          "Only available <starting from the [Age of Tribes]> <before the [Age of the Third War]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Man-at-Arms] rebels",
+          "Only available <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Gladiator] rebels",
+          "Only available <starting from the [Age of the Cataclysm]> <before the [Age of Azerite]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Vanquisher] rebels",
+          "Only available <starting from the [Age of Azerite]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Horde Attacks!",
+    "presentation": "Alert",
+    "text": "The Horde has declared war on us. The people rally to the banners of the Alliance!",
+    "choices": [
+      {
+        "text": "Rally the people.",
+        "uniques": [
+          "Empire enters a [2]-turn Golden Age"
+        ]
+      },
+      {
+        "text": "Fill the war chest.",
+        "uniques": [
+          "Gain [150] [Gold]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Betrayed by Kin",
+    "presentation": "Alert",
+    "text": "A fellow member of the Alliance has turned on us. Our people are shocked, and the world's sympathy is with us.",
+    "choices": [
+      {
+        "text": "Mourn the broken oath.",
+        "uniques": [
+          "Gain [80] [Faith]"
+        ]
+      },
+      {
+        "text": "Turn grief into resolve.",
+        "uniques": [
+          "Gain [100] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blood Against Blood",
+    "presentation": "Alert",
+    "text": "We have declared war on fellow members of the Horde. Our people and our allies are outraged.",
+    "choices": [
+      {
+        "text": "Pay reparations to quiet the dissenters.",
+        "uniques": [
+          "Gain [-150] [Gold]",
+          "Only available <when above [149] [Gold]>",
+          "[+20]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Justify the war in every square and temple.",
+        "uniques": [
+          "Gain [-100] [Culture]",
+          "Only available <when above [99] [Culture]>",
+          "[+10]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Spearman] rebels",
+          "Only available <starting from the [Age of Tribes]> <before the [Age of the Third War]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Man-at-Arms] rebels",
+          "Only available <starting from the [Age of the Third War]> <before the [Age of the Cataclysm]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Gladiator] rebels",
+          "Only available <starting from the [Age of the Cataclysm]> <before the [Age of Azerite]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let the dissenters take up arms.",
+        "uniques": [
+          "A [Vanquisher] rebels",
+          "Only available <starting from the [Age of Azerite]>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Alliance Attacks!",
+    "presentation": "Alert",
+    "text": "The Alliance has declared war on us. Lok'tar! The Horde stands as one!",
+    "choices": [
+      {
+        "text": "Rally the people.",
+        "uniques": [
+          "Empire enters a [2]-turn Golden Age"
+        ]
+      },
+      {
+        "text": "Fill the war chest.",
+        "uniques": [
+          "Gain [150] [Gold]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Betrayed by the Horde",
+    "presentation": "Alert",
+    "text": "A fellow member of the Horde has turned on us. Our people are shocked, and the world's sympathy is with us.",
+    "choices": [
+      {
+        "text": "Mourn the broken oath.",
+        "uniques": [
+          "Gain [80] [Faith]"
+        ]
+      },
+      {
+        "text": "Turn grief into resolve.",
+        "uniques": [
+          "Gain [100] [Culture]"
         ]
       }
     ]

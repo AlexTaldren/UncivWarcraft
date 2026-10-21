@@ -18,6 +18,7 @@ import java.util.ArrayList;
 /** Plays an all-AI game of the UncivWarcraft ruleset and reports what happened.
  *  Run with the working directory containing jsons/ (from Unciv.jar) and mods/UncivWarcraft. */
 public class WarcraftSim {
+    static final java.util.TreeMap<String, Integer> SPELLS = new java.util.TreeMap<>();
     public static void main(String[] args) {
         int maxTurns = args.length > 0 ? Integer.parseInt(args[0]) : 300;
         String[] majors = args.length > 1 ? args[1].split(",") : new String[]{"Humans", "Orcs"};
@@ -75,6 +76,8 @@ public class WarcraftSim {
             while (gi.getTurns() < t && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null)
                 gi.nextTurn(null, false);
             sampleDiplomacy(gi);
+            for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits()))
+                for (String st : u.getStatusMap().keySet()) if (st.endsWith(" Cooldown")) SPELLS.merge(st.replace(" Cooldown", ""), 1, Integer::sum);
             for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.civilization.Notification n : c.getNotifications()) {
                 String tx = n.getText();
                 for (String k : new String[]{"Darkmoon","granar","fel rift","Legion","Steamwheedle","Lunar","Brewfest","orphan","Gnome","Titan","Deathwing","brewmaster","Wickerman","Hallow","Kirin Tor","murloc","Defias","Mrgl","Golden Age","rebel","Onyxia","Hakkar","Ragnaros","C'Thun","Sapphiron","Kil'jaeden","N'Zoth","Raid Trophy","Covenant","Fel","Sunwell"})
@@ -90,6 +93,7 @@ public class WarcraftSim {
             if (gi.getAliveMajorCivs().size() <= 1 || gi.getVictoryData() != null) break;
         }
         System.out.println("VICTORY: " + gi.getVictoryData());
+        System.out.println("SPELL COOLDOWNS SEEN (5-turn samples): " + SPELLS);
         for (Civilization c : gi.getCivilizations()) {
             java.util.List<String> gpl = new ArrayList<>();
             java.util.TreeMap<String,Integer> barb = new java.util.TreeMap<>();

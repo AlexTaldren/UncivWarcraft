@@ -35,9 +35,9 @@
       "[+20]% weight to [Arena] for AI decisions",
       "[+50]% weight to [Footman] for AI decisions",
       "[+50]% weight to [Paladin] for AI decisions",
-      "[+50]% weight to [Mage] for AI decisions",
       "[+50]% weight to [Steam Tank] for AI decisions",
-      "[+50]% weight to [Knight of the Silver Hand] for AI decisions"
+      "[+50]% weight to [Knight of the Silver Hand] for AI decisions",
+      "[+50]% weight to [Kirin Tor Magus] for AI decisions"
     ]
   },
   {
@@ -137,7 +137,7 @@
       "Dominion": 1
     },
     "uniques": [
-      "[+30]% weight to [Firearm] for AI decisions",
+      "[+30]% weight to [Heavy Infantry] for AI decisions",
       "[+30]% weight to [Siege] for AI decisions",
       "[+25]% weight to [Blacksmith] for AI decisions",
       "[+20]% weight to [Walls] for AI decisions",
@@ -177,6 +177,7 @@
       "[+40]% weight to [Arcane Sanctum] for AI decisions",
       "[+30]% weight to [Siege] for AI decisions",
       "[-30]% weight to [Melee] for AI decisions",
+      "[+50]% weight to [Mechagnome Trooper] for AI decisions",
       "[+50]% weight to [Mechanostrider Rider] for AI decisions",
       "[+50]% weight to [Gnomish Bombardier] for AI decisions",
       "[+50]% weight to [Spider Tank] for AI decisions"
