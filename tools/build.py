@@ -475,7 +475,7 @@ wc_systems.apply(files, majors)
 # every unit sprite is drawn for the AbsoluteUnits unit set, so games with this mod use it
 # whatever unit set the player picked in Options (other sets would show stock art)
 files["ModOptions"] = {"isBaseRuleset": True, "unitset": "AbsoluteUnits",
-                       "uniques": ["Mod preselects map [Azeroth Large]"]}
+                       "uniques": ["Mod preselects map [Azeroth Huge]"]}
 
 # v0.18: make each AI favour its own race's unique units (they were rarely built)
 _leader_nation = {n["leaderName"]: n["name"] for n in files["Nations"] if n.get("leaderName")}
