@@ -15,8 +15,8 @@ to what each people builds.
 import colorsys, math, os, random, zlib
 from PIL import Image, ImageDraw
 import late_units as LU
-from mounts import Paint, shade
-import cc_legacy as CC
+from mounts import shade
+import citycenters as CC
 
 P_UNITS = "TileSets/AbsoluteUnits/Units/"
 HEX = "TileSets/HexaRealm/Tiles/"
@@ -235,25 +235,6 @@ def ship_sprites(atlas):
 TW, TH = 64, 56
 
 
-class Scene(CC.Scene):
-    def piece(self, depth, fn, outline=DARK, glow=None):
-        p = Paint(TW, TH)
-        fn(p)
-        im = p.render(outline)[0] if outline else p.render(None)[0]
-        if glow:
-            g = Image.new("RGBA", (TW, TH))
-            g.alpha_composite(CC.glow_of(im, glow))
-            g.alpha_composite(im)
-            im = g
-        self.add(depth, im)
-
-    def render(self):
-        out = Image.new("RGBA", (TW, TH))
-        for _, im in sorted(self.items, key=lambda t: t[0]):
-            out.alpha_composite(im)
-        return out
-
-
 FIRE = {"Forsaken": (140, 240, 90), "Scourge": (120, 200, 255), "Draenei": (170, 150, 255),
         "Dark Iron Dwarves": (255, 120, 40)}
 
@@ -280,123 +261,10 @@ CAMP = {
 }
 
 
-def campfire(s, x, y, col):
-    def stones(p):
-        p.ell(x, y, 4, 2, (120, 115, 110), "ring")
-        p.ell(x, y - 0.5, 2.5, 1.2, (60, 45, 35), "ash")
-    s.piece(y, stones)
-    def flame(p):
-        p.poly([(x - 2, y - 1), (x + 2, y - 1), (x + 0.5, y - 6), (x - 0.5, y - 4)], col, "flame")
-        p.dot(x, y - 2, (255, 245, 200), "core")
-    s.piece(y + 0.5, flame, outline=None, glow=col)
-
-
-def rack(s, x, y, hide=(170, 120, 80)):
-    """A hide stretched on a round hoop frame, propped on a stick."""
-    def f(p):
-        p.line(x + 3, y, x + 6, y - 9, 1, (100, 70, 45), "stick")
-        p.ell(x + 3, y - 6, 4.5, 5.5, (110, 78, 48), "hoop")
-        p.ell(x + 3, y - 6, 3.2, 4.2, hide, "hide")
-        p.dot(x + 2, y - 7, shade(hide, 1.15), "hl")
-    s.piece(y, f)
-
-
-def camp_prop(s, race, prop, x, y):
-    if prop in ("pennant", "pennant_blue"):
-        s.piece(y, lambda p: CC.banner(p, x, y, (100, 80, 60), (40, 70, 160) if prop == "pennant" else (50, 100, 200), 10))
-    elif prop == "tusks":
-        def f(p):
-            p.line(x - 2, y, x - 4, y - 7, 1, (235, 225, 200), "tusk")
-            p.line(x + 2, y, x + 4, y - 7, 1, (235, 225, 200), "tusk2")
-            CC.banner(p, x, y, (60, 50, 45), (170, 30, 25), 11)
-        s.piece(y, f)
-    elif prop == "moonlamp":
-        s.piece(y, lambda p: (p.line(x, y, x, y - 8, 1, (90, 70, 110), "pole"),
-                              p.line(x, y - 8, x + 2, y - 10, 1, (90, 70, 110), "hook")))
-        s.piece(y + 0.5, lambda p: p.ell(x + 2, y - 9, 1.5, 1.5, (170, 225, 255), "moon"), glow=(150, 210, 255))
-    elif prop == "keg":
-        def f(p):
-            p.ell(x, y - 3, 3, 3.5, (150, 100, 55), "keg")
-            p.line(x - 3, y - 4, x + 3, y - 4, 1, (90, 85, 80), "hoop")
-            p.line(x - 3, y - 1.5, x + 3, y - 1.5, 1, (90, 85, 80), "hoop2")
-        s.piece(y, f)
-    elif prop == "gear":
-        def f(p):
-            p.ell(x, y - 4, 3.5, 3.5, (200, 170, 80), "gear")
-            p.ell(x, y - 4, 1.2, 1.2, (90, 80, 70), "hub")
-            for k in range(8):
-                a = k * math.pi / 4
-                p.dot(x + math.cos(a) * 4.5, y - 4 + math.sin(a) * 4.5, (200, 170, 80), "gear")
-        s.piece(y, f)
-    elif prop == "totem":
-        def f(p):
-            for k, c in enumerate(((200, 60, 40), (240, 200, 70), (60, 120, 170))):
-                p.poly([(x - 1.5, y - k * 3), (x + 1.5, y - k * 3), (x + 1.5, y - 3 - k * 3), (x - 1.5, y - 3 - k * 3)], c, "t%d" % k)
-            p.line(x - 3.5, y - 9, x + 3.5, y - 9, 1, (240, 200, 70), "wing")
-        s.piece(y, f)
-    elif prop == "mask":
-        def f(p):
-            p.line(x, y, x, y - 9, 1, (110, 80, 50), "pole")
-            p.ell(x, y - 9, 2.2, 2.6, (235, 225, 205), "mask")
-            p.dot(x - 1, y - 10, (30, 30, 30), "eye"); p.dot(x + 1, y - 10, (30, 30, 30), "eye2")
-            p.line(x - 1, y - 7.5, x + 1, y - 7.5, 1, (190, 50, 40), "paint")
-        s.piece(y, f)
-    elif prop == "orb":
-        s.piece(y, lambda p: p.line(x, y, x, y - 5, 1, (220, 180, 70), "stand"))
-        s.piece(y + 0.5, lambda p: p.ell(x, y - 9, 1.8, 1.8, (255, 200, 90), "orb"), glow=(255, 170, 60))
-    elif prop == "lantern":
-        s.piece(y, lambda p: (p.line(x, y, x, y - 9, 1, (90, 60, 40), "pole"), p.line(x, y - 9, x + 3, y - 9, 1, (90, 60, 40), "arm")))
-        s.piece(y + 0.5, lambda p: p.ell(x + 3, y - 7, 1.5, 2, (230, 70, 50), "lantern"), glow=(255, 120, 60))
-    elif prop == "cauldron":
-        s.piece(y, lambda p: (p.ell(x, y - 2, 3.5, 2.5, (50, 48, 52), "pot"),))
-        s.piece(y + 0.5, lambda p: p.ell(x, y - 4, 2.5, 0.9, (140, 240, 90), "brew"), glow=(130, 230, 80))
-    elif prop == "bones":
-        def f(p):
-            for k in (-3, 0, 3):
-                p.line(x + k, y, x + k * 1.3, y - 7, 1, (225, 222, 205), "rib%d" % k)
-            p.ell(x, y - 8, 1.8, 1.5, (225, 222, 205), "skull")
-        s.piece(y, f)
-    elif prop == "crystal":
-        s.piece(y + 0.5, lambda p: (p.poly([(x - 2, y), (x + 2, y), (x + 1, y - 8), (x - 1, y - 9)], (170, 150, 255), "cr"),
-                                    p.poly([(x, y), (x + 2, y), (x + 1, y - 8)], (210, 200, 255), "crh")),
-                glow=(160, 140, 255))
-    elif prop == "barrel":
-        def f(p):
-            p.ell(x, y - 3, 3, 3.5, (110, 115, 120), "barrel")
-            p.line(x - 3, y - 4, x + 3, y - 4, 1, (190, 90, 40), "band")
-            p.dot(x, y - 6, (240, 210, 60), "fuse")
-        s.piece(y, f)
-    elif prop == "lamppost":
-        s.piece(y, lambda p: (p.line(x, y, x, y - 10, 1, (50, 50, 55), "post"),))
-        s.piece(y + 0.5, lambda p: p.ell(x, y - 10, 1.4, 1.6, (255, 215, 120), "lamp"), glow=(255, 200, 100))
-
-
-def shelter(s, st, x, y, w=13, h=6):
-    kind = st["kind"]
-    def f(p):
-        if kind == "tent" and not st.get("painted"):            # a ridge tent of canvas or silk
-            p.poly([(x, y), (x + w, y), (x + w / 2, y - h - 5)], st["roof"], "front")
-            p.poly([(x + w / 2, y - h - 5), (x + w, y), (x + w + 6, y - 3), (x + w / 2 + 6, y - h - 8)],
-                   shade(st["roof"], 0.8), "side")
-            p.poly([(x + w / 2 - 1.5, y), (x + w / 2 + 1.5, y), (x + w / 2, y - 4)], (60, 45, 35), "door")
-            if st.get("trim"):
-                p.line(x + 1, y - 1, x + w / 2, y - h - 4, 1, st["trim"], "trim")
-                p.line(x + w / 2, y - h - 4, x + w - 1, y - 1, 1, st["trim"], "trim2")
-        else:
-            CC.house(p, x, y, w, h, st["wall"], st["roof"], kind=kind,
-                     rh=(w * 0.9 if kind in ("cone", "tent") else w * 0.5 if kind == "thatch" else None),
-                     trim=st.get("trim"))
-    s.piece(y, f)
-
-
 def camp(race):
-    st = CAMP[race]
-    s = Scene()
-    shelter(s, st, 13, 28)
-    rack(s, 6, 33, (110, 90, 70) if race in ("Forsaken", "Scourge") else (175, 125, 80))
-    campfire(s, 39, 29, FIRE.get(race, (255, 150, 50)))
-    camp_prop(s, race, st["prop"], 49, 27)
-    return s.render()
+    """The race's hunting camp (drawn by improvement_art.py with the city-center renderer)."""
+    import improvement_art as IA
+    return IA.camp(race)
 
 
 # ------------------------------------------------------------------ forts
@@ -428,87 +296,10 @@ FORT = {
     "Zandalari Trolls": dict(wall="palisade", col=(195, 170, 100), roof="thatch", rcol=(235, 195, 70), flag=(40, 130, 110)),
 }
 
-# hexagon of wall foot points, back (top) to front
-HL, HTL, HTR, HR, HBR, HBL = (7, 28), (17, 12), (47, 12), (57, 28), (47, 47), (17, 47)
-BACK = [(HL, HTL), (HTL, HTR), (HTR, HR)]
-FRONT = [(HR, HBR), (HBL, HL), (HBR, HBL)]
-
-
-def _wall_segment(p, a, b, st, h, part):
-    col = st["col"]
-    kind = st["wall"]
-    (x0, y0), (x1, y1) = a, b
-    n = max(1, int(math.hypot(x1 - x0, y1 - y0)))
-    face = shade(col, 0.85 if y1 != y0 else 1.0)
-    if kind in ("palisade",):                  # sharpened log stakes
-        for i in range(0, n + 1, 2):
-            t = i / n
-            x, y = x0 + (x1 - x0) * t, y0 + (y1 - y0) * t
-            c = col if i % 4 == 0 else shade(col, 0.85)
-            p.poly([(x - 1, y), (x + 1, y), (x + 1, y - h), (x, y - h - 2), (x - 1, y - h)], c, part)
-        return
-    if kind == "thorn":                        # living wood: twisting roots and thorns
-        p.poly([(x0, y0), (x1, y1), (x1, y1 - h + 1), (x0, y0 - h + 1)], face, part)
-        for i in range(0, n + 1, 3):
-            t = i / n
-            x, y = x0 + (x1 - x0) * t, y0 + (y1 - y0) * t
-            p.line(x, y - h + 1, x + (1 if i % 2 else -1), y - h - 2, 1, shade(col, 1.25), part)
-            if i % 6 == 0:
-                p.ell(x, y - h, 1.6, 1.2, (90, 160, 100), part + "leaf")
-        return
-    p.poly([(x0, y0), (x1, y1), (x1, y1 - h), (x0, y0 - h)], face, part)
-    top = shade(col, 1.12)
-    p.line(x0, y0 - h, x1, y1 - h, 1, top, part + "top")
-    for i in range(0, n + 1, 3):
-        t = i / n
-        x, y = x0 + (x1 - x0) * t, y0 + (y1 - y0) * t
-        if kind == "stone":                    # crenellations
-            if (i // 3) % 2 == 0:
-                p.poly([(x - 1, y - h), (x + 1, y - h), (x + 1, y - h - 2), (x - 1, y - h - 2)], top, part)
-            if st.get("trim"):
-                p.dot(x, y - h + 1, st["trim"], part + "trim")
-        elif kind == "metal":                  # riveted plates
-            p.dot(x, y - h / 2, shade(col, 1.4) if not st.get("rust") else (190, 90, 40), part + "rivet")
-            if (i // 3) % 3 == 0:
-                p.line(x, y, x, y - h, 1, shade(col, 0.7), part + "seam")
-        elif kind == "lacquer":                # red wall with a green tiled cap
-            p.line(x - 1.5, y - h - 0.5, x + 1.5, y - h - 0.5, 1, st["rcol"], part + "cap")
-        elif kind == "saronite":               # dark metal with bone spikes
-            if (i // 3) % 2 == 0:
-                p.line(x, y - h, x + 0.5, y - h - 3, 1, (225, 222, 205), part + "spike")
-            p.dot(x, y - h / 2, (120, 200, 255), part + "rune")
-
-
 def fort(race):
-    st = FORT[race]
-    h = 7 if st.get("heavy") else 6
-    s = Scene()
-    def back(p):
-        for i, (a, b) in enumerate(BACK):
-            _wall_segment(p, a, b, st, h, "b%d" % i)
-    s.piece(10, back)
-    # keep and barracks inside
-    rk = st["roof"]
-    def keep(p):
-        CC.tower(p, 27, 32, 9, 14, st["col"], st["rcol"], kind=rk,
-                 rh=(5 if rk not in ("tent", "thatch") else 9), trim=st.get("trim"))
-    s.piece(32, keep)
-    s.piece(36, lambda p: CC.house(p, 14, 36, 10, 5, st["col"], st["rcol"], kind=rk if rk not in ("pagoda",) else "hip",
-                                   rh=(9 if rk in ("tent",) else None), trim=st.get("trim")))
-    s.piece(34, lambda p: CC.banner(p, 44, 34, (80, 70, 60), st["flag"], 12))
-    if st.get("lamp"):
-        s.piece(37, lambda p: p.ell(40, 35, 1.4, 1.4, st["lamp"], "lamp"), outline=None, glow=st["lamp"])
-    def front(p):
-        for i, (a, b) in enumerate(FRONT):
-            _wall_segment(p, a, b, st, h, "f%d" % i)
-        gx, gy = 32, 47           # the gate
-        p.poly([(gx - 3, gy), (gx + 3, gy), (gx + 3, gy - 5), (gx, gy - 6.5), (gx - 3, gy - 5)], (60, 40, 30), "gate")
-    s.piece(48, front)
-    for (tx, ty) in (HL, HR):     # corner towers
-        s.piece(ty + 1, lambda p, tx=tx, ty=ty: CC.tower(p, tx - 3.5, ty + 1, 7, 11, st["col"], st["rcol"],
-                                                         kind=rk if rk != "pagoda" else "hip",
-                                                         rh=(4 if rk not in ("tent", "thatch") else 7), trim=st.get("trim")))
-    return s.render()
+    """The race's walled outpost (drawn by improvement_art.py with the city-center renderer)."""
+    import improvement_art as IA
+    return IA.fort(race)
 
 
 def snow(im):

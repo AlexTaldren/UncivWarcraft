@@ -17,9 +17,9 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 - `wc_lore.py` — civilopedia lore for wonders, techs and units.
 - `race_sprites.py` also draws the barbarians (murlocs, gnolls, Defias) and `tiles_art.py` their camp.
 - `citycenters.py` — per-race city-center tiles in three growth stages, drawn on a strict integer pixel grid: odd widths centred on column 32, exact 1:1/1:2 roof slopes, symmetric merlons and windows, and one shared outline pass (a label map), so every line is 1 px and touching pieces share a single line. The 32-px FantasyHex tile is reduced from the label map about the centre column and re-outlined at its own size.
-- `cc_legacy.py` — the previous city-center renderer, still used by `race_works.py` and `race_improvements.py` for camps, forts, ships and race improvements.
+- `improvement_art.py` — every race's farmstead, mine, lumber mill, trading post, pasture, plantation, quarry, fishing boats, hunting camp and fort, drawn with the city-center renderer and styles (same roof shapes, colours and 1-px line work), plus each race's wall material (`MATERIAL`).
 - `wc_sounds.py` — 15 original attack sounds synthesised in code (no recordings), written to `sounds/*.ogg`, and the unit → sound map.
-- `race_works.py` — per-race sailing ships (`Longboat-Orcs` …) and owned-tile hunting camps and forts (`Camp-<race>`, `Fort-<race>`, `Plainstriders+Camp-<race>` …, HexaRealm), in each race's city-center architecture (pieces from `cc_legacy.py`).
+- `race_works.py` — per-race sailing ships (`Longboat-Orcs` …) and owned-tile hunting camps and forts (`Camp-<race>`, `Fort-<race>`, `Plainstriders+Camp-<race>` …, HexaRealm), in each race's city-center architecture (drawn by `improvement_art.py`).
 - `map_tiles_preview.py` — renders part of the Azeroth map with the real tile art.
 - `human_sprites.py` — the Humans' unique-unit sprites and blue-and-gold variants.
 - `paint.py`, `wc_style_units.py`, `wc_style_more.py` — the painted-style Human and Orc sprites (a supersampled painter, the first 17 units, and the rest of the roster as kit recipes). Each painted sprite takes its canvas and position from the stock sprite it replaces, at 2x resolution.
