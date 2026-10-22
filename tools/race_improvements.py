@@ -22,7 +22,7 @@ import numpy as np
 
 from PIL import Image
 from mounts import shade
-import citycenters as CC
+import cc_legacy as CC
 import race_works as RW
 
 TW, TH = 64, 56

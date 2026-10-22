@@ -16,7 +16,7 @@ import colorsys, math, os, random, zlib
 from PIL import Image, ImageDraw
 import late_units as LU
 from mounts import Paint, shade
-import citycenters as CC
+import cc_legacy as CC
 
 P_UNITS = "TileSets/AbsoluteUnits/Units/"
 HEX = "TileSets/HexaRealm/Tiles/"
