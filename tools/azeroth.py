@@ -149,7 +149,7 @@ CONTINENTS = {"Kalimdor": _span("Teldrassil", "Sardor Isle"), "Eastern Kingdoms"
 EXTRA_LAND = {
     "The Lost Isles": ((74.0, 61.5), 2.0),
     "Kezan": ((84.5, 52.5), 2.2),
-    "The Wandering Isle": ((59.5, 97.5), 2.4),
+    "The Wandering Isle": ((59.0, 97.5), 3.6),
 }
 
 # ------------------------------------------------------------------ mountain ranges & lakes
@@ -210,7 +210,7 @@ CAPITALS = {  # major nations -> their capital's tile
     "Trolls": (45.3, 60.3),           # Sen'jin Village, Durotar
     "Blood Elves": (167.1, 33.8),     # Silvermoon, Eversong Woods
     "High Elves": (164.1, 27.1),      # Quel'Danas
-    "Pandaren": (59.5, 97.5),         # the Temple of Five Dawns, the Wandering Isle
+    "Pandaren": (59.0, 97.5),         # the Temple of Five Dawns, the Wandering Isle
     "Forsaken": (153.8, 41.2),        # Undercity, Tirisfal Glades
     "Draenei": (17.4, 45.7),          # The Exodar, Azuremyst Isle
     "Goblins": (46.2, 49.6),          # Bilgewater Harbor, Azshara
