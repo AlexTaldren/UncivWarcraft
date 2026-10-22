@@ -24,7 +24,7 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 - `paint.py`, `wc_style_units.py`, `wc_style_more.py` — the painted-style Human and Orc sprites (a supersampled painter, the first 17 units, and the rest of the roster as kit recipes). Each painted sprite takes its canvas and position from the stock sprite it replaces, at 2x resolution.
 - `race_sprites.py`, `mounts.py` — race versions of every person unit, and each race's mounts (wolves, rams, mechanostriders, nightsabers, kodos, raptors, hawkstriders, elekks, dragon turtles, trikes, skeletal and Gilnean horses, white steeds).
 - `build.py` — assembles everything into the mod folder.
-- `azeroth.py` — the Azeroth map: coastlines, zones and their terrain, mountain ranges, lakes, natural wonders, capitals and city-states. `map_preview.py` renders it.
+- `azeroth.py` — the Azeroth maps: zone biomes, mountain ranges, lakes, natural wonders, capitals, city-states and regional windows, all on a 180 × 110 grid. Land and zones are sampled from `azeroth_world.png` (a small zone-index raster traced from the in-game world and continent maps; index list in `azeroth_world.json`, 255 = lake), so every size and region shares one geography. `map_preview.py` renders it.
 - `sim/BuildAzerothMap.java` + `build_map.sh` — turns that layout into a real Unciv map file using Unciv's own classes (coasts, rivers, resources, ruins).
 - `validate.sh` — runs Unciv's built-in mod checker (`java -jar Unciv.jar mod-ci`).
 - `sim/WarcraftSim.java` + `sim.sh` — plays a full all-AI game with the mod to catch runtime crashes.

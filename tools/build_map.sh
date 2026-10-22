@@ -16,8 +16,9 @@ build_one() {  # name width height [region]
 }
 build_one "Azeroth" 104 64
 build_one "Azeroth Large" 144 88
-# Oct 2026: regional maps (azeroth.REGIONS) and Pandaria (azeroth.PANDARIA)
-build_one "Kalimdor" 81 91 "Kalimdor"
-build_one "Eastern Kingdoms" 72 100 "Eastern Kingdoms"
-build_one "Northrend" 81 52 "Northrend"
-build_one "Pandaria" 78 57 "Pandaria"
+build_one "Azeroth Huge" 180 110
+# Regional maps: windows on the same world (azeroth.REGIONS)
+build_one "Kalimdor" 77 95 "Kalimdor"
+build_one "Eastern Kingdoms" 62 117 "Eastern Kingdoms"
+build_one "Northrend" 69 49 "Northrend"
+build_one "Pandaria" 77 54 "Pandaria"
