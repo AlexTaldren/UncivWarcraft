@@ -328,7 +328,7 @@ BELIEFS = {
     "Desert Folklore": "Tales of the Tol'vir",
     "Faith Healers": "Restorative Spirits",
     "Fertility Rites": "Earth Mother's Bounty",
-    "God of Craftsman": "Khaz'goroth's Forge",
+    "God of craftsmen": "Khaz'goroth's Forge",     # Unciv spelled this "God of Craftsman" before late 2026
     "God of the Open Sky": "An'she's Light",
     "God of the Sea": "Neptulon's Tide",
     "God of War": "Rage of Agamaggan",
