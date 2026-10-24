@@ -444,7 +444,7 @@
       "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
     ],
-    "upgradesTo": "Lancer",
+    "upgradesTo": "Halberdier",
     "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -789,8 +789,8 @@
     "promotions": [
       "Spear Wall I"
     ],
-    "upgradesTo": "Siegebreaker",
-    "obsoleteTech": "Battle Formations",
+    "upgradesTo": "Cavalry",
+    "obsoleteTech": "War Doctrine",
     "attackSound": "horse",
     "civilopediaText": [
       {
@@ -909,7 +909,7 @@
     "requiredTech": "War Doctrine",
     "obsoleteTech": "Liquid Fire",
     "requiredResource": "Horses",
-    "upgradesTo": "War Golem",
+    "upgradesTo": "War Rider",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
@@ -1524,10 +1524,11 @@
     "strength": 50,
     "cost": 300,
     "requiredTech": "Battle Formations",
-    "upgradesTo": "Flying Machine",
+    "upgradesTo": "Phalanx",
     "uniques": [
       "[+100]% Strength <vs [War Machine] units>",
       "Never appears as a Barbarian unit",
+      "[+50]% Strength <vs [Mounted] units>",
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
       "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -1545,7 +1546,7 @@
     "attackSound": "wc_steam_cannon",
     "civilopediaText": [
       {
-        "text": "Crews with heavy guns built to stop siege engines and golems."
+        "text": "Heavy infantry with rocket mortars and tower shields, who break charging riders and war machines alike."
       }
     ]
   },
@@ -2582,11 +2583,9 @@
     "name": "Paladin",
     "unitType": "Mounted",
     "movement": 4,
-    "strength": 22,
-    "cost": 120,
-    "requiredTech": "Animal War Training",
-    "obsoleteTech": "War Doctrine",
-    "upgradesTo": "Cavalry",
+    "strength": 105,
+    "cost": 450,
+    "requiredTech": "Focused Arcana",
     "requiredResource": "Horses",
     "uniques": [
       "Can move after attacking",
@@ -2618,17 +2617,17 @@
       "Can be purchased with [Faith] [in all cities]"
     ],
     "attackSound": "horse",
-    "replaces": "Knight",
+    "replaces": "Grand Champion",
     "uniqueTo": "Humans",
     "promotions": [
       "Medic"
     ],
     "civilopediaText": [
       {
-        "text": "Holy warriors of the Order of the Silver Hand, clad in heavy plate and armed with the warhammer. Paladins ride into battle wielding the Light."
+        "text": "Holy warriors of the Order of the Silver Hand, clad in blessed plate on barded chargers, who heal their comrades and turn the tide wherever they ride. Humans field ordinary Knights early on; their riders become Paladins at the end of the age."
       },
       {
-        "text": "Holy Light: heals the units fighting beside them. Devotion Aura: nearby military units fight 10% harder. Divine Shield: +20% Strength when defending. The Light's wrath falls hardest on the undead: +25% Strength against the Forsaken."
+        "text": "Stronger than a Grand Champion, inspires and heals nearby units, and can Lay on Hands."
       },
       {
         "text": "Spell: Lay on Hands. Heals the unit for 40 HP. Costs 10 Mana."
@@ -2716,7 +2715,7 @@
     "requiredTech": "War Doctrine",
     "obsoleteTech": "Liquid Fire",
     "requiredResource": "Horses",
-    "upgradesTo": "War Golem",
+    "upgradesTo": "War Rider",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
@@ -3911,7 +3910,7 @@
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>",
       "Can be purchased with [Faith] [in all cities]"
     ],
-    "upgradesTo": "Lancer",
+    "upgradesTo": "Halberdier",
     "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -4108,7 +4107,7 @@
     "requiredTech": "War Doctrine",
     "obsoleteTech": "Liquid Fire",
     "requiredResource": "Horses",
-    "upgradesTo": "War Golem",
+    "upgradesTo": "War Rider",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",
@@ -4730,7 +4729,7 @@
       "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
       "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
     ],
-    "upgradesTo": "Lancer",
+    "upgradesTo": "Halberdier",
     "obsoleteTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -8306,6 +8305,139 @@
     "civilopediaText": [
       {
         "text": "The greatest warriors of the Azerite age, who carry the war banner at the head of every charge."
+      }
+    ]
+  },
+  {
+    "name": "Halberdier",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 25,
+    "cost": 150,
+    "requiredTech": "Mithril Forged Swords",
+    "obsoleteTech": "Battle Formations",
+    "upgradesTo": "Siegebreaker",
+    "attackSound": "metalhit",
+    "uniques": [
+      "[+50]% Strength <vs [Mounted] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Foot soldiers with long halberds, the wall that cavalry breaks upon."
+      }
+    ]
+  },
+  {
+    "name": "Phalanx",
+    "unitType": "Heavy Infantry",
+    "movement": 2,
+    "strength": 85,
+    "cost": 425,
+    "requiredTech": "Titan Logic",
+    "attackSound": "metalhit",
+    "uniques": [
+      "[+50]% Strength <vs [Mounted] units>",
+      "[+50]% Strength <vs [War Machine] units>",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A locked wall of tower shields and runed pikes, raised to stop the charges of the last wars, beast and machine alike."
+      }
+    ]
+  },
+  {
+    "name": "War Rider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 60,
+    "cost": 350,
+    "requiredTech": "Liquid Fire",
+    "obsoleteTech": "Focused Arcana",
+    "upgradesTo": "Grand Champion",
+    "requiredResource": "Horses",
+    "attackSound": "cavalry",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavy riders on armoured mounts, with lance, banner and shield: the shock troops of the great wars."
+      }
+    ]
+  },
+  {
+    "name": "Grand Champion",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 100,
+    "cost": 425,
+    "requiredTech": "Focused Arcana",
+    "requiredResource": "Horses",
+    "attackSound": "cavalry",
+    "uniques": [
+      "Can move after attacking",
+      "No defensive terrain bonus",
+      "[-33]% Strength <vs cities> <when attacking>",
+      "Never appears as a Barbarian unit",
+      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
+      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
+      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
+      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
+      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
+      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
+      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
+      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
+      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
+      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
+      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Champions of the Argent Tournament and their like from every race, the finest riders Azeroth has ever known."
       }
     ]
   },
