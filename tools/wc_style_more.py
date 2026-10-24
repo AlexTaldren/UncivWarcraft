@@ -411,13 +411,15 @@ def h_rider(c, fx, fy, u=1.0, kind="outrider"):
     f = Fig(c, fx - 4, fy, u * 1.06)
     shadow(f, 34)
     from wc_style_units import horse
-    coats = {"outrider": (150, 100, 60), "archer": (120, 85, 55), "lancer": (90, 70, 60), "silver": (235, 232, 225)}
+    coats = {"outrider": (150, 100, 60), "archer": (120, 85, 55), "lancer": (90, 70, 60), "silver": (235, 232, 225),
+             "knight": (126, 84, 50), "warrider": (58, 46, 40), "champion": (196, 150, 84)}
     if CTX.spec.get("mount"):
         sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("lancer", "silver", "knight", "warrider", "champion"))
         ry = CTX.spec.get("body", (1, 1))[1]
         r = Fig(c, sx_ - 2 * u, sy_ + 27 * u * 0.88 * ry, u * 0.88)
     else:
-        horse(f, coat=coats.get(kind, (120, 85, 55)), barding=kind in ("lancer", "silver", "knight", "warrider", "champion"))
+        horse(f, coat=coats.get(kind, (120, 85, 55)),
+              barding="half" if kind in ("lancer", "silver", "knight", "warrider", "champion") else False)
         r = Fig(c, *f.p(-4, -22), u * 0.88)
     armor = "plate" if kind in ("lancer", "silver", "knight", "warrider", "champion") else "leather"
     col, mat, glove = (STEEL, "metal", None) if armor == "plate" else (LEATHER, "leather", HSKIN)
