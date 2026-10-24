@@ -654,5 +654,30 @@ if not os.path.isdir(MUSIC):          # in the repo, the tracks live at the root
 if os.path.isdir(MUSIC):
     shutil.copytree(MUSIC, os.path.join(OUT, "music"), dirs_exist_ok=True)
     print("music tracks:", len(os.listdir(MUSIC)))
+    # keep every track at a gentle background level (about -23 LUFS), so tracks added later
+    # are no louder than the rest; tracks already at that level are left untouched
+    import subprocess, re as _re
+    MUSIC_LUFS = -23.0
+    if shutil.which("ffmpeg"):
+        for name in sorted(os.listdir(os.path.join(OUT, "music"))):
+            path = os.path.join(OUT, "music", name)
+            ext = os.path.splitext(name)[1].lower()
+            if ext not in (".mp3", ".ogg"):
+                continue
+            log = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", path, "-af",
+                                  "loudnorm=print_format=summary", "-f", "null", "-"],
+                                 capture_output=True, text=True).stderr
+            m = _re.search(r"Input Integrated:\s*(-?[\d.]+) LUFS", log)
+            if not m or float(m.group(1)) <= MUSIC_LUFS + 1.0:
+                continue
+            gain = MUSIC_LUFS - float(m.group(1))
+            br = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries",
+                                 "stream=bit_rate", "-of", "csv=p=0", path], capture_output=True, text=True).stdout.strip()
+            codec = ["-c:a", "libmp3lame"] if ext == ".mp3" else ["-c:a", "libvorbis"]
+            tmp = path + ".tmp" + ext
+            subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", path, "-af", f"volume={gain:.1f}dB",
+                            *codec, "-b:a", br if br.isdigit() else "128000", "-map_metadata", "0", tmp], check=True)
+            os.replace(tmp, path)
+            print(f"music: {name} lowered by {-gain:.1f} dB to about {MUSIC_LUFS:.0f} LUFS")
 print("nations:", len(majors), "city-states:", len(minors), "units:", len(files["Units"]),
       "buildings:", len(files["Buildings"]))
