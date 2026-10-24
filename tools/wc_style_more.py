@@ -889,6 +889,7 @@ RECIPES = {
     "Mounted Archer-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "archer"), "mounted"),
     "Lancer-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "lancer"), "mounted"),
     "Knight of the Silver Hand": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "silver"), "mounted"),
+    "Knight-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "knight"), "mounted"),   # Humans field Knights again (Paladin is endgame)
     "War Rider-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "warrider"), "mounted"),
     "Grand Champion-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "champion"), "mounted"),
     "Halberdier-Humans": (hs(armor="plate", hat="kettle", weapon="halberd", pauldron=True), "foot"),
