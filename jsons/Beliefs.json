@@ -60,15 +60,10 @@
     ]
   },
   {
-    "name": "Khaz'goroth's Forge",
+    "name": "God of Craftsman",
     "type": "Pantheon",
     "uniques": [
       "[+1 Production] [in cities following this religion] <in cities with at least [3] [Population]>"
-    ],
-    "civilopediaText": [
-      {
-        "text": "Khaz'goroth, the Titan shaper of the world, blesses the forges of his makers."
-      }
     ]
   },
   {
