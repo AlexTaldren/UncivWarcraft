@@ -552,7 +552,8 @@ GENERIC = ["Archer", "Azerite Sharpshooter", "Ballista", "Catapult", "Cavalry", 
            "Grenadier", "Hunter", "Inquisitor", "Knight", "Kul Tiran Marine", "Lancer", "Man-at-Arms", "Militia",
            "Missionary", "Mortar Team", "Mountaineer", "Mounted Archer", "Outrider", "Peasant", "Pikeman", "Ranger",
            "Ranger Captain", "Ranger-General", "Rifleman", "Royal Guard", "Scout", "Settler", "Siegebreaker",
-           "Skyguard", "Spearman", "Swordsman", "Vanguard", "Vanquisher"]
+           "Skyguard", "Spearman", "Swordsman", "Vanguard", "Vanquisher",
+           "War Rider", "Grand Champion", "Halberdier", "Phalanx"]
 
 
 def base_recipe(family, unit):

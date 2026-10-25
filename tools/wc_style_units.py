@@ -670,7 +670,12 @@ def horse(f, coat=(235, 232, 225), barding=True):
         f.paint(f.cap(a, b, 6, 4.5), coat, mat="skin")
         f.paint(f.cap(b, c2, 4.5, 3.8), coat, mat="skin")
         f.paint(f.ell(c2[0] + 1, -1.5, 4.3, 2.7), (60, 50, 45), mat="leather")
-    if barding:
+    if barding == "half":     # saddle cloth and head plate only, so the horse itself stays readable
+        cloth = f.poly([(-16, -52), (12, -53), (14, -42), (10, -30), (-14, -30), (-18, -42)])
+        f.paint(cloth, L_MAIN, layer="l2", mat="cloth")
+        f.paint(f.c.intersect(cloth, f.poly([(-40, -34), (40, -34), (40, -29), (-40, -29)])), L_MAIN, layer="l1", mat="gold", outline=0.5)
+        f.paint(f.curve([(30, -82), (40, -76), (46, -68)], 1.6, 1.6), (60, 45, 35), mat="leather")   # bridle
+    elif barding:
         cap_m = f.poly([(-32, -50), (24, -52), (30, -40), (28, -22), (-32, -22), (-34, -40)])
         f.paint(cap_m, L_MAIN, layer="l2", mat="cloth")
         f.paint(f.c.intersect(cap_m, f.poly([(-40, -27), (40, -27), (40, -20), (-40, -20)])), L_MAIN, layer="l1", mat="gold", outline=0.5)

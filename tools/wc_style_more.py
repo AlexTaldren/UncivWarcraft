@@ -411,15 +411,17 @@ def h_rider(c, fx, fy, u=1.0, kind="outrider"):
     f = Fig(c, fx - 4, fy, u * 1.06)
     shadow(f, 34)
     from wc_style_units import horse
-    coats = {"outrider": (150, 100, 60), "archer": (120, 85, 55), "lancer": (90, 70, 60), "silver": (235, 232, 225)}
+    coats = {"outrider": (150, 100, 60), "archer": (120, 85, 55), "lancer": (90, 70, 60), "silver": (235, 232, 225),
+             "knight": (126, 84, 50), "warrider": (58, 46, 40), "champion": (196, 150, 84)}
     if CTX.spec.get("mount"):
-        sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("lancer", "silver", "knight"))
+        sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("lancer", "silver", "knight", "warrider", "champion"))
         ry = CTX.spec.get("body", (1, 1))[1]
         r = Fig(c, sx_ - 2 * u, sy_ + 27 * u * 0.88 * ry, u * 0.88)
     else:
-        horse(f, coat=coats.get(kind, (120, 85, 55)), barding=kind in ("lancer", "silver", "knight"))
+        horse(f, coat=coats.get(kind, (120, 85, 55)),
+              barding="half" if kind in ("lancer", "silver", "knight", "warrider", "champion") else False)
         r = Fig(c, *f.p(-4, -22), u * 0.88)
-    armor = "plate" if kind in ("lancer", "silver", "knight") else "leather"
+    armor = "plate" if kind in ("lancer", "silver", "knight", "warrider", "champion") else "leather"
     col, mat, glove = (STEEL, "metal", None) if armor == "plate" else (LEATHER, "leather", HSKIN)
     if kind == "silver":     # holy hammer raised behind
         human_arm(r, (-8, -60), (-18, -66), (-14, -80), STEEL, "metal", None, dark=0.8)
@@ -459,6 +461,18 @@ def h_rider(c, fx, fy, u=1.0, kind="outrider"):
         sword(r, (22, -50), (36, -88), 2.6, 6)
         human_arm(r, (4, -58), (12, -48), (22, -50), col, mat, glove)
         kite_shield(r, 16, -44, 0.9)
+    elif kind == "warrider":       # lance with pennon, great helm, kite shield
+        great_helm(r, 4, -76, plume=False)
+        pole(r, (-24, -30), (46, -90), 2.2)
+        r.paint(r.poly([(46, -90), (38, -83), (41, -80)]), STEEL, mat="metal", outline=0.6)
+        r.paint(r.poly([(32, -76), (22, -72), (24, -63), (34, -68)]), L_MAIN, layer="l2", mat="cloth", outline=0.5)
+        human_arm(r, (4, -58), (10, -46), (18, -50), col, mat, glove)
+        kite_shield(r, 16, -44, 0.95)
+    elif kind == "champion":       # plumed great helm, sword raised, banner on the back
+        great_helm(r, 4, -76, plume=True)
+        sword(r, (22, -52), (38, -94), 2.8, 7)
+        human_arm(r, (4, -58), (12, -48), (22, -52), col, mat, glove)
+        kite_shield(r, 16, -44, 1.0)
     elif kind == "cavalry":        # sabre and pistol era
         human_head(r, 5, -75)
         human_hat(r, "plumed")
@@ -620,19 +634,19 @@ def o_rider(c, fx, fy, u=1.0, kind="archer"):
     f = Fig(c, fx, fy, u * 1.08)
     shadow(f, 36)
     if CTX.spec.get("mount"):
-        sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("knight", "lancer", "cavalry"))
+        sx_, sy_ = CTX.spec["mount"](c, f, armored=kind in ("knight", "lancer", "cavalry", "warrider", "champion"))
         ry = CTX.spec.get("body", (1, 1))[1]
         r = Fig(c, sx_ - 2 * u, sy_ + 29 * u * 0.84 * ry, u * 0.84)
     else:
-        wolf(f, fur=(70, 66, 64) if kind in ("knight", "raider") else (92, 84, 78))
-        if kind in ("knight", "raider", "lancer"):     # iron barding on the wolf's chest
+        wolf(f, fur=(70, 66, 64) if kind in ("knight", "raider", "warrider", "champion") else (92, 84, 78))
+        if kind in ("knight", "raider", "lancer", "warrider", "champion"):     # iron barding on the wolf's chest
             f.paint(f.poly([(14, -56), (34, -52), (36, -40), (16, -36)]), OIRON, mat="metal", outline=0.6)
         r = Fig(c, *f.p(-2, -16), u * 0.84)
     if kind == "raider":
         orc_arm(r, (-16, -62), (-26, -56), (-24, -72), dark=0.75)
         fist(r, -24, -74, dark=0.75)
     orc_torso(r, loin=False)
-    if kind in ("knight", "lancer", "raider"):
+    if kind in ("knight", "lancer", "raider", "warrider", "champion"):
         r.paint(r.poly([(-20, -68), (16, -70), (22, -50), (18, -38), (-20, -38)]), OIRON, mat="metal")
     r.paint(r.cap((2, -30), (16, -24), 9, 8), DLEATHER, mat="leather")
     r.paint(r.cap((16, -24), (15, -10), 7, 6.5), OSKIN, mat="skin")
@@ -654,6 +668,20 @@ def o_rider(c, fx, fy, u=1.0, kind="archer"):
         orc_arm(r, (6, -60), (20, -63), (32, -62))
         orc_head(r, 19, -66)
         fist(r, 33, -62, r=5.5)
+    elif kind == "warrider":       # war spear with a banner, iron helm
+        pole(r, (4, -20), (44, -106), 2.0)
+        r.paint(r.poly([(44, -106), (37, -96), (41, -94)]), OIRON, mat="metal", outline=0.6)
+        r.paint(r.poly([(36, -92), (24, -88), (26, -76), (38, -80)]), (150, 40, 30), layer="l2", mat="cloth", outline=0.5)
+        orc_arm(r, (6, -58), (16, -48), (24, -56))
+        orc_head(r, 19, -66, hair=None)
+        orc_hat(r, "warhelm", 19, -66)
+        fist(r, 25, -56)
+    elif kind == "champion":       # great double axe raised high, war helm
+        big_axe(r, (20, -30), (32, -104), 1.15, double=True)
+        orc_arm(r, (6, -58), (12, -50), (22, -44))
+        orc_head(r, 19, -66, hair=None)
+        orc_hat(r, "warhelm", 19, -66)
+        fist(r, 24, -44)
     elif kind == "knight":
         big_axe(r, (22, -26), (30, -92), 1.0, double=True)
         orc_arm(r, (6, -58), (12, -44), (22, -36))
@@ -863,6 +891,11 @@ RECIPES = {
     "Mounted Archer-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "archer"), "mounted"),
     "Lancer-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "lancer"), "mounted"),
     "Knight of the Silver Hand": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "silver"), "mounted"),
+    "Knight-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "knight"), "mounted"),   # Humans field Knights again (Paladin is endgame)
+    "War Rider-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "warrider"), "mounted"),
+    "Grand Champion-Humans": (lambda c, fx, fy, u: h_rider(c, fx, fy, u, "champion"), "mounted"),
+    "Halberdier-Humans": (hs(armor="plate", hat="kettle", weapon="halberd", pauldron=True), "foot"),
+    "Phalanx-Humans": (hs(armor="plate", hat="great_helm", weapon="pike", shield="kite", capecol=True), "foot"),
     # ---- Humans: siege
     "Catapult-Humans": (lambda c, fx, fy, u: catapult(c, fx, fy, u, H), "siege"),
     "Ballista-Humans": (lambda c, fx, fy, u: ballista(c, fx, fy, u, H), "siege"),
@@ -906,6 +939,10 @@ RECIPES = {
     "Knight-Orcs": (lambda c, fx, fy, u: o_rider(c, fx, fy, u, "knight"), "mounted"),
     "Lancer-Orcs": (lambda c, fx, fy, u: o_rider(c, fx, fy, u, "lancer"), "mounted"),
     "Raider": (lambda c, fx, fy, u: o_rider(c, fx, fy, u, "raider"), "mounted"),
+    "War Rider-Orcs": (lambda c, fx, fy, u: o_rider(c, fx, fy, u, "warrider"), "mounted"),
+    "Grand Champion-Orcs": (lambda c, fx, fy, u: o_rider(c, fx, fy, u, "champion"), "mounted"),
+    "Halberdier-Orcs": (os_(armor="iron", hat="skullcap", weapon="halberd", pauldrons=1), "foot"),
+    "Phalanx-Orcs": (os_(armor="iron", hat="warhelm", weapon="pike", shield="hide", pauldrons=2, paint_face=True), "foot"),
     # ---- Orcs: siege
     "Catapult-Orcs": (lambda c, fx, fy, u: catapult(c, fx, fy, u, O), "siege"),
     "Ballista-Orcs": (lambda c, fx, fy, u: ballista(c, fx, fy, u, O), "siege"),

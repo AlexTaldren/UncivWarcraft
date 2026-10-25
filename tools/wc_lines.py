@@ -83,6 +83,23 @@ CHANGES = {
                         add_uniques=["Double movement in [Forest]"],
                         text2="Stronger than a Ranger Captain, sees farther and gains +25% Strength in forests."),
     "Crypt Fiend": dict(requiredTech="Long Rifles"),
+    # Oct 24 2026 endgame pass (user request): riders stay riders, pikes stay on foot, the Paladin is endgame.
+    # Mounted: Knight > Cavalry > War Rider > Grand Champion. War machines are their own line from War Golem.
+    "Cavalry": dict(upgradesTo="War Rider"),
+    "Knight of the Silver Hand": dict(upgradesTo="War Rider"),
+    "Raider": dict(upgradesTo="War Rider"),
+    "Lancer": dict(upgradesTo="Cavalry"),
+    # Anti-cavalry, on foot: Spearman > Pikeman > Halberdier > Siegebreaker > Phalanx
+    "Pikeman": dict(upgradesTo="Halberdier"),
+    "Shado-Pan Monk": dict(upgradesTo="Halberdier"),
+    "Fireguard": dict(upgradesTo="Halberdier"),
+    "Siegebreaker": dict(upgradesTo="Phalanx", add_uniques=["[+50]% Strength <vs [Mounted] units>"],
+                         text="Heavy infantry with rocket mortars and tower shields, who break charging riders and war machines alike."),
+    # the Humans' Paladin is their endgame rider (as in Warcraft II, where Knights become Paladins)
+    "Paladin": dict(replaces="Grand Champion", requiredTech="Focused Arcana", strength=105, cost=450, drop=["obsoleteTech", "upgradesTo"],
+                    text="Holy warriors of the Order of the Silver Hand, clad in blessed plate on barded chargers, who heal their comrades and "
+                         "turn the tide wherever they ride. Humans field ordinary Knights early on; their riders become Paladins at the end of the age.",
+                    text2="Stronger than a Grand Champion, inspires and heals nearby units, and can Lay on Hands."),
 }
 
 NEW_UNITS = [
@@ -105,6 +122,23 @@ NEW_UNITS = [
     {"name": "Warbringer", "unitType": "Heavy Infantry", "movement": 2, "strength": 90, "cost": 450, "requiredTech": "War Drums",
      "attackSound": MELEE_SOUND, "uniques": [],
      "text": "The greatest warriors of the Azerite age, who carry the war banner at the head of every charge."},
+    # Oct 24 2026 endgame pass
+    {"name": "Halberdier", "unitType": "Sword", "movement": 2, "strength": 25, "cost": 150, "requiredTech": "Mithril Forged Swords",
+     "obsoleteTech": "Battle Formations", "upgradesTo": "Siegebreaker", "attackSound": MELEE_SOUND,
+     "uniques": ["[+50]% Strength <vs [Mounted] units>"],
+     "text": "Foot soldiers with long halberds, the wall that cavalry breaks upon."},
+    {"name": "Phalanx", "unitType": "Heavy Infantry", "movement": 2, "strength": 85, "cost": 425, "requiredTech": "Titan Logic",
+     "attackSound": MELEE_SOUND,
+     "uniques": ["[+50]% Strength <vs [Mounted] units>", "[+50]% Strength <vs [War Machine] units>"],
+     "text": "A locked wall of tower shields and runed pikes, raised to stop the charges of the last wars, beast and machine alike."},
+    {"name": "War Rider", "unitType": "Mounted", "movement": 4, "strength": 60, "cost": 350, "requiredTech": "Liquid Fire",
+     "obsoleteTech": "Focused Arcana", "upgradesTo": "Grand Champion", "requiredResource": "Horses", "attackSound": "cavalry",
+     "uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
+     "text": "Heavy riders on armoured mounts, with lance, banner and shield: the shock troops of the great wars."},
+    {"name": "Grand Champion", "unitType": "Mounted", "movement": 4, "strength": 100, "cost": 425, "requiredTech": "Focused Arcana",
+     "requiredResource": "Horses", "attackSound": "cavalry",
+     "uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
+     "text": "Champions of the Argent Tournament and their like from every race, the finest riders Azeroth has ever known."},
 ]
 
 
@@ -321,7 +355,8 @@ ART_RENAME = [("Ranger", "Hunter"), ("Crossbowman", "Ranger"), ("Musketeer", "Ri
               ("Fusilier", "Gladiator"), ("Shock Trooper", "Vanquisher")]
 # new units take a copy of an existing sprite as their canvas (the pixel-art steps then redraw it)
 ART_COPY = [("Vanguard", "Man-at-Arms"), ("Vanguard", "Royal Guard"), ("Vanguard", "Warbringer"), ("Hunter", "Ranger Captain"),
-            ("Hunter", "Ranger-General"), ("Mage", "Kirin Tor Magus")]
+            ("Hunter", "Ranger-General"), ("Mage", "Kirin Tor Magus"),
+            ("Cavalry", "War Rider"), ("Cavalry", "Grand Champion"), ("Pikeman", "Halberdier"), ("Vanguard", "Phalanx")]
 UNIT_DIR = "TileSets/AbsoluteUnits/Units/"
 
 
@@ -403,7 +438,9 @@ ICONS = {"Man-at-Arms": ("helm", "hammer"), "Royal Guard": ("crown", "shield"), 
          "Stormlord": ("bolt", "crown"), "Disciple": ("book", "hand_light"), "Oracle": ("hand_light", "eye"), "Exarch": ("naaru", "hand_light"),
          "Hierarch": ("naaru", "crown"), "Cult Initiate": ("skull", "book"), "Necromancer": ("skull", "coffin"), "Lich": ("skull", "crystal"),
          "Archlich": ("skull", "crown"), "Hexer": ("mask", "flask"), "Shadow Hunter": ("mask", "bow"), "Hexlord": ("mask", "skull"),
-         "Loa Herald": ("mask", "crown"), "Mountaineer": ("gun", "mountain")}
+         "Loa Herald": ("mask", "crown"), "Mountaineer": ("gun", "mountain"),
+         "Cavalry": ("horse", "sword"), "War Rider": ("horse", "banner"), "Grand Champion": ("horse", "crown"),
+         "Halberdier": ("spear", "helm"), "Phalanx": ("spear", "castle")}
 OLD_ICONS = ["Musketeer", "Crossbowman", "Fusilier", "Shock Trooper"]
 
 
