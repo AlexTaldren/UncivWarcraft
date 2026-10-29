@@ -721,7 +721,7 @@ PERSONALITIES = {
                     diplomacy=6, loyal=6, expansion=5,
                     priorities={"Arcane Inquiry": 10, "Patronage": 7, "Tradition": 7, "Order": 6, "Dominion": 3},
                     weights=[("Library", 35), ("Arcane Sanctum", 40), ("Archery", 20)]),
-    "Highmountain Tauren": P("Domination", military=6, aggressive=4, declareWar=3, food=6, faith=6, production=6,
+    "Highmountain Tauren": P("Domination", military=6, aggressive=3, declareWar=2, food=6, faith=6, production=6,
                              diplomacy=6, loyal=8, expansion=4,
                              priorities={"Honor": 9, "Tradition": 6, "Piety": 6, "Order": 6, "Dominion": 4},
                              weights=[("Melee", 30), ("Mounted", 20), ("Walls", 15)]),
