@@ -19,6 +19,8 @@ import java.util.ArrayList;
  *  Run with the working directory containing jsons/ (from Unciv.jar) and mods/UncivWarcraft. */
 public class WarcraftSim {
     static final java.util.TreeMap<String, Integer> SPELLS = new java.util.TreeMap<>();
+    static final String[] ENDGAME_NAMES = {"Knight of the Silver Hand", "Raider", "War Rider", "Grand Champion", "Paladin", "Phalanx", "Warbringer", "Siegebreaker", "Halberdier", "Azerite Sharpshooter", "Ranger-General"};
+    static final java.util.Map<String, java.util.Set<Integer>> ENDGAME = new java.util.TreeMap<>();
     public static void main(String[] args) {
         int maxTurns = args.length > 0 ? Integer.parseInt(args[0]) : 300;
         String[] majors = args.length > 1 ? args[1].split(",") : new String[]{"Humans", "Orcs"};
@@ -78,6 +80,9 @@ public class WarcraftSim {
             sampleDiplomacy(gi);
             for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits()))
                 for (String st : u.getStatusMap().keySet()) if (st.endsWith(" Cooldown")) SPELLS.merge(st.replace(" Cooldown", ""), 1, Integer::sum);
+            for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits()))
+                for (String eg : ENDGAME_NAMES) if (u.getName().equals(eg))
+                    ENDGAME.computeIfAbsent(eg + " (" + c.getCivName() + ")", k -> new java.util.HashSet<>()).add(u.getId());
             for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.civilization.Notification n : c.getNotifications()) {
                 String tx = n.getText();
                 for (String k : new String[]{"Darkmoon","granar","fel rift","Legion","Steamwheedle","Lunar","Brewfest","orphan","Gnome","Titan","Deathwing","brewmaster","Wickerman","Hallow","Kirin Tor","murloc","Defias","Mrgl","Golden Age","rebel","Onyxia","Hakkar","Ragnaros","C'Thun","Sapphiron","Kil'jaeden","N'Zoth","Raid Trophy","Covenant","Fel","Sunwell"})
@@ -94,6 +99,9 @@ public class WarcraftSim {
         }
         System.out.println("VICTORY: " + gi.getVictoryData());
         System.out.println("SPELL COOLDOWNS SEEN (5-turn samples): " + SPELLS);
+        java.util.TreeMap<String,Integer> eg = new java.util.TreeMap<>();
+        for (java.util.Map.Entry<String, java.util.Set<Integer>> e : ENDGAME.entrySet()) eg.put(e.getKey(), e.getValue().size());
+        System.out.println("ENDGAME UNITS FIELDED (distinct units): " + eg);
         for (Civilization c : gi.getCivilizations()) {
             java.util.List<String> gpl = new ArrayList<>();
             java.util.TreeMap<String,Integer> barb = new java.util.TreeMap<>();
@@ -122,6 +130,11 @@ public class WarcraftSim {
             }
             if (c.isBarbarian()) System.out.println("BARBARIAN UNITS: " + barb);
         }
+        java.util.TreeMap<String,Integer> conq = new java.util.TreeMap<>();
+        for (Civilization c : gi.getCivilizations()) for (com.unciv.logic.city.City city : c.getCities())
+            if (city.getFoundingCivObject() != null && city.getFoundingCivObject() != c)
+                conq.merge(city.getFoundingCivObject().getCivName() + " -> " + c.getCivName(), 1, Integer::sum);
+        System.out.println("CITIES HELD BY CONQUERORS (founder -> holder): " + conq);
         System.out.println("EVENT SEEN: " + EVENTS);
         System.out.println("DIPLOMACY (pair-samples every 5 turns; share of known pairs in each state):");
         for (String k : new String[]{"Alliance-Alliance", "Horde-Horde", "Alliance-Horde", "Neutral-any"}) {

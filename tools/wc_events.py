@@ -348,7 +348,7 @@ EVENTS += [
             ("Pour it into the land (-500 Mana, +Culture and Faith)",
              _mana(500) + ["Gain [300] [Culture]", "Gain [300] [Faith]"]),
             ("Summon a great champion (-700 Mana, a free Great General)",
-             _mana(700) + ["Gain a free [Great General] unit"]),
+             _mana(700) + ["Free [Great General] appears"]),
             ("Let it crackle, and hope nothing answers", ["[-95]% weight to this choice for AI decisions"]),
         ],
     },
