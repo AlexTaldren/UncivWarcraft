@@ -55,6 +55,9 @@ SHIP_STYLE = {
                               glow=(255, 130, 50)),
     "Kul Tirans":  dict(sail=(240, 236, 224), hull=(110, 75, 45), acc=(30, 80, 110), props=["figure"]),
     "Zandalari Trolls": dict(sail=(240, 200, 80), hull=(150, 110, 60), acc=(40, 130, 110), props=["mask", "figure"]),
+    "Naga": dict(sail=(60, 150, 140), hull=(70, 110, 100), acc=(240, 205, 90), props=["figure", "glow"], glow=(120, 240, 220)),
+    "Nightborne": dict(sail=(110, 70, 170), hull=(90, 70, 110), acc=(232, 200, 110), props=["glow"], glow=(200, 150, 255)),
+    "Highmountain Tauren": dict(sail=(190, 150, 100), hull=(110, 80, 55), acc=(120, 200, 225), props=["figure"]),
 }
 
 
@@ -236,7 +239,7 @@ TW, TH = 64, 56
 
 
 FIRE = {"Forsaken": (140, 240, 90), "Scourge": (120, 200, 255), "Draenei": (170, 150, 255),
-        "Dark Iron Dwarves": (255, 120, 40)}
+        "Dark Iron Dwarves": (255, 120, 40), "Naga": (120, 240, 220), "Nightborne": (200, 150, 255)}
 
 # race: shelter kind and colours for the hunting camp, plus a camp prop
 CAMP = {
@@ -258,6 +261,9 @@ CAMP = {
     "Dark Iron Dwarves": dict(kind="flat", wall=(80, 70, 70), roof=(50, 45, 46), prop="keg"),
     "Kul Tirans":  dict(kind="tent", wall=(230, 225, 210), roof=(40, 85, 110), prop="pennant_blue", trim=(230, 220, 190)),
     "Zandalari Trolls": dict(kind="thatch", wall=(185, 160, 105), roof=(235, 195, 70), prop="mask"),
+    "Naga": dict(kind="dome", wall=(80, 150, 140), roof=(40, 110, 120), prop="crystal"),
+    "Nightborne": dict(kind="dome", wall=(190, 180, 215), roof=(90, 50, 150), prop="orb", trim=(232, 200, 110)),
+    "Highmountain Tauren": dict(kind="tent", wall=(170, 130, 90), roof=(120, 90, 60), prop="totem", painted=True),
 }
 
 
@@ -294,6 +300,10 @@ FORT = {
                               lamp=(255, 130, 50)),
     "Kul Tirans":  dict(wall="stone", col=(205, 200, 188), roof="spire", rcol=(30, 70, 95), flag=(30, 80, 110)),
     "Zandalari Trolls": dict(wall="palisade", col=(195, 170, 100), roof="thatch", rcol=(235, 195, 70), flag=(40, 130, 110)),
+    "Naga": dict(wall="stone", col=(90, 150, 140), roof="spire", rcol=(40, 110, 120), flag=(120, 230, 210), lamp=(120, 240, 220)),
+    "Nightborne": dict(wall="stone", col=(195, 185, 220), roof="spire", rcol=(90, 50, 150), flag=(175, 125, 255),
+                       trim=(232, 200, 110), lamp=(200, 150, 255)),
+    "Highmountain Tauren": dict(wall="palisade", col=(160, 120, 80), roof="tent", rcol=(120, 90, 60), flag=(125, 200, 225)),
 }
 
 def fort(race):

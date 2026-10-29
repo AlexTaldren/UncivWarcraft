@@ -362,6 +362,9 @@ SKIN = {
     "Dark Iron Dwarves": [ramp((55, 50, 55), (140, 128, 130), 5), ramp((65, 52, 50), (150, 125, 115), 5)],
     "Kul Tirans": None,
     "Zandalari Trolls": [ramp((40, 95, 85), (120, 180, 160), 5), ramp((60, 100, 70), (140, 185, 130), 5)],
+    "Naga": [ramp((30, 95, 95), (110, 200, 180), 5), ramp((40, 90, 70), (130, 190, 150), 5)],
+    "Nightborne": [ramp((70, 70, 120), (175, 170, 220), 5)],
+    "Highmountain Tauren": [ramp((70, 52, 38), (165, 130, 95), 5), ramp((60, 56, 52), (150, 140, 128), 5)],
     # barbarian peoples (sprites for units owned by the Barbarians)
     "Defias": None,
     "Gnolls": [ramp((110, 80, 45), (190, 150, 95), 5)],
@@ -374,6 +377,9 @@ HAIR = {
     "Night Elves": [(60, 160, 170), (40, 90, 160), (220, 220, 235)],
     "Dark Iron Dwarves": [(30, 26, 26), (60, 30, 25), (150, 50, 30)],
     "Zandalari Trolls": [(240, 230, 210), (240, 200, 70), (60, 180, 160)],
+    "Naga": [(40, 160, 140), (150, 60, 140), (230, 200, 90)],
+    "Nightborne": [(235, 235, 245), (150, 110, 220), (60, 60, 110)],
+    "Highmountain Tauren": [(50, 38, 30), (90, 70, 55)],
 }
 # (width, height) scale of the figure
 BODY = {
@@ -382,7 +388,8 @@ BODY = {
     "High Elves": (0.95, 1.04), "Forsaken": (0.90, 1.0), "Draenei": (1.0, 1.12),
     "Goblins": (0.85, 0.72), "Worgen": (1.18, 1.12), "Pandaren": (1.25, 0.95),
     "Scourge": (0.95, 1.02), "Defias": (1.0, 1.0),
-    "Dark Iron Dwarves": (1.14, 0.80), "Kul Tirans": (1.1, 1.06), "Zandalari Trolls": (0.96, 1.26), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
+    "Dark Iron Dwarves": (1.14, 0.80), "Kul Tirans": (1.1, 1.06), "Zandalari Trolls": (0.96, 1.26),
+    "Naga": (1.0, 1.1), "Nightborne": (0.95, 1.12), "Highmountain Tauren": (1.3, 1.1), "Gnolls": (1.08, 1.1), "Murlocs": (1.0, 0.78),
 }
 
 
@@ -441,6 +448,14 @@ def make(layers, race, unit, mode="full"):
             ears(base, hb, mid, 3, True)
         elif race == "Tauren":
             horns(base, hb, (230, 222, 200), "bull")
+        elif race == "Highmountain Tauren":
+            horns(base, hb, (205, 190, 150), "bull")
+        elif race == "Naga":
+            ears(base, hb, mid, 5, True)
+            topknot(base, hb, pick(HAIR["Naga"], unit), 3, crest=True)
+        elif race == "Nightborne":
+            ears(base, hb, mid, 5, True)
+            topknot(base, hb, pick(HAIR["Nightborne"], unit), 2, crest=False)
         elif race == "Draenei":
             horns(base, hb, (70, 60, 80), "back")
         elif race in ("Night Elves", "Blood Elves", "High Elves"):
@@ -481,7 +496,7 @@ RIDER = {"Chariot Archer": "Archer", "Horseman": "Spearman", "Knight": "Swordsma
          "Lancer": "Pikeman", "Cavalry": "Musketman"}
 ARMORED = {"Knight", "Lancer"}
 CREW = ["Catapult", "Trebuchet"]
-RACES = ["Dark Iron Dwarves", "Kul Tirans", "Zandalari Trolls",
+RACES = ["Dark Iron Dwarves", "Kul Tirans", "Zandalari Trolls", "Naga", "Nightborne", "Highmountain Tauren",
          "Orcs", "Trolls", "Tauren", "Forsaken", "Scourge", "Blood Elves", "Goblins", "Dwarves", "Gnomes",
          "Night Elves", "Draenei", "Worgen", "High Elves", "Pandaren"]
 

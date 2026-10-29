@@ -6,7 +6,7 @@ Leader personalities borrow the numeric AI tuning of a comparable Civ V leader
 
 RELIGIONS = ["Holy Light", "Elune", "Earth Mother", "Shamanism", "Loa",
              "Cenarion Circle", "August Celestials", "Titans",
-             "Forgotten Shadow", "Light of the Sunwell"]
+             "Forgotten Shadow", "Light of the Sunwell", "The Old Gods", "The Nightwell"]
 
 # ---------------------------------------------------------------- Humans (full)
 HUMAN_UNITS = [
@@ -444,6 +444,56 @@ NATIONS = [
        "Zandalar's treasuries are deep. What would you trade?",
        "You have dishonoured yourself before the loa.",
        "I am Talanji, Queen of the Zandalari. Show the proper respect."),
+    # ---- Oct 2026 content pass: the Naga, the Nightborne and the Highmountain Tauren
+    _n("Naga", "Queen Azshara", "Naga", [12, 62, 78], [110, 225, 195], "The Old Gods",
+       "Domination", ["Coast"], "Tides of Nazjatar",
+       ["Enables embarkation for land units",
+        "[+1] Movement <for [Embarked] units>",
+        "[+1 Production] from [Coast] tiles [in all cities]",
+        "[+15]% Strength <for [Land] units> <when fighting in [Coast] tiles>"],
+       "Dido",
+       [],
+       "Hail, Queen Azshara, Light of Lights, Empress of the Highborne. When the Well of Eternity tore the world apart, your people were dragged beneath the waves and remade as the naga. From drowned Nazjatar you have waited ten thousand years.",
+       "Will the surface world kneel to its rightful queen once more?",
+       "The tide rises. Every shore you hold will drown.",
+       "You dare raise a hand against your queen? You will beg for the depths.",
+       "Nazjatar... falls silent. But the sea remembers.",
+       "You may approach the throne.", "Kneel, insect, or be gone.",
+       "The treasures of the deep, for the right offering.",
+       "You have chosen your fate. The sea will take you.",
+       "I am Azshara, Queen of the Naga, and you are fortunate I deign to speak to you."),
+    _n("Nightborne", "Thalyssra", "Nightborne", [40, 22, 72], [175, 125, 255], "The Nightwell",
+       "Scientific", ["Grassland"], "Arcane Ingenuity",
+       ["[+15]% [Science] [in all cities]",
+        "[+2 Science] from [Arcane Crystals] tiles [in all cities]",
+        "[+10]% [Culture] [in all cities]"],
+       "Sejong",
+       [],
+       "Hail, First Arcanist Thalyssra of Suramar. For ten thousand years your city lived sealed beneath a shield, fed by the Nightwell and ruled by tyrants. You led the Nightfallen to freedom, and now Shal'dorei magic returns to the world.",
+       "Will the jewel of Suramar shine for all of Azeroth to see?",
+       "Suramar's patience has ended. Our spellblades march.",
+       "You strike at Suramar? You will learn what our magic can do.",
+       "The Nightwell gutters... Suramar falls dark.",
+       "Ande'thoras-ethil. Be welcome.", "Your presence is... tolerated.",
+       "Arcwine and arcane crystal, for those who can afford them.",
+       "You have shown us your true face, and we will not forget it.",
+       "I am Thalyssra, First Arcanist of Suramar, who freed her people from the Nightwell's tyrant."),
+    _n("Highmountain Tauren", "Mayla Highmountain", "Highmountain", [72, 46, 30], [125, 200, 225], "Earth Mother",
+       "Domination", ["Hill"], "Spirit of the Mountain",
+       ["[+20]% Strength <for [Military] units> <when fighting in [Hill] tiles>",
+        "[+1 Food] from [Hill] tiles [in all cities]",
+        "[+1 Culture] from [Mountain] tiles [in all cities]"],
+       "Pachacuti",
+       [],
+       "Hail, Mayla Highmountain, High Chieftain of the Highmountain tribes. In the peaks of the Broken Isles your people kept faith with the Earthmother and the great dragon Huln's legacy, the Riverbend, Skyhorn, Bloodtotem and Highmountain tribes united at last under your banner.",
+       "Will the tribes of Highmountain stand tall over the world?",
+       "The tribes ride to war. The mountain will not be moved.",
+       "You attack the mountain? Then the mountain falls on you.",
+       "Thunder Totem... falls. The Earthmother weeps.",
+       "The mountain greets you, friend.", "State your business and go.",
+       "Highmountain has hides, timber and stone for honest trade.",
+       "You have dishonoured the tribes. We will remember.",
+       "I am Mayla Highmountain, High Chieftain of Highmountain. Speak plainly."),
 ]
 
 # ---------------------------------------------------------------- City-states
@@ -473,6 +523,11 @@ CITY_STATES = [
     ("The Consortium", "Mercantile", [40, 30, 80], [170, 120, 255]),      # ethereals
     ("Mogu'shan", "Cultured", [60, 50, 40], [230, 190, 90]),              # mogu
     ("Ahn'Qiraj", "Militaristic", [70, 30, 75], [235, 200, 120]),           # qiraji
+    # content pass (Oct 2026): Pandaria and the Broken Isles
+    ("Shado-Pan Monastery", "Militaristic", [120, 30, 30], [235, 225, 210]),  # Kun-Lai Summit
+    ("Golden Lotus", "Religious", [200, 160, 40], [250, 245, 220]),           # Vale of Eternal Blossoms
+    ("Klaxxi'vess", "Militaristic", [150, 120, 30], [60, 40, 20]),            # mantid, Dread Wastes
+    ("Valdisdall", "Militaristic", [60, 70, 90], [210, 220, 230]),            # vrykul, Stormheim
 ]
 
 
@@ -542,6 +597,17 @@ CITIES = {
                          "Nazwatha", "Kal'tun", "Zul'jan Ruins", "Warport Rastari", "Vol'dun Outpost",
                          "Vulpera Hideaway", "Nazmir Rise", "Zul'Nazman", "Temple of Akunda", "Sanctuary of the Devoted",
                          "Talanji's Rebuke", "Dreadpearl Shallows"],
+    "Naga": ["Nazjatar", "Coilfang Reservoir", "Vashj'ir", "Zin-Azshari", "Abyssal Depths", "Shimmering Expanse",
+             "Kelp'thar", "Eye of Azshara", "Ravenna's Reach", "Slithering Scar", "Font of Azshara", "Newhome",
+             "Utama's Respite", "Azshara's Repose", "Zanj'ir Terrace", "Shirakess Point", "Lair of the Tidecaller",
+             "Bastion of the Depths"],
+    "Nightborne": ["Suramar", "Shal'Aran", "Falanaar", "Moon Guard Stronghold", "Crimson Thicket", "Jandvik",
+                   "Meredil", "Felsoul Hold", "Kel'balor", "Lunastre Estate", "Ambervale", "Telanor",
+                   "Elor'shan", "Tel'anor", "Nar'thalas", "Sanctum of Order", "Astravar Harbor", "Evermoon Terrace"],
+    "Highmountain Tauren": ["Thunder Totem", "Riverbend", "Skyhorn", "Bloodtotem Hold", "Trueshot Lodge",
+                            "Nesingwary Camp", "Rockaway Shallows", "Prepfoot", "Ironhorn Enclave", "Feltotem",
+                            "Mucksnout Den", "Sylvan Falls", "Shipwreck Cove", "Pinerock Basin", "Stonedark Grotto",
+                            "Nightwatcher's Perch", "Huln's War", "Spiritwander Point"],
     "Scourge": ["Icecrown Citadel", "Naxxramas", "Scholomance", "Stratholme", "Andorhal", "Acherus",
                 "Azjol-Nerub", "Drak'Tharon Keep", "Corp'rethar", "Voltarus", "Kolramas", "The Shadow Vault",
                 "Pit of Saron", "Ymirheim", "Darrowshire", "Plaguewood", "Thondroril", "Caer Darrow"],
@@ -555,6 +621,7 @@ FACTION = {
     "Blood Elves": "Horde", "Goblins": "Horde",
     "Pandaren": "Neutral", "Scourge": "Scourge",
     "Dark Iron Dwarves": "Alliance", "Kul Tirans": "Alliance", "Zandalari Trolls": "Horde",
+    "Naga": "Naga", "Nightborne": "Horde", "Highmountain Tauren": "Horde",
 }
 
 # ---------------------------------------------------------------- AI personalities
@@ -650,6 +717,19 @@ PERSONALITIES = {
                  aggressive=5, declareWar=5, diplomacy=6, loyal=2,
                  priorities={"Commerce": 10, "Arcane Inquiry": 6, "Liberty": 5, "Order": 5, "Dominion": 5},
                  weights=[("Market", 40), ("Bank", 40), ("Siege", 30)]),
+    "Nightborne": P("Scientific", science=9, culture=7, gold=6, military=5, aggressive=4, declareWar=4,
+                    diplomacy=6, loyal=6, expansion=5,
+                    priorities={"Arcane Inquiry": 10, "Patronage": 7, "Tradition": 7, "Order": 6, "Dominion": 3},
+                    weights=[("Library", 35), ("Arcane Sanctum", 40), ("Archery", 20)]),
+    "Highmountain Tauren": P("Domination", military=7, aggressive=6, declareWar=5, food=6, faith=6, production=6,
+                             diplomacy=6, loyal=8, expansion=6,
+                             priorities={"Honor": 9, "Tradition": 6, "Piety": 6, "Order": 6, "Dominion": 4},
+                             weights=[("Melee", 30), ("Mounted", 20), ("Walls", 15)]),
+    # --- the Naga
+    "Naga": P("Domination", military=8, aggressive=8, declareWar=7, production=6, expansion=7, gold=6,
+              diplomacy=2, loyal=3, faith=5,
+              priorities={"Dominion": 9, "Honor": 8, "Commerce": 6, "Arcane Inquiry": 5, "Free Peoples": 1},
+              weights=[("Water", 40), ("Melee", 25), ("Harbor", 25)]),
     # --- the Scourge
     "Scourge": P("Domination", military=9, aggressive=9, declareWar=8, production=8, expansion=7, food=2,
                  culture=3, faith=4, happiness=3, diplomacy=1, loyal=3, science=6,

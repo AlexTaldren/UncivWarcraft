@@ -18,6 +18,7 @@ TAGS = {
     "Blood Elves": ["Horde"], "Goblins": ["Horde"],
     "Pandaren": [], "Scourge": ["Undead"],
     "Dark Iron Dwarves": ["Alliance"], "Kul Tirans": ["Alliance"], "Zandalari Trolls": ["Horde"],
+    "Naga": [], "Nightborne": ["Horde"], "Highmountain Tauren": ["Horde"],
 }
 RIVALRY = {   # old enemies fight a little harder against each other
     "Alliance": "[+10]% Strength <for [Military] units> <vs [Horde] units>",
@@ -71,6 +72,15 @@ PLAYSTYLE = {
     "Zandalari Trolls": (["[+1 Faith, +1 Culture] from [{Jungle} {Camp}] tiles [in all cities]",
                           "[+10]% Strength <for [Mounted] units>"],
                          "Children of the Loa: jungle camps give +1 Faith and +1 Culture, and their dinosaur riders fight 10% harder."),
+    "Naga": (["[+1 Gold] from [Coast] tiles [in all cities]",
+              "[+25]% Production when constructing [Water] units [in all cities]"],
+             "Children of the Deep: the naga embark from the start and fight 15% harder on coasts; coast tiles give +1 Production and +1 Gold, and ships are built 25% faster."),
+    "Nightborne": (["[+1 Science] from every [Arcway]",
+                    "[+10]% Great Person generation [in all cities]"],
+                   "Arcane Ingenuity: +15% Science, Arcane Crystals give +2 Science, and Great People come 10% faster. Arcways replace the Arcane Sanctum."),
+    "Highmountain Tauren": (["[+10]% Strength <for [Mounted] units>",
+                             "[+1 Production] from [{Hill} {Mine}] tiles [in all cities]"],
+                            "Children of Huln: units fight 20% harder in hills, hills give +1 Food and mines on hills +1 Production; Thunderhoof riders fight 10% harder."),
     "Scourge": (["[-50]% Food consumption by [Population] [in all cities]",
                  "[+2 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
                  "[1] population in a random city <upon defeating a [Military] unit> <with [50]% chance>",
@@ -177,6 +187,9 @@ CLERICS = {
     "Dark Iron Dwarves": ("Flamekeeper", "Dark Iron priests who burn the corruption out of the land with forge-fire."),
     "Kul Tirans": ("Tidesage", "Tidesages of the Storm, who wash blight and fel from the land with the power of the sea."),
     "Zandalari Trolls": ("Loa Speaker", "Zandalari priests who call on the loa to drive the sickness from the earth."),
+    "Naga": ("Tidepriestess", "Naga priestesses who wash corruption from the shore with the power of the tides."),
+    "Nightborne": ("Shal'dorei Mender", "Nightborne healers who burn blight and fel from the land with pure arcane light."),
+    "Highmountain Tauren": ("Spiritwalker", "Highmountain spiritwalkers who ask the ancestors to heal the wounded land."),
 }
 ICONS_CLERIC = "hand_light"
 
@@ -195,6 +208,8 @@ MANA_SOURCES = {
     # v0.17
     "Mana Forge": 1, "Elven Spire": 1, "Loa Shrine": 1, "Spirit Lodge": 1, "Crystal Hall": 1,
     "Shadowforge Furnace": 1, "Admiralty Drydock": 1, "Golden Pyramid": 1, "Cathedral of Light": 1,
+    # content pass (Oct 2026)
+    "Coral Spawning Pool": 1, "Arcway": 2, "Ironhorn Lodge": 1,
 }
 # Arcane Crystals deposits feed the arcane schools
 MANA_WITH_CRYSTALS = {"Arcane Sanctum": 1, "Mage Tower": 1}
@@ -207,7 +222,9 @@ MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihil
               # v0.17
               "Knight of the Silver Hand": 10, "Lightforged Warframe": 15, "Ranger-Lord": 8, "Dragonhawk Rider": 10,
               "Cloud Serpent Rider": 12, "Crypt Fiend": 10, "Mountain Giant": 12, "Troll Berserker": 6,
-              "Fireguard": 6, "Direhorn Rider": 8}
+              "Fireguard": 6, "Direhorn Rider": 8,
+              # content pass (Oct 2026)
+              "Snap Dragon": 6, "Spellblade": 8, "Duskwatch Sentinel": 6}
 HERO_MANA = 30          # every hero costs this to recruit
 # magical buildings and wonders
 BUILDING_MANA_COSTS = {"Mage Tower": 20, "Arcane Laboratory": 40, "Mana Reactor": 60, "Runestone": 10,
@@ -270,6 +287,12 @@ HEROES = {
                    "Lord Admiral of Kul Tiras and hero of the Second War, father of Jaina."),
     "Zandalari Trolls": ("Rastakhan", "King of the Zandalari", ["[+25]% Strength <when defending>", "All adjacent units heal [+10] HP when healing"],
                          "The long-reigning king of Zandalar, who bargained with the loa of death to keep his empire alive."),
+    "Naga": ("Lady Vashj", "Sea Witch", ["[+25]% Strength <when fighting in [Coast] tiles>", "May attack when embarked", "[+1] Movement"],
+             "Azshara's most powerful handmaiden, who led the naga out of the depths and served Illidan at Coilfang Reservoir."),
+    "Nightborne": ("Grand Magistrix Elisande", "Chronomancer", ["[+25]% Strength <when attacking>", "[+1] Movement"],
+                   "The ruler of Suramar for ten thousand years, a mistress of time magic who bent the flow of battle to her will."),
+    "Highmountain Tauren": ("Huln Highmountain", "Hero of the Tribes", ["[+25]% Strength <when fighting in [Hill] tiles>", "All adjacent units heal [+5] HP when healing"],
+                            "The legendary chieftain who united the tribes of Highmountain against the Legion ten thousand years ago."),
     "Scourge": ("Kel'Thuzad", "Lich", ["[+25]% Strength <vs [Alliance] units>", "[+25]% Strength <when attacking>"],
                 "Archmage of Dalaran turned necromancer, founder of the Cult of the Damned and the Lich King's first lieutenant."),
 }
@@ -308,4 +331,4 @@ HERO_ICON_BADGE = {"Humans": "hammer", "Orcs": "axe", "Night Elves": "leaf", "Dw
                    "Tauren": "totem", "Trolls": "mask", "Blood Elves": "flame", "High Elves": "bow",
                    "Pandaren": "chalice", "Forsaken": "skull", "Draenei": "naaru", "Goblins": "bomb",
                    "Worgen": "wolf", "Scourge": "skull", "Dark Iron Dwarves": "flame", "Kul Tirans": "anchor",
-                   "Zandalari Trolls": "coins"}
+                   "Zandalari Trolls": "coins", "Naga": "wave", "Nightborne": "orb", "Highmountain Tauren": "totem"}

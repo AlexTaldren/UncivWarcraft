@@ -606,6 +606,70 @@ def lifeblood(art):
     return art.clip(stack(im, l, glow(layer(w), (120, 255, 180), 1.4, 0.9)))
 
 
+# ---- content pass (Oct 2026): Pandaria and the Broken Isles
+def tomb_of_sargeras(art):
+    im = art.base("Desert", tint=(0.85, 0.75, 0.7))
+    p = Paint(TW, TH)
+    stone = (150, 140, 120)
+    p.poly([(14, 50), (50, 50), (46, 44), (18, 44)], shade(stone, 0.85), "base")
+    p.poly([(20, 45), (44, 45), (36, 6), (28, 6)], stone, "tomb")                   # the great tapering tomb
+    p.poly([(32, 45), (44, 45), (36, 6), (32, 6)], shade(stone, 0.8), "tombR")
+    for y in (36, 26, 16):
+        p.line(22 + (45 - y) * 0.2, y, 42 - (45 - y) * 0.2, y, 1, shade(stone, 0.65), "band%d" % y)
+    p.poly([(29, 45), (35, 45), (35, 37), (29, 37)], (40, 70, 30), "door")
+    l = layer(p, outline=(45, 38, 30))
+    g = Paint(TW, TH)
+    for x, y in ((24, 30), (40, 22), (31, 12), (18, 46), (47, 47)):
+        g.dot(x, y, FEL_LIGHT, "fel")
+    g.line(32, 4, 32, 0, 2, FEL, "beam")
+    return art.clip(stack(im, l, glow(layer(g), FEL, 1.6, 1.2)))
+
+
+def shaladrassil(art):
+    im = art.base("Grassland", tint=(0.8, 0.85, 0.95))
+    p = Paint(TW, TH)
+    p.ell(32, 46, 22, 6, (80, 120, 80), "ground")
+    world_tree(p, 32, 46, 24, (110, 90, 110), (110, 170, 120), "shal", spread=1.25)
+    return art.clip(stack(im, layer(p, outline=(40, 35, 50))))
+
+
+def neltharions_lair(art):
+    im = art.base("Tundra")
+    p = Paint(TW, TH)
+    mountain(p, 32, 50, 34, 34, (110, 100, 95), "peak", snow=(235, 240, 245))
+    p.ell(32, 42, 9, 7, (30, 22, 20), "cave")
+    for i, (x, y) in enumerate(((24, 42), (40, 41), (29, 36), (36, 37))):
+        p.dot(x, y, (255, 140, 40), "lava%d" % i)
+    l = layer(p, outline=(40, 32, 30))
+    g = Paint(TW, TH)
+    g.ell(32, 45, 5, 2, (255, 120, 30), "glow")
+    return art.clip(stack(im, l, glow(layer(g), (255, 120, 30), 1.4, 1.0)))
+
+
+def mount_neverest(art):
+    im = art.base("Snow")
+    p = Paint(TW, TH)
+    mountain(p, 22, 50, 22, 26, (125, 120, 130), "m2", snow=(245, 248, 252))
+    mountain(p, 34, 50, 30, 44, (135, 130, 140), "m1", snow=(250, 252, 255))
+    for i, x in enumerate((16, 26, 38, 48)):                                       # prayer flags
+        p.dot(x, 44 - abs(x - 32) * 0.3, [(200, 50, 40), (240, 200, 60), (60, 140, 200), (60, 160, 90)][i], "flag%d" % i)
+    return art.clip(stack(im, layer(p, outline=(45, 45, 60))))
+
+
+def kypari_zar(art):
+    im = art.base("Desert", tint=(0.9, 0.82, 0.6))
+    p = Paint(TW, TH)
+    amber = (230, 150, 40)
+    p.poly([(28, 48), (36, 48), (35, 18), (29, 18)], (110, 80, 50), "trunk")
+    p.ell(32, 16, 18, 10, (150, 120, 40), "crown")
+    for i, (x, y) in enumerate(((22, 20), (42, 18), (32, 24), (26, 12), (38, 11))):
+        p.ell(x, y, 3.2, 3.8, amber, "sap%d" % i)
+    l = layer(p, outline=(60, 40, 20))
+    g = Paint(TW, TH)
+    g.ell(32, 40, 3, 4, amber, "glob")
+    return art.clip(stack(im, l, glow(layer(g), amber, 1.3, 0.9)))
+
+
 WONDERS = {
     "The Maelstrom": maelstrom, "Mount Hyjal": hyjal, "Teldrassil": teldrassil, "Moonglade": moonglade,
     "Lake Elune'ara": elune_ara, "Stonetalon Peak": stonetalon, "Red Rocks of Mulgore": red_rocks,
@@ -614,6 +678,8 @@ WONDERS = {
     "Cape of Stranglethorn": stranglethorn, "Kelp'thar Forest": kelpthar,
     "The Dark Portal": dark_portal, "The Nexus": nexus, "Galakrond's Rest": galakrond,
     "Sunken Temple": sunken_temple, "Maraudon": maraudon, "The Lifeblood Pillar": lifeblood,
+    "Tomb of Sargeras": tomb_of_sargeras, "Shaladrassil": shaladrassil, "Neltharion's Lair": neltharions_lair,
+    "Mount Neverest": mount_neverest, "Kypari Zar": kypari_zar,
 }
 
 

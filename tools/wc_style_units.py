@@ -209,7 +209,23 @@ def fist(f, x, y, skin=OSKIN, r=6.5, dark=1.0):
 
 
 # ----------------------------------------------------------------- human body
+def naga_tail(f):
+    """A naga's serpent tail in place of legs: a thick coil from the hips to the ground."""
+    sk = HSKIN
+    belly = tuple(min(255, int(c * 1.2 + 25)) for c in tuple(sk))
+    f.paint(f.cap((-14, -2), (-24, 0), 6, 3.5), sk, mat="skin", dark=0.8)                  # tail tip curling back
+    f.paint(f.cap((6, -6), (-14, -2), 9, 6), sk, mat="skin", dark=0.9)
+    f.paint(f.cap((0, -30), (8, -14), 9.5, 9), sk, mat="skin")
+    f.paint(f.cap((8, -14), (6, -6), 9, 9), sk, mat="skin")
+    f.paint(f.cap((4, -26), (10, -10), 3.2, 3), belly, mat="skin", outline=0.4)            # pale belly scales
+    f.paint(f.poly([(-2, -22), (-9, -18), (-3, -14)]), L_MAIN, layer="l1", mat="cloth", outline=0.5)   # fin
+
+
 def human_legs(f, armor="plate", far=True, near=True):
+    if CTX.spec.get("tail"):
+        if near:
+            naga_tail(f)
+        return
     col = STEEL if armor == "plate" else (LEATHER if armor == "leather" else CLOTH_BROWN)
     mat = "metal" if armor == "plate" else ("leather" if armor == "leather" else "cloth")
     if far:

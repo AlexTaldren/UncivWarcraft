@@ -26,7 +26,7 @@ from wc_depth import lore, need, ai, ERAS, FACTIONS, HERO_CLASSES
 
 MANA = "Mana"
 ALLIANCE = ["Humans", "Night Elves", "Dwarves", "Gnomes", "High Elves", "Draenei", "Worgen", "Dark Iron Dwarves", "Kul Tirans"]
-HORDE = ["Orcs", "Tauren", "Trolls", "Blood Elves", "Forsaken", "Goblins", "Zandalari Trolls"]
+HORDE = ["Orcs", "Tauren", "Trolls", "Blood Elves", "Forsaken", "Goblins", "Zandalari Trolls", "Nightborne", "Highmountain Tauren"]
 ADJ = "[%d]%% Strength for enemy [Military] units in adjacent [All] tiles"
 
 
@@ -156,6 +156,8 @@ FIRST_FINDER = {
     "Moonglade": "+100 Faith", "Stonetalon Peak": "+80 Culture", "Teldrassil": "+100 Culture", "Red Rocks of Mulgore": "+100 Faith",
     "The Dark Portal": "+100 Culture", "The Nexus": "+150 Science", "Galakrond's Rest": "+100 Science", "Sunken Temple": "+100 Faith",
     "Maraudon": "+100 Gold", "The Lifeblood Pillar": "+100 Science",
+    "Tomb of Sargeras": "+150 Faith", "Shaladrassil": "+120 Faith", "Neltharion's Lair": "+120 Gold",
+    "Mount Neverest": "+100 Culture", "Kypari Zar": "+100 Science",
     # Lost City of the Tol'vir already grants 500 Gold
 }
 
@@ -183,7 +185,16 @@ DISCOVERIES = {
         "A gate of carved stone towers over the Blasted Lands. Fel light flickers between its pillars, and something on the far side is watching.",
         [("Seal the gate with wards.", ["Gain [80] [Faith]"]),
          ("Study the fel magic that powers it.", ["Gain [100] [Science]", "Instantly gain [15] [Mana]"]),
-         ("Stand against the Deceiver himself.", boss("Kil'jaeden the Deceiver", "Age of the Legion", 100))]),
+         ("Confront the warlock who first opened it.", boss("Gul'dan the Destroyer", "Age of the Legion", 90))]),
+    "Tomb of Sargeras": ("The Tomb of Sargeras",
+        "On the Broken Shore stands the Tomb of Sargeras, its seals cracked and fel light pouring from within. Demons walk its halls.",
+        [("Stand against the Deceiver himself.", boss("Kil'jaeden the Deceiver", "Age of the Legion", 100)),
+         ("Reseal the outer gates.", ["Gain [120] [Faith]"]),
+         ("Study the Pillars of Creation within.", ["Gain [120] [Science]", "Instantly gain [15] [Mana]"])]),
+    "Mount Neverest": ("The Peak of Serenity",
+        "Pilgrims climb the endless stair of Mount Neverest to the Peak of Serenity, where the monks of the Shado-Pan train.",
+        [("Send our people on pilgrimage.", ["Gain [80] [Culture]"]),
+         ("Learn the monks' discipline.", ["Gain [60] [Faith]", "Gain [40] [Science]"])]),
     "Galakrond's Rest": ("The Bones of Galakrond",
         "The bones of Galakrond, the first and greatest proto-dragon, lie across the Dragonblight. The Scourge would give much to raise them.",
         [("Study the first of dragons.", ["Gain [100] [Science]"]),
@@ -363,6 +374,9 @@ SPY_NAMES = {
     "Dark Iron Dwarves": ["Grimtotem's Bane", "Hurley Blackbreath", "Kharra Emberfist", "Dorn Smoldersmith", "Vesha Ashvein", "Gorm Cinderhand"],
     "Kul Tirans": ["Flynn's Contact", "Taelia's Runner", "Amelia Blackwater", "Edwin Saltmarsh", "Hesta Driftwood", "Corbin Galewind"],
     "Zandalari Trolls": ["Zul's Whisper", "Kiro the Unseen", "Ja'zinn", "Naz'kira", "Roh'tal", "Zan'jin"],
+    "Naga": ["Ssylas the Silent", "Lissara Deepscale", "Nazrith", "Vessa Tidewhisper", "Ozhar", "Ssaressa"],
+    "Nightborne": ["Ly'leth's Agent", "Vaelinor Duskwatch", "Selys Shadowveil", "Arcanist Tirenn", "Melandra Nightfall", "Thoridan"],
+    "Highmountain Tauren": ["Silent Hoof", "Mayla's Scout", "Tahu Windrunner", "Kiyo Stonedark", "Nahi Ravenhorn", "Oro Mistwalker"],
 }
 SPY_NATIONS = {
     "Humans": ["[+15]% spy effectiveness [in all cities]"],
@@ -372,6 +386,7 @@ SPY_NATIONS = {
     "Night Elves": ["[-20]% enemy spy effectiveness [in all cities]"],
     "Worgen": ["[-20]% enemy spy effectiveness [in all cities]"],
     "Pandaren": ["[-25]% enemy spy effectiveness [in all cities]"],
+    "Nightborne": ["[+15]% spy effectiveness [in all cities]"],
 }
 RAVENHOLDT = {"name": "Ravenholdt", "isWonder": True, "culture": 1, "requiredTech": "Banking",
               "greatPersonPoints": {"Great Merchant": 1},
@@ -394,7 +409,7 @@ PURCHASE_NATIONS = {
 
 # ====================================================================== 9. head starts in later ages
 HEAD_STARTS = {   # race: (Arathor/Dark Portal, Third War/Lich King, Cataclysm onwards)
-    "Humans": (["Footman", "Footman"], ["Paladin", "Footman"], ["Knight of the Silver Hand", "Footman"]),
+    "Humans": (["Footman", "Footman"], ["Knight", "Footman"], ["Knight of the Silver Hand", "Footman"]),
     "Orcs": (["Grunt", "Grunt"], ["Grunt", "Wolf Rider"], ["Raider", "Grunt"]),
     "Night Elves": (["Huntress", "Wisp"], ["Huntress", "Glaive Thrower"], ["Mountain Giant", "Huntress"]),
     "Dwarves": (["Ironforge Rifleman"], ["Ram Rider", "Ironforge Rifleman"], ["Steam Armor", "Ironforge Rifleman"]),
@@ -412,6 +427,9 @@ HEAD_STARTS = {   # race: (Arathor/Dark Portal, Third War/Lich King, Cataclysm o
     "Dark Iron Dwarves": (["Fireguard"], ["Fireguard", "Fireguard"], ["Dark Iron Golem", "Fireguard"]),
     "Kul Tirans": (["Admiralty Gunner"], ["Admiralty Gunner", "Admiralty Gunner"], ["Admiralty Gunner", "Kul Tiran Marine"]),
     "Zandalari Trolls": (["Raptor Rider"], ["Raptor Rider", "Direhorn Rider"], ["Direhorn Rider", "Direhorn Rider"]),
+    "Naga": (["Myrmidon", "Myrmidon"], ["Myrmidon", "Snap Dragon"], ["Snap Dragon", "Myrmidon"]),
+    "Nightborne": (["Spellblade"], ["Spellblade", "Duskwatch Sentinel"], ["Duskwatch Sentinel", "Spellblade"]),
+    "Highmountain Tauren": (["Thunderhoof Rider"], ["Thunderhoof Rider", "Highmountain Warbrave"], ["Highmountain Warbrave", "Thunderhoof Rider"]),
 }
 TIER_OF = {era: (0 if i <= 2 else 1 if i <= 4 else 2) for i, era in enumerate(ERAS) if i >= 1}
 
@@ -437,8 +455,8 @@ TUTORIAL = ("Warcraft: Spells, Landmarks and Politics", [
     "cast their spells by themselves.",
     "The first civilization to find each landmark (natural wonder) gets a reward. Ten landmarks start a lore event when "
     "discovered, and some let you challenge a raid boss: Ragnaros under Blackrock Mountain, Hakkar in the Sunken Temple, "
-    "C'Thun beneath the Lost City of the Tol'vir, Sapphiron at Galakrond's Rest, Deathwing at the Maelstrom and Kil'jaeden "
-    "at the Dark Portal.",
+    "C'Thun beneath the Lost City of the Tol'vir, Sapphiron at Galakrond's Rest, Deathwing at the Maelstrom, Gul'dan "
+    "at the Dark Portal and Kil'jaeden at the Tomb of Sargeras.",
     "Alliance and Horde: declaring war on your own side angers your people (pay, lose Culture, or face rebels). When the "
     "other side declares war on you, your people rally; when your own side betrays you, the world sympathises. Declaring "
     "war on the other side earns a little Culture. The Pandaren gain Faith when either side attacks them.",

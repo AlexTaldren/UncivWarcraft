@@ -843,3 +843,58 @@ SPRITES.update({
     "Raptor Rider": ("Horseman", "Zandalari Trolls", "mounted", [lambda l: headgear(l, "mask")]),
 })
 _PAINTED_RENDER = {"Direhorn Rider": direhorn}
+
+
+# ======================================================================= content pass (Oct 2026)
+# The Naga, the Nightborne and the Highmountain Tauren.
+UNITS += [
+    ("Naga", "Swordsman", {"name": "Myrmidon", "strength": 17,
+        "addUniques": ["May attack when embarked", "Eliminates combat penalty for attacking across a coast"],
+        "civilopediaText": _lore("Naga warriors with tridents and heavy scales, who rise out of the surf to storm the shore.",
+                                 "Stronger than a Swordsman, attacks from the water and across coasts without penalty.")}),
+    ("Naga", "Ballista", {"name": "Snap Dragon", "strength": 14, "rangedStrength": 16, "movement": 3,
+        "addUniques": ["May attack when embarked"],
+        "civilopediaText": _lore("A great sea lizard bred by the naga, which spits caustic venom over walls and shields.",
+                                 "Stronger and faster than a Ballista, and can attack from the water.")}),
+    ("Nightborne", "Vanguard", {"name": "Spellblade", "strength": 24,
+        "addUniques": ["[+20]% Strength <when attacking>"],
+        "civilopediaText": _lore("Nightborne warriors who fight with blades charged by arcane magic, the guard of Suramar.",
+                                 "Stronger than a Vanguard, with +20% Strength when attacking.")}),
+    ("Nightborne", "Crossbowman", {"name": "Duskwatch Sentinel", "strength": 14, "rangedStrength": 19,
+        "addUniques": ["[+1] Sight", "Can see invisible [Land] units", "Double movement in [Forest]"],
+        "civilopediaText": _lore("The Duskwatch, Suramar's watchful archers, who see through illusion and shadow alike.",
+                                 "Stronger than a Ranger, sees farther, and spots stealthed units nearby.")}),
+    ("Highmountain Tauren", "Musketeer", {"name": "Highmountain Warbrave", "strength": 27,
+        "addUniques": ["[+25]% Strength <when fighting in [Hill] tiles>"],
+        "civilopediaText": _lore("Warbraves of the Highmountain tribes with great axes and totems, who hold the mountain passes.",
+                                 "Stronger than a Man-at-Arms, with +25% Strength in hills.")}),
+    ("Highmountain Tauren", "Knight", {"name": "Thunderhoof Rider", "strength": 22,
+        "addUniques": ["Double movement in [Hill]"],
+        "civilopediaText": _lore("Highmountain riders on great thunderhoof moose, who charge down the slopes like an avalanche.",
+                                 "Stronger than a Knight and crosses hills at double speed.")}),
+]
+BUILDINGS += [
+    ("Naga", "Docks", {"name": "Coral Spawning Pool", "addStats": {"production": 1},
+        "civilopediaText": _lore("A sheltered lagoon of living coral where naga young are raised and their sea beasts bred. +1 Production over the building it replaces, +1 Mana.")}),
+    ("Nightborne", "Arcane Sanctum", {"name": "Arcway", "addStats": {"science": 1},
+        "civilopediaText": _lore("A hall of the Arcway, the vaults beneath Suramar where the Nightborne store their arcane secrets. +1 Science and +2 Mana.")}),
+    ("Highmountain Tauren", "Workshop", {"name": "Ironhorn Lodge", "addStats": {"culture": 1},
+        "civilopediaText": _lore("A lodge of the Ironhorn tribe, miners and craftsmen of the high peaks. +1 Culture over a Workshop, +1 Mana.")}),
+]
+ICONS_UNITS.update({"Myrmidon": ("spear", "wave"), "Snap Dragon": ("dragon", "wave"),
+                    "Spellblade": ("sword", "orb"), "Duskwatch Sentinel": ("bow", "eye"),
+                    "Highmountain Warbrave": ("axe", "mountain"), "Thunderhoof Rider": ("horn", "mountain")})
+ICONS_BUILDINGS.update({"Coral Spawning Pool": ("wave", "heart"), "Arcway": ("orb", "book"),
+                        "Ironhorn Lodge": ("tent", "hammer")})
+SPRITES.update({
+    "Myrmidon": ("Swordsman", "Naga", "full", []),
+    "Snap Dragon": ("Catapult", None, "raw", []),
+    "Spellblade": ("Swordsman", "Nightborne", "full", [lambda l: glow_aura(l, (190, 140, 255))]),
+    "Duskwatch Sentinel": ("Composite Bowman", "Nightborne", "full", [lambda l: headgear(l, "hood")]),
+    "Highmountain Warbrave": ("Swordsman", "Highmountain Tauren", "full", [lambda l: weapon(l, "axe")]),
+    "Thunderhoof Rider": ("Knight", "Highmountain Tauren", "mounted", []),
+    "Lady Vashj": _hero("Spearman", "Naga", "full", [lambda l: weapon(l, "staff")], (120, 240, 220)),
+    "Grand Magistrix Elisande": _hero("Spearman", "Nightborne", "full", [lambda l: weapon(l, "staff")], (200, 150, 255)),
+    "Huln Highmountain": _hero("Spearman", "Highmountain Tauren", "full", [lambda l: weapon(l, "totem_club")], (150, 220, 255)),
+})
+SPRITES.update({k: v for k, v in _cleric_sprites().items() if k not in SPRITES})

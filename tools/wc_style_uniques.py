@@ -332,6 +332,15 @@ def direhorn_mount():
     return WR.make_mount("_direhorn", "direhorn")
 
 
+
+def snap_dragon_unit(c, fx, fy, u):
+    """The Snap Dragon on its own: the naga sea lizard, scaled up, with a venom glow at the jaw."""
+    f = Fig(c, fx, fy, u * 1.15)
+    shadow(f, 36)
+    CTX.spec["mount"](c, f, armored="bare")
+    glowball(f, 30, -46, 3.5, (150, 255, 120))
+
+
 # ================================================================== the roster
 FOOT, CIV, MOUNT, SIEGE = "foot", "civ", "mounted", "siege"
 GILNEAN = dict(face=WR.face_human, body=(1.0, 1.0), head=1.0, hat_swap=None)
@@ -442,6 +451,24 @@ RECIPES = {
     "Direhorn Rider": ("Zandalari Trolls", ctx(rider("knight", brute=True), mount=direhorn_mount()), MOUNT),
     "Rastakhan": ("Zandalari Trolls", or_(prop="staff", glow=(255, 215, 90), robe_col=(205, 165, 60), robe_layer="base"), CIV),
     "Loa Speaker": ("Zandalari Trolls", or_(prop="staff", glow=(255, 200, 80), hat="feathers"), CIV),
+    # ---- Naga (content pass)
+    "Myrmidon": ("Naga", hs(armor="plate", hat="kettle", weapon="halberd", shield="round"), FOOT),
+    "Snap Dragon": ("Naga", snap_dragon_unit, SIEGE),
+    "Lady Vashj": ("Naga", ctx(hr(robe_col=(40, 110, 110), robe_layer="base", hat="hair", prop="staff", glow=(120, 240, 220)),
+                               {"hair": (40, 170, 150)}), CIV),
+    "Tidepriestess": ("Naga", hr(robe_col=(60, 130, 130), robe_layer="base", hat="hair", prop="light", glow=(120, 230, 230)), CIV),
+    # ---- Nightborne
+    "Spellblade": ("Nightborne", hs(armor="plate", hat="sallet", weapon="sword", shield="kite", glow=(190, 140, 255)), FOOT),
+    "Duskwatch Sentinel": ("Nightborne", hs(armor="leather", tabard=False, hat="hood", weapon="bow", pauldron=False, back="quiver",
+                                            capecol=True), FOOT),
+    "Grand Magistrix Elisande": ("Nightborne", ctx(hr(robe_col=(90, 50, 140), robe_layer="base", hat="hair", prop="staff",
+                                                      glow=(200, 150, 255)), {"hair": (236, 236, 246)}), CIV),
+    "Shal'dorei Mender": ("Nightborne", hr(robe_col=(120, 90, 170), robe_layer="base", hat="hair", prop="light", glow=(210, 170, 255)), CIV),
+    # ---- Highmountain Tauren
+    "Highmountain Warbrave": ("Highmountain Tauren", os_(armor="hide", hat="topknot", weapon="axe", pauldrons=1), FOOT),
+    "Thunderhoof Rider": ("Highmountain Tauren", rider("knight", brute=True), MOUNT),
+    "Huln Highmountain": ("Highmountain Tauren", os_(armor="iron", hat="topknot", weapon="spear", pauldrons=2, glow=(150, 220, 255)), FOOT),
+    "Spiritwalker": ("Highmountain Tauren", or_(prop="staff", glow=(150, 220, 255), hat="feathers"), CIV),
     # ---- Pandaren
     "Brewmaster": ("Pandaren", os_(armor="hide", hat="topknot", weapon="stick", pauldrons=0, back="pack"), FOOT),
     "Shado-Pan Monk": ("Pandaren", os_(armor="coat", hat="hood", weapon="halberd", pauldrons=0), FOOT),

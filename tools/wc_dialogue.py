@@ -166,6 +166,30 @@ DIALOGUE = {
         "The Zandalari acknowledge you.",
         "You again. The loa turn their faces from you, and so do I.",
         "The treasuries of Dazar'alor are deep. What could you possibly offer us?"),
+    "Naga": _d(
+        "The tide has turned against you. Your shores will drown, and I will rule what remains.",
+        "You raise your hand against the Light of Lights? How very foolish.",
+        "This is not the end. I have waited ten thousand years. I can wait again.",
+        "I am Azshara, Queen of the Kaldorei, Empress of the Naga. You may consider yourself honoured.",
+        "The queen permits you an audience. Do not waste it.",
+        "You are a stain upon my sight. Leave, while I am feeling generous.",
+        "Pearls, coral and the treasures of drowned empires. What could you offer that I could possibly want?"),
+    "Nightborne": _d(
+        "Suramar has lived under tyrants before. We will not bow to another. Our spellblades march.",
+        "You strike at the Nightborne? You have no idea what ten thousand years of study can do.",
+        "Suramar falls... but we have survived worse. The arcane endures.",
+        "I am Thalyssra, First Arcanist of Suramar. We freed ourselves from the Nightwell. Shall we see what else we can achieve?",
+        "Ande'thoras-ethil. Suramar welcomes you.",
+        "You try my patience, and I have had a great deal of practice at being patient.",
+        "Arcwine, enchanted silks and crystal from the Nightwell's veins. We trade fairly, if you do."),
+    "Highmountain Tauren": _d(
+        "The drums of Thunder Totem sound. The tribes ride to war, and the mountain rides with us.",
+        "You strike at Highmountain? Huln's children do not forget an insult.",
+        "Thunder Totem falls silent... The Earthmother will remember us.",
+        "I am Mayla Highmountain, High Chieftain of the tribes. My grandfather's spear is in my hand. Speak.",
+        "The mountain greets you, friend. Walk with the Earthmother.",
+        "Your words are like a rockslide: loud, and best avoided.",
+        "Highmountain has hides, timber and good stone. We trade honestly, and we expect the same."),
 }
 
 

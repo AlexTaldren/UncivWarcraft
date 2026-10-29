@@ -279,6 +279,41 @@ def bface_panda(f, x, y, hair="topknot", helm=False):
     f.paint(f.curve([(x + 9, y + 6.5), (x + 12, y + 7.5), (x + 14, y + 6)], 0.6), black, mat="flat", outline=0)
 
 
+def face_naga(f, x, y, hat=None, beard=None, hood=False, hair=None, **k):
+    """Naga: an elven face with a webbed fin for an ear and a crest of sea-coloured tendrils."""
+    out = face_elf(f, x, y, hat=hat, beard=None, hood=hood, hair=hair, glow=(255, 215, 90), long_hair=True)
+    fin = mix(tuple(U.HSKIN), (20, 60, 70), 0.3)
+    f.paint(f.poly([(x - 3, y - 2), (x - 20, y - 15), (x - 16, y - 10), (x - 22, y - 8), (x - 15, y - 4), (x - 19, y + 1), (x - 3, y + 4)]),
+            fin, mat="skin", outline=0.5)
+    return out
+
+
+def bface_highmountain(f, x, y, hair="topknot", helm=False):
+    """Highmountain tauren: a tauren face crowned with broad moose antlers instead of horns."""
+    fur = U.OSKIN
+    f.paint(f.ell(x - 7, y + 1, 9, 11), U.OHAIR, mat="fur")
+    f.paint(f.poly([(x - 6, y - 4), (x - 17, y - 7), (x - 6, y + 1)]), fur, mat="fur", dark=0.9)
+    f.paint(f.ell(x, y - 1, 10, 10), fur, mat="fur")
+    f.paint(f.poly([(x + 2, y - 4), (x + 15, y - 1), (x + 18, y + 7), (x + 12, y + 12), (x + 2, y + 9)]), mix(fur, (255, 240, 220), 0.25), mat="fur")
+    f.paint(f.ell(x + 15, y + 4, 1.4, 1.2), (30, 20, 20), mat="flat", outline=0)
+    eyes(f, x + 6, y - 3, (35, 25, 20))
+    ant = (210, 196, 158)
+    for s, k in ((-5, 0.8), (1, 1.0)):
+        f.paint(f.poly([(x + s, y - 8), (x + s - 6, y - 16), (x + s - 4, y - 24), (x + s + 4, y - 26), (x + s + 8, y - 20), (x + s + 3, y - 12)]),
+                ant, mat="bone", outline=0.6, dark=k)
+        for tx, ty in ((-6, -26), (-1, -30), (5, -29), (10, -24)):
+            f.paint(f.curve([(x + s + tx * 0.6, y + ty * 0.8), (x + s + tx, y + ty)], 1.4, 0.6), ant, mat="bone", outline=0.4, dark=k)
+    if hair == "topknot":
+        f.paint(f.curve([(x + 1, y - 9), (x + 4, y - 3), (x + 3, y + 3)], 1.6, 1.0), U.OHAIR, mat="fur", outline=0.4)
+
+
+def coral_crown(f, x, y):
+    """Naga headdress: a gilded crest of coral spines."""
+    for i, (dx, h) in enumerate(((-6, 10), (-1, 14), (4, 11))):
+        f.paint(f.poly([(x + dx - 2, y - 7), (x + dx, y - 7 - h), (x + dx + 2, y - 7)]), U.GOLD, mat="gold", outline=0.5)
+    f.paint(f.poly([(x - 9, y - 4), (x + 9, y - 4), (x + 8, y - 8), (x - 8, y - 8)]), U.GOLD, mat="gold", outline=0.5)
+
+
 # ================================================================== headgear swaps
 def moon_helm(f, x, y):
     """Sentinel helm: a smooth cap with a tall crescent crest."""
@@ -522,6 +557,27 @@ RACES = {
                      colors=dict(oskin=(74, 66, 62), ohair=(44, 40, 38), iron=(122, 112, 92), cloth_tan=(212, 182, 122),
                                  leather=(132, 82, 52)),
                      weapons={"axe": "halberd", "cleaver": "halberd"}),
+    "Naga": dict(family="human", body=(1.04, 1.12), head=1.0, face=face_naga,
+                 hats=all_helms(coral_crown, {"tricorn": None, "officer": None, "goggles": coral_crown, "hood": coral_crown}),
+                 colors=dict(skin=[(70, 160, 150), (60, 140, 120), (90, 150, 175)],
+                             hair=[(40, 170, 150), (150, 60, 150), (225, 205, 95), (60, 90, 160)],
+                             steel=(200, 170, 110), dsteel=(140, 110, 70), gold=(240, 205, 90), leather=(60, 100, 95),
+                             dleather=(40, 70, 70), cloth_tan=(120, 170, 160), cloth_brown=(60, 90, 90)),
+                 weapons={"musket": "spear", "rifle": "spear", "sniper": "spear", "grenade": "spear", "sword": "halberd"},
+                 tail=True),
+    "Nightborne": dict(family="human", body=(0.95, 1.14), head=SH,
+                       face=lambda f, x, y, **k: face_elf(f, x, y, glow=(200, 150, 255), brows=True, **k),
+                       hats=all_helms(elf_helm, {"tricorn": None, "officer": None, "goggles": None}),
+                       colors=dict(skin=[(150, 150, 205), (130, 135, 195), (168, 160, 214)],
+                                   hair=[(236, 236, 246), (160, 120, 225), (70, 70, 120), (205, 190, 240)],
+                                   steel=(200, 186, 140), dsteel=(110, 80, 150), gold=(240, 200, 110),
+                                   leather=(80, 60, 110), dleather=(55, 40, 80), cloth_tan=(150, 120, 200), cloth_brown=(80, 60, 120)),
+                       weapons={"musket": "bow", "rifle": "bow", "sniper": "bow", "grenade": "bow"}),
+    "Highmountain Tauren": dict(family="brute", body=(1.24, 1.12), head=1.1, bface=bface_highmountain,
+                                hats=all_helms(None, {"tricorn": None, "hood": "hood"}),
+                                colors=dict(oskin=[(112, 82, 58), (88, 66, 50), (140, 112, 86), (98, 92, 86)], ohair=(52, 40, 32),
+                                            iron=(132, 112, 90), gold=(120, 200, 225)),
+                                weapons={"cleaver": "axe"}),
 }
 for _r, _s in RACES.items():
     _s["hats"] = {**{k: INNER[k] for k in INNER}, **_s.get("hats", {})}
@@ -535,7 +591,7 @@ def set_race(race, unit):
     CTX.spec = {"family": s["family"], "body": s["body"], "head": s["head"],
                 "face": s.get("face"), "bface": s.get("bface"),
                 "hat_swap": _swapper(s["hats"]), "helm_swap": _helm_swap(s["hats"]), "draw_hat": M.human_hat,
-                "mount": make_mount(race, race + unit)}
+                "mount": make_mount(race, race + unit), "tail": s.get("tail", False)}
 
 
 def clear_race():

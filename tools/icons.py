@@ -634,6 +634,64 @@ def n_zandalari():
     return i
 
 
+def n_naga():
+    """A trident rising from waves."""
+    i = Icon()
+    i.line([(50, 18), (50, 74)], 8, caps=False)
+    i.line([(28, 30), (28, 44), (72, 44), (72, 30)], 7)
+    i.poly([(50, 6), (43, 22), (57, 22)]); i.poly([(28, 18), (22, 32), (34, 32)]); i.poly([(72, 18), (66, 32), (78, 32)])
+    for y in (78, 90):
+        i.arc(26, y, 12, 200, 340, 6); i.arc(50, y, 12, 200, 340, 6); i.arc(74, y, 12, 200, 340, 6)
+    return i
+
+
+def n_nightborne():
+    """A crescent moon cradling an arcane star."""
+    i = Icon()
+    i.circle(48, 52, 40)
+    i.circle(62, 44, 34, 0)
+    i.star(60, 46, 16, 6, 4)
+    return i
+
+
+def n_highmountain():
+    """A moose skull with broad antlers over a mountain peak."""
+    i = Icon()
+    i.poly([(8, 94), (38, 52), (50, 64), (62, 48), (92, 94)])
+    i.poly([(40, 56), (60, 56), (56, 80), (44, 80)], 0)
+    i.ellipse(50, 66, 11, 14, 0)
+    i.ellipse(50, 64, 9, 12)
+    i.circle(46, 62, 2, 0); i.circle(54, 62, 2, 0)
+    for sgn in (-1, 1):
+        i.poly([(50 + sgn * 8, 54), (50 + sgn * 34, 36), (50 + sgn * 40, 18), (50 + sgn * 28, 26), (50 + sgn * 22, 12),
+                (50 + sgn * 14, 30), (50 + sgn * 8, 18), (50 + sgn * 6, 44)])
+    return i
+
+
+def r_old_gods():
+    """An eye amid tentacles."""
+    i = Icon()
+    for a in range(0, 360, 60):
+        import math
+        x, y = 50 + 34 * math.cos(math.radians(a)), 50 + 34 * math.sin(math.radians(a))
+        i.taper((50, 50), ((50 + x) / 2 + 6, (50 + y) / 2 - 6), (x - 4, y + 4), (x + 8 * math.cos(math.radians(a + 50)), y + 8 * math.sin(math.radians(a + 50))), 12, 2)
+    i.circle(50, 50, 20, 0)
+    i.ellipse(50, 50, 18, 11)
+    i.ellipse(50, 50, 4, 9, 0)
+    return i
+
+
+def r_nightwell():
+    """A well brimming with arcane light under a crescent."""
+    i = Icon()
+    i.rect(22, 62, 78, 92)
+    i.ellipse(50, 62, 28, 8, 0)
+    i.ellipse(50, 62, 24, 5)
+    i.rays(50, 40, 6, 20, 8, 3)
+    i.arc(50, 22, 14, 200, 340, 5)
+    return i
+
+
 UNIT_ICONS = {"Footman": footman, "Paladin": paladin, "Mage": mage, "Priest": priest,
               "Archmage": archmage, "Steam Tank": steam_tank, "Kul Tiran Man-o'-War": man_o_war}
 BUILDING_ICONS = {"Chapel of the Light": chapel_of_the_light, "Royal Barracks": royal_barracks,
@@ -643,11 +701,13 @@ NATION_ICONS = {"Humans": n_humans, "Orcs": n_orcs, "Night Elves": n_night_elves
                 "Blood Elves": n_blood_elves, "High Elves": n_high_elves, "Pandaren": n_pandaren,
                 "Forsaken": n_forsaken, "Draenei": n_draenei, "Goblins": n_goblins,
                 "Worgen": n_worgen, "Scourge": n_scourge, "Dark Iron Dwarves": n_dark_iron,
-                "Kul Tirans": n_kul_tirans, "Zandalari Trolls": n_zandalari}
+                "Kul Tirans": n_kul_tirans, "Zandalari Trolls": n_zandalari,
+                "Naga": n_naga, "Nightborne": n_nightborne, "Highmountain Tauren": n_highmountain}
 RELIGION_ICONS = {"Holy Light": r_holy_light, "Elune": r_elune, "Earth Mother": r_earth_mother,
                   "Shamanism": r_shamanism, "Loa": r_loa, "Cenarion Circle": r_cenarion,
                   "August Celestials": r_celestials, "Titans": r_titans,
-                  "Forgotten Shadow": r_forgotten_shadow, "Light of the Sunwell": r_sunwell}
+                  "Forgotten Shadow": r_forgotten_shadow, "Light of the Sunwell": r_sunwell,
+                  "The Old Gods": r_old_gods, "The Nightwell": r_nightwell}
 
 
 def write_all(images_dir):

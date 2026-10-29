@@ -83,6 +83,9 @@ CHANGES = {
                         add_uniques=["Double movement in [Forest]"],
                         text2="Stronger than a Ranger Captain, sees farther and gains +25% Strength in forests."),
     "Crypt Fiend": dict(requiredTech="Long Rifles"),
+    # content pass: the Nightborne archer sits in the Ranger slot (bows)
+    "Duskwatch Sentinel": dict(requiredTech="Scholarship", obsoleteTech="Natural Lore", upgradesTo="Ranger Captain",
+                               attackSound=BOW_SOUND, add_uniques=RANGER_UNIQUES[1:]),
     # Oct 24 2026 endgame pass (user request): riders stay riders, pikes stay on foot, the Paladin is endgame.
     # Mounted: Knight > Cavalry > War Rider > Grand Champion. War machines are their own line from War Golem.
     "Cavalry": dict(upgradesTo="War Rider"),
@@ -152,7 +155,7 @@ TIERS = [  # (tech, obsolete tech, strength, ranged strength, cost, Mana)
 ]
 # recipe: (robe colour, human hat, hood, prop, glow, orc hat)
 SCHOOLS = {
-    "Arcane": dict(tag="Arcane Magic", races=["Humans", "Gnomes", "High Elves", "Blood Elves"],
+    "Arcane": dict(tag="Arcane Magic", races=["Humans", "Gnomes", "High Elves", "Blood Elves", "Naga", "Nightborne"],
                    uniques=[], top=["[+1] Range"],
                    units=[("Apprentice", ((70, 90, 170), "hair", False, "book", (150, 180, 255), None),
                            "Students of the arcane, fresh from the academies of Dalaran and Silvermoon."),
@@ -182,7 +185,7 @@ SCHOOLS = {
                            "Ancient guardians of the forest who command roots, thorns and storms."),
                           ("Archdruid", ((110, 90, 50), "crown", False, "staff", (220, 255, 160), "feathers"),
                            "The greatest of druids, heirs to Malfurion and Hamuul Runetotem.")]),
-    "Elemental": dict(tag="Elemental Magic", races=["Dwarves", "Dark Iron Dwarves", "Kul Tirans", "Pandaren"],
+    "Elemental": dict(tag="Elemental Magic", races=["Dwarves", "Dark Iron Dwarves", "Kul Tirans", "Pandaren", "Highmountain Tauren"],
                       uniques=["[+25]% Strength <when defending>"], top=[],
                       units=[("Seer", ((110, 80, 50), "hair", False, "censer", (255, 200, 120), None),
                               "Seers who listen to the spirits of earth, fire, water and air."),

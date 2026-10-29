@@ -135,6 +135,7 @@ BIOMES = {
     # --- the South Seas (small hand-placed isles, see EXTRA_LAND)
     "Kezan": B({G: 1}, jungle=.5),
     "The Lost Isles": B({P: 1}, jungle=.5, hill=.2),
+    "Nazjatar": B({G: .6, P: .4}, marsh=.3, jungle=.15),
     "The Wandering Isle": B({G: 1}, forest=.4, hill=.2, bamboo=.9),
 }
 
@@ -150,6 +151,7 @@ EXTRA_LAND = {
     "The Lost Isles": ((74.0, 61.5), 2.0),
     "Kezan": ((84.5, 52.5), 2.2),
     "The Wandering Isle": ((59.0, 97.5), 3.6),
+    "Nazjatar": ((68.5, 49.0), 3.4),
 }
 
 # ------------------------------------------------------------------ mountain ranges & lakes
@@ -193,10 +195,16 @@ NATURAL_WONDERS = {
     "Sunken Temple": (165.3, 75.3),        # Swamp of Sorrows
     "Maraudon": (22.8, 63.3),              # Desolace
     "The Lifeblood Pillar": (72.4, 13.2),  # Sholazar Basin
+    "Tomb of Sargeras": (109.5, 53.5),     # the Broken Shore
+    "Shaladrassil": (98.5, 42.5),         # Val'sharah
+    "Neltharion's Lair": (103.0, 42.0),   # Highmountain
+    "Mount Neverest": (81.5, 87.0),       # Kun-Lai Summit
+    "Kypari Zar": (76.5, 99.0),           # the Dread Wastes
 }
 NW_BASE = {"Un'Goro Crater": "Desert", "The Dark Portal": "Desert", "The Nexus": "Snow",
            "Galakrond's Rest": "Snow", "Sunken Temple": "Grassland", "Maraudon": "Desert",
-           "The Lifeblood Pillar": "Grassland"}
+           "The Lifeblood Pillar": "Grassland", "Tomb of Sargeras": "Desert", "Shaladrassil": "Grassland",
+           "Neltharion's Lair": "Tundra", "Mount Neverest": "Snow", "Kypari Zar": "Desert"}
 WATER_WONDERS = ("The Maelstrom", "Kelp'thar Forest")
 HARMFUL = {"Blighted Land", "Fel-Scorched Land", "Plagued Land", "Molten Fields"}
 
@@ -219,9 +227,12 @@ CAPITALS = {  # major nations -> their capital's tile
     "Dark Iron Dwarves": (161.3, 71.7),  # Shadowforge City, beneath Blackrock (Burning Steppes)
     "Kul Tirans": (133.6, 59.4),      # Boralus, Tiragarde Sound
     "Zandalari Trolls": (94.2, 70.4),   # Dazar'alor, Zuldazar
+    "Naga": (68.5, 49.0),               # Nazjatar, risen beside the Maelstrom
+    "Nightborne": (107.0, 47.5),        # Suramar
+    "Highmountain Tauren": (105.5, 39.0),  # Thunder Totem, Highmountain
 }
 CITY_STATES = {
-    "Dalaran": (154.9, 48.1),         # Alterac, on Lordamere Lake
+    "Dalaran": (100.5, 48.0),         # Dalaran floats over Azsuna since the Legion invasion
     "Theramore": (44.4, 69.7),
     "Stromgarde": (158.0, 54.9),      # Arathi Highlands
     "Gadgetzan": (37.7, 76.9),        # Tanaris
@@ -245,6 +256,10 @@ CITY_STATES = {
     "The Consortium": (77.6, 22.7),   # ethereals, Borean Tundra
     "Mogu'shan": (68.8, 81.2),        # mogu, Isle of Thunder
     "Ahn'Qiraj": (29.1, 82.4),        # qiraji, Silithus
+    "Shado-Pan Monastery": (84.5, 86.5),   # Kun-Lai Summit
+    "Golden Lotus": (83.5, 94.0),          # Vale of Eternal Blossoms
+    "Klaxxi'vess": (75.0, 100.0),          # mantid, Dread Wastes
+    "Valdisdall": (114.0, 42.5),           # vrykul, Stormheim
 }
 
 

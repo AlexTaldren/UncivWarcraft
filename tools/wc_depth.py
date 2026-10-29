@@ -25,7 +25,7 @@ ERAS = ["Age of Tribes", "Age of Arathor", "Age of the Dark Portal", "Age of the
 
 FACTIONS = ["Humans", "Orcs", "Night Elves", "Dwarves", "Gnomes", "Tauren", "Trolls", "Blood Elves", "High Elves",
             "Pandaren", "Forsaken", "Draenei", "Goblins", "Worgen", "Scourge", "Dark Iron Dwarves", "Kul Tirans",
-            "Zandalari Trolls"]
+            "Zandalari Trolls", "Naga", "Nightborne", "Highmountain Tauren"]
 
 
 def need(amount, stat):
@@ -65,6 +65,9 @@ BOSSES = [
     ("Deathwing the Destroyer", 120, 3, ("Age of the Cataclysm", "Age of Azerite"), ["[+25]% Strength <when attacking>", "Destroys tile improvements when attacking"], None,
      "The Aspect of Earth turned Aspect of Death, bound in molten elementium. His return from Deepholm shattered Azeroth "
      "in the Cataclysm."),
+    ("Gul'dan the Destroyer", 105, 2, ("Age of the Legion", "Age of the Void"), ["Heals [25] damage if it kills a unit"], (95, 2),
+     "The orc warlock who opened the Dark Portal for the Burning Legion, reborn in the Legion's invasion to break open the "
+     "Tomb of Sargeras. From the spire of the Nighthold he rains fel fire on all who come near."),
     ("Kil'jaeden the Deceiver", 145, 2, ("Age of the Legion", "Age of the Void"), ["[-15]% Strength for enemy [Military] units in adjacent [All] tiles"], None,
      "Eredar lord of the Burning Legion, who corrupted the orcs and sought the draenei across the stars for thousands of "
      "years. His lies weaken the hearts of all who stand near him."),
@@ -117,6 +120,7 @@ RAID_HOOKS = {
     "C'Thun": "A great eye has opened beneath the sands near our borders. Its whispers keep our people awake.",
     "Sapphiron": "A killing frost descends from a cloudless sky. A frost wyrm of Naxxramas is on the wing.",
     "Deathwing": "The earth shakes and the sky burns orange. Deathwing has come out of Deepholm.",
+    "Gul'dan": "Green fire burns on a distant spire, and skulls ring the night sky. Gul'dan has returned.",
     "Kil'jaeden": "Fel fire rains on the hills near our cities. Kil'jaeden the Deceiver walks Azeroth.",
     "N'Zoth": "The sea boils and black tendrils rise from the ground. The Corruptor has awakened.",
 }
@@ -345,6 +349,12 @@ NATIONAL_WONDERS = {
                    "The halls of the Lord Admiral in Boralus, from which the greatest fleet on Azeroth is commanded."),
     "Zandalari Trolls": ("Great Seal of Dazar'alor", "Auctioneering", 300, ["[+15]% [Culture] [in all cities]", "[+2 Gold] [in capital]"],
                          "The golden seat of the Zandalari Empire atop the great pyramid of Dazar'alor."),
+    "Naga": ("Palace of Nazjatar", "Navigation", 300, ["[+15]% Strength <for [Military] units> <when fighting in [Coast] tiles>", "[+2 Production] [in capital]"],
+             "Azshara's drowned palace in the abyss, where the queen of the naga waited ten thousand years to rise."),
+    "Nightborne": ("Shal'Aran Sanctum", "Scholarship", 280, ["[+15]% [Science] [in all cities]", "[+2 Culture] [in capital]"],
+                   "The hidden refuge where the Nightfallen first learned to live without the Nightwell, now a hall of free arcanists."),
+    "Highmountain Tauren": ("Huln's Totem", "Natural Lore", 280, ["[+15]% Strength <for [Military] units> <when fighting in [Hill] tiles>", "[+2 Food] [in capital]"],
+                            "The great totem of Thunder Totem, carved for Huln Highmountain, who united the tribes and drove back the Legion."),
 }
 
 
@@ -397,6 +407,12 @@ OPENINGS = {
                    [("Build the docks (+40 Gold)", ["Gain [40] [Gold]"]), ("Bless the tides (+30 Faith)", ["Gain [30] [Faith]"])]),
     "Zandalari Trolls": ("The Zandalari raise a golden temple at the heart of their first city. An empire begins.",
                          [("Honor the loa of kings (+30 Faith)", ["Gain [30] [Faith]"]), ("Gather tribute (+40 Gold)", ["Gain [40] [Gold]"])]),
+    "Naga": ("The naga rise from the deep and claim a shore for their queen. The surface world will learn to fear the tide.",
+             [("Raise a coral palace (+30 Culture)", ["Gain [30] [Culture]"]), ("Call the myrmidons (a free Militia)", ["Free [Militia] appears"])]),
+    "Nightborne": ("Free of the Nightwell's tyranny, the Nightborne raise a city where magic belongs to everyone.",
+                   [("Open the arcane academies (+40 Science)", ["Gain [40] [Science]"]), ("Pour the arcwine (+30 Culture)", ["Gain [30] [Culture]"])]),
+    "Highmountain Tauren": ("The tribes of Highmountain raise a great totem on the mountainside. The spirits watch over us.",
+                            [("Raise the totem (+30 Faith)", ["Gain [30] [Faith]"]), ("Call the warbraves (a free Spearman)", ["Free [Spearman] appears"])]),
 }
 
 ERA_EVENTS = {
@@ -494,7 +510,7 @@ ICONS = {
     "UnitIcons": {"Onyxia": ("dragon", "flame"), "Hakkar the Soulflayer": ("mask", "heart"),
                   "Ragnaros the Firelord": ("flame", "hammer"), "C'Thun": "tentacle_eye",
                   "Sapphiron": ("dragon", "skull"), "Deathwing the Destroyer": ("dragon", "mountain"),
-                  "Kil'jaeden the Deceiver": ("skull", "flame"), "N'Zoth the Corruptor": ("tentacle_eye", "void")},
+                  "Kil'jaeden the Deceiver": ("skull", "flame"), "Gul'dan the Destroyer": ("skull", "eye"), "N'Zoth the Corruptor": ("tentacle_eye", "void")},
     "ResourceIcons": {TROPHY: ("skull", "star")},
     "UnitPromotionIcons": {"Raid Veteran": ("skull", "sword"), "Shadowmeld": ("moon", "tree"), "Keen Eyes": "eye",
                            "Ambush": ("bow", "tree"), "Flanker": ("horse", "arrows_up"), "Hold the Line": ("shield", "shield"),

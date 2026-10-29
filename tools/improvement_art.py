@@ -118,6 +118,7 @@ MATERIAL = {
     "Forsaken": "stone", "Draenei": "stone", "Dwarves": "stone", "Dark Iron Dwarves": "stone",
     "Orcs": "palisade", "Tauren": "palisade", "Trolls": "palisade", "Zandalari Trolls": "palisade",
     "Night Elves": "thorn", "Gnomes": "metal", "Goblins": "metal", "Pandaren": "lacquer", "Scourge": "saronite",
+    "Naga": "stone", "Nightborne": "stone", "Highmountain Tauren": "palisade",
 }
 FLAG = {
     "Humans": (40, 70, 160), "Kul Tirans": (30, 80, 110), "Orcs": (172, 32, 26), "Night Elves": (150, 210, 255),
@@ -125,9 +126,10 @@ FLAG = {
     "Trolls": (60, 140, 120), "Zandalari Trolls": (40, 130, 110), "Blood Elves": (172, 26, 36), "High Elves": (50, 100, 200),
     "Pandaren": (236, 196, 72), "Forsaken": (120, 60, 140), "Scourge": (130, 200, 246), "Draenei": (160, 210, 255),
     "Goblins": (236, 196, 60), "Worgen": (120, 40, 40),
+    "Naga": (120, 230, 210), "Nightborne": (175, 125, 255), "Highmountain Tauren": (125, 200, 225),
 }
 LAMP = {"Forsaken": (150, 230, 90), "Scourge": (130, 205, 255), "Draenei": (170, 200, 255),
-        "Dark Iron Dwarves": (255, 130, 50)}
+        "Dark Iron Dwarves": (255, 130, 50), "Naga": (120, 240, 220), "Nightborne": (200, 150, 255)}
 FIRE = {"Forsaken": (140, 240, 90), "Scourge": (120, 200, 255), "Draenei": (170, 150, 255),
         "Dark Iron Dwarves": (255, 120, 40)}
 DEAD = ("Scourge", "Forsaken")
@@ -184,8 +186,10 @@ def prop(cv, st, x, y):
         cc_prop(CC.p_forge((255, 110, 30)), cv, x, y)
     elif r == "Gnomes":
         cc_prop(CC.p_gear, cv, x, y)
-    elif r == "Tauren":
+    elif r in ("Tauren", "Highmountain Tauren"):
         cc_prop(CC.p_totem, cv, x, y)
+    elif r in ("Naga", "Nightborne"):
+        cc_prop(CC.p_crystal, cv, x, y)
     elif r in ("Trolls", "Zandalari Trolls"):
         cc_prop(CC.p_torch, cv, x, y)
     elif r == "Pandaren":

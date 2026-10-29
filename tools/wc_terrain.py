@@ -72,6 +72,27 @@ WONDERS = [
      "occursOn": ["Grassland", "Plains"], "turnsInto": "Mountain", "impassable": True, "unbuildable": True,
      "weight": 5, "uniques": ["Must be adjacent to [0] [Coast] tiles", "Must be adjacent to [1] to [6] [Jungle] tiles"],
      "civilopediaText": [{"text": "A titan pillar in Sholazar Basin, the titans' garden in Northrend, from which life-giving waters pour."}]},
+    # content pass (Oct 2026): Pandaria and the Broken Isles
+    {"name": "Tomb of Sargeras", "type": "NaturalWonder", "production": 2, "science": 2, "faith": 2,
+     "occursOn": ["Desert", "Plains"], "turnsInto": "Mountain", "impassable": True, "unbuildable": True,
+     "weight": 5, "uniques": ["Must be adjacent to [1] to [6] [Coast] tiles"],
+     "civilopediaText": [{"text": "The temple of Elune on the Broken Shore where Aegwynn sealed the avatar of Sargeras. Gul'dan broke it open, and the Legion poured through."}]},
+    {"name": "Shaladrassil", "type": "NaturalWonder", "food": 2, "faith": 3,
+     "occursOn": ["Grassland"], "turnsInto": "Mountain", "impassable": True, "unbuildable": True,
+     "weight": 5, "uniques": ["Must be adjacent to [0] [Coast] tiles", "Must be adjacent to [1] to [6] [Forest] tiles"],
+     "civilopediaText": [{"text": "The World Tree of Val'sharah, planted by the night elves of old and corrupted by the Nightmare before the druids healed it."}]},
+    {"name": "Neltharion's Lair", "type": "NaturalWonder", "production": 3, "gold": 2,
+     "occursOn": ["Tundra", "Plains"], "turnsInto": "Mountain", "impassable": True, "unbuildable": True,
+     "weight": 5, "uniques": ["Must be adjacent to [0] [Coast] tiles", "Must be adjacent to [1] to [6] [Hill] tiles"],
+     "civilopediaText": [{"text": "The caverns beneath Highmountain where the Earth-Warder once kept his secrets, now haunted by drogbar and the fires of the deep."}]},
+    {"name": "Mount Neverest", "type": "NaturalWonder", "culture": 2, "faith": 2,
+     "occursOn": ["Snow", "Tundra"], "turnsInto": "Mountain", "impassable": True, "unbuildable": True,
+     "weight": 5, "uniques": ["Must be adjacent to [0] [Coast] tiles"],
+     "civilopediaText": [{"text": "The highest peak in Pandaria, rising above Kun-Lai Summit, where pilgrims climb to the Peak of Serenity and the Shado-Pan keep watch."}]},
+    {"name": "Kypari Zar", "type": "NaturalWonder", "science": 2, "gold": 2, "production": 1,
+     "occursOn": ["Desert", "Plains"], "turnsInto": "Mountain", "impassable": True, "unbuildable": True,
+     "weight": 5, "uniques": ["Must be adjacent to [0] [Coast] tiles"],
+     "civilopediaText": [{"text": "A colossal kypari tree of the Dread Wastes, oozing the amber sap the mantid use for everything from armour to the preservation of their Paragons."}]},
 ]
 
 # Flavour text for the existing (renamed) natural wonders, which had real-world texts.

@@ -215,6 +215,29 @@ def kiljaeden(c, fx, fy, u):
         f.paint(mm, mix(fel, (255, 255, 255), 0.3), mat="glow", outline=0)
 
 
+def guldan(c, fx, fy, u):
+    """A hunched old orc warlock in a spiked robe, skulls on his back, fel fire in his hands."""
+    f = Fig(c, fx, fy, u)
+    shadow(f, 36)
+    robe, trim, skin, fel = (60, 48, 60), (130, 110, 70), (100, 130, 70), (120, 255, 80)
+    f.paint(f.poly([(-30, 0), (30, 0), (24, -60), (14, -84), (-16, -84), (-26, -60)]), robe, mat="cloth")        # robe
+    f.paint(f.poly([(-30, 0), (30, 0), (28, -10), (-28, -10)]), trim, mat="gold")
+    for k, x in enumerate((-22, -8, 8, 22)):                                                           # skull rack on his back
+        f.paint(f.ell(x, -96 - (k % 2) * 6, 7, 7), (225, 215, 190), mat="bone")
+        f.paint(f.ell(x - 2, -97 - (k % 2) * 6, 1.6, 1.6), (40, 30, 30), mat="flat", outline=0)
+    f.paint(f.cap((-30, -100), (30, -100), 2, 2), (90, 70, 50), mat="wood")
+    f.paint(f.ell(0, -88, 18, 12), robe, mat="cloth")                                                  # hunched shoulders
+    f.paint(f.poly([(-10, -92), (12, -92), (16, -104), (0, -114), (-14, -104)]), robe, mat="cloth")    # hood
+    f.paint(f.ell(4, -98, 8, 8), skin, mat="skin")                                                     # face in the hood
+    glow(f, 7, -100, 2, fel)
+    f.paint(f.poly([(0, -92), (10, -92), (6, -84)]), (215, 215, 205), mat="fur")                      # white beard
+    for side in (-1, 1):
+        f.paint(f.cap((side * 16, -82), (side * 32, -60), 6, 5), robe, mat="cloth")                   # arms
+        mm = f.ell(side * 34, -56, 8, 8)
+        f.c.glow(mm, fel, radius=6, strength=0.9)
+        f.paint(mm, mix(fel, (255, 255, 255), 0.3), mat="glow", outline=0)
+
+
 def nzoth(c, fx, fy, u):
     f = Fig(c, fx, fy, u)
     shadow(f, 70)
@@ -241,7 +264,7 @@ def nzoth(c, fx, fy, u):
 BOSSES = {
     "Onyxia": (onyxia, 0.82), "Hakkar the Soulflayer": (hakkar, 0.92), "Ragnaros the Firelord": (ragnaros, 0.92),
     "C'Thun": (cthun, 0.9), "Sapphiron": (sapphiron, 0.86), "Deathwing the Destroyer": (deathwing, 0.8),
-    "Kil'jaeden the Deceiver": (kiljaeden, 0.88), "N'Zoth the Corruptor": (nzoth, 0.86),
+    "Kil'jaeden the Deceiver": (kiljaeden, 0.88), "Gul'dan the Destroyer": (guldan, 0.9), "N'Zoth the Corruptor": (nzoth, 0.86),
 }
 
 

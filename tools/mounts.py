@@ -426,6 +426,69 @@ def trike(p, v, armored):
     return 30, 20
 
 
+def snap_dragon(p, v, armored):
+    """Naga mount: a low, heavy sea lizard with a finned frill and a blunt snapping jaw."""
+    scales = [(40, 120, 120), (60, 100, 140), (50, 130, 90)]
+    sc = scales[v % len(scales)]
+    belly, fin = shade(sc, 1.35), (230, 120, 90) if v % 2 else (240, 190, 80)
+    p.leg(18, 30, 12, 5, shade(sc, .7), "far")
+    p.leg(40, 30, 12, 5, shade(sc, .7), "far")
+    pts = [(44, 25), (50, 27), (54, 31), (55, 36)]       # thick tail with a fin
+    for a, b in zip(pts, pts[1:]):
+        p.line(*a, *b, 5 if a[0] == 44 else 3, sc, "tail")
+    p.poly([(50, 26), (54, 22), (55, 30)], fin, "tailfin")
+    quad_body(p, 30, 26, 32, 12, sc, belly)
+    for x in range(20, 42, 5):                           # dorsal fin spines
+        p.line(x, 20, x + 1, 16, 1, fin, "fin")
+    p.leg(22, 31, 11, 5, sc, "near")
+    p.leg(43, 31, 11, 5, sc, "near")
+    p.line(17, 25, 12, 22, 7, sc, "neck")
+    p.ell(8, 22, 7, 5, sc, "head")
+    p.poly([(2, 23), (8, 24), (9, 27), (2, 26)], belly, "jaw")
+    p.poly([(9, 17), (14, 13), (15, 20)], fin, "frill")
+    p.dot(7, 20, (250, 220, 70), "eye")
+    if armored is True:
+        barding(p, 20, 40, 19, 6)
+    if armored != "bare":            # "bare": the Snap Dragon unit itself, no saddle
+        blanket(p, 30, 17, 11, 5)
+    return 30, 17
+
+
+def manasaber(p, v, armored):
+    """Nightborne manasaber: a nightsaber hung with glowing arcane bands."""
+    sx, sy = nightsaber(p, v + 1, armored)
+    for x in (24, 31, 38):
+        p.line(x, 19, x, 27, 1, (150, 120, 255), "glow")
+    p.dot(12, 12, (200, 160, 255), "lamp")
+    return sx, sy
+
+
+def moose(p, v, armored):
+    """Highmountain thunderhoof: a great moose with broad antlers."""
+    hides = [(110, 80, 55), (85, 65, 50), (130, 100, 70)]
+    hide = hides[v % len(hides)]
+    dk = shade(hide, .7)
+    hoof, ant = (50, 40, 32), (205, 190, 150)
+    p.leg(19, 26, 16, 4, dk, "far", bend=-1, hoof=hoof)
+    p.leg(39, 26, 16, 4, dk, "far", bend=1, hoof=hoof)
+    quad_body(p, 30, 22, 30, 13, hide, shade(hide, 1.1))
+    p.ell(21, 18, 8, 7, shade(hide, .85), "hump")
+    p.leg(22, 27, 15, 4, hide, "near", bend=-2, hoof=hoof)
+    p.leg(42, 27, 15, 4, hide, "near", bend=2, hoof=hoof)
+    p.line(18, 19, 13, 14, 6, hide, "neck")
+    p.poly([(14, 10), (6, 13), (4, 18), (8, 20), (15, 16)], hide, "head")
+    p.line(9, 20, 9, 24, 2, dk, "bell")                 # dewlap
+    p.dot(11, 12, (25, 20, 18), "eye")
+    for side in (0, 3):                                 # broad palmate antlers
+        p.poly([(14 - side, 10), (10 - side, 6), (13 - side, 4), (19 - side, 4), (18 - side, 9)], ant, "horn")
+        for tx in (11, 14, 17, 19):
+            p.line(tx - side, 5, tx - side, 2, 1, ant, "horn")
+    if armored:
+        barding(p, 21, 39, 17, 7)
+    blanket(p, 30, 15, 11, 6)
+    return 30, 15
+
+
 RACE_MOUNT = {
     "Orcs": wolf, "Dwarves": ram, "Gnomes": mechanostrider, "Night Elves": nightsaber,
     "Tauren": kodo, "Trolls": raptor, "Blood Elves": hawkstrider, "Draenei": elekk,
@@ -438,6 +501,7 @@ RACE_MOUNT = {
     "Dark Iron Dwarves": lambda p, v, a: ram(p, 2, a),
     "Kul Tirans": lambda p, v, a: horse(p, v, a, [(120, 80, 50), (70, 55, 45), (180, 170, 160)][v % 3], (40, 32, 28)),
     "Zandalari Trolls": lambda p, v, a: raptor(p, v + 1, a),
+    "Naga": snap_dragon, "Nightborne": manasaber, "Highmountain Tauren": moose,
 }
 MOUNT_NAME = {
     "Orcs": "wolf", "Dwarves": "ram", "Gnomes": "mechanostrider", "Night Elves": "nightsaber",
@@ -445,11 +509,13 @@ MOUNT_NAME = {
     "Pandaren": "dragon turtle", "Goblins": "trike", "Forsaken": "skeletal horse", "Scourge": "frost-touched skeletal steed",
     "High Elves": "white steed", "Worgen": "Gilnean horse",
     "Dark Iron Dwarves": "black ram", "Kul Tirans": "Kul Tiran draft horse", "Zandalari Trolls": "raptor",
+    "Naga": "snap dragon", "Nightborne": "manasaber", "Highmountain Tauren": "thunderhoof moose",
 }
 
 
 SCALE = {"Tauren": 1.35, "Draenei": 1.3, "Pandaren": 1.25, "Trolls": 1.2, "Gnomes": 1.05,
-         "Goblins": 1.1, "Dwarves": 1.15, "Dark Iron Dwarves": 1.15, "Zandalari Trolls": 1.25}
+         "Goblins": 1.1, "Dwarves": 1.15, "Dark Iron Dwarves": 1.15, "Zandalari Trolls": 1.25,
+         "Naga": 1.25, "Nightborne": 1.2, "Highmountain Tauren": 1.35}
 
 
 def draw_mount(race, variant, armored, legc=None, mount=None):
