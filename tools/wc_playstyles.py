@@ -51,7 +51,7 @@ PLAYSTYLE = {
                "The tauren trust their shamans over their scholars (-10% Science)."),
     "Dwarves": (["[+1 Science, +1 Culture] from [Titan Ruins] tiles [in all cities]"],
                 "Explorers' League: Titan Ruins give +1 Science and +1 Culture, ancient ruins can hold Titan relics only dwarves can read, and Deep Mines replace Mines."),
-    "Gnomes": (["[+40]% Strength for cities",
+    "Gnomes": (["[+40]% Strength for cities", "[+25]% Production when constructing [Settler] units [in all cities]",
                 "[+15]% Strength <for [Military] units> <when fighting in [Friendly Land] tiles>"],
                "Brilliant and Reckless: gnomish experiments can bring great breakthroughs, or explosions. "
                "Gnomish cities bristle with turrets (+40% city Strength), and gnomes fight 15% harder at home."),
@@ -71,9 +71,10 @@ PLAYSTYLE = {
     "Draenei": (["Free [Settler] appears <upon founding a city> <before turn number [4]>",
                  "[+25]% Strength <for [Military] units> <vs [Barbarian] units>",
                  "[+1] Movement <for [Religious] units>", "[+25]% Production when constructing [Settler] units [in all cities]",
-                 "[+1 Production] from every [Temple]", "Enables embarkation for land units"],
+                 "[+1 Production] from every [Temple]", "Enables embarkation for land units",
+                 "[+25]% Strength for cities"],
                 "Exiles: the survivors of the Exodar crash found a second city at once with a free Settler. +25% Strength against barbarians and demons; missionaries move faster; "
-                "settlers are trained 25% faster, every Temple gives +1 Production, and their units can embark from the start to leave the Azuremyst Isles."),
+                "settlers are trained 25% faster, every Temple gives +1 Production, their units can embark from the start to leave the Azuremyst Isles, and naaru crystals make their cities 25% stronger."),
     "Humans": (["[+20]% Strength for cities",
                 "Free [Settler] appears <upon founding a city> <before turn number [4]>"],
                "The Walls of Stormwind: Human cities are 20% stronger, and settlers from Stormwind found a second town at once (a free Settler)."),
