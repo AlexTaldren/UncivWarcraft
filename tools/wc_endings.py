@@ -130,6 +130,31 @@ ENGLISH = {
         "[civName] has wed into the ruling house of [civName2]. That city now flies their banner.",
 }
 
+# ---- the generic diplomacy replies every leader shares (content pass, Oct 2026)
+ENGLISH.update({
+    "A pleasure to meet you.": "Well met.",
+    "Very well.": "So be it.",
+    "Farewell.": "Safe travels.",
+    "Sounds good!": "Agreed!",
+    "Not this time.": "Not today.",
+    "Excellent!": "Excellent! May your banners fly high.",
+    "How about something else...": "Perhaps another offer...",
+    "May our nations forever remain united!": "May our banners fly together until the end of the age!",
+    "Indeed!": "Aye!",
+    "We will remember this.": "This will not be forgotten.",
+    "You have violated our bond of trust. This is intolerable!": "You have broken your oath to us. That we do not forgive!",
+    "You are a scourge upon this earth. I denounce you!": "You are a blight upon Azeroth. I denounce you!",
+    "You'll pay for this!": "You will pay for this in blood!",
+    "THIS MEANS WAR!": "TO ARMS! THIS MEANS WAR!",
+    "We will comply, but our consent is given grudgingly.": "We will pay, but we will not forget it.",
+    "Your demands are in poor taste. We shall decide this matter on our own.": "Your demands insult us. We answer to no one.",
+    "Did you really expect us to bend to such brazen demands?": "Bow to you? Never.",
+    "Pleasure doing business with you!": "A fine trade. May your coffers overflow!",
+    "I think not.": "Hah! I think not.",
+    "That is acceptable.": "Agreed. The deal is struck.",
+    "We are not interested.": "We have no need of that.",
+})
+
 
 def write_english(jsons_dir):
     """Write jsons/translations/English.properties (Unciv's key = value format)."""

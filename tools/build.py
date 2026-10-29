@@ -486,6 +486,8 @@ for p in files["Personalities"]:
            and "Hero" not in u.get("uniques", [])]   # Faith-only clerics are already Unbuildable
     p.setdefault("uniques", [])
     p["uniques"] += ["[+50]%% weight to [%s] for AI decisions" % u for u in own]
+import wc_quotes   # tech quotes in Warcraft voices (content pass, Oct 2026)
+print("tech quotes:", wc_quotes.apply(files["Techs"]))
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))
 

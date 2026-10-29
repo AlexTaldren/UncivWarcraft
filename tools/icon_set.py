@@ -1060,6 +1060,7 @@ TECHS = {
 }
 
 UNITS = {
+    "Knight of the Silver Hand": ("horse", "hammer"),
     "Felguard": ("axe", "flame"), "Infernal": ("golem", "flame"),
     "Settler": "banner", "Scout": "eye", "Mounted Archer": ("horse", "bow"),
     "Spearman": "spear", "Catapult": ("cannon", "skull"), "Ranger": ("bow", "leaf"), "Swordsman": "sword",
@@ -1095,6 +1096,7 @@ RESOURCES = {
 }
 
 IMPROVEMENTS = {
+    "Remove Plagued Land": ("hand_light", "skull"), "Remove Fel-Scorched Land": ("hand_light", "flame"),
     "Azerite Drill": ("crystals", "gear"), "Tidal Drill": ("crystals", "wave"), "Great Workshop": ("gears", "hammer"),
     "Academy": ("book", "orb"), "Customs house": ("coins", "anchor"), "Citadel": "castle", "Landmark": "star",
     "Holy site": "hand_light", "Trading post": "scales", "Plantation": "fruit", "Lumber mill": "saw",
@@ -1164,6 +1166,7 @@ BRANCHES = {     # policy branch icons (new names)
 }
 
 PROMOTIONS = {   # base names (icons are keyed by the base name, levels share them)
+    "Devout": ("hand_light", "star"), "Unable to pillage tiles": ("chains", "hammer"), "[Buccaneer] ability": ("anchor", "sword"),
     "Morale": "banner", "Sortie": ("wing", "bolt"), "Aerial Combat": ("gryphon", "sword"),
     "Interception": ("wing", "target"), "Bombardment": ("bomb", "target"), "Aerial Targeting": ("wing", "target"),
     "Aerie Deck": ("gryphon", "anchor"), "Iron Plating": ("shield", "anvil"), "Armor Piercing": ("spear", "shield"),
@@ -1173,8 +1176,24 @@ PROMOTIONS = {   # base names (icons are keyed by the base name, levels share th
 }
 
 
+# city-state type icons for the mod's renamed types, and a crest for every city-state
+CITY_STATE_TYPES = {"Lorekeeper": ("book", "star"), "Harbor": "anchor", "Sacred": "hand_light"}
+CITY_STATE_NATIONS = {
+    "The Earthen Ring": ("totem", "world"), "Knights of the Ebon Blade": ("skull", "sword"), "Explorers' League": ("compass", "pick"),
+    "Thorium Brotherhood": ("anvil", "flame"), "Dalaran": ("orb", "spire"), "Theramore": ("tower", "wave"),
+    "Stromgarde": ("castle", "sword"), "Gadgetzan": ("coins", "gear"), "Booty Bay": ("ship", "skull"),
+    "Ratchet": ("anchor", "coins"), "Everlook": ("tent", "coins"), "Steamwheedle Port": ("ship", "coins"),
+    "Light's Hope Chapel": ("temple", "hand_light"), "Cenarion Hold": ("leaf", "moon"), "Argent Vanguard": ("shield", "sun"),
+    "Feathermoon Stronghold": ("moon", "bow"), "Timbermaw Hold": ("paw", "tree"), "Kamagua": ("fish", "spear"),
+    "Maraudine": ("horse", "bow"), "Jasperlode Mine": ("pick", "lantern"), "Razorfen Kraul": ("tusk", "tree"),
+    "The Consortium": ("void", "coins"), "Mogu'shan": ("golem", "bolt"), "Ahn'Qiraj": ("hex_cells", "skull"),
+    "Shado-Pan Monastery": ("pagoda", "sword"), "Golden Lotus": ("leaf", "sun"), "Klaxxi'vess": ("gem", "spear"),
+    "Valdisdall": ("helm", "axe"),
+}
+
+
 def write_all(images_dir):
-    groups = (("TechIcons", TECHS, (255, 255, 255)), ("UnitIcons", UNITS, (255, 255, 255)),
+    groups = (("CityStateIcons", CITY_STATE_TYPES, (255, 255, 255)), ("NationIcons", CITY_STATE_NATIONS, (255, 255, 255)),("TechIcons", TECHS, (255, 255, 255)), ("UnitIcons", UNITS, (255, 255, 255)),
               ("ResourceIcons", RESOURCES, (255, 255, 255)), ("ImprovementIcons", IMPROVEMENTS, (255, 255, 255)),
               ("BuildingIcons", BUILDINGS, (0, 0, 0)), ("PolicyIcons", POLICIES, (255, 255, 255)),
               ("UnitPromotionIcons", PROMOTIONS, (255, 255, 255)), ("PolicyBranchIcons", BRANCHES, (255, 255, 255)))
