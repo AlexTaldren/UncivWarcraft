@@ -491,7 +491,7 @@ print("tech quotes:", wc_quotes.apply(files["Techs"]))
 # content pass, balance round 2: science victories came around turn 245. The Titan vessel
 # now takes longer to build and the last two eras' research costs more, so the endgame
 # armies get time on the field before someone launches.
-SS_COST, PROJECT_COST, LATE_TECH = 1150, 1300, {15: 1.2, 16: 1.25, 17: 1.3}
+SS_COST, PROJECT_COST, LATE_TECH = 1300, 1500, {15: 1.2, 16: 1.25, 17: 1.3}
 for _u in files["Units"]:
     if "Spaceship part" in _u.get("uniques", []):
         _u["cost"] = SS_COST

@@ -50,10 +50,10 @@ PLAYSTYLE = {
                "The tauren trust their shamans over their scholars (-10% Science)."),
     "Dwarves": (["[+1 Science, +1 Culture] from [Titan Ruins] tiles [in all cities]"],
                 "Explorers' League: Titan Ruins give +1 Science and +1 Culture, ancient ruins can hold Titan relics only dwarves can read, and Deep Mines replace Mines."),
-    "Gnomes": (["[+25]% Strength for cities",
+    "Gnomes": (["[+40]% Strength for cities",
                 "[+15]% Strength <for [Military] units> <when fighting in [Friendly Land] tiles>"],
                "Brilliant and Reckless: gnomish experiments can bring great breakthroughs, or explosions. "
-               "Gnomish cities bristle with turrets (+25% city Strength), and gnomes fight 15% harder at home."),
+               "Gnomish cities bristle with turrets (+40% city Strength), and gnomes fight 15% harder at home."),
     "Goblins": (["[Gold] cost of purchasing items in cities [-20]%",
                  "[-10]% [Production] [in all cities]",
                  "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately"],
