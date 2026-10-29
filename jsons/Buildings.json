@@ -1711,7 +1711,7 @@
   },
   {
     "name": "Titan Ascension Project",
-    "cost": 750,
+    "cost": 1500,
     "isNationalWonder": true,
     "uniques": [
       "Enables construction of Spaceship parts",
@@ -2763,6 +2763,76 @@
     ]
   },
   {
+    "name": "Coral Spawning Pool",
+    "hurryCostModifier": 25,
+    "maintenance": 2,
+    "requiredBuilding": "Shipyard",
+    "uniques": [
+      "[+1 Production, +1 Gold] from [Water resource] tiles [in this city]",
+      "Must be next to [Coast]",
+      "[+15]% Production when constructing [Water] units [in this city]",
+      "Provides [1] [Mana]"
+    ],
+    "requiredTech": "Navigation",
+    "production": 1,
+    "civilopediaText": [
+      {
+        "text": "A sheltered lagoon of living coral where naga young are raised and their sea beasts bred. +1 Production over the building it replaces, +1 Mana."
+      }
+    ],
+    "replaces": "Docks",
+    "uniqueTo": "Naga"
+  },
+  {
+    "name": "Arcway",
+    "maintenance": 2,
+    "hurryCostModifier": 15,
+    "percentStatBonus": {
+      "science": 33
+    },
+    "specialistSlots": {
+      "Arcanist": 2
+    },
+    "requiredBuilding": "Library",
+    "uniques": [
+      "[+2 Science] from [Jungle] tiles [in this city]",
+      "Provides [2] [Mana]"
+    ],
+    "requiredTech": "Scholarship",
+    "science": 1,
+    "civilopediaText": [
+      {
+        "text": "A hall of the Arcway, the vaults beneath Suramar where the Nightborne store their arcane secrets. +1 Science and +2 Mana."
+      }
+    ],
+    "replaces": "Arcane Sanctum",
+    "uniqueTo": "Nightborne"
+  },
+  {
+    "name": "Ironhorn Lodge",
+    "maintenance": 2,
+    "production": 2,
+    "specialistSlots": {
+      "Tinker": 1
+    },
+    "hurryCostModifier": 25,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "requiredTech": "Blacksmithing",
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "A lodge of the Ironhorn tribe, miners and craftsmen of the high peaks. +1 Culture over a Workshop, +1 Mana."
+      }
+    ],
+    "replaces": "Workshop",
+    "uniqueTo": "Highmountain Tauren",
+    "uniques": [
+      "Provides [1] [Mana]"
+    ]
+  },
+  {
     "name": "Tushui Monastery",
     "uniqueTo": "Pandaren",
     "culture": 2,
@@ -3162,6 +3232,69 @@
       },
       {
         "text": "A national wonder of the Zandalari Trolls."
+      }
+    ]
+  },
+  {
+    "name": "Palace of Nazjatar",
+    "isNationalWonder": true,
+    "uniqueTo": "Naga",
+    "cost": 300,
+    "requiredTech": "Navigation",
+    "culture": 1,
+    "uniques": [
+      "[+15]% Strength <for [Military] units> <when fighting in [Coast] tiles>",
+      "[+2 Production] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Azshara's drowned palace in the abyss, where the queen of the naga waited ten thousand years to rise."
+      },
+      {
+        "text": "A national wonder of the Naga."
+      }
+    ]
+  },
+  {
+    "name": "Shal'Aran Sanctum",
+    "isNationalWonder": true,
+    "uniqueTo": "Nightborne",
+    "cost": 280,
+    "requiredTech": "Scholarship",
+    "culture": 1,
+    "uniques": [
+      "[+15]% [Science] [in all cities]",
+      "[+2 Culture] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hidden refuge where the Nightfallen first learned to live without the Nightwell, now a hall of free arcanists."
+      },
+      {
+        "text": "A national wonder of the Nightborne."
+      }
+    ]
+  },
+  {
+    "name": "Huln's Totem",
+    "isNationalWonder": true,
+    "uniqueTo": "Highmountain Tauren",
+    "cost": 280,
+    "requiredTech": "Natural Lore",
+    "culture": 1,
+    "uniques": [
+      "[+15]% Strength <for [Military] units> <when fighting in [Hill] tiles>",
+      "[+2 Food] [in capital]",
+      "Never destroyed when the city is captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The great totem of Thunder Totem, carved for Huln Highmountain, who united the tribes and drove back the Legion."
+      },
+      {
+        "text": "A national wonder of the Highmountain Tauren."
       }
     ]
   },

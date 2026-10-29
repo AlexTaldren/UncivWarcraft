@@ -2619,6 +2619,84 @@
     ]
   },
   {
+    "name": "Tidal Wave",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+15]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. A wall of water crashes over the foe: adjacent enemies -20% Strength and +15% when attacking, for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 7 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Tidal Wave Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Tidal Wave is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Time Stop",
+    "unitTypes": [],
+    "uniques": [
+      "[-30]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+1] Movement"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. Elisande freezes the moment: adjacent enemies fight at -30% Strength, and she gains +1 Movement, for 1 turn. Costs 25 Mana."
+      },
+      {
+        "text": "Recharges for 8 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Time Stop Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Time Stop is recharging."
+      }
+    ]
+  },
+  {
+    "name": "Spirit of the Mountain",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [15] HP when healing",
+      "[+20]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spell. The spirits of Highmountain answer: +20% Strength and adjacent units heal 15 HP more, for 2 turns. Costs 20 Mana."
+      },
+      {
+        "text": "Recharges for 7 turns after casting."
+      }
+    ]
+  },
+  {
+    "name": "Spirit of the Mountain Cooldown",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Spirit of the Mountain is recharging."
+      }
+    ]
+  },
+  {
     "name": "Frost Armor",
     "unitTypes": [],
     "uniques": [

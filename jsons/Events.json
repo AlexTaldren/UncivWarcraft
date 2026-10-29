@@ -660,7 +660,7 @@
         "uniques": [
           "Instantly consumes [150] [Mana]",
           "Only available <when above [149] [Mana]>",
-          "Gain [150]-[300] [Science]"
+          "Gain [100]-[200] [Science]"
         ]
       },
       {
@@ -684,6 +684,44 @@
         "text": "Keep the Mana in reserve",
         "uniques": [
           "[-90]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Ley Lines Overflow",
+    "text": "So much Mana has pooled in our cities that the ley lines are cracking. Arcane storms flicker over the rooftops, and the magi warn that something in the Twisting Nether has begun to take notice. It must be spent, and soon.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise great wards over every city (-600 Mana, 8-turn Golden Age)",
+        "uniques": [
+          "Instantly consumes [600] [Mana]",
+          "Only available <when above [599] [Mana]>",
+          "Empire enters a [8]-turn Golden Age"
+        ]
+      },
+      {
+        "text": "Pour it into the land (-500 Mana, +Culture and Faith)",
+        "uniques": [
+          "Instantly consumes [500] [Mana]",
+          "Only available <when above [499] [Mana]>",
+          "Gain [300] [Culture]",
+          "Gain [300] [Faith]"
+        ]
+      },
+      {
+        "text": "Summon a great champion (-700 Mana, a free Great General)",
+        "uniques": [
+          "Instantly consumes [700] [Mana]",
+          "Only available <when above [699] [Mana]>",
+          "Free [Great General] appears"
+        ]
+      },
+      {
+        "text": "Let it crackle, and hope nothing answers",
+        "uniques": [
+          "[-95]% weight to this choice for AI decisions"
         ]
       }
     ]
@@ -821,6 +859,29 @@
         "uniques": [
           "Gain [-300] [Gold]",
           "Only available <when above [299] [Gold]>",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raid: Gul'dan",
+    "text": "Green fire burns on a distant spire, and skulls ring the night sky. Gul'dan has returned. Our champions are eager to raid. Do we sound the call?",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Sound the call to raid! (Gul'dan rises near our lands; slay it for a Raid Trophy)",
+        "uniques": [
+          "A [Gul'dan the Destroyer] rebels",
+          "Gain [40] [Culture]",
+          "[+60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay mercenaries to lure it elsewhere (-270 Gold)",
+        "uniques": [
+          "Gain [-270] [Gold]",
+          "Only available <when above [269] [Gold]>",
           "[-80]% weight to this choice for AI decisions"
         ]
       }
@@ -1286,6 +1347,63 @@
     ]
   },
   {
+    "name": "A New Beginning: Naga",
+    "text": "The naga rise from the deep and claim a shore for their queen. The surface world will learn to fear the tide.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise a coral palace (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      },
+      {
+        "text": "Call the myrmidons (a free Militia)",
+        "uniques": [
+          "Free [Militia] appears"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Nightborne",
+    "text": "Free of the Nightwell's tyranny, the Nightborne raise a city where magic belongs to everyone.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Open the arcane academies (+40 Science)",
+        "uniques": [
+          "Gain [40] [Science]"
+        ]
+      },
+      {
+        "text": "Pour the arcwine (+30 Culture)",
+        "uniques": [
+          "Gain [30] [Culture]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A New Beginning: Highmountain Tauren",
+    "text": "The tribes of Highmountain raise a great totem on the mountainside. The spirits watch over us.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Raise the totem (+30 Faith)",
+        "uniques": [
+          "Gain [30] [Faith]"
+        ]
+      },
+      {
+        "text": "Call the warbraves (a free Spearman)",
+        "uniques": [
+          "Free [Spearman] appears"
+        ]
+      }
+    ]
+  },
+  {
     "name": "The Age of Arathor",
     "text": "Kingdoms rise where tribes once roamed. Thoradin's Arathor unites the humans, and the elves teach them magic.",
     "presentation": "Alert",
@@ -1512,12 +1630,61 @@
         ]
       },
       {
+        "text": "Confront the warlock who first opened it.",
+        "uniques": [
+          "A [Gul'dan the Destroyer] rebels",
+          "Gain [90] [Culture]",
+          "Only available <starting from the [Age of the Legion]>",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Tomb of Sargeras",
+    "text": "On the Broken Shore stands the Tomb of Sargeras, its seals cracked and fel light pouring from within. Demons walk its halls.",
+    "presentation": "Alert",
+    "choices": [
+      {
         "text": "Stand against the Deceiver himself.",
         "uniques": [
           "A [Kil'jaeden the Deceiver] rebels",
           "Gain [100] [Culture]",
           "Only available <starting from the [Age of the Legion]>",
           "[-60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Reseal the outer gates.",
+        "uniques": [
+          "Gain [120] [Faith]"
+        ]
+      },
+      {
+        "text": "Study the Pillars of Creation within.",
+        "uniques": [
+          "Gain [120] [Science]",
+          "Instantly gain [15] [Mana]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Peak of Serenity",
+    "text": "Pilgrims climb the endless stair of Mount Neverest to the Peak of Serenity, where the monks of the Shado-Pan train.",
+    "presentation": "Alert",
+    "choices": [
+      {
+        "text": "Send our people on pilgrimage.",
+        "uniques": [
+          "Gain [80] [Culture]"
+        ]
+      },
+      {
+        "text": "Learn the monks' discipline.",
+        "uniques": [
+          "Gain [60] [Faith]",
+          "Gain [40] [Science]"
         ]
       }
     ]
@@ -1701,16 +1868,16 @@
       {
         "text": "Pay reparations to quiet the dissenters.",
         "uniques": [
-          "Gain [-150] [Gold]",
-          "Only available <when above [149] [Gold]>",
+          "Gain [-300] [Gold]",
+          "Only available <when above [299] [Gold]>",
           "[+20]% weight to this choice for AI decisions"
         ]
       },
       {
         "text": "Justify the war in every square and temple.",
         "uniques": [
-          "Gain [-100] [Culture]",
-          "Only available <when above [99] [Culture]>",
+          "Gain [-250] [Culture]",
+          "Only available <when above [249] [Culture]>",
           "[+10]% weight to this choice for AI decisions"
         ]
       },
@@ -1794,16 +1961,16 @@
       {
         "text": "Pay reparations to quiet the dissenters.",
         "uniques": [
-          "Gain [-150] [Gold]",
-          "Only available <when above [149] [Gold]>",
+          "Gain [-300] [Gold]",
+          "Only available <when above [299] [Gold]>",
           "[+20]% weight to this choice for AI decisions"
         ]
       },
       {
         "text": "Justify the war in every square and temple.",
         "uniques": [
-          "Gain [-100] [Culture]",
-          "Only available <when above [99] [Culture]>",
+          "Gain [-250] [Culture]",
+          "Only available <when above [249] [Culture]>",
           "[+10]% weight to this choice for AI decisions"
         ]
       },

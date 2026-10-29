@@ -408,6 +408,204 @@
     ]
   },
   {
+    "name": "Naga General",
+    "unitNames": [
+      "Lady Vashj",
+      "Lady Naz'jar",
+      "Warlord Kalithresh",
+      "Commander Ulthok",
+      "Hydross the Unstable",
+      "Morogrim Tidewalker",
+      "Fathom-Lord Karathress"
+    ]
+  },
+  {
+    "name": "Naga Admiral",
+    "unitNames": [
+      "Tidelord Rrurgaz",
+      "Admiral Skaarn",
+      "Commander Sarannis",
+      "Sea Witch Vashjara"
+    ]
+  },
+  {
+    "name": "Naga Artist",
+    "unitNames": [
+      "Siren Ravenna",
+      "Coral-singer Lissa",
+      "Shellcarver Ssizar",
+      "Tidechanter Zhal"
+    ]
+  },
+  {
+    "name": "Naga Merchant",
+    "unitNames": [
+      "Pearl-broker Ssaressa",
+      "Tradesinger Ozeth",
+      "Treasurer Nazrah",
+      "Reef-merchant Isskar"
+    ]
+  },
+  {
+    "name": "Naga Engineer",
+    "unitNames": [
+      "Architect of Nazjatar Szar",
+      "Coralshaper Vesh",
+      "Builder Ssinar",
+      "Reefwright Thalassa"
+    ]
+  },
+  {
+    "name": "Naga Prophet",
+    "unitNames": [
+      "Priestess Delrissa",
+      "Tidecaller Saressa",
+      "Voice of the Deep",
+      "Oracle Ilsaria"
+    ]
+  },
+  {
+    "name": "Naga Scientist",
+    "unitNames": [
+      "Highborne Sorceress Szeltha",
+      "Scholar Ssathra",
+      "Arcanist Varis",
+      "Lorekeeper Nazessa"
+    ]
+  },
+  {
+    "name": "Nightborne General",
+    "unitNames": [
+      "Silgryn",
+      "Captain Elisande's Blade",
+      "Spellblade Aluriel",
+      "Arcanist Valtrois",
+      "Ly'leth Lunastre",
+      "Oculeth",
+      "General Volkanar"
+    ]
+  },
+  {
+    "name": "Nightborne Admiral",
+    "unitNames": [
+      "Harbormaster Dulana",
+      "Captain Telumendri",
+      "Navigator Lorelia"
+    ]
+  },
+  {
+    "name": "Nightborne Artist",
+    "unitNames": [
+      "Arcwine Vintner Leyline",
+      "Dancer Andriel",
+      "Sculptor Aelistra",
+      "Poet Lyndelle",
+      "Masquer Valewynd"
+    ]
+  },
+  {
+    "name": "Nightborne Merchant",
+    "unitNames": [
+      "First Merchant Telamor",
+      "Arcwine Trader Selys",
+      "Banker Ilyndra",
+      "Broker Vaelinor"
+    ]
+  },
+  {
+    "name": "Nightborne Engineer",
+    "unitNames": [
+      "Architect Telemancer Oculeth",
+      "Builder Thoridan",
+      "Warder Ilthra",
+      "Stonewright Kaelith"
+    ]
+  },
+  {
+    "name": "Nightborne Prophet",
+    "unitNames": [
+      "Astromancer Etraeus",
+      "Star Augur Etraeus",
+      "Priestess of the Night Vaena",
+      "Seer Melandris"
+    ]
+  },
+  {
+    "name": "Nightborne Scientist",
+    "unitNames": [
+      "Grand Magistrix Elisande",
+      "Arcanist Valtrois",
+      "Magistrix Vilessa",
+      "Thalyssra the Wise",
+      "Chronomancer Terethos"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren General",
+    "unitNames": [
+      "Huln Highmountain",
+      "Torok Bloodtotem",
+      "Spiritwalker Ebonhorn",
+      "Navarrogg",
+      "Ulmaas",
+      "Chieftain Ravenhorn",
+      "Warbrave Oro"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren Admiral",
+    "unitNames": [
+      "Riverbend Captain Shaka",
+      "Boatmaster Tahu",
+      "Rapids-rider Moko"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren Artist",
+    "unitNames": [
+      "Drum-singer Kaela",
+      "Totem-carver Amo",
+      "Storyteller Ondri",
+      "Hidepainter Nahi"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren Merchant",
+    "unitNames": [
+      "Trader Ironhorn",
+      "Hidemonger Tolo",
+      "Merchant Skyhorn",
+      "Barterer Wanu"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren Engineer",
+    "unitNames": [
+      "Thunder Totem Builder Akio",
+      "Bridgewright Tahko",
+      "Stonecarver Mahu",
+      "Ropemaster Kiyo"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren Prophet",
+    "unitNames": [
+      "Spiritwalker Ebonhorn",
+      "Elder Sage Tu'Kalo",
+      "Shaman Matoclaw",
+      "Seer Skyhorn"
+    ]
+  },
+  {
+    "name": "Highmountain Tauren Scientist",
+    "unitNames": [
+      "Loremaster Ilkaru",
+      "Sage Ralto",
+      "Earthwarden Haval",
+      "Mystic Tutek"
+    ]
+  },
+  {
     "name": "Humans General",
     "unitNames": [
       "Anduin Lothar",

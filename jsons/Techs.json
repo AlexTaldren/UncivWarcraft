@@ -16,7 +16,8 @@
           {
             "text": "The first fields of grain, tilled by the tribes that would become the nations of Azeroth."
           }
-        ]
+        ],
+        "quote": "Feed the village first. Glory can wait until the harvest is in. — a Westfall farmer"
       }
     ]
   },
@@ -40,7 +41,8 @@
           {
             "text": "Clay vessels to store food and water through the long winters."
           }
-        ]
+        ],
+        "quote": "A clay jar holds more than grain. It holds the winter we survived. — Tauren saying"
       },
       {
         "name": "Beast Taming",
@@ -52,7 +54,8 @@
           {
             "text": "Taming wolves, kodo, boars and the other beasts of the wild."
           }
-        ]
+        ],
+        "quote": "The wolf is not your servant. It is your brother, and it will judge you. — Durotan"
       },
       {
         "name": "Archery",
@@ -67,7 +70,8 @@
           {
             "text": "The bow, first weapon of the hunter and the ranger."
           }
-        ]
+        ],
+        "quote": "Breathe out. Let the moon guide the arrow. — Sentinel training lesson"
       },
       {
         "name": "Mining",
@@ -82,7 +86,8 @@
           {
             "text": "Digging copper and tin from the hills, as the dwarves of Khaz Modan do best."
           }
-        ]
+        ],
+        "quote": "Dig deep enough and the mountain tells you its secrets. Dig too deep and it tells you something else. — Ironforge miner"
       }
     ]
   },
@@ -106,7 +111,8 @@
           {
             "text": "Boats and rafts to fish the coasts and cross to the islands."
           }
-        ]
+        ],
+        "quote": "The sea gives, and the sea takes. Respect her, and she gives a little more. — Kul Tiran tidesage"
       },
       {
         "name": "Herbalism",
@@ -121,7 +127,8 @@
           {
             "text": "Knowing Peacebloom from Silverleaf: the first remedies and reagents."
           }
-        ]
+        ],
+        "quote": "Peacebloom for the body, silverleaf for the mind, and patience for everything else. — Cenarion herbalist"
       },
       {
         "name": "Runic Script",
@@ -136,7 +143,8 @@
           {
             "text": "Writing in runes, as the titans' servants first taught the dwarves and the trolls."
           }
-        ]
+        ],
+        "quote": "The titans wrote the world in runes. We are only learning to read. — Brann Bronzebeard"
       },
       {
         "name": "Skinning",
@@ -151,7 +159,8 @@
           {
             "text": "Turning hides and furs into leather."
           }
-        ]
+        ],
+        "quote": "Waste nothing the hunt gives you. The Earth Mother is watching. — Tauren hunter"
       },
       {
         "name": "The Wheel",
@@ -167,7 +176,8 @@
           {
             "text": "Carts and wagons to carry goods between villages."
           }
-        ]
+        ],
+        "quote": "Round, it rolls. Square, it does not. This is the whole of engineering. — Gnomish primer, first page"
       },
       {
         "name": "Masonry",
@@ -179,7 +189,8 @@
           {
             "text": "Cutting and stacking stone into walls and halls."
           }
-        ]
+        ],
+        "quote": "A wall is only as strong as the hands that laid it and the hearts that guard it. — Stromgarde stonemason"
       },
       {
         "name": "Bronze Working",
@@ -194,7 +205,8 @@
           {
             "text": "Alloying copper and tin into bronze for tools and blades."
           }
-        ]
+        ],
+        "quote": "Copper and tin, fire and hammer. From such humble things, kingdoms are made. — Dwarven smith"
       }
     ]
   },
@@ -219,7 +231,8 @@
           {
             "text": "Lenses and spyglasses, for sailors and astrologers alike."
           }
-        ]
+        ],
+        "quote": "Look further, and you will see your enemy before he sees you. — Farstrider proverb"
       },
       {
         "name": "Riding",
@@ -235,7 +248,8 @@
           {
             "text": "Riding horses, wolves and other mounts to war."
           }
-        ]
+        ],
+        "quote": "A good mount will carry you through fire. A bad one will carry you into it. — Stormwind stablemaster"
       },
       {
         "name": "Mathematics",
@@ -247,7 +261,8 @@
           {
             "text": "Numbers and geometry, the tools of builders and engineers."
           }
-        ]
+        ],
+        "quote": "Numbers do not lie. Accountants, however... — Goblin trade prince"
       },
       {
         "name": "Construction",
@@ -263,7 +278,8 @@
           {
             "text": "Timber frames, arches and bridges."
           }
-        ]
+        ],
+        "quote": "Build it to last a thousand years, and it might survive the next war. — Alliance engineer"
       }
     ]
   },
@@ -285,7 +301,8 @@
           {
             "text": "Thinking about the Light, the spirits and the nature of the world."
           }
-        ]
+        ],
+        "quote": "Before you can command the arcane, you must first command yourself. — Archmage Antonidas"
       },
       {
         "name": "Bardic Lore",
@@ -297,7 +314,8 @@
           {
             "text": "Songs and stories that keep the memory of a people."
           }
-        ]
+        ],
+        "quote": "Sing of the fallen, so that the living remember why they fight. — Darnassian lorekeeper"
       },
       {
         "name": "Coinage",
@@ -312,7 +330,8 @@
           {
             "text": "Copper, silver and gold coins to pay for goods and soldiers."
           }
-        ]
+        ],
+        "quote": "Gold is the only language every race speaks fluently. — Steamwheedle Cartel motto"
       },
       {
         "name": "Engineering",
@@ -329,7 +348,8 @@
           {
             "text": "Aqueducts, cranes and siege machines."
           }
-        ]
+        ],
+        "quote": "If it explodes, it was a learning experience. If it doesn't, it was a success. — Gelbin Mekkatorque"
       },
       {
         "name": "Iron Forged Swords",
@@ -344,7 +364,8 @@
           {
             "text": "Forging iron blades, the first of the blacksmith's great upgrades."
           }
-        ]
+        ],
+        "quote": "Iron does not care who swings it. Make sure it is you. — Orc blademaster"
       }
     ]
   },
@@ -366,7 +387,8 @@
           {
             "text": "An ordered clergy, like the Church of the Holy Light or the Sisterhood of Elune."
           }
-        ]
+        ],
+        "quote": "The Light asks only that we remain steadfast. It is enough, and it is everything. — Northshire priest"
       },
       {
         "name": "Arathi Law",
@@ -384,7 +406,8 @@
           {
             "text": "The laws of the Arathi Empire, first human nation, that let a realm be ruled from afar."
           }
-        ]
+        ],
+        "quote": "A kingdom of laws outlives any king. — Thoradin, first King of Arathor"
       },
       {
         "name": "Trade Guilds",
@@ -399,7 +422,8 @@
           {
             "text": "Guilds of craftsmen and merchants, like the Stonemasons' Guild of Stormwind."
           }
-        ]
+        ],
+        "quote": "One merchant is a target. A hundred merchants are a guild, and guilds have guards. — Stormwind trade charter"
       },
       {
         "name": "Blacksmithing",
@@ -415,7 +439,8 @@
           {
             "text": "The anvil and the forge: casting and hammering metal into weapons and armour."
           }
-        ]
+        ],
+        "quote": "Strike while the iron is hot, and strike again while it is cooling. — Thorium Brotherhood smith"
       }
     ]
   },
@@ -441,7 +466,8 @@
           {
             "text": "The compass and the charts that take ships across the Great Sea."
           }
-        ]
+        ],
+        "quote": "Beyond the horizon lie new lands, old enemies and better fishing. — Booty Bay captain"
       },
       {
         "name": "Scholarship",
@@ -459,7 +485,8 @@
           {
             "text": "Schools and academies where the young learn from the old."
           }
-        ]
+        ],
+        "quote": "Knowledge hoarded is knowledge lost. Share it, and it multiplies. — Lorewalker Cho"
       },
       {
         "name": "Animal War Training",
@@ -475,7 +502,8 @@
           {
             "text": "Training horses and beasts to stand firm in battle, an upgrade of the Warcraft II stables."
           }
-        ]
+        ],
+        "quote": "The kodo does not fear the arrow, so neither should its rider. — Tauren war chief"
       },
       {
         "name": "Clockwork",
@@ -491,7 +519,8 @@
           {
             "text": "Springs, gears and escapements, the first steps toward gnomish engineering."
           }
-        ]
+        ],
+        "quote": "Wind it up, set it down, and stand well back. — Gnomish tinker"
       },
       {
         "name": "Siege Engineering",
@@ -503,7 +532,8 @@
           {
             "text": "Counterweights and torsion: the science behind the catapult and the ballista."
           }
-        ]
+        ],
+        "quote": "Every wall has a weakness. Usually it is the gate. — Horde siege master"
       },
       {
         "name": "Steel Forged Swords",
@@ -518,7 +548,8 @@
           {
             "text": "Steel blades, the second of the blacksmith's great upgrades."
           }
-        ]
+        ],
+        "quote": "Steel holds an edge. So must the warrior who carries it. — Varian Wrynn"
       }
     ]
   },
@@ -545,7 +576,8 @@
           {
             "text": "Charting the stars and the two moons of Azeroth."
           }
-        ]
+        ],
+        "quote": "The stars are the oldest map of all. The night elves have been reading it for ten thousand years. — Tyrande Whisperwind"
       },
       {
         "name": "Choral Hymns",
@@ -560,7 +592,8 @@
           {
             "text": "Choirs and great halls built to carry the sound of song and prayer."
           }
-        ]
+        ],
+        "quote": "When a thousand voices sing to the Light, even the dead stop to listen. — Cathedral of Light chorister"
       },
       {
         "name": "Banking",
@@ -576,7 +609,8 @@
           {
             "text": "Banks and letters of credit, as in the vaults of Stormwind and the Undermine Exchange."
           }
-        ]
+        ],
+        "quote": "Deposit your gold with us and sleep soundly. We certainly will. — Gadgetzan banker"
       },
       {
         "name": "Inscription",
@@ -593,7 +627,8 @@
           {
             "text": "The scribe's craft: inks, glyphs, scrolls and printed books."
           }
-        ]
+        ],
+        "quote": "A glyph is a spell that waits patiently. — Dalaran scribe"
       },
       {
         "name": "Blackpowder",
@@ -609,7 +644,8 @@
           {
             "text": "The dwarves' explosive powder, which made the first guns and cannons possible."
           }
-        ]
+        ],
+        "quote": "Point the loud end at the enemy. — Ironforge rifle drill, lesson one"
       }
     ]
   },
@@ -630,7 +666,8 @@
           {
             "text": "Navigators who sail by the stars far out of sight of land."
           }
-        ]
+        ],
+        "quote": "A Kul Tiran never gets lost. We simply discover new places we did not intend to visit. — Daelin Proudmoore"
       },
       {
         "name": "Architecture",
@@ -643,7 +680,8 @@
           {
             "text": "Grand halls, towers and cathedrals."
           }
-        ]
+        ],
+        "quote": "Build a spire high enough and the gods themselves will notice. — Quel'Thalas architect"
       },
       {
         "name": "Auctioneering",
@@ -659,7 +697,8 @@
           {
             "text": "The auction houses, where any good can find its price."
           }
-        ]
+        ],
+        "quote": "Going once, going twice... sold to the goblin in the back with too much gold! — Auction House barker"
       },
       {
         "name": "Mithril Forged Swords",
@@ -675,7 +714,8 @@
           {
             "text": "Mithril blades, the finest of the blacksmith's upgrades."
           }
-        ]
+        ],
+        "quote": "Mithril is light as a feather and hard as a dragon's scale. It is also very expensive. — Dwarven armorer"
       },
       {
         "name": "Alchemy",
@@ -690,7 +730,8 @@
           {
             "text": "Transmuting metals and brewing potions and flasks."
           }
-        ]
+        ],
+        "quote": "Every potion is a question. Some answer it. Some explode. — Royal Apothecary Society"
       }
     ]
   },
@@ -715,7 +756,8 @@
           {
             "text": "Digging up the past, as the Explorers' League does across the world."
           }
-        ]
+        ],
+        "quote": "Every ruin is a letter from the past. Most are complaints. — Harrison Jones"
       },
       {
         "name": "Arcane Science",
@@ -731,7 +773,8 @@
           {
             "text": "Studying magic as a science rather than an art, in the manner of Dalaran."
           }
-        ]
+        ],
+        "quote": "Magic is not a mystery. It is a discipline. — Jaina Proudmoore"
       },
       {
         "name": "Steamworks",
@@ -746,7 +789,8 @@
           {
             "text": "Steam engines driving forges, mills and machines."
           }
-        ]
+        ],
+        "quote": "Steam, gears and a little bit of fire. What could possibly go wrong? — Goblin engineer"
       },
       {
         "name": "Long Rifles",
@@ -762,7 +806,8 @@
           {
             "text": "The dwarves' long-barrelled rifles, which extend a rifleman's reach."
           }
-        ]
+        ],
+        "quote": "Aim small, miss small. — Gilnean marksman"
       },
       {
         "name": "War Doctrine",
@@ -775,7 +820,8 @@
           {
             "text": "Officers, drill and strategy: the study of war itself."
           }
-        ]
+        ],
+        "quote": "Plans survive until the first arrow flies. Prepare anyway. — Anduin Lothar"
       },
       {
         "name": "Soil Enrichment",
@@ -790,7 +836,8 @@
           {
             "text": "Alchemical fertilisers and better farming for growing cities."
           }
-        ]
+        ],
+        "quote": "Feed the land, and the land feeds you. Poison it, and you starve together. — Cenarion druid"
       }
     ]
   },
@@ -815,7 +862,8 @@
           {
             "text": "The druids' understanding of plants, beasts and the living world."
           }
-        ]
+        ],
+        "quote": "The forest remembers every footstep. Walk lightly. — Malfurion Stormrage"
       },
       {
         "name": "Storm Hammers",
@@ -830,7 +878,8 @@
           {
             "text": "The Wildhammer's storm hammers, which call down lightning, and the study of that power."
           }
-        ]
+        ],
+        "quote": "Throw the hammer. Call it back. Throw it again. Repeat until the enemy stops. — Muradin Bronzebeard"
       },
       {
         "name": "Steam Power",
@@ -847,7 +896,8 @@
           {
             "text": "Steam that drives ships, engines and goblin contraptions."
           }
-        ]
+        ],
+        "quote": "The kettle sings, and the engine roars. — Gnomeregan workshop sign"
       },
       {
         "name": "Seaforium",
@@ -860,7 +910,8 @@
           {
             "text": "Goblin seaforium charges, explosive enough to blow open any wall."
           }
-        ]
+        ],
+        "quote": "Handle with care. Then handle with more care. Then run. — Goblin demolitions crew"
       }
     ]
   },
@@ -885,7 +936,8 @@
           {
             "text": "Enchantments of frost that keep food fresh and ships' holds cold."
           }
-        ]
+        ],
+        "quote": "Cold is patient. Cold always wins. — Frostwolf shaman"
       },
       {
         "name": "Communication Crystals",
@@ -900,7 +952,8 @@
           {
             "text": "Crystals that carry voices across great distances."
           }
-        ]
+        ],
+        "quote": "Speak into the crystal. Clearly. No, the other end. — Kirin Tor apprentice"
       },
       {
         "name": "Gnomish Gearworks",
@@ -916,7 +969,8 @@
           {
             "text": "Standard gnomish parts that let machines be built and repaired quickly."
           }
-        ]
+        ],
+        "quote": "Small gears turn big wheels. Small gnomes build big machines. — Gnomish engineering motto"
       },
       {
         "name": "Gnomish Flight",
@@ -928,7 +982,8 @@
           {
             "text": "Gyrocopters and flying machines take to the skies."
           }
-        ]
+        ],
+        "quote": "Up is the easy part. Down is where we need more work. — Gnomish test pilot"
       },
       {
         "name": "Tramways",
@@ -944,14 +999,15 @@
           {
             "text": "Rails and steam wagons, like the Deeprun Tram beneath the mountains."
           }
-        ]
+        ],
+        "quote": "The Deeprun Tram: because tunnelling under the sea seemed sensible at the time. — Ironforge engineer"
       }
     ]
   },
   {
     "columnNumber": 12,
     "era": "Age of the Cataclysm",
-    "techCost": 4100,
+    "techCost": 4510,
     "buildingCost": 500,
     "wonderCost": 1250,
     "techs": [
@@ -969,7 +1025,8 @@
           {
             "text": "Arcanite, a transmuted metal lighter and stronger than any other."
           }
-        ]
+        ],
+        "quote": "Arcanite is what happens when you ask the arcane to hold still. — Thorium Brotherhood smith"
       },
       {
         "name": "Arcane Conduits",
@@ -982,7 +1039,8 @@
           {
             "text": "Wires and conduits that carry arcane power to machines."
           }
-        ]
+        ],
+        "quote": "Channel the ley lines, and a city never sleeps. — Silvermoon magister"
       },
       {
         "name": "Fragmentation Shards",
@@ -994,7 +1052,8 @@
           {
             "text": "Explosive shells that burst into shards, an artillery upgrade."
           }
-        ]
+        ],
+        "quote": "It is not the explosion that gets you. It is all the little pieces. — Dark Iron demolitionist"
       },
       {
         "name": "Liquid Fire",
@@ -1009,14 +1068,15 @@
           {
             "text": "The Horde's liquid fire, which burns even stone, and the engines it powers."
           }
-        ]
+        ],
+        "quote": "Burn the field, and the enemy has nowhere to stand. — Blood Elf battlemage"
       }
     ]
   },
   {
     "columnNumber": 13,
     "era": "Age of the Legion",
-    "techCost": 5100,
+    "techCost": 5860,
     "buildingCost": 500,
     "wonderCost": 1250,
     "techs": [
@@ -1031,7 +1091,8 @@
           {
             "text": "Potions and elixirs that heal wounds and cure plagues."
           }
-        ]
+        ],
+        "quote": "Drink this. Do not ask what is in it. — Goblin alchemist"
       },
       {
         "name": "Mana Theory",
@@ -1047,7 +1108,8 @@
           {
             "text": "Understanding the raw mana that flows through all things."
           }
-        ]
+        ],
+        "quote": "Mana is the blood of magic. Spill too much, and something hungry will come to drink it. — Khadgar"
       },
       {
         "name": "Scrying",
@@ -1063,7 +1125,8 @@
           {
             "text": "Crystal balls and far sight to watch enemy armies from afar."
           }
-        ]
+        ],
+        "quote": "Peer into the orb and see what the enemy plans. Try not to let it see you back. — Dalaran seer"
       },
       {
         "name": "Battle Formations",
@@ -1076,14 +1139,15 @@
           {
             "text": "Armies of many arms fighting as one."
           }
-        ]
+        ],
+        "quote": "A line of shields is a wall that walks. — Alliance drill sergeant"
       }
     ]
   },
   {
     "columnNumber": 14,
     "era": "Age of the Legion",
-    "techCost": 6400,
+    "techCost": 7360,
     "buildingCost": 500,
     "wonderCost": 1250,
     "techs": [
@@ -1098,7 +1162,8 @@
           {
             "text": "Living in balance with the land, as the Cenarion Circle teaches."
           }
-        ]
+        ],
+        "quote": "Ask the trees for help, and they will answer. Slowly. — Keeper of the Grove"
       },
       {
         "name": "Unstable Mana",
@@ -1111,7 +1176,8 @@
           {
             "text": "Mana pushed to the breaking point: the secret of the mana bomb."
           }
-        ]
+        ],
+        "quote": "Never store it near anything you would miss. — Mana Bomb project notes"
       },
       {
         "name": "Demolition",
@@ -1126,7 +1192,8 @@
           {
             "text": "Rockets and explosives for the battlefield."
           }
-        ]
+        ],
+        "quote": "If you can't go through it, blow it up. If you can go through it, blow it up anyway. — Goblin sapper"
       },
       {
         "name": "Titan Logic",
@@ -1139,14 +1206,15 @@
           {
             "text": "The thinking machines of the titans, studied and copied at last."
           }
-        ]
+        ],
+        "quote": "The titans built the world as a machine. Now we are learning how to repair it. — Keeper Loken's records"
       }
     ]
   },
   {
     "columnNumber": 15,
     "era": "Age of Azerite",
-    "techCost": 7700,
+    "techCost": 10010,
     "buildingCost": 750,
     "wonderCost": 1250,
     "techs": [
@@ -1160,7 +1228,8 @@
           {
             "text": "Portals and waystones linking every city in the realm."
           }
-        ]
+        ],
+        "quote": "Step through a portal in Stormwind, step out in Dalaran. Keep your arms and legs inside. — Portal trainer"
       },
       {
         "name": "War Drums",
@@ -1173,7 +1242,8 @@
           {
             "text": "War drums that keep armies moving fast and fighting hard."
           }
-        ]
+        ],
+        "quote": "When the drums beat, every orc remembers who he is. — Thrall"
       },
       {
         "name": "Siege Barrage",
@@ -1186,7 +1256,8 @@
           {
             "text": "Long-range bombardment by siege engines and airships."
           }
-        ]
+        ],
+        "quote": "Bring every cannon. Then bring more. — Horde siege commander"
       },
       {
         "name": "Eye of Kilrogg",
@@ -1202,7 +1273,8 @@
           {
             "text": "The orc warlock's floating eye, an all-seeing spy in the sky."
           }
-        ]
+        ],
+        "quote": "What the eye sees, the warlock knows. — Gul'dan"
       },
       {
         "name": "Mechagnomics",
@@ -1215,7 +1287,8 @@
           {
             "text": "Mechanical bodies and mechagnomes, the craft of Mechagon."
           }
-        ]
+        ],
+        "quote": "Flesh is weak. Gears are forever. — King Mechagon"
       },
       {
         "name": "Focused Arcana",
@@ -1230,14 +1303,15 @@
           {
             "text": "Beams of focused arcane power that cut through any armour."
           }
-        ]
+        ],
+        "quote": "A single beam of focused will can split a mountain. Please do not split our mountain. — Kirin Tor lecturer"
       }
     ]
   },
   {
     "columnNumber": 16,
     "era": "Age of Azerite",
-    "techCost": 8800,
+    "techCost": 11880,
     "buildingCost": 750,
     "wonderCost": 1250,
     "techs": [
@@ -1254,7 +1328,8 @@
           {
             "text": "The peoples of Azeroth bound together by trade and need."
           }
-        ]
+        ],
+        "quote": "Alliance and Horde, standing together. Who would have believed it? — Baine Bloodhoof"
       },
       {
         "name": "Azerite Refinement",
@@ -1268,7 +1343,8 @@
           {
             "text": "Refining Azerite, the lifeblood of the world, into power."
           }
-        ]
+        ],
+        "quote": "Azeroth bleeds Azerite. We must decide what to do with her blood. — Magni Bronzebeard"
       },
       {
         "name": "Titanforging",
@@ -1285,7 +1361,8 @@
           {
             "text": "The titans' own forging, the power to shape matter itself."
           }
-        ]
+        ],
+        "quote": "Forge as the titans forged, and what you make will outlast the stars. — Keeper of Ulduar"
       },
       {
         "name": "Ethereal Technology",
@@ -1297,7 +1374,8 @@
           {
             "text": "The secrets of the ethereals, beings of pure energy."
           }
-        ]
+        ],
+        "quote": "Everything has a price, even the impossible. — Consortium broker"
       },
       {
         "name": "Invisibility",
@@ -1313,14 +1391,15 @@
           {
             "text": "Spells and devices that hide whole armies from sight."
           }
-        ]
+        ],
+        "quote": "You cannot strike what you cannot see. That is the whole point. — Ravenholdt master"
       }
     ]
   },
   {
     "columnNumber": 17,
     "era": "Age of the Void",
-    "techCost": 9500,
+    "techCost": 13300,
     "buildingCost": 750,
     "wonderCost": 1250,
     "techs": [
@@ -1341,7 +1420,8 @@
           {
             "text": "What secrets lie beyond the Void?"
           }
-        ]
+        ],
+        "quote": "Gaze into the Void, and it gazes back, and whispers your name. — Xal'atath"
       }
     ]
   }
