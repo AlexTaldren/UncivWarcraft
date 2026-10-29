@@ -89,7 +89,8 @@ CHANGES = {
     # Oct 24 2026 endgame pass (user request): riders stay riders, pikes stay on foot, the Paladin is endgame.
     # Mounted: Knight > Cavalry > War Rider > Grand Champion. War machines are their own line from War Golem.
     "Cavalry": dict(upgradesTo="War Rider"),
-    "Knight of the Silver Hand": dict(upgradesTo="War Rider"),
+    # balance round 2: Humans rarely hold Horses, so the order's knights (and the Paladins after them) ride without
+    "Knight of the Silver Hand": dict(upgradesTo="War Rider", drop=["requiredResource"]),
     "Raider": dict(upgradesTo="War Rider"),
     "Lancer": dict(upgradesTo="Cavalry"),
     # Anti-cavalry, on foot: Spearman > Pikeman > Halberdier > Siegebreaker > Phalanx
@@ -99,7 +100,7 @@ CHANGES = {
     "Siegebreaker": dict(upgradesTo="Phalanx", add_uniques=["[+50]% Strength <vs [Mounted] units>"],
                          text="Heavy infantry with rocket mortars and tower shields, who break charging riders and war machines alike."),
     # the Humans' Paladin is their endgame rider (as in Warcraft II, where Knights become Paladins)
-    "Paladin": dict(replaces="Grand Champion", requiredTech="Titan Logic", strength=105, cost=450, drop=["obsoleteTech", "upgradesTo"],
+    "Paladin": dict(replaces="Grand Champion", requiredTech="Titan Logic", strength=105, cost=450, drop=["obsoleteTech", "upgradesTo", "requiredResource"],
                     text="Holy warriors of the Order of the Silver Hand, clad in blessed plate on barded chargers, who heal their comrades and "
                          "turn the tide wherever they ride. Humans field ordinary Knights early on; their riders become Paladins at the end of the age.",
                     text2="Stronger than a Grand Champion, inspires and heals nearby units, and can Lay on Hands."),
