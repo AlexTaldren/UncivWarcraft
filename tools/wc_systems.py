@@ -274,8 +274,8 @@ def politics_events():
         kin = "Brother Against Brother" if side == "Alliance" else "Blood Against Blood"
         ev.append({"name": kin, "presentation": "Alert",
                    "text": "We have declared war on fellow members of %s. Our people and our allies are outraged." % banner,
-                   "choices": [{"text": "Pay reparations to quiet the dissenters.", "uniques": ["Gain [-300] [Gold]", need(300, "Gold"), ai(20)]},
-                               {"text": "Justify the war in every square and temple.", "uniques": ["Gain [-250] [Culture]", need(250, "Culture"), ai(10)]}]
+                   "choices": [{"text": "Pay reparations to quiet the dissenters.", "uniques": ["Gain [-150] [Gold]", need(150, "Gold"), ai(20)]},
+                               {"text": "Justify the war in every square and temple.", "uniques": ["Gain [-100] [Culture]", need(100, "Culture"), ai(10)]}]
                               + [{"text": t, "uniques": u} for t, u in REBELS]})
         ev.append({"name": "%s Attacks!" % ("The Horde" if side == "Alliance" else "The Alliance"), "presentation": "Alert",
                    "text": ("The Horde has declared war on us. The people rally to the banners of the Alliance!" if side == "Alliance"
