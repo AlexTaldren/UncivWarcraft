@@ -8,7 +8,7 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 
 **Eras** follow Azeroth's timeline: Age of Tribes → Age of Arathor → Age of the Dark Portal → Age of the Third War → Age of the Lich King → Age of the Cataclysm → Age of the Legion → Age of Azerite → Age of the Void.
 
-**18 races**, each with a leader, unique ability, AI personality and city list: Humans, Orcs, Night Elves, Dwarves, Gnomes, Tauren, Trolls, Blood Elves, High Elves, Pandaren, Forsaken, Draenei, Goblins, Worgen, **the Dark Iron Dwarves** under Moira Thaurissan in Shadowforge City, **the Kul Tirans** under Jaina Proudmoore in Boralus, **the Zandalari Trolls** under Queen Talanji in Zuldazar, and **the Scourge** under Arthas, the Lich King, ruling from Icecrown Citadel in Northrend.
+**21 races**, each with a leader, unique ability, AI personality and city list: Humans, Orcs, Night Elves, Dwarves, Gnomes, Tauren, Trolls, Blood Elves, High Elves, Pandaren, Forsaken, Draenei, Goblins, Worgen, **the Dark Iron Dwarves** under Moira Thaurissan in Shadowforge City, **the Kul Tirans** under Jaina Proudmoore in Boralus, **the Zandalari Trolls** under Queen Talanji in Zuldazar, and **the Scourge** under Arthas, the Lich King, ruling from Icecrown Citadel in Northrend. From the Broken Isles and the deep come **the Nightborne** of Suramar under First Arcanist Thalyssra, **the Highmountain Tauren** under Mayla Highmountain in Thunder Totem, and **the Naga** under Queen Azshara, rising from sunken Nazjatar.
 
 **Humans (complete)** — led by Anduin Wrynn, in Stormwind blue and gold
 - *The Human Spirit:* City-State influence decays 50% slower and rests 20 higher; +15% Great Person generation. *For Lordaeron!* +10% Strength in your own lands. *Call to Arms:* when another civilization declares war on you, 2 free infantry of your current era appear.
@@ -70,7 +70,7 @@ A standalone base ruleset that turns Unciv into the world of Warcraft: the races
 - **Zandalari Trolls:** Raptor Rider (Outrider; fast, strong in jungle), Direhorn Rider (Knight; a battering charge with no penalty against cities), Golden Pyramid (Market, +1 Gold, +1 Culture).
 Each has its own map sprite and icon.
 
-**Azeroth world maps:** the whole world as on Blizzard's in-game world map: Kalimdor, the Eastern Kingdoms, Northrend, **Pandaria**, the **Broken Isles**, **Kul Tiras** and **Zandalar**, with 89 zones in their real places and shapes (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown, Kun-Lai Summit, Suramar, Drustvar, Vol'dun and the rest), traced from the in-game continent maps. Mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles, the Wandering Isle, the Isle of Thunder, the Timeless Isle and the Isle of Giants. Each continent is drawn a little larger than on the in-game map so the seas between them leave room to play. Three sizes: **Azeroth Huge** (180 × 110, preselected), **Azeroth Large** (144 × 88) and **Azeroth** (104 × 64, faster on phones); plus regional maps of **Kalimdor**, the **Eastern Kingdoms**, **Northrend** and **Pandaria** cut from the same world. Each race starts at its capital: Stormwind, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon, Quel'Danas, the Temple of Five Dawns on the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor, Gilneas, Shadowforge City, Boralus and Zuldazar. City-states sit at their real locations.
+**Azeroth world maps:** the whole world as on Blizzard's in-game world map: Kalimdor, the Eastern Kingdoms, Northrend, **Pandaria**, the **Broken Isles**, **Kul Tiras** and **Zandalar**, with 89 zones in their real places and shapes (Elwynn Forest, the Barrens, Dun Morogh, Tanaris, Icecrown, Kun-Lai Summit, Suramar, Drustvar, Vol'dun and the rest), traced from the in-game continent maps. Mountain ranges, lakes, rivers, the Maelstrom, Kezan, the Lost Isles, the Wandering Isle, the Isle of Thunder, the Timeless Isle and the Isle of Giants. Each continent is drawn a little larger than on the in-game map so the seas between them leave room to play. Three sizes: **Azeroth Huge** (180 × 110, preselected), **Azeroth Large** (144 × 88) and **Azeroth** (104 × 64, faster on phones); plus regional maps of **Kalimdor**, the **Eastern Kingdoms**, **Northrend**, **Pandaria** and the **Broken Isles** cut from the same world. Pandaria and the Broken Isles have their own landmarks: the Peak of Serenity on **Mount Neverest**, the amber of **Kypari Zar**, the **Tomb of Sargeras**, the great tree **Shaladrassil** and **Neltharion's Lair**. Each race starts at its capital: Stormwind, Orgrimmar, Darnassus, Ironforge, Gnomeregan, Thunder Bluff, Sen'jin Village, Silvermoon, Quel'Danas, the Temple of Five Dawns on the Wandering Isle, Undercity, the Exodar, Bilgewater Harbor, Gilneas, Shadowforge City, Boralus and Zuldazar. City-states sit at their real locations.
 
 **Warcraft terrain:** seven special tile types, placed where they belong:
 - *Fel-Scorched Land* (Felwood, Blasted Lands): +2 Production, -1 Food; units ending a turn there take 10 damage. Clerics can cleanse it after Priesthood.
@@ -99,15 +99,28 @@ Each has its own map sprite and icon.
 
 **Faction AI:** every race has its own AI personality. Orcs and Forsaken mass armies, Gnomes and Dwarves chase technology and siege engines, the elves and Draenei favor culture and faith, Goblins build markets and banks, Humans stay balanced. Alliance races are more diplomatic and loyal, so they tend to befriend one another more often; Horde races are quicker to go to war.
 
-**24 city-states:** the other peoples of Azeroth — the furbolgs of **Timbermaw Hold**, the tuskarr of **Kamagua**, the centaurs of **Maraudine**, the kobolds of **Jasperlode Mine**, the quilboar of **Razorfen Kraul**, the ethereals of **the Consortium**, the mogu of **Mogu'shan** and the qiraji of **Ahn'Qiraj** — alongside Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold, the Earthen Ring, the Knights of the Ebon Blade, the Explorers' League and the Thorium Brotherhood.
+**28 city-states:** the other peoples of Azeroth — the furbolgs of **Timbermaw Hold**, the tuskarr of **Kamagua**, the centaurs of **Maraudine**, the kobolds of **Jasperlode Mine**, the quilboar of **Razorfen Kraul**, the ethereals of **the Consortium**, the mogu of **Mogu'shan** and the qiraji of **Ahn'Qiraj** — alongside Dalaran, Theramore, Stromgarde, Gadgetzan, Booty Bay, Ratchet, Everlook, Steamwheedle Port, Light's Hope Chapel, Cenarion Hold, Argent Vanguard, Feathermoon Stronghold, the Earthen Ring, the Knights of the Ebon Blade, the Explorers' League and the Thorium Brotherhood. Pandaria has the **Shado-Pan Monastery**, the **Golden Lotus** and the mantid of **Klaxxi'vess**, and the Broken Isles have the vrykul of **Valdisdall**, with Dalaran floating over Azsuna as it did in Legion.
 
-**10 religions:** Holy Light, Elune, Earth Mother, Shamanism, Loa, Cenarion Circle, August Celestials, Titans, Forgotten Shadow, Light of the Sunwell.
+**12 religions:** Holy Light, Elune, Earth Mother, Shamanism, Loa, Cenarion Circle, August Celestials, Titans, Forgotten Shadow, Light of the Sunwell, the Old Gods and the Nightwell.
 
 **Warcraft names throughout**, drawn from the Warcraft II/III strategy games and World of Warcraft: techs (Iron, Steel and Mithril Forged Swords, Animal War Training, Long Rifles, Storm Hammers, Liquid Fire, Eye of Kilrogg…), units (Peasant, Militia, Ballista, Gryphon Rider, Mortar Team, Siege Engine, Demolisher, Flying Machine, Giant Turtle, Juggernaught…), buildings (Town Hall, Keep, Blacksmith, Arcane Sanctum, Mage Tower, Shipyard, Guard Tower, Beastiary, Auction House, Coin Forge, Hall of Relics…), policies and unit types without modern terms, 40 world wonders (Karazhan, Ulduar, Icecrown Citadel, Zul'Gurub…), resources (Thorium, Azerite, Mageweave, Truesilver…), and Great People named after each race's own heroes.
+
+## Scenarios
+
+Seven ready-made starts (pick *Scenario* when starting a new game):
+- **The Third War**: the Scourge plague spreads through Lordaeron.
+- **The Cataclysm**: Deathwing breaks the world.
+- **Battle for Azeroth**: the Alliance and the Horde at war again over Azerite.
+- **Alliance versus Horde**: eight Alliance peoples against eight Horde peoples on the whole world.
+- **The Legion Invasion**: Gul'dan opens the Tomb of Sargeras and the Legion lands on the Broken Isles. The Alliance and the Horde stand with the Nightborne and Highmountain.
+- **Mists of Pandaria**: the Alliance and the Horde carry their war to Pandaria while the Pandaren choose a side.
+- **Wrath of the Lich King**: the Scourge against everyone in Northrend, with Kel'Thuzad and Sapphiron.
 
 ## Music
 
 A royalty-free fantasy soundtrack ("Winds of Azeroth", five tracks) plays for every faction, whichever race you choose: four ambient tracks during the game and a shorter one on the main menu.
+
+**Faction music slots:** each faction can have its own theme, peace and war music. Put a track in `music/factions/<Faction>/` with the mood (`Theme`, `Peace` or `War`) in its file name; the build names it the way Unciv expects and sets it to the same volume as the rest. See [`music/factions/README.md`](music/factions/README.md).
 
 ## Installing
 

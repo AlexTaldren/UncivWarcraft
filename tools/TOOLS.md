@@ -5,7 +5,7 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 ## Files
 - `wc_renames.py` — every Warcraft rename (eras, techs, units, buildings, wonders, resources, natural wonders).
 - `wc_playstyles.py` — race play styles, faction tags, heroes, travel buildings, Mana, Dwarf ruins.
-- `race_units.py` — the unique units and buildings of the 13 non-Human races, their sprites (race sprite + props) and icons.
+- `race_units.py` — the unique units and buildings of the non-Human races, their sprites (race sprite + props) and icons.
 - `wc_factions.py` — the races, leaders, abilities, city lists, city-states, religions, and the Human unique units/building.
 - `wc_names.py` — generic Great Person names (city-states); `wc_race_names.py` — each race's own Great Person names.
 - `wc_events.py` — the Warcraft random events and their triggers; `legion.py` — the Burning Legion's Felguard and Infernal (units and sprites).
@@ -19,7 +19,11 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 - `citycenters.py` — per-race city-center tiles in three growth stages, drawn on a strict integer pixel grid: odd widths centred on column 32, exact 1:1/1:2 roof slopes, symmetric merlons and windows, and one shared outline pass (a label map), so every line is 1 px and touching pieces share a single line. The 32-px FantasyHex tile is reduced from the label map about the centre column and re-outlined at its own size.
 - `improvement_art.py` — every race's farmstead, mine, lumber mill, trading post, pasture, plantation, quarry, fishing boats, hunting camp and fort, drawn with the city-center renderer and styles (same roof shapes, colours and 1-px line work), plus each race's wall material (`MATERIAL`).
 - `wc_sounds.py` — 15 original attack sounds synthesised in code (no recordings), written to `sounds/*.ogg`, and the unit → sound map.
-- `race_works.py` — per-race sailing ships (`Longboat-Orcs` …) and owned-tile hunting camps and forts (`Camp-<race>`, `Fort-<race>`, `Plainstriders+Camp-<race>` …, HexaRealm), in each race's city-center architecture (drawn by `improvement_art.py`).
+- `race_works.py` — per-race sailing ships (`Longboat-Orcs` …) and steam-era warships (`Ironclad-<race>`, `Destroyer-<race>`, `Dreadnought-<race>`, `Juggernaught-<race>`: race hull plating, trim, pennant and lore touches on the `late_units.py` machines) and owned-tile hunting camps and forts (`Camp-<race>`, `Fort-<race>`, `Plainstriders+Camp-<race>` …, HexaRealm), in each race's city-center architecture (drawn by `improvement_art.py`).
+- `fh_improvements.py` — FantasyHex (32 px) copies of the race improvements, reduced 2:1 from the HexaRealm tiles (commonest colour per 2 × 2 block, then re-outlined).
+- `wc_quotes.py` — a Warcraft-voiced quote for every tech; `wc_endings.py` also rewords Unciv's built-in diplomacy replies.
+- `boss_art.py` — the raid bosses' sprites (including Gul'dan the Destroyer).
+- `sim/BuildScenario.java` + `build_scenarios.sh` — builds the seven scenario files (The Third War, The Cataclysm, Battle for Azeroth, Alliance versus Horde, The Legion Invasion, Mists of Pandaria, Wrath of the Lich King) with Unciv's own classes, then plays each for a few turns to check it loads.
 - `map_tiles_preview.py` — renders part of the Azeroth map with the real tile art.
 - `human_sprites.py` — the Humans' unique-unit sprites and blue-and-gold variants.
 - `paint.py`, `wc_style_units.py`, `wc_style_more.py` — the painted-style Human and Orc sprites (a supersampled painter, the first 17 units, and the rest of the roster as kit recipes). Each painted sprite takes its canvas and position from the stock sprite it replaces, at 2x resolution.
@@ -32,7 +36,8 @@ The mod is generated from Unciv's own Gods & Kings ruleset, so it stays compatib
 
 - `README.md` — source of the repository/mod README (copied in by `build.py`).
 - `preview_image.py` — renders `preview.jpg`, the picture shown in Unciv's mod browser.
-- `publish.py` — copies a fresh build into the repository root, keeping `.git`, `tools/` and `LICENSE`.
+- `publish.py` — copies a fresh build into the repository root, keeping `.git`, `tools/` and `LICENSE`, the owner's leader portraits, and the faction music folders.
+- Music: tracks in `../music/` are copied and levelled to about -23 LUFS; tracks in `../music/factions/<Nation>/` are renamed `<Nation> - <title> - <Mood>` so Unciv plays them for that nation (see `music/factions/README.md`).
 
 ## Usage
 ```
