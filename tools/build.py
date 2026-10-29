@@ -623,7 +623,7 @@ for name, ls in RW.ship_sprites(_lu).items():
         path = os.path.join(OUT, "Images.RaceUnits", RW.P_UNITS, name + suf + ".png")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         im.save(path)
-print("race ships:", len(RW.SHIPS) * len(RW.SHIP_STYLE))
+print("race ships:", (len(RW.SHIPS) + len(RW.STEAM_SHIPS)) * len(RW.SHIP_STYLE))
 with open(os.path.join(J, "TileSets", "HexaRealm.json")) as f:
     _rv = json.load(f).get("ruleVariants", {})
 n = RW.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), Atlas(os.path.join(SRC, "Tilesets.atlas")),

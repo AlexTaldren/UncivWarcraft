@@ -224,13 +224,109 @@ def style_ship(ls, race, unit):
     return ls
 
 
+# steam-era warships (content pass, Oct 2026): our own machine art (late_units), facing right
+STEAM_SHIPS = {"Ironclad": "Ironclad", "Destroyer": "Destroyer", "Dreadnought": "Battleship",
+               "Juggernaught": "Missile Cruiser"}
+
+
+def style_steam(ls, race, unit):
+    """Re-plate one of our steam warships in a race's hull colour and trim, with a pennant
+    in its sail colour and its lore touches (figurehead, spikes, lanterns, crystals...).
+    The owner-colour layers are kept."""
+    st = SHIP_STYLE[race]
+    ls = [l.copy().convert("RGBA") for l in ls]
+    base = ls[0]
+    px = base.load()
+    hull, cloth = set(), set()
+    for y in range(base.height):
+        for x in range(base.width):
+            p = px[x, y]
+            if p[3] < 200:
+                continue
+            h, sat, v = _hsv(p)
+            if y > 30 and 0.12 < v < 0.75 and (sat < 0.25 or 0.03 < h < 0.16):
+                hull.add((x, y))
+            elif unit == "Juggernaught" and sat < 0.1 and v > 0.8 and y < 30:
+                cloth.add((x, y))
+    # metal plating takes the race's hull colour (lighter so it reads at sea); the top rail is trimmed
+    plate = st["hull"]
+    while sum(plate) < 300:          # dark hulls (Forsaken, Scourge, Dark Irons) are lifted so they read at sea
+        plate = shade(plate, 1.15)
+    for (x, y) in hull:
+        v = _hsv(px[x, y])[2]
+        px[x, y] = _tone(plate, v, 0.45, 0.95) + (255,)
+    for (x, y) in hull:
+        if (x, y - 1) not in hull and px[x, y - 1][3] < 200:
+            px[x, y] = st["acc"] + (255,)
+    for (x, y) in cloth:
+        px[x, y] = _tone(st["sail"], _hsv(px[x, y])[2], 0.4, 0.7) + (255,)
+    if not hull:
+        return ls
+    bow = max(hull, key=lambda p: (p[0] - p[1] * 0.4))           # right-hand tip
+    stern = min(hull, key=lambda p: (p[0] + p[1] * 0.4))
+    top = min((p for p in hull), key=lambda p: p[1])
+    mast = min(((x, y) for y in range(base.height) for x in range(base.width)
+                if px[x, y][3] > 200 and _hsv(px[x, y])[2] < 0.55), key=lambda p: p[1])   # skip the smoke
+    props, acc = st["props"], st["acc"]
+    part = Image.new("RGBA", base.size)
+    d = ImageDraw.Draw(part)
+    # a pennant in the race's sail colour at the masthead
+    mx, my = mast
+    d.polygon([(mx, my), (mx - 6, my + 1), (mx, my + 3)], fill=st["sail"] + (255,))
+    if "figure" in props or "leafprow" in props or "dragon" in props or "mask" in props or "totem" in props:
+        x, y = bow
+        d.polygon([(x, y - 1), (x + 2, y - 3), (x + 1, y - 5), (x - 1, y - 3)], fill=acc + (255,))
+    if "spikes" in props:
+        col = (230, 225, 210) if race == "Scourge" else (60, 52, 50)
+        sx, sy = stern
+        for k in range(3):
+            d.line([(sx + 1 + k * 2, sy - 2), (sx - 1 + k * 2, sy - 5)], fill=col + (255,))
+        bx, by = bow
+        d.line([(bx, by - 1), (bx + 3, by - 2)], fill=col + (255,))
+    if "rivets" in props:
+        for (x, y) in hull:
+            if x % 4 == 0 and (x, y - 2) not in hull and (x, y - 1) in hull:
+                _put(base, x, y, shade(plate, 1.45))
+    if "stripes" in props or "patches" in props:
+        for (x, y) in hull:
+            if (x // 3) % 3 == 0 and (x, y - 2) not in hull and (x, y - 1) in hull:
+                _put(base, x, y, _tone(acc, 0.9))
+    if "crystal" in props:
+        x, y = bow
+        d.polygon([(x - 2, y - 2), (x - 1, y - 7), (x, y - 2)], fill=(170, 225, 255, 255))
+    if "gear" in props:
+        x, y = stern
+        d.ellipse([x + 1, y - 6, x + 4, y - 3], fill=(205, 175, 85, 255))
+    part = LU.outline(part)
+    base.alpha_composite(part)
+    if "glow" in props or "crystal" in props:
+        g = Image.new("RGBA", base.size)
+        gd = ImageDraw.Draw(g)
+        for (x, y) in (stern, (bow[0] - 4, bow[1] - 2)):
+            gd.ellipse([x + 1, y - 3, x + 3, y - 1], fill=st["glow"] + (255,))
+        base.alpha_composite(LU.glow_of(g, st["glow"], 1.0, 1.0))
+        base.alpha_composite(g)
+    pp = part.load()
+    for l in ls[1:]:
+        lp = l.load()
+        for y in range(l.height):
+            for x in range(l.width):
+                if pp[x, y][3]:
+                    lp[x, y] = (0, 0, 0, 0)
+    return ls
+
+
 def ship_sprites(atlas):
-    """{"Longboat-Orcs": [base, -1, -2], ...}"""
+    """{"Longboat-Orcs": [base, -1, -2], "Ironclad-Orcs": ..., ...}"""
     out = {}
     for unit, src in SHIPS.items():
         ls = [atlas.crop(P_UNITS + src + s) for s in ("", "-1", "-2")]
         for race in SHIP_STYLE:
             out["%s-%s" % (unit, race)] = style_ship(ls, race, unit)
+    for unit, src in STEAM_SHIPS.items():
+        ls = LU.source_layers(atlas, src)
+        for race in SHIP_STYLE:
+            out["%s-%s" % (unit, race)] = style_steam(ls, race, unit)
     return out
 
 

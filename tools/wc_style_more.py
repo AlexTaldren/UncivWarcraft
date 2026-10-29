@@ -717,7 +717,7 @@ def wheel(f, x, y, r, col=WOOD):
                 mix(col, (0, 0, 0), 0.3), mat="flat", outline=0)
 
 
-def crewman(f, x, race, s=0.38):
+def crewman(f, x, race, s=0.52):
     """A tiny crew figure standing beside an engine."""
     c = f.c
     if race == "Orcs" or CTX.spec.get("family") == "brute":
@@ -748,7 +748,7 @@ def catapult(c, fx, fy, u=1.0, race="Humans"):
         f.paint(f.poly([(4, -40), (12, -38), (12, -32), (4, -34)]), L_MAIN, layer="l2", mat="cloth")
         f.paint(f.poly([(4, -40), (12, -38), (12, -37), (4, -39)]), L_MAIN, layer="l1", mat="gold", outline=0.3)
     wheel(f, -16, -6, 7, wood); wheel(f, 16, -6, 7, wood)
-    crewman(f, -36, race)
+    crewman(f, -38, race)
 
 
 def ballista(c, fx, fy, u=1.0, race="Humans"):
@@ -765,7 +765,7 @@ def ballista(c, fx, fy, u=1.0, race="Humans"):
     if race == "Orcs":
         f.paint(f.poly([(18, -14), (20, -26), (22, -14)]), BONE, mat="bone", outline=0.5)
     wheel(f, -14, -6, 7, wood); wheel(f, 14, -6, 7, wood)
-    crewman(f, -34, race)
+    crewman(f, -37, race)
 
 
 def steam_tank(c, fx, fy, u=1.0):
@@ -794,7 +794,7 @@ def mortar_team(c, fx, fy, u=1.0, race="Humans"):
     f.paint(f.cap((10, -12), (2, -26), 1.4), (90, 85, 82), mat="metal")
     for x in (26, 30):
         f.paint(f.ell(x, -6, 3.2, 3.2), (60, 58, 62), mat="metal", outline=0.4)
-    crewman(f, -14, race, 0.42)
+    crewman(f, -16, race, 0.56)
 
 
 # ================================================================== heroes and clerics
