@@ -633,6 +633,9 @@ import race_improvements
 n = race_improvements.write_tiles(os.path.join(OUT, "Images.WarcraftMap"), [x["name"] for x in F.NATIONS],
                                   [c[0] for c in F.CITY_STATES], Atlas(os.path.join(SRC, "Tilesets.atlas")), R.ALL)
 print("race farms, mines, lumber mills, trading posts, pastures, plantations, quarries, fishing boats:", n)
+import fh_improvements   # content pass: the same race improvements for the FantasyHex tile set
+print("FantasyHex race improvements:", fh_improvements.write_all(os.path.join(OUT, "Images.WarcraftMap"),
+                                                                 [x["name"] for x in F.NATIONS]))
 print("English text for built-in messages:", wc_endings.write_english(J))
 print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
 # no art for the removed submarines (renamed stock sprites, icons, promotion icons)
