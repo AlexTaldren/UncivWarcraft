@@ -328,12 +328,28 @@ EVENTS += [
         "trigger": "<upon turn start> <every [5] turns> <when above [299] [Mana]>",
         "choices": [
             ("Channel it into research (-150 Mana, +Science)",
-             _mana(150) + ["Gain [150]-[300] [Science]"]),
+             _mana(150) + ["Gain [100]-[200] [Science]"]),
             ("Hold a festival of arcane lights (-200 Mana, 4-turn Golden Age)",
              _mana(200) + ["Empire enters a [4]-turn Golden Age"]),
             ("Bless the land (-150 Mana, +Culture and Faith)",
              _mana(150) + ["Gain [100] [Culture]", "Gain [100] [Faith]"]),
             ("Keep the Mana in reserve", ["[-90]% weight to this choice for AI decisions"]),
+        ],
+    },
+    # balance round 2: Tauren and Scourge still banked 2,500+ Mana by turn 250
+    {
+        "name": "The Ley Lines Overflow",
+        "text": "So much Mana has pooled in our cities that the ley lines are cracking. Arcane storms flicker over the rooftops, "
+                "and the magi warn that something in the Twisting Nether has begun to take notice. It must be spent, and soon.",
+        "trigger": "<upon turn start> <every [3] turns> <when above [999] [Mana]>",
+        "choices": [
+            ("Raise great wards over every city (-600 Mana, 8-turn Golden Age)",
+             _mana(600) + ["Empire enters a [8]-turn Golden Age"]),
+            ("Pour it into the land (-500 Mana, +Culture and Faith)",
+             _mana(500) + ["Gain [300] [Culture]", "Gain [300] [Faith]"]),
+            ("Summon a great champion (-700 Mana, a free Great General)",
+             _mana(700) + ["Gain a free [Great General] unit"]),
+            ("Let it crackle, and hope nothing answers", ["[-95]% weight to this choice for AI decisions"]),
         ],
     },
 ]

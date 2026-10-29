@@ -99,7 +99,7 @@ CHANGES = {
     "Siegebreaker": dict(upgradesTo="Phalanx", add_uniques=["[+50]% Strength <vs [Mounted] units>"],
                          text="Heavy infantry with rocket mortars and tower shields, who break charging riders and war machines alike."),
     # the Humans' Paladin is their endgame rider (as in Warcraft II, where Knights become Paladins)
-    "Paladin": dict(replaces="Grand Champion", requiredTech="Focused Arcana", strength=105, cost=450, drop=["obsoleteTech", "upgradesTo"],
+    "Paladin": dict(replaces="Grand Champion", requiredTech="Titan Logic", strength=105, cost=450, drop=["obsoleteTech", "upgradesTo"],
                     text="Holy warriors of the Order of the Silver Hand, clad in blessed plate on barded chargers, who heal their comrades and "
                          "turn the tide wherever they ride. Humans field ordinary Knights early on; their riders become Paladins at the end of the age.",
                     text2="Stronger than a Grand Champion, inspires and heals nearby units, and can Lay on Hands."),
@@ -135,10 +135,10 @@ NEW_UNITS = [
      "uniques": ["[+50]% Strength <vs [Mounted] units>", "[+50]% Strength <vs [War Machine] units>"],
      "text": "A locked wall of tower shields and runed pikes, raised to stop the charges of the last wars, beast and machine alike."},
     {"name": "War Rider", "unitType": "Mounted", "movement": 4, "strength": 60, "cost": 350, "requiredTech": "Liquid Fire",
-     "obsoleteTech": "Focused Arcana", "upgradesTo": "Grand Champion", "requiredResource": "Horses", "attackSound": "cavalry",
+     "obsoleteTech": "Titan Logic", "upgradesTo": "Grand Champion", "requiredResource": "Horses", "attackSound": "cavalry",
      "uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
      "text": "Heavy riders on armoured mounts, with lance, banner and shield: the shock troops of the great wars."},
-    {"name": "Grand Champion", "unitType": "Mounted", "movement": 4, "strength": 100, "cost": 425, "requiredTech": "Focused Arcana",
+    {"name": "Grand Champion", "unitType": "Mounted", "movement": 4, "strength": 95, "cost": 400, "requiredTech": "Titan Logic",
      "requiredResource": "Horses", "attackSound": "cavalry",
      "uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
      "text": "Champions of the Argent Tournament and their like from every race, the finest riders Azeroth has ever known."},

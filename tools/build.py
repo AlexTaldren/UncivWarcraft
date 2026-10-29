@@ -488,6 +488,20 @@ for p in files["Personalities"]:
     p["uniques"] += ["[+50]%% weight to [%s] for AI decisions" % u for u in own]
 import wc_quotes   # tech quotes in Warcraft voices (content pass, Oct 2026)
 print("tech quotes:", wc_quotes.apply(files["Techs"]))
+# content pass, balance round 2: science victories came around turn 245. The Titan vessel
+# now takes longer to build and the last two eras' research costs more, so the endgame
+# armies get time on the field before someone launches.
+SS_COST, PROJECT_COST, LATE_TECH = 1150, 1300, {15: 1.2, 16: 1.25, 17: 1.3}
+for _u in files["Units"]:
+    if "Spaceship part" in _u.get("uniques", []):
+        _u["cost"] = SS_COST
+for _b in files["Buildings"]:
+    if _b["name"] == "Titan Ascension Project":
+        _b["cost"] = PROJECT_COST
+for _col in files["Techs"]:
+    if _col.get("columnNumber") in LATE_TECH and "techCost" in _col:
+        _col["techCost"] = int(round(_col["techCost"] * LATE_TECH[_col["columnNumber"]], -1))
+print("late-game pacing: Titan vessel parts", SS_COST, "| project", PROJECT_COST, "| late tech costs", LATE_TECH)
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))
 
