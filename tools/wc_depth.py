@@ -295,8 +295,8 @@ CHOICE_EVENTS = [
 HERO_CLASSES = {
     "Champion Hero": ["Uther the Lightbringer", "Grom Hellscream", "Muradin Bronzebeard", "Baine Bloodhoof", "Maraad",
                       "Gazlowe", "Darius Crowley", "Dagran Thaurissan", "Daelin Proudmoore", "Chen Stormstout",
-                      "Kelsey Steelspark"],
-    "Arcane Hero": ["Kael'thas Sunstrider", "Kel'Thuzad", "Rastakhan", "Malfurion Stormrage"],
+                      "Kelsey Steelspark", "Huln Highmountain"],
+    "Arcane Hero": ["Kael'thas Sunstrider", "Kel'Thuzad", "Rastakhan", "Malfurion Stormrage", "Lady Vashj", "Grand Magistrix Elisande"],
     "Marksman Hero": ["Alleria Windrunner", "Nathanos Blightcaller", "Rokhan"],
 }
 CLASS_PROMOTIONS = [

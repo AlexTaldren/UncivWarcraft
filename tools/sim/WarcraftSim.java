@@ -141,7 +141,7 @@ public class WarcraftSim {
     static final java.util.Map<String, String> FACTION = new java.util.HashMap<>();
     static {
         for (String n : new String[]{"Humans","Dwarves","Gnomes","Night Elves","Draenei","Worgen","High Elves","Dark Iron Dwarves","Kul Tirans"}) FACTION.put(n, "Alliance");
-        for (String n : new String[]{"Orcs","Trolls","Tauren","Forsaken","Blood Elves","Goblins","Zandalari Trolls"}) FACTION.put(n, "Horde");
+        for (String n : new String[]{"Orcs","Trolls","Tauren","Forsaken","Blood Elves","Goblins","Zandalari Trolls","Nightborne","Highmountain Tauren"}) FACTION.put(n, "Horde");
         FACTION.put("Pandaren", "Neutral"); FACTION.put("Scourge", "Neutral");
     }
     static final java.util.Map<String, Integer> EVENTS = new java.util.TreeMap<>();

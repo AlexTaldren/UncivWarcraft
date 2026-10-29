@@ -78,6 +78,12 @@ SPELLS = [
      "Blighted arrows: +25% Strength when attacking, adjacent enemies -10%, for 2 turns."),
     ("Voodoo Hex", ["Rokhan"], 2, [ADJ % -20], [], 15, 6, 0, ("mask", "flask"),
      "Hexed foes stumble: adjacent enemies fight at -20% Strength for 2 turns."),
+    ("Tidal Wave", ["Lady Vashj"], 2, [ADJ % -20, "[+15]% Strength <when attacking>"], [], 20, 7, 0, ("wave", "star"),
+     "A wall of water crashes over the foe: adjacent enemies -20% Strength and +15% when attacking, for 2 turns."),
+    ("Time Stop", ["Grand Magistrix Elisande"], 1, [ADJ % -30, "[+1] Movement"], [], 25, 8, 0, ("hourglass", "orb"),
+     "Elisande freezes the moment: adjacent enemies fight at -30% Strength, and she gains +1 Movement, for 1 turn."),
+    ("Spirit of the Mountain", ["Huln Highmountain"], 2, ["All adjacent units heal [15] HP when healing", "[+20]% Strength"], [], 20, 7, 0,
+     ("mountain", "heart"), "The spirits of Highmountain answer: +20% Strength and adjacent units heal 15 HP more, for 2 turns."),
     # ---- spellcasters and other gifted units
     ("Frost Armor", ["Mage", "Sorcerer", "Magus", "Kirin Tor Magus"], 2, ["[+30]% Strength <when defending>"], [], 8, 5, 0, ("crystal", "shield"),
      "A coat of ice: +30% Strength when defending for 2 turns."),

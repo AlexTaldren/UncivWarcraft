@@ -525,7 +525,7 @@ CITY_STATES = [
     ("Ahn'Qiraj", "Militaristic", [70, 30, 75], [235, 200, 120]),           # qiraji
     # content pass (Oct 2026): Pandaria and the Broken Isles
     ("Shado-Pan Monastery", "Militaristic", [120, 30, 30], [235, 225, 210]),  # Kun-Lai Summit
-    ("Golden Lotus", "Religious", [200, 160, 40], [250, 245, 220]),           # Vale of Eternal Blossoms
+    ("Golden Lotus", "Religious", [140, 105, 20], [250, 245, 220]),           # Vale of Eternal Blossoms
     ("Klaxxi'vess", "Militaristic", [150, 120, 30], [60, 40, 20]),            # mantid, Dread Wastes
     ("Valdisdall", "Militaristic", [60, 70, 90], [210, 220, 230]),            # vrykul, Stormheim
 ]
