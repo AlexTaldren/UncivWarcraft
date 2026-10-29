@@ -1868,16 +1868,16 @@
       {
         "text": "Pay reparations to quiet the dissenters.",
         "uniques": [
-          "Gain [-300] [Gold]",
-          "Only available <when above [299] [Gold]>",
+          "Gain [-150] [Gold]",
+          "Only available <when above [149] [Gold]>",
           "[+20]% weight to this choice for AI decisions"
         ]
       },
       {
         "text": "Justify the war in every square and temple.",
         "uniques": [
-          "Gain [-250] [Culture]",
-          "Only available <when above [249] [Culture]>",
+          "Gain [-100] [Culture]",
+          "Only available <when above [99] [Culture]>",
           "[+10]% weight to this choice for AI decisions"
         ]
       },
@@ -1961,16 +1961,16 @@
       {
         "text": "Pay reparations to quiet the dissenters.",
         "uniques": [
-          "Gain [-300] [Gold]",
-          "Only available <when above [299] [Gold]>",
+          "Gain [-150] [Gold]",
+          "Only available <when above [149] [Gold]>",
           "[+20]% weight to this choice for AI decisions"
         ]
       },
       {
         "text": "Justify the war in every square and temple.",
         "uniques": [
-          "Gain [-250] [Culture]",
-          "Only available <when above [249] [Culture]>",
+          "Gain [-100] [Culture]",
+          "Only available <when above [99] [Culture]>",
           "[+10]% weight to this choice for AI decisions"
         ]
       },

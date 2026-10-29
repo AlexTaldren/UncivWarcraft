@@ -2255,10 +2255,10 @@
       "[+1 Production] from [Iron] tiles [in this city]",
       "Provides [1] [Mana]"
     ],
-    "production": 2,
+    "production": 1,
     "civilopediaText": [
       {
-        "text": "A dwarven forge in the tradition of Ironforge's Great Forge, its anvils ringing day and night. +2 Production."
+        "text": "A dwarven forge in the tradition of Ironforge's Great Forge, its anvils ringing day and night. +1 Production."
       }
     ],
     "replaces": "Blacksmith",
