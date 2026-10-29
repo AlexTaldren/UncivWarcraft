@@ -16,13 +16,16 @@ import java.util.*;
 
 /** Builds the mod's scenarios (saved games in the mod's scenarios/ folder, offered under New Game > Scenario).
  *  Run with the working directory containing jsons/ (from Unciv.jar) and mods/UncivWarcraft (with its maps).
- *  args: out_dir   (writes "The Third War", "The Cataclysm", "Battle for Azeroth")
+ *  args: out_dir   (writes "The Third War", "The Cataclysm", "Battle for Azeroth", "Alliance versus Horde",
+ *                   "The Legion Invasion", "Mists of Pandaria", "Wrath of the Lich King")
  *  Each scenario: a lore moment on the Azeroth map, in its age, every capital already founded,
  *  lore armies, the wars of the time, and an opening message for every faction. The player picks
  *  which faction to play in the New Game screen; the rest are computer players. */
 public class BuildScenario {
     static final String[] ALLIANCE = {"Humans", "Night Elves", "Dwarves", "Gnomes", "High Elves", "Draenei", "Worgen", "Dark Iron Dwarves", "Kul Tirans"};
     static final String[] HORDE = {"Orcs", "Tauren", "Trolls", "Blood Elves", "Forsaken", "Goblins", "Zandalari Trolls"};
+    static final String[] HORDE_ALL = {"Orcs", "Tauren", "Trolls", "Blood Elves", "Forsaken", "Goblins", "Zandalari Trolls",
+            "Nightborne", "Highmountain Tauren"};
 
     static GameInfo gi;
 
@@ -213,5 +216,79 @@ public class BuildScenario {
                 + "and Lordaeron lies in ruins. The Alliance and the Horde are at war on every front, and Kul Tiras and Zandalar "
                 + "choose their sides. The Pandaren stand apart, for now.");
         save(out, "Battle for Azeroth");
+
+        // ------------------------------------------------------------ Alliance versus Horde (content pass, Oct 2026)
+        String[] avh = {"Humans", "Night Elves", "Dwarves", "Gnomes", "Draenei", "Worgen", "High Elves", "Kul Tirans",
+                "Orcs", "Tauren", "Trolls", "Blood Elves", "Forsaken", "Goblins", "Nightborne", "Highmountain Tauren"};
+        gi = start("Azeroth Huge", "Age of the Dark Portal", avh, 16);
+        foundCapitals();
+        meetAll();
+        String[] avhA = {"Humans", "Night Elves", "Dwarves", "Gnomes", "Draenei", "Worgen", "High Elves", "Kul Tirans"};
+        String[] avhH = {"Orcs", "Tauren", "Trolls", "Blood Elves", "Forsaken", "Goblins", "Nightborne", "Highmountain Tauren"};
+        for (String a : avhA) for (String h : avhH) war(h, a);
+        for (int i = 0; i < avhA.length; i++) for (int j = i + 1; j < avhA.length; j++) friends(avhA[i], avhA[j]);
+        for (int i = 0; i < avhH.length; i++) for (int j = i + 1; j < avhH.length; j++) friends(avhH[i], avhH[j]);
+        give("Humans", "Uther the Lightbringer", "Footman", "Footman");
+        give("Orcs", "Grom Hellscream", "Grunt", "Grunt");
+        give("Dwarves", "Muradin Bronzebeard");
+        give("Tauren", "Baine Bloodhoof");
+        tell("Alliance versus Horde: the old war returns to every corner of Azeroth. Eight peoples stand under the lion of the Alliance "
+                + "and eight under the banner of the Horde. Nobody else is coming. Win it.");
+        save(out, "Alliance versus Horde");
+
+        // ------------------------------------------------------------ The Legion Invasion
+        gi = start("Broken Isles", "Age of the Legion",
+                new String[]{"Nightborne", "Highmountain Tauren", "Humans", "Night Elves", "Orcs", "Draenei", "Blood Elves"}, 2);
+        foundCapitals();
+        meetAll();
+        for (String a : new String[]{"Humans", "Night Elves", "Draenei"}) for (String h : new String[]{"Orcs", "Blood Elves"}) friends(a, h);
+        friends("Nightborne", "Highmountain Tauren");
+        give("Nightborne", "Grand Magistrix Elisande", "Spellblade");
+        give("Highmountain Tauren", "Huln Highmountain", "Highmountain Warbrave");
+        give("Draenei", "Maraad", "Vindicator");
+        give("Humans", "Paladin");
+        give("Orcs", "Grom Hellscream");
+        spawnNear("Draenei", "Gul'dan the Destroyer");
+        spawnNear("Nightborne", "Felguard");
+        spawnNear("Night Elves", "Infernal");
+        spawnNear("Humans", "Felguard");
+        tell("The Legion Invasion: Gul'dan has broken open the Tomb of Sargeras and the Burning Legion pours onto the Broken Shore. "
+                + "The Alliance and the Horde have set aside their war to stand with the Nightborne of Suramar and the tribes of Highmountain. "
+                + "Hold the isles, or Azeroth falls.");
+        save(out, "The Legion Invasion");
+
+        // ------------------------------------------------------------ Mists of Pandaria
+        gi = start("Pandaria", "Age of the Cataclysm", new String[]{"Pandaren", "Humans", "Orcs", "Dwarves", "Trolls", "Night Elves"}, 4);
+        foundCapitals();
+        meetAll();
+        war("Orcs", "Humans");        // the landings in Krasarang
+        war("Trolls", "Dwarves");
+        war("Orcs", "Night Elves");
+        friends("Humans", "Dwarves"); friends("Humans", "Night Elves"); friends("Orcs", "Trolls");
+        give("Pandaren", "Chen Stormstout", "Shado-Pan Monk");
+        give("Humans", "Footman", "Footman");
+        give("Orcs", "Grunt", "Grunt");
+        tell("Mists of Pandaria: the mists have parted, and the Alliance and the Horde have carried their war to the shores of Pandaria. "
+                + "Every battle wakes the sha, the dark echoes of anger and fear buried beneath the land. The Pandaren must choose: "
+                + "keep the peace, or join the fight.");
+        save(out, "Mists of Pandaria");
+
+        // ------------------------------------------------------------ Wrath of the Lich King
+        gi = start("Northrend", "Age of the Lich King", new String[]{"Scourge", "Humans", "Orcs", "Tauren", "Trolls", "Dwarves", "Forsaken"}, 4);
+        foundCapitals();
+        meetAll();
+        plague("Scourge", 2, 8);
+        for (String o : new String[]{"Humans", "Orcs", "Tauren", "Trolls", "Dwarves", "Forsaken"}) war("Scourge", o);
+        friends("Humans", "Dwarves"); friends("Orcs", "Tauren"); friends("Orcs", "Trolls"); friends("Tauren", "Trolls"); friends("Orcs", "Forsaken");
+        give("Scourge", "Kel'Thuzad", "Death Knight", "Death Knight", "Ghoul", "Ghoul", "Crypt Fiend");
+        give("Humans", "Uther the Lightbringer");
+        give("Orcs", "Grom Hellscream");
+        give("Dwarves", "Muradin Bronzebeard");
+        give("Forsaken", "Nathanos Blightcaller");
+        spawnNear("Dwarves", "Sapphiron");
+        tell("Wrath of the Lich King: the Lich King stirs on his frozen throne, and his Scourge spills across Northrend. The Alliance "
+                + "lands at Valiance Keep and Valgarde, the Horde at Warsong Hold and Vengeance Landing. Icecrown Citadel waits.");
+        tellCiv("Scourge", "The Lich King commands: drive the living from Northrend, and raise their dead to serve.");
+        save(out, "Wrath of the Lich King");
     }
 }

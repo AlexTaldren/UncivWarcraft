@@ -540,6 +540,12 @@ REGIONS = {
                              "Orcs": (86.3, 103.8),          # Domination Point, Krasarang
                              "Dwarves": (94.6, 98.3),        # Paw'don Village, Jade Forest
                              "Trolls": (89.3, 88.1)}),       # Honeydew Village, Jade Forest
+    "Broken Isles": dict(lands=["Broken Isles"], box=(91, 31, 121, 61),
+                         starts={"Humans": (111.5, 40.0),            # Greywatch, Stormheim
+                                 "Night Elves": (98.0, 44.0),        # Lorlathil, Val'sharah
+                                 "Orcs": (97.5, 52.5),               # the Horde's camp in Azsuna
+                                 "Draenei": (108.0, 53.5),           # the Broken Shore beachhead
+                                 "Blood Elves": (103.5, 50.0)}),     # Azsuna's Highborne ruins
 }
 
 
