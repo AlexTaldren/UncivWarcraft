@@ -649,13 +649,45 @@ with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") 
                         "maxHeight": 2048, "paddingX": 2, "paddingY": 2, "duplicatePadding": True,
                         "filterMin": "MipMapLinearLinear", "filterMag": "MipMapLinearLinear"}, indent=1))
 shutil.copy(os.path.join(os.path.dirname(__file__), "README.md"), OUT)
+def _re_mood(m):
+    import re
+    return re.compile(rf"(^|[\s_\-(\[]){m}([\s_\-)\]]|$)", re.I)
+
+
 # music: royalty-free fantasy tracks played for every faction (Ambient/Peace/Menu moods)
 MUSIC = os.path.join(os.path.dirname(__file__), "music")
 if not os.path.isdir(MUSIC):          # in the repo, the tracks live at the root, not in tools/
     MUSIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "music")
 if os.path.isdir(MUSIC):
     shutil.copytree(MUSIC, os.path.join(OUT, "music"), dirs_exist_ok=True)
-    print("music tracks:", len(os.listdir(MUSIC)))
+    # faction music slots: a track dropped in music/factions/<Nation>/ is renamed to
+    # "<Nation> - <title> - <Mood>" so Unciv plays it for that nation (the file name must start
+    # with the nation's name and end with the mood). The mood is read from the file name;
+    # a track with no mood word in its name becomes that nation's Theme.
+    MOODS = ("Theme", "Peace", "War", "Golden", "Ambient", "Victory", "Defeat")
+    fdir = os.path.join(OUT, "music", "factions")
+    if os.path.isdir(fdir):
+        nation_names = {n["name"]: n["name"] for n in files["Nations"]}
+        nation_names.update({n.lower(): n for n in list(nation_names)})
+        for folder in sorted(os.listdir(fdir)):
+            src = os.path.join(fdir, folder)
+            if not os.path.isdir(src):
+                continue
+            nation = nation_names.get(folder) or nation_names.get(folder.lower())
+            if not nation:
+                print(f"music: WARNING folder factions/{folder} matches no nation; its tracks are skipped")
+                continue
+            for name in sorted(os.listdir(src)):
+                stem, ext = os.path.splitext(name)
+                if ext.lower() not in (".mp3", ".ogg", ".m4a"):
+                    continue
+                mood = next((m for m in MOODS if _re_mood(m).search(stem)), "Theme")
+                title = _re_mood(mood).sub("", stem).strip(" -_") or "Track"
+                dest = f"{nation} - {title} - {mood}{ext.lower()}"
+                shutil.copy(os.path.join(src, name), os.path.join(OUT, "music", dest))
+                print(f"music: factions/{folder}/{name} -> {dest}")
+        shutil.rmtree(fdir)
+    print("music tracks:", len([n for n in os.listdir(os.path.join(OUT, "music")) if not n.endswith(".md")]))
     # keep every track at a gentle background level (about -23 LUFS), so tracks added later
     # are no louder than the rest; tracks already at that level are left untouched
     import subprocess, re as _re

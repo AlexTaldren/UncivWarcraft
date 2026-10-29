@@ -8,14 +8,16 @@ Leader portraits are managed by the repo owner by hand on GitHub, so they are pr
   - the owner's packed portrait atlas at the repo root (Portraits.atlas and its
     Portraits*.png pages),
 are left exactly as they are in the repo, and the build's copies of them (if any) are
-ignored. If a packed portrait atlas is kept, "Portraits" is added to the build's
+ignored. The faction music folders (music/factions/<Nation>/) are kept the same way, because
+they are the source the build reads tracks from. If a packed portrait atlas is kept, "Portraits" is added to the build's
 Atlases.json so Unciv loads it. Nothing else is touched: every other file still comes
 from the build.
 """
 import fnmatch, os, shutil, sys, tempfile
 
 KEEP = {".git", "tools", "LICENSE", "preview.jpg"}
-PROTECTED_DIRS = ["Images/LeaderIcons", "Images.Portraits"]
+PROTECTED_DIRS = ["Images/LeaderIcons", "Images.Portraits",
+                  "music/factions"]   # the owner's faction-music slots: the build flattens copies into music/
 PROTECTED_FILES = ["Portraits.atlas", "Portraits*.png"]      # repo-root patterns
 PORTRAIT_ATLAS = "Portraits"
 
