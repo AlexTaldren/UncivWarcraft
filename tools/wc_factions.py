@@ -695,7 +695,7 @@ PERSONALITIES = {
               culture=3, diplomacy=3, loyal=6, faith=4, happiness=7,
               priorities={"Honor": 10, "Tradition": 5, "Dominion": 9, "Order": 6, "Free Peoples": 1},
               weights=[("Melee", 40), ("Mounted", 25), ("Barracks", 35), ("Fighting Pit", 25), ("Arena", 25), ("Library", -20)]),
-    "Trolls": P("Domination", military=7, aggressive=7, declareWar=6, faith=7, expansion=6, diplomacy=4,
+    "Trolls": P("Domination", military=7, aggressive=5, declareWar=4, faith=7, expansion=6, diplomacy=4,
                 loyal=5,
                 priorities={"Honor": 8, "Piety": 6, "Dominion": 7, "Order": 5},
                 weights=[("Archery", 25), ("Shrine", 25)]),

@@ -39,7 +39,7 @@ def ai(weight):
 # ====================================================================== 1. raids
 TROPHY = "Raid Trophy"
 BOSS_TAG = "Raid Boss"
-RAID_TARGET = 12                     # trophies needed for a Raid victory
+RAID_TARGET = 14                     # trophies needed for a Raid victory
 
 BOSS_TYPE = {"name": BOSS_TAG, "movementType": "Land"}
 BOSS_COMMON = [BOSS_TAG, "Unbuildable", "Cannot be purchased", "Never appears as a Barbarian unit",

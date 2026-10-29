@@ -88,8 +88,14 @@ public class WarcraftSim {
                 for (String k : new String[]{"Darkmoon","granar","fel rift","Legion","Steamwheedle","Lunar","Brewfest","orphan","Gnome","Titan","Deathwing","brewmaster","Wickerman","Hallow","Kirin Tor","murloc","Defias","Mrgl","Golden Age","rebel","Onyxia","Hakkar","Ragnaros","C'Thun","Sapphiron","Kil'jaeden","N'Zoth","Raid Trophy","Covenant","Fel","Sunwell"})
                     if (tx.contains(k)) EVENTS.merge(k, 1, Integer::sum);
             }
-            if (t % 25 != 0 && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null) continue;
+            if (t % Integer.parseInt(System.getenv().getOrDefault("SIM_REPORT", "25")) != 0 && gi.getAliveMajorCivs().size() > 1 && gi.getVictoryData() == null) continue;
             report(gi);
+            String watch = System.getenv("SIM_WATCH");
+            if (watch != null) for (Civilization c : gi.getCivilizations()) if (c.getCivName().equals(watch)) {
+                java.util.List<String> wars = new ArrayList<>();
+                for (Civilization o : gi.getCivilizations()) if (o != c && c.isAtWarWith(o) && !o.isBarbarian()) wars.add(o.getCivName());
+                System.out.println("   WATCH " + watch + " at war with " + wars);
+            }
             for (Civilization c : gi.getCivilizations()) if (c.getCivName().equals("Humans")) {
                 java.util.TreeMap<String,Integer> seen = new java.util.TreeMap<>();
                 for (com.unciv.logic.map.mapunit.MapUnit u : kotlin.sequences.SequencesKt.asIterable(c.getUnits().getCivUnits())) seen.merge(u.getName(), 1, Integer::sum);
