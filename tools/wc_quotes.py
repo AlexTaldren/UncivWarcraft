@@ -70,7 +70,7 @@ QUOTES = {
     "Scrying": "Peer into the orb and see what the enemy plans. Try not to let it see you back. — Dalaran seer",
     "Battle Formations": "A line of shields is a wall that walks. — Alliance drill sergeant",
     "Nature's Blessing": "Ask the trees for help, and they will answer. Slowly. — Keeper of the Grove",
-    "Unstable Mana": "Never store it near anything you would miss. — Mana Bomb project notes",
+    "Unstable Mana": "Never store it near anything you would miss. — Kirin Tor containment notes",
     "Demolition": "If you can't go through it, blow it up. If you can go through it, blow it up anyway. — Goblin sapper",
     "Titan Logic": "The titans built the world as a machine. Now we are learning how to repair it. — Keeper Loken's records",
     "Portal Networks": "Step through a portal in Stormwind, step out in Dalaran. Keep your arms and legs inside. — Portal trainer",

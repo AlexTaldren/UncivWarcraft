@@ -242,7 +242,7 @@ BUILDINGS = {
     "Statue of Liberty": "Lion's Rest",
     "Neuschwanstein": "Shadowfang Keep",
     "Cristo Redentor": "Seat of the Naaru",
-    "Manhattan Project": "Mana Bomb Project",
+    "Manhattan Project": "The Violet Hold",
     "Pentagon": "Grommash Hold",
     "Sydney Opera House": "The Nighthold",
     "Great Firewall": "Great Arcane Ward",

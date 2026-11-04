@@ -52,7 +52,7 @@ BUILDINGS = {
     "Sun Crystal Array": "Rows of sun-catching crystals that gather light and turn it into arcane power, in the style of Silvermoon.",
     "Salvage Yard": "Mountains of scrap, sorted by goblin crews who can build something useful from anything.",
     "Mana Reactor": "A contained well of arcane energy feeding a whole city's engines. Dangerous, and very efficient.",
-    "Burrow": "Fortified burrows and shelters dug deep beneath the city, like the orc burrows of Warcraft II.",
+    "Burrow": "Fortified burrows dug beneath the walls, where townsfolk shelter during a siege and defenders strike back from cover.",
     "Skyship Foundry": "Slipways for airships, with gas envelopes inflating overhead, building the fleets that rule the skies of the late ages.",
     "Cathedral": "A soaring cathedral of the Light, its windows of stained glass, its bells calling the faithful to prayer.",
     "Monastery": "A quiet cloister of monks and scholars, like the Scarlet Monastery in its better days or the monasteries of Pandaria.",

@@ -360,8 +360,8 @@ ICONS = {
     "Gyrocopter": gyrocopter, "Bomber Zeppelin": bomber_zeppelin, "War Zeppelin": war_zeppelin,
     "Gryphon Rider": gryphon_rider, "Batrider": batrider, "Frost Wyrm": frost_wyrm, "Wind Rider": wind_rider,
     "Dragonhawk Rider": dragonhawk_rider, "Cloud Serpent Rider": cloud_serpent_rider, "Sky Golem": sky_golem,
-    "Goblin Zeppelin": goblin_zeppelin, "Mana Bomb": mana_bomb, "Arcane Missile": arcane_missile,
-    "Arcane Annihilator": arcane_annihilator, "Void Bomber": void_bomber,
+    "Goblin Zeppelin": goblin_zeppelin, "Arcane Missile": arcane_missile,
+    "Void Bomber": void_bomber,
 }
 
 

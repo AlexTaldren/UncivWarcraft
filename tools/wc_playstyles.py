@@ -235,7 +235,7 @@ MANA_SOURCES = {
 }
 # Arcane Crystals deposits feed the arcane schools
 MANA_WITH_CRYSTALS = {"Arcane Sanctum": 1, "Mage Tower": 1}
-MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, "Mana Bomb": 40, "Arcane Annihilator": 60,
+MANA_COSTS = {"Mage": 10, "Arcane Missile": 15, 
               # v0.14: each race's spellcasters and magic-touched units
               "Spellbreaker": 6, "Blood Knight": 10, "Batrider": 15, "Death Knight": 12, "Frost Wyrm": 20,
               "Abomination": 8, "Meat Wagon": 8, "Glaive Thrower": 8, "Gnomish Bombardier": 10,
@@ -252,7 +252,7 @@ HERO_MANA = 30          # every hero costs this to recruit
 BUILDING_MANA_COSTS = {"Mage Tower": 20, "Arcane Laboratory": 40, "Mana Reactor": 60, "Runestone": 10,
                        "The Violet Citadel": 15, "Caverns of Time": 30, "College of Magi": 30,
                        "Karazhan": 50, "Tower of Azora": 40, "Sunwell Plateau": 60, "Wyrmrest Temple": 40,
-                       "Mana Bomb Project": 80, "The Nighthold": 60, "Great Arcane Ward": 80,
+                       "The Violet Hold": 40, "The Nighthold": 60, "Great Arcane Ward": 80,
                        "Celestial Planetarium": 60}
 
 # ---------------------------------------------------------------- Dwarf-only ruins
