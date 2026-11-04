@@ -379,7 +379,7 @@ UNIT_SOUNDS = {
     # magic
     "Mage": "wc_arcane_blast", "Arcane Missile": "wc_arcane_blast", "Kael'thas Sunstrider": "wc_arcane_blast",
     "Kel'Thuzad": "wc_arcane_blast", "Malfurion Stormrage": "wc_arcane_blast",
-    "Mana Bomb": "wc_mana_bomb", "Arcane Annihilator": "wc_mana_bomb",
+    
     # warships and titans
     "Ironclad": "wc_ship_cannon", "Destroyer": "wc_ship_cannon", "Dreadnought": "wc_ship_cannon",
     "Juggernaught": "wc_ship_cannon",

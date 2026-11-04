@@ -1643,48 +1643,6 @@
     ]
   },
   {
-    "name": "Mana Bomb",
-    "unitType": "Mana Bomber",
-    "movement": 1,
-    "strength": 150,
-    "rangedStrength": 150,
-    "range": 10,
-    "cost": 600,
-    "requiredTech": "Unstable Mana",
-    "requiredResource": "Arcane Crystals",
-    "promotions": [
-      "Evasion"
-    ],
-    "uniques": [
-      "Nuclear weapon of Strength [1]",
-      "Only available <if [Mana Bomb Project] is constructed>",
-      "Self-destructs when attacking",
-      "Blast radius [2]",
-      "Costs [40] [Mana]",
-      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
-      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
-      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
-      "Triggers a [The Tomb of Sargeras] event <upon discovering a [Tomb of Sargeras] tile> <hidden from users>",
-      "Triggers a [The Peak of Serenity] event <upon discovering a [Mount Neverest] tile> <hidden from users>",
-      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
-      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
-      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
-      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
-      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
-      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
-      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ],
-    "attackSound": "wc_mana_bomb",
-    "civilopediaText": [
-      {
-        "text": "A bomb of unstable mana, like the one that destroyed Theramore. A terrible weapon."
-      }
-    ]
-  },
-  {
     "name": "Demolisher",
     "unitType": "Siege",
     "movement": 2,
@@ -1793,44 +1751,6 @@
     "civilopediaText": [
       {
         "text": "A guided bolt of focused arcane power."
-      }
-    ]
-  },
-  {
-    "name": "Arcane Annihilator",
-    "unitType": "Arcane Projectile",
-    "movement": 1,
-    "strength": 300,
-    "rangedStrength": 300,
-    "range": 12,
-    "cost": 1000,
-    "requiredTech": "Siege Barrage",
-    "uniques": [
-      "Nuclear weapon of Strength [2]",
-      "Only available <if [Mana Bomb Project] is constructed>",
-      "Blast radius [2]",
-      "Consumes [2] [Arcane Crystals]",
-      "Costs [60] [Mana]",
-      "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "Gain [150] [Gold] <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "[This Unit] gains the [Raid Veteran] promotion <upon defeating a [Raid Boss] unit> <hidden from users>",
-      "Triggers a [The Molten Depths] event <upon discovering a [Blackrock Mountain] tile> <hidden from users>",
-      "Triggers a [The Temple of Atal'Hakkar] event <upon discovering a [Sunken Temple] tile> <hidden from users>",
-      "Triggers a [The Dark Portal] event <upon discovering a [The Dark Portal] tile> <hidden from users>",
-      "Triggers a [The Tomb of Sargeras] event <upon discovering a [Tomb of Sargeras] tile> <hidden from users>",
-      "Triggers a [The Peak of Serenity] event <upon discovering a [Mount Neverest] tile> <hidden from users>",
-      "Triggers a [The Bones of Galakrond] event <upon discovering a [Galakrond's Rest] tile> <hidden from users>",
-      "Triggers a [Nordrassil] event <upon discovering a [Mount Hyjal] tile> <hidden from users>",
-      "Triggers a [The Crater's Secrets] event <upon discovering a [Un'Goro Crater] tile> <hidden from users>",
-      "Triggers a [The Nexus] event <upon discovering a [The Nexus] tile> <hidden from users>",
-      "Triggers a [The Lifeblood Pillar] event <upon discovering a [The Lifeblood Pillar] tile> <hidden from users>",
-      "Triggers a [Whispers Beneath the Sands] event <upon discovering a [Lost City of the Tol'vir] tile> <hidden from users>",
-      "Triggers a [The Maelstrom] event <upon discovering a [The Maelstrom] tile> <hidden from users>"
-    ],
-    "attackSound": "wc_mana_bomb",
-    "civilopediaText": [
-      {
-        "text": "An arcane weapon powerful enough to lay waste to a city."
       }
     ]
   },

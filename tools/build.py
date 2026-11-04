@@ -2,7 +2,7 @@
 
 usage: python3 build.py <unciv_jar_extract_dir> <output_mod_dir>
 """
-import copy, json, os, re, shutil, sys
+import re, copy, json, os, re, shutil, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import ljson
 from atlas import Atlas
@@ -80,16 +80,9 @@ def rn(o, key=None, file=None):
 for name in list(files):
     files[name] = rn(files[name], file=name)
 
-# ------------------------------------------------------------ 2a. engine-required names
-# Unciv's nuke code adds a terrain literally named "Fallout" (Nuke.kt). Keep one, with the
-# same rules as our Blighted Land, so Mana Bombs work; workers clear it with "Remove Fallout".
-_bl = next(t for t in files["Terrains"] if t["name"] == "Blighted Land")
-_fo = copy.deepcopy(_bl); _fo["name"] = "Fallout"
-_fo["civilopediaText"] = [{"text": "Ground scorched by arcane bombardment. Workers can clear it."}]
-files["Terrains"].append(_fo)
+# ------------------------------------------------------------ 2a. Blighted Land template
+# (the mod has no nuclear weapons, so Unciv's "Fallout" terrain is not needed)
 _rb = next(i for i in files["TileImprovements"] if i["name"] == "Remove Blighted Land")
-_rf = copy.deepcopy(_rb); _rf["name"] = "Remove Fallout"
-files["TileImprovements"].append(_rf)
 
 # ------------------------------------------------------------ 2c. Warcraft terrain and landmarks
 files["Terrains"] += copy.deepcopy(WT.FEATURES) + copy.deepcopy(WT.WONDERS)
@@ -128,6 +121,41 @@ for u in files["Units"]:
 _sub_promos = {p["name"] for p in files["UnitPromotions"] if p.get("unitTypes") and
                all(t == "Submarine" for t in p["unitTypes"])}
 files["UnitPromotions"] = [p for p in files["UnitPromotions"] if p["name"] not in _sub_promos]
+
+# No nuclear weapons in Azeroth: drop the Mana Bomb and Arcane Annihilator, the Mana
+# Bomber unit type, and every rule that names them. The two nuclear-era buildings are
+# given new jobs: Unciv's Manhattan Project becomes The Violet Hold, a Kirin Tor vault
+# for dangerous magic, and the Bomb Shelter becomes the Burrow, a siege shelter.
+NUKES = {u["name"] for u in files["Units"]
+         if any(q.startswith("Nuclear weapon of Strength") for q in u.get("uniques", []))}
+_nuke_types = {u["unitType"] for u in files["Units"] if u["name"] in NUKES} - \
+              {u["unitType"] for u in files["Units"] if u["name"] not in NUKES}
+_gone_n = NUKES | _nuke_types
+def _names_nuke(q):
+    return any("[%s]" % g in q for g in _gone_n)
+files["Units"] = [u for u in files["Units"] if u["name"] not in NUKES]
+for u in files["Units"]:
+    if u.get("upgradesTo") in NUKES:
+        del u["upgradesTo"]
+    if "uniques" in u:
+        u["uniques"] = [q for q in u["uniques"] if not _names_nuke(q)]
+files["UnitTypes"] = [t for t in files["UnitTypes"] if t["name"] not in _nuke_types]
+for p in files["UnitPromotions"]:
+    if p.get("unitTypes"):
+        p["unitTypes"] = [t for t in p["unitTypes"] if t not in _nuke_types]
+files["UnitPromotions"] = [p for p in files["UnitPromotions"] if p.get("unitTypes", [None])]
+_nuclear_rule = re.compile(r"nuclear", re.I)
+for b in files["Buildings"]:
+    if b["name"] == "The Violet Hold":
+        b["uniques"] = ["Provides [4] [Mana]", "[+10]% [Science] [in all cities]", "Cannot be hurried"]
+    elif b["name"] == "Burrow":
+        b["uniques"] = []
+        b.update({"cityStrength": 10, "cityHealth": 100})
+    if "uniques" in b:
+        b["uniques"] = [q for q in b["uniques"] if not _nuclear_rule.search(q) and not _names_nuke(q)]
+for b in files["Buildings"]:
+    if b["name"] == "Burrow" and not b["uniques"]:
+        del b["uniques"]
 for p in files["UnitPromotions"]:
     if "prerequisites" in p:
         p["prerequisites"] = [x for x in p["prerequisites"] if x not in _sub_promos]
@@ -652,14 +680,14 @@ print("FantasyHex race improvements:", fh_improvements.write_all(os.path.join(OU
                                                                  [x["name"] for x in F.NATIONS]))
 print("English text for built-in messages:", wc_endings.write_english(J))
 print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
-# no art for the removed submarines (renamed stock sprites, icons, promotion icons)
-_dead = tuple(sorted(SUBS | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
+# no art for the removed submarines and nuclear weapons (renamed stock sprites, icons, promotion icons)
+_dead = tuple(sorted(SUBS | NUKES | _nuke_types | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
 _n = 0
 for root, _, fs in os.walk(OUT):
     for fn in fs:
         if fn.endswith(".png") and fn.startswith(_dead):
             os.remove(os.path.join(root, fn)); _n += 1
-print("submarine images dropped:", _n)
+print("submarine and nuclear images dropped:", _n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
     # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
     f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,
