@@ -495,6 +495,12 @@ for _m in (ERAS, TECHS, UNITS, BUILDINGS, RESOURCES, IMPROVEMENTS, NATURAL_WONDE
 assert len(set(ALL.values())) == len(ALL), "duplicate new names"
 assert not set(UNIT_TYPES.values()) & set(ALL.values()), "type name clashes with another name"
 
+# Older Unciv builds spell some entries differently; rename those spellings too.
+# (Added after the uniqueness check because they share a new name on purpose.)
+OLD_SPELLINGS = {"God of Craftsman": "God of craftsmen"}
+for _old, _new in OLD_SPELLINGS.items():
+    ALL[_old] = ALL[_new]
+
 # Folders whose images are keyed by entity name and must follow a rename.
 IMAGE_FOLDERS = ["UnitIcons", "BuildingIcons", "TechIcons", "ResourceIcons",
                  "ImprovementIcons", "TileSets/AbsoluteUnits/Units",

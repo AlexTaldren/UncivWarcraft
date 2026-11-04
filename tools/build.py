@@ -680,14 +680,14 @@ print("FantasyHex race improvements:", fh_improvements.write_all(os.path.join(OU
                                                                  [x["name"] for x in F.NATIONS]))
 print("English text for built-in messages:", wc_endings.write_english(J))
 print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
-# no art for the removed submarines (renamed stock sprites, icons, promotion icons)
-_dead = tuple(sorted(SUBS | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
+# no art for the removed submarines and nuclear weapons (renamed stock sprites, icons, promotion icons)
+_dead = tuple(sorted(SUBS | NUKES | _nuke_types | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
 _n = 0
 for root, _, fs in os.walk(OUT):
     for fn in fs:
         if fn.endswith(".png") and fn.startswith(_dead):
             os.remove(os.path.join(root, fn)); _n += 1
-print("submarine images dropped:", _n)
+print("submarine and nuclear images dropped:", _n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
     # thin padding: these are ~2,000 small pixel-art frames, so the default 8px wastes pages
     f.write(json.dumps({"fast": True, "combineSubdirectories": True, "maxWidth": 2048,
