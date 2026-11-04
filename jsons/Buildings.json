@@ -1602,19 +1602,19 @@
     ]
   },
   {
-    "name": "Mana Bomb Project",
+    "name": "The Violet Hold",
     "cost": 750,
     "isNationalWonder": true,
     "uniques": [
-      "Enables nuclear weapon",
-      "Triggers a global alert upon completion",
+      "Provides [4] [Mana]",
+      "[+10]% [Science] [in all cities]",
       "Cannot be hurried",
-      "Costs [80] [Mana]"
+      "Costs [40] [Mana]"
     ],
     "requiredTech": "Mana Theory",
     "civilopediaText": [
       {
-        "text": "The arcane foundries where the terrible mana bombs are made, like the one that destroyed Theramore."
+        "text": "The Kirin Tor's great prison beneath Dalaran, where dangerous beings and forbidden magic are sealed away. Its wardens study what they guard."
       }
     ]
   },
@@ -1765,14 +1765,11 @@
     "cost": 300,
     "maintenance": 1,
     "requiredTech": "Portal Networks",
-    "uniques": [
-      "Population loss from nuclear attacks [-75]% [in this city]",
-      "Damage to garrison from nuclear attacks [-75]% [in this city]",
-      "Only available <when nuclear weapons are enabled> <hidden from users>"
-    ],
+    "cityStrength": 10,
+    "cityHealth": 100,
     "civilopediaText": [
       {
-        "text": "Fortified burrows and shelters dug deep beneath the city, like the orc burrows of Warcraft II."
+        "text": "Fortified burrows dug beneath the walls, where townsfolk shelter during a siege and defenders strike back from cover."
       }
     ]
   },
