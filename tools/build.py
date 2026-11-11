@@ -646,7 +646,7 @@ print("painted Human/Orc sprites (rest of the roster):", n)
 import wc_style_races
 n = wc_style_races.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
 print("pixel-art race sprites:", n)
-import unit_art   # trial: hand-placed pixel sprites for six Human units, drawn straight on the art-pixel grid
+import unit_art, unit_art_humans   # trial: hand-placed pixel sprites for the Human land units, drawn straight on the art-pixel grid
 print("hand-placed unit sprites (trial):", unit_art.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")]))
 import boss_art   # Oct 2026 depth pass: the eight raid bosses
 print("raid boss sprites:", boss_art.write_all(os.path.join(OUT, "Images.WarcraftMap")))
