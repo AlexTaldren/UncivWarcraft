@@ -646,6 +646,8 @@ print("painted Human/Orc sprites (rest of the roster):", n)
 import wc_style_races
 n = wc_style_races.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")])
 print("pixel-art race sprites:", n)
+import unit_art, unit_art_humans, unit_art_machines   # trial: hand-placed pixel sprites (Human units, ships, machines), drawn straight on the art-pixel grid
+print("hand-placed unit sprites (trial):", unit_art.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")]))
 import boss_art   # Oct 2026 depth pass: the eight raid bosses
 print("raid boss sprites:", boss_art.write_all(os.path.join(OUT, "Images.WarcraftMap")))
 import barbarian_art   # Oct 2026 systems pass: themed barbarians
@@ -655,6 +657,7 @@ print("barbarian sprites:", barbarian_art.write_all(os.path.join(OUT, "Images.Wa
 # Warcraft terrain features and landmarks (overrides re-keyed real-world wonder art)
 n = tiles_art.write_all(Atlas(os.path.join(SRC, "Tilesets.atlas")), os.path.join(OUT, "Images.WarcraftMap"))
 print("tile art:", n)
+import tile_art_humans   # trial: hand-placed Human city centers and improvements (swapped into citycenters / improvement_art)
 n = citycenters.write_all(os.path.join(OUT, "Images.WarcraftMap"), R.ERAS, [x["name"] for x in F.NATIONS],
                           [c[0] for c in F.CITY_STATES])
 print("city centers:", n)

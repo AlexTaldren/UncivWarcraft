@@ -29,6 +29,7 @@ HEX = RW.HEX
 
 
 import improvement_art as IA
+import tile_art_humans   # noqa: F401  trial: swaps the hand-placed Human versions into IA (must come before the names below are bound)
 
 # The layers are drawn by improvement_art.py with the city-center renderer, so every
 # faction's improvements share its city-center architecture and clean 1-px line work.
