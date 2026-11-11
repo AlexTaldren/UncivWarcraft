@@ -690,3 +690,5 @@ UA.SPRITES.update({
     "Airship Tender": airship_tender, "Flying Machine": flying_machine,
     "Uther the Lightbringer": lightbringer,
 })
+
+import unit_art_races   # noqa: E402,F401  the race kits: extends unit_art.write_all to dress every other race in these loadouts
