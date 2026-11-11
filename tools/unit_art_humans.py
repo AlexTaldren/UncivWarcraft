@@ -586,15 +586,15 @@ def cleric(cv, cx=CIV_X + 1, fy=FY):
     arm(cv, cx - 6, fy - 14, TAN, length=3, hand=False)
     hood(cv, cx, fy - T, 2)
     arm(cv, cx + 4, fy - 14, TAN, length=3, hand=False)
-    bk = cv.part(1)                                                                    # book cover: inner colour
-    cv.rect(bk, cx + 4, fy - 10, cx + 10, fy - 10, lit(TINT, dark_from=cx + 9))
+    fist(cv, cx + 6, fy - 10)
+    bk = cv.part(1)                                                                    # open book: cover in the inner colour
+    cv.rect(bk, cx + 3, fy - 11, cx + 11, fy - 11, lit(TINT, dark_from=cx + 10))
+    cv.rect(bk, cx + 7, fy - 15, cx + 7, fy - 11, TINT[1])
     pg = cv.part()
-    cv.rect(pg, cx + 4, fy - 12, cx + 10, fy - 11, WHITE[0])
-    cv.rect(pg, cx + 7, fy - 12, cx + 7, fy - 11, WHITE[2])
-    cv.pix(pg, [(cx + 5, fy - 11), (cx + 9, fy - 11)], WHITE[1])
-    fist(cv, cx + 2, fy - 10)
-    gl = cv.part()
-    cv.pix(gl, [(cx + 7, fy - 15), (cx + 6, fy - 17), (cx + 9, fy - 16)], GLOW[1])
+    cv.rect(pg, cx + 3, fy - 15, cx + 6, fy - 12, WHITE[0])
+    cv.rect(pg, cx + 8, fy - 15, cx + 11, fy - 12, WHITE[1])
+    ln = cv.part(sep=False)
+    cv.pix(ln, [(cx + 4, fy - 14), (cx + 5, fy - 14), (cx + 4, fy - 13), (cx + 9, fy - 14), (cx + 10, fy - 14), (cx + 9, fy - 13)], WHITE[2])
 
 
 # ================================================================ foot soldiers (right of the tile)
@@ -1018,7 +1018,7 @@ def ranger_general(cv, cx=MIL_X - 6, fy=FY):
     cv.pix(sp, [(cx + 15, fy - 16), (cx + 15, fy - 12)], GLOW[1])
 
 
-def magus(cv, cx=MIL_X - 6, fy=FY):
+def magus(cv, cx=MIL_X - 7, fy=FY):
     """Magus: hooded robe in the nation's colours, a wand in the back hand, an arcane bolt gathering in the other."""
     cv.shadow(cx, 8)
     robe(cv, cx, fy, TINT, layer=2)
@@ -1318,7 +1318,17 @@ def mounted_archer(cv, cx=MID_X - 4, fy=FY):
     cv.rect(fl, cx - 8, back - 5, cx - 6, back - 5, TINT[0])
     ht = rider(cv, cx, back, leg_r=TAN, boot_r=LEATHER, torso_r=TAN, layer=0, belt_layer=1)
     hood(cv, cx, ht, 2)
-    bow(cv, cx, back - 10, sleeve=LEATHER, h=6)
+    bx, by = cx + 7, back - 9                                                           # bow held upright, not yet drawn
+    sg = cv.part()
+    cv.rect(sg, bx, by - 7, bx, by + 7, STRING)
+    bw = cv.part()
+    arc = [(bx, by - 8), (bx + 1, by - 7), (bx + 2, by - 6), (bx + 2, by - 5)] + [(bx + 3, y) for y in range(by - 4, by + 5)] + \
+          [(bx + 2, by + 5), (bx + 2, by + 6), (bx + 1, by + 7), (bx, by + 8)]
+    cv.pix(bw, arc, BLOND[1])
+    cv.pix(bw, arc[:8], BLOND[0])
+    sl = cv.part()
+    cv.rect(sl, cx + 3, back - 8, cx + 6, back - 6, lit(TAN, dark_from=cx + 6, light_to=cx + 4, light_rows=back - 8))
+    fist(cv, bx + 1, by - 1)
 
 
 # ================================================================ machines (centre of the tile)
@@ -1376,10 +1386,12 @@ def mortar_team(cv, cx=MID_X, fy=FY):
     b = cv.part(sep=False)
     cv.rows(b, [(fy - T + 5, gx - 1, gx + 3), (fy - T + 6, gx - 1, gx + 2)], HAIR[1])
     arm(cv, gx + 4, fy - 14, TINT, length=3, hand=False, layer=2)
-    sh = cv.part()                                                                     # shell in his hands
-    cv.rows(sh, [(fy - 13, gx + 6, gx + 8), (fy - 12, gx + 5, gx + 9), (fy - 11, gx + 5, gx + 9), (fy - 10, gx + 5, gx + 9), (fy - 9, gx + 6, gx + 8)],
-            lit(BLACKH, dark_from=gx + 8, light_to=gx + 6, light_rows=fy - 12))
-    fist(cv, gx + 4, fy - 9)
+    sh = cv.part()                                                                     # shell held up in both hands
+    cv.rows(sh, [(fy - 18, gx + 6, gx + 8), (fy - 17, gx + 5, gx + 9), (fy - 16, gx + 5, gx + 9), (fy - 15, gx + 5, gx + 9), (fy - 14, gx + 5, gx + 9)],
+            lit(STEEL, dark_from=gx + 8, light_to=gx + 6, light_rows=fy - 16))
+    sb = cv.part(1, sep=False)
+    cv.rect(sb, gx + 5, fy - 15, gx + 9, fy - 15, TINT[1])
+    fist(cv, gx + 5, fy - 13)
     mx = cx + 8
     bed = cv.part()
     cv.rect(bed, mx - 8, fy - 4, mx + 8, fy, lit(WOOD, dark_from=mx + 7, light_to=mx + 6, light_rows=fy - 4))
@@ -1391,7 +1403,7 @@ def mortar_team(cv, cx=MID_X, fy=FY):
         cv.rect(br, a, y, a + 1, y, IRON[0])
         cv.rect(br, b2 - 1, y, b2, y, IRON[2])
     mz = cv.part()
-    cv.rows(mz, [(fy - 17, mx, mx + 9), (fy - 18, mx + 1, mx + 10)], lit(IRON, dark_from=mx + 8, light_to=mx + 3))
+    cv.rows(mz, [(fy - 17, mx, mx + 9)], lit(STEEL, dark_from=mx + 8, light_to=mx + 3))
     bd = cv.part(1, sep=False)
     y, a, b2 = rows[5]
     cv.rect(bd, a, y, b2, y, lit(TINT, dark_from=b2 - 1))
