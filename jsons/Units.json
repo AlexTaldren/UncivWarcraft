@@ -3156,7 +3156,6 @@
     "strength": 38,
     "cost": 225,
     "requiredTech": "War Doctrine",
-    "requiredResource": "Horses",
     "uniques": [
       "Can move after attacking",
       "No defensive terrain bonus",

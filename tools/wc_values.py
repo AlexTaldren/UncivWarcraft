@@ -51,7 +51,7 @@ FAMILY = [{"Tauren", "Highmountain Tauren"}, {"Trolls", "Zandalari Trolls"}, {"H
           {"Forsaken", "Scourge"}]
 # single units: what sets the holy warriors (and a few signatures) apart
 UNIT = {
-    "Paladin": {"promotions": ["Medic"], "add": ["[+25]% Strength <vs [Undead] units>", "[+10] HP when healing"]},
+    "Paladin": {"promotions": ["Medic"], "no_resource": True, "add": ["[+25]% Strength <vs [Undead] units>", "[+10] HP when healing"]},
     "Blood Knight": {"add": ["Heals [15] damage if it kills a unit"]},
     "Vindicator": {"add": ["[+10]% Strength bonus for [Military] units within [1] tiles"]},
     "Death Knight": {"add": ["Heals [15] damage if it kills a unit"]},
@@ -99,6 +99,8 @@ def apply(units):
             if x.get("cost") and u.get("cost"):
                 u["cost"] = int(round(u["cost"] * x["cost"] / 5.0)) * 5
             u["uniques"] += [q for q in x.get("add", []) if q not in u["uniques"]]
+            if x.get("no_resource"):
+                u.pop("requiredResource", None)
             if x.get("promotions"):
                 u["promotions"] = sorted(set(u.get("promotions", [])) | set(x["promotions"]))
     print("lore values: %d faction units tuned" % n)
