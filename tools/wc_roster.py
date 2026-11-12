@@ -188,4 +188,6 @@ def apply(files):
         if x and x not in names:
             sl = _slot_of(old, x)
             era["startingMilitaryUnit"] = base[sl] if sl and base[sl] else "Militia"
+    import wc_values                                                      # lore-first values on top of the slot templates
+    wc_values.apply(files["Units"])
     print("roster: %d units in the rules (%d roster, %d kept)" % (len(files["Units"]), len(new), len(kept)))
