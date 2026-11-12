@@ -505,6 +505,10 @@ wc_systems.apply(files, majors)
 files["ModOptions"] = {"isBaseRuleset": True, "unitset": "AbsoluteUnits",
                        "uniques": ["Mod preselects map [Azeroth Huge]"]}
 
+# Nov 2026: the unit roster redesign (twelve buckets, three tiers, one line per faction)
+import wc_roster
+wc_roster.apply(files)
+
 # v0.18: make each AI favour its own race's unique units (they were rarely built)
 _leader_nation = {n["leaderName"]: n["name"] for n in files["Nations"] if n.get("leaderName")}
 for p in files["Personalities"]:
