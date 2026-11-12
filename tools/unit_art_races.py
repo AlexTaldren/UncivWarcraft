@@ -153,7 +153,7 @@ def base_name(stem):
     return stem[:-len("-Humans")] if stem.endswith("-Humans") else stem
 
 
-def render(fn, race, stem=""):
+def render(fn, race, stem="", after=None):
     """Draw loadout `fn` on the body of `race`. Returns the three layer images."""
     global CUR
     fn = getattr(race, "special", {}).get(base_name(stem), fn)
@@ -172,6 +172,8 @@ def render(fn, race, stem=""):
         name = base_name(stem)
         if "cx" in sig and "fy" in sig and name not in MOUNTED and name not in NO_BODY:
             build_body(cv, race, sig["cx"].default, sig["fy"].default)
+            if after is not None:
+                build_body(cv, after, sig["cx"].default, sig["fy"].default)
         else:
             _fit(cv)
     finally:

@@ -692,3 +692,4 @@ UA.SPRITES.update({
 })
 
 import unit_art_races   # noqa: E402,F401  the race kits: extends unit_art.write_all to dress every other race in these loadouts
+import unit_art_roster  # noqa: E402,F401  sprites and icons for the roster units (roster_data.py)
