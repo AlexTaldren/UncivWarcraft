@@ -66,9 +66,9 @@
   },
   {
     "name": "Religious",
-    "victoryScreenHeader": "Once the Seat of the Naaru stands, make your faith the majority religion of the world to win!",
+    "victoryScreenHeader": "Build the Seat of the Naaru and make your faith the majority religion of the world to win!",
     "milestones": [
-      "Anyone should build [Seat of the Naaru]",
+      "Build [Seat of the Naaru]",
       "Become the world religion"
     ],
     "victoryString": "From the cathedrals of Stormwind to the totems of Mulgore, the people of Azeroth now kneel to your faith. Your priests, druids and shamans have won what no army could: the hearts of the world.",

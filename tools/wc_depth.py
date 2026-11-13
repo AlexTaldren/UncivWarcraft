@@ -150,8 +150,8 @@ VICTORIES = [
                       "and the world bows to the slayers of gods.",
      "defeatString": "Another people has claimed the trophies of the great raids, and the bards sing their names, not "
                      "yours. Your warriors were brave, but bravery is not victory. There will be other raids."},
-    {"name": "Religious", "victoryScreenHeader": "Once the Seat of the Naaru stands, make your faith the majority religion of the world to win!",
-     "milestones": ["Anyone should build [Seat of the Naaru]", "Become the world religion"],   # Nov 2026: games were ending by turn 50-180
+    {"name": "Religious", "victoryScreenHeader": "Build the Seat of the Naaru and make your faith the majority religion of the world to win!",
+     "milestones": ["Build [Seat of the Naaru]", "Become the world religion"],   # Nov 2026: games were ending by turn 50-180
      "victoryString": "From the cathedrals of Stormwind to the totems of Mulgore, the people of Azeroth now kneel to your "
                       "faith. Your priests, druids and shamans have won what no army could: the hearts of the world.",
      "defeatString": "Another faith now holds the hearts of Azeroth. Your temples empty and your priests fall silent. "
