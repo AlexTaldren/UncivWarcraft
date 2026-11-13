@@ -114,6 +114,9 @@ MACHINE = ("golem", "construct", "warframe", "shredder", "lumberjack", "colossus
 
 def loadout(name, b, t):
     """(function, rule) for a roster unit. rule: 'mount' / 'machine' (no body rebuild), 'giant', or ''."""
+    import unit_art_beasts as UB
+    if name in UB.SPECIAL:
+        return UB.SPECIAL[name]
     n = name.lower()
     has = lambda words: any(w in n for w in words)
     if b == "aggressive":
@@ -173,7 +176,9 @@ def loadout(name, b, t):
 def render(name, b, t, nation):
     fn, rule = loadout(name, b, t)
     race = UR.RACES.get(nation, HUMANS)
-    if rule in ("mount", "machine"):
+    if fn is None:
+        return None
+    if rule in ("mount", "machine", "air"):
         return UR.render(fn, race, "Knight" if rule == "mount" else "Catapult")
     if rule == "giant":
         return UR.render(fn, race, "", after=GIANT)
@@ -201,19 +206,25 @@ def write_all(image_dirs, unit_dir="TileSets/AbsoluteUnits/Units/"):
                 shutil.copyfile(src + suf + ".png", os.path.join(folder, stem + suf + ".png"))
         return True
 
+    import unit_art_beasts as UB
     for name, (b, t, users) in RD.slots().items():
-        if b != "aerial":
-            first = "Humans" if "Humans" in users else users[0]
-            for stem, nation in [(name, first)] + [("%s-%s" % (name, n), n) for n in users]:
-                if b == "naval" and nation != "Humans" and old_ship(stem, t, nation):
-                    count += 1
-                    continue
-                save(stem, render(name, b, t, nation))
-                count += 1
-        ic = os.path.join(icons, name + ".png")                           # icon: the slot's earlier unit, until it has its own
-        tpl = os.path.join(icons, wc_roster.T[(b, t)][0] + ".png")
-        if os.path.isdir(icons) and not os.path.exists(ic) and os.path.exists(tpl):
-            shutil.copyfile(tpl, ic)
+        first = "Humans" if "Humans" in users else users[0]
+        made = None
+        for stem, nation in [(name, first)] + [("%s-%s" % (name, n), n) for n in users]:
+            if b == "naval" and (nation in UB.SHIP_STYLE or name in UB.HORDE_SHIPS):
+                style = "horde" if name in UB.HORDE_SHIPS else UB.SHIP_STYLE[nation]
+                layers = UR.render(UB.ship(style, t), UR.RACES.get(nation, HUMANS), "Catapult")
+            else:
+                layers = render(name, b, t, nation)
+            if layers is None:
+                continue
+            save(stem, layers)
+            made = made or layers
+            count += 1
+        if made is not None and os.path.isdir(icons):                    # every roster unit gets its own icon, cut from its sprite
+            ic = UB.icon(made)
+            if ic is not None:
+                ic.save(os.path.join(icons, name + ".png"))
     return count
 
 
