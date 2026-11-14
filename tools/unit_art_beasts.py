@@ -645,3 +645,227 @@ def icon(layers):
     canvas = Image.new("RGBA", (100, 100), (0, 0, 0, 0))
     canvas.alpha_composite(crop, ((100 - crop.width) // 2, (100 - crop.height) // 2))
     return canvas
+
+
+# ================================================================ siege engines: three families, a style per unit
+def _horde():
+    import roster_data as RD
+    return UR.CUR is not None and UR.CUR.name in RD.SIDE["H"]
+
+
+def _carriage(cv, cx, fy, frame, wheels="wood", plate=True):
+    b = cv.part()
+    cv.rect(b, cx - 12, fy - 8, cx + 12, fy - 5, lit(frame, dark_from=cx + 11, light_to=cx + 10, light_rows=fy - 8))
+    cv.rect(b, cx - 12, fy - 5, cx + 12, fy - 5, frame[2])
+    if plate:
+        p = cv.part(2)
+        cv.rows(p, [(fy - 12, cx - 3, cx + 2), (fy - 11, cx - 3, cx + 2), (fy - 10, cx - 3, cx + 2), (fy - 9, cx - 3, cx + 2), (fy - 8, cx - 2, cx + 1), (fy - 7, cx - 1, cx)],
+                lit(TINT, dark_from=cx + 1, light_to=cx - 2, light_rows=fy - 11))
+        c = cv.part(1, sep=False)
+        cv.rect(c, cx - 3, fy - 12, cx + 2, fy - 11, lit(TINT, dark_from=cx + 1))
+    if wheels == "none":                                                   # sled runners
+        r = cv.part()
+        cv.rows(r, [(fy - 4, cx - 10, cx - 8), (fy - 4, cx + 8, cx + 10), (fy - 3, cx - 13, cx + 13), (fy - 2, cx - 14, cx + 12)], lit(frame, dark_from=cx + 10))
+        cv.rows(r, [(fy - 1, cx - 14, cx + 12), (fy, cx - 13, cx + 11)], frame[2])
+    else:
+        for wx in (cx - 8, cx + 8):
+            (UH.wheel if wheels == "wood" else UH.iron_wheel)(cv, wx, fy)
+            if _horde() or wheels == "spiked":
+                s = cv.part()
+                cv.pix(s, [(wx - 5, fy - 4), (wx + 5, fy - 4), (wx, fy - 9)], BONE[0])
+
+
+def thrower(payload="stone", frame=WOOD, wheels="wood", bones=False, glow=None):
+    """A stone-thrower: frame, upright, a long arm cocked back with its load in the cup."""
+    def f(cv, cx=MID_X, fy=FY):
+        fr = TAR if _horde() and frame is WOOD else frame
+        cv.shadow(cx, 14)
+        far = cv.part()
+        cv.rect(far, cx - 11, fy - 10, cx + 11, fy - 9, fr[2])
+        up = cv.part()
+        cv.rect(up, cx + 2, fy - 19, cx + 4, fy - 9, lit(fr, dark_from=cx + 4, light_to=cx + 2))
+        if bones:                                                           # a cage of ribs over the frame
+            rb = cv.part()
+            for x in (cx - 9, cx - 6, cx - 3):
+                cv.pix(rb, [(x, fy - 9), (x, fy - 10), (x, fy - 11), (x + 1, fy - 12), (x + 2, fy - 13)], BONE[1])
+        arm = cv.part()
+        pts = []
+        for i in range(20):
+            x, y = cx + 7 - i, fy - 10 - (i * 17) // 19
+            pts += [(x, y), (x, y + 1)]
+        cv.pix(arm, pts, fr[1])
+        cv.pix(arm, pts[::2], fr[0])
+        px, py = cx - 14, fy - 30
+        cup = cv.part()
+        cv.rows(cup, [(py + 4, px - 1, px + 5), (py + 5, px, px + 4)], IRON[1])
+        ld = cv.part()
+        if payload == "keg":
+            cv.rect(ld, px, py, px + 4, py + 3, lit(WOOD, dark_from=px + 4, light_to=px))
+            b = cv.part(sep=False)
+            cv.pix(b, [(px, py + 1), (px + 4, py + 1), (px + 2, py + 1), (px + 1, py + 1), (px + 3, py + 1)], IRON[1])
+        else:
+            col = {"stone": STONE, "fire": FLAME, "goo": FEL, "orb": ARCANE, "corpse": ((200, 170, 160), (160, 110, 110), (110, 70, 80))}[payload]
+            cv.rows(ld, [(py, px + 1, px + 3), (py + 1, px, px + 4), (py + 2, px, px + 4), (py + 3, px + 1, px + 3)], lit(col, dark_from=px + 4, light_to=px + 1))
+            if payload in ("fire", "goo", "orb"):
+                g = cv.part()
+                cv.pix(g, [(px + 1, py - 1), (px + 3, py - 2), (px + 5, py), (px - 1, py + 1)], col[0])
+        cw = cv.part()                                                      # counterweight
+        cv.rect(cw, cx + 6, fy - 12, cx + 10, fy - 9, lit(STONE if not bones else BONE, dark_from=cx + 9, light_to=cx + 7, light_rows=fy - 12))
+        _carriage(cv, cx, fy, fr, wheels)
+        if _horde():
+            sp = cv.part()
+            cv.pix(sp, [(cx + 13, fy - 7), (cx + 14, fy - 7), (cx + 13, fy - 5), (cx + 14, fy - 5)], BONE[0])
+        if bones:
+            sk = cv.part()
+            cv.rect(sk, cx + 10, fy - 13, cx + 13, fy - 10, lit(BONE, dark_from=cx + 13, light_to=cx + 11))
+            e = cv.part(sep=False)
+            cv.pix(e, [(cx + 11, fy - 12), (cx + 13, fy - 12)], DARK)
+        if glow:
+            g = cv.part(sep=False)
+            cv.pix(g, [(cx - 6, fy - 7), (cx + 5, fy - 7)], glow[0])
+    return f
+
+
+def bolt_thrower(head="steel", frame=WOOD, bow=WOOD, glow=None, wheels="wood"):
+    """A great crossbow on a carriage."""
+    def f(cv, cx=MID_X, fy=FY):
+        fr = TAR if _horde() and frame is WOOD else frame
+        cv.shadow(cx, 14)
+        far = cv.part()
+        cv.rect(far, cx - 11, fy - 10, cx + 11, fy - 9, fr[2])
+        ps = cv.part()
+        cv.rect(ps, cx + 3, fy - 16, cx + 5, fy - 9, lit(fr, dark_from=cx + 5, light_to=cx + 3))
+        bx, by = cx + 7, fy - 19
+        sg = cv.part(sep=False)
+        cv.pix(sg, line(bx - 3, by - 9, cx - 8, fy - 12) + line(bx - 3, by + 9, cx - 8, fy - 12), UH.STRING)
+        bw = cv.part()
+        arc = [(bx - 3, by - 9), (bx - 2, by - 8), (bx - 1, by - 7), (bx, by - 6), (bx, by - 5)] + [(bx + 1, y) for y in range(by - 4, by + 5)] + \
+              [(bx, by + 5), (bx, by + 6), (bx - 1, by + 7), (bx - 2, by + 8), (bx - 3, by + 9)]
+        cv.pix(bw, arc + [(x + 1, y) for x, y in arc], bow[1])
+        cv.pix(bw, arc[:9], bow[0])
+        stk = cv.part()
+        pts = []
+        for i in range(24):
+            x, y = cx - 11 + i, fy - 11 - i // 2
+            pts += [(x, y), (x, y + 1)]
+        cv.pix(stk, pts, fr[1])
+        cv.pix(stk, pts[::2], fr[0])
+        bl = cv.part()
+        bp = [(cx - 7 + i, fy - 14 - i // 2) for i in range(22)]
+        cv.pix(bl, bp, TAN[0])
+        tx, ty = bp[-1]
+        hd = cv.part()
+        if head == "glaive":                                                # a spinning three-bladed glaive
+            cv.rows(hd, [(ty - 4, tx + 1, tx + 2), (ty - 3, tx, tx + 3), (ty - 2, tx + 2, tx + 5), (ty - 1, tx + 1, tx + 6), (ty, tx + 2, tx + 5), (ty + 1, tx, tx + 3), (ty + 2, tx + 1, tx + 2)],
+                    lit(STEEL, dark_from=tx + 4, light_to=tx + 1))
+            c = cv.part(sep=False)
+            cv.put(c, tx + 3, ty - 1, (glow or AZER)[0])
+        elif head == "crystal":
+            cv.rows(hd, [(ty - 2, tx + 1, tx + 2), (ty - 1, tx, tx + 4), (ty, tx + 1, tx + 3)], lit(glow or ARCANE, dark_from=tx + 3, light_to=tx + 1))
+            g = cv.part()
+            cv.pix(g, [(tx + 6, ty - 2), (tx + 5, ty + 1)], (glow or ARCANE)[0])
+        else:
+            cv.rows(hd, [(ty - 1, tx + 1, tx + 3), (ty, tx + 1, tx + 2)], (BONE if head == "bone" else STEEL)[0])
+        fl = cv.part(1)
+        cv.pix(fl, [(cx - 8, fy - 14), (cx - 8, fy - 15), (cx - 7, fy - 15)], TINT[0])
+        _carriage(cv, cx, fy, fr, wheels)
+    return f
+
+
+def cannon(barrel=IRON, stubby=False, glow=None, wheels="iron", crystal=False, spikes=False, jet=False):
+    """A gun on a carriage: a long cannon or a squat mortar, with its own barrel and muzzle fire."""
+    def f(cv, cx=MID_X, fy=FY):
+        cv.shadow(cx, 14)
+        fr = TAR if _horde() else WOOD
+        tr = cv.part()                                                      # trail
+        cv.pix(tr, line(cx - 14, fy - 1, cx - 3, fy - 7) + line(cx - 14, fy - 2, cx - 3, fy - 8) + line(cx - 13, fy - 2, cx - 2, fy - 8), fr[1])
+        br = cv.part()
+        if stubby:
+            rows = [(fy - 7 - k, cx - 4 + (k + 1) // 2, cx + 4 + (k + 1) // 2) for k in range(12)]
+            cv.rows(br, rows, barrel[1])
+            for (y, a, b) in rows:
+                cv.rect(br, a, y, a + 1, y, barrel[0])
+                cv.rect(br, b - 1, y, b, y, barrel[2])
+            mz = cv.part()
+            cv.rows(mz, [(fy - 19, cx + 1, cx + 11)], lit(barrel, dark_from=cx + 9, light_to=cx + 4))
+            mx, my = cx + 7, fy - 21
+            bd = cv.part(2, sep=False)
+            y, a, b = rows[5]
+            cv.rect(bd, a, y, b, y + 1, lit(TINT, dark_from=b - 1))
+        else:
+            rows = [(fy - 15, cx - 8, cx + 12), (fy - 14, cx - 10, cx + 13), (fy - 13, cx - 10, cx + 13), (fy - 12, cx - 10, cx + 13), (fy - 11, cx - 8, cx + 12)]
+            if crystal:
+                rows = [(fy - 15, cx - 4, cx + 6), (fy - 14, cx - 8, cx + 12), (fy - 13, cx - 10, cx + 16), (fy - 12, cx - 8, cx + 12), (fy - 11, cx - 4, cx + 6)]
+            cv.rows(br, rows, lambda xx, yy: barrel[0] if yy <= fy - 14 else (barrel[2] if yy >= fy - 11 else barrel[1]))
+            kn = cv.part()
+            cv.rect(kn, cx - 12, fy - 14, cx - 11, fy - 12, barrel[2])
+            if not crystal:
+                mz = cv.part()
+                cv.rect(mz, cx + 13, fy - 16, cx + 14, fy - 10, lit(barrel, dark_from=cx + 14))
+                bd = cv.part(2, sep=False)
+                cv.rect(bd, cx - 4, fy - 15, cx - 1, fy - 11, lit(TINT, dark_from=cx - 2))
+                b1 = cv.part(1, sep=False)
+                cv.rect(b1, cx + 5, fy - 15, cx + 6, fy - 11, TINT[1])
+            mx, my = cx + 16, fy - 13
+        if glow:
+            g = cv.part()
+            if jet:
+                cv.rows(g, [(my - 1, mx, mx + 3), (my, mx, mx + 5), (my + 1, mx, mx + 3)], lambda xx, yy: glow[0] if xx < mx + 2 else glow[1])
+            else:
+                cv.pix(g, [(mx, my), (mx + 1, my - 1), (mx + 2, my + 1), (mx + 1, my + 2)] if not stubby else [(mx, my), (mx + 2, my - 2), (mx - 2, my - 1)], glow[0])
+            c = cv.part(sep=False)
+            cv.pix(c, [(cx - 6, fy - 13), (cx + 1, fy - 13), (cx + 8, fy - 13)] if not stubby else [(cx + 2, fy - 12), (cx + 4, fy - 15)], glow[1])
+        if wheels == "none":
+            bl = cv.part()
+            cv.rows(bl, [(fy - 9, cx - 7, cx + 6), (fy - 8, cx - 8, cx + 7)] + [(y, cx - 9, cx + 8) for y in range(fy - 7, fy + 1)], lit(fr if not crystal else STONE, dark_from=cx + 7, light_to=cx - 6, light_rows=fy - 8))
+            t = cv.part(1, sep=False)
+            cv.rect(t, cx - 9, fy - 4, cx + 8, fy - 4, TINT[1])
+        else:
+            ax = cv.part()
+            cv.rect(ax, cx - 3, fy - 10, cx + 3, fy - 7, lit(fr, dark_from=cx + 3, light_to=cx - 2))
+            UH.wheel(cv, cx, fy)
+            if spikes or _horde():
+                s = cv.part()
+                cv.pix(s, [(cx - 5, fy - 4), (cx + 5, fy - 4), (cx, fy - 9), (cx + 15, fy - 17), (cx + 15, fy - 9)] if not stubby else [(cx - 5, fy - 4), (cx + 5, fy - 4)], BONE[0])
+    return f
+
+
+def rocket_battery(colors=False):
+    """A rack of rockets on a cart, noses up, fuses ready."""
+    def f(cv, cx=MID_X, fy=FY):
+        cv.shadow(cx, 13)
+        for i, x in enumerate((cx - 7, cx - 2, cx + 3, cx + 8)):
+            r = cv.part((2 if i % 2 == 0 else 1) if colors else 0)
+            pts = [(x + k // 2, fy - 10 - k) for k in range(12)] + [(x + 1 + k // 2, fy - 10 - k) for k in range(12)]
+            cv.pix(r, pts, (TINT[1] if colors else STEEL[1]))
+            cv.pix(r, pts[:12], (TINT[0] if colors else STEEL[0]))
+            n = cv.part()
+            cv.pix(n, [(x + 6, fy - 22), (x + 7, fy - 22), (x + 6, fy - 23), (x + 7, fy - 24)], RED[1])
+            fz = cv.part()
+            cv.pix(fz, [(x - 1, fy - 9)], FLAME[0])
+        rk = cv.part()
+        cv.rect(rk, cx - 9, fy - 14, cx + 11, fy - 13, lit(IRON, dark_from=cx + 10))
+        _carriage(cv, cx, fy, WOOD, "iron")
+    return f
+
+
+SPECIAL.update({
+    "Catapult": (thrower("stone"), "machine"), "Ballista": (bolt_thrower(), "machine"), "Cannon": (cannon(), "machine"),
+    "Flame Cannon": (cannon(BRASS, glow=FLAME, jet=True), "machine"), "Flame Mortar": (cannon(IRON, stubby=True, glow=FLAME), "machine"),
+    "Magma Cannon": (cannon(IRON, glow=FLAME, jet=True, spikes=True), "machine"), "Gnomish Bombardier": (cannon(BRASS, stubby=True), "machine"),
+    "Rocket Battery": (rocket_battery(), "machine"), "Fireworks Launcher": (rocket_battery(colors=True), "machine"),
+    "Glaive Thrower": (bolt_thrower("glaive", frame=VIOLETW, bow=STEEL), "machine"), "Elven Ballista": (bolt_thrower(frame=PALEW, bow=GOLD), "machine"),
+    "Arcane Ballista": (bolt_thrower("crystal", frame=PALEW, bow=GOLD, glow=AZER), "machine"),
+    "Suramar Ballista": (bolt_thrower("crystal", frame=VIOLETW, bow=GOLD, glow=ARCANE), "machine"),
+    "Zandalari Ballista": (bolt_thrower("bone", frame=BARK, bow=BONE), "machine"),
+    "Crystal Lance": (cannon(ARCANE, crystal=True, glow=ARCANE, wheels="none"), "machine"),
+    "Lightforged Cannon": (cannon(GOLD, glow=GLOW, jet=True, wheels="none"), "machine"),
+    "Leyline Cannon": (cannon(ARCANE, crystal=True, glow=ARCANE, wheels="none"), "machine"),
+    "Deck Cannon": (cannon(IRON, wheels="none"), "machine"), "Azerite Cannon": (cannon(BRASS, glow=AZER, jet=True), "machine"),
+    "Horde Siege Engine": (cannon(IRON, glow=FLAME, spikes=True), "machine"),
+    "Mana Bomb Launcher": (thrower("orb", frame=PALEW), "machine"), "Meat Wagon": (thrower("corpse", frame=TAR, bones=True), "machine"),
+    "Blight Thrower": (thrower("goo", frame=TAR, glow=FEL), "machine"), "Plague Catapult": (thrower("goo", frame=BONE, bones=True, glow=FEL), "machine"),
+    "Keg Catapult": (thrower("keg", frame=LEAF), "machine"),
+    "Goblin Sapper": (UH.grenadier, ""), "Kraken Caller": (UH.archmage, ""),
+    "Mortar Team": (UH.mortar_team, "machine"),
+})
