@@ -50,6 +50,14 @@ class TC(UA.Canvas):
         self.thin = set()
         self.flat = []
 
+    cmap = {}                         # colour -> colour, set by tile_art_races for the other factions' materials
+
+    def put(self, s, x, y, c):
+        if 0 <= x < self.gw and 0 <= y < self.gh:
+            c = tuple(c(x, y) if callable(c) else c)
+            self.lab[y][x] = s
+            self.col[y][x] = self.cmap.get(c, c)
+
     def lines(self):
         p = self.part(sep=False)
         self.thin.add(p)
@@ -68,7 +76,8 @@ class TC(UA.Canvas):
             for y, a, b in rows:
                 for x in range(a, b + 1):
                     if 0 <= x < gw and 0 <= y < gh:
-                        px[x, y] = tuple(col(x, y) if callable(col) else col) + (255,)
+                        c0 = tuple(col(x, y) if callable(col) else col)
+                        px[x, y] = self.cmap.get(c0, c0) + (255,)
         solid = lambda l: l >= 0 and l not in self.thin
         for cx, cy, rx in self.shadows:
             for y in (cy, cy + 1):
@@ -689,6 +698,16 @@ def city_center(stage, small=False):
 
 
 # ================================================================ hooks into the build
+import contextlib
+
+HANDLED = {"Humans"}              # styles drawn by this module; tile_art_races adds the rest
+
+
+@contextlib.contextmanager
+def CTX(race):                    # replaced by tile_art_races: sets the faction's materials and shapes while a scene is drawn
+    yield
+
+
 class _Img:
     """Stands in for a citycenters canvas: image() and half().image()."""
 
@@ -713,7 +732,10 @@ def install():
     def swap(name, fn):
         old = getattr(IA, name)
         def wrapped(race, *a, **k):
-            return fn(race, *a, **k) if race == "Humans" else old(race, *a, **k)
+            if race in HANDLED:
+                with CTX(race):
+                    return fn(race, *a, **k)
+            return old(race, *a, **k)
         setattr(IA, name, wrapped)
 
     def scene(*layers):
@@ -747,8 +769,12 @@ def install():
 
     old_cc = CC.city_center_canvas
     def cc(style_name, stage, small=False):
-        return _Img(city_center(stage)) if style_name == "Humans" else old_cc(style_name, stage, small)
+        if style_name in HANDLED:
+            with CTX(style_name):
+                return _Img(city_center(stage))
+        return old_cc(style_name, stage, small)
     CC.city_center_canvas = cc
 
 
 install()
+import tile_art_races   # noqa: E402,F401  the other factions: their own materials, roof forms and tower caps on these scenes
