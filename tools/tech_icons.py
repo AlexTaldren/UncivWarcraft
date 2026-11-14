@@ -123,12 +123,13 @@ def _horse(i):
 
 
 def _wolf(i):
-    # a wolf's head in profile, muzzle raised
-    i.P([(6, 30), (7, 20), (10, 13), (9, 3), (15, 9), (20, 8), (30, 3), (31, 7), (25, 13), (27, 16), (22, 17), (20, 22), (21, 30)])
-    i.P([(6, 30), (7, 20), (10, 13), (9, 3), (12, 12), (10, 22), (11, 30)], M)
-    i.E(18, 12, 1, t=C)
-    i.P([(25, 13), (23, 16), (22, 13)], C)
-    return i.R(29, 4, 30, 5, C)
+    # a wolf's face, head on: tall ears, slanted eyes, narrow muzzle
+    i.P([(4, 1), (11, 8), (21, 8), (28, 1), (28, 13), (31, 19), (24, 22), (20, 30), (12, 30), (8, 22), (1, 19), (4, 13)])
+    i.P([(6, 5), (10, 9), (7, 12)], M).P([(26, 5), (22, 9), (25, 12)], M)
+    i.P([(12, 20), (20, 20), (19, 29), (13, 29)], M)
+    i.P([(7, 14), (13, 17), (9, 18)], C).P([(25, 14), (19, 17), (23, 18)], C)
+    i.R(14, 25, 18, 27, C)
+    return i.P([(13, 30), (14, 27), (15, 30)], B).P([(17, 30), (18, 27), (19, 30)], B)
 
 
 def _anvil(i, y=12):
@@ -200,9 +201,12 @@ def _hide(i):
 
 
 def _scope(i):
-    i.P([(3, 22), (20, 8), (23, 12), (6, 26)])
-    i.P([(20, 8), (27, 3), (30, 8), (23, 12)], M)
-    return i.star(8, 8, 5)
+    # a brass spyglass, three draws, with a glint at the lens
+    i.P([(2, 25), (10, 17), (14, 21), (6, 29)])
+    i.P([(10, 15), (17, 8), (23, 14), (16, 21)], M)
+    i.P([(17, 6), (23, 0), (31, 8), (25, 14)])
+    i.L([(10, 16), (15, 21)], 1, C).L([(17, 7), (24, 14)], 1, C)
+    return i.star(6, 7, 5)
 
 
 def _lyre(i):
@@ -415,12 +419,15 @@ def _drum(i):
 
 
 def _barrage(i):
-    for k, x in enumerate((6, 15, 24)):
-        y = 9 + k * 5
-        i.E(x + 2, y, 3)
-        i.L([(x - 2, y - 2), (x - 6, y - 7)], 1, M).L([(x, y - 3), (x - 3, y - 9)], 1, M)
-    i.P([(2, 30), (30, 30), (30, 27), (2, 27)], M)
-    return i.star(25, 25, 4)
+    # burning stones falling on a breached wall
+    for x, y in ((8, 9), (19, 6), (25, 15)):
+        i.P([(x - 2, y - 2), (x - 8, y - 9), (x + 1, y - 4)], M)
+        i.E(x, y, 3)
+    i.R(1, 22, 12, 30).R(20, 22, 31, 30)
+    for x in (1, 6, 11, 20, 25, 30):
+        i.R(x, 19, x + 1, 21)
+    i.P([(12, 30), (12, 26), (15, 28), (17, 25), (20, 27), (20, 30)], M)
+    return i
 
 
 def _eye(i):
@@ -460,22 +467,32 @@ def _cluster(i):
 
 
 def _ghost(i):
-    # a cloaked figure dissolving into bands
-    i.P([(16, 2), (9, 8), (8, 16), (5, 29), (27, 29), (24, 16), (23, 8)])
-    i.E(16, 11, 4, 5, t=C)
-    for y in range(5, 30, 4):
-        i.R(17, y, 31, y + 1, C)
-    return i.star(27, 4, 3)
+    # a cloaked figure seen only as a broken outline
+    i.P([(16, 1), (8, 7), (7, 16), (3, 30), (29, 30), (25, 16), (24, 7)])
+    i.P([(16, 4), (10, 8), (9, 17), (6, 28), (26, 28), (23, 17), (22, 8)], C)
+    for a, b in (((16, 16), (2, 2)), ((16, 16), (30, 2)), ((16, 16), (0, 20)), ((16, 16), (32, 20)), ((16, 20), (10, 32)), ((16, 20), (22, 32)), ((16, 10), (16, 0))):
+        i.L([a, b], 3, C)
+    i.E(13, 13, 1, t=M).E(19, 13, 1, t=M)
+    return i.star(27, 5, 3, M)
 
 
 def _ether(i):
     # a wrapped being of energy: bandaged head with burning eyes
-    i.E(16, 15, 11, 13)
-    for y in (6, 13, 20):
-        i.L([(4, y + 4), (28, y)], 1, C)
-    i.R(10, 12, 13, 14, C).R(19, 11, 22, 13, C)
-    i.P([(11, 27), (21, 27), (24, 31), (8, 31)], M)
-    return i
+    i.E(16, 14, 11, 13)
+    for y in (4, 11, 19):
+        i.L([(4, y + 5), (28, y)], 2, C)
+    i.E(11, 13, 2, t=M).E(21, 11, 2, t=M)
+    i.P([(11, 27), (21, 27), (25, 31), (7, 31)], M)
+    return i.star(28, 26, 3, M).star(4, 3, 2, M)
+
+
+def _axe(i):
+    # a double-bladed war axe
+    i.R(15, 2, 16, 30, M)
+    i.P([(14, 5), (8, 2), (2, 8), (2, 16), (8, 22), (14, 19)])
+    i.P([(18, 5), (24, 2), (30, 8), (30, 16), (24, 22), (18, 19)])
+    i.L([(5, 8), (5, 16)], 1, M).L([(27, 8), (27, 16)], 1, M)
+    return i.R(13, 10, 19, 14).P([(14, 2), (16, 0), (18, 2)])
 
 
 def _maths(i):
@@ -510,7 +527,7 @@ ICONS = {
     "Farming": _wheat, "Pottery": _pot, "Beast Taming": _paw, "Archery": _bow, "Mining": _pick,
     "Sailing": lambda i: i.ship(), "Herbalism": _leaf, "Runic Script": _rune, "Skinning": _hide, "The Wheel": _wheel,
     "Masonry": lambda i: i.tower(8, 23, 4, 29).R(13, 20, 18, 29, C).R(10, 12, 12, 16, C).R(19, 12, 21, 16, C),
-    "Bronze Working": lambda i: i.P([(16, 1), (22, 9), (19, 12), (13, 12), (10, 9)]).R(15, 12, 16, 30, M).R(12, 12, 19, 13),
+    "Bronze Working": _axe,
     "Optics": _scope, "Riding": _horse,
     "Mathematics": _maths,
     "Construction": lambda i: i.hammer(11, 3, 29, 7).P([(20, 6), (30, 10), (27, 14), (24, 12), (20, 28), (17, 27), (21, 11), (18, 9)], M),
