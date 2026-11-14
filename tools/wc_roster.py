@@ -114,7 +114,7 @@ def apply(files):
             blocked = []
         else:
             blocked = [n for n in majors if n not in users] + ["City-States", "Barbarians"]
-        u["uniques"] += ["Unavailable <for [%s] Civilizations>" % n for n in blocked]
+        u["uniques"] += ["Unavailable <for [%s] Civilizations> <hidden from users>" % n for n in blocked]
         nxt = {n: (RD.line(n, b)[t + 1] if t < 2 else None) for n in users}
         if t < 2:
             u["obsoleteTech"] = tech_of[(b, t + 1)]

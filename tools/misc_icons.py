@@ -125,9 +125,14 @@ def horn(i):
 
 
 def hoof(i):
-    i.P([(9, 2), (15, 2), (15, 26), (10, 29), (5, 24), (5, 10)])
-    i.P([(17, 2), (23, 2), (27, 10), (27, 24), (22, 29), (17, 26)])
-    return i.R(7, 5, 13, 6, M).R(19, 5, 25, 6, M)
+    # a cloven hoof slamming down, the ground splitting under it
+    i.P([(11, 0), (21, 0), (22, 10), (26, 18), (26, 22), (6, 22), (6, 18), (10, 10)])
+    i.P([(15, 14), (17, 14), (16, 22)], C)
+    i.R(10, 8, 22, 9, M)
+    i.L([(0, 24), (31, 24)], 2)
+    for a, b in (((8, 26), (2, 31)), ((16, 26), (16, 31)), ((24, 26), (30, 31)), ((12, 26), (9, 30)), ((20, 26), (23, 30))):
+        i.L([a, b], 2, M)
+    return i
 
 
 def claw(i):
@@ -198,7 +203,25 @@ def plate(i):
 
 
 def bigflame(i):
+    # a great drop of blood between two fangs
+    i.E(16, 20, 8, 9)
+    i.P([(16, 1), (24, 18), (8, 18)])
+    i.E(13, 21, 2, t=M)
+    i.P([(1, 3), (8, 3), (4, 17)]).P([(24, 3), (31, 3), (28, 17)])
+    return i
+
+
+def fel(i):
     return i.flame(16, 30, 28)
+
+
+def blink(i):
+    # a figure gone in a flash: fading afterimages trailing a bright burst
+    i.star(21, 11, 10)
+    i.E(21, 11, 2, t=C)
+    i.star(9, 22, 5, M)
+    i.R(3, 28, 4, 29, M).R(14, 17, 15, 18, M)
+    return i.L([(1, 12), (8, 12)], 1, M).L([(3, 16), (9, 16)], 1, M)
 
 
 def sword(i):
@@ -238,7 +261,7 @@ POLICIES = {
     "Iron Horde Doctrine": T("War Doctrine"),
     "Brothers in Arms": BI.swords, "Grand Stewardship": (T("Farming"), "star"), "Ancestral Pride": BI.totem, "Common Granaries": BI.granary,
     "Collective Labor": T("Construction"),
-    "Embraced the Fel": (bigflame, "skull"), "Rejected the Fel": (BI.shield, "flame"),
+    "Embraced the Fel": (fel, "skull"), "Rejected the Fel": (BI.shield, "flame"),
     "Sunwell Restored by the Light": lambda i: BI.well(i, "sun"), "Sunwell Rekindled by Arcane": lambda i: BI.well(i, "star"),
     "Kyrian Covenant": wing, "Venthyr Covenant": BI.cup, "Night Fae Covenant": BI.tree, "Necrolord Covenant": BI.skull,
 }
@@ -264,7 +287,7 @@ PROMOTIONS = {
     "Swift Strider": (boot, "bolt"), "Legend of Azeroth": BI.cup, "Portal Adept": T("Portal Networks"), "Portal Attunement": (T("Portal Networks"), "star"),
     "Raid Veteran": (BI.helm, "star"), "Shadowmeld": BI.moon, "Keen Eyes": T("Focused Arcana"), "Flanker": T("Animal War Training"),
     "Hold the Line": BI.wall, "Shield Wall": T("Battle Formations"), "Cleave": BI.cleaver, "Last Stand": (BI.shield, "skull"),
-    "Arcane Intellect": lambda i: i.book(), "Spell Ward": (BI.shield, "star"), "Blink": T("Invisibility"), "Eagle Eye": (bird, "eye"),
+    "Arcane Intellect": lambda i: i.book(), "Spell Ward": (BI.shield, "star"), "Blink": blink, "Eagle Eye": (bird, "eye"),
     "Volley Fire": (arrows_down, "flame"), "Camouflage": T("Herbalism"),
     # hero abilities
     "Rallying Cry": horn, "Mana Shield": BI.crystal, "Hunter's Mark": (BI.target, "paw"), "Divine Shield": (BI.shield, "sun"),
