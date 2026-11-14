@@ -613,6 +613,8 @@ import tech_icons   # Nov 2026: pixel-art tech emblems replace the composed symb
 tech_icons.write_all(os.path.join(OUT, "Images.WarcraftIcons", "TechIcons"))
 import building_icons   # Nov 2026: building icons in the same hand
 building_icons.write_all(os.path.join(OUT, "Images.WarcraftIcons", "BuildingIcons"))
+import misc_icons   # Nov 2026: policy, branch and promotion icons
+misc_icons.write_all(OUT)
 # Map art (unit sprites, tiles) goes in its own texture pack so nothing spills into a 2nd page.
 shutil.move(os.path.join(IMG, "TileSets"), os.path.join(OUT, "Images.WarcraftMap", "TileSets"))
 # Warcraft replacements for the modern-era unit sprites (every civ)
