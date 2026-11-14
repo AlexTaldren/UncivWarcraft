@@ -2748,7 +2748,7 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Scouts and ambushers of the early ages, fielded by Humans and Orcs. Fast and far-sighted, it finds the enemy first and strikes where he is weak."
+        "text": "Scouts and ambushers of the early ages, fielded by factions of both sides (Humans, Orcs). Fast and far-sighted, it finds the enemy first and strikes where he is weak."
       },
       {
         "text": "Upgrades to Pathfinder or Wolf Scout."
@@ -3122,9 +3122,6 @@
         "text": "The magi of the Kirin Tor, the ruling council of Dalaran, who can strike from farther away than any other mage."
       },
       {
-        "text": "Stronger than a Magus."
-      },
-      {
         "text": "Spell: Frost Armor. A coat of ice: +30% Strength when defending for 2 turns. Costs 8 Mana."
       },
       {
@@ -3413,7 +3410,7 @@
     "attackSound": "throw",
     "civilopediaText": [
       {
-        "text": "Siege weapon of the early ages, fielded by Humans and Dwarves and Dark Iron Dwarves and Gnomes and Worgen and Kul Tirans and Orcs and Tauren and Highmountain Tauren and Trolls. Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
+        "text": "Siege weapon of the early ages, fielded by factions of both sides (Humans, Dwarves, Dark Iron Dwarves, Gnomes, Worgen, Kul Tirans, Orcs, Tauren, Highmountain Tauren, Trolls). Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
       },
       {
         "text": "Upgrades to Ballista or Deck Cannon or Demolisher or Flame Mortar or Gnomish Bombardier or Mortar Team."
@@ -3930,7 +3927,7 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Front-line infantry of the early ages, fielded by Dwarves and Orcs. Built to attack: it carries the fight to the enemy and takes ground."
+        "text": "Front-line infantry of the early ages, fielded by factions of both sides (Dwarves, Orcs). Built to attack: it carries the fight to the enemy and takes ground."
       },
       {
         "text": "Upgrades to Axeman or Grunt."
@@ -4381,9 +4378,6 @@
         "text": "Dwarven riflemen of Ironforge, whose long rifles were the envy of the Alliance in the Second War."
       },
       {
-        "text": "Stronger than a Rifleman, with +25% Strength in hills."
-      },
-      {
         "text": "Upgrades from Crossbow Dwarf. Upgrades to Sharpshooter."
       }
     ],
@@ -4649,9 +4643,6 @@
     "civilopediaText": [
       {
         "text": "Dwarven cavalry on armored mountain rams, as sure-footed in the peaks of Dun Morogh as on the plain."
-      },
-      {
-        "text": "Stronger than a Knight, keeps the defensive bonus of terrain, and gains +25% Strength in hills."
       },
       {
         "text": "Upgrades to Ram Lancer."
@@ -6247,6 +6238,9 @@
         "text": "Front-line infantry of the late game, fielded by the Gnomes. Built to attack: it carries the fight to the enemy and takes ground."
       },
       {
+        "text": "Gnomes make poor foot soldiers and excellent machines; their troops are cheap."
+      },
+      {
         "text": "Upgrades from Gnomeregan Infantry."
       }
     ],
@@ -6883,9 +6877,6 @@
         "text": "A gnomish tank on eight clockwork legs that climbs over rubble, hills and anything else in its way."
       },
       {
-        "text": "Stronger and faster than a Siege Engine, and ignores terrain movement costs."
-      },
-      {
         "text": "Upgrades to Mechano-Tank."
       }
     ],
@@ -6985,9 +6976,6 @@
         "text": "Gnomish artillery crews with a dangerous fondness for experimental shells."
       },
       {
-        "text": "Stronger ranged attack than a Mortar Team, with range 3."
-      },
-      {
         "text": "Upgrades from Catapult. Upgrades to Rocket Battery."
       }
     ],
@@ -7053,7 +7041,7 @@
     "attackSound": "cannon",
     "civilopediaText": [
       {
-        "text": "Siege weapon of the late game, fielded by Gnomes and Goblins. Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
+        "text": "Siege weapon of the late game, fielded by factions of both sides (Gnomes, Goblins). Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
       },
       {
         "text": "Upgrades from Gnomish Bombardier or Goblin Sapper."
@@ -8019,9 +8007,6 @@
         "text": "Sentinels of the night elves riding nightsabers, each armed with a moonglaive."
       },
       {
-        "text": "Stronger than an Outrider, with +25% Strength in forests and double movement through them."
-      },
-      {
         "text": "Spell: Sentinel Owl. An owl scouts ahead: +2 Sight and sees stealthed units for 2 turns. Costs 5 Mana."
       },
       {
@@ -8250,9 +8235,6 @@
         "text": "Night elf siege engines of living wood that hurl huge glaives at their targets."
       },
       {
-        "text": "Stronger ranged attack than a Ballista, with range 3."
-      },
-      {
         "text": "Upgrades to Ancient Stone Thrower."
       }
     ],
@@ -8358,7 +8340,7 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Warship of the early ages, fielded by Night Elves and High Elves and Blood Elves. Controls the coast and the sea lanes, and supports landings."
+        "text": "Warship of the early ages, fielded by factions of both sides (Night Elves, High Elves, Blood Elves). Controls the coast and the sea lanes, and supports landings."
       },
       {
         "text": "Upgrades to Elven Destroyer or Night Elf Destroyer or Sunreaver Destroyer."
@@ -8735,7 +8717,7 @@
     "attackSound": "metalhit",
     "civilopediaText": [
       {
-        "text": "Front-line infantry of the early ages, fielded by High Elves and Blood Elves. Built to attack: it carries the fight to the enemy and takes ground."
+        "text": "Front-line infantry of the early ages, fielded by factions of both sides (High Elves, Blood Elves). Built to attack: it carries the fight to the enemy and takes ground."
       },
       {
         "text": "Upgrades to Elven Blade or Spellbreaker."
@@ -8877,7 +8859,7 @@
     "attackSound": "metalhit",
     "civilopediaText": [
       {
-        "text": "Line-holding infantry of the early ages, fielded by High Elves and Blood Elves. Built to hold: it is at its best fortified or standing against a charge."
+        "text": "Line-holding infantry of the early ages, fielded by factions of both sides (High Elves, Blood Elves). Built to hold: it is at its best fortified or standing against a charge."
       },
       {
         "text": "Upgrades to Quel'Thalas Guardian or Silvermoon Guardian."
@@ -9019,7 +9001,7 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Scouts and ambushers of the early ages, fielded by High Elves and Blood Elves. Fast and far-sighted, it finds the enemy first and strikes where he is weak."
+        "text": "Scouts and ambushers of the early ages, fielded by factions of both sides (High Elves, Blood Elves). Fast and far-sighted, it finds the enemy first and strikes where he is weak."
       },
       {
         "text": "Upgrades to Farstrider."
@@ -9156,7 +9138,7 @@
     "attackSound": "arrow",
     "civilopediaText": [
       {
-        "text": "Missile troops of the early ages, fielded by High Elves and Blood Elves. Strikes from a distance with bow, thrown weapon or shot, and should be kept behind the line."
+        "text": "Missile troops of the early ages, fielded by factions of both sides (High Elves, Blood Elves). Strikes from a distance with bow, thrown weapon or shot, and should be kept behind the line."
       },
       {
         "text": "Upgrades to Blood Elf Ranger or Ranger."
@@ -9344,7 +9326,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Spellcasters of the early ages, fielded by High Elves and Blood Elves. Fights with magic from a distance; deadly against armour, fragile in melee."
+        "text": "Spellcasters of the early ages, fielded by factions of both sides (High Elves, Blood Elves). Fights with magic from a distance; deadly against armour, fragile in melee."
       },
       {
         "text": "Upgrades to Blood Mage or Sorceress."
@@ -9458,7 +9440,7 @@
         "text": "The ruling mages of the elven kingdom."
       },
       {
-        "text": "Spellcasters of the late game, fielded by High Elves and Blood Elves. Fights with magic from a distance; deadly against armour, fragile in melee."
+        "text": "Spellcasters of the late game, fielded by factions of both sides (High Elves, Blood Elves). Fights with magic from a distance; deadly against armour, fragile in melee."
       },
       {
         "text": "Upgrades from Blood Mage or Sorceress."
@@ -9657,7 +9639,7 @@
     "attackSound": "throw",
     "civilopediaText": [
       {
-        "text": "Siege weapon of the middle game, fielded by High Elves and Blood Elves. Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
+        "text": "Siege weapon of the middle game, fielded by factions of both sides (High Elves, Blood Elves). Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
       },
       {
         "text": "Upgrades to Arcane Ballista or Mana Bomb Launcher."
@@ -9938,7 +9920,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Healers of the early ages, fielded by High Elves and Blood Elves. Does not fight; units next to it recover faster, and it can be bought with Faith."
+        "text": "Healers of the early ages, fielded by factions of both sides (High Elves, Blood Elves). Does not fight; units next to it recover faster, and it can be bought with Faith."
       },
       {
         "text": "Upgrades to Lightwarden or Sunfury Priest."
@@ -11251,9 +11233,6 @@
         "text": "Gilneans who have embraced the curse of the worgen, hunting through the forests with tooth and claw."
       },
       {
-        "text": "Stronger than a Swordsman, needs no Iron, +25% Strength in forests and double movement through them."
-      },
-      {
         "text": "Spell: Feral Leap. +2 Movement for 1 turn. Costs 5 Mana."
       },
       {
@@ -11647,9 +11626,6 @@
     "civilopediaText": [
       {
         "text": "The disciplined riflemen of Gilneas, who held the Greymane Wall for years."
-      },
-      {
-        "text": "Stronger than a Mountaineer."
       },
       {
         "text": "Upgrades from Gilnean Hunter. Upgrades to Gilnean Marksman."
@@ -12645,9 +12621,6 @@
         "text": "Kul Tiran marines of the Proudmoore Admiralty, as at home storming a beach as standing on a deck."
       },
       {
-        "text": "Stronger than a Rifleman, attacks from ships without penalty and sees farther."
-      },
-      {
         "text": "Upgrades from Harpooner. Upgrades to Sharpshooter."
       }
     ],
@@ -13310,9 +13283,6 @@
         "text": "The backbone of the Horde since the First War: big, green and armed with an axe nearly as heavy as the orc who swings it."
       },
       {
-        "text": "Stronger than a Swordsman, and the thrill of battle heals 10 HP whenever it kills a unit."
-      },
-      {
         "text": "Upgrades from Brawler. Upgrades to Warsong Reaver."
       }
     ],
@@ -13929,9 +13899,6 @@
     "civilopediaText": [
       {
         "text": "Orc raiders mounted on great wolves, the terror of the Alliance's farmlands since the Second War."
-      },
-      {
-        "text": "Stronger than an Outrider, pillages without spending movement, and has no penalty attacking cities."
       },
       {
         "text": "Upgrades to Raider."
@@ -15862,9 +15829,6 @@
         "text": "Warbraves of the Highmountain tribes with great axes and totems, who hold the mountain passes."
       },
       {
-        "text": "Stronger than a Man-at-Arms, with +25% Strength in hills."
-      },
-      {
         "text": "Upgrades from Brave. Upgrades to Thunder Totem Champion."
       }
     ],
@@ -16381,9 +16345,6 @@
         "text": "Highmountain riders on great thunderhoof moose, who charge down the slopes like an avalanche."
       },
       {
-        "text": "Stronger than a Knight and crosses hills at double speed."
-      },
-      {
         "text": "Upgrades to Moose Lancer."
       }
     ],
@@ -16714,9 +16675,6 @@
     "civilopediaText": [
       {
         "text": "Headhunters who drink a voodoo brew and charge into battle in a frenzy, throwing axes as they go."
-      },
-      {
-        "text": "Stronger than a Man-at-Arms, +15% Strength when attacking, and heals 10 HP whenever it kills a unit."
       },
       {
         "text": "Spell: Berserk. Troll fury: +30% Strength when attacking for 1 turn. Costs 6 Mana."
@@ -17415,9 +17373,6 @@
         "text": "Zandalari riders on swift raptors bred in the jungles of Zuldazar."
       },
       {
-        "text": "Stronger and faster than an Outrider, with +25% Strength in jungle."
-      },
-      {
         "text": "Upgrades to Darkspear Raptor Lancer."
       }
     ],
@@ -17638,9 +17593,6 @@
     "civilopediaText": [
       {
         "text": "Troll riders on giant bats, dropping flasks of liquid fire on the enemy below."
-      },
-      {
-        "text": "Stronger than a Gyrocopter, with +33% Strength against land units."
       },
       {
         "text": "Upgrades to Bat Lord."
@@ -18437,9 +18389,6 @@
         "text": "Zandalari warriors on armored direhorns, whose charge can break a shield wall or a city gate."
       },
       {
-        "text": "Stronger than a Knight, no penalty attacking cities, and +20% Strength when attacking."
-      },
-      {
         "text": "Upgrades to Brutosaur."
       }
     ],
@@ -18981,9 +18930,6 @@
         "text": "Elite blood elf warriors trained to unravel enemy magic, armed with glaive and shield."
       },
       {
-        "text": "Stronger than a Swordsman, with +25% Strength against archers and mages."
-      },
-      {
         "text": "Spell: Spell Steal. Siphons magic from the air: +8 Mana for your empire."
       },
       {
@@ -19454,9 +19400,6 @@
         "text": "The knights of Silvermoon, who once drew the Light from a captive naaru. They fight in crimson and gold."
       },
       {
-        "text": "Stronger than a Knight, +15% Strength when defending, and heals 15 HP whenever it kills a unit."
-      },
-      {
         "text": "Spell: Arcane Torrent. A burst of stolen arcane power: adjacent enemies fight at -15% Strength for 1 turn. Costs 8 Mana."
       },
       {
@@ -19712,9 +19655,6 @@
     "civilopediaText": [
       {
         "text": "Blood elf riders on fiery dragonhawks, raised in the aviaries of Eversong."
-      },
-      {
-        "text": "Stronger than a Gyrocopter, with +25% Strength against land units."
       },
       {
         "text": "Upgrades to Phoenix."
@@ -21398,7 +21338,7 @@
     "attackSound": "arrow",
     "civilopediaText": [
       {
-        "text": "Missile troops of the early ages, fielded by Forsaken and Scourge. Strikes from a distance with bow, thrown weapon or shot, and should be kept behind the line."
+        "text": "Missile troops of the early ages, fielded by factions of both sides (Forsaken, Scourge). Strikes from a distance with bow, thrown weapon or shot, and should be kept behind the line."
       },
       {
         "text": "Upgrades to Crypt Fiend or Forsaken Crossbowman."
@@ -21933,7 +21873,7 @@
         "text": "A catapult that throws what it collects from the field."
       },
       {
-        "text": "Siege weapon of the middle game, fielded by Forsaken and Scourge. Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
+        "text": "Siege weapon of the middle game, fielded by factions of both sides (Forsaken, Scourge). Made to break cities and fortifications; it must be set up before it can fire and needs an escort."
       },
       {
         "text": "Upgrades to Blight Thrower or Plague Catapult."
@@ -23079,9 +23019,6 @@
         "text": "Goblins with a barrel of blasting powder and no sense of self-preservation. Nothing knocks down walls quite like them."
       },
       {
-        "text": "Stronger ranged attack than a Cannon, and +250% Strength attacking cities."
-      },
-      {
         "text": "Upgrades to Rocket Battery."
       }
     ],
@@ -23253,9 +23190,6 @@
     "civilopediaText": [
       {
         "text": "A patched-together goblin airship loaded with more explosives than is strictly safe."
-      },
-      {
-        "text": "Stronger than a Bomber Zeppelin, with +33% Strength against cities."
       },
       {
         "text": "Upgrades to Rocket Bomber."
@@ -24633,9 +24567,6 @@
         "text": "Riders of the Order of the Cloud Serpent on the jade serpents of Pandaria."
       },
       {
-        "text": "Stronger than a Gryphon Rider and heals 15 HP more each turn it heals."
-      },
-      {
         "text": "Upgrades from Kite Scout."
       }
     ],
@@ -25178,9 +25109,6 @@
     "civilopediaText": [
       {
         "text": "Undead nerubians that spit acid and web flying enemies out of the sky."
-      },
-      {
-        "text": "Stronger than a Mountaineer, +50% Strength against flying fighters, and heals 10 HP whenever it kills a unit."
       },
       {
         "text": "Spell: Web. Sticky webs: adjacent enemies fight at -20% Strength for 1 turn. Costs 8 Mana."
@@ -25765,9 +25693,6 @@
         "text": "The skeletal remains of great dragons, raised by Sapphiron's master and breathing killing frost."
       },
       {
-        "text": "Stronger than a Gryphon Rider, with +25% Strength against land units."
-      },
-      {
         "text": "Upgrades from Gargoyle."
       }
     ],
@@ -25966,9 +25891,6 @@
     "civilopediaText": [
       {
         "text": "Naga warriors with tridents and heavy scales, who rise out of the surf to storm the shore."
-      },
-      {
-        "text": "Stronger than a Swordsman, attacks from the water and across coasts without penalty."
       },
       {
         "text": "Upgrades from Mur'gul Reaver. Upgrades to Azshara's Royal Guard."
@@ -26360,9 +26282,6 @@
     "civilopediaText": [
       {
         "text": "A great sea lizard bred by the naga, which spits caustic venom over walls and shields."
-      },
-      {
-        "text": "Stronger and faster than a Ballista, and can attack from the water."
       },
       {
         "text": "Upgrades from Trident Thrower. Upgrades to Coilfang Harpooner."

@@ -107,7 +107,7 @@ def describe(name, b, t, users, units):
     elif set(users) <= set(RD.SIDE["H"]):
         who, owner = "the Horde (%s)" % ", ".join(users), None
     else:
-        who, owner = " and ".join(users), None
+        who, owner = "factions of both sides (%s)" % ", ".join(users), None
     noun, play = ROLE[b]
     out = []
     if name in LORE:
@@ -150,4 +150,10 @@ def apply(units):
             tail = [x for x in describe(u["name"], s[0], s[1], s[2], units) if x["text"].startswith("Upgrades ")]
             u["civilopediaText"] = (keep or describe(u["name"], s[0], s[1], s[2], units)[:1]) + tail
             m += 1
+    cmp_ = re.compile(r"^(Stronger|Weaker|Cheaper|Faster|Tougher)\b.*\bthan an? ")
+    for u in units:                                                        # stat comparisons with the old roster no longer hold
+        if u["name"] in slots and u.get("civilopediaText"):
+            kept = [x for x in u["civilopediaText"] if not cmp_.match(x.get("text", ""))]
+            if kept:
+                u["civilopediaText"] = kept
     print("unit descriptions written: %d new, %d older entries updated" % (n, m))
