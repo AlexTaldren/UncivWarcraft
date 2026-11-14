@@ -656,17 +656,22 @@ def keep(cv, stage):
         flag(cv, CX, top, 6)
 
 
+def village_hall(cv):
+    """The hall at the heart of a village: gabled, with a small bell turret. (Other factions put a small landmark here.)"""
+    top = barn(cv, CX - 8, OY + 27, 17, wall=6)
+    b = cv.part()
+    cv.rect(b, CX - 1, top - 4, CX + 1, top + 1, tone(STONE, CX - 1, CX + 1, lw=1))
+    r = cv.part()
+    cv.rows(r, [(top - 6, CX, CX), (top - 5, CX - 1, CX + 1), (top - 4, CX - 2, CX + 2)], lambda x, y: SLATE[0] if x < CX else SLATE[1])
+    g = cv.part(sep=False)
+    cv.put(g, CX, top - 2, GOLD[1])
+
+
 def city_center(stage, small=False):
     cv = TC(CW, CH)
     plaza(cv, 24 + stage * 2, 11 + stage)
     if stage == 0:                                                         # village: hall, cottages, well
-        top = barn(cv, CX - 8, OY + 27, 17, wall=6)
-        b = cv.part()
-        cv.rect(b, CX - 1, top - 4, CX + 1, top + 1, tone(STONE, CX - 1, CX + 1, lw=1))
-        r = cv.part()
-        cv.rows(r, [(top - 6, CX, CX), (top - 5, CX - 1, CX + 1), (top - 4, CX - 2, CX + 2)], lambda x, y: SLATE[0] if x < CX else SLATE[1])
-        g = cv.part(sep=False)
-        cv.put(g, CX, top - 2, GOLD[1])
+        village_hall(cv)
         house(cv, 4, OY + 31, 13, wall=4, rh=5)
         house(cv, 47, OY + 31, 13, wall=4, rh=5)
         rick(cv, 21, OY + 34, 3)
