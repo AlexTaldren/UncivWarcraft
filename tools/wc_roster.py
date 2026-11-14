@@ -190,4 +190,6 @@ def apply(files):
             era["startingMilitaryUnit"] = base[sl] if sl and base[sl] else "Militia"
     import wc_values                                                      # lore-first values on top of the slot templates
     wc_values.apply(files["Units"])
+    import wc_unit_text                                                  # Civilopedia text for units that had none
+    wc_unit_text.apply(files["Units"])
     print("roster: %d units in the rules (%d roster, %d kept)" % (len(files["Units"]), len(new), len(kept)))
