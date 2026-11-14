@@ -467,13 +467,14 @@ _ctx_plain = ctx
 @contextlib.contextmanager
 def ctx(race):                                # as above, plus the faction's landmark in place of the keep
     with _ctx_plain(race):
-        saved = TH.keep
+        saved = (TH.keep, TH.village_hall)
         if race in LANDMARK:
             TH.keep = LANDMARK[race]
+            TH.village_hall = lambda cv, lm=LANDMARK[race]: lm(cv, 0)     # the village has a small version of the landmark
         try:
             yield
         finally:
-            TH.keep = saved
+            TH.keep, TH.village_hall = saved
 
 
 install()
