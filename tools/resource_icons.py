@@ -49,11 +49,12 @@ def strider(i):
 
 
 def banana(i):
-    i.d.pieslice([0, -8, 30, 28], 20, 150, fill=B)
-    i.d.pieslice([2, -12, 28, 20], 15, 165, fill=C)
-    i.d.pieslice([2, -2, 32, 32], 30, 140, fill=M)
-    i.d.pieslice([4, -6, 30, 25], 25, 155, fill=C)
-    return i.R(27, 12, 29, 15).R(2, 13, 4, 16, M)
+    # a hand of three bananas hanging from one stem
+    i.L([(14, 6), (6, 13), (4, 25)], 6)
+    i.L([(17, 6), (25, 13), (27, 25)], 6, M)
+    i.L([(15, 6), (15, 17), (16, 29)], 6)
+    i.R(13, 1, 18, 6, M)
+    return i.R(3, 26, 5, 28, M).R(15, 29, 17, 31, M).R(26, 26, 28, 28, C)
 
 
 def fish(i):
@@ -109,10 +110,11 @@ def herb(i):
 
 
 def tusk(i):
-    i.d.pieslice([-14, -6, 28, 36], 300, 60, fill=B)
-    i.d.pieslice([-20, -6, 20, 36], 290, 70, fill=C)
-    i.P([(10, 0), (16, 2), (14, 6), (8, 5)], M)
-    i.P([(9, 26), (15, 26), (13, 31), (8, 31)], M)
+    # a pair of curved tusks, bound at the base
+    for dx, t in ((0, B), (9, B)):
+        i.P([(2 + dx, 30), (10 + dx, 30), (15 + dx, 19), (19 + dx, 8), (20 + dx, 0), (15 + dx, 5), (9 + dx, 13), (4 + dx, 22)], t)
+        i.P([(2 + dx, 30), (10 + dx, 30), (11 + dx, 26), (3 + dx, 26)], M)
+        i.L([(13 + dx, 12), (17 + dx, 6)], 1, M)
     return i
 
 
@@ -295,7 +297,7 @@ IMPROVEMENTS = {
     "Remove Road": (road, (190, 170, 130), (130, 110, 84), "x"), "Remove Railroad": (T("Tramways"), (190, 194, 204), (110, 114, 126), "x"),
     "Cancel improvement order": (bigx,) + RED, "Repair": (hammer, (200, 204, 212), (150, 100, 56)),
     "Arcane Academy": (BI.spire, (190, 150, 250), (110, 70, 180)), "Hall of Heroes": (BI.armory,) + GOLD,
-    "Great Workshop": (BI.gears, (220, 180, 90), (140, 110, 60)), "Trade Company": (BI.coins,) + GOLD,
+    "Great Workshop": (BI.hammer_gear, (220, 180, 90), (140, 110, 60)), "Trade Company": (BI.coins,) + GOLD,
     "Sacred Grounds": (BI.brazier, (250, 190, 70), (200, 90, 40)), "Bastion": (BI.fortress,) + STONE,
     "Ancient ruins": (BI.stones,) + STONE, "City ruins": (ruin,) + STONE, "City center": (BI.hall, (240, 226, 190), (170, 80, 60)),
     "Barbarian encampment": (BI.burrow,) + RED, "Remove Fel-Scorched Land": (flame, (150, 240, 80), (60, 150, 40), "x"),

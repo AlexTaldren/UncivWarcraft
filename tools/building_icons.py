@@ -670,6 +670,183 @@ def crystal(i):
     return i.crystal(16, 1, 30, 8)
 
 
+# ---------------------------------------------------------------- capitals (one-off motifs)
+def stone_seat(i):
+    # a blocky dwarven high seat under a hammer
+    i.R(8, 9, 23, 22)
+    i.R(11, 12, 20, 19, M)
+    i.R(3, 16, 8, 30).R(23, 16, 28, 30)
+    i.R(8, 22, 23, 26).R(8, 26, 12, 30).R(19, 26, 23, 30)
+    i.R(9, 0, 22, 4).R(15, 4, 16, 8, M)
+    return i
+
+
+def ice_throne(i):
+    # a throne of jagged spikes
+    for x, top in ((5, 8), (10, 3), (16, 0), (22, 3), (27, 8)):
+        i.P([(x - 3, 20), (x, top), (x + 3, 20)])
+    i.R(6, 19, 26, 24)
+    i.P([(12, 8), (16, 3), (20, 8), (19, 18), (13, 18)], M)
+    i.R(4, 24, 9, 31).R(23, 24, 28, 31)
+    return i.P([(11, 24), (14, 31), (18, 31), (21, 24)], M)
+
+
+def valor_ring(i):
+    # an arena seen from above, ringed with stakes, a fire at its heart
+    for k in range(10):
+        a = k * math.pi / 5
+        i.P([(16 + 16 * math.cos(a), 16 + 16 * math.sin(a)), (16 + 11 * math.cos(a - 0.2), 16 + 11 * math.sin(a - 0.2)), (16 + 11 * math.cos(a + 0.2), 16 + 11 * math.sin(a + 0.2))])
+    i.ring(16, 16, 12, 3)
+    i.E(16, 16, 8, t=M)
+    i.E(16, 16, 6, t=C)
+    return i.flame(16, 21, 10)
+
+
+def moon_temple(i):
+    i.d.pieslice([5, 6, 26, 28], 180, 360, fill=B)
+    i.R(3, 17, 28, 19)
+    for x in (5, 11, 18, 24):
+        i.R(x, 20, x + 2, 27, M)
+    i.R(2, 28, 29, 30)
+    i.E(15, 4, 4).E(17, 3, 3, t=C)
+    return i.E(15, 13, 2, t=C)
+
+
+def tinker(i):
+    i.gear(15, 16, 11, 10, hole=False)
+    i.E(15, 16, 7, t=C)
+    i.bolt(15, 8, 24)
+    return i.gear(27, 27, 3, 6)
+
+
+def mesa(i):
+    i.P([(2, 30), (5, 14), (26, 14), (29, 30)])
+    i.P([(18, 14), (26, 14), (29, 30), (20, 30)], M)
+    i.L([(9, 15), (10, 29)], 1, C).L([(15, 15), (14, 29)], 1, C)
+    i.P([(11, 14), (16, 3), (21, 14)])
+    i.L([(16, 4), (14, 0)], 1).L([(16, 4), (18, 0)], 1)
+    i.P([(15, 14), (16, 9), (17, 14)], C)
+    return i.R(24, 6, 25, 14).R(22, 7, 27, 8, M)
+
+
+def stilt_hut(i):
+    i.P([(3, 13), (16, 1), (29, 13)])
+    i.L([(6, 9), (26, 9)], 1, M)
+    i.R(7, 13, 25, 21)
+    i.E(16, 17, 3, t=C)
+    i.R(5, 21, 27, 22, M)
+    for x in (7, 15, 24):
+        i.R(x, 22, x + 1, 31)
+    return i.L([(8, 27), (24, 27)], 1, M)
+
+
+def sun_court(i):
+    i.R(3, 14, 8, 30).R(23, 14, 28, 30)
+    i.d.arc([3, 6, 28, 30], 180, 360, fill=B, width=4)
+    i.R(1, 29, 30, 31)
+    _sunburst(i, 16, 19, 3, 7)
+    return i.E(16, 19, 1, t=C)
+
+
+def sun_spire(i):
+    i.P([(16, 6), (19, 14), (20, 30), (12, 30), (13, 14)])
+    i.R(9, 29, 23, 31)
+    _sunburst(i, 16, 5, 3, 6)
+    i.P([(10, 12), (12, 22), (9, 20)], M).P([(22, 12), (20, 22), (23, 20)], M)
+    return i.R(15, 18, 16, 24, C)
+
+
+def alembic(i):
+    i.E(10, 19, 8, 8)
+    i.d.pieslice([4, 13, 16, 25], 0, 180, fill=M)
+    i.R(8, 6, 12, 12)
+    i.L([(10, 6), (17, 3), (25, 10), (25, 17)], 2)
+    i.R(22, 19, 28, 29, M)
+    i.R(21, 18, 29, 19)
+    i.R(25, 14, 25, 16, C)
+    return i.R(2, 28, 18, 30)
+
+
+def light_vault(i):
+    i.R(3, 12, 7, 30).R(24, 12, 28, 30)
+    i.d.arc([3, 2, 28, 26], 180, 360, fill=B, width=4)
+    i.R(1, 29, 30, 31)
+    i.crystal(15, 11, 27, 4)
+    for a, b in (((10, 14), (8, 10)), ((21, 14), (23, 10)), ((15, 8), (15, 5))):
+        i.L([a, b], 1, M)
+    return i
+
+
+def exchange(i):
+    for x, h in ((3, 8), (10, 13), (17, 18)):
+        i.R(x, 29 - h, x + 4, 29, M)
+    i.L([(2, 17), (9, 12), (15, 9), (22, 3)], 2)
+    i.P([(19, 1), (26, 0), (25, 7)])
+    i.E(25, 22, 6).E(25, 22, 4, t=M).R(25, 19, 25, 25, C)
+    return i.R(1, 30, 30, 31)
+
+
+def manor(i):
+    i.R(4, 15, 27, 29)
+    i.P([(2, 15), (9, 5), (16, 15)]).P([(15, 15), (22, 5), (29, 15)])
+    i.R(12, 1, 14, 9).R(18, 1, 20, 9)
+    i.R(14, 22, 17, 29, C)
+    for x in (7, 22):
+        i.R(x, 18, x + 2, 22, C)
+    i.R(8, 10, 9, 12, C).R(21, 10, 22, 12, C)
+    return i.R(4, 15, 27, 16, M)
+
+
+def black_anvil(i):
+    TI._anvil(i, 6)
+    i.R(8, 23, 23, 24, M)
+    for x in (6, 16, 26):
+        i.flame(x, 31, 8)
+    return i
+
+
+def ships_wheel(i):
+    for k in range(8):
+        a = k * math.pi / 4
+        i.L([(16, 16), (16 + 15 * math.cos(a), 16 + 15 * math.sin(a))], 2)
+        i.E(16 + 15 * math.cos(a), 16 + 15 * math.sin(a), 1)
+    i.ring(16, 16, 10, 3)
+    for k in range(8):
+        a = k * math.pi / 4
+        i.L([(16, 16), (16 + 7 * math.cos(a), 16 + 7 * math.sin(a))], 1, M)
+    return i.E(16, 16, 3).E(16, 16, 1, t=C)
+
+
+def seal(i):
+    i.E(16, 16, 15)
+    i.E(16, 16, 12, t=M)
+    for k in range(3):
+        i.R(8 + 3 * k, 19 - 4 * k, 23 - 3 * k, 22 - 4 * k)
+    i.R(15, 7, 16, 10)
+    return i.R(15, 15, 16, 22, C)
+
+
+def arcan_tree(i):
+    i.d.arc([1, 1, 30, 30], 150, 390, fill=M, width=2)
+    i.R(15, 15, 17, 28)
+    i.P([(15, 26), (9, 30), (23, 30), (17, 26)])
+    i.L([(16, 19), (10, 14)], 2).L([(16, 18), (22, 13)], 2)
+    i.E(16, 10, 6, 5).E(9, 13, 4, 3).E(23, 12, 4, 3)
+    for x, y in ((13, 9), (19, 10), (9, 13), (23, 12)):
+        i.R(x, y, x, y, C)
+    return i
+
+
+def horn_totem(i):
+    i.R(12, 9, 19, 30)
+    i.L([(12, 11), (5, 9), (3, 2)], 3).L([(19, 11), (26, 9), (28, 2)], 3)
+    i.L([(6, 8), (8, 3)], 2, M).L([(25, 8), (23, 3)], 2, M)
+    i.R(13, 12, 14, 13, C).R(17, 12, 18, 13, C).P([(15, 14), (16, 18), (17, 14)], M)
+    i.R(12, 20, 19, 21, M)
+    i.R(13, 24, 18, 25, C)
+    return i.R(9, 29, 22, 31)
+
+
 def from_tech(name):
     return lambda i: TI.ICONS[name](i)
 
@@ -736,13 +913,13 @@ ICONS = {
     "Coral Spawning Pool": coral, "Arcway": (T("Architecture"), "star"), "Ironhorn Lodge": (hammer_gear, "paw"),
     "Tushui Monastery": (pagoda, "moon"), "Huojin Training Hall": (pagoda, "flame"),
     # capitals
-    "Stormwind Throne Room": (throne, "crown"), "Ring of Valor": (arena, "flame"), "Temple of the Moon": (temple, "moon"),
-    "High Seat of Ironforge": (throne, "hammer"), "Tinkertown Workshops": (gears, "crown"), "Spirit Rise": (tent, "star"),
-    "Darkspear Voodoo Hall": (tiki, "skull"), "Court of the Sun": (sun, "crown"), "Sunstrider Spire": (spire, "crown"),
-    "Temple of the Jade Serpent": serpent, "Royal Apothecary Society": (cauldron, "crown"), "Vault of Lights": (T("Azerite Refinement"), "sun"),
-    "Steamwheedle Exchange": (T("Arathi Law"), "coin"), "Greymane Court": (castle, "paw"), "Throne of the Damned": (throne, "skull"),
-    "Black Anvil": (anvil, "flame"), "Proudmoore Admiralty": (anchor, "crown"), "Great Seal of Dazar'alor": (pyramid, "crown"),
-    "Palace of Nazjatar": trident, "Shal'Aran Sanctum": (tree, "star"), "Huln's Totem": (totem, "paw"),
+    "Stormwind Throne Room": throne, "Ring of Valor": valor_ring, "Temple of the Moon": moon_temple,
+    "High Seat of Ironforge": stone_seat, "Tinkertown Workshops": tinker, "Spirit Rise": mesa,
+    "Darkspear Voodoo Hall": stilt_hut, "Court of the Sun": sun_court, "Sunstrider Spire": sun_spire,
+    "Temple of the Jade Serpent": serpent, "Royal Apothecary Society": alembic, "Vault of Lights": light_vault,
+    "Steamwheedle Exchange": exchange, "Greymane Court": manor, "Throne of the Damned": ice_throne,
+    "Black Anvil": black_anvil, "Proudmoore Admiralty": ships_wheel, "Great Seal of Dazar'alor": seal,
+    "Palace of Nazjatar": trident, "Shal'Aran Sanctum": arcan_tree, "Huln's Totem": horn_totem,
     # national wonders
     "Palace": crown, "Grand Coliseum": (arena, "star"), "Grand Library": (lambda i: i.book(), "crown"),
     "Hall of Legends": banner, "Hall of Champions": (cup, "sword"), "High Temple": (temple, "sun"), "Royal Vault": (chest, "crown"),
