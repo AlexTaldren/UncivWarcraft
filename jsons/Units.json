@@ -5055,7 +5055,7 @@
     "name": "Slaver",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 8,
+    "strength": 9,
     "cost": 40,
     "requiredTech": "Farming",
     "uniques": [
@@ -5098,8 +5098,8 @@
     "name": "Dark Iron Warrior",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 14,
-    "cost": 80,
+    "strength": 15,
+    "cost": 75,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
@@ -5143,8 +5143,8 @@
     "name": "Anvilrage Reaver",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 25,
-    "cost": 160,
+    "strength": 27,
+    "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "uniques": [
@@ -5186,7 +5186,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 12,
-    "cost": 60,
+    "cost": 55,
     "requiredTech": "Bronze Working",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -5230,7 +5230,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 20,
-    "cost": 95,
+    "cost": 90,
     "requiredTech": "Arathi Law",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -5273,7 +5273,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 26,
-    "cost": 160,
+    "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -5361,7 +5361,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Bardic Lore",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -5408,7 +5408,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 22,
-    "cost": 160,
+    "cost": 150,
     "requiredTech": "Inscription",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -5454,7 +5454,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 17,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Scholarship",
     "attackSound": "arrow",
     "civilopediaText": [
@@ -5501,7 +5501,7 @@
     "movement": 2,
     "strength": 16,
     "rangedStrength": 24,
-    "cost": 160,
+    "cost": 150,
     "requiredTech": "Blackpowder",
     "attackSound": "wc_rifle",
     "uniques": [
@@ -5543,7 +5543,7 @@
     "movement": 2,
     "strength": 8,
     "rangedStrength": 12,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Runic Script",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -5588,7 +5588,7 @@
     "movement": 2,
     "strength": 13,
     "rangedStrength": 22,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Philosophy",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -5637,7 +5637,7 @@
     "movement": 2,
     "strength": 26,
     "rangedStrength": 35,
-    "cost": 210,
+    "cost": 200,
     "requiredTech": "Arcane Science",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -5683,7 +5683,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 12,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Riding",
     "requiredResource": "Horses",
     "uniques": [
@@ -5730,7 +5730,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 20,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Animal War Training",
     "requiredResource": "Horses",
     "uniques": [
@@ -5777,7 +5777,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 34,
-    "cost": 235,
+    "cost": 225,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -5822,7 +5822,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 30,
-    "cost": 200,
+    "cost": 190,
     "requiredTech": "Steel Forged Swords",
     "attackSound": "tankshot",
     "civilopediaText": [
@@ -5862,7 +5862,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 36,
-    "cost": 275,
+    "cost": 260,
     "requiredTech": "Steamworks",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -5903,7 +5903,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 16,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Siege Engineering",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -5950,7 +5950,7 @@
     "movement": 2,
     "strength": 16,
     "rangedStrength": 23,
-    "cost": 195,
+    "cost": 185,
     "requiredTech": "Alchemy",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -6038,7 +6038,7 @@
     "name": "Flamekeeper",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 85,
+    "cost": 80,
     "requiredTech": "Priesthood",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -6083,7 +6083,7 @@
     "name": "Shadowforge Priest",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -12230,8 +12230,8 @@
     "name": "Kul Tiran Marine",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 15,
-    "cost": 80,
+    "strength": 16,
+    "cost": 75,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
@@ -12270,8 +12270,8 @@
     "name": "Proudmoore Guard",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 26,
-    "cost": 155,
+    "strength": 27,
+    "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "uniques": [
@@ -12310,7 +12310,7 @@
     "name": "Harbor Watch",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 11,
+    "strength": 12,
     "cost": 60,
     "requiredTech": "Bronze Working",
     "uniques": [
@@ -12352,8 +12352,8 @@
     "name": "Kul Tiran Halberdier",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 16,
-    "cost": 95,
+    "strength": 17,
+    "cost": 90,
     "requiredTech": "Arathi Law",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -12394,8 +12394,8 @@
     "name": "Admiralty Shieldbearer",
     "unitType": "Heavy Infantry",
     "movement": 2,
-    "strength": 24,
-    "cost": 155,
+    "strength": 25,
+    "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -12480,7 +12480,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Bardic Lore",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -12526,7 +12526,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 22,
-    "cost": 155,
+    "cost": 150,
     "requiredTech": "Inscription",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -12613,7 +12613,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 19,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Scholarship",
     "attackSound": "shot",
     "civilopediaText": [
@@ -12656,7 +12656,7 @@
     "movement": 2,
     "strength": 7,
     "rangedStrength": 11,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Runic Script",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -12700,7 +12700,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 20,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Philosophy",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -12748,7 +12748,7 @@
     "movement": 2,
     "strength": 24,
     "rangedStrength": 32,
-    "cost": 210,
+    "cost": 200,
     "requiredTech": "Arcane Science",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -12793,7 +12793,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 20,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Animal War Training",
     "requiredResource": "Horses",
     "uniques": [
@@ -12839,7 +12839,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 34,
-    "cost": 235,
+    "cost": 225,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -12883,7 +12883,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 27,
-    "cost": 200,
+    "cost": 190,
     "requiredTech": "Steel Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -12924,7 +12924,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 36,
-    "cost": 270,
+    "cost": 260,
     "requiredTech": "Steamworks",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -12964,7 +12964,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 14,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Siege Engineering",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -13011,7 +13011,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 20,
-    "cost": 190,
+    "cost": 185,
     "requiredTech": "Alchemy",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -13099,7 +13099,7 @@
     "movement": 5,
     "strength": 34,
     "rangedStrength": 38,
-    "cost": 190,
+    "cost": 185,
     "requiredResource": "Iron",
     "requiredTech": "Navigation",
     "hurryCostModifier": 20,
@@ -13184,7 +13184,7 @@
     "name": "Tidesage",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 85,
+    "cost": 80,
     "requiredTech": "Priesthood",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -13229,7 +13229,7 @@
     "name": "Thornspeaker",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -19805,7 +19805,7 @@
     "name": "Duskwatch Recruit",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 7,
+    "strength": 8,
     "cost": 40,
     "requiredTech": "Farming",
     "uniques": [
@@ -19846,8 +19846,8 @@
     "name": "Spellblade",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 14,
-    "cost": 80,
+    "strength": 15,
+    "cost": 75,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
@@ -19888,8 +19888,8 @@
     "name": "Felsworn Blade",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 22,
-    "cost": 160,
+    "strength": 24,
+    "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "uniques": [
@@ -19928,8 +19928,8 @@
     "name": "Gate Warden",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 10,
-    "cost": 60,
+    "strength": 11,
+    "cost": 55,
     "requiredTech": "Bronze Working",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -19970,8 +19970,8 @@
     "name": "Duskwatch Sentinel",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 17,
-    "cost": 95,
+    "strength": 18,
+    "cost": 90,
     "requiredTech": "Arathi Law",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -20011,8 +20011,8 @@
     "name": "Suramar Royal Guard",
     "unitType": "Heavy Infantry",
     "movement": 2,
-    "strength": 22,
-    "cost": 160,
+    "strength": 23,
+    "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -20097,7 +20097,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Bardic Lore",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -20143,7 +20143,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 22,
-    "cost": 160,
+    "cost": 150,
     "requiredTech": "Inscription",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -20230,7 +20230,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 17,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Scholarship",
     "attackSound": "arrow",
     "civilopediaText": [
@@ -20276,7 +20276,7 @@
     "movement": 2,
     "strength": 16,
     "rangedStrength": 24,
-    "cost": 160,
+    "cost": 150,
     "requiredTech": "Blackpowder",
     "attackSound": "wc_rifle",
     "uniques": [
@@ -20317,7 +20317,7 @@
     "movement": 2,
     "strength": 8,
     "rangedStrength": 13,
-    "cost": 80,
+    "cost": 75,
     "requiredTech": "Runic Script",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -20361,7 +20361,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 24,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Philosophy",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -20409,7 +20409,7 @@
     "movement": 2,
     "strength": 29,
     "rangedStrength": 38,
-    "cost": 210,
+    "cost": 200,
     "requiredTech": "Arcane Science",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -20457,7 +20457,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 20,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Animal War Training",
     "requiredResource": "Horses",
     "uniques": [
@@ -20503,7 +20503,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 34,
-    "cost": 235,
+    "cost": 225,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -20547,7 +20547,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 27,
-    "cost": 200,
+    "cost": 190,
     "requiredTech": "Steel Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -20588,7 +20588,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 36,
-    "cost": 275,
+    "cost": 260,
     "requiredTech": "Steamworks",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -20628,7 +20628,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 14,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Siege Engineering",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -20675,7 +20675,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 20,
-    "cost": 195,
+    "cost": 185,
     "requiredTech": "Alchemy",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -20722,7 +20722,7 @@
     "rangedStrength": 18,
     "range": 5,
     "interceptRange": 5,
-    "cost": 170,
+    "cost": 160,
     "requiredTech": "Clockwork",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -20769,7 +20769,7 @@
     "rangedStrength": 30,
     "range": 5,
     "interceptRange": 5,
-    "cost": 275,
+    "cost": 260,
     "requiredTech": "Steamworks",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -20855,7 +20855,7 @@
     "name": "Shal'dorei Mender",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 85,
+    "cost": 80,
     "requiredTech": "Priesthood",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -20900,7 +20900,7 @@
     "name": "Nightwell Priest",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 125,
+    "cost": 120,
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -20984,8 +20984,8 @@
     "name": "Deathguard",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 13,
-    "cost": 70,
+    "strength": 14,
+    "cost": 65,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
@@ -21030,8 +21030,8 @@
     "name": "Dreadguard",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 24,
-    "cost": 140,
+    "strength": 25,
+    "cost": 135,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "uniques": [
@@ -21113,7 +21113,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 16,
-    "cost": 85,
+    "cost": 80,
     "requiredTech": "Arathi Law",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -21155,7 +21155,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 24,
-    "cost": 140,
+    "cost": 135,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -21240,7 +21240,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 13,
-    "cost": 70,
+    "cost": 65,
     "requiredTech": "Bardic Lore",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -21285,7 +21285,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 22,
-    "cost": 140,
+    "cost": 135,
     "requiredTech": "Inscription",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -21392,7 +21392,7 @@
     "movement": 2,
     "strength": 13,
     "rangedStrength": 18,
-    "cost": 110,
+    "cost": 105,
     "requiredTech": "Scholarship",
     "attackSound": "arrow",
     "civilopediaText": [
@@ -21438,7 +21438,7 @@
     "movement": 2,
     "strength": 17,
     "rangedStrength": 25,
-    "cost": 140,
+    "cost": 135,
     "requiredTech": "Blackpowder",
     "attackSound": "wc_rifle",
     "uniques": [
@@ -21479,7 +21479,7 @@
     "movement": 2,
     "strength": 7,
     "rangedStrength": 12,
-    "cost": 70,
+    "cost": 65,
     "requiredTech": "Runic Script",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -21523,7 +21523,7 @@
     "movement": 2,
     "strength": 13,
     "rangedStrength": 21,
-    "cost": 110,
+    "cost": 105,
     "requiredTech": "Philosophy",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -21571,7 +21571,7 @@
     "movement": 2,
     "strength": 25,
     "rangedStrength": 34,
-    "cost": 185,
+    "cost": 175,
     "requiredTech": "Arcane Science",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -21619,7 +21619,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 20,
-    "cost": 110,
+    "cost": 105,
     "requiredTech": "Animal War Training",
     "requiredResource": "Horses",
     "uniques": [
@@ -21665,7 +21665,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 34,
-    "cost": 205,
+    "cost": 195,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -21779,7 +21779,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 41,
-    "cost": 240,
+    "cost": 230,
     "requiredTech": "Steamworks",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -21887,7 +21887,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 20,
-    "cost": 170,
+    "cost": 165,
     "requiredTech": "Alchemy",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -21934,7 +21934,7 @@
     "rangedStrength": 18,
     "range": 5,
     "interceptRange": 5,
-    "cost": 145,
+    "cost": 140,
     "requiredTech": "Clockwork",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -21981,7 +21981,7 @@
     "rangedStrength": 30,
     "range": 5,
     "interceptRange": 5,
-    "cost": 240,
+    "cost": 230,
     "requiredTech": "Steamworks",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -22067,7 +22067,7 @@
     "name": "Apothecary",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 75,
+    "cost": 70,
     "requiredTech": "Priesthood",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -22115,7 +22115,7 @@
     "name": "Royal Apothecary",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 110,
+    "cost": 105,
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -24711,7 +24711,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 7,
-    "cost": 30,
+    "cost": 35,
     "requiredTech": "Farming",
     "uniques": [
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -24752,7 +24752,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 16,
-    "cost": 60,
+    "cost": 70,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
@@ -24803,7 +24803,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 22,
-    "cost": 115,
+    "cost": 130,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "uniques": [
@@ -24843,7 +24843,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 10,
-    "cost": 45,
+    "cost": 50,
     "requiredTech": "Bronze Working",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -24885,7 +24885,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 15,
-    "cost": 70,
+    "cost": 80,
     "requiredTech": "Arathi Law",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -24927,7 +24927,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 22,
-    "cost": 115,
+    "cost": 130,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -24966,7 +24966,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 5,
-    "cost": 20,
+    "cost": 25,
     "requiredTech": "Farming",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -25012,7 +25012,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
-    "cost": 60,
+    "cost": 70,
     "requiredTech": "Bardic Lore",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -25058,7 +25058,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 22,
-    "cost": 115,
+    "cost": 130,
     "requiredTech": "Inscription",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -25103,7 +25103,7 @@
     "movement": 2,
     "strength": 13,
     "rangedStrength": 18,
-    "cost": 95,
+    "cost": 105,
     "requiredTech": "Scholarship",
     "attackSound": "machinegun",
     "civilopediaText": [
@@ -25156,7 +25156,7 @@
     "movement": 2,
     "strength": 16,
     "rangedStrength": 24,
-    "cost": 115,
+    "cost": 130,
     "requiredTech": "Blackpowder",
     "attackSound": "wc_rifle",
     "uniques": [
@@ -25197,7 +25197,7 @@
     "movement": 2,
     "strength": 7,
     "rangedStrength": 11,
-    "cost": 60,
+    "cost": 70,
     "requiredTech": "Runic Script",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -25241,7 +25241,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 20,
-    "cost": 95,
+    "cost": 105,
     "requiredTech": "Philosophy",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -25292,7 +25292,7 @@
     "movement": 2,
     "strength": 24,
     "rangedStrength": 32,
-    "cost": 155,
+    "cost": 175,
     "requiredTech": "Arcane Science",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -25340,7 +25340,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 23,
-    "cost": 95,
+    "cost": 105,
     "requiredTech": "Animal War Training",
     "requiredResource": "Horses",
     "uniques": [
@@ -25386,7 +25386,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 47,
-    "cost": 175,
+    "cost": 195,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -25441,7 +25441,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 43,
-    "cost": 205,
+    "cost": 230,
     "requiredTech": "Steamworks",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -25481,7 +25481,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 20,
-    "cost": 145,
+    "cost": 165,
     "requiredTech": "Alchemy",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -25526,7 +25526,7 @@
     "movement": 3,
     "strength": 16,
     "rangedStrength": 17,
-    "cost": 80,
+    "cost": 90,
     "requiredTech": "Seafaring",
     "uniques": [
       "Cannot enter ocean tiles",
@@ -25569,7 +25569,7 @@
     "movement": 5,
     "strength": 25,
     "rangedStrength": 28,
-    "cost": 145,
+    "cost": 165,
     "requiredResource": "Iron",
     "requiredTech": "Navigation",
     "hurryCostModifier": 20,
@@ -25613,7 +25613,7 @@
     "rangedStrength": 18,
     "range": 5,
     "interceptRange": 5,
-    "cost": 125,
+    "cost": 140,
     "requiredTech": "Clockwork",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -25663,7 +25663,7 @@
     "rangedStrength": 35,
     "range": 5,
     "interceptRange": 5,
-    "cost": 205,
+    "cost": 230,
     "requiredTech": "Steamworks",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -25703,7 +25703,7 @@
     "name": "Cult Initiate",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 40,
+    "cost": 45,
     "requiredTech": "Herbalism",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -25749,7 +25749,7 @@
     "name": "Priest of the Damned",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 60,
+    "cost": 70,
     "requiredTech": "Priesthood",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -25794,7 +25794,7 @@
     "name": "Obsidian Statue",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 95,
+    "cost": 105,
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
