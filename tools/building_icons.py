@@ -693,7 +693,7 @@ def b_crown(i, x, y): i.P([(x - 5, y + 4), (x - 5, y - 4), (x - 2, y), (x, y - 5
 def b_paw(i, x, y): i.E(x, y + 2, 3, 3).E(x - 4, y - 2, 1).E(x - 1, y - 4, 1).E(x + 2, y - 4, 1).E(x + 5, y - 2, 1)
 def b_anchor(i, x, y): i.R(x, y - 5, x, y + 4).R(x - 2, y - 3, x + 2, y - 3).E(x, y - 5, 1); i.d.arc([x - 5, y - 3, x + 5, y + 5], 10, 170, fill=B, width=2)
 def b_sword(i, x, y): i.P([(x, y - 6), (x + 1, y - 4), (x + 1, y + 2), (x - 1, y + 2), (x - 1, y - 4)]).R(x - 3, y + 2, x + 3, y + 3).R(x, y + 4, x, y + 6)
-def b_eye(i, x, y): i.P([(x - 6, y), (x, y - 4), (x + 6, y), (x, y + 4)]).E(x, y, 2, t=C).E(x, y, 1)
+def b_eye(i, x, y): i.P([(x - 6, y), (x - 2, y - 4), (x + 2, y - 4), (x + 6, y), (x + 2, y + 4), (x - 2, y + 4)]).R(x - 1, y - 1, x + 1, y + 1, C)
 def b_key(i, x, y): i.ring(x - 2, y - 3, 3, 1).L([(x, y - 1), (x + 4, y + 5)], 2).L([(x + 2, y + 3), (x + 4, y + 1)], 1)
 def b_drop(i, x, y): i.E(x, y + 2, 4).P([(x, y - 6), (x + 4, y + 1), (x - 4, y + 1)])
 def b_gem(i, x, y): i.P([(x, y - 6), (x + 4, y - 1), (x + 2, y + 5), (x - 2, y + 5), (x - 4, y - 1)]).P([(x, y - 6), (x + 4, y - 1), (x + 2, y + 5), (x, y + 5)], M)
@@ -767,17 +767,38 @@ ICONS = {
 }
 
 
+class _Scaled:
+    """Draws through to an ImageDraw with every coordinate scaled, so a motif can be drawn smaller but crisp."""
+
+    def __init__(self, d, k):
+        self.d, self.k = d, k
+
+    def _xy(self, xy):
+        if xy and isinstance(xy[0], (tuple, list)):
+            return [(int(round(x * self.k)), int(round(y * self.k))) for x, y in xy]
+        return [int(round(v * self.k)) for v in xy]
+
+    def rectangle(self, xy, **kw): self.d.rectangle(self._xy(xy), **kw)
+    def ellipse(self, xy, **kw): self.d.ellipse(self._xy(xy), **kw)
+    def polygon(self, xy, **kw): self.d.polygon(self._xy(xy), **kw)
+    def line(self, xy, **kw): self.d.line(self._xy(xy), **kw)
+    def arc(self, xy, a, b, **kw): self.d.arc(self._xy(xy), a, b, **kw)
+    def pieslice(self, xy, a, b, **kw): self.d.pieslice(self._xy(xy), a, b, **kw)
+
+
 def render(name):
     spec = ICONS[name]
     main, mark = spec if isinstance(spec, tuple) else (spec, None)
     i = Ic()
-    main(i)
-    if mark:   # shrink the motif toward the top-left so the corner mark does not bury it
-        small = i.im.resize((27, 27), Image.NEAREST)
-        i = Ic()
-        i.im.paste(small, (0, 0))
-        _halo(i, 25, 25, 7)
-        MARKS[mark](i, 25, 25)
+    if mark:   # draw the motif at four fifths size toward the top-left, leaving the corner for the mark
+        real = i.d
+        i.d = _Scaled(real, 0.8)
+        main(i)
+        i.d = real
+        _halo(i, 26, 26, 6)
+        MARKS[mark](i, 26, 26)
+    else:
+        main(i)
     a = i.im.resize((N * 3, N * 3), Image.NEAREST)
     out = Image.new("RGBA", (100, 100), (0, 0, 0, 0))
     ink = Image.new("RGBA", a.size, (0, 0, 0, 255))
