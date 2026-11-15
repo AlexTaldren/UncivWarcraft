@@ -14,8 +14,7 @@ import misc_icons as MI
 import unit_art as UA
 
 UNITS = "TileSets/AbsoluteUnits/Units"
-SKIP = {"Onyxia", "Hakkar the Soulflayer", "Ragnaros the Firelord", "C'Thun", "Sapphiron", "Deathwing the Destroyer",
-        "Gul'dan the Destroyer", "Kil'jaeden the Deceiver", "N'Zoth the Corruptor", "Kel'Thuzad"}   # raid bosses keep their icons
+SKIP = set()
 
 
 def _layers(root, name):
@@ -101,6 +100,34 @@ HEROES = {      # a class emblem with a faction mark: no portraits, so no likene
     "Grand Magistrix Elisande": (BI.hourglass, "star"), "Huln Highmountain": (BI.horn_totem, "bolt"),
 }
 EMBLEMS.update(HEROES)
+
+
+def _dragon(i):
+    # a dragon's head in profile: horns swept back, jaw open
+    i.P([(4, 30), (5, 18), (10, 10), (18, 7), (25, 9), (31, 14), (31, 17), (24, 18), (30, 22), (28, 25), (20, 22), (17, 30)])
+    i.P([(10, 10), (2, 1), (8, 3), (15, 8)]).P([(16, 7), (12, 0), (17, 2), (21, 7)])
+    i.P([(24, 18), (30, 22), (28, 25), (20, 22)], BI.M)
+    i.E(20, 12, 1, t=BI.C)
+    for x in (24, 27):
+        i.P([(x, 18), (x + 1, 20), (x + 2, 18)], BI.C)
+    return i.L([(7, 20), (12, 26)], 1, BI.C).L([(8, 15), (14, 20)], 1, BI.C)
+
+
+def _horned(i):
+    # a horned skull
+    BI.skull(i)
+    i.P([(7, 8), (0, 0), (2, 10), (6, 14)]).P([(25, 8), (31, 0), (29, 10), (26, 14)])
+    return i
+
+
+BOSSES = {      # raid bosses: plain emblems of what each is, not portraits
+    "Kel'Thuzad": (T("Frost Enchantment"), "skull"), "Onyxia": (_dragon, "flame"), "Hakkar the Soulflayer": (BI.serpent, "drop"),
+    "Ragnaros the Firelord": (MI.fel, "hammer"), "C'Thun": (T("Eye of Kilrogg"), "skull"), "Sapphiron": (_dragon, "gem"),
+    "Deathwing the Destroyer": (_dragon, "crown"), "Gul'dan the Destroyer": (BI.skull, "flame"),
+    "Kil'jaeden the Deceiver": (_horned, "flame"), "N'Zoth the Corruptor": (T("Secrets of the Void"), "eye"),
+}
+EMBLEMS.update(BOSSES)
+
 
 
 def write_all(root, prefer_emblem=()):

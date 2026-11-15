@@ -148,7 +148,8 @@ def apply(units):
             # an older hand-written entry: drop comparisons with units that no longer exist, then add the new line's place
             keep = [x for x in txt if not any(re.search(r"\b%s\b" % re.escape(g), x.get("text", "")) for g in gone)]
             tail = [x for x in describe(u["name"], s[0], s[1], s[2], units) if x["text"].startswith("Upgrades ")]
-            u["civilopediaText"] = (keep or describe(u["name"], s[0], s[1], s[2], units)[:1]) + tail
+            # nothing of the old entry survives: write the whole new description, trait line included
+            u["civilopediaText"] = (keep + tail) if keep else describe(u["name"], s[0], s[1], s[2], units)
             m += 1
     cmp_ = re.compile(r"^(Stronger|Weaker|Cheaper|Faster|Tougher)\b.*\bthan an? ")
     for u in units:                                                        # stat comparisons with the old roster no longer hold
