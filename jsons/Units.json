@@ -6238,9 +6238,6 @@
         "text": "Front-line infantry of the late game, fielded by the Gnomes. Built to attack: it carries the fight to the enemy and takes ground."
       },
       {
-        "text": "Gnomes make poor foot soldiers and excellent machines; their troops are cheap."
-      },
-      {
         "text": "Upgrades from Gnomeregan Infantry."
       }
     ],
@@ -12189,7 +12186,7 @@
     "name": "Deckhand",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 8,
+    "strength": 9,
     "cost": 40,
     "requiredTech": "Farming",
     "uniques": [
@@ -12230,7 +12227,7 @@
     "name": "Kul Tiran Marine",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 16,
+    "strength": 15,
     "cost": 75,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
@@ -12270,7 +12267,7 @@
     "name": "Proudmoore Guard",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 27,
+    "strength": 28,
     "cost": 150,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
@@ -12311,7 +12308,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 12,
-    "cost": 60,
+    "cost": 55,
     "requiredTech": "Bronze Working",
     "uniques": [
       "[+50]% Strength <vs [Mounted] units>",
@@ -19846,7 +19843,7 @@
     "name": "Spellblade",
     "unitType": "Sword",
     "movement": 2,
-    "strength": 15,
+    "strength": 16,
     "cost": 75,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
@@ -21031,7 +21028,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 25,
-    "cost": 135,
+    "cost": 130,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "uniques": [
@@ -21155,7 +21152,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 24,
-    "cost": 135,
+    "cost": 130,
     "requiredTech": "Mithril Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -21194,7 +21191,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 5,
-    "cost": 25,
+    "cost": 20,
     "requiredTech": "Farming",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -21285,7 +21282,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 22,
-    "cost": 135,
+    "cost": 130,
     "requiredTech": "Inscription",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -21438,7 +21435,7 @@
     "movement": 2,
     "strength": 17,
     "rangedStrength": 25,
-    "cost": 135,
+    "cost": 130,
     "requiredTech": "Blackpowder",
     "attackSound": "wc_rifle",
     "uniques": [
@@ -21665,7 +21662,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 34,
-    "cost": 195,
+    "cost": 200,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -21709,7 +21706,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 36,
-    "cost": 175,
+    "cost": 165,
     "requiredTech": "Steel Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -21819,7 +21816,7 @@
     "movement": 2,
     "strength": 14,
     "rangedStrength": 18,
-    "cost": 110,
+    "cost": 105,
     "requiredTech": "Siege Engineering",
     "uniques": [
       "[+200]% Strength <vs cities> <when attacking>",
@@ -24752,7 +24749,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 16,
-    "cost": 70,
+    "cost": 65,
     "requiredTech": "Iron Forged Swords",
     "requiredResource": "Iron",
     "hurryCostModifier": 20,
@@ -24966,7 +24963,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 5,
-    "cost": 25,
+    "cost": 20,
     "requiredTech": "Farming",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -25012,7 +25009,7 @@
     "unitType": "Scout",
     "movement": 2,
     "strength": 12,
-    "cost": 70,
+    "cost": 65,
     "requiredTech": "Bardic Lore",
     "uniques": [
       "Never appears as a Barbarian unit",
@@ -25197,7 +25194,7 @@
     "movement": 2,
     "strength": 7,
     "rangedStrength": 11,
-    "cost": 70,
+    "cost": 65,
     "requiredTech": "Runic Script",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -25386,7 +25383,7 @@
     "unitType": "Mounted",
     "movement": 4,
     "strength": 47,
-    "cost": 195,
+    "cost": 200,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
