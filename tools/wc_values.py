@@ -16,7 +16,7 @@ P = {
     "Humans": {},                                                           # the yardstick
     "Orcs": {"str": {"aggressive": 1.12, "defensive": 1.08, "mounted": 1.08}, "cost": 1.05,
              "add": [(("aggressive",), "[+10]% Strength <when attacking>")]},
-    "Tauren": {"str": {"aggressive": 1.2, "defensive": 1.2, "heavy": 1.2, "mounted": 1.25}, "cost": 1.08,   # was 1.2: below average in all 8 of 16 test games
+    "Tauren": {"str": {"aggressive": 1.2, "defensive": 1.2, "heavy": 1.2, "mounted": 1.25}, "cost": 1.05,   # was 1.2: below average in all 8 of 16 test games
                "move": {"mounted": 3},
                "add": [(MELEE + ("heavy",), "[+10] HP when healing"), (LAND, "[+15]% Strength <when fighting in [Plains] tiles>")]},
     "Highmountain Tauren": {"str": {"aggressive": 1.2, "defensive": 1.2, "heavy": 1.2, "mounted": 1.25}, "cost": 1.2, "move": {"mounted": 3},
