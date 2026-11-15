@@ -14626,7 +14626,7 @@
     "unitType": "Sword",
     "movement": 2,
     "strength": 10,
-    "cost": 45,
+    "cost": 40,
     "requiredTech": "Farming",
     "uniques": [
       "Instantly gain [1] [Raid Trophy] <upon defeating a [Raid Boss] unit> <hidden from users>",
@@ -15062,7 +15062,7 @@
     "movement": 2,
     "strength": 5,
     "rangedStrength": 7,
-    "cost": 45,
+    "cost": 40,
     "requiredTech": "Archery",
     "attackSound": "arrow",
     "civilopediaText": [
@@ -15121,7 +15121,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 17,
-    "cost": 130,
+    "cost": 125,
     "requiredTech": "Scholarship",
     "attackSound": "arrow",
     "civilopediaText": [
@@ -15271,7 +15271,7 @@
     "movement": 2,
     "strength": 12,
     "rangedStrength": 20,
-    "cost": 130,
+    "cost": 125,
     "requiredTech": "Philosophy",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -15323,7 +15323,7 @@
     "movement": 2,
     "strength": 24,
     "rangedStrength": 32,
-    "cost": 215,
+    "cost": 210,
     "requiredTech": "Arcane Science",
     "attackSound": "wc_arcane_blast",
     "uniques": [
@@ -15369,7 +15369,7 @@
     "unitType": "Mounted",
     "movement": 3,
     "strength": 25,
-    "cost": 130,
+    "cost": 125,
     "requiredTech": "Animal War Training",
     "requiredResource": "Horses",
     "uniques": [
@@ -15416,7 +15416,7 @@
     "unitType": "Mounted",
     "movement": 3,
     "strength": 42,
-    "cost": 245,
+    "cost": 235,
     "requiredTech": "War Doctrine",
     "requiredResource": "Horses",
     "uniques": [
@@ -15524,7 +15524,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 32,
-    "cost": 205,
+    "cost": 200,
     "requiredTech": "Steel Forged Swords",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -15582,7 +15582,7 @@
     "unitType": "Heavy Infantry",
     "movement": 2,
     "strength": 43,
-    "cost": 280,
+    "cost": 275,
     "requiredTech": "Steamworks",
     "attackSound": "metalhit",
     "civilopediaText": [
@@ -15626,7 +15626,7 @@
     "rangedStrength": 30,
     "range": 5,
     "interceptRange": 5,
-    "cost": 280,
+    "cost": 275,
     "requiredTech": "Steamworks",
     "uniques": [
       "[50]% chance to intercept air attacks",
@@ -15667,7 +15667,7 @@
     "name": "Herbwalker",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 55,
+    "cost": 50,
     "requiredTech": "Herbalism",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
@@ -15774,7 +15774,7 @@
     "name": "Sunwalker",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 105,
+    "cost": 100,
     "requiredTech": "Choral Hymns",
     "uniques": [
       "Can build [Remove Plagued Land] improvements on tiles",
