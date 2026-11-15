@@ -86,6 +86,23 @@ EMBLEMS = {     # units that are not figures on the map
 }
 
 
+def _hammer(i):
+    return i.hammer(16, 3, 29, 9)
+
+
+HEROES = {      # a class emblem with a faction mark: no portraits, so no likenesses
+    "Uther the Lightbringer": (_hammer, "sun"), "Grom Hellscream": (T("Bronze Working"), "flame"),
+    "Malfurion Stormrage": (BI.tree, "moon"), "Muradin Bronzebeard": (T("Storm Hammers"), "crown"),
+    "Kelsey Steelspark": (BI.mask, "gear"), "Baine Bloodhoof": (BI.totem, "crown"), "Rokhan": (BI.tiki, "sword"),
+    "Kael'thas Sunstrider": (MI.bird, "flame"), "Alleria Windrunner": (T("Archery"), "star"), "Chen Stormstout": (BI.brewery, "leaf"),
+    "Nathanos Blightcaller": (T("Archery"), "skull"), "Maraad": (_hammer, "gem"), "Gazlowe": (BI.wrench, "coin"),
+    "Darius Crowley": (T("Animal War Training"), "sword"), "Dagran Thaurissan": (BI.anvil, "crown"),
+    "Daelin Proudmoore": (BI.anchor, "crown"), "Rastakhan": (BI.pyramid, "crown"), "Lady Vashj": (BI.trident, "crown"),
+    "Grand Magistrix Elisande": (BI.hourglass, "star"), "Huln Highmountain": (BI.horn_totem, "bolt"),
+}
+EMBLEMS.update(HEROES)
+
+
 def write_all(root, prefer_emblem=()):
     icons = os.path.join(root, "Images", "UnitIcons")
     if not os.path.isdir(icons):
