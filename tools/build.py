@@ -660,6 +660,8 @@ n = wc_style_races.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.joi
 print("pixel-art race sprites:", n)
 import unit_art, unit_art_humans, unit_art_machines   # trial: hand-placed pixel sprites (Human units, ships, machines), drawn straight on the art-pixel grid
 print("hand-placed unit sprites (trial):", unit_art.write_all([os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")]))
+import unit_icons   # Nov 2026: unit icons cut crisply from the finished sprites
+print("unit icons:", unit_icons.write_all(OUT))
 import boss_art   # Oct 2026 depth pass: the eight raid bosses
 print("raid boss sprites:", boss_art.write_all(os.path.join(OUT, "Images.WarcraftMap")))
 import barbarian_art   # Oct 2026 systems pass: themed barbarians

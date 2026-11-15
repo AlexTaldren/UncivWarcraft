@@ -69,49 +69,49 @@ ImprovementIcons/City ruins
   index: -1
 ImprovementIcons/Deep Mine
   rotate: false
-  xy: 976, 976
+  xy: 868, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Farm
   rotate: false
-  xy: 544, 112
+  xy: 436, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Wheat
   rotate: false
-  xy: 544, 112
+  xy: 436, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Fishing Boats
   rotate: false
-  xy: 652, 112
+  xy: 1840, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Fort
   rotate: false
-  xy: 868, 220
+  xy: 1840, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Great Workshop
   rotate: false
-  xy: 1840, 544
+  xy: 1408, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Hall of Heroes
   rotate: false
-  xy: 1840, 112
+  xy: 1624, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -146,84 +146,84 @@ NationIcons/Cenarion Hold
   index: -1
 NationIcons/Dalaran
   rotate: false
-  xy: 112, 220
+  xy: 4, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Dark Iron Dwarves
   rotate: false
-  xy: 328, 436
+  xy: 220, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Draenei
   rotate: false
-  xy: 868, 760
+  xy: 760, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Dwarves
   rotate: false
-  xy: 976, 760
+  xy: 868, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Everlook
   rotate: false
-  xy: 1300, 976
+  xy: 1192, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Explorers' League
   rotate: false
-  xy: 1732, 1408
+  xy: 1624, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Feathermoon Stronghold
   rotate: false
-  xy: 976, 544
+  xy: 868, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Forsaken
   rotate: false
-  xy: 652, 4
+  xy: 1624, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Gadgetzan
   rotate: false
-  xy: 1408, 760
+  xy: 1084, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Gnomes
   rotate: false
-  xy: 976, 4
+  xy: 1624, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Goblins
   rotate: false
-  xy: 1408, 328
+  xy: 1084, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Golden Lotus
   rotate: false
-  xy: 1840, 760
+  xy: 1516, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -244,42 +244,49 @@ PolicyBranchIcons/Blood and Thunder
   index: -1
 PolicyBranchIcons/Devotion
   rotate: false
-  xy: 112, 4
+  xy: 1840, 1840
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Great Prophet
+  rotate: false
+  xy: 1840, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Diplomacy
   rotate: false
-  xy: 220, 112
+  xy: 112, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Dominion
   rotate: false
-  xy: 760, 652
+  xy: 652, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Fateful Choices
   rotate: false
-  xy: 868, 436
+  xy: 760, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Free Peoples
   rotate: false
-  xy: 976, 328
+  xy: 652, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Frontier
   rotate: false
-  xy: 1192, 544
+  xy: 868, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -300,21 +307,21 @@ ReligionIcons/Cenarion Circle
   index: -1
 ReligionIcons/Earth Mother
   rotate: false
-  xy: 1300, 1084
+  xy: 1192, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Elune
   rotate: false
-  xy: 436, 112
+  xy: 328, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Forgotten Shadow
   rotate: false
-  xy: 1840, 1300
+  xy: 1516, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -363,35 +370,35 @@ ResourceIcons/Crawlers
   index: -1
 ResourceIcons/Deeprock Salt
   rotate: false
-  xy: 1084, 1084
+  xy: 976, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Elementium
   rotate: false
-  xy: 328, 4
+  xy: 1840, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Fish
   rotate: false
-  xy: 544, 4
+  xy: 1732, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Glowcap
   rotate: false
-  xy: 1408, 544
+  xy: 1084, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Gold Ore
   rotate: false
-  xy: 1516, 436
+  xy: 1192, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -536,7 +543,28 @@ UnitIcons/Arcane Construct
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Felbound Construct
+  rotate: false
+  xy: 112, 1300
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Arcane Golem
+  rotate: false
+  xy: 328, 1516
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Crystal Golem
+  rotate: false
+  xy: 328, 1516
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Tidal Guardian
   rotate: false
   xy: 328, 1516
   size: 100, 100
@@ -613,6 +641,13 @@ UnitIcons/Archmage
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Kirin Tor Magus
+  rotate: false
+  xy: 760, 1840
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Artificer Mage
   rotate: false
   xy: 112, 1084
@@ -655,6 +690,13 @@ UnitIcons/Azerite Cannon
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Flame Cannon
+  rotate: false
+  xy: 760, 1732
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Azerite Sharpshooter
   rotate: false
   xy: 4, 868
@@ -669,6 +711,13 @@ UnitIcons/Azerite War Machine
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Siege Engine
+  rotate: false
+  xy: 112, 976
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Azshara's Royal Guard
   rotate: false
   xy: 220, 1084
@@ -677,13 +726,6 @@ UnitIcons/Azshara's Royal Guard
   offset: 0, 0
   index: -1
 UnitIcons/Baine Bloodhoof
-  rotate: false
-  xy: 328, 1192
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Huln Highmountain
   rotate: false
   xy: 328, 1192
   size: 100, 100
@@ -803,6 +845,13 @@ UnitIcons/Blight Thrower
   offset: 0, 0
   index: -1
 UnitIcons/Blood Elf Ranger
+  rotate: false
+  xy: 1084, 1840
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Ranger
   rotate: false
   xy: 1084, 1840
   size: 100, 100
@@ -1110,6 +1159,13 @@ UnitIcons/Cleric
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Missionary
+  rotate: false
+  xy: 544, 868
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Cloaked Infiltrator
   rotate: false
   xy: 652, 976
@@ -1257,1246 +1313,1211 @@ UnitIcons/Crystal Adept
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Crystal Golem
+UnitIcons/Crystal Lance
   rotate: false
   xy: 1084, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Crystal Lance
+UnitIcons/Cult Initiate
   rotate: false
   xy: 1192, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Cult Initiate
+UnitIcons/Cultist
   rotate: false
   xy: 1300, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Cultist
+UnitIcons/Cutter
   rotate: false
   xy: 1408, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Cutter
+UnitIcons/Daelin Proudmoore
   rotate: false
   xy: 1516, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Daelin Proudmoore
+UnitIcons/Dagran Thaurissan
   rotate: false
   xy: 1624, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Dagran Thaurissan
-  rotate: false
-  xy: 4, 112
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Kael'thas Sunstrider
-  rotate: false
-  xy: 4, 112
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 UnitIcons/Darius Crowley
   rotate: false
-  xy: 220, 328
+  xy: 112, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dark Iron Golem
   rotate: false
-  xy: 436, 544
+  xy: 328, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dark Iron Rifleman
   rotate: false
-  xy: 544, 652
+  xy: 436, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dark Iron Saboteur
   rotate: false
-  xy: 652, 760
+  xy: 544, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dark Iron Warrior
   rotate: false
-  xy: 760, 868
+  xy: 652, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dark Ranger
   rotate: false
-  xy: 868, 976
+  xy: 760, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dark Ranger Marksman
   rotate: false
-  xy: 976, 1084
+  xy: 868, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Darkspear Axe Thrower
   rotate: false
-  xy: 1084, 1192
+  xy: 976, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Darkspear Champion
   rotate: false
-  xy: 1192, 1300
+  xy: 1084, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Darkspear Guardian
   rotate: false
-  xy: 1300, 1408
+  xy: 1192, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Darkspear Raptor Lancer
   rotate: false
-  xy: 1408, 1516
+  xy: 1300, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Darkspear Warrior
   rotate: false
-  xy: 1516, 1624
+  xy: 1408, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Death Knight
   rotate: false
-  xy: 1624, 1732
+  xy: 1516, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Death Ray Gunner
   rotate: false
-  xy: 1732, 1840
+  xy: 1624, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deathguard
   rotate: false
-  xy: 4, 4
+  xy: 1732, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deathguard Rider
   rotate: false
-  xy: 112, 112
+  xy: 4, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deathguard Sentry
   rotate: false
-  xy: 220, 220
+  xy: 112, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deathstalker
   rotate: false
-  xy: 328, 328
+  xy: 220, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deathstalker Recruit
   rotate: false
-  xy: 436, 436
+  xy: 328, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deathwing the Destroyer
   rotate: false
-  xy: 544, 544
+  xy: 436, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deck Cannon
   rotate: false
-  xy: 652, 652
+  xy: 544, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deckhand
   rotate: false
-  xy: 760, 760
+  xy: 652, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Decontaminator
   rotate: false
-  xy: 868, 868
+  xy: 760, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Deepsea Assassin
   rotate: false
-  xy: 1192, 1192
+  xy: 1084, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Defender
   rotate: false
-  xy: 1300, 1300
+  xy: 1192, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Defias Pillager
   rotate: false
-  xy: 1408, 1408
+  xy: 1300, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Demolisher
   rotate: false
-  xy: 1516, 1516
+  xy: 1408, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Demonologist
   rotate: false
-  xy: 1624, 1624
+  xy: 1516, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Destroyer
   rotate: false
-  xy: 1732, 1732
+  xy: 1624, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Devilsaur Siege Beast
   rotate: false
-  xy: 1840, 1840
+  xy: 1732, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dire Troll
   rotate: false
-  xy: 328, 220
+  xy: 220, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dire Worgen
   rotate: false
-  xy: 436, 328
+  xy: 328, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Direhorn Rider
   rotate: false
-  xy: 544, 436
+  xy: 436, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ravasaur Rider
   rotate: false
-  xy: 544, 436
+  xy: 436, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Disciple
   rotate: false
-  xy: 652, 544
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Missionary
-  rotate: false
-  xy: 652, 544
+  xy: 544, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dragon Turtle
   rotate: false
-  xy: 976, 868
+  xy: 868, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dragonhawk Rider
   rotate: false
-  xy: 1084, 976
+  xy: 976, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dragonhawk Scout
   rotate: false
-  xy: 1084, 976
+  xy: 976, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dragonmaw Marauder
   rotate: false
-  xy: 1192, 1084
+  xy: 1084, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dreadguard
   rotate: false
-  xy: 1300, 1192
+  xy: 1192, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Druid Initiate
   rotate: false
-  xy: 1408, 1300
+  xy: 1300, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Druid of the Claw
   rotate: false
-  xy: 1516, 1408
+  xy: 1408, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Thornspeaker Bear
   rotate: false
-  xy: 1516, 1408
+  xy: 1408, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/War Bear
   rotate: false
-  xy: 1516, 1408
+  xy: 1408, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Druid of the Plains
   rotate: false
-  xy: 1624, 1516
+  xy: 1516, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Druid of the Scythe
   rotate: false
-  xy: 1732, 1624
+  xy: 1624, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Druid of the Talon
   rotate: false
-  xy: 1840, 1732
+  xy: 1732, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dryad
   rotate: false
-  xy: 220, 4
+  xy: 1840, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Duskwatch Archer
   rotate: false
-  xy: 328, 112
+  xy: 220, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Duskwatch Lancer
   rotate: false
-  xy: 436, 220
+  xy: 328, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Duskwatch Recruit
   rotate: false
-  xy: 544, 328
+  xy: 436, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Duskwatch Sentinel
   rotate: false
-  xy: 652, 436
+  xy: 544, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Duskwatch Spy
   rotate: false
-  xy: 760, 544
+  xy: 652, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dwarven Priest
   rotate: false
-  xy: 868, 652
+  xy: 760, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Dynamite Tosser
   rotate: false
-  xy: 1084, 868
+  xy: 976, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Eagle-Eye Marksman
   rotate: false
-  xy: 1192, 976
+  xy: 1084, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Earthen Shaman
   rotate: false
-  xy: 1408, 1192
+  xy: 1300, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elder Mistweaver
   rotate: false
-  xy: 1516, 1300
+  xy: 1408, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elder Shaman
   rotate: false
-  xy: 1624, 1408
+  xy: 1516, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elekk Lancer
   rotate: false
-  xy: 1732, 1516
+  xy: 1624, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elekk Rider
   rotate: false
-  xy: 1840, 1624
+  xy: 1732, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elven Archer
   rotate: false
-  xy: 544, 220
+  xy: 436, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elven Ballista
   rotate: false
-  xy: 652, 328
+  xy: 544, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elven Blade
   rotate: false
-  xy: 760, 436
+  xy: 652, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elven Destroyer
   rotate: false
-  xy: 868, 544
+  xy: 760, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sunreaver Destroyer
   rotate: false
-  xy: 868, 544
+  xy: 760, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elven Knight
   rotate: false
-  xy: 976, 652
+  xy: 868, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Elven Skiff
   rotate: false
-  xy: 1084, 760
+  xy: 976, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ember Seer
   rotate: false
-  xy: 1192, 868
+  xy: 1084, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Exarch
   rotate: false
-  xy: 1408, 1084
+  xy: 1300, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Exarch's Guard
   rotate: false
-  xy: 1516, 1192
+  xy: 1408, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Explorer's League Scout
   rotate: false
-  xy: 1624, 1300
+  xy: 1516, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Faceless Destroyer
   rotate: false
-  xy: 1840, 1516
+  xy: 1732, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Far Seer
   rotate: false
-  xy: 436, 4
+  xy: 1840, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Farstrider
   rotate: false
-  xy: 652, 220
+  xy: 544, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Farstrider Pathstalker
   rotate: false
-  xy: 760, 328
+  xy: 652, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Fel Initiate
   rotate: false
-  xy: 1084, 652
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Inquisitor
-  rotate: false
-  xy: 1084, 652
+  xy: 976, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Fel Reaver
   rotate: false
-  xy: 1192, 760
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Felbound Construct
-  rotate: false
-  xy: 1300, 868
+  xy: 1084, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Felguard
   rotate: false
-  xy: 1408, 976
+  xy: 1192, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Felsworn Blade
   rotate: false
-  xy: 1516, 1084
+  xy: 1300, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Field Medic
   rotate: false
-  xy: 1624, 1192
+  xy: 1408, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Fireguard
   rotate: false
-  xy: 1732, 1300
+  xy: 1516, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Fireworks Launcher
   rotate: false
-  xy: 1840, 1408
+  xy: 1624, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Fishing Skiff
   rotate: false
-  xy: 760, 220
+  xy: 544, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Flak Cannon
   rotate: false
-  xy: 868, 328
+  xy: 652, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Flak Wagon
   rotate: false
-  xy: 976, 436
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Flame Cannon
-  rotate: false
-  xy: 1084, 544
+  xy: 760, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Flame Mortar
   rotate: false
-  xy: 1192, 652
+  xy: 868, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Flamekeeper
   rotate: false
-  xy: 1300, 760
+  xy: 976, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Flesh Titan
   rotate: false
-  xy: 1408, 868
+  xy: 1084, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Flying Machine
   rotate: false
-  xy: 1516, 976
+  xy: 1192, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnomish Bomber
   rotate: false
-  xy: 1516, 976
+  xy: 1192, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gyrocopter
   rotate: false
-  xy: 1516, 976
+  xy: 1192, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Footman
   rotate: false
-  xy: 1624, 1084
+  xy: 1300, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Forest Scout
   rotate: false
-  xy: 1732, 1192
+  xy: 1408, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Forsaken Crossbowman
   rotate: false
-  xy: 760, 112
+  xy: 1732, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Frigate
   rotate: false
-  xy: 1084, 436
+  xy: 760, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Frost Wyrm
   rotate: false
-  xy: 1300, 652
+  xy: 976, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Galley
   rotate: false
-  xy: 1516, 868
+  xy: 1192, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gamekeeper
   rotate: false
-  xy: 1624, 976
+  xy: 1300, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gargoyle
   rotate: false
-  xy: 1732, 1084
+  xy: 1408, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gate Warden
   rotate: false
-  xy: 1840, 1192
+  xy: 1516, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gazlowe
   rotate: false
-  xy: 760, 4
+  xy: 1624, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Geist
   rotate: false
-  xy: 868, 112
+  xy: 1732, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ghost Ship
   rotate: false
-  xy: 976, 220
+  xy: 1840, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ghoul
   rotate: false
-  xy: 1084, 328
+  xy: 760, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Giant Turtle
   rotate: false
-  xy: 1192, 436
+  xy: 868, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Horseman
   rotate: false
-  xy: 1300, 544
+  xy: 976, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Hunter
   rotate: false
-  xy: 1408, 652
+  xy: 1084, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Lancer
   rotate: false
-  xy: 1516, 760
+  xy: 1192, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Mage
   rotate: false
-  xy: 1624, 868
+  xy: 1300, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Marksman
   rotate: false
-  xy: 1732, 976
+  xy: 1408, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Militia
   rotate: false
-  xy: 1840, 1084
+  xy: 1516, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Rifleman
   rotate: false
-  xy: 868, 4
+  xy: 1624, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gilnean Royal Guard
   rotate: false
-  xy: 976, 112
+  xy: 1732, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gladiator
   rotate: false
-  xy: 1084, 220
+  xy: 1840, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Glaive Initiate
   rotate: false
-  xy: 1192, 328
+  xy: 868, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Glaive Thrower
   rotate: false
-  xy: 1300, 436
+  xy: 976, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnoll Poacher
   rotate: false
-  xy: 1516, 652
+  xy: 1192, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hunter
   rotate: false
-  xy: 1516, 652
+  xy: 1192, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnome Mage
   rotate: false
-  xy: 1624, 760
+  xy: 1300, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnomeregan Infantry
   rotate: false
-  xy: 1732, 868
+  xy: 1408, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnomeregan Sentinel
   rotate: false
-  xy: 1840, 976
+  xy: 1516, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnomish Bombardier
   rotate: false
-  xy: 1084, 112
+  xy: 1732, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gnomish Rifleman
   rotate: false
-  xy: 1192, 220
+  xy: 1840, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Gunboat
   rotate: false
-  xy: 1300, 328
+  xy: 976, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Hexer
   rotate: false
-  xy: 1408, 436
+  xy: 1084, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Mercenary
   rotate: false
-  xy: 1516, 544
+  xy: 1192, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Prospector
   rotate: false
-  xy: 1624, 652
+  xy: 1300, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Rifleman
   rotate: false
-  xy: 1732, 760
+  xy: 1408, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Sapper
   rotate: false
-  xy: 1840, 868
+  xy: 1516, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Scout
   rotate: false
-  xy: 1084, 4
+  xy: 1624, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Shredder
   rotate: false
-  xy: 1192, 112
+  xy: 1732, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Goblin Zeppelin
   rotate: false
-  xy: 1300, 220
+  xy: 1840, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Golden Fleet Dreadnought
   rotate: false
-  xy: 1624, 544
+  xy: 1300, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Golden Guard
   rotate: false
-  xy: 1732, 652
+  xy: 1408, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grand Champion
   rotate: false
-  xy: 1192, 4
+  xy: 1624, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grand Magistrix Elisande
   rotate: false
-  xy: 1300, 112
+  xy: 1732, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grand Warlock
   rotate: false
-  xy: 1408, 220
+  xy: 1840, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gravedigger
   rotate: false
-  xy: 1516, 328
+  xy: 1192, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great Admiral
   rotate: false
-  xy: 1624, 436
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-CityStateIcons/Shipyard
-  rotate: false
-  xy: 1624, 436
+  xy: 1300, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great Artist
   rotate: false
-  xy: 1732, 544
+  xy: 1408, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great Eagle Warrior
   rotate: false
-  xy: 1840, 652
+  xy: 1516, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skyhorn Eagle Rider
   rotate: false
-  xy: 1840, 652
+  xy: 1516, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great Engineer
   rotate: false
-  xy: 1300, 4
+  xy: 1624, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great General
   rotate: false
-  xy: 1408, 112
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Settler
-  rotate: false
-  xy: 1408, 112
+  xy: 1732, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great Merchant
   rotate: false
-  xy: 1516, 220
+  xy: 1840, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Great Prophet
+PolicyBranchIcons/Trade Princes
   rotate: false
-  xy: 1624, 328
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-CityStateIcons/Sacred
-  rotate: false
-  xy: 1624, 328
+  xy: 1840, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Great Scientist
   rotate: false
-  xy: 1732, 436
+  xy: 1300, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grenadier
   rotate: false
-  xy: 1408, 4
+  xy: 1516, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Greyguard
   rotate: false
-  xy: 1516, 112
+  xy: 1624, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Greymane Cavalier
   rotate: false
-  xy: 1624, 220
+  xy: 1732, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grimtotem Stalker
   rotate: false
-  xy: 1732, 328
+  xy: 1840, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grom Hellscream
   rotate: false
-  xy: 1840, 436
+  xy: 1408, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grove Guardian
   rotate: false
-  xy: 1516, 4
+  xy: 1516, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grove Keeper
   rotate: false
-  xy: 1624, 112
+  xy: 1624, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Grunt
   rotate: false
-  xy: 1732, 220
+  xy: 1732, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gryphon Rider
   rotate: false
-  xy: 1840, 328
+  xy: 1840, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Stormhammer Rider
   rotate: false
-  xy: 1840, 328
+  xy: 1840, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gul'dan the Destroyer
   rotate: false
-  xy: 1624, 4
+  xy: 1516, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Gunship
   rotate: false
-  xy: 1732, 112
+  xy: 1624, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hakkar the Soulflayer
   rotate: false
-  xy: 1840, 220
+  xy: 1732, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Halberdier
   rotate: false
-  xy: 1732, 4
+  xy: 1840, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Harbor Watch
+  rotate: false
+  xy: 1732, 112
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Harpooner
+  rotate: false
+  xy: 1840, 220
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Harpy Windwitch
+  rotate: false
+  xy: 1732, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Harvest Arcanist
+  rotate: false
+  xy: 1840, 112
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Harvest Golem
   rotate: false
   xy: 1840, 4
   size: 100, 100
@@ -2511,21 +2532,35 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 CityStateIcons/Lorekeeper
   rotate: false
-  xy: 976, 1408
+  xy: 760, 1192
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+CityStateIcons/Sacred
+  rotate: false
+  xy: 1624, 976
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+CityStateIcons/Shipyard
+  rotate: false
+  xy: 1300, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Lumber mill
   rotate: false
-  xy: 1192, 1624
+  xy: 976, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Mine
   rotate: false
-  xy: 328, 544
+  xy: 220, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2567,70 +2602,70 @@ ImprovementIcons/Railroad
   index: -1
 ImprovementIcons/Remove Blighted Land
   rotate: false
-  xy: 1516, 1084
+  xy: 1408, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Fel-Scorched Land
   rotate: false
-  xy: 1624, 1192
+  xy: 1516, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Forest
   rotate: false
-  xy: 1732, 1300
+  xy: 1624, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Jungle
   rotate: false
-  xy: 1840, 1408
+  xy: 1732, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Marsh
   rotate: false
-  xy: 544, 4
+  xy: 1840, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Plagued Land
   rotate: false
-  xy: 652, 112
+  xy: 544, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Railroad
   rotate: false
-  xy: 760, 220
+  xy: 652, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Road
   rotate: false
-  xy: 868, 328
+  xy: 760, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Repair
   rotate: false
-  xy: 976, 436
+  xy: 868, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Road
   rotate: false
-  xy: 1624, 1084
+  xy: 1516, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2644,98 +2679,98 @@ ImprovementIcons/Sacred Grounds
   index: -1
 NationIcons/High Elves
   rotate: false
-  xy: 328, 1624
+  xy: 436, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Highmountain Tauren
   rotate: false
-  xy: 436, 1624
+  xy: 4, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Humans
   rotate: false
-  xy: 652, 1732
+  xy: 328, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Jasperlode Mine
   rotate: false
-  xy: 544, 1408
+  xy: 328, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kobold Tunneler
   rotate: false
-  xy: 544, 1408
+  xy: 328, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Kamagua
   rotate: false
-  xy: 112, 868
+  xy: 4, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Murloc Tidehunter
   rotate: false
-  xy: 112, 868
+  xy: 4, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Klaxxi'vess
   rotate: false
-  xy: 976, 1732
+  xy: 760, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Knights of the Ebon Blade
   rotate: false
-  xy: 112, 760
+  xy: 1084, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Vanquisher
   rotate: false
-  xy: 112, 760
+  xy: 1084, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Kul Tirans
   rotate: false
-  xy: 4, 544
+  xy: 1084, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Light's Hope Chapel
   rotate: false
-  xy: 976, 1516
+  xy: 760, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Mogu'shan
   rotate: false
-  xy: 544, 760
+  xy: 436, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Naga
   rotate: false
-  xy: 976, 1084
+  xy: 868, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2770,14 +2805,14 @@ NationIcons/Pandaren
   index: -1
 NationIcons/Ratchet
   rotate: false
-  xy: 1084, 652
+  xy: 976, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Razorfen Kraul
   rotate: false
-  xy: 1192, 760
+  xy: 1084, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2791,7 +2826,7 @@ NationIcons/Scourge
   index: -1
 NationIcons/Shado-Pan Monastery
   rotate: false
-  xy: 1408, 544
+  xy: 1516, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2805,126 +2840,126 @@ PolicyBranchIcons/Old Kingdoms
   index: -1
 ReligionIcons/Holy Light
   rotate: false
-  xy: 4, 1084
+  xy: 328, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Light of the Sunwell
   rotate: false
-  xy: 868, 1408
+  xy: 652, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Loa
   rotate: false
-  xy: 112, 544
+  xy: 1300, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/Shamanism
   rotate: false
-  xy: 1300, 220
+  xy: 1408, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Honeycomb
   rotate: false
-  xy: 112, 1192
+  xy: 436, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Horses
   rotate: false
-  xy: 436, 1516
+  xy: 4, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Hot Spices
   rotate: false
-  xy: 544, 1624
+  xy: 112, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Iron
   rotate: false
-  xy: 328, 1300
+  xy: 112, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Jade Carvings
   rotate: false
-  xy: 4, 868
+  xy: 760, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Jeweled Trinkets
   rotate: false
-  xy: 652, 1516
+  xy: 436, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Kodo
   rotate: false
-  xy: 220, 868
+  xy: 4, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Leviathans
   rotate: false
-  xy: 544, 1084
+  xy: 328, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Mageroyal
   rotate: false
-  xy: 1408, 1840
+  xy: 1192, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Mageweave
   rotate: false
-  xy: 4, 328
+  xy: 1300, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Mammoth Ivory
   rotate: false
-  xy: 544, 868
+  xy: 328, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Mana
   rotate: false
-  xy: 760, 1084
+  xy: 544, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Marble
   rotate: false
-  xy: 1192, 1516
+  xy: 1084, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Moonglow Ink
   rotate: false
-  xy: 1084, 1300
+  xy: 976, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2952,642 +2987,628 @@ ResourceIcons/Raid Trophy
   index: -1
 ResourceIcons/Rugged Leather
   rotate: false
-  xy: 1300, 652
+  xy: 1192, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Sheep
   rotate: false
-  xy: 1516, 436
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Harpooner
-  rotate: false
-  xy: 4, 1840
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Harpy Windwitch
-  rotate: false
-  xy: 4, 1732
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Harvest Arcanist
-  rotate: false
-  xy: 112, 1840
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Harvest Golem
-  rotate: false
-  xy: 4, 1624
+  xy: 1624, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Harvest Witch
   rotate: false
-  xy: 112, 1732
+  xy: 4, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hawkstrider Lancer
   rotate: false
-  xy: 220, 1840
+  xy: 4, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hawkstrider Rider
   rotate: false
-  xy: 4, 1516
+  xy: 112, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hazmat Crew
   rotate: false
-  xy: 112, 1624
+  xy: 4, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Headhunter
   rotate: false
-  xy: 220, 1732
+  xy: 112, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hearthkeeper
   rotate: false
-  xy: 328, 1840
+  xy: 220, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hedge Witch
   rotate: false
-  xy: 4, 1408
+  xy: 4, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Herb Doctor
   rotate: false
-  xy: 112, 1516
+  xy: 112, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Herbalist
   rotate: false
-  xy: 220, 1624
+  xy: 220, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Herbwalker
   rotate: false
-  xy: 328, 1732
+  xy: 328, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hex Priest
   rotate: false
-  xy: 436, 1840
+  xy: 4, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hexer
   rotate: false
-  xy: 4, 1300
+  xy: 112, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hexlord
   rotate: false
-  xy: 112, 1408
+  xy: 220, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hierarch
   rotate: false
-  xy: 220, 1516
+  xy: 328, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/High Priest
   rotate: false
-  xy: 436, 1732
+  xy: 4, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/High Priest of the Mountain
   rotate: false
-  xy: 544, 1840
+  xy: 112, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/High Tidepriestess
   rotate: false
-  xy: 4, 1192
+  xy: 220, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Highmountain Hunter
   rotate: false
-  xy: 112, 1300
+  xy: 328, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Highmountain Protector
   rotate: false
-  xy: 220, 1408
+  xy: 436, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Highmountain Stormcaller
   rotate: false
-  xy: 328, 1516
+  xy: 544, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Highmountain Warbrave
   rotate: false
-  xy: 544, 1732
+  xy: 112, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hippogryph Rider
   rotate: false
-  xy: 652, 1840
+  xy: 220, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Horde Siege Engine
   rotate: false
-  xy: 220, 1300
+  xy: 544, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Horse Archer
   rotate: false
-  xy: 328, 1408
+  xy: 652, 1840
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Huln Highmountain
+  rotate: false
+  xy: 220, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Huntress
   rotate: false
-  xy: 760, 1840
+  xy: 436, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hydromancer
   rotate: false
-  xy: 4, 976
+  xy: 544, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Illusionist
   rotate: false
-  xy: 112, 1084
+  xy: 652, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Infernal
   rotate: false
-  xy: 220, 1192
+  xy: 760, 1840
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Inquisitor
+  rotate: false
+  xy: 4, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Iron Colossus
   rotate: false
-  xy: 436, 1408
+  xy: 220, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Iron Lumberjack
   rotate: false
-  xy: 544, 1516
+  xy: 328, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Iron Shredder
   rotate: false
-  xy: 652, 1624
+  xy: 436, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ironclad
   rotate: false
-  xy: 760, 1732
+  xy: 544, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Ironforge Guard
   rotate: false
-  xy: 868, 1840
+  xy: 652, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Jade Fleet Flagship
   rotate: false
-  xy: 112, 976
+  xy: 868, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Jade Serpent Guardian
   rotate: false
-  xy: 220, 1084
+  xy: 4, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Jade Sorcerer
   rotate: false
-  xy: 328, 1192
+  xy: 112, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Jade Stormcaller
   rotate: false
-  xy: 436, 1300
+  xy: 220, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Juggernaught
   rotate: false
-  xy: 760, 1624
+  xy: 544, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Jungle Fighter
   rotate: false
-  xy: 868, 1732
+  xy: 652, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Jungle Scout
   rotate: false
-  xy: 976, 1840
+  xy: 760, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Junk
   rotate: false
-  xy: 4, 760
+  xy: 868, 1732
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Kael'thas Sunstrider
+  rotate: false
+  xy: 976, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Keeper of the Grove
   rotate: false
-  xy: 220, 976
+  xy: 112, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Keg Catapult
   rotate: false
-  xy: 328, 1084
+  xy: 220, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kel'Thuzad
   rotate: false
-  xy: 436, 1192
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Nathanos Blightcaller
-  rotate: false
-  xy: 436, 1192
+  xy: 328, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kelsey Steelspark
   rotate: false
-  xy: 544, 1300
+  xy: 436, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kil'jaeden the Deceiver
   rotate: false
-  xy: 652, 1408
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Kirin Tor Magus
-  rotate: false
-  xy: 760, 1516
+  xy: 544, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kite Scout
   rotate: false
-  xy: 868, 1624
+  xy: 652, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Knight
   rotate: false
-  xy: 1084, 1840
+  xy: 868, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Knight of the Silver Hand
   rotate: false
-  xy: 4, 652
+  xy: 976, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kodo Beast
   rotate: false
-  xy: 328, 976
+  xy: 112, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kodo Rider
   rotate: false
-  xy: 436, 1084
+  xy: 220, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kodo War Rider
   rotate: false
-  xy: 544, 1192
+  xy: 328, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kor'kron Guard
   rotate: false
-  xy: 652, 1300
+  xy: 436, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kraken Caller
   rotate: false
-  xy: 760, 1408
+  xy: 544, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Tidemistress
   rotate: false
-  xy: 760, 1408
+  xy: 544, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kul Tiran Cavalier
   rotate: false
-  xy: 868, 1516
+  xy: 652, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kul Tiran Halberdier
   rotate: false
-  xy: 976, 1624
+  xy: 760, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kul Tiran Man-o'-War
   rotate: false
-  xy: 1084, 1732
+  xy: 868, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kul Tiran Marine
   rotate: false
-  xy: 1192, 1840
+  xy: 976, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kvaldir Longship
   rotate: false
-  xy: 112, 652
+  xy: 1192, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Kvaldir Reaver
   rotate: false
-  xy: 220, 760
+  xy: 4, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lady Vashj
   rotate: false
-  xy: 328, 868
+  xy: 112, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lancer
   rotate: false
-  xy: 436, 976
+  xy: 220, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Leyline Cannon
   rotate: false
-  xy: 652, 1192
+  xy: 436, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lich
   rotate: false
-  xy: 760, 1300
+  xy: 544, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lightforged Cannon
   rotate: false
-  xy: 1084, 1624
+  xy: 868, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lightforged Marksman
   rotate: false
-  xy: 1192, 1732
+  xy: 976, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lightforged Warframe
   rotate: false
-  xy: 1300, 1840
+  xy: 1084, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lightwarden
   rotate: false
-  xy: 4, 436
+  xy: 1192, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sunfury Priest
   rotate: false
-  xy: 4, 436
+  xy: 1192, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Loa Herald
   rotate: false
-  xy: 220, 652
+  xy: 4, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Loa Priest
   rotate: false
-  xy: 328, 760
+  xy: 112, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Loa Speaker
   rotate: false
-  xy: 436, 868
+  xy: 220, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Longboat
   rotate: false
-  xy: 544, 976
+  xy: 328, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Longrifle Hunter
   rotate: false
-  xy: 652, 1084
+  xy: 436, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Longwalker
   rotate: false
-  xy: 760, 1192
+  xy: 544, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lookout
   rotate: false
-  xy: 868, 1300
+  xy: 652, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lorewalker
   rotate: false
-  xy: 1084, 1516
+  xy: 868, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mage
   rotate: false
-  xy: 1300, 1732
+  xy: 1084, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Magister
   rotate: false
-  xy: 112, 436
+  xy: 1408, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Magma Cannon
   rotate: false
-  xy: 220, 544
+  xy: 4, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Magus
   rotate: false
-  xy: 328, 652
+  xy: 112, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Malfurion Stormrage
   rotate: false
-  xy: 436, 760
+  xy: 220, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Man-at-Arms
+  rotate: false
+  xy: 436, 760
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Mana Bomb Launcher
   rotate: false
   xy: 652, 976
   size: 100, 100
@@ -3596,229 +3617,229 @@ UnitIcons/Man-at-Arms
   index: -1
 UnitIcons/Manaray Rider
   rotate: false
-  xy: 868, 1192
+  xy: 760, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Manasaber Rider
   rotate: false
-  xy: 976, 1300
+  xy: 868, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Maraad
   rotate: false
-  xy: 1084, 1408
+  xy: 976, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Meat Wagon
   rotate: false
-  xy: 1300, 1624
+  xy: 1192, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mechagnome Trooper
   rotate: false
-  xy: 1408, 1732
+  xy: 1300, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mechano-Tank
   rotate: false
-  xy: 1516, 1840
+  xy: 1408, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mechanostrider Lancer
   rotate: false
-  xy: 4, 220
+  xy: 1516, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mechanostrider Rider
   rotate: false
-  xy: 112, 328
+  xy: 4, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Militia
   rotate: false
-  xy: 220, 436
+  xy: 112, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mistweaver
   rotate: false
-  xy: 436, 652
+  xy: 328, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Molten Charger
   rotate: false
-  xy: 652, 868
+  xy: 544, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Molten Colossus
   rotate: false
-  xy: 760, 976
+  xy: 652, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Moon Adept
   rotate: false
-  xy: 868, 1084
+  xy: 760, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Moon Archer
   rotate: false
-  xy: 976, 1192
+  xy: 868, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Moonguard Huntress
   rotate: false
-  xy: 1192, 1408
+  xy: 1084, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Moonwing Warship
   rotate: false
-  xy: 1300, 1516
+  xy: 1192, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Moose Lancer
   rotate: false
-  xy: 1408, 1624
+  xy: 1300, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mortar Team
   rotate: false
-  xy: 1516, 1732
+  xy: 1408, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mountain Giant
   rotate: false
-  xy: 1624, 1840
+  xy: 1516, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mountain King's Guard
   rotate: false
-  xy: 4, 112
+  xy: 1624, 1840
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mountaineer
   rotate: false
-  xy: 112, 220
+  xy: 4, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mur'gul Reaver
   rotate: false
-  xy: 220, 328
+  xy: 112, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mur'gul Scout
   rotate: false
-  xy: 328, 436
+  xy: 220, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Muradin Bronzebeard
   rotate: false
-  xy: 436, 544
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Uther the Lightbringer
-  rotate: false
-  xy: 436, 544
+  xy: 328, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mushan Beast
   rotate: false
-  xy: 544, 652
+  xy: 436, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Myrmidon
   rotate: false
-  xy: 652, 760
+  xy: 544, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mystic
   rotate: false
-  xy: 760, 868
+  xy: 652, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/N'Zoth the Corruptor
   rotate: false
-  xy: 868, 976
+  xy: 760, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Naga Myrmidon
   rotate: false
-  xy: 1084, 1192
+  xy: 976, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Naga Sentinel
   rotate: false
-  xy: 1192, 1300
+  xy: 1084, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Naga Siren
   rotate: false
-  xy: 1300, 1408
+  xy: 1192, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Naga Stalker
+  rotate: false
+  xy: 1300, 1408
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Nathanos Blightcaller
   rotate: false
   xy: 1408, 1516
   size: 100, 100
@@ -4203,184 +4224,177 @@ UnitIcons/Rangari Shadowstalker
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Ranger
+UnitIcons/Ranger Captain
   rotate: false
   xy: 1624, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Ranger Captain
+UnitIcons/Ranger-General
   rotate: false
   xy: 1732, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Ranger-General
+UnitIcons/Ranger-Lord
   rotate: false
   xy: 1840, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Ranger-Lord
+UnitIcons/Raptor Rider
   rotate: false
   xy: 436, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Raptor Rider
+UnitIcons/Raptor Skirmisher
   rotate: false
   xy: 544, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Raptor Skirmisher
+UnitIcons/Rastakhan
   rotate: false
   xy: 652, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Rastakhan
+UnitIcons/Rastari Enforcer
   rotate: false
   xy: 760, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Rastari Enforcer
+UnitIcons/Rastari Marksman
   rotate: false
   xy: 868, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Rastari Marksman
-  rotate: false
-  xy: 976, 544
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 UnitIcons/Reliquary Shadowstalker
   rotate: false
-  xy: 1408, 976
+  xy: 1300, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rifleman
   rotate: false
-  xy: 1084, 544
+  xy: 976, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Risen Soldier
   rotate: false
-  xy: 1192, 652
+  xy: 1084, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rivermane Elder
   rotate: false
-  xy: 1300, 760
+  xy: 1192, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rivermane Shaman
   rotate: false
-  xy: 1408, 868
+  xy: 1300, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rivermane Stalker
   rotate: false
-  xy: 1516, 976
+  xy: 1408, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rocket Battery
   rotate: false
-  xy: 1732, 1192
+  xy: 1624, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rocket Bomber
   rotate: false
-  xy: 1840, 1300
+  xy: 1732, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rocket Gunner
   rotate: false
-  xy: 652, 4
+  xy: 1840, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rocket Trike
   rotate: false
-  xy: 760, 112
+  xy: 652, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rokhan
   rotate: false
-  xy: 868, 220
+  xy: 760, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Royal Apothecary
   rotate: false
-  xy: 976, 328
+  xy: 868, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Royal Dreadguard
   rotate: false
-  xy: 1084, 436
+  xy: 976, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Royal Guard
   rotate: false
-  xy: 1192, 544
+  xy: 1084, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rune Priest
   rotate: false
-  xy: 1408, 760
+  xy: 1300, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Runecaster
   rotate: false
-  xy: 1516, 868
+  xy: 1408, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/SI:7 Agent
   rotate: false
-  xy: 1624, 976
+  xy: 1516, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -4483,154 +4497,154 @@ UnitIcons/Sentry
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shade
+UnitIcons/Settler
   rotate: false
   xy: 1192, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shado-Pan Archer
+UnitIcons/Shade
   rotate: false
   xy: 1300, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shado-Pan Monk
+UnitIcons/Shado-Pan Archer
   rotate: false
-  xy: 1516, 652
+  xy: 1408, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shado-Pan Tiger Lancer
+UnitIcons/Shado-Pan Monk
   rotate: false
   xy: 1624, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shado-Pan Wall Guard
+UnitIcons/Shado-Pan Tiger Lancer
   rotate: false
   xy: 1732, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shado-Pan Warrior
+UnitIcons/Shado-Pan Wall Guard
   rotate: false
   xy: 1840, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadow Council Warlock
+UnitIcons/Shado-Pan Warrior
   rotate: false
   xy: 976, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadow Hunter
+UnitIcons/Shadow Council Warlock
   rotate: false
   xy: 1084, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadow Mage
+UnitIcons/Shadow Hunter
   rotate: false
   xy: 1192, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadow Stalker
+UnitIcons/Shadow Mage
   rotate: false
   xy: 1300, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadowblade
+UnitIcons/Shadow Stalker
   rotate: false
   xy: 1408, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadowforge Assassin
+UnitIcons/Shadowblade
   rotate: false
   xy: 1516, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadowforge Priest
+UnitIcons/Shadowforge Assassin
   rotate: false
   xy: 1624, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadowleaf Assassin
+UnitIcons/Shadowforge Priest
   rotate: false
   xy: 1732, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shadowmeld Scout
+UnitIcons/Shadowleaf Assassin
   rotate: false
   xy: 1840, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shal'dorei Mender
+UnitIcons/Shadowmeld Scout
   rotate: false
   xy: 1084, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Shaman
+UnitIcons/Shal'dorei Mender
   rotate: false
   xy: 1192, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Shaman
+  rotate: false
+  xy: 1300, 220
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Sharpshooter
   rotate: false
-  xy: 1408, 328
+  xy: 1516, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Shieldbearer
   rotate: false
-  xy: 1624, 544
+  xy: 1732, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Shieldbot
   rotate: false
-  xy: 1732, 652
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Ship's Mender
-  rotate: false
   xy: 1840, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Siege Engine
+UnitIcons/Ship's Mender
   rotate: false
   xy: 1192, 4
   size: 100, 100
@@ -4639,194 +4653,187 @@ UnitIcons/Siege Engine
   index: -1
 UnitIcons/Siegebreaker
   rotate: false
-  xy: 1300, 112
+  xy: 1408, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Silver Covenant Champion
   rotate: false
-  xy: 1408, 220
+  xy: 1516, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Silver Covenant Hippogryph
   rotate: false
-  xy: 1516, 328
+  xy: 1624, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Silver Covenant Lancer
   rotate: false
-  xy: 1624, 436
+  xy: 1732, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Silver Covenant Warship
   rotate: false
-  xy: 1732, 544
+  xy: 1840, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sunreaver Warship
   rotate: false
-  xy: 1732, 544
+  xy: 1840, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Silvermoon Guardian
   rotate: false
-  xy: 1840, 652
+  xy: 1300, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Siren
   rotate: false
-  xy: 1300, 4
+  xy: 1408, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skeletal Archer
   rotate: false
-  xy: 1408, 112
+  xy: 1516, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skeletal Guard
   rotate: false
-  xy: 1516, 220
+  xy: 1624, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skeletal Horseman
   rotate: false
-  xy: 1624, 328
+  xy: 1732, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skeletal Rider
   rotate: false
-  xy: 1732, 436
+  xy: 1840, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skeleton Warrior
   rotate: false
-  xy: 1840, 544
+  xy: 1408, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sky Golem
   rotate: false
-  xy: 1408, 4
+  xy: 1516, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skyguard
   rotate: false
-  xy: 1516, 112
+  xy: 1624, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skyhorn Sentinel
   rotate: false
-  xy: 1624, 220
+  xy: 1732, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Skyhorn Tracker
   rotate: false
-  xy: 1732, 328
+  xy: 1840, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Slaver
   rotate: false
-  xy: 1840, 436
+  xy: 1516, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Slingshot Tinker
   rotate: false
-  xy: 1516, 4
+  xy: 1624, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Sorcerer
   rotate: false
-  xy: 1624, 112
+  xy: 1732, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spear Guard
   rotate: false
-  xy: 1732, 220
+  xy: 1840, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spear Hunter
   rotate: false
-  xy: 1840, 328
+  xy: 1624, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spearguard
   rotate: false
-  xy: 1624, 4
+  xy: 1732, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spearman
   rotate: false
-  xy: 1732, 112
+  xy: 1840, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spellblade
   rotate: false
-  xy: 1840, 220
+  xy: 1732, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Spellbreaker
   rotate: false
-  xy: 1732, 4
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Spellweaver
-  rotate: false
   xy: 1840, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Spider Tank
+UnitIcons/Spellweaver
   rotate: false
   xy: 1840, 4
   size: 100, 100
@@ -4842,7 +4849,7 @@ VictoryTypeIcons/Raid
   index: -1
 VictoryTypeIcons/Religious
   rotate: false
-  xy: 1300, 868
+  xy: 1192, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -4855,14 +4862,14 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 ImprovementIcons/Spread Blight
   rotate: false
-  xy: 112, 868
+  xy: 4, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Tidal Drill
   rotate: false
-  xy: 652, 652
+  xy: 760, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -4876,56 +4883,56 @@ ImprovementIcons/Trade Company
   index: -1
 ImprovementIcons/Trading post
   rotate: false
-  xy: 760, 544
+  xy: 652, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Steamwheedle Port
   rotate: false
-  xy: 220, 760
+  xy: 328, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Stromgarde
   rotate: false
-  xy: 328, 760
+  xy: 436, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Tauren
   rotate: false
-  xy: 328, 544
+  xy: 436, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/The Consortium
   rotate: false
-  xy: 220, 328
+  xy: 328, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/The Earthen Ring
   rotate: false
-  xy: 328, 436
+  xy: 436, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Theramore
   rotate: false
-  xy: 652, 760
+  xy: 760, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Thorium Brotherhood
   rotate: false
-  xy: 4, 4
+  xy: 112, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -4939,7 +4946,7 @@ NationIcons/Timbermaw Hold
   index: -1
 NationIcons/Trolls
   rotate: false
-  xy: 328, 4
+  xy: 1084, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -4965,30 +4972,23 @@ NationIcons/Zandalari Trolls
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyBranchIcons/Trade Princes
-  rotate: false
-  xy: 652, 436
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 PolicyBranchIcons/Unity
   rotate: false
-  xy: 1084, 760
+  xy: 976, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/The Nightwell
   rotate: false
-  xy: 436, 544
+  xy: 544, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ReligionIcons/The Old Gods
   rotate: false
-  xy: 544, 652
+  xy: 652, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -5002,245 +5002,245 @@ ReligionIcons/Titans
   index: -1
 ResourceIcons/Star Rubies
   rotate: false
-  xy: 4, 652
+  xy: 112, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Stone
   rotate: false
-  xy: 328, 868
+  xy: 4, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Tel'Abim Bananas
   rotate: false
-  xy: 652, 868
+  xy: 4, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Thorium
   rotate: false
-  xy: 760, 868
+  xy: 4, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Truesilver
   rotate: false
-  xy: 436, 112
+  xy: 328, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Spirit Walker
+UnitIcons/Spider Tank
   rotate: false
   xy: 4, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Spiritwalker
+UnitIcons/Spirit Walker
   rotate: false
   xy: 4, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Stasis Vault
+UnitIcons/Spiritwalker
   rotate: false
-  xy: 112, 760
+  xy: 112, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Steam Armor
+UnitIcons/Stasis Vault
   rotate: false
   xy: 220, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Steam Tank
+UnitIcons/Steam Armor
   rotate: false
   xy: 4, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Steamwheedle Guard
+UnitIcons/Steam Tank
   rotate: false
   xy: 112, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Storm's Wake Tidecaller
+UnitIcons/Steamwheedle Guard
   rotate: false
-  xy: 4, 436
+  xy: 220, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Stormcaller
+UnitIcons/Storm's Wake Tidecaller
   rotate: false
   xy: 112, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Stormlord
+UnitIcons/Stormcaller
   rotate: false
   xy: 220, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Sunfury Blade
+UnitIcons/Stormlord
   rotate: false
-  xy: 436, 868
+  xy: 328, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Sunfury Marksman
+UnitIcons/Sunfury Blade
   rotate: false
   xy: 4, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Sunwalker
+UnitIcons/Sunfury Marksman
   rotate: false
   xy: 112, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Sunwell Guard
+UnitIcons/Sunwalker
   rotate: false
   xy: 220, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Sunwell Guard
+  rotate: false
+  xy: 328, 652
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Sunwell High Priest
-  rotate: false
-  xy: 328, 652
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Sunwell Priest
-  rotate: false
-  xy: 328, 652
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
-UnitIcons/Suramar Ballista
   rotate: false
   xy: 436, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Suramar Royal Guard
+UnitIcons/Sunwell Priest
+  rotate: false
+  xy: 436, 760
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Suramar Ballista
   rotate: false
   xy: 544, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Surveyor
+UnitIcons/Suramar Royal Guard
   rotate: false
   xy: 4, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Swordsman
+UnitIcons/Surveyor
   rotate: false
   xy: 112, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Talbuk Rider
+UnitIcons/Swordsman
   rotate: false
   xy: 220, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Tauren Hunter
+UnitIcons/Talbuk Rider
   rotate: false
-  xy: 436, 652
+  xy: 328, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Tauren Warrior
+UnitIcons/Tauren Hunter
   rotate: false
   xy: 544, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Temple Guard
+UnitIcons/Tauren Warrior
   rotate: false
-  xy: 4, 112
+  xy: 652, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Thane's Guard
+UnitIcons/Temple Guard
   rotate: false
   xy: 112, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Thornspeaker
+UnitIcons/Thane's Guard
   rotate: false
-  xy: 112, 112
+  xy: 220, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Thunder Bluff Protector
+UnitIcons/Thornspeaker
   rotate: false
   xy: 220, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Thunder Totem Champion
+UnitIcons/Thunder Bluff Protector
   rotate: false
   xy: 328, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Thunder Wyvern
+UnitIcons/Thunder Totem Champion
   rotate: false
   xy: 436, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Thunderhoof Rider
+UnitIcons/Thunder Wyvern
   rotate: false
   xy: 544, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Tidal Guardian
+UnitIcons/Thunderhoof Rider
   rotate: false
-  xy: 760, 760
+  xy: 652, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -5324,56 +5324,63 @@ UnitIcons/Tracker
   index: -1
 UnitIcons/Trike Rider
   rotate: false
-  xy: 868, 652
+  xy: 760, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Troll Berserker
   rotate: false
-  xy: 976, 760
+  xy: 868, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Troll Canoe
   rotate: false
-  xy: 1084, 868
+  xy: 976, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Tug
   rotate: false
-  xy: 544, 220
+  xy: 436, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Tunneler
   rotate: false
-  xy: 652, 328
+  xy: 544, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Twilight Doomcaller
   rotate: false
-  xy: 760, 436
+  xy: 652, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Twilight Flamecaller
   rotate: false
-  xy: 868, 544
+  xy: 760, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Undermine Assassin
   rotate: false
-  xy: 976, 652
+  xy: 868, 544
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Uther the Lightbringer
+  rotate: false
+  xy: 1084, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
