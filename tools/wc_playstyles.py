@@ -103,11 +103,11 @@ PLAYSTYLE = {
                    "Arcane Ingenuity: +15% Science, Arcane Crystals give +2 Science, and Great People come 10% faster. Arcways replace the Arcane Sanctum. Suramar's shield makes their cities 25% stronger, and they fight 15% harder on their own land."),
     "Highmountain Tauren": (["[+10]% Strength <for [Mounted] units>"],
                             "Children of Huln: units fight 15% harder in hills, hills give +1 Food and mountains +1 Culture; Thunderhoof riders fight 10% harder."),
-    "Scourge": (["[-50]% Food consumption by [Population] [in all cities]",
+    "Scourge": (["[-30]% Food consumption by [Population] [in all cities]",
                  "[+2 Production, +1 Science] from [Plagued Land] tiles [in all cities]",
-                 "[1] population in a random city <upon defeating a [Military] unit> <with [50]% chance>",
+                 "[1] population in a random city <upon defeating a [Military] unit> <with [25]% chance>",
                  "[+10] HP when healing <for [Land] units> <in [Plagued Land] tiles>"],
-                "The Plague of Undeath: the undead eat half as much, Plagued Land gives +2 Production and +1 Science, fallen enemies rise to swell their cities, and key Scourge buildings need blight nearby. Acolytes spread the blight."),
+                "The Plague of Undeath: the undead eat a third less, Plagued Land gives +2 Production and +1 Science, fallen enemies rise to swell their cities, and key Scourge buildings need blight nearby. Acolytes spread the blight."),
 }
 
 # ---------------------------------------------------------------- improvements
