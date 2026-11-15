@@ -534,6 +534,11 @@ for _col in files["Techs"]:
     if _col.get("columnNumber") in LATE_TECH and "techCost" in _col:
         _col["techCost"] = int(round(_col["techCost"] * LATE_TECH[_col["columnNumber"]], -1))
 print("late-game pacing: Titan vessel parts", SS_COST, "| project", PROJECT_COST, "| late tech costs", LATE_TECH)
+import re as _re
+for _u in files["Units"]:   # faction lock-outs are rules, not reading matter: keep them out of unit descriptions
+    if _u.get("uniques"):
+        _u["uniques"] = [q + " <hidden from users>" if _re.fullmatch(r"Unavailable <for \[[^\]]*\] Civilizations>", q) else q
+                         for q in _u["uniques"]]
 for name, data in files.items():
     ljson.dump(data, os.path.join(J, name + ".json"))
 
@@ -677,10 +682,13 @@ n = citycenters.write_all(os.path.join(OUT, "Images.WarcraftMap"), R.ERAS, [x["n
 print("city centers:", n)
 # v0.15: race ships, hunting camps and forts
 import race_works as RW
+_roster_names = {u["name"] for u in files["Units"]}
 for name, ls in RW.ship_sprites(_lu).items():
     for suf, im in zip(("", "-1", "-2"), ls):
         path = os.path.join(OUT, "Images.RaceUnits", RW.P_UNITS, name + suf + ".png")
         os.makedirs(os.path.dirname(path), exist_ok=True)
+        if os.path.exists(path) and name.split("-")[0] in _roster_names:   # the roster's own ship art wins over the old race ships
+            continue
         im.save(path)
 print("race ships:", (len(RW.SHIPS) + len(RW.STEAM_SHIPS)) * len(RW.SHIP_STYLE))
 with open(os.path.join(J, "TileSets", "HexaRealm.json")) as f:
@@ -699,10 +707,11 @@ print("English text for built-in messages:", wc_endings.write_english(J))
 print("original attack sounds:", wc_sounds.write_all(os.path.join(OUT, "sounds")))
 # no art for the removed submarines and nuclear weapons (renamed stock sprites, icons, promotion icons)
 _dead = tuple(sorted(SUBS | NUKES | _nuke_types | {p.rsplit(" ", 1)[0] for p in _sub_promos}))
+_live = tuple(sorted(u["name"] for u in files["Units"] if u["name"].startswith(_dead)))
 _n = 0
 for root, _, fs in os.walk(OUT):
     for fn in fs:
-        if fn.endswith(".png") and fn.startswith(_dead):
+        if fn.endswith(".png") and fn.startswith(_dead) and not fn.startswith(_live):   # "Mana Bomb" must not take the Mana Bomb Launcher with it
             os.remove(os.path.join(root, fn)); _n += 1
 print("submarine and nuclear images dropped:", _n)
 with open(os.path.join(OUT, "Images.RaceUnits", "TexturePacker.settings"), "w") as f:
