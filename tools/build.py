@@ -669,6 +669,8 @@ import unit_icons   # Nov 2026: unit icons cut crisply from the finished sprites
 print("unit icons:", unit_icons.write_all(OUT))
 import boss_art   # Oct 2026 depth pass: the eight raid bosses
 print("raid boss sprites:", boss_art.write_all(os.path.join(OUT, "Images.WarcraftMap")))
+import boss_sprites   # Nov 2026: raid bosses redrawn in the roster's pixel style
+print("raid boss sprites (new):", boss_sprites.write_all(os.path.join(OUT, "Images.WarcraftMap")))
 import barbarian_art   # Oct 2026 systems pass: themed barbarians
 print("barbarian sprites:", barbarian_art.write_all(os.path.join(OUT, "Images.WarcraftMap"),
                                                     [os.path.join(OUT, "Images.RaceUnits"), os.path.join(OUT, "Images.WarcraftMap")],
