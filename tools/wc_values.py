@@ -16,7 +16,8 @@ P = {
     "Humans": {},                                                           # the yardstick
     "Orcs": {"str": {"aggressive": 1.12, "defensive": 1.08, "mounted": 1.08}, "cost": 1.05,
              "add": [(("aggressive",), "[+10]% Strength <when attacking>")]},
-    "Tauren": {"str": {"aggressive": 1.2, "defensive": 1.2, "heavy": 1.2, "mounted": 1.25}, "cost": 1.2, "move": {"mounted": 3},
+    "Tauren": {"str": {"aggressive": 1.2, "defensive": 1.2, "heavy": 1.2, "mounted": 1.25}, "cost": 1.05,   # was 1.2: below average in all 8 of 16 test games
+               "move": {"mounted": 3},
                "add": [(MELEE + ("heavy",), "[+10] HP when healing"), (LAND, "[+15]% Strength <when fighting in [Plains] tiles>")]},
     "Highmountain Tauren": {"str": {"aggressive": 1.2, "defensive": 1.2, "heavy": 1.2, "mounted": 1.25}, "cost": 1.2, "move": {"mounted": 3},
                             "add": [(MELEE + ("heavy",), "[+10] HP when healing"), (LAND, "[+20]% Strength <when fighting in [Hill] tiles>")]},
@@ -41,7 +42,7 @@ P = {
                "add": [(("aggressive", "scout"), "[+10]% Strength <when attacking>")]},
     "Kul Tirans": {"str": {"naval": 1.2, "aggressive": 1.1, "defensive": 1.05, "ranged": 1.05}, "cost": 1.0},
     "Forsaken": {"str": {"aggressive": 1.0, "ranged": 1.05, "magic": 1.05, "heavy": 1.15}, "cost": 0.88},
-    "Scourge": {"str": {"aggressive": 0.9, "defensive": 0.92, "heavy": 1.2, "mounted": 1.15}, "cost": 0.88},      # was 0.78: led 12 test games by a wide margin
+    "Scourge": {"str": {"aggressive": 0.9, "defensive": 0.92, "heavy": 1.2, "mounted": 1.15}, "cost": 1.0},      # was 0.78, then 0.88: still led 16 test games at twice the average
     "Pandaren": {"str": {"defensive": 1.15, "aggressive": 1.05}, "cost": 1.06,
                  "add": [(MELEE, "[+10] HP when healing")]},
     "Naga": {"str": {b: 1.05 for b in LAND}, "cost": 1.06,
